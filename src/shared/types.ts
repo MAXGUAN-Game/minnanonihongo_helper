@@ -1,0 +1,17 @@
+export type Example = { jp: string; kana: string; zh: string };
+export type Vocabulary = { word: string; reading: string; meaning: string; example: Example };
+export type Grammar = { id: string; title: string; explanation: string; pattern: string[]; examples: Example[] };
+export type Listening = { id: string; title: string; lines: Example[]; question: string; options: string[]; answer: number; explanation: string; grammarIds: string[] };
+export type Speaking = { id: string; goal: string; hint: string; answer: Example; grammarId: string };
+export type Scenario = { id: string; title: string; goal: string; setting: string; opening: Example; targetGrammarIds: string[]; successCriteria: string[] };
+export type Lesson = { id: number; volume: 1 | 2; title: string; canDo: string; prerequisiteLessonIds: number[]; grammar: Grammar[]; vocabulary: Vocabulary[]; listening: Listening[]; speaking: Speaking[]; scenarios: Scenario[] };
+export type Stage = 'understand' | 'listen' | 'speak' | 'conversation';
+export type Mastery = 'seen' | 'assisted' | 'independent';
+export type Progress = { lessonId: number; stage: Stage; cursor: number; status: Mastery; itemId?: string; updatedAt: string };
+export type Settings = { currentLessonId: number; dailyMinutes: 15 | 60; largeText: boolean; furigana: boolean; autoplay: boolean; model: string; hasApiKey: boolean; setupComplete: boolean };
+export type ReviewItem = { id: string; lessonId: number; goal: string; answer: Example; grammarId?: string; sourceId?: string; dueAt: string; intervalIndex: number; createdAt: string };
+export type Correction = { goal: string; original: string; corrected: Example; explanation: string; grammarId?: string };
+export type Turn = { id: string; role: 'assistant' | 'user'; text: string; translation?: string; hint?: string; source: 'lesson' | 'deepseek' | 'user'; createdAt: string };
+export type Session = { id: string; lessonId: number; scenarioId: string; mode?: 'scenario' | 'grammar'; grammarId?: string; status: 'active' | 'complete'; turnCount: number; turns: Turn[]; feedback: Correction[]; completedGoals: string[]; updatedAt: string };
+export type SpeechStatus = { ready: boolean; modelReady: boolean; binaryReady: boolean; message: string };
+export type Bootstrap = { deployment?: 'local' | 'web'; publicSite?: { icpNumber: string }; settings: Settings; progress: Progress[]; dueReviews: ReviewItem[]; activeSession: Session | null; totals: { sessions: number; reviews: number; independent: number }; speech: SpeechStatus };

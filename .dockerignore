@@ -1,0 +1,13 @@
+# Explicit build-context allowlist. Personal data and API keys never enter it.
+**
+!Dockerfile
+!.dockerignore
+!package.json
+!package-lock.json
+!tsconfig.json
+!vite.config.ts
+!index.html
+!src/
+!src/**
+!scripts/
+!scripts/setup-speech-linux.mjs

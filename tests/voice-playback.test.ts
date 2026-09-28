@@ -1,0 +1,343 @@
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { chromium, type Browser, type BrowserContext, type Page, type Route } from '@playwright/test';
+import { createServer, type ViteDevServer } from 'vite';
+import { mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { basename, dirname, join, resolve } from 'node:path';
+
+// Exercise the real hook in a browser, with local routes and manually completed
+// audio. No speech provider, operating-system voice, or paid API is contacted.
+let vite: ViteDevServer;
+let browser: Browser;
+let origin: string;
+let cacheDir: string;
+const lines = ['こんにちは。', 'お元気ですか。', 'はい、元気です。'];
+const replacement = 'もう一度お願いします。';
+const cloudSettings = {
+  provider: 'minimax', model: 'speech-2.6-hd', hasApiKey: true,
+  voice: 'Japanese_SeriousCommander', secondaryVoice: 'Japanese_KindLady', alternateSpeakers: true, speed: 1,
+};
+type SynthesisRequest = { text: string; rate: number; speaker: 'primary' | 'secondary' };
+type Clip = { src: string; plays: number; pauses: number; paused: boolean; finish: () => void };
+type LocalUtterance = { text: string; lang: string; rate: number; voice?: { localService: boolean }; onend?: ((event: Event) => void) | null };
+type VoiceMock = {
+  clips: Clip[];
+  local: LocalUtterance[];
+  canceled: number;
+  requests: Array<{ path: string; aborted: boolean; settled: boolean }>;
+  blobTypes: string[];
+  revoked: string[];
+};
+declare global { interface Window { __voiceMock: VoiceMock } }
+
+const harness = `
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { useSpeech } from '/src/client/speech.ts';
+function Harness() {
+  const [notices, setNotices] = React.useState([]);
+  const notice = React.useCallback(message => setNotices(previous => [...previous, message]), []);
+  const speech = useSpeech(notice);
+  return <>
+    <button onClick={() => speech.say(${JSON.stringify(lines)}, 'ja-JP', .65)}>Sequence</button>
+    <button onClick={() => speech.say(${JSON.stringify(replacement)}, 'ja-JP', 1)}>Replay</button>
+    <button onClick={() => speech.say('请再说一遍。', 'zh-CN', .8)}>Chinese</button>
+    <button onClick={speech.stop}>Stop</button>
+    <output aria-label="Playback">{speech.speaking ? 'playing' : 'idle'}</output>
+    <p role="alert">{notices.join('\\n')}</p>
+  </>;
+}
+createRoot(document.getElementById('root')).render(<Harness/>);
+`;
+
+beforeAll(async () => {
+  // Browser suites run concurrently. Sharing Vite's dependency cache lets one
+  // server replace the other's optimized modules while its first page loads.
+  cacheDir = await mkdtemp(join(tmpdir(), 'language-master-voice-test-'));
+  vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
+    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime'], noDiscovery: true },
+    server: { host: '127.0.0.1', port: 0 }, plugins: [{
+    name: 'isolated-voice-test',
+    resolveId(id) { if (id === '/__voice-harness.tsx') return id; },
+    load(id) { if (id === '/__voice-harness.tsx') return harness; },
+  }] });
+  await vite.listen();
+  const address = vite.httpServer!.address();
+  if (!address || typeof address === 'string') throw new Error('Missing test server port');
+  origin = `http://127.0.0.1:${address.port}`;
+  browser = await chromium.launch({ headless: true, ...(process.platform === 'win32' ? { channel: 'msedge' } : {}) });
+}, 30000);
+afterAll(async () => {
+  await browser?.close(); await vite?.close();
+  if (cacheDir && dirname(resolve(cacheDir)) === resolve(tmpdir()) && basename(cacheDir).startsWith('language-master-voice-test-')) {
+    await rm(cacheDir, { recursive: true, force: true });
+  }
+});
+
+function deferred() {
+  let resolve!: () => void;
+  const promise = new Promise<void>(done => { resolve = done; });
+  return { promise, resolve };
+}
+
+// A valid mono 16-bit PCM WAV containing a short silent sample. Audio itself is
+// controlled below, so the regression does not depend on sound hardware/timing.
+const wav = Buffer.alloc(364);
+wav.write('RIFF', 0); wav.writeUInt32LE(wav.length - 8, 4); wav.write('WAVEfmt ', 8);
+wav.writeUInt32LE(16, 16); wav.writeUInt16LE(1, 20); wav.writeUInt16LE(1, 22);
+wav.writeUInt32LE(16000, 24); wav.writeUInt32LE(32000, 28); wav.writeUInt16LE(2, 32);
+wav.writeUInt16LE(16, 34); wav.write('data', 36); wav.writeUInt32LE(wav.length - 44, 40);
+const fulfillAudio = (route: Route) => route.fulfill({ contentType: 'audio/wav', body: wav });
+
+async function pageFor(options: {
+  provider?: 'minimax' | 'system';
+  speed?: number;
+  settings?: (route: Route) => Promise<void>;
+  synthesize?: (route: Route) => Promise<void>;
+} = {}): Promise<{ page: Page; context: BrowserContext; requests: SynthesisRequest[]; settingsRequests: string[]; externalRequests: string[] }> {
+  const context = await browser.newContext();
+  const requests: SynthesisRequest[] = [];
+  const settingsRequests: string[] = [];
+  const externalRequests: string[] = [];
+  await context.addInitScript(() => {
+    const state: VoiceMock = { clips: [], local: [], canceled: 0, requests: [], blobTypes: [], revoked: [] };
+    window.__voiceMock = state;
+    class ControlledAudio extends EventTarget {
+      src: string;
+      plays = 0;
+      pauses = 0;
+      paused = true;
+      currentTime = 0;
+      playbackRate = 1;
+      onended: ((event: Event) => void) | null = null;
+      onerror: ((event: Event) => void) | null = null;
+      constructor(src = '') { super(); this.src = src; state.clips.push(this); }
+      play() { this.plays++; this.paused = false; return Promise.resolve(); }
+      pause() { this.pauses++; this.paused = true; }
+      load() {}
+      removeAttribute(name: string) { if (name === 'src') this.src = ''; }
+      finish() {
+        this.paused = true;
+        const event = new Event('ended');
+        this.dispatchEvent(event);
+        this.onended?.(event);
+      }
+    }
+    Object.defineProperty(window, 'Audio', { configurable: true, value: ControlledAudio });
+    class ControlledUtterance extends EventTarget {
+      text: string;
+      lang = '';
+      rate = 1;
+      voice?: { localService: boolean };
+      onend: ((event: Event) => void) | null = null;
+      constructor(text: string) { super(); this.text = text; }
+    }
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', { configurable: true, value: ControlledUtterance });
+    const synthesis = new EventTarget();
+    Object.assign(synthesis, {
+      getVoices: () => [
+        { name: 'Local Japanese', lang: 'ja-JP', localService: true, default: true, voiceURI: 'local-ja' },
+        { name: 'Local Chinese', lang: 'zh-CN', localService: true, default: false, voiceURI: 'local-zh' },
+      ],
+      speak: (utterance: LocalUtterance) => { state.local.push(utterance); },
+      cancel: () => { state.canceled++; },
+    });
+    Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
+    const originalFetch = window.fetch.bind(window);
+    window.fetch = (input, init) => {
+      const path = new URL(input instanceof Request ? input.url : String(input), location.href).pathname;
+      if (!path.startsWith('/api/voice/')) return originalFetch(input, init);
+      const signal = init?.signal ?? (input instanceof Request ? input.signal : undefined);
+      const entry = { path, aborted: signal?.aborted ?? false, settled: false };
+      state.requests.push(entry);
+      signal?.addEventListener('abort', () => { entry.aborted = true; }, { once: true });
+      return originalFetch(input, init).finally(() => { entry.settled = true; });
+    };
+    const createURL = URL.createObjectURL.bind(URL);
+    const revokeURL = URL.revokeObjectURL.bind(URL);
+    URL.createObjectURL = blob => { state.blobTypes.push(blob instanceof Blob ? blob.type : 'media-source'); return createURL(blob); };
+    URL.revokeObjectURL = url => { state.revoked.push(url); revokeURL(url); };
+  });
+  await context.route('**/*', async route => {
+    if (new URL(route.request().url()).origin !== origin) {
+      externalRequests.push(route.request().url());
+      await route.abort('blockedbyclient');
+    } else await route.fallback();
+  });
+  const page = await context.newPage();
+  page.setDefaultTimeout(5000);
+  const pageErrors: string[] = [];
+  page.on('pageerror', error => pageErrors.push(error.message));
+  await page.route('**/__voice-test', route => route.fulfill({ contentType: 'text/html', body: '<!doctype html><html><body><div id="root"></div><script type="module" src="/__voice-harness.tsx"></script></body></html>' }));
+  await page.route('**/api/voice/settings', async route => {
+    settingsRequests.push(route.request().method());
+    if (options.settings) await options.settings(route);
+    else await route.fulfill({ json: { ...cloudSettings, provider: options.provider ?? 'minimax', speed: options.speed ?? 1 } });
+  });
+  await page.route('**/api/voice/synthesize', async route => {
+    requests.push(route.request().postDataJSON());
+    expect(route.request().method()).toBe('POST');
+    if (options.synthesize) await options.synthesize(route);
+    else await fulfillAudio(route);
+  });
+  try {
+    await page.goto(`${origin}/__voice-test`);
+    await page.getByRole('button', { name: 'Sequence', exact: true }).waitFor();
+  } catch (error) {
+    await context.close();
+    throw new Error(`Voice harness did not load: ${pageErrors.join('; ') || 'no browser errors'}`, { cause: error });
+  }
+  return { page, context, requests, settingsRequests, externalRequests };
+}
+
+const clips = (page: Page) => page.evaluate(() => window.__voiceMock.clips.map(({ src, plays, pauses, paused }) => ({ src, plays, pauses, paused })));
+const local = (page: Page) => page.evaluate(() => window.__voiceMock.local.map(({ text, lang, rate, voice }) => ({ text, lang, rate, localService: voice?.localService })));
+const finish = (page: Page, index: number) => page.evaluate(index => window.__voiceMock.clips[index]!.finish(), index);
+const state = (page: Page) => page.getByLabel('Playback').textContent();
+// Allow promise continuations and React's queued work to run. MessageChannel
+// stays event driven even if a concurrent browser makes this page backgrounded;
+// animation frames can pause in that situation.
+const drain = (page: Page) => page.evaluate(async () => {
+  for (let turn = 0; turn < 2; turn++) {
+    await new Promise<void>(resolve => {
+      const channel = new MessageChannel();
+      channel.port1.onmessage = () => { channel.port1.close(); channel.port2.close(); resolve(); };
+      channel.port2.postMessage(null);
+    });
+  }
+});
+
+describe('voice playback in the browser', () => {
+  it('plays cloud WAVs sequentially, alternates speakers, and sends the requested slow rate', async () => {
+    const { page, context, requests, settingsRequests, externalRequests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      for (let index = 0; index < lines.length; index++) {
+        await expect.poll(async () => (await clips(page)).filter(clip => clip.plays === 1).length).toBe(index + 1);
+        await drain(page);
+        expect(requests).toEqual(lines.slice(0, index + 1).map((text, position) => ({ text, rate: .65, speaker: position % 2 ? 'secondary' : 'primary' })));
+        expect((await clips(page)).filter(clip => !clip.paused)).toHaveLength(1);
+        expect(await state(page)).toBe('playing');
+        await finish(page, index);
+      }
+      await expect.poll(() => state(page)).toBe('idle');
+      expect(settingsRequests).toEqual(['GET']);
+      expect(await local(page)).toEqual([]);
+      expect(await page.evaluate(() => window.__voiceMock.blobTypes)).toEqual(['audio/wav', 'audio/wav', 'audio/wav']);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+      expect(externalRequests).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it.each(['settings', 'synthesis'] as const)('aborts pending %s on stop and never starts a late clip or next line', async pending => {
+    const release = deferred();
+    const requestHeld = deferred();
+    const responseHandled = deferred();
+    const held = async (route: Route) => {
+      requestHeld.resolve();
+      await release.promise;
+      try {
+        if (pending === 'settings') await route.fulfill({ json: cloudSettings });
+        else await fulfillAudio(route);
+      } catch { /* The browser can discard the intercepted request after abort. */ }
+      finally { responseHandled.resolve(); }
+    };
+    const { page, context, requests } = await pageFor(pending === 'settings' ? { settings: held } : { synthesize: held });
+    const path = pending === 'settings' ? '/api/voice/settings' : '/api/voice/synthesize';
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await requestHeld.promise;
+      await expect.poll(() => page.evaluate(path => window.__voiceMock.requests.some(request => request.path === path && !request.settled), path)).toBe(true);
+      await page.getByRole('button', { name: 'Stop', exact: true }).click();
+      await expect.poll(() => page.evaluate(path => window.__voiceMock.requests.some(request => request.path === path && request.aborted && request.settled), path)).toBe(true);
+      release.resolve();
+      await responseHandled.promise;
+      await drain(page);
+      expect(await state(page)).toBe('idle');
+      expect(await clips(page)).toEqual([]);
+      expect(await local(page)).toEqual([]);
+      expect(requests).toHaveLength(pending === 'settings' ? 0 : 1);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+    } finally { release.resolve(); await context.close(); }
+  });
+
+  it('stops an active clip and ignores its late ended event', async () => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await expect.poll(async () => (await clips(page))[0]?.plays).toBe(1);
+      const url = (await clips(page))[0]!.src;
+      await page.getByRole('button', { name: 'Stop', exact: true }).click();
+      expect((await clips(page))[0]).toMatchObject({ paused: true, pauses: 1 });
+      expect(await page.evaluate(() => window.__voiceMock.revoked)).toContain(url);
+      await finish(page, 0);
+      await drain(page);
+      expect(requests).toHaveLength(1);
+      expect(await state(page)).toBe('idle');
+      expect(await local(page)).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('replay cancels the previous sequence and stale completion cannot stop the new clip', async () => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await expect.poll(async () => (await clips(page))[0]?.plays).toBe(1);
+      await page.getByRole('button', { name: 'Replay', exact: true }).click();
+      await expect.poll(async () => (await clips(page))[1]?.plays).toBe(1);
+      expect((await clips(page))[0]).toMatchObject({ paused: true, pauses: 1 });
+      await finish(page, 0);
+      await drain(page);
+      expect(requests.map(request => request.text)).toEqual([lines[0], replacement]);
+      expect((await clips(page))[1]!.paused).toBe(false);
+      expect(await state(page)).toBe('playing');
+      await finish(page, 1);
+      await expect.poll(() => state(page)).toBe('idle');
+      expect(await page.getByRole('alert').textContent()).toBe('');
+    } finally { await context.close(); }
+  });
+
+  it('uses only a local Chinese voice without requesting voice settings or synthesis', async () => {
+    const { page, context, requests, settingsRequests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Chinese', exact: true }).click();
+      await expect.poll(() => local(page)).toEqual([{ text: '请再说一遍。', lang: 'zh-CN', rate: .8, localService: true }]);
+      expect(settingsRequests).toEqual([]);
+      expect(requests).toEqual([]);
+      expect(await clips(page)).toEqual([]);
+      await page.evaluate(() => window.__voiceMock.local[0]!.onend?.(new Event('end')));
+      await expect.poll(() => state(page)).toBe('idle');
+    } finally { await context.close(); }
+  });
+
+  it('uses the configured system voice and speed without a synthesis request', async () => {
+    const { page, context, requests } = await pageFor({ provider: 'system', speed: .8 });
+    try {
+      await page.getByRole('button', { name: 'Replay', exact: true }).click();
+      await expect.poll(() => local(page)).toEqual([{ text: replacement, lang: 'ja-JP', rate: .8, localService: true }]);
+      expect(requests).toEqual([]);
+      expect(await clips(page)).toEqual([]);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+      await page.getByRole('button', { name: 'Stop', exact: true }).click();
+      expect(await state(page)).toBe('idle');
+      expect(await page.evaluate(() => window.__voiceMock.canceled)).toBeGreaterThan(0);
+    } finally { await context.close(); }
+  });
+
+  it('reports cloud failure in Chinese and explicitly falls back to the local Japanese voice', async () => {
+    const { page, context, requests } = await pageFor({ speed: .8, synthesize: route => route.fulfill({ status: 503, json: { error: '云端语音暂时不可用。' } }) });
+    try {
+      await page.getByRole('button', { name: 'Replay', exact: true }).click();
+      await expect.poll(() => local(page)).toEqual([{ text: replacement, lang: 'ja-JP', rate: .8, localService: true }]);
+      const notice = await page.getByRole('alert').textContent();
+      expect(notice).toMatch(/[\u4e00-\u9fff]/);
+      expect(notice).toMatch(/云端|MiniMax/i);
+      expect(notice).toMatch(/系统|本机|本地/);
+      expect(requests).toHaveLength(1);
+      expect(await clips(page)).toEqual([]);
+      expect(await state(page)).toBe('playing');
+      await page.evaluate(() => window.__voiceMock.local[0]!.onend?.(new Event('end')));
+      await expect.poll(() => state(page)).toBe('idle');
+    } finally { await context.close(); }
+  });
+});

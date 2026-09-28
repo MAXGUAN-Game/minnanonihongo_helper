@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <title>一周计划 · 给重要的事留出时间</title>
+  <style>
+    :root { color-scheme: light; --bg:#f6f7f2; --surface:#fff; --ink:#26372e; --muted:#5f6d62; --line:#e2e7dd; --green:#315c43; --purple:#695199; --orange:#9a562d; --shadow:0 8px 30px #26372e05; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--bg); font-family:Inter,"Segoe UI","Microsoft YaHei",system-ui,sans-serif; font-size:14px; line-height:1.55; }
+    button,input,select,textarea { font:inherit; }
+    button { cursor:pointer; }
+    button:disabled { cursor:default; opacity:.45; }
+    button,input,select,textarea,summary { -webkit-tap-highlight-color:transparent; }
+    :focus-visible { outline:3px solid #628b69; outline-offset:3px; }
+    button { color:inherit; }
+    .shell { max-width:1640px; margin:auto; padding:0 44px; }
+    .topbar { height:82px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:750; font-size:18px; letter-spacing:1px; }
+    .brand-mark { width:36px; height:36px; display:grid; place-items:center; background:var(--green); color:white; border-radius:11px; }
+    .brand-sub { font-size:11px; font-weight:500; letter-spacing:2px; color:var(--muted); margin-left:8px; }
+    .top-actions,.actions,.week-nav,.toolbar,.filters,.legend,.footer-meta { display:flex; align-items:center; gap:10px; }
+    .status { color:var(--muted); font-size:12px; display:flex; align-items:center; gap:7px; }
+    .status::before { content:""; width:6px; height:6px; background:#619276; border-radius:50%; flex-shrink:0; }
+    .status.error { color:#ae412f; }
+    .status.error::before { background:currentColor; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:39px; padding:8px 14px; background:#fff; border:1px solid var(--line); border-radius:9px; font-size:13px; font-weight:600; white-space:nowrap; transition:background .15s,transform .15s; }
+    .btn:hover { background:#edf1e9; }
+    .btn.primary { background:var(--green); border-color:var(--green); color:white; }
+    .btn.primary:hover { background:#244c35; }
+    .btn.ghost { background:transparent; }
+    .btn.icon { width:36px; min-height:36px; padding:6px; }
+    .btn.danger { color:#a84737; background:#fff6f3; border-color:#ecd9d3; }
+    svg { width:18px; height:18px; display:block; flex-shrink:0; }
+    .hero { display:flex; justify-content:space-between; align-items:flex-end; gap:32px; padding:36px 0 27px; }
+    .eyebrow { font-size:10px; letter-spacing:2.5px; color:#58715b; font-weight:750; margin:0 0 10px; }
+    h1 { font-size:clamp(26px,2.5vw,38px); line-height:1.35; letter-spacing:-1px; margin:0 0 10px; font-weight:750; }
+    .hero p { margin:0; color:var(--muted); font-size:13px; }
+    .hero-aside { display:flex; align-items:center; gap:11px; padding:13px 17px; border:1px solid var(--line); border-radius:12px; background:#eef2e9; flex-shrink:0; }
+    .hero-aside svg { color:#59705a; width:24px; height:24px; }
+    .hero-aside strong { font-size:12px; display:block; }
+    .hero-aside span { font-size:11px; color:var(--muted); }
+    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:27px; }
+    .stat { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:19px 22px; box-shadow:var(--shadow); display:flex; gap:20px; justify-content:space-between; min-height:135px; }
+    .stat-label { display:flex; align-items:center; gap:9px; font-size:13px; font-weight:650; }
+    .stat-icon { display:grid; place-items:center; width:27px; height:27px; border-radius:8px; font-size:19px; }
+    .stat[data-cat="japanese"] .stat-icon { background:#f1edf9; color:var(--purple); }
+    .stat[data-cat="fitness"] .stat-icon { background:#e9f1e7; color:var(--green); }
+    .stat[data-cat="game"] .stat-icon { background:#fff0e4; color:var(--orange); }
+    .stat-value { font-size:31px; font-weight:700; line-height:1.3; margin-top:10px; letter-spacing:-.8px; }
+    .stat-value small { font-size:12px; font-weight:500; color:var(--muted); margin:0 3px; letter-spacing:0; }
+    .stat-note { font-size:11px; color:var(--muted); margin-top:4px; }
+    .spark { align-self:flex-end; display:flex; align-items:flex-end; gap:5px; height:49px; padding-bottom:3px; }
+    .spark span { width:10px; background:#ded5ef; border-radius:4px 4px 2px 2px; }
+    [data-cat="fitness"] .spark span { background:#b6cbb0; }
+    [data-cat="game"] .spark span { background:#edc7a6; }
+    .planner { background:#fff; border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); overflow:hidden; }
+    .planner-head { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:21px 23px 17px; }
+    .week-info { margin-right:10px; }
+    .week-info h2 { font-size:18px; margin:0; letter-spacing:-.3px; }
+    .week-info p { margin:3px 0 0; font-size:11px; color:var(--muted); }
+    .week-nav { gap:5px; }
+    .toolbar { justify-content:space-between; gap:16px; padding:0 23px 17px; flex-wrap:wrap; }
+    .filters { gap:5px; padding:4px; background:#f3f5ef; border-radius:9px; }
+    .filter { background:transparent; border:0; border-radius:6px; padding:6px 12px; color:var(--muted); font-size:12px; white-space:nowrap; }
+    .filter.active { background:white; color:var(--ink); box-shadow:0 1px 5px #0000000d; font-weight:650; }
+    .filter-dot { display:inline-block; width:6px; height:6px; border-radius:50%; margin-right:6px; vertical-align:2px; }
+    .toggle { display:flex; align-items:center; gap:7px; color:var(--muted); font-size:12px; cursor:pointer; white-space:nowrap; }
+    input[type="checkbox"] { accent-color:var(--green); width:16px; height:16px; }
+    .board-scroll { overflow-x:auto; scrollbar-width:thin; scrollbar-color:#c5cebf #f6f7f2; }
+    .board { display:grid; grid-template-columns:repeat(7,minmax(150px,1fr)); min-width:1100px; align-items:stretch; border-top:1px solid var(--line); }
+    .day { min-width:0; border-right:1px solid var(--line); background:#fdfefa; }
+    .day:last-child { border-right:0; }
+    .day.weekend { background:#f8f9f5; }
+    .day.today { background:#f5f9f1; }
+    .day-head { padding:16px 12px 13px; border-bottom:1px solid var(--line); min-height:108px; }
+    .day-heading { display:flex; align-items:center; justify-content:space-between; gap:6px; }
+    .day-name { font-size:12px; font-weight:650; }
+    .day-date { font-size:21px; font-weight:650; width:34px; height:34px; display:grid; place-items:center; }
+    .today .day-date { background:var(--green); color:white; border-radius:50%; }
+    .day-meta { display:flex; align-items:center; justify-content:space-between; gap:4px; margin-top:8px; font-size:10px; color:var(--muted); }
+    .day-type { border:1px solid #e0e6d9; background:#f0f3eb; color:#5d6e57; border-radius:5px; padding:2px 5px; }
+    .day-list { display:flex; flex-direction:column; gap:8px; padding:12px 9px; min-height:520px; }
+    .event { position:relative; display:block; width:100%; text-align:left; border:1px solid transparent; border-left:3px solid var(--event-color); border-radius:7px; background:var(--event-bg); color:var(--event-ink); padding:10px 9px; transition:transform .14s,box-shadow .14s; }
+    .event:hover { transform:translateY(-2px); box-shadow:0 5px 11px #20322610; }
+    .event-time { font-size:10px; letter-spacing:.1px; font-variant-numeric:tabular-nums; display:flex; align-items:center; gap:4px; }
+    .event-title { display:block; margin-top:4px; font-weight:650; font-size:12px; overflow-wrap:anywhere; line-height:1.55; }
+    .event-note { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; font-size:10px; margin-top:5px; overflow-wrap:anywhere; }
+    .event-foot { margin-top:7px; font-size:10px; }
+    .day-add { border:1px dashed #d6dfcf; border-radius:7px; padding:10px 8px; background:transparent; color:#61745a; font-size:11px; text-align:center; }
+    .day-add:hover { background:#edf2e6; }
+    .empty { text-align:center; padding:44px 7px 30px; color:#65755e; }
+    .empty svg { width:28px; height:28px; margin:0 auto 13px; stroke-width:1.25; }
+    .empty strong { font-size:12px; display:block; font-weight:500; }
+    .empty p { font-size:10px; line-height:1.8; margin:8px 0 0; }
+    .planner-foot { padding:13px 23px; display:flex; justify-content:space-between; gap:15px; border-top:1px solid var(--line); font-size:11px; color:var(--muted); background:#fff; flex-wrap:wrap; }
+    .page-foot { display:flex; align-items:flex-start; justify-content:space-between; padding:22px 2px 30px; gap:24px; color:var(--muted); font-size:11px; }
+    .page-foot p { margin:0; line-height:1.9; }
+    .text-btn { border:0; background:transparent; font-size:11px; padding:2px; text-decoration:underline; text-underline-offset:3px; color:#5b7056; white-space:nowrap; }
+    .notice { border:1px solid #e7d5aa; background:#fffae9; color:#795c20; border-radius:10px; padding:10px 14px; margin-bottom:16px; font-size:12px; }
+    [hidden] { display:none !important; }
+    dialog { border:1px solid var(--line); border-radius:18px; width:min(530px,calc(100vw - 28px)); padding:0; color:var(--ink); max-height:calc(100dvh - 40px); box-shadow:0 24px 90px #17382133; }
+    dialog::backdrop { background:#182b2466; backdrop-filter:blur(4px); }
+    .dialog-head { padding:22px 24px 16px; display:flex; justify-content:space-between; align-items:flex-start; gap:16px; }
+    .dialog-head h2 { font-size:21px; margin:0 0 4px; }
+    .dialog-head p { margin:0; font-size:12px; color:var(--muted); }
+    .form-body { padding:0 24px 22px; }
+    .field { margin-top:15px; }
+    .field label,.field-label { font-size:12px; font-weight:650; display:block; margin-bottom:6px; }
+    .field input:not([type="checkbox"]),.field select,.field textarea { width:100%; padding:10px 12px; min-height:42px; border:1px solid #d9dfd3; background:#fcfdf9; color:var(--ink); border-radius:8px; }
+    .field textarea { resize:vertical; min-height:74px; }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .hint { font-size:11px; color:var(--muted); margin:6px 0 0; }
+    .form-error { padding:9px 11px; margin-top:12px; background:#fff0eb; color:#a1432e; border-radius:7px; font-size:12px; }
+    .overlap { padding:9px 11px; margin-top:12px; background:#fff9e6; color:#826224; border-radius:7px; font-size:11px; }
+    details { margin-top:17px; font-size:12px; color:var(--muted); }
+    summary { cursor:pointer; }
+    .copy-days { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .copy-days label { display:flex; align-items:center; gap:3px; font-size:12px; }
+    .dialog-footer { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 24px; background:#f7f9f3; border-top:1px solid var(--line); border-radius:0 0 18px 18px; }
+    .dialog-footer .actions { margin-left:auto; }
+    .toast { position:fixed; bottom:25px; left:50%; transform:translateX(-50%); background:#283f31; color:white; padding:12px 20px; border-radius:10px; box-shadow:0 7px 25px #1738212a; z-index:5; font-size:13px; max-width:calc(100vw - 30px); text-align:center; }
+    @media(min-width:1450px) { .board { grid-template-columns:repeat(7,minmax(170px,1fr)); } .event { padding:11px 11px; } .event-title { font-size:13px; } }
+    @media(max-width:1050px) { .shell { padding:0 24px; } .hero-aside { display:none; } .brand-sub { display:none; } .stat { padding:17px; gap:10px; } .spark { gap:3px; } .spark span { width:7px; } .stat-value { font-size:27px; } }
+    @media(max-width:720px) { .shell { padding:0 16px; } .topbar { height:auto; min-height:76px; padding:14px 0; align-items:flex-start; } .top-actions { gap:6px; flex-wrap:wrap; justify-content:flex-end; } .top-actions .status { width:100%; justify-content:flex-end; order:2; font-size:10px; } .top-actions .btn { min-height:30px; font-size:11px; padding:5px 8px; } .brand { font-size:15px; gap:8px; margin-top:3px; white-space:nowrap; } .brand-mark { width:30px; height:30px; border-radius:9px; } .hero { padding:27px 0 23px; } h1 { font-size:27px; letter-spacing:-.8px; } .hero p { font-size:12px; line-height:1.8; } .stats { gap:8px; margin-bottom:18px; } .stat { padding:12px 9px; min-height:115px; } .stat-label { gap:5px; font-size:11px; } .stat-icon { width:22px; height:22px; font-size:16px; } .stat-icon svg { width:15px; } .stat-value { font-size:23px; margin-top:11px; } .stat-value small { font-size:10px; margin:0 1px; } .stat-note { font-size:9px; } .spark { display:none; } .planner-head { padding:17px 13px; align-items:flex-start; flex-wrap:wrap; gap:13px; } .week-info h2 { font-size:16px; } .week-info { margin-right:3px; } .week-nav { gap:3px; } .week-nav .btn { font-size:11px; padding:5px 8px; min-height:32px; } .week-nav .btn.icon { width:30px; } .planner-head>.actions { width:100%; justify-content:space-between; } .planner-head>.actions .btn { font-size:11px; min-height:34px; } .toolbar { padding:0 12px 13px; gap:12px; } .filters { gap:1px; } .filter { padding:6px 8px; font-size:11px; } .filter-dot { margin-right:4px; } .toggle { font-size:11px; } .board { grid-template-columns:repeat(7,185px); min-width:1295px; } .day-list { min-height:500px; } .event-title { font-size:13px; } .event-time,.event-note { font-size:11px; } .planner-foot { padding:12px; font-size:10px; } .page-foot { flex-direction:column; gap:10px; padding:17px 0 24px; font-size:10px; } .dialog-head { padding:19px 18px 12px; } .form-body { padding:0 18px 18px; } .dialog-footer { padding:14px 18px; } .row { gap:10px; } }
+    @media(prefers-reduced-motion:reduce) { * { transition:none !important; scroll-behavior:auto !important; } }
+    @media print { body { background:white; } .shell { max-width:none; padding:0; } .topbar,.hero-aside,.top-actions,.actions,.toolbar,.day-add,.page-foot,.toast,.week-nav>button { display:none !important; } .hero { padding:15px 0; } .stats { margin-bottom:15px; } .board-scroll { overflow:visible; } .board { min-width:0; grid-template-columns:repeat(7,1fr); } .day-list { padding:5px; gap:5px; } .event { break-inside:avoid; padding:6px; -webkit-print-color-adjust:exact; print-color-adjust:exact; } .event-title { font-size:10px; } .event-time,.event-note { font-size:8px; } .planner-head { padding:10px; } .day-head { padding:8px; } .day-meta { display:block; } .day-type { display:none; } }
+    /* All days share a continuous time axis. Short tasks keep their true height. */
+    .board-scroll { position:relative; height:min(76vh,900px); min-height:420px; overflow:auto; overscroll-behavior:contain; scroll-behavior:auto; }
+    .board { grid-template-columns:58px repeat(7,minmax(165px,1fr)); min-width:1213px; border-top:0; }
+    .day-head { position:sticky; top:0; z-index:4; height:112px; min-height:112px; background:#fdfefa; padding:12px 9px 8px; }
+    .weekend .day-head { background:#f8f9f5; }
+    .today .day-head { background:#f5f9f1; }
+    .day-list { display:block; position:relative; height:2880px; min-height:0; padding:0; background-image:linear-gradient(to bottom,#dfe6d7 1px,transparent 1px),linear-gradient(to bottom,#ebeee7 1px,transparent 1px); background-size:100% 120px,100% 30px; }
+    .day-add { display:block; width:100%; padding:3px 5px; margin-top:7px; font-size:10px; border-style:solid; }
+    .day-meta { margin-top:5px; }
+    .time-axis { position:sticky; left:0; z-index:5; background:#f8faf4; border-right:1px solid var(--line); }
+    .time-axis-head { position:sticky; top:0; z-index:6; height:112px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; background:#eef2e8; border-bottom:1px solid var(--line); font-size:11px; color:var(--muted); }
+    .time-axis-head small { font-size:9px; }
+    .time-axis-list { height:2880px; position:relative; }
+    .time-tick { position:absolute; right:7px; font-size:10px; font-variant-numeric:tabular-nums; transform:translateY(3px); color:#5f6d62; }
+    .time-tick:first-child { transform:none; }
+    .time-tick:last-child { transform:translateY(-100%); }
+    .day-list .event { position:absolute; display:flex; flex-direction:column; align-items:stretch; justify-content:flex-start; min-height:0; padding:3px 5px; border-radius:5px; overflow:hidden; cursor:grab; touch-action:none; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; transition:box-shadow .14s; }
+    .day-list .event:hover { transform:none; box-shadow:0 2px 8px #20322624; z-index:2; }
+    .day-list .event-time { font-size:9px; line-height:13px; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex-shrink:0; }
+    .day-list .event-title { font-size:11px; line-height:16px; margin-top:1px; flex-shrink:0; }
+    .day-list .event-note { margin-top:4px; font-size:10px; }
+    .day-list .event-foot { font-size:9px; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; flex-shrink:0; }
+    .event.compact .event-note,.event.compact .event-foot { display:none; }
+    .day-list .event.tiny { padding:0 4px; display:flex; flex-direction:row; align-items:center; }
+    .event.tiny .event-time,.event.tiny .event-note,.event.tiny .event-foot { display:none; }
+    .event.tiny .event-title { font-size:10px; line-height:14px; margin:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .event.press-pending { box-shadow:inset 0 0 0 2px #315c4366; }
+    .event.is-dragging { opacity:.25; pointer-events:none; }
+    .day-list .empty { position:absolute; top:990px; width:100%; padding:20px 9px; pointer-events:none; background:#f8faf4e8; }
+    .drag-preview { position:absolute; z-index:3; pointer-events:none; border:2px dashed var(--event-color); border-radius:5px; background:var(--event-bg); color:var(--event-ink); opacity:.92; overflow:hidden; padding:3px 5px; font-size:11px; font-weight:650; box-shadow:0 3px 12px #20322622; }
+    .drag-label { position:fixed; z-index:20; pointer-events:none; max-width:280px; border-radius:9px; padding:9px 13px; background:#263f2e; color:white; box-shadow:0 5px 20px #17382133; font-size:12px; line-height:1.65; }
+    .drag-label.invalid { background:#79412f; }
+    body.dragging,body.dragging * { cursor:grabbing !important; user-select:none !important; }
+    .drag-instructions { padding:9px 23px; border-top:1px solid var(--line); background:#f8faf4; color:var(--muted); font-size:11px; }
+    .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+    .context-menu { position:fixed; z-index:25; width:245px; max-width:calc(100vw - 16px); padding:7px; border:1px solid #d9e2d2; border-radius:12px; background:#fff; box-shadow:0 10px 35px #233d302b; }
+    .context-time { padding:5px 8px 8px; color:var(--muted); font-size:11px; border-bottom:1px solid var(--line); margin-bottom:5px; }
+    .context-action { display:flex; align-items:center; gap:9px; width:100%; padding:9px 10px; border:0; border-radius:7px; background:transparent; color:var(--ink); text-align:left; font-size:13px; }
+    .context-action:hover:not(:disabled),.context-action:focus-visible { background:#edf3e7; }
+    .context-action:disabled { opacity:1; color:#75816f; }
+    .context-action svg { width:16px; height:16px; }
+    .context-hint { margin:5px 8px 3px; color:var(--muted); font-size:11px; line-height:1.7; overflow-wrap:anywhere; }
+    .view-toggles { display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
+    .fold-summary { padding:8px 23px; border-top:1px solid var(--line); color:#52684b; background:#eef4e8; font-size:11px; }
+    .folded .day-list { background-image:none; }
+    .timeline-segment { position:absolute; left:0; width:100%; border-top:1px solid #dfe6d7; background-image:linear-gradient(to bottom,#dfe6d7 1px,transparent 1px),linear-gradient(to bottom,#ebeee7 1px,transparent 1px); background-size:100% 120px,100% 30px; pointer-events:none; }
+    .fold-gap { position:absolute; left:0; width:100%; height:24px; display:flex; align-items:center; justify-content:center; border-top:1px dashed #bdcdb2; border-bottom:1px dashed #bdcdb2; background:#ecf1e6; color:#596d4e; font-size:10px; pointer-events:none; }
+    .axis-fold { font-size:15px; letter-spacing:2px; }
+    .folded .day-list .event { z-index:1; }
+    .folded .day-list .event:hover { z-index:2; }
+    @media(max-width:720px) { .view-toggles { gap:10px; } .fold-summary { padding:8px 12px; font-size:10px; } }
+    @media(max-width:720px) { .board { grid-template-columns:48px repeat(7,185px); min-width:1343px; } .board-scroll { height:70vh; min-height:400px; } .day-head { padding-left:8px; padding-right:8px; } .drag-instructions { padding:9px 12px; font-size:10px; } .day-list .event-title { font-size:12px; } }
+    @media print { .board-scroll { height:auto; min-height:0; overflow:visible; } .board { min-width:0; grid-template-columns:repeat(7,1fr); } .time-axis,.drag-instructions,.drag-label,.context-menu,.timeline-segment,.fold-gap { display:none !important; } .day-head { position:static; height:auto; min-height:70px; } .day-list { height:auto !important; background:none; display:flex; flex-direction:column; padding:5px; gap:5px; } .day-list .event { position:static; width:auto !important; height:auto !important; min-height:35px; padding:5px; } .event.tiny .event-time { display:block; } .day-list .event.tiny { display:block; } .day-list .empty { position:static; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h2m2 0h2m-6 3h2"/></svg></span>一周计划<span class="brand-sub">A LITTLE, EVERY DAY</span></div>
+      <div class="top-actions"><span id="save-status" class="status" role="status">保存在当前浏览器</span><button class="btn ghost" id="export-btn" type="button">导出备份</button><button class="btn ghost" id="import-btn" type="button">导入</button><input id="import-file" type="file" accept="application/json,.json" hidden></div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title"><div><div class="eyebrow">YOUR WEEK, YOUR PACE</div><h1 id="page-title">给重要的事，留出时间。</h1><p>日语、健身、独立游戏。每一天有一点进展，也有一点留白。</p></div><div class="hero-aside"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 4c-8-1-15 3-15 9a6 6 0 0 0 6 6c6 0 10-7 9-15Z"/><path d="m4 21 11-11M8 17v-5m0 5h5"/></svg><div><strong>三个方向，交替安排轻重</strong><span>周一三五训练 · 周二四多留给学习与开发</span></div></div></section>
+      <div id="storage-notice" class="notice" role="alert" hidden></div>
+      <section class="stats" aria-label="本周三项重点投入" id="stats"></section>
+      <section class="planner" aria-label="可编辑周计划">
+        <div class="planner-head"><div class="week-nav"><div class="week-info"><h2 id="week-title"></h2><p id="week-subtitle"></p></div><button class="btn icon" id="prev-week" type="button" aria-label="上一周">‹</button><button class="btn icon" id="next-week" type="button" aria-label="下一周">›</button><button class="btn" id="this-week" type="button">本周</button></div><div class="actions"><button class="btn ghost" id="undo-btn" type="button" disabled>撤销</button><button class="btn" id="copy-week" type="button">复制到下周</button><button class="btn primary" id="add-event" type="button"><span aria-hidden="true">＋</span>添加安排</button></div></div>
+        <div class="toolbar"><div class="filters" role="group" aria-label="筛选计划分类"><button class="filter active" data-filter="all" aria-pressed="true" type="button">全部重点</button><button class="filter" data-filter="japanese" aria-pressed="false" type="button"><span class="filter-dot" style="background:#8b73b9"></span>日语</button><button class="filter" data-filter="fitness" aria-pressed="false" type="button"><span class="filter-dot" style="background:#6f9167"></span>健身</button><button class="filter" data-filter="game" aria-pressed="false" type="button"><span class="filter-dot" style="background:#c98b57"></span>独立游戏</button></div><div class="view-toggles"><label class="toggle"><input type="checkbox" id="show-routines">显示工作、通勤与起居</label><label class="toggle"><input type="checkbox" id="fold-routines">折叠工作、起居</label></div></div>
+        <div class="drag-instructions" id="drag-instructions">点击编辑 · 长按半秒拖动，按 5 分钟对齐 · 右键任务卡复制，右键目标时刻粘贴 · 两项重叠分两列，更多任务自动并排</div>
+        <div class="fold-summary" id="fold-summary" hidden>整周折叠：10:00–12:00、14:00–18:00、23:30–次日 07:50。原有安排与统计保留；跨时段任务分段显示。</div>
+        <div class="board-scroll" id="board-scroll" tabindex="0" role="region" aria-label="周计划时间轴，可上下及左右滚动" aria-describedby="drag-instructions"><div id="board" class="board"></div></div>
+        <div class="planner-foot"><span>拖动保留原时长 · 松手自动保存 · 可撤销 · 手机直接滑动可滚动日历</span><span id="week-total"></span></div>
+      </section>
+      <footer class="page-foot"><p>起始模板：08:00 起床，10:00–12:00 / 14:00–18:00 工作，23:30 上床，00:00 入睡。<br>周末暂不预设重点任务。日程仅保存在当前浏览器，建议定期导出备份。</p><div class="footer-meta"><button type="button" class="text-btn" id="print-btn">打印计划</button><span aria-hidden="true">·</span><button type="button" class="text-btn" id="reset-week">恢复本周初始安排</button></div></footer>
+    </main>
+  </div>
+  <dialog id="event-dialog" aria-labelledby="dialog-title">
+    <form id="event-form">
+      <div class="dialog-head"><div><h2 id="dialog-title">添加安排</h2><p id="dialog-subtitle">给这段时间一个具体的小目标。</p></div><button class="btn icon" type="button" id="close-dialog" aria-label="关闭编辑框">×</button></div>
+      <div class="form-body">
+        <div class="field"><label for="event-title">安排名称</label><input id="event-title" name="title" maxlength="80" required placeholder="例如：完成一个敌人击退效果" autocomplete="off"></div>
+        <div class="row"><div class="field"><label for="event-day">日期</label><select id="event-day" name="day"></select></div><div class="field"><label for="event-category">分类</label><select id="event-category" name="category"><option value="japanese">日语学习</option><option value="fitness">健身</option><option value="game">独立游戏开发</option><option value="routine">工作与生活</option></select></div></div>
+        <div class="row"><div class="field"><label for="event-start">开始时间</label><input type="time" id="event-start" name="start" required step="60" value="19:30"></div><div class="field"><label for="event-end">结束时间</label><input type="time" id="event-end" name="end" required step="60" value="20:30"></div></div>
+        <p class="hint" id="duration-hint">结束时间 00:00 表示当天 24:00；跨夜安排请拆到两天。</p>
+        <div class="field"><label for="event-notes">备注 <span style="font-weight:400;color:var(--muted)">（选填）</span></label><textarea id="event-notes" name="notes" maxlength="1000" placeholder="写下练习内容、训练项目，或这次想完成的一小步。"></textarea></div>
+        <details id="copy-details"><summary>同时复制到本周其他日期</summary><div class="copy-days" id="copy-days"></div><p class="hint">在选中的日期新增一份安排，已有安排保持原样。</p></details>
+        <div id="overlap-warning" class="overlap" role="status" hidden></div><div id="form-error" class="form-error" role="alert" hidden></div>
+      </div>
+      <div class="dialog-footer"><button class="btn danger" type="button" id="delete-event" hidden>删除安排</button><div class="actions"><button class="btn" type="button" id="cancel-dialog">取消</button><button class="btn primary" type="submit">保存安排</button></div></div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <div id="drag-label" class="drag-label" aria-hidden="true" hidden></div>
+  <div id="drag-announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <div id="context-menu" class="context-menu" role="menu" aria-label="任务复制与粘贴" aria-describedby="context-time context-hint" tabindex="-1" hidden>
+    <div id="context-time" class="context-time" role="presentation"></div>
+    <button id="context-copy" class="context-action" type="button" role="menuitem" tabindex="-1"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></svg>复制任务</button>
+    <button id="context-paste" class="context-action" type="button" role="menuitem" tabindex="-1"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="3" width="8" height="4" rx="1"/><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 12h8m-8 4h6"/></svg>粘贴到此处</button>
+    <p id="context-hint" class="context-hint" role="presentation"></p>
+  </div>
+  <script>
+    (() => {
+      'use strict';
+      const STORAGE_KEY = 'weekly-rhythm-planner-v1';
+      const DAY_NAMES = ['周一','周二','周三','周四','周五','周六','周日'];
+      const CATEGORIES = {
+        japanese:{name:'日语学习',short:'日语',color:'#9078b9',bg:'#f2eef9',ink:'#5b447d',icon:'あ'},
+        fitness:{name:'力量与有氧',short:'健身',color:'#78926c',bg:'#eaf1e5',ink:'#45613a',icon:'fitness'},
+        game:{name:'独立游戏开发',short:'开发',color:'#c79061',bg:'#fff0e3',ink:'#89552d',icon:'game'},
+        routine:{name:'工作与生活',short:'日常',color:'#b6beb0',bg:'#f0f2ed',ink:'#5f6c58',icon:''}
+      };
+      const $ = (id) => document.getElementById(id);
+      const clone = (value) => JSON.parse(JSON.stringify(value));
+      const uid = () => globalThis.crypto?.randomUUID?.() || 'e' + Date.now().toString(36) + Math.random().toString(36).slice(2);
+      const pad = (n) => String(n).padStart(2,'0');
+      const dateKey = (d) => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+      const parseDate = (s) => { const [y,m,d] = s.split('-').map(Number); return new Date(y,m-1,d,12); };
+      const addDays = (key,n) => { const d=parseDate(key); d.setDate(d.getDate()+n); return dateKey(d); };
+      const monday = (date) => { const d=new Date(date); d.setHours(12,0,0,0); d.setDate(d.getDate()-(d.getDay()+6)%7); return dateKey(d); };
+      const timeText = (min) => `${pad(Math.floor(min/60))}:${pad(min%60)}`;
+      const inputTime = (min) => min===1440?'00:00':timeText(min);
+      const toMinutes = (s) => { if(!/^\d{2}:\d{2}$/.test(s)) return NaN; const [h,m]=s.split(':').map(Number); return h<24&&m<60?h*60+m:NaN; };
+      const duration = (min) => min>=60 ? `${Math.floor(min/60)} 小时${min%60?' '+min%60+' 分钟':''}` : `${min} 分钟`;
+      const icon = (kind) => kind==='fitness'
+        ? '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9v6m3-9v12m12-12v12m3-9v6M6 12h12"/></svg>'
+        : '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 7h10c2 0 3 2 4 7s-2 6-5 2H8c-3 4-6 3-5-2s2-7 4-7Z"/><path d="M8 10v5m-2.5-2.5h5m5.5-1.5v.1m2 2v.1"/></svg>';
+      const MINUTE_HEIGHT=2, DRAG_DELAY=450, SNAP_MINUTES=5, FOLD_GAP=24;
+      const FOLDED_RANGES=[[470,600],[720,840],[1080,1410]];
+      let editingId=null, history=[], toastTimer, storageBlocked=false, state;
+      let drag=null, dragFrame=0, suppressClickUntil=0, timelineInitialized=false, lastFolded=false;
+      let copiedTask=null, contextTarget=null, contextInvoker=null;
+
+      function defaultEvents() {
+        const events=[];
+        const add=(day,start,end,title,category='routine',notes='')=>events.push({id:uid(),day,start:toMinutes(start),end:end==='24:00'?1440:toMinutes(end),title,category,notes});
+        for(let day=0;day<7;day++) {
+          const training=[0,2,4].includes(day);
+          add(day,'00:00','08:00','睡眠','routine','00:00 入睡，08:00 起床。');
+          add(day,'08:00','08:40','起床 · 洗漱 · 早餐');
+          if(day<5) {
+            add(day,'08:40','09:00','单词复习','japanese','复习旧词，优先巩固容易忘的内容。');
+            add(day,'09:00','09:30','整理 · 出门 · 候车');
+            add(day,'09:30','09:50','学习新单词','japanese','地铁通勤时学习，20 分钟。');
+            add(day,'09:50','10:00','多邻国','japanese','地铁通勤时完成，10 分钟。');
+            add(day,'10:00','12:00','上午工作');
+            add(day,'12:00','12:30','午餐');
+            add(day,'12:30','13:00','午睡 · 自由休息');
+            add(day,'13:00',training?'13:30':'14:00','语法综合练习','japanese',training?'30 分钟，集中完成一组练习。':'60 分钟，学习新内容并做配套练习。');
+            if(training) add(day,'13:30','14:00','休息 · 机动时间');
+            add(day,'14:00','18:00','下午工作');
+            add(day,'18:00','18:30','地铁回家','routine','放空一下，不安排额外学习。');
+            add(day,'18:30','19:00','晚餐');
+            if(training) {
+              add(day,'19:00','19:30','休息 · 换衣 · 去健身房');
+              add(day,'19:30','21:00','力量＋有氧','fitness','90 分钟训练，具体内容按自己的训练计划调整。');
+              add(day,'21:00','21:30','回家 · 洗澡');
+              add(day,'21:30','22:00','推进一个小任务','game','30 分钟：修复一个问题，或完成一个功能的小步骤。');
+              add(day,'22:00','23:00','自由时间');
+            } else {
+              add(day,'19:00','19:30','散步 · 休息');
+              add(day,'19:30','20:30','独立游戏开发','game','留给需要专注的功能实现、设计或调试。');
+              add(day,'20:30','21:00','休息 · 洗澡');
+              add(day,'21:00','21:30','语法巩固与纠错','japanese','30 分钟，复盘午间练习，整理错题。');
+              add(day,'21:30','23:00','自由时间');
+            }
+          }
+          add(day,'23:00','23:30','睡前放松 · 准备明天');
+          add(day,'23:30','24:00','上床 · 准备入睡');
+        }
+        return events;
+      }
+
+      function validateState(raw) {
+        if(!raw||typeof raw!=='object'||raw.version!==1||!raw.weeks||typeof raw.weeks!=='object'||Array.isArray(raw.weeks)) throw Error('备份格式不正确，请选择本页面导出的 JSON 文件。');
+        const validMonday=(key)=>typeof key==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(key)&&dateKey(parseDate(key))===key&&monday(parseDate(key))===key;
+        if(!validMonday(raw.activeWeek)) throw Error('备份中的周日期无效。');
+        const entries=Object.entries(raw.weeks);
+        if(entries.length>520) throw Error('备份中的周数过多（最多 520 周）。');
+        const weeks={};
+        for(const [key,week] of entries) {
+          if(!validMonday(key)||!week||!Array.isArray(week.events)||week.events.length>2000) throw Error('备份中的日程列表或日期无效。');
+          const seen=new Set();
+          const events=week.events.map(e=>{
+            if(!e||typeof e.id!=='string'||!e.id||e.id.length>100||seen.has(e.id)||!Number.isInteger(e.day)||e.day<0||e.day>6||typeof e.category!=='string'||!Object.hasOwn(CATEGORIES,e.category)||!Number.isInteger(e.start)||!Number.isInteger(e.end)||e.start<0||e.start>=1440||e.end>1440||e.end<=e.start||typeof e.title!=='string'||!e.title.trim()||e.title.length>80||typeof e.notes!=='string'||e.notes.length>1000) throw Error('备份含有不合法的安排，请检查名称、分类或起止时间。');
+            seen.add(e.id);
+            return {id:e.id,day:e.day,start:e.start,end:e.end,title:e.title.trim(),category:e.category,notes:e.notes};
+          });
+          weeks[key]={events};
+        }
+        if(!Object.hasOwn(weeks,raw.activeWeek)) throw Error('备份缺少当前周的安排。');
+        return {version:1,activeWeek:raw.activeWeek,weeks,view:{filter:['all','japanese','fitness','game'].includes(raw.view?.filter)?raw.view.filter:'all',showRoutines:raw.view?.showRoutines===true,foldRoutines:raw.view?.foldRoutines===true}};
+      }
+
+      function newState() { const activeWeek=monday(new Date()); return {version:1,activeWeek,weeks:{[activeWeek]:{events:defaultEvents()}},view:{filter:'all',showRoutines:false,foldRoutines:false}}; }
+      function load() {
+        try { const stored=localStorage.getItem(STORAGE_KEY); state=stored?validateState(JSON.parse(stored)):newState(); }
+        catch(error) { state=newState(); storageBlocked=true; showStorageError('无法读取原有记录。已临时展示初始计划，原记录不会被覆盖；你仍可编辑并导出备份。'); }
+      }
+      function showStorageError(message) { $('save-status').textContent='尚未保存到浏览器'; $('save-status').classList.add('error'); $('storage-notice').textContent=message; $('storage-notice').hidden=false; }
+      function persist() {
+        if(storageBlocked) { showStorageError('当前处于临时编辑状态，请用「导出备份」保存。成功导入有效备份后会重新尝试浏览器保存。'); return false; }
+        try { localStorage.setItem(STORAGE_KEY,JSON.stringify(state)); $('save-status').textContent='已自动保存到此浏览器'; $('save-status').classList.remove('error'); $('storage-notice').hidden=true; return true; }
+        catch(error) { showStorageError('浏览器未能保存，当前修改仍在页面中。关闭前请导出备份，避免丢失。'); return false; }
+      }
+      function remember() { history.push(clone(state)); if(history.length>20)history.shift(); }
+      function commit(message) { const saved=persist(); render(); if(message)toast(message+(saved?'':'；请导出备份保存')); }
+      function toast(message) { clearTimeout(toastTimer); $('toast').textContent=message; $('toast').hidden=false; toastTimer=setTimeout(()=>$('toast').hidden=true,4000); }
+      function events() { return state.weeks[state.activeWeek].events; }
+      function minutesFor(category,day) { return events().filter(e=>e.category===category&&(day===undefined||e.day===day)).reduce((sum,e)=>sum+e.end-e.start,0); }
+      function element(tag,className,text) { const node=document.createElement(tag); if(className)node.className=className; if(text!==undefined)node.textContent=text; return node; }
+
+      // One mapping drives rendering, pointer placement and drag offsets.
+      function timelineSegments() {
+        let top=0;
+        return (state.view.foldRoutines?FOLDED_RANGES:[[0,1440]]).map(([start,end],index)=>{
+          const segment={start,end,top,index};top+=(end-start)*MINUTE_HEIGHT+FOLD_GAP;return segment;
+        });
+      }
+      function timelineHeight() { const last=timelineSegments().at(-1);return last.top+(last.end-last.start)*MINUTE_HEIGHT; }
+      function visibleMinute(minute) { return timelineSegments().some(segment=>minute>=segment.start&&minute<segment.end); }
+      function minuteAtY(y) {
+        for(const segment of timelineSegments())if(y>=segment.top&&y<segment.top+(segment.end-segment.start)*MINUTE_HEIGHT)return segment.start+(y-segment.top)/MINUTE_HEIGHT;
+        return null;
+      }
+      function snappedMinuteAtY(y) {
+        const minute=minuteAtY(y);if(minute===null)return null;
+        const snapped=Math.max(0,Math.min(1435,Math.round(minute/SNAP_MINUTES)*SNAP_MINUTES));
+        return visibleMinute(snapped)?snapped:null;
+      }
+      function eventParts(event) {
+        return timelineSegments().map(segment=>{
+          const start=Math.max(event.start,segment.start),end=Math.min(event.end,segment.end);
+          return {id:event.id+':'+segment.index,eventId:event.id,day:event.day,index:segment.index,start,end,top:segment.top+(start-segment.start)*MINUTE_HEIGHT};
+        }).filter(part=>part.end>part.start);
+      }
+      function addFoldGaps(container,axis=false) {
+        const segments=timelineSegments();
+        for(let index=0;index<segments.length-1;index++) {
+          const current=segments[index],next=segments[index+1],gap=element('div','fold-gap'+(axis?' axis-fold':''),axis?'···':`${timeText(current.end)}–${timeText(next.start)} 已折叠`);
+          gap.style.top=(current.top+(current.end-current.start)*MINUTE_HEIGHT)+'px';gap.dataset.start=String(current.end);gap.dataset.end=String(next.start);gap.setAttribute('aria-hidden','true');container.append(gap);
+        }
+      }
+
+      function closeContextMenu(restoreFocus=false) {
+        const invoker=contextInvoker;
+        $('context-menu').hidden=true;contextTarget=null;contextInvoker=null;
+        if(restoreFocus&&invoker?.isConnected)invoker.focus({preventScroll:true});
+      }
+      function pasteUnavailable(target=contextTarget) {
+        if(!copiedTask)return '先在任务卡上右键，选择「复制任务」。';
+        if(!target||target.week!==state.activeWeek)return '请重新选择要粘贴的日期和时间。';
+        if(!visibleMinute(target.start))return '该时刻已折叠，请选择可见时刻或关闭折叠开关。';
+        if(events().length>=2000)return '这一周安排过多，请先删除不再需要的事项。';
+        if(target.start+copiedTask.end-copiedTask.start>1440)return `该任务需要 ${duration(copiedTask.end-copiedTask.start)}，此时粘贴会超过 24:00，请选择更早的时刻。`;
+        return '';
+      }
+      function openContextMenu(event,list) {
+        event.preventDefault();event.stopPropagation();
+        // A touch long press belongs to dragging, not the desktop context menu.
+        if(event.pointerType==='touch'||drag?.pointerType==='touch'||drag?.phase==='dragging'||drag?.phase==='panning')return;
+        if(drag)finishDrag(false);
+        const card=event.target.closest('.event'),item=card?events().find(e=>e.id===card.dataset.eventId):null;
+        const rect=list.getBoundingClientRect(),keyboard=event.clientX===0&&event.clientY===0;
+        let start=keyboard&&item?Number(card.dataset.start):snappedMinuteAtY(event.clientY-rect.top);
+        if(start===null){
+          if(!item){closeContextMenu();toast('此时段已折叠，请选择可见时刻。');return;}
+          // Copy stays available on a card even if rounding its edge lands in a fold.
+          const minute=minuteAtY(event.clientY-rect.top);
+          start=minute===null?Number(card.dataset.start):Math.round(minute/SNAP_MINUTES)*SNAP_MINUTES;
+        }
+        closeContextMenu();contextTarget={week:state.activeWeek,day:Number(list.dataset.day),start,itemId:item?.id||null};
+        contextInvoker=card||$('board-scroll');
+        const date=parseDate(addDays(state.activeWeek,contextTarget.day));
+        $('context-time').textContent=`${DAY_NAMES[contextTarget.day]} · ${date.getMonth()+1}月${date.getDate()}日 ${timeText(start)}`;
+        $('context-copy').hidden=!item;
+        const unavailable=pasteUnavailable();$('context-paste').disabled=Boolean(unavailable);
+        $('context-hint').textContent=unavailable||`已复制：${copiedTask.title} · ${duration(copiedTask.end-copiedTask.start)}`;
+        const menu=$('context-menu');menu.hidden=false;
+        const anchor=card?.getBoundingClientRect(),x=keyboard&&anchor?anchor.left+12:event.clientX,y=keyboard&&anchor?Math.max(8,anchor.top+12):event.clientY;
+        menu.style.left=Math.max(8,Math.min(window.innerWidth-menu.offsetWidth-8,x))+'px';
+        menu.style.top=Math.max(8,Math.min(window.innerHeight-menu.offsetHeight-8,y))+'px';
+        (menu.querySelector('button:not([hidden]):not(:disabled)')||menu).focus({preventScroll:true});
+      }
+      function copyContextTask() {
+        if(!contextTarget||contextTarget.week!==state.activeWeek)return;
+        const item=events().find(e=>e.id===contextTarget.itemId);if(!item)return;
+        copiedTask={...item};closeContextMenu(true);
+        toast(`已复制「${item.title}」，在目标时刻右键粘贴`);
+      }
+      function pasteContextTask() {
+        const unavailable=pasteUnavailable();if(unavailable){toast(unavailable);return;}
+        const target={...contextTarget},copy={...copiedTask,id:uid(),day:target.day,start:target.start,end:target.start+copiedTask.end-copiedTask.start};
+        remember();events().push(copy);closeContextMenu();
+        // Pasting and dragging respect the current routine visibility preference.
+        const suffix=isVisible(copy)?'':'（当前筛选下隐藏）';
+        commit(`已粘贴到${DAY_NAMES[copy.day]} ${timeText(copy.start)}–${timeText(copy.end)}${suffix}，可撤销`);
+      }
+      $('context-copy').addEventListener('click',copyContextTask);
+      $('context-paste').addEventListener('click',pasteContextTask);
+      $('context-menu').addEventListener('contextmenu',event=>{event.preventDefault();event.stopPropagation();});
+      $('context-menu').addEventListener('keydown',event=>{
+        if(event.key==='Escape'||event.key==='Tab'){
+          if(event.key==='Escape'){event.preventDefault();event.stopPropagation();}
+          closeContextMenu(true);return;
+        }
+        if(!['ArrowDown','ArrowUp','Home','End'].includes(event.key))return;
+        event.preventDefault();
+        const options=Array.from($('context-menu').querySelectorAll('button:not([hidden]):not(:disabled)'));
+        if(!options.length)return;
+        const index=options.indexOf(document.activeElement),next=event.key==='Home'?0:event.key==='End'?options.length-1:(index+(event.key==='ArrowDown'?1:-1)+options.length)%options.length;
+        options[next].focus({preventScroll:true});
+      });
+      document.addEventListener('pointerdown',event=>{if(!$('context-menu').hidden&&!$('context-menu').contains(event.target))closeContextMenu();},true);
+      document.addEventListener('scroll',()=>closeContextMenu(),{capture:true,passive:true});
+      window.addEventListener('resize',()=>closeContextMenu());
+
+      function isVisible(event) {
+        return (event.category==='routine'?state.view.showRoutines:state.view.filter==='all'||event.category===state.view.filter)&&eventParts(event).length>0;
+      }
+      // Connected overlap groups share a column count; touching endpoints do not overlap.
+      function layoutEvents(items) {
+        const result=new Map();let group=[],groupEnd=-1;
+        function finishGroup() {
+          const ends=[],placements=[];
+          for(const event of group) {
+            let lane=ends.findIndex(end=>end<=event.start);
+            if(lane<0)lane=ends.length;
+            ends[lane]=event.end;placements.push({event,lane});
+          }
+          for(const {event,lane} of placements)result.set(event.id,{lane,columns:ends.length});
+        }
+        for(const event of [...items].sort((a,b)=>a.start-b.start||b.end-a.end||a.id.localeCompare(b.id))) {
+          if(group.length&&event.start>=groupEnd){finishGroup();group=[];groupEnd=-1;}
+          group.push(event);groupEnd=Math.max(groupEnd,event.end);
+        }
+        if(group.length)finishGroup();return result;
+      }
+      function positionCard(card,part,placement) {
+        const {lane,columns}=placement;
+        card.style.top=part.top+'px';
+        card.style.height=Math.max(2,(part.end-part.start)*MINUTE_HEIGHT-2)+'px';
+        card.style.left=`calc(${lane/columns*100}% + ${6-lane/columns*12}px)`;
+        card.style.width=`calc(${100/columns}% - ${12/columns+3}px)`;
+        card.dataset.lane=String(lane);card.dataset.columns=String(columns);
+        card.dataset.start=String(part.start);card.dataset.end=String(part.end);card.dataset.segmentIndex=String(part.index);
+      }
+      function applyTimelineLayout(preview=null) {
+        const projected=events().filter(isVisible).map(event=>preview&&event.id===preview.id?preview:event);
+        const parts=projected.flatMap(eventParts);
+        const placements=new Map();
+        for(let day=0;day<7;day++)for(const [id,value] of layoutEvents(parts.filter(e=>e.day===day)))placements.set(id,value);
+        const byId=new Map(parts.map(part=>[part.id,part]));
+        document.querySelectorAll('.day-list .event').forEach(card=>{
+          if(preview&&card.dataset.eventId===preview.id)return;
+          const part=byId.get(card.dataset.eventId+':'+card.dataset.segmentIndex);if(part)positionCard(card,part,placements.get(part.id));
+        });
+        if(preview&&drag?.previews)for(const node of drag.previews){const part=byId.get(preview.id+':'+node.dataset.segmentIndex);if(part)positionCard(node,part,placements.get(part.id));}
+      }
+
+      function renderStats() {
+        const container=$('stats'); container.replaceChildren();
+        for(const category of ['japanese','fitness','game']) {
+          const config=CATEGORIES[category], total=minutesFor(category), activeDays=new Set(events().filter(e=>e.category===category).map(e=>e.day)).size;
+          const card=element('article','stat'); card.dataset.cat=category;
+          const content=element('div');
+          const label=element('div','stat-label'); const symbol=element('span','stat-icon'); symbol.setAttribute('aria-hidden','true');
+          if(category==='japanese')symbol.textContent='あ';else symbol.innerHTML=icon(category);
+          label.append(symbol,document.createTextNode(config.name));
+          const value=element('div','stat-value'); value.setAttribute('aria-label',duration(total));
+          if(total>=60) { value.append(document.createTextNode(String(Math.floor(total/60))),element('small','','小时')); if(total%60)value.append(document.createTextNode(String(total%60)),element('small','','分')); }
+          else value.append(document.createTextNode(String(total)),element('small','','分钟'));
+          content.append(label,value,element('div','stat-note',`本周计划 · ${activeDays} 天有安排`));
+          const spark=element('div','spark'); spark.setAttribute('aria-hidden','true');
+          const totals=DAY_NAMES.map((_,i)=>minutesFor(category,i)); const max=Math.max(...totals,1);
+          totals.forEach((n,i)=>{const bar=element('span');bar.style.height=Math.max(5,n/max*43)+'px';bar.style.opacity=n?'1':'.3';bar.title=DAY_NAMES[i]+' '+duration(n);spark.append(bar);});
+          card.append(content,spark); container.append(card);
+        }
+      }
+
+      function render() {
+        closeContextMenu();
+        if(drag)finishDrag(false);
+        const scroller=$('board-scroll'),oldTop=scroller.scrollTop,oldLeft=scroller.scrollLeft;
+        const folded=state.view.foldRoutines===true,segments=timelineSegments(),height=timelineHeight(),foldChanged=lastFolded!==folded;
+        const start=parseDate(state.activeWeek), end=parseDate(addDays(state.activeWeek,6));
+        $('week-title').textContent=`${start.getMonth()+1} 月 ${start.getDate()} 日 — ${end.getMonth()+1} 月 ${end.getDate()} 日`;
+        $('week-subtitle').textContent=`${start.getFullYear()}${end.getFullYear()!==start.getFullYear()?' — '+end.getFullYear():''} · ${state.activeWeek===monday(new Date())?'当前一周':'每周独立保存'}`;
+        $('show-routines').checked=state.view.showRoutines;
+        $('fold-routines').checked=folded;$('fold-summary').hidden=!folded;
+        document.querySelectorAll('[data-filter]').forEach(button=>{const active=button.dataset.filter===state.view.filter;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
+        $('undo-btn').disabled=!history.length;
+        renderStats();
+        const board=$('board'); board.replaceChildren();board.classList.toggle('folded',folded);
+        const axis=element('div','time-axis'),axisHead=element('div','time-axis-head'),axisList=element('div','time-axis-list');
+        axis.setAttribute('aria-hidden','true');axisHead.append(element('span','','时间'),element('small','',folded?'已折叠':'全天'));axisList.style.height=height+'px';
+        segments.forEach((segment,index)=>{
+          const ticks=new Set([segment.start]);
+          for(let minute=Math.ceil(segment.start/60)*60;minute<segment.end;minute+=60)ticks.add(minute);
+          if(index===segments.length-1)ticks.add(segment.end);
+          for(const minute of [...ticks].sort((a,b)=>a-b)){
+            const tick=element('span','time-tick',timeText(minute));tick.dataset.minute=String(minute);tick.style.top=(segment.top+(minute-segment.start)*MINUTE_HEIGHT)+'px';
+            if(index===segments.length-1&&minute===segment.end)tick.style.transform='translateY(-100%)';
+            axisList.append(tick);
+          }
+        });
+        addFoldGaps(axisList,true);
+        axis.append(axisHead,axisList);board.append(axis);
+        for(let day=0;day<7;day++) {
+          const key=addDays(state.activeWeek,day), d=parseDate(key), all=events().filter(e=>e.day===day), total=all.filter(e=>e.category!=='routine').reduce((n,e)=>n+e.end-e.start,0);
+          const column=element('section','day'+(day>=5?' weekend':'')+(key===dateKey(new Date())?' today':'')); column.dataset.day=String(day);column.setAttribute('aria-label',`${DAY_NAMES[day]} ${d.getMonth()+1}月${d.getDate()}日`);
+          const head=element('div','day-head'),heading=element('div','day-heading');
+          heading.append(element('span','day-name',DAY_NAMES[day]),element('span','day-date',String(d.getDate())));
+          const meta=element('div','day-meta');
+          meta.append(element('span','day-type',all.some(e=>e.category==='fitness')?'训练日':day<5?'学习与创作':'自由安排'),element('span','',total?duration(total):'留一点空白'));
+          head.append(heading,meta);
+          const list=element('div','day-list');list.dataset.day=String(day);list.dataset.minuteHeight=String(MINUTE_HEIGHT);
+          list.dataset.segments=JSON.stringify(segments);list.style.height=height+'px';
+          if(folded)for(const segment of segments){
+            const background=element('div','timeline-segment');background.style.top=segment.top+'px';background.style.height=((segment.end-segment.start)*MINUTE_HEIGHT)+'px';
+            background.style.backgroundPosition=`0 ${-(segment.start*MINUTE_HEIGHT)%120}px,0 ${-(segment.start*MINUTE_HEIGHT)%30}px`;background.setAttribute('aria-hidden','true');list.append(background);
+          }
+          addFoldGaps(list);
+          list.addEventListener('contextmenu',event=>openContextMenu(event,list));
+          const visible=all.filter(isVisible).sort((a,b)=>a.start-b.start||a.end-b.end||a.title.localeCompare(b.title));
+          visible.forEach(event=>eventParts(event).forEach(part=>{
+            const config=CATEGORIES[event.category], card=element('button','event');card.type='button';card.dataset.eventId=event.id;card.dataset.category=event.category;
+            card.dataset.segmentIndex=String(part.index);
+            const partial=part.start!==event.start||part.end!==event.end;
+            card.style.setProperty('--event-color',config.color);card.style.setProperty('--event-bg',config.bg);card.style.setProperty('--event-ink',config.ink);
+            card.setAttribute('aria-label',`编辑 ${DAY_NAMES[day]} ${timeText(event.start)}至${timeText(event.end)} ${event.title}${partial?'，此处显示 '+timeText(part.start)+'至'+timeText(part.end):''}`);
+            card.setAttribute('aria-describedby','drag-instructions');card.draggable=false;
+            card.title=`${DAY_NAMES[day]} ${timeText(event.start)}–${timeText(event.end)} · ${event.title}${partial?'\n部分时段已折叠，完整时长 '+duration(event.end-event.start):''}${event.notes?'\n'+event.notes:''}\n点击编辑，长按拖动，右键复制`;
+            card.classList.toggle('compact',part.end-part.start<45);card.classList.toggle('tiny',part.end-part.start<18);
+            card.append(element('span','event-time',`${timeText(part.start)} – ${timeText(part.end)}`),element('span','event-title',event.title+(part.start>event.start?'（续）':'')));
+            if(event.notes)card.append(element('span','event-note',event.notes));
+            card.append(element('span','event-foot',`${config.short} · ${partial?'完整 ':''}${duration(event.end-event.start)}`));
+            card.addEventListener('click',click=>{if(click.detail&&Date.now()<suppressClickUntil){click.preventDefault();return;}openEditor(day,event.id);});
+            card.addEventListener('pointerdown',pressCard);
+            card.addEventListener('dragstart',event=>event.preventDefault());list.append(card);
+          }));
+          if(!visible.length) {
+            const empty=element('div','empty');
+            if(folded)empty.style.top='40px';
+            empty.innerHTML='<svg aria-hidden="true" viewBox="0 0 32 32" fill="none" stroke="currentColor"><path d="M16 5v5m0 12v5M5 16h5m12 0h5M8 8l3 3m10 10 3 3M8 24l3-3M21 11l3-3"/><circle cx="16" cy="16" r="5"/></svg>';
+            empty.append(element('strong','',folded?'当前视图没有安排':day>=5?'留一点空白，也很好':'这一天还没有安排'),element('p','',folded?'可关闭折叠，查看其他时段。':state.view.filter==='all'?'可以休息，也可以留给\n想推进的小事。':'当前分类没有安排。'));list.append(empty);
+          }
+          const add=element('button','day-add','＋ 添加安排');add.type='button';add.setAttribute('aria-label',`为${DAY_NAMES[day]}添加安排`);add.addEventListener('click',()=>openEditor(day));head.append(add);
+          column.append(head,list);board.append(column);
+        }
+        applyTimelineLayout();
+        scroller.scrollTop=timelineInitialized&&!foldChanged?oldTop:folded?0:8*60*MINUTE_HEIGHT;scroller.scrollLeft=oldLeft;timelineInitialized=true;lastFolded=folded;
+        const total=['japanese','fitness','game'].reduce((n,c)=>n+minutesFor(c),0);
+        $('week-total').textContent='本周重点投入 '+duration(total)+(folded?'（含折叠时段）':'');
+      }
+
+      function pressCard(event) {
+        if(event.button!==0||!event.isPrimary||$('event-dialog').open)return;
+        closeContextMenu();
+        if(drag)finishDrag(false);
+        const card=event.currentTarget,item=events().find(e=>e.id===card.dataset.eventId);
+        if(!item)return;
+        const listRect=card.parentElement.getBoundingClientRect(),grabMinute=minuteAtY(event.clientY-listRect.top);
+        if(grabMinute===null)return;
+        const sourceCards=Array.from(document.querySelectorAll('.event')).filter(node=>node.dataset.eventId===item.id);
+        const current={pointerId:event.pointerId,pointerType:event.pointerType,card,sourceCards,item:{...item},week:state.activeWeek,phase:'pending',x:event.clientX,y:event.clientY,originX:event.clientX,originY:event.clientY,lastX:event.clientX,lastY:event.clientY,grabMinutes:grabMinute-item.start,preview:null,previews:[],target:null,moved:false,timer:0};
+        drag=current;card.classList.add('press-pending');
+        try{card.setPointerCapture(event.pointerId);}catch(error){}
+        current.timer=setTimeout(()=>{
+          if(drag!==current||current.phase!=='pending')return;
+          current.phase='dragging';card.classList.remove('press-pending');sourceCards.forEach(node=>node.classList.add('is-dragging'));
+          document.body.classList.add('dragging');
+          const config=CATEGORIES[item.category];current.preview=element('div','drag-preview');
+          current.preview.style.setProperty('--event-color',config.color);current.preview.style.setProperty('--event-bg',config.bg);current.preview.style.setProperty('--event-ink',config.ink);
+          current.preview.setAttribute('aria-hidden','true');
+          current.previews=[current.preview];
+          $('drag-label').hidden=false;$('drag-announcement').textContent='已拿起「'+item.title+'」，拖到目标时间后松手；按 Escape 取消。';
+          updateDragTarget();dragFrame=requestAnimationFrame(autoScrollDrag);
+        },DRAG_DELAY);
+      }
+      function movePointer(event) {
+        if(!drag||event.pointerId!==drag.pointerId)return;
+        drag.x=event.clientX;drag.y=event.clientY;
+        if(drag.phase==='pending'&&Math.hypot(drag.x-drag.originX,drag.y-drag.originY)>8) {
+          clearTimeout(drag.timer);drag.card.classList.remove('press-pending');suppressClickUntil=Date.now()+650;
+          if(drag.pointerType==='touch')drag.phase='panning';else{finishDrag(false);return;}
+        }
+        if(drag.phase==='panning') {
+          const scroller=$('board-scroll'),deltaX=drag.lastX-drag.x,deltaY=drag.lastY-drag.y,oldTop=scroller.scrollTop;
+          scroller.scrollLeft+=deltaX;scroller.scrollTop+=deltaY;
+          const remaining=deltaY-(scroller.scrollTop-oldTop);if(Math.abs(remaining)>1)window.scrollBy(0,remaining);
+          event.preventDefault();
+        } else if(drag.phase==='dragging') {
+          drag.moved ||= Math.hypot(drag.x-drag.originX,drag.y-drag.originY)>3;
+          event.preventDefault();updateDragTarget();
+        }
+        if(drag){drag.lastX=drag.x;drag.lastY=drag.y;}
+      }
+      function updateDragTarget() {
+        if(!drag||drag.phase!=='dragging')return;
+        const scroller=$('board-scroll'),bounds=scroller.getBoundingClientRect(),axis=$('board').querySelector('.time-axis').getBoundingClientRect();
+        let target=null;
+        if(drag.x>=Math.max(bounds.left,axis.right)&&drag.x<bounds.right&&drag.y>bounds.top&&drag.y<bounds.bottom) {
+          for(const list of document.querySelectorAll('.day-list')) {
+            const rect=list.getBoundingClientRect(),head=list.previousElementSibling.getBoundingClientRect();
+            if(drag.x>=rect.left&&drag.x<rect.right&&drag.y>=Math.max(rect.top,head.bottom)&&drag.y<Math.min(rect.bottom,bounds.bottom)) {
+              const day=Number(list.dataset.day),length=drag.item.end-drag.item.start;
+              const pointerMinute=minuteAtY(drag.y-rect.top);if(pointerMinute===null)break;
+              let start=Math.round((pointerMinute-drag.grabMinutes)/SNAP_MINUTES)*SNAP_MINUTES;
+              start=Math.max(0,Math.min(1440-length,start));
+              if(!drag.moved&&day===drag.item.day)start=drag.item.start;
+              else if(!visibleMinute(start))break;
+              target={...drag.item,day,start,end:start+length};
+              const parts=eventParts(target);
+              while(drag.previews.length>parts.length)drag.previews.pop().remove();
+              while(drag.previews.length<parts.length)drag.previews.push(drag.preview.cloneNode(false));
+              drag.previews.forEach((node,index)=>{node.dataset.segmentIndex=String(parts[index].index);node.hidden=false;node.textContent=target.title;list.append(node);});break;
+            }
+          }
+        }
+        drag.target=target;
+        const label=$('drag-label');label.classList.toggle('invalid',!target);
+        if(target) {
+          applyTimelineLayout(target);
+          const conflicts=events().filter(e=>isVisible(e)&&e.id!==target.id&&e.day===target.day&&e.start<target.end&&e.end>target.start);
+          label.textContent=`${DAY_NAMES[target.day]} ${timeText(target.start)}–${timeText(target.end)}${conflicts.length?' · 与 '+conflicts.length+' 项并行':''}`;
+        } else {
+          drag.previews.forEach(node=>node.hidden=true);applyTimelineLayout();
+          label.textContent=state.view.foldRoutines?'移到未折叠的时刻，或松手取消':'移回日历时间区域，或松手取消';
+        }
+        label.style.left=Math.max(8,Math.min(window.innerWidth-label.offsetWidth-8,drag.x+14))+'px';
+        label.style.top=Math.max(8,Math.min(window.innerHeight-label.offsetHeight-8,drag.y+20))+'px';
+      }
+      function autoScrollDrag() {
+        if(!drag||drag.phase!=='dragging')return;
+        if(!drag.moved){dragFrame=requestAnimationFrame(autoScrollDrag);return;}
+        const scroller=$('board-scroll'),bounds=scroller.getBoundingClientRect(),axis=$('board').querySelector('.time-axis').getBoundingClientRect();
+        const top=Math.max(8,bounds.top+112),bottom=Math.min(bounds.bottom,window.innerHeight-8),left=Math.max(bounds.left,axis.right),right=Math.min(bounds.right,window.innerWidth-8);
+        if(drag.x>=bounds.left&&drag.x<=bounds.right&&drag.y>=bounds.top&&drag.y<=bounds.bottom) {
+          const speed=(point,min,max)=>point<min+36?-Math.min(14,(min+36-point)*.4):point>max-36?Math.min(14,(point-max+36)*.4):0;
+          const dx=speed(drag.x,left,right),dy=speed(drag.y,top,bottom),beforeX=scroller.scrollLeft,beforeY=scroller.scrollTop;
+          scroller.scrollLeft+=dx;scroller.scrollTop+=dy;
+          if(scroller.scrollLeft!==beforeX||scroller.scrollTop!==beforeY){drag.moved=true;updateDragTarget();}
+        }
+        dragFrame=requestAnimationFrame(autoScrollDrag);
+      }
+      function finishDrag(save) {
+        if(!drag)return;
+        const current=drag,target=current.target,active=current.phase==='dragging';drag=null;
+        clearTimeout(current.timer);cancelAnimationFrame(dragFrame);
+        current.card.classList.remove('press-pending');current.sourceCards.forEach(node=>node.classList.remove('is-dragging'));current.previews.forEach(node=>node.remove());
+        document.body.classList.remove('dragging');$('drag-label').hidden=true;
+        if(active||current.phase==='panning')suppressClickUntil=Date.now()+650;
+        try{if(current.card.hasPointerCapture(current.pointerId))current.card.releasePointerCapture(current.pointerId);}catch(error){}
+        if(save&&active&&target&&state.activeWeek===current.week&&(target.day!==current.item.day||target.start!==current.item.start)) {
+          const item=events().find(e=>e.id===current.item.id);
+          if(item) {
+            remember();item.day=target.day;item.start=target.start;item.end=target.end;
+            const conflicts=events().filter(e=>e.id!==item.id&&e.day===item.day&&e.start<item.end&&e.end>item.start);
+            if(conflicts.some(e=>e.category!=='routine'&&!isVisible(e)))state.view.filter='all';
+            const message=`已移到${DAY_NAMES[item.day]} ${timeText(item.start)}–${timeText(item.end)}${conflicts.some(isVisible)?'，重叠安排已并排显示':''}`;
+            $('drag-announcement').textContent=message;commit(message);return;
+          }
+        }
+        applyTimelineLayout();if(active)$('drag-announcement').textContent='位置保持不变。';
+      }
+      window.addEventListener('pointermove',movePointer,{passive:false});
+      window.addEventListener('pointerup',event=>{
+        if(!drag||event.pointerId!==drag.pointerId)return;
+        if(drag.phase==='dragging'){drag.x=event.clientX;drag.y=event.clientY;updateDragTarget();event.preventDefault();}
+        finishDrag(true);
+      });
+      window.addEventListener('pointercancel',event=>{if(drag?.pointerId===event.pointerId)finishDrag(false);});
+      window.addEventListener('lostpointercapture',event=>{if(drag?.pointerId===event.pointerId)finishDrag(false);});
+      window.addEventListener('blur',()=>{finishDrag(false);closeContextMenu();});
+      window.addEventListener('keydown',event=>{if(event.key==='Escape'&&drag){event.preventDefault();finishDrag(false);}});
+      document.addEventListener('visibilitychange',()=>{if(document.hidden){finishDrag(false);closeContextMenu();}});
+      $('board-scroll').addEventListener('scroll',()=>{if(drag?.phase==='dragging')updateDragTarget();},{passive:true});
+
+      function canCreateWeek(key) { if(!Object.hasOwn(state.weeks,key)&&Object.keys(state.weeks).length>=520){toast('已达到 520 周的保存上限，请先导出备份。');return false;}return true; }
+      function navigateWeek(key) { if(!canCreateWeek(key))return;if(!state.weeks[key])state.weeks[key]={events:defaultEvents()};state.activeWeek=key;persist();render(); }
+      function openEditor(day,id=null) {
+        closeContextMenu();
+        editingId=id;
+        const event=id?events().find(e=>e.id===id):{title:'',day,category:state.view.filter==='all'?'japanese':state.view.filter,start:19*60+30,end:20*60+30,notes:''};
+        if(!event)return;
+        $('event-form').reset();$('event-day').replaceChildren();$('copy-days').replaceChildren();
+        DAY_NAMES.forEach((name,i)=>{
+          const d=parseDate(addDays(state.activeWeek,i));const option=element('option','',`${name} · ${d.getMonth()+1}月${d.getDate()}日`);option.value=String(i);$('event-day').append(option);
+          const label=element('label'),checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.name='copyDay';checkbox.value=String(i);label.append(checkbox,document.createTextNode(name));$('copy-days').append(label);
+        });
+        $('dialog-title').textContent=id?'编辑安排':'添加安排';
+        $('event-title').value=event.title;$('event-day').value=String(event.day);$('event-category').value=event.category;$('event-start').value=inputTime(event.start);$('event-end').value=inputTime(event.end);$('event-notes').value=event.notes;
+        $('delete-event').hidden=!id;$('copy-details').open=false;$('form-error').hidden=true;
+        updateEditorHint();$('event-dialog').showModal();$('event-title').focus();
+      }
+      function readTimes() { const start=toMinutes($('event-start').value);let end=toMinutes($('event-end').value);if(end===0)end=1440;return {start,end}; }
+      function updateEditorHint() {
+        const {start,end}=readTimes(),day=Number($('event-day').value);
+        $('duration-hint').textContent=(Number.isFinite(start)&&Number.isFinite(end)&&end>start?'时长 '+duration(end-start)+'。':'')+'结束 00:00 表示当天 24:00；跨夜安排请拆到两天。';
+        document.querySelectorAll('input[name="copyDay"]').forEach(input=>{input.disabled=Number(input.value)===day;if(input.disabled)input.checked=false;});
+        const targets=[day,...Array.from(document.querySelectorAll('input[name="copyDay"]:checked'),input=>Number(input.value))];
+        const overlaps=events().filter(e=>e.id!==editingId&&targets.includes(e.day)&&start<e.end&&end>e.start);
+        $('overlap-warning').hidden=!overlaps.length||end<=start;
+        $('overlap-warning').textContent=overlaps.length?`与 ${overlaps.slice(0,3).map(e=>DAY_NAMES[e.day]+'「'+e.title+'」').join('、')}${overlaps.length>3?'等':''} 时间重叠。如有意同时进行，仍可保存。`:'';
+      }
+      function closeEditor() { $('event-dialog').close();editingId=null; }
+      function saveEditor(event) {
+        event.preventDefault();const title=$('event-title').value.trim(),{start,end}=readTimes(),day=Number($('event-day').value),category=$('event-category').value,notes=$('event-notes').value.trim();
+        let error='';if(!title)error='请填写安排名称。';else if(!Number.isFinite(start)||!Number.isFinite(end)||end<=start)error='结束时间需要晚于开始时间；到午夜结束请填 00:00。';
+        const copies=Array.from(document.querySelectorAll('input[name="copyDay"]:checked'),input=>Number(input.value));
+        if(events().length+copies.length+(editingId?0:1)>2000)error='这一周安排过多，请先删除不再需要的事项。';
+        if(error){$('form-error').textContent=error;$('form-error').hidden=false;return;}
+        remember();const value={id:editingId||uid(),day,start,end,title,category,notes};
+        if(editingId) { const index=events().findIndex(e=>e.id===editingId);events()[index]=value; }else events().push(value);
+        copies.forEach(target=>events().push({...value,id:uid(),day:target}));
+        if(category==='routine')state.view.showRoutines=true;
+        else if(state.view.filter!=='all'&&state.view.filter!==category)state.view.filter=category;
+        closeEditor();commit(copies.length?`已保存，并复制到另外 ${copies.length} 天`:'安排已保存');
+      }
+
+      $('event-form').addEventListener('submit',saveEditor);
+      for(const id of ['event-day','event-start','event-end'])$(id).addEventListener('input',updateEditorHint);
+      $('copy-days').addEventListener('change',updateEditorHint);
+      $('close-dialog').addEventListener('click',closeEditor);$('cancel-dialog').addEventListener('click',closeEditor);
+      $('event-dialog').addEventListener('close',()=>{editingId=null;});
+      $('delete-event').addEventListener('click',()=>{if(!editingId)return;remember();state.weeks[state.activeWeek].events=events().filter(e=>e.id!==editingId);closeEditor();commit('安排已删除，可点击「撤销」恢复');});
+      $('add-event').addEventListener('click',()=>openEditor(state.activeWeek===monday(new Date())?(new Date().getDay()+6)%7:0));
+      $('prev-week').addEventListener('click',()=>navigateWeek(addDays(state.activeWeek,-7)));
+      $('next-week').addEventListener('click',()=>navigateWeek(addDays(state.activeWeek,7)));
+      $('this-week').addEventListener('click',()=>navigateWeek(monday(new Date())));
+      $('show-routines').addEventListener('change',()=>{state.view.showRoutines=$('show-routines').checked;persist();render();});
+      $('fold-routines').addEventListener('change',()=>{state.view.foldRoutines=$('fold-routines').checked;persist();render();});
+      document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{state.view.filter=button.dataset.filter;persist();render();}));
+      $('undo-btn').addEventListener('click',()=>{if(history.length){state=history.pop();commit('已撤销上一次修改');}});
+      $('copy-week').addEventListener('click',()=>{
+        const next=addDays(state.activeWeek,7),existing=Object.hasOwn(state.weeks,next);if(!canCreateWeek(next))return;
+        if(existing&&!confirm('下周已有保存的安排。要用本周计划替换下周吗？替换后可点击「撤销」恢复。'))return;
+        remember();state.weeks[next]={events:events().map(e=>({...e,id:uid()}))};state.activeWeek=next;commit('已复制到下周，当前展示下周计划');
+      });
+      $('reset-week').addEventListener('click',()=>{if(!confirm('恢复当前显示周的初始安排？这会替换这一周的修改，其他周保持原样。可以撤销。'))return;remember();state.weeks[state.activeWeek]={events:defaultEvents()};commit('本周已恢复初始安排');});
+      $('export-btn').addEventListener('click',()=>{
+        const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=`一周计划备份-${dateKey(new Date())}.json`;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);toast('已导出全部已保存周的备份');
+      });
+      $('import-btn').addEventListener('click',()=>$('import-file').click());
+      $('import-file').addEventListener('change',async(event)=>{
+        const file=event.target.files?.[0];if(!file)return;
+        try {
+          if(file.size>10*1024*1024)throw Error('文件超过 10 MB，请选择本页面导出的计划备份。');
+          const imported=validateState(JSON.parse(await file.text()));
+          if(!confirm(`将导入 ${Object.keys(imported.weeks).length} 周计划，并替换当前全部记录。建议先导出备份；导入后也可以撤销。继续吗？`))return;
+          remember();state=imported;storageBlocked=false;commit('备份已导入');
+        } catch(error) { toast(error instanceof SyntaxError?'文件不是有效的 JSON，原计划保持原样。':error.message); }
+        finally { event.target.value=''; }
+      });
+      $('print-btn').addEventListener('click',()=>window.print());
+      load();render();if(!storageBlocked)persist();
+    })();
+  </script>
+</body>
+</html>

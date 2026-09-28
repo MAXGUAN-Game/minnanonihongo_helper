@@ -1,0 +1,85 @@
+name: nihongo-web
+
+services:
+  app:
+    build:
+      context: .
+    image: nihongo-web:local
+    restart: unless-stopped
+    init: true
+    user: "${APP_UID:-1000}:${APP_GID:-1000}"
+    environment:
+      NODE_ENV: production
+      DEPLOYMENT: web
+      HOST: 0.0.0.0
+      PORT: "4317"
+      DATA_DIR: /app/data
+      APP_PUBLIC_ORIGIN: "https://${APP_DOMAIN:?Run node deploy/configure.mjs first}"
+      APP_PROXY_TOKEN: "${APP_PROXY_TOKEN:?Run node deploy/configure.mjs first}"
+      ICP_NUMBER: "${ICP_NUMBER:-}"
+      WHISPER_BINARY: /opt/whisper/bin/whisper-cli
+      WHISPER_THREADS: "2"
+    volumes:
+      - ./server-data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp:size=128m,mode=1777
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - backend
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "require('node:http').get('http://127.0.0.1:4317/api/health',{headers:{host:new URL(process.env.APP_PUBLIC_ORIGIN).host,origin:process.env.APP_PUBLIC_ORIGIN,'x-nihongo-proxy':process.env.APP_PROXY_TOKEN},signal:AbortSignal.timeout(4000)},r=>{r.resume();if(r.statusCode!==200)console.error('Health HTTP '+r.statusCode);process.exit(r.statusCode===200?0:1)}).on('error',e=>{console.error(e.code||'HEALTHCHECK_ERROR');process.exit(1)})"
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+    stop_grace_period: 150s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+  caddy:
+    image: caddy:2.11.4-alpine
+    restart: unless-stopped
+    environment:
+      APP_DOMAIN: "${APP_DOMAIN:?Run node deploy/configure.mjs first}"
+      APP_AUTH_USER: "${APP_AUTH_USER:?Run node deploy/configure.mjs first}"
+      APP_AUTH_HASH: "${APP_AUTH_HASH:?Run node deploy/configure.mjs first}"
+      APP_PROXY_TOKEN: "${APP_PROXY_TOKEN:?Run node deploy/configure.mjs first}"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - backend
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+# No app port is published. Outbound access remains available for the AI APIs.
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  caddy_data:
+  caddy_config:

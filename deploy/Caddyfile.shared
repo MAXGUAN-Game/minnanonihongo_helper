@@ -1,0 +1,37 @@
+{
+	admin off
+	auto_https off
+}
+
+# The existing host gateway terminates HTTPS. This listener stays private.
+http://:8080 {
+	encode zstd gzip
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy same-origin
+		X-Frame-Options DENY
+		Permissions-Policy "microphone=(self), camera=(), geolocation=()"
+		-Server
+	}
+
+	@wrongHost not host {$APP_DOMAIN}
+	@insecure not header X-Forwarded-Proto https
+	route {
+		respond @wrongHost "Not found" 404
+		# Reject plaintext forwarding before challenging for the website password.
+		respond @insecure "Use the HTTPS website through the configured gateway." 400
+		basic_auth {
+			{$APP_AUTH_USER} {$APP_AUTH_HASH}
+		}
+		reverse_proxy app:4317 {
+			header_up -Authorization
+			header_up X-Nihongo-Proxy {$APP_PROXY_TOKEN}
+			header_up X-Forwarded-Proto https
+			transport http {
+				dial_timeout 10s
+				response_header_timeout 150s
+			}
+		}
+	}
+}

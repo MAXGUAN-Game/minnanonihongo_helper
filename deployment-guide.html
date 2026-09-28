@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>把日语学习搬到网上 · 5 步操作卡</title>
+  <style>
+    :root { --paper:#f4f5ed; --card:#fffef9; --ink:#173c32; --muted:#51685c; --green:#315c47; --line:#cbd4c6; --soft:#e9edde; --orange:#f3dec9; --radius:25px; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:19px/1.65 "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; }
+    a { color:var(--green); text-underline-offset:5px; }
+    button, input { font:inherit; }
+    button, .button { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:54px; border:1px solid var(--green); border-radius:14px; padding:11px 20px; background:var(--green); color:white; font-weight:700; text-decoration:none; cursor:pointer; }
+    button.secondary, a.secondary { background:var(--card); color:var(--ink); border-color:var(--line); }
+    button:disabled { opacity:.65; cursor:default; }
+    :focus-visible { outline:3px solid #bb641f; outline-offset:5px; }
+    [hidden] { display:none !important; }
+    .wrap { width:min(1100px, calc(100% - 36px)); margin:auto; }
+    .top { display:flex; gap:18px; align-items:center; padding:27px 0; }
+    .mark { display:grid; place-items:center; flex:0 0 54px; width:54px; height:54px; border-radius:16px; background:var(--green); color:#ecf3b6; font-size:33px; font-weight:800; transform:rotate(-5deg); }
+    .top strong { display:block; }
+    .small { color:var(--muted); font-size:16px; }
+    .top .small { margin:0; }
+    .print { margin-left:auto; }
+    h1 { font-size:clamp(30px, 5vw, 46px); line-height:1.3; letter-spacing:.01em; margin:8px 0 18px; }
+    h2 { font-size:clamp(26px, 4vw, 35px); line-height:1.35; margin:4px 0 16px; }
+    h3 { font-size:21px; margin:22px 0 8px; }
+    p { margin:12px 0; }
+    .hero { padding:26px 0 20px; }
+    .eyebrow { color:var(--green); font-size:16px; font-weight:750; letter-spacing:.1em; }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 18px; }
+    .chip { border:1px solid var(--line); border-radius:99px; padding:6px 15px; font-size:16px; background:#fffdf5; }
+    .mode-choice { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0 7px; }
+    .mode-choice button[aria-pressed="false"] { background:var(--card); color:var(--ink); border-color:var(--line); }
+    .journey { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; margin:23px 0; }
+    .step-tab { min-height:95px; flex-direction:column; gap:3px; padding:12px 5px; background:var(--soft); color:var(--ink); border:2px solid transparent; }
+    .step-tab[aria-current="step"] { background:var(--green); color:#fff; }
+    .step-tab .number { width:26px; height:26px; border:1px solid currentColor; border-radius:50%; font-size:15px; line-height:24px; }
+    .step-tab.done:not([aria-current="step"]) { background:#dfebd7; border-color:#739468; }
+    .progress-top { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; margin-bottom:9px; }
+    progress { width:100%; height:12px; accent-color:var(--green); border:0; background:#dfe4d7; border-radius:8px; display:block; }
+    progress::-webkit-progress-bar { background:#dfe4d7; border-radius:8px; }
+    progress::-webkit-progress-value { background:var(--green); border-radius:8px; }
+    .panel { background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:clamp(22px, 5vw, 46px); margin:24px 0; }
+    .step-heading { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:14px; margin-bottom:13px; }
+    .time { color:var(--muted); border:1px solid var(--line); border-radius:99px; padding:4px 13px; white-space:nowrap; font-size:16px; }
+    .lead { color:var(--muted); margin-bottom:22px; }
+    .action-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:20px 0; }
+    .callout { padding:19px 23px; border-radius:17px; background:var(--soft); margin:20px 0; }
+    .callout p { margin:5px 0; }
+    .caution { background:#fff0e2; border:1px solid #d5ac83; }
+    details { border:1px solid var(--line); border-radius:17px; padding:0 20px; margin:17px 0; }
+    summary { cursor:pointer; padding:16px 0; font-weight:700; }
+    details > :last-child { margin-bottom:21px; }
+    .table-wrap { overflow-x:auto; margin:17px 0; }
+    table { width:100%; border-collapse:collapse; text-align:left; }
+    th,td { padding:11px 14px; border-bottom:1px solid var(--line); }
+    th { font-weight:600; color:var(--muted); width:35%; }
+    .flow { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:11px; padding:17px; background:var(--soft); border-radius:17px; margin:20px 0; }
+    .flow span { padding:9px 12px; background:var(--card); border-radius:12px; }
+    .flow b { color:var(--muted); }
+    .code-card { margin:18px 0; border:1px solid var(--line); border-radius:15px; overflow:hidden; }
+    .code-top { display:flex; gap:15px; justify-content:space-between; align-items:center; flex-wrap:wrap; padding:10px 15px; background:var(--soft); }
+    .code-top strong { font-size:16px; }
+    .copy { min-height:42px; padding:5px 13px; font-size:16px; border-radius:10px; }
+    pre { margin:0; padding:17px; overflow-x:auto; white-space:pre-wrap; overflow-wrap:anywhere; font:16px/1.8 Consolas, "Cascadia Mono", monospace; background:#f9faf5; }
+    code { font-family:Consolas, "Cascadia Mono", monospace; overflow-wrap:anywhere; }
+    .check-row { display:flex; align-items:flex-start; gap:13px; padding:17px; background:var(--soft); border-radius:14px; margin:25px 0 18px; cursor:pointer; }
+    .check-row input { width:24px; height:24px; accent-color:var(--green); flex:0 0 24px; margin-top:4px; }
+    .panel-footer { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; margin-top:22px; border-top:1px solid var(--line); padding-top:21px; }
+    .source { display:inline-block; font-size:15px; margin-top:9px; }
+    .steps { counter-reset:action; list-style:none; padding:0; margin:19px 0; }
+    .steps li { display:flex; gap:13px; margin:16px 0; }
+    .steps li::before { counter-increment:action; content:counter(action); display:grid; place-items:center; border-radius:50%; flex:0 0 28px; width:28px; height:28px; background:var(--soft); color:var(--green); font-weight:800; margin-top:2px; font-size:16px; }
+    .domain { font-size:clamp(18px, 3.5vw, 27px); font-weight:750; overflow-wrap:anywhere; }
+    .status { min-height:32px; color:var(--green); font-size:16px; }
+    .quiet-button { background:none; color:var(--muted); border:0; min-height:44px; padding:8px; font-weight:400; font-size:15px; text-decoration:underline; }
+    .completion { text-align:center; padding:35px 22px; background:#e4eddb; border-radius:22px; margin:22px 0; }
+    footer { padding:5px 0 35px; color:var(--muted); font-size:15px; }
+    footer p { margin:8px 0; }
+    @media(max-width:620px) { .journey { gap:5px; } .step-tab { min-height:89px; font-size:15px; } .top { padding:19px 0; } .print { font-size:14px; padding:8px; } .panel { padding:23px 18px; } th,td { padding:10px 8px; } .button, button { max-width:100%; } }
+    @media print { .panel[hidden] { display:block !important; } .journey, .panel-footer, .print, .copy, .quiet-button, .check-row, .status { display:none !important; } .panel { break-inside:avoid; } details > * { display:block !important; } body { background:white; font-size:15px; } .wrap { width:100%; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><span class="mark" aria-hidden="true">日</span><div><strong>日语，慢慢来</strong><p class="small">你的阿里云上线操作卡</p></div><button class="secondary print" id="print-guide">打印这份指南</button></header>
+  <section class="hero" aria-labelledby="guide-title">
+    <div class="eyebrow">先做一件小事</div>
+    <h1 id="guide-title">启用 IP 网址，<br>让其他设备打开。</h1>
+    <p class="lead">一共 5 步。每次只看当前这一步，完成后再往下走。</p>
+    <div class="action-row"><a class="button" href="https://swasnext.console.aliyun.com/" target="_blank" rel="noreferrer">打开新轻量服务器 ↗</a><a class="button secondary" href="https://ecs.console.aliyun.com/" target="_blank" rel="noreferrer">查看原服务器 ↗</a></div>
+    <div class="chips"><span class="chip">✓ 域名实名认证完成</span><span class="chip">✓ 已购上海轻量服务器</span><span class="chip">✓ 镜像与网站配置已完成</span></div>
+    <div class="mode-choice" role="group" aria-label="选择部署方式"><button data-mode="standalone" aria-pressed="true">新服务器 · 独立部署</button><button data-mode="shared" aria-pressed="false">备用：与原网站共存</button></div>
+    <p class="small" id="mode-note">当前：8.133.242.232 独立部署。原服务器 118.178.178.123 和原网站保留。</p>
+  </section>
+
+  <div class="progress-top"><strong id="progress-label">已完成 0 / 5 步</strong><span class="small">勾选进度保存在当前浏览器</span></div>
+  <progress id="progress" value="0" max="5" aria-labelledby="progress-label"></progress>
+  <nav class="journey" aria-label="部署步骤">
+    <button class="step-tab" data-step="0" aria-current="step"><span class="number">1</span><span>选服务器</span></button>
+    <button class="step-tab" data-step="1"><span class="number">2</span><span>上传安装</span></button>
+    <button class="step-tab" data-step="2"><span class="number">3</span><span>连接域名</span></button>
+    <button class="step-tab" data-step="3"><span class="number">4</span><span>启动网站</span></button>
+    <button class="step-tab" data-step="4"><span class="number">5</span><span>接着学习</span></button>
+  </nav>
+
+  <main id="guide-main">
+    <section class="panel" data-panel="0" aria-labelledby="step-title-0">
+      <div class="step-heading"><span class="eyebrow">第 1 / 5 步</span><span class="time">操作约 5–10 分钟</span></div>
+      <h2 id="step-title-0" tabindex="-1">服务器准备已完成。</h2>
+      <p class="lead" data-deployment-mode="shared" hidden>这是备用方案。先查看原服务器系统、可用内存，以及原网站由什么服务管理。</p>
+      <p class="lead" data-deployment-mode="standalone">上海的 <strong>Ubuntu-gxzp</strong> 已升级；镜像、网站配置和 DNS 已完成，现在核对 80 / 443。</p>
+      <div class="callout" data-deployment-mode="shared" hidden><strong>复用 118.178.178.123，给日语应用新增入口。</strong><p>原网站继续使用 80 / 443。日语应用只在本机 <code>127.0.0.1:14317</code> 提供入口，由原网站服务转发访问。</p></div>
+      <div data-deployment-mode="standalone"><div class="table-wrap"><table><tbody><tr><th>已购服务器</th><td>上海 · Ubuntu-gxzp</td></tr><tr><th>公网 IP</th><td><strong>8.133.242.232</strong></td></tr><tr><th>系统</th><td>Ubuntu 24.04</td></tr><tr><th>CPU / 内存</th><td>已升级，配置以控制台为准</td></tr><tr><th>系统盘</th><td>容量以升级后的控制台为准</td></tr></tbody></table></div><details><summary>已完成：服务器升级参考</summary><p>你已确认完成升级。以下官方资料留作参考，不需要重复升级操作。</p><a class="source" href="https://help.aliyun.com/zh/simple-application-server/user-guide/upgrade-a-simple-application-server" target="_blank" rel="noreferrer">阿里云官方：套餐升级说明 ↗</a></details><details><summary>为什么建议 4 GB？</summary><p>whisper.cpp 官方给出的 small 模型内存占用约为 <strong>852 MB</strong>，还不包含网站、Docker 和操作系统需要的空间。</p><p>4 GB 是为这些程序留余量的配置建议，不是语音识别速度保证。系统盘容量以升级后配置为准，镜像构建和缓存也需要空间。</p><a class="source" href="https://github.com/ggml-org/whisper.cpp#memory-usage" target="_blank" rel="noreferrer">whisper.cpp 官方：模型内存用量 ↗</a></details><details><summary>需要核对：打开终端，只查看配置</summary><ol class="steps"><li><span>在轻量服务器控制台选中 <strong>Ubuntu-gxzp</strong>。</span></li><li><span>打开“远程连接” → “Workbench 一键连接” → “立即登录”，进入终端。</span></li><li><span>复制下面的只读命令，确认内存、磁盘和系统。</span></li></ol><div class="code-card"><div class="code-top"><strong>在新服务器终端 · 只查看</strong><button class="copy" data-copy="inspect-new-server">复制核对命令</button></div><pre id="inspect-new-server">free -h
+df -h /
+cat /etc/os-release</pre></div><a class="source" href="https://help.aliyun.com/zh/simple-application-server/user-guide/connect-to-linux-server-remotely" target="_blank" rel="noreferrer">阿里云官方：远程连接 Linux 服务器 ↗</a></details><p class="small">日语子域名将指向这台新服务器。原服务器 118.178.178.123 和原网站继续保留。</p></div>
+      <details data-deployment-mode="shared" hidden><summary>原服务器：我需要看哪几项？</summary>
+        <div class="table-wrap"><table><tbody><tr><th>系统</th><td>自动安装脚本适配 Ubuntu 24.04、x86_64；其他系统先确认安装方式</td></tr><tr><th>个人使用起点</th><td>2 核 CPU、4 GB 内存作为起点；还要留出原网站使用的资源</td></tr><tr><th>网络</th><td>中国大陆地域，有公网 IPv4</td></tr><tr><th>原网站管理</th><td>确认是宝塔、1Panel、Nginx，或其他方式</td></tr><tr><th>端口</th><td>查看 80 / 443 的服务；确认 14317 是否空闲</td></tr></tbody></table></div>
+        <div class="code-card"><div class="code-top"><strong>在服务器终端 · 只查看，不修改</strong><button class="copy" data-copy="inspect-server">复制检查命令</button></div><pre id="inspect-server">cat /etc/os-release
+uname -m
+free -h
+df -h /
+sudo ss -ltnp '( sport = :80 or sport = :443 or sport = :14317 )'</pre></div>
+        <p class="small">已有其他 Linux 系统也可能可以运行，但不要为了本应用直接重装已有服务器。</p>
+      </details>
+      <div class="callout caution" data-deployment-mode="shared" hidden><strong>先确认原网站使用什么服务。</strong><p>共存包不占用 80 / 443。新增子域名的具体操作，要按现有面板或 Nginx 配置进行；原网站配置保留。</p><p class="small">如果入口服务在 Docker 里，不能直接假定容器中的 127.0.0.1 能访问宿主机。需要先确认受控容器网络。</p></div>
+      <details><summary>配置建议：升级或以后换机器时参考</summary>
+        <div class="table-wrap"><table><tbody><tr><th>产品</th><td>阿里云轻量应用服务器 · 通用型</td></tr><tr><th>配置</th><td>2 核 / 4 GB，磁盘按可选套餐，公网 IPv4</td></tr><tr><th>系统镜像</th><td>Ubuntu 24.04，x86_64，纯系统镜像</td></tr><tr><th>地域</th><td>靠近你的中国大陆地域</td></tr><tr><th>购买前查看</th><td>首购价、续费价、流量套餐，均以购买页为准</td></tr></tbody></table></div>
+        <p>这张卡供升级或以后换机器时参考，你已经购买了服务器。无需 GPU；日语录音的实际识别速度要在选定服务器上测试。</p>
+        <a class="source" href="https://help.aliyun.com/zh/simple-application-server/user-guide/create-a-server" target="_blank" rel="noreferrer">阿里云官方：创建轻量服务器与套餐选择 ↗</a>
+      </details>
+      <label class="check-row"><input type="checkbox" data-done="0"><span>我已核对服务器，并准备好完整部署需要的内存和磁盘空间。</span></label>
+      <div class="panel-footer"><span class="small">下一步：把应用装上去</span><button data-next="0">完成这步，去上传 →</button></div>
+    </section>
+
+    <section class="panel" data-panel="1" aria-labelledby="step-title-1" hidden>
+      <div class="step-heading"><span class="eyebrow">第 2 / 5 步</span><span class="time">操作约 10–15 分钟</span></div>
+      <h2 id="step-title-1" tabindex="-1">上传、镜像导入与配置已完成。</h2>
+      <details><summary>已完成：离线镜像导入与配置记录</summary><p>四个基础镜像已导入，Caddy v2.11.4 已实际运行，网站配置已保存。下面的命令保留作历史参考。</p><details><summary>查看当时的上传与配置命令</summary><div class="code-card"><div class="code-top"><strong>这次上传到服务器 /tmp 的文件</strong><button class="copy" data-copy="offline-upload-path">复制恢复包路径</button></div><pre id="offline-upload-path">C:\LanguageMaster\releases\nihongo-offline-install.tar.gz</pre></div><div class="code-card"><div class="code-top"><strong>上传完成后 · 在服务器终端</strong><button class="copy" data-copy="offline-recovery">复制恢复命令</button></div><pre id="offline-recovery">sudo tar -xzf /tmp/nihongo-offline-install.tar.gz -C /opt/nihongo
+cd /opt/nihongo
+sudo bash deploy/import-offline-images.sh
+sudo node deploy/configure.mjs</pre></div><p class="small">这个包解决 Docker Hub 基础镜像下载问题。后续应用构建仍需要连接 APT、npm 和 GitHub；DeepSeek、MiniMax 也需要联网。</p></details></details>
+      <p class="lead">前两步已完成。DNS 已验证，端口核对和网站启动尚待完成；下方安装操作保留作参考。</p>
+      <div class="flow" aria-label="上传流程"><span>你的 Windows 电脑</span><b aria-hidden="true">→</b><span>应用安装包</span><b aria-hidden="true">→</b><span>阿里云服务器</span></div>
+      <div class="code-card"><div class="code-top"><strong>电脑上已生成的部署包</strong><button class="copy" data-copy="upload-path">复制文件路径</button></div><pre id="upload-path">C:\LanguageMaster\releases\nihongo-web.tar.gz</pre></div>
+      <ol class="steps"><li><span>连接 <strong>Ubuntu-gxzp</strong>：远程连接 → Workbench 一键连接 → 立即登录。</span></li><li><span>在 Workbench 左侧打开<strong>文件管理</strong>，进入 <code>/tmp</code>。</span></li><li><span>点<strong>上传文件</strong>，选择上面的部署包。等进度达到 100%。</span></li></ol>
+      <p class="small">上传后，服务器文件路径应是 <code>/tmp/nihongo-web.tar.gz</code>。</p>
+      <a class="source" href="https://help.aliyun.com/zh/simple-application-server/user-guide/use-workbench-to-transfer-files-to-a-linux-server" target="_blank" rel="noreferrer">阿里云官方：Workbench 上传文件 ↗</a>
+      <details><summary>以后更新应用：重新打包命令</summary><div class="code-card"><div class="code-top"><strong>你的电脑 · 项目目录 PowerShell</strong><button class="copy" data-copy="package-app">复制打包命令</button></div><pre id="package-app">cd C:\LanguageMaster
+node scripts/package-web.mjs</pre></div></details>
+      <details><summary>② 服务器：展开文件，安装运行环境</summary>
+        <p data-deployment-mode="shared">先展开文件，再查看已有 Docker Compose 和 Node.js。已有面板或 Docker 继续使用；缺少依赖时，先按实际系统和面板准备。</p>
+        <p data-deployment-mode="standalone" hidden>使用服务器终端执行以下命令。适用于第 1 步确认过的 Ubuntu 24.04 新服务器。</p>
+        <div class="code-card"><div class="code-top"><strong>在服务器终端</strong><button class="copy" data-copy="install-app">复制安装命令</button></div><pre id="install-app">sudo mkdir -p /opt/nihongo
+sudo tar -xzf /tmp/nihongo-web.tar.gz -C /opt/nihongo
+cd /opt/nihongo
+sudo bash deploy/install-docker-ubuntu.sh</pre></div>
+        <p class="small">应用独立放在 <code>/opt/nihongo</code>。安装包不包含你的学习记录和 API 密钥；第 5 步再迁移。</p>
+      </details>
+      <details><summary>③ 服务器：填写网站地址和登录密码</summary>
+        <div class="code-card"><div class="code-top"><strong>仍在服务器终端</strong><button class="copy" data-copy="configure-app">复制配置命令</button></div><pre id="configure-app">cd /opt/nihongo
+sudo node deploy/configure.mjs</pre></div>
+        <ol class="steps"><li><span>域名填写 <code>jp.nbblearnjp.xyz</code>，不加 <code>https://</code>。</span></li><li><span>设置自己的登录用户名和密码。浏览器访问网站时会用到。</span></li><li><span>在独立 ICP 控制台核实网站备案号后再填写，让页脚显示真实备案链接。尚未核实可先留空。</span></li></ol>
+        <p class="small">这里填写真实的网站备案信息。DeepSeek 和 MiniMax 的 API 密钥稍后在网站里配置。</p>
+        <p class="small">输入密码时用星号掩盖字符。配置文件留在服务器，保存好你的登录密码。</p>
+      </details>
+      <label class="check-row"><input type="checkbox" data-done="1"><span>文件已上传，运行环境和网站配置已完成。</span></label>
+      <div class="panel-footer"><button class="secondary" data-prev="1">← 上一步</button><button data-next="1">完成这步，去连域名 →</button></div>
+    </section>
+
+    <section class="panel" data-panel="2" aria-labelledby="step-title-2" hidden>
+      <div class="step-heading"><span class="eyebrow">第 3 / 5 步</span><span class="time">操作约 5–10 分钟</span></div>
+      <h2 id="step-title-2" tabindex="-1">域名已指向服务器。</h2>
+      <p class="lead">域名解析已完成，以下留作参考。当前改用 IP HTTPS 入口，请在第 4 步执行助手，再验证外部访问。</p>
+      <div class="callout"><span class="small">IP HTTPS 目标地址 · 待执行验证</span><div class="domain" id="study-domain">https://8.133.242.232</div><div class="action-row"><button class="copy" data-copy="study-domain">复制网站地址</button><a href="https://dnsnext.console.aliyun.com/" target="_blank" rel="noreferrer">打开阿里云 DNS ↗</a></div></div>
+      <details><summary>已完成：查看 DNS 记录参考</summary><div class="table-wrap"><table><caption class="small">当前 jp 记录已添加，无需重复添加</caption><tbody><tr><th>记录类型</th><td><strong>A</strong></td></tr><tr><th>主机记录</th><td><strong>jp</strong></td></tr><tr><th>记录值</th><td><strong id="dns-value">8.133.242.232</strong></td></tr><tr><th>解析线路 / TTL</th><td>默认 / 10 分钟</td></tr></tbody></table></div>
+      <p class="small">这里新增子域名记录，保留原来的 <code>@</code>、<code>www</code> 等记录。记录值只填写 IP，不带端口或 <code>https://</code>。</p>
+      <a class="source" href="https://help.aliyun.com/zh/dns/pubz-add-parsing-record" target="_blank" rel="noreferrer">阿里云官方：A 记录的填写方法 ↗</a></details>
+      <details open><summary>现在核对：80 / 443 是否已启用？</summary>
+        <p>在轻量服务器防火墙中核对 80 / 443 是否已启用。已有规则保持原状，缺少时才添加：</p>
+        <div class="table-wrap"><table><tbody><tr><th>TCP 80、443</th><td>来源 0.0.0.0/0，允许网站访问和 HTTPS 证书验证</td></tr><tr><th>TCP 22</th><td>仅向自己的管理 IP 开放 SSH；已有连接方式可继续使用</td></tr><tr><th>4317、14317</th><td>内部端口，不向公网开放</td></tr></tbody></table></div>
+        <a class="source" href="https://help.aliyun.com/zh/simple-application-server/user-guide/manage-the-firewall-of-a-server" target="_blank" rel="noreferrer">阿里云官方：核对轻量服务器防火墙规则 ↗</a>
+        <p class="small">若服务器另有系统防火墙，也要允许 80 / 443。只配置这台服务器需要的入口。</p>
+      </details>
+      <details><summary>怎样核实已有 ICP 备案？</summary>
+        <p>当前截图确认域名实名认证成功。网站 ICP 备案状态待核实：进入独立 ICP 控制台“我的备案”，核对 nbblearnjp.xyz、网站备案状态和备案号。</p>
+        <p>本次网站名称、用途或其他备案信息如有变化，先在阿里云备案控制台核对是否需要变更；以实际备案要求为准。</p>
+        <a class="source" href="https://help.aliyun.com/zh/icp-filing/basic-icp-service/support/changes-for-the-record-the-faq" target="_blank" rel="noreferrer">阿里云官方：更换服务器与备案变更 ↗</a>
+      </details>
+      <details><summary>怎样确认解析已经生效？</summary>
+        <div class="code-card"><div class="code-top"><strong>你的电脑 · PowerShell</strong><button class="copy" data-copy="check-dns">复制查询命令</button></div><pre id="check-dns">nslookup jp.nbblearnjp.xyz</pre></div>
+        <p>结果中的地址应是第 1 步确定的公网 IP。DNS 缓存更新时间会有差异，可以稍后再查。</p>
+      </details>
+      <label class="check-row"><input type="checkbox" data-done="2"><span>jp 的解析指向正确，80 / 443 已放行。</span></label>
+      <div class="panel-footer"><button class="secondary" data-prev="2">← 上一步</button><button data-next="2">完成这步，去启动 →</button></div>
+    </section>
+
+    <section class="panel" data-panel="3" aria-labelledby="step-title-3" hidden>
+      <div class="step-heading"><span class="eyebrow">第 4 / 5 步</span><span class="time">操作约 10–15 分钟</span></div>
+      <h2 id="step-title-3" tabindex="-1">启用手机也能访问的 IP 网址。</h2>
+      <p class="lead">目标地址：<strong>https://8.133.242.232</strong>。先在服务器执行下面的助手，再验证证书和外部访问；当前尚未确认可用。</p>
+      <div class="callout" data-deployment-mode="standalone"><strong>现在只做：上传一个文件，执行一条命令。</strong><p>Workbench 左侧“文件管理” → <code>/tmp</code> → 上传这个文件。</p><div class="code-card"><div class="code-top"><strong>你的电脑 · IP HTTPS 助手</strong><button class="copy" data-copy="ip-https-path">复制文件路径</button></div><pre id="ip-https-path">C:\LanguageMaster\releases\enable-ip-https.mjs</pre></div><div class="code-card"><div class="code-top"><strong>上传后 · 在服务器终端执行</strong><button class="copy" data-copy="ip-https-command">复制执行命令</button></div><pre id="ip-https-command">sudo node /tmp/enable-ip-https.mjs</pre></div><p>执行后把最后的结果发回来，再验证网址。继续使用现有网站用户名和密码；学习记录保留，旧服务器 <code>118.178.178.123</code> 不变。</p><p class="small">当前未验证服务器执行、证书签发或其他设备访问，尚不能标记上线。</p></div>
+      <details data-deployment-mode="standalone"><summary>备选：以后使用域名时核对 ICP 备案</summary><strong>域名入口的历史排查记录</strong><p>最新截图确认的是<strong>域名实名认证成功</strong>。点击页面右上角“备案”（在“费用”和“工单”之间），或下方按钮 → <strong>我的备案</strong>，核对 <code>nbblearnjp.xyz</code> 对应的网站状态和备案号。</p><p class="small">网站 ICP 状态暂待核实，尚不能判定有无备案。找不到相应记录时，可复制下方说明请备案支持协助核对。</p><a class="source" href="https://help.aliyun.com/zh/icp-filing/basic-icp-service/support/changes-for-the-record-the-faq" target="_blank" rel="noreferrer">阿里云官方：更换或新增服务器的备案说明 ↗</a><div class="action-row"><a class="button" href="https://beian.aliyun.com/pcContainer/myorder" target="_blank" rel="noreferrer">打开我的备案 ↗</a></div><div class="code-card"><div class="code-top"><strong>需要协助核对时 · 复制给备案支持</strong><button class="copy" data-copy="icp-support-text">复制说明</button></div><pre id="icp-support-text">域名 nbblearnjp.xyz 的域名实名认证已成功，网站 ICP 备案状态及备案号仍待独立备案控制台核实。
+本次新增 jp.nbblearnjp.xyz，解析到上海轻量服务器 8.133.242.232。
+服务器 app 容器 healthy、Caddy Up，80/443 已映射。
+公网 HTTP 返回 403，页面标题为 Non-compliance ICP Filing，显示阿里云备案拦截；HTTPS 连接被重置。
+拦截标识：00000000005129461927。
+请协助核查该域名是否有对应的网站 ICP 备案记录及备案号、阿里云接入状态和本次拦截原因。</pre></div><a class="source" href="https://help.aliyun.com/zh/icp-filing/basic-icp-service/support/web-site-suddenly-appeared-for-the-record-to-block-or-hang-and-so-on-and-so-forth" target="_blank" rel="noreferrer">阿里云官方：排查备案阻断 ↗</a></details>
+      <details data-deployment-mode="standalone"><summary>已完成：启动检查修复</summary><p>下面的修复文件与命令保留作历史参考。</p><div class="code-card"><div class="code-top"><strong>你的电脑 · 本次只上传这个修复文件</strong><button class="copy" data-copy="healthcheck-fix-path">复制修复文件路径</button></div><pre id="healthcheck-fix-path">C:\LanguageMaster\releases\fix-healthcheck.mjs</pre></div><div class="code-card"><div class="code-top"><strong>上传后 · 在服务器终端执行一次</strong><button class="copy" data-copy="healthcheck-fix-command">复制修复命令</button></div><pre id="healthcheck-fix-command">sudo node /tmp/fix-healthcheck.mjs</pre></div><p>已确认 <strong>app：healthy</strong>、<strong>caddy：Up</strong>，80 / 443 已映射到容器。公网 HTTPS 登录仍未验证。</p></details>
+      <details data-deployment-mode="standalone"><summary>历史记录：镜像构建过程</summary>
+        <p>早先日志显示网页构建成功，应用构建步骤耗时 39.4 秒，语音编译曾到 91%。镜像构建与启动检查修复均已完成；这段历史记录不代表公网 HTTPS 登录已经通过。</p>
+        <details><summary>备用：需要重新构建时的启动命令</summary><div class="code-card"><div class="code-top"><strong>在服务器终端 · 后台构建与启动</strong><button class="copy" data-copy="background-deploy">复制后台命令</button></div><pre id="background-deploy">sudo systemd-run --unit=nihongo-deploy --collect --service-type=exec --working-directory=/opt/nihongo --property=StandardOutput=append:/opt/nihongo/deploy-build.log --property=StandardError=inherit --property=UMask=0077 /usr/bin/docker compose --progress plain up -d --build --pull never</pre></div></details>
+        <p>看到 <code>Running as unit: nihongo-deploy.service</code> 表示后台任务已启动，随后用下方命令检查进度。关闭自己的电脑不影响这个后台任务，阿里云服务器保持运行。该提示不代表网站已构建成功。若提示同名任务已存在，先运行 <code>sudo systemctl status nihongo-deploy --no-pager</code>，不要停止它或启动第二个构建。</p>
+        <a class="source" href="https://manpages.ubuntu.com/manpages/noble/man1/systemd-run.1.html" target="_blank" rel="noreferrer">Ubuntu 官方：由服务器后台管理任务 ↗</a>
+        <details open><summary>现在查看构建结果</summary><div class="code-card"><div class="code-top"><strong>服务器终端 · 查看已保存的构建进度</strong><button class="copy" data-copy="background-status">复制检查命令</button></div><pre id="background-status">sudo tail -n 60 /opt/nihongo/deploy-build.log
+cd /opt/nihongo
+sudo docker compose ps -a</pre></div><p>构建输出现在保存在文件中，<code>journalctl</code> 只用于辅助查看服务启动、退出等事件。网站启动后，app 应为 healthy，caddy 应为运行中；还需实际检查 HTTPS 登录。</p></details>
+      </details>
+      <details><summary>备用：以后重新构建与启动</summary><div class="code-card"><div class="code-top"><strong>在服务器终端 · 启动应用</strong><button class="copy" data-copy="start-app">复制启动命令</button></div><pre id="start-app">cd /opt/nihongo
+sudo docker compose up -d --build --pull never</pre></div></details>
+      <div data-deployment-mode="shared"><div class="callout"><strong>在原网站服务里，新增日语子域名站点。</strong><p>站点域名：<code>jp.nbblearnjp.xyz</code>。为它申请 HTTPS 证书，再转发到日语应用。原站点继续保留。</p></div><details><summary>反向代理的目标怎么填写？</summary><p><strong>入口 Nginx 直接运行在宿主机：</strong>目标填写 <code>http://127.0.0.1:14317</code>。</p><p><strong>入口运行在 Docker：</strong>先确认现有容器网络，再配置内部地址。这包括部分 1Panel 环境；不要直接照填 127.0.0.1，也不要向公网开放 14317。</p><p><strong>转发要求：</strong>保留请求的 <code>Host: jp.nbblearnjp.xyz</code>，在 HTTPS 入口传入 <code>X-Forwarded-Proto: https</code>。HTTP 访问先跳转 HTTPS，登录框只在 HTTPS 下显示。</p><p class="small">安装包中的 <code>deploy/nginx-site.conf.example</code> 是新子域名示例。具体面板点选步骤，等确认你使用的面板后再给出。</p></details><p class="small">共存方式由原网站服务负责 HTTPS。浏览器录音需要通过 HTTPS 打开日语网站。</p></div>
+      <div data-deployment-mode="standalone" hidden><p>Caddy 会在域名解析、端口可用后申请和续期 HTTPS 证书。HTTPS 也是浏览器录音需要的条件。</p><a class="source" href="https://caddyserver.com/docs/automatic-https" target="_blank" rel="noreferrer">Caddy 官方：自动 HTTPS 的条件 ↗</a></div>
+      <details><summary>日语识别：把已有模型一起搬过去</summary>
+        <ol class="steps"><li><span>找到电脑上的 <code>C:\LanguageMaster\data\speech\ggml-small.bin</code>。</span></li><li><span>将这个文件上传到服务器 <code>/tmp/ggml-small.bin</code>。</span></li><li><span>在服务器执行下面的命令，放入应用模型目录。</span></li></ol>
+        <div class="code-card"><div class="code-top"><strong>在服务器终端 · 安装模型文件</strong><button class="copy" data-copy="install-model">复制模型命令</button></div><pre id="install-model">cd /opt/nihongo
+sudo install -m 644 -o 1000 -g 1000 /tmp/ggml-small.bin server-data/speech/ggml-small.bin
+sudo docker compose exec app node scripts/setup-speech-linux.mjs</pre></div>
+        <p class="small">需要多语言 <code>small</code> 模型，不用 <code>small.en</code>。Windows 的识别程序不用上传，Linux 版已包含在应用镜像中。</p>
+      </details>
+      <div class="action-row"><a class="button" href="https://8.133.242.232" target="_blank" rel="noreferrer">执行成功后打开目标网址 ↗</a></div>
+      <p class="small">输入第 2 步设置的网站用户名和密码。成功时会看到熟悉的学习首页。</p>
+      <details><summary>没打开：先看这两个状态</summary>
+        <div class="code-card"><div class="code-top"><strong>在服务器终端</strong><button class="copy" data-copy="check-app">复制状态命令</button></div><pre id="check-app">cd /opt/nihongo
+sudo docker compose ps
+sudo docker compose logs --tail=80</pre></div>
+        <p>先确认 DNS 指向正确、80 / 443 可访问。共存方式还要检查新子域名的反向代理与证书；独立方式检查端口是否空闲。需要排查时，提供错误行即可，保留自己的登录密码和密钥。</p>
+      </details>
+      <label class="check-row"><input type="checkbox" data-done="3"><span>HTTPS 网站能打开，登录后能看到课程。</span></label>
+      <div class="panel-footer"><button class="secondary" data-prev="3">← 上一步</button><button data-next="3">完成这步，去迁移记录 →</button></div>
+    </section>
+
+    <section class="panel" data-panel="4" aria-labelledby="step-title-4" hidden>
+      <div class="step-heading"><span class="eyebrow">第 5 / 5 步</span><span class="time">操作约 5–10 分钟</span></div>
+      <h2 id="step-title-4" tabindex="-1">导入记录，接着上一课学。</h2>
+      <p class="lead">本地应用与服务器各有自己的记录。先导出，再导入新网站。</p>
+      <ol class="steps"><li><span><strong>电脑上的旧应用</strong><br>学习设置 → 保管学习记录 → 导出记录。</span></li><li><span><strong>新网站</strong><br>学习设置 → 选择备份 → 确认恢复。</span></li><li><span><strong>新网站的学习设置</strong><br>重新填写 DeepSeek 与 MiniMax 密钥，保存并试听。</span></li><li><span><strong>进入一课的“用起来”</strong><br>录一句日语，确认文字，发送并听 AI 回答。</span></li><li><span><strong>刷新页面再打开</strong><br>确认进度和刚才的对话还在。</span></li></ol>
+      <div class="callout"><strong>学习备份不包含 API 密钥。</strong><p>未发送的草稿只在原浏览器地址下保存，换到新域名不会自动搬过去；需要的草稿先复制。</p></div>
+      <details><summary>以后，哪些东西存在哪里？</summary>
+        <div class="table-wrap"><table><tbody><tr><th>学习记录 / 设置 / 密钥</th><td>你的阿里云服务器</td></tr><tr><th>对话与纠错</th><td>当前练习所需文字发送给 DeepSeek</td></tr><tr><th>日语 AI 朗读</th><td>文字发送给 MiniMax，生成的声音在服务器缓存</td></tr><tr><th>录音识别</th><td>上传到你的服务器识别，处理结束后删除原录音</td></tr><tr><th>草稿 / 系统朗读</th><td>草稿在当前浏览器；系统朗读使用当前设备声音</td></tr></tbody></table></div>
+        <p class="small">这是你个人的学习空间，共用一份进度。服务器按套餐续费，DeepSeek 和 MiniMax 按各自账户用量计费。</p>
+      </details>
+      <details><summary>识别慢，或者没有声音？</summary>
+        <p><strong>识别慢：</strong>看一次录音后的实际耗时。2 核 / 4 GB 不保证固定延迟，先用短句测试。</p>
+        <p><strong>没有中文声音：</strong>检查当前设备的系统语音包。手机和电脑可用的声音可能不同。</p>
+        <p><strong>麦克风打不开：</strong>用 HTTPS 地址，在浏览器中允许麦克风权限。</p>
+      </details>
+      <label class="check-row"><input type="checkbox" data-done="4"><span>记录已恢复，AI、日语录音和朗读都试过了。</span></label>
+      <div class="panel-footer"><button class="secondary" data-prev="4">← 上一步</button><button data-next="4">完成这一步 ✓</button></div>
+    </section>
+
+    <section class="completion" id="completion" hidden aria-labelledby="completion-title"><div class="eyebrow">5 / 5 步已勾选</div><h2 id="completion-title">可以回到学习了。</h2><p>现在打开网站，继续你正在学的那一课。</p><a class="button" href="https://8.133.242.232" target="_blank" rel="noreferrer">去学习 ↗</a></section>
+  </main>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+  <footer><p>这些按钮只复制命令和保存勾选，不会代你购买、修改 DNS 或操作服务器。操作时间为估计，安装与网络等待时间另计。</p><p>指南按当前部署文件编写 · 官方文档核对：2026-09-27</p><button class="quiet-button" id="reset-progress">重新开始这份清单</button></footer>
+</div>
+<script>
+  'use strict';
+  (() => {
+    const key = 'nihongo-deployment-guide-v4';
+    const blankProgress = () => ({ current: 0, done: [false, false, false, false, false] });
+    let mode = 'standalone';
+    const progresses = { shared: blankProgress(), standalone: blankProgress() };
+    let upgradeAcknowledged = false;
+    let configurationAcknowledged = false;
+    let storageAvailable = true;
+    const status = document.getElementById('status');
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || localStorage.getItem('nihongo-deployment-guide-v3') || 'null');
+      if (saved && (saved.mode === 'shared' || saved.mode === 'standalone')) {
+        mode = saved.mode;
+        upgradeAcknowledged = saved.serverUpgradeAcknowledged === true;
+        configurationAcknowledged = saved.websiteConfigured === true;
+        for (const name of ['shared', 'standalone']) {
+          const value = saved.progresses?.[name];
+          if (value && Number.isInteger(value.current) && value.current >= 0 && value.current < 5 && Array.isArray(value.done) && value.done.length === 5) {
+            progresses[name] = { current: value.current, done: value.done.map(done => done === true) };
+          }
+        }
+      }
+    } catch { storageAvailable = false; }
+    // The user confirmed the upgrade. Record that milestone once without
+    // checking off installation or moving an existing later step backwards.
+    const recordUpgrade = !upgradeAcknowledged;
+    if (recordUpgrade) {
+      mode = 'standalone';
+      progresses.standalone.done[0] = true;
+      progresses.standalone.current = Math.max(1, progresses.standalone.current);
+    }
+    const recordConfiguration = !configurationAcknowledged;
+    if (recordConfiguration) {
+      mode = 'standalone';
+      progresses.standalone.done[0] = true;
+      progresses.standalone.done[1] = true;
+      progresses.standalone.current = Math.max(2, progresses.standalone.current);
+    }
+    let state = progresses[mode];
+    const commandTemplates = Object.fromEntries(['start-app', 'install-model', 'check-app'].map(id => [id, document.getElementById(id).textContent.replaceAll('docker compose -f compose.shared.yaml', 'docker compose')]));
+    function save() {
+      try { localStorage.setItem(key, JSON.stringify({ mode, progresses, serverUpgradeAcknowledged: true, websiteConfigured: true })); }
+      catch { storageAvailable = false; status.textContent = '浏览器暂时不能保存进度。本次页面仍可正常使用。'; }
+    }
+    function render(moveFocus = false) {
+      const shared = mode === 'shared';
+      document.querySelectorAll('[data-mode]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.mode === mode)));
+      document.querySelectorAll('[data-deployment-mode]').forEach(item => { item.hidden = item.dataset.deploymentMode !== mode; });
+      document.getElementById('guide-title').innerHTML = shared ? '先查已有服务器，<br>让两个网站一起运行。' : '启用 IP 网址，<br>让其他设备打开。';
+      document.getElementById('mode-note').textContent = shared ? '当前：复用 118.178.178.123。先确认系统和网站管理方式，不急着买。' : '当前下一步：上传并运行 IP HTTPS 助手。目标 https://8.133.242.232，服务器执行与证书签发尚未验证。';
+      document.getElementById('step-title-0').textContent = shared ? '先确认配置，保留原网站。' : '服务器准备已完成。';
+      document.getElementById('dns-value').textContent = shared ? '118.178.178.123' : '8.133.242.232';
+      document.getElementById('install-app').textContent = 'sudo mkdir -p /opt/nihongo\nsudo tar -xzf /tmp/nihongo-web.tar.gz -C /opt/nihongo\ncd /opt/nihongo\n' + (shared ? 'sudo docker compose version\nnode --version' : 'sudo bash deploy/install-docker-ubuntu.sh');
+      document.getElementById('configure-app').textContent = 'cd /opt/nihongo\nsudo node deploy/configure.mjs' + (shared ? ' --shared' : '');
+      for (const [id, template] of Object.entries(commandTemplates)) {
+        document.getElementById(id).textContent = template.replaceAll('docker compose', shared ? 'docker compose -f compose.shared.yaml' : 'docker compose');
+      }
+      const count = state.done.filter(Boolean).length;
+      document.getElementById('progress').value = count;
+      document.getElementById('progress-label').textContent = `已完成 ${count} / 5 步`;
+      document.querySelectorAll('[data-panel]').forEach(panel => { panel.hidden = Number(panel.dataset.panel) !== state.current; });
+      document.querySelectorAll('[data-step]').forEach(button => {
+        const index = Number(button.dataset.step);
+        if (index === state.current) button.setAttribute('aria-current', 'step'); else button.removeAttribute('aria-current');
+        button.classList.toggle('done', state.done[index]);
+        button.querySelector('.number').textContent = state.done[index] ? '✓' : String(index + 1);
+        button.setAttribute('aria-label', `第 ${index + 1} 步：${button.lastElementChild.textContent}${state.done[index] ? '，已完成' : ''}`);
+      });
+      document.querySelectorAll('[data-done]').forEach(box => { box.checked = state.done[Number(box.dataset.done)]; });
+      document.getElementById('completion').hidden = count !== 5;
+      if (moveFocus) document.getElementById(`step-title-${state.current}`).focus({ preventScroll: false });
+    }
+    function select(index) { state.current = index; save(); render(true); }
+    document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => {
+      mode = button.dataset.mode; state = progresses[mode]; save(); render();
+      status.textContent = mode === 'shared' ? '已切换为共存部署。命令与操作说明已更新。' : '已切换为独立部署。命令与操作说明已更新。';
+    }));
+    document.querySelectorAll('[data-step]').forEach(button => button.addEventListener('click', () => select(Number(button.dataset.step))));
+    document.querySelectorAll('[data-prev]').forEach(button => button.addEventListener('click', () => select(Number(button.dataset.prev) - 1)));
+    document.querySelectorAll('[data-done]').forEach(box => box.addEventListener('change', () => {
+      state.done[Number(box.dataset.done)] = box.checked; save(); render();
+      if (storageAvailable) status.textContent = box.checked ? '这一步已勾选，进度已保存。' : '已取消这一步的勾选。';
+    }));
+    document.querySelectorAll('[data-next]').forEach(button => button.addEventListener('click', () => {
+      const index = Number(button.dataset.next); state.done[index] = true;
+      state.current = Math.min(4, index + 1); save(); render(index < 4);
+      if (storageAvailable) status.textContent = `第 ${index + 1} 步已完成，进度已保存。`;
+      if (index === 4 && state.done.every(Boolean)) document.getElementById('completion').scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }));
+    document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
+      const text = document.getElementById(button.dataset.copy).textContent;
+      let copied = false;
+      try { if (navigator.clipboard) { await navigator.clipboard.writeText(text); copied = true; } } catch { /* File pages may not expose the Clipboard API. */ }
+      if (!copied) {
+        const field = document.createElement('textarea'); field.value = text; field.style.position = 'fixed'; field.style.top = '-9999px'; document.body.append(field); field.select();
+        try { copied = document.execCommand('copy'); } catch { copied = false; }
+        field.remove(); button.focus();
+      }
+      const previous = button.textContent;
+      button.textContent = copied ? '已复制 ✓' : '请选中文字复制';
+      status.textContent = copied ? '已复制。请粘贴到卡片指定的位置。' : '浏览器未允许自动复制。可直接选中命令，按 Ctrl+C。';
+      setTimeout(() => { button.textContent = previous; }, 2400);
+    }));
+    document.getElementById('reset-progress').addEventListener('click', () => {
+      if (!window.confirm('只清空这份操作卡的勾选进度，服务器和学习记录都不受影响。继续吗？')) return;
+      state = progresses[mode] = blankProgress(); save(); render(true);
+    });
+    let detailsBeforePrint = [];
+    window.addEventListener('beforeprint', () => {
+      detailsBeforePrint = [...document.querySelectorAll('details')].filter(item => !item.open);
+      detailsBeforePrint.forEach(item => { item.open = true; });
+    });
+    window.addEventListener('afterprint', () => {
+      detailsBeforePrint.forEach(item => { item.open = false; });
+      detailsBeforePrint = [];
+    });
+    document.getElementById('print-guide').addEventListener('click', () => window.print());
+    render();
+    if (recordUpgrade || recordConfiguration) save();
+    if (!storageAvailable) status.textContent = '浏览器暂时不能读取进度。本次页面仍可正常使用。';
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+	admin off
+}
+
+{$APP_DOMAIN} {
+	encode zstd gzip
+
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy same-origin
+		X-Frame-Options DENY
+		Permissions-Policy "microphone=(self), camera=(), geolocation=()"
+		-Server
+	}
+
+	# Explicit ordering prevents any route (including /api/health) bypassing login.
+	route {
+		basic_auth {
+			{$APP_AUTH_USER} {$APP_AUTH_HASH}
+		}
+		reverse_proxy app:4317 {
+			header_up -Authorization
+			header_up X-Nihongo-Proxy {$APP_PROXY_TOKEN}
+			transport http {
+				dial_timeout 10s
+				response_header_timeout 150s
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+# REFERENCE ONLY: create ONE NEW virtual host for jp.nbblearnjp.xyz.
+# Do not replace nginx.conf or the existing website's server blocks.
+# For BaoTa / a hosting panel, add this new domain, obtain its certificate in
+# that panel, and use the location block below in that new site's HTTPS config.
+# Keep panel-generated certificate and ACME challenge settings in place.
+# The certificate paths below are placeholders: replace them before nginx -t.
+#
+# This upstream address assumes Nginx runs directly on the Linux HOST.
+# For Docker-based Nginx / some 1Panel installs, container 127.0.0.1 is NOT the
+# host loopback. A controlled network connection to the private Caddy service
+# must be designed first. Never expose 14317 or the app's 4317 to the Internet.
+
+# If the panel manages HTTP redirects / ACME, keep its generated HTTP block
+# instead of adding this reference block. Never proxy public plain HTTP to app.
+server {
+    listen 80;
+    server_name jp.nbblearnjp.xyz;
+    return 308 https://jp.nbblearnjp.xyz$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name jp.nbblearnjp.xyz;
+
+    # Use the REAL certificate files already issued by your existing panel.
+    ssl_certificate     /REPLACE_WITH_REAL_CERT_PATH/fullchain.pem;
+    ssl_certificate_key /REPLACE_WITH_REAL_CERT_PATH/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    client_max_body_size 16m;
+    client_body_timeout 150s;
+
+    location / {
+        proxy_pass http://127.0.0.1:14317;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Authorization $http_authorization;
+        proxy_set_header X-Nihongo-Proxy "";
+        proxy_set_header Connection "";
+        proxy_connect_timeout 10s;
+        proxy_read_timeout 150s;
+        proxy_send_timeout 150s;
+        proxy_cache off;
+        proxy_buffering off;
+        proxy_request_buffering off;
+    }
+}
+
+# Validate only after replacing placeholders and integrating the NEW site:
+#   sudo nginx -t
+# Then use the existing panel's reload function (or the server's normal reload).
+# Do not stop the original website or launch a second gateway on ports 80/443.
