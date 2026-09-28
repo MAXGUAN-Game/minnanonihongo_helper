@@ -18,7 +18,7 @@ const cloudSettings = {
   voice: 'Japanese_SeriousCommander', secondaryVoice: 'Japanese_KindLady', alternateSpeakers: true, speed: 1,
 };
 type SynthesisRequest = { text: string; rate: number; speaker: 'primary' | 'secondary' };
-type Clip = { src: string; plays: number; pauses: number; paused: boolean; finish: () => void };
+type Clip = { src: string; plays: number; pauses: number; paused: boolean; currentTime: number; finish: () => void };
 type LocalUtterance = { text: string; lang: string; rate: number; voice?: { localService: boolean }; onend?: ((event: Event) => void) | null };
 type VoiceMock = {
   clips: Clip[];
@@ -27,6 +27,9 @@ type VoiceMock = {
   requests: Array<{ path: string; aborted: boolean; settled: boolean }>;
   blobTypes: string[];
   revoked: string[];
+  blockNext: boolean;
+  systemPauses: number;
+  systemResumes: number;
 };
 declare global { interface Window { __voiceMock: VoiceMock } }
 
@@ -43,7 +46,13 @@ function Harness() {
     <button onClick={() => speech.say(${JSON.stringify(replacement)}, 'ja-JP', 1)}>Replay</button>
     <button onClick={() => speech.say('请再说一遍。', 'zh-CN', .8)}>Chinese</button>
     <button onClick={speech.stop}>Stop</button>
+    <button onClick={speech.pause}>Pause</button>
+    <button onClick={speech.resume}>Resume</button>
+    <button onClick={speech.replay}>Restart</button>
+    <button onClick={() => speech.playUrl('/api/recordings/example/audio', '自己的录音')}>URL</button>
+    <button onClick={() => { const epoch = speech.getEpoch(); speech.stop(); speech.sayAuto('迟到的回复', epoch); }}>Stale auto</button>
     <output aria-label="Playback">{speech.speaking ? 'playing' : 'idle'}</output>
+    <output aria-label="Phase">{speech.status}</output>
     <p role="alert">{notices.join('\\n')}</p>
   </>;
 }
@@ -100,7 +109,7 @@ async function pageFor(options: {
   const settingsRequests: string[] = [];
   const externalRequests: string[] = [];
   await context.addInitScript(() => {
-    const state: VoiceMock = { clips: [], local: [], canceled: 0, requests: [], blobTypes: [], revoked: [] };
+    const state: VoiceMock = { clips: [], local: [], canceled: 0, requests: [], blobTypes: [], revoked: [], blockNext: false, systemPauses: 0, systemResumes: 0 };
     window.__voiceMock = state;
     class ControlledAudio extends EventTarget {
       src: string;
@@ -112,7 +121,11 @@ async function pageFor(options: {
       onended: ((event: Event) => void) | null = null;
       onerror: ((event: Event) => void) | null = null;
       constructor(src = '') { super(); this.src = src; state.clips.push(this); }
-      play() { this.plays++; this.paused = false; return Promise.resolve(); }
+      play() {
+        this.plays++;
+        if (state.blockNext) { state.blockNext = false; return Promise.reject(new DOMException('Gesture required', 'NotAllowedError')); }
+        this.paused = false; return Promise.resolve();
+      }
       pause() { this.pauses++; this.paused = true; }
       load() {}
       removeAttribute(name: string) { if (name === 'src') this.src = ''; }
@@ -141,6 +154,8 @@ async function pageFor(options: {
       ],
       speak: (utterance: LocalUtterance) => { state.local.push(utterance); },
       cancel: () => { state.canceled++; },
+      pause: () => { state.systemPauses++; },
+      resume: () => { state.systemResumes++; },
     });
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
     const originalFetch = window.fetch.bind(window);
@@ -208,6 +223,83 @@ const drain = (page: Page) => page.evaluate(async () => {
 });
 
 describe('voice playback in the browser', () => {
+  it('pauses while a clip is loading and resumes that same clip before advancing the queue', async () => {
+    const held = deferred(); const release = deferred();
+    const { page, context, requests } = await pageFor({ synthesize: async route => { held.resolve(); await release.promise; await fulfillAudio(route); } });
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await held.promise;
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      release.resolve();
+      await expect.poll(async () => (await clips(page)).length).toBe(1);
+      expect((await clips(page))[0]!.plays).toBe(0);
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      await expect.poll(async () => (await clips(page))[0]!.plays).toBe(1);
+      await page.evaluate(() => { window.__voiceMock.clips[0]!.currentTime = 1.25; });
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(1.25);
+      expect(requests).toHaveLength(1);
+      await finish(page, 0);
+      await expect.poll(async () => (await clips(page))[1]?.plays).toBe(1);
+      expect(requests).toHaveLength(2);
+    } finally { release.resolve(); await context.close(); }
+  });
+
+  it('retains an autoplay-blocked clip and retries playback without synthesis or system fallback', async () => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.evaluate(() => { window.__voiceMock.blockNext = true; });
+      await page.getByRole('button', { name: 'Replay', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('blocked');
+      const url = (await clips(page))[0]!.src;
+      expect(await page.evaluate(() => window.__voiceMock.revoked)).not.toContain(url);
+      expect(await local(page)).toEqual([]);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect((await clips(page))[0]).toMatchObject({ src: url, plays: 2 });
+      expect(requests).toHaveLength(1);
+    } finally { await context.close(); }
+  });
+
+  it('plays a direct media URL, pauses at its position, and releases it when recording starts', async () => {
+    const { page, context, requests, settingsRequests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => { window.__voiceMock.clips[0]!.currentTime = 6; });
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(6);
+      await page.getByRole('button', { name: 'Restart', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(0);
+      await page.evaluate(() => window.dispatchEvent(new Event('nihongo-recording-start')));
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('idle');
+      expect((await clips(page))[0]!.paused).toBe(true);
+      expect(await page.evaluate(() => window.__voiceMock.revoked)).toEqual([]);
+      expect(requests).toEqual([]); expect(settingsRequests).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('pauses/resumes system speech and does not let stale automatic speech override a manual stop', async () => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Chinese', exact: true }).click();
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      expect(await page.evaluate(() => window.__voiceMock.systemPauses)).toBe(1);
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      expect(await page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.evaluate(() => window.__voiceMock.systemResumes)).toBeGreaterThan(0);
+      await page.getByRole('button', { name: 'Stale auto', exact: true }).click();
+      await drain(page);
+      expect(await page.getByLabel('Phase').textContent()).toBe('idle');
+      expect(requests).toEqual([]);
+    } finally { await context.close(); }
+  });
+
   it('plays cloud WAVs sequentially, alternates speakers, and sends the requested slow rate', async () => {
     const { page, context, requests, settingsRequests, externalRequests } = await pageFor();
     try {

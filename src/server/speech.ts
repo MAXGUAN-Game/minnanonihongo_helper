@@ -41,17 +41,27 @@ export function getSpeechStatus(dataDir: string, environment: NodeJS.ProcessEnv 
 }
 export function validateWav(buffer: Buffer) {
   if (buffer.length < 44 || buffer.toString('ascii', 0, 4) !== 'RIFF' || buffer.toString('ascii', 8, 12) !== 'WAVE') throw new Error('需要有效的 WAV 录音。');
-  let position = 12, pcm: Buffer | undefined, validFormat = false;
+  if (buffer.readUInt32LE(4) + 8 !== buffer.length) throw new Error('录音文件不完整。');
+  let position = 12, pcm: Buffer | undefined, validFormat = false, formatSeen = false;
   while (position + 8 <= buffer.length) {
     const name = buffer.toString('ascii', position, position + 4), length = buffer.readUInt32LE(position + 4), begin = position + 8;
     if (begin + length > buffer.length) throw new Error('录音文件不完整。');
-    if (name === 'fmt ') validFormat = length >= 16 && buffer.readUInt16LE(begin) === 1 && buffer.readUInt16LE(begin + 2) === 1 && buffer.readUInt32LE(begin + 4) === 16000 && buffer.readUInt16LE(begin + 14) === 16;
-    if (name === 'data') pcm = buffer.subarray(begin, begin + length);
+    if (name === 'fmt ') {
+      if (formatSeen) throw new Error('录音包含重复的格式信息，请重新录音。');
+      formatSeen = true;
+      validFormat = length >= 16 && buffer.readUInt16LE(begin) === 1 && buffer.readUInt16LE(begin + 2) === 1 && buffer.readUInt32LE(begin + 4) === 16000 && buffer.readUInt32LE(begin + 8) === 32000 && buffer.readUInt16LE(begin + 12) === 2 && buffer.readUInt16LE(begin + 14) === 16;
+    }
+    if (name === 'data') {
+      if (pcm) throw new Error('请提交一段完整的录音。');
+      pcm = buffer.subarray(begin, begin + length);
+    }
     position = begin + length + (length % 2);
   }
-  if (!validFormat || !pcm || pcm.length % 2 || pcm.length < 8000 || pcm.length > 16000 * 2 * 31) throw new Error('请提交 0.25–30 秒、单声道 16 kHz 的录音。');
+  if (position !== buffer.length) throw new Error('录音文件不完整。');
+  if (!validFormat || !pcm || pcm.length % 2 || pcm.length < 8000 || pcm.length > 16000 * 2 * 30) throw new Error('请提交 0.25–30 秒、单声道 16 kHz 的录音。');
   let energy = 0; for (let i = 0; i < pcm.length; i += 2) energy += (pcm.readInt16LE(i) / 32768) ** 2;
   if (Math.sqrt(energy / (pcm.length / 2)) < .002) throw new Error('没有听到声音，请靠近麦克风再试。');
+  return { durationMs: pcm.length / 32 };
 }
 export function registerSpeechRoutes(app: FastifyInstance, dataDir: string) {
   const threads = speechThreads();
@@ -59,7 +69,7 @@ export function registerSpeechRoutes(app: FastifyInstance, dataDir: string) {
   speechPaths(dataDir);
   const localWindows = process.platform === 'win32' && process.env.DEPLOYMENT !== 'web';
   let busy = false;
-  app.addContentTypeParser('audio/wav', { parseAs: 'buffer', bodyLimit: 1100000 }, (_request, body, done) => done(null, body));
+  if (!app.hasContentTypeParser('audio/wav')) app.addContentTypeParser('audio/wav', { parseAs: 'buffer', bodyLimit: 1100000 }, (_request, body, done) => done(null, body));
   app.get('/api/speech/status', async () => getSpeechStatus(dataDir));
   app.post('/api/speech/transcribe', { bodyLimit: 1100000 }, async (request, reply) => {
     if (!getSpeechStatus(dataDir).ready) return reply.code(503).send({ code: 'SPEECH_NOT_INSTALLED', error: localWindows ? '语音模型尚未安装。请双击“安装本机语音”，也可以先打字回答。' : '语音识别服务尚未准备好，请在服务器准备语音组件和模型。可以先打字回答。' });

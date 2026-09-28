@@ -193,7 +193,7 @@ sudo docker compose exec app node scripts/setup-speech-linux.mjs
 sudo docker compose exec app node scripts/setup-speech-linux.mjs --download-model
 ```
 
-日语录音经 HTTPS 上传到你的服务器识别，处理后删除原始音频；识别模型保留。系统中文/日文朗读仍用访问网页那台设备的声音；MiniMax 日语朗读需要网络与语音服务额度。
+日语录音经 HTTPS 上传到你的服务器识别，练习录音保留 90 天，可在每课“我的录音”回听或删除；识别临时文件处理后删除；识别模型保留。系统中文/日文朗读仍用访问网页那台设备的声音；MiniMax 日语朗读需要网络与语音服务额度。
 
 ## 5. 迁移学习记录并验收（约 10–15 分钟）
 

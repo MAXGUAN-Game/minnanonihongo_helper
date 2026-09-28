@@ -25,7 +25,7 @@ import { createRoot } from 'react-dom/client';
 import { Conversation } from '/src/client/Conversation.tsx';
 import { lessons1 } from '/src/content/lessons-01-25.ts';
 const settings = {currentLessonId:14,dailyMinutes:15,largeText:false,furigana:true,autoplay:false,model:'mock',hasApiKey:true,setupComplete:true};
-const speech = {stop(){},say(){},speaking:false};
+const speech = {stop(){},say(){},speaking:false,getEpoch(){return 0},sayAuto(){},playUrl(){}};
 const initial = await fetch('/api/test-session').then(r=>r.json());
 function Harness(){
   const [resume,setResume] = React.useState(initial);

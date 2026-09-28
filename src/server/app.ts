@@ -10,6 +10,8 @@ import { ApiError, attemptInputSchema, backupSchema, progressSchema, reviewInput
 import { Store } from './store';
 import { registerVoiceRoutes } from './voice';
 import { authorizeRequest, deploymentConfig, type Deployment } from './deployment';
+import { registerRecordingRoutes } from './recordings';
+import type { SpeakingAssessment } from '../shared/recordings';
 
 export type AppOptions = { dataDir?: string; deployment?: Deployment; aiFetch?: AIFetch; voiceFetch?: typeof fetch; speechStatus?: () => SpeechStatus | Promise<SpeechStatus> };
 const intervals = [1, 3, 7, 14, 30];
@@ -60,6 +62,27 @@ function validateBackup(backup: Backup) {
     const allowedFeedback = grammarChat ? scenario.targetGrammarIds : lesson.grammar.map(grammar => grammar.id);
     if (session.turns[0].text !== scenario.opening.jp || (grammarChat && session.turns[0].translation !== scenario.opening.zh) || session.feedback.some(item => item.grammarId && !allowedFeedback.includes(item.grammarId))) throw new ApiError(400, 'INVALID_BACKUP', '备份中的课程内容不一致。');
   }
+  const recordings = backup.version === 2 ? backup.recordings : [];
+  const assessments = backup.version === 2 ? backup.assessments : [];
+  unique(recordings.map(item => item.id)); unique(assessments.map(item => item.id));
+  const invalid = () => { throw new ApiError(400, 'INVALID_BACKUP', '备份中的录音、评分与练习不匹配，原数据没有更改。'); };
+  const matchesRecording = (id: string, lessonId: number, context: 'speak' | 'conversation', itemId: string) => recordings.some(record => record.id === id && record.lessonId === lessonId && record.context === context && record.itemId === itemId);
+  for (const record of recordings) {
+    const lesson = lessonFor(record.lessonId);
+    const validItem = record.context === 'speak' ? lesson.speaking.some(item => item.id === record.itemId) : backup.sessions.some(session => session.id === record.itemId && session.lessonId === record.lessonId);
+    if (!validItem || Date.parse(record.expiresAt) - Date.parse(record.createdAt) !== 90 * 86400000) invalid();
+  }
+  for (const assessment of assessments) {
+    const lesson = lessonFor(assessment.lessonId);
+    if (!lesson.speaking.some(item => item.id === assessment.itemId) || (assessment.recordingId && !matchesRecording(assessment.recordingId, assessment.lessonId, 'speak', assessment.itemId)) || assessment.corrections.some(item => !item.original.trim() || !assessment.text.includes(item.original) || (item.grammarId && !lesson.grammar.some(grammar => grammar.id === item.grammarId)))) invalid();
+  }
+  for (const attempt of backup.attempts) {
+    if (attempt.recordingId && !matchesRecording(attempt.recordingId, attempt.lessonId, 'speak', attempt.itemId)) invalid();
+    if (attempt.assessmentId && !assessments.some(item => item.id === attempt.assessmentId && item.lessonId === attempt.lessonId && item.itemId === attempt.itemId && item.recordingId === attempt.recordingId && (attempt.answer === undefined || item.text === attempt.answer))) invalid();
+  }
+  for (const session of backup.sessions) for (const turn of session.turns) {
+    if (turn.recordingId && (turn.role !== 'user' || !matchesRecording(turn.recordingId, session.lessonId, 'conversation', session.id))) invalid();
+  }
 }
 export function buildApp(options: AppOptions = {}) {
   const deployment = options.deployment ?? deploymentConfig({});
@@ -95,6 +118,7 @@ export function buildApp(options: AppOptions = {}) {
     return reply.code(500).send({ error: '服务暂时没有完成操作，请重试。', code: 'INTERNAL_ERROR' });
   });
   registerVoiceRoutes(app, store.db, dataDir, options.voiceFetch ?? fetch);
+  const recordings = registerRecordingRoutes(app, { store, dataDir, aiFetch, serialized });
   app.get('/api/health', async () => deployment.mode === 'web' ? { ok: true, app: 'nihongo-small-steps' } : { ok: true, app: 'nihongo-small-steps', pid: process.pid, root: process.cwd() });
   app.get('/api/bootstrap', async (): Promise<Bootstrap> => {
     const progress = store.all<Progress>('progress');
@@ -139,8 +163,16 @@ export function buildApp(options: AppOptions = {}) {
   app.post('/api/attempts', async request => {
     const input = parse(attemptInputSchema, request.body);
     if (!hasItem(lessonFor(input.lessonId), input.itemId)) throw new ApiError(400, 'INVALID_ITEM', '这个练习不属于当前课程。');
+    const record = input.recordingId ? recordings.validateLink(input.recordingId, input.lessonId, 'speak', input.itemId) : undefined;
+    if (input.assessmentId) {
+      const assessment = store.get<SpeakingAssessment>('assessments', input.assessmentId);
+      if (!assessment || assessment.lessonId !== input.lessonId || assessment.itemId !== input.itemId || assessment.recordingId !== input.recordingId || (input.answer !== undefined && assessment.text !== input.answer)) throw new ApiError(400, 'ASSESSMENT_MISMATCH', '这个评分不属于当前回答。');
+    }
     const attempt: Attempt = { ...input, result: input.usedHint && input.result === 'good' ? 'hint' : input.result, id: randomUUID(), createdAt: now() };
-    store.save('attempts', attempt.id, attempt);
+    store.db.transaction(() => {
+      store.save('attempts', attempt.id, attempt);
+      if (record && input.answer !== undefined) store.save('recordings', record.id, { ...record, confirmedText: input.answer });
+    })();
     return attempt;
   });
   app.get<{ Querystring: { due?: string } }>('/api/reviews', async request => {
@@ -189,10 +221,11 @@ export function buildApp(options: AppOptions = {}) {
       const session = sessionFor(request.params.id);
       const existing = session.turns.find(turn => turn.role === 'user' && turn.id === input.clientTurnId);
       if (existing) {
-        if (existing.text !== input.text) throw new ApiError(409, 'IDEMPOTENCY_CONFLICT', '这次发送编号已经用于另一句话，请重新发送。');
+        if (existing.text !== input.text || existing.recordingId !== input.recordingId) throw new ApiError(409, 'IDEMPOTENCY_CONFLICT', '这次发送编号已经用于另一句话，请重新发送。');
         return session;
       }
       if (session.turns.some(turn => turn.id === input.clientTurnId)) throw new ApiError(409, 'IDEMPOTENCY_CONFLICT', '这次发送编号已经存在，请重新发送。');
+      if (input.recordingId) recordings.validateLink(input.recordingId, session.lessonId, 'conversation', session.id);
       const grammarChat = isGrammarChat(session);
       const maxTurns = grammarChat ? GRAMMAR_CHAT_MAX_TURNS : 6;
       if (session.status === 'complete' || session.turnCount >= maxTurns) throw new ApiError(409, 'SESSION_COMPLETE', '这次练习已经结束，可以开始新的一轮。');
@@ -207,8 +240,11 @@ export function buildApp(options: AppOptions = {}) {
       const complete = turnCount >= maxTurns || (!grammarChat && turnCount >= 4 && scenario.successCriteria.every(goal => completedGoals.includes(goal)));
       const feedback = [...session.feedback];
       for (const correction of result.corrections) if (feedback.length < 2 && !feedback.some(item => item.original === correction.original && item.corrected.jp === correction.corrected.jp)) feedback.push(correction);
-      const updated: Session = { ...session, turnCount, completedGoals, feedback, status: complete ? 'complete' : 'active', updatedAt: now(), turns: [...session.turns, { id: input.clientTurnId, role: 'user', text: input.text, source: 'user', createdAt: now() }, { id: randomUUID(), role: 'assistant', text: result.replyJa, translation: result.replyZh, hint: result.hintZh, source: 'deepseek', createdAt: now() }] };
-      store.save('sessions', session.id, updated);
+      const updated: Session = { ...session, turnCount, completedGoals, feedback, status: complete ? 'complete' : 'active', updatedAt: now(), turns: [...session.turns, { id: input.clientTurnId, role: 'user', text: input.text, source: 'user', createdAt: now(), ...(input.recordingId ? { recordingId: input.recordingId } : {}) }, { id: randomUUID(), role: 'assistant', text: result.replyJa, translation: result.replyZh, hint: result.hintZh, source: 'deepseek', createdAt: now() }] };
+      store.db.transaction(() => {
+        store.save('sessions', session.id, updated);
+        if (input.recordingId) { const record = recordings.validateLink(input.recordingId, session.lessonId, 'conversation', session.id); store.save('recordings', record.id, { ...record, confirmedText: input.text }); }
+      })();
       return updated;
     });
   });
@@ -217,12 +253,14 @@ export function buildApp(options: AppOptions = {}) {
     if (session.status === 'active') { session.status = 'complete'; session.updatedAt = now(); store.save('sessions', session.id, session); }
     return session;
   }));
-  app.get('/api/backup', async () => store.backup());
+  app.get('/api/backup', async () => { recordings.cleanup(); return store.backup(); });
   app.post('/api/restore', async request => {
     const { backup } = parse(z.object({ backup: backupSchema }).strict(), request.body);
     validateBackup(backup);
     if (locks.size) throw new ApiError(409, 'STORE_BUSY', '请等当前对话发送完成，再恢复备份。');
+    recordings.cleanup();
     store.restore(backup);
+    recordings.cleanup();
     return { ok: true, settings: store.settings() };
   });
   return app;

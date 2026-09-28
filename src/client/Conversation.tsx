@@ -1,18 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, BookOpen, Check, ChevronRight, Mic, Repeat2, Send, Lightbulb, Plus, MessageCircle, Keyboard, Volume2 } from 'lucide-react';
+import { ArrowLeft, BookOpen, Check, ChevronRight, Mic, Repeat2, Send, Lightbulb, Plus, MessageCircle, Keyboard, Volume2, Headphones, Play } from 'lucide-react';
 import type { Lesson, Session, Settings, Correction } from '../shared/types';
 import { getGrammarChatScenario, isGrammarChat, GRAMMAR_CHAT_MAX_TURNS } from '../shared/grammar-chat';
 import { api, ClientApiError } from './api';
 import { Button, Sentence } from './ui';
 import { useRecorder, type Speech } from './speech';
+import { RecordingControls } from './RecordingControls';
 
-type PendingTurn = { text: string; id: string; usedHint: boolean };
-type Composer = { sessionId: string | null; draft: string; usedHint: boolean; pendingRequest: PendingTurn | null };
+type PendingTurn = { text: string; id: string; usedHint: boolean; recordingId?: string };
+type Composer = { sessionId: string | null; draft: string; usedHint: boolean; pendingRequest: PendingTurn | null; recordingId?: string };
 const emptyComposer = (sessionId: string | null): Composer => ({ sessionId, draft: '', usedHint: false, pendingRequest: null });
 const cacheKey = (sessionId: string) => `conversation-draft-${sessionId}`;
 // Only these server errors guarantee that this turn was not committed. A proxy
 // error, unreadable response or unknown code must keep the original request ID.
-const rejectedTurnCodes = new Set(['AI_NOT_CONFIGURED', 'AI_AUTH_FAILED', 'AI_BUSY', 'AI_UNAVAILABLE', 'AI_INVALID_RESPONSE', 'INVALID_INPUT', 'INVALID_GRAMMAR', 'INVALID_SCENARIO', 'PAYLOAD_TOO_LARGE', 'IDEMPOTENCY_CONFLICT', 'SESSION_COMPLETE', 'SESSION_NOT_FOUND']);
+const rejectedTurnCodes = new Set(['AI_NOT_CONFIGURED', 'AI_AUTH_FAILED', 'AI_BUSY', 'AI_UNAVAILABLE', 'AI_INVALID_RESPONSE', 'INVALID_INPUT', 'INVALID_GRAMMAR', 'INVALID_SCENARIO', 'PAYLOAD_TOO_LARGE', 'IDEMPOTENCY_CONFLICT', 'SESSION_COMPLETE', 'SESSION_NOT_FOUND', 'RECORDING_NOT_FOUND', 'RECORDING_MISMATCH']);
 function restoreComposer(session: Session | null): Composer {
   if (!session) return emptyComposer(null);
   const result = emptyComposer(session.id);
@@ -23,9 +24,11 @@ function restoreComposer(session: Session | null): Composer {
       const value = saved as Record<string, unknown>;
       if (typeof value.draft === 'string') result.draft = value.draft.slice(0, 2000);
       result.usedHint = value.usedHint === true;
+      if (typeof value.recordingId === 'string' && /^[a-zA-Z0-9-]{1,100}$/.test(value.recordingId)) result.recordingId = value.recordingId;
       const request = value.pendingRequest as Partial<PendingTurn> | undefined;
       if (request && typeof request.text === 'string' && request.text.trim() && request.text.length <= 2000 && typeof request.id === 'string' && /^[a-zA-Z0-9_-]{1,100}$/.test(request.id)) {
         result.pendingRequest = { text: request.text, id: request.id, usedHint: request.usedHint === true };
+        if (typeof request.recordingId === 'string' && /^[a-zA-Z0-9-]{1,100}$/.test(request.recordingId)) result.pendingRequest.recordingId = request.recordingId;
       }
     } else {
       // Migrate earlier versions without an empty initial effect overwriting them.
@@ -35,7 +38,7 @@ function restoreComposer(session: Session | null): Composer {
   const request = result.pendingRequest;
   if (request && session.turns.some(turn => turn.role === 'user' && turn.id === request.id && turn.text === request.text)) {
     result.pendingRequest = null;
-    if (result.draft.trim() === request.text) { result.draft = ''; result.usedHint = false; }
+    if (result.draft.trim() === request.text) { result.draft = ''; result.usedHint = false; result.recordingId = undefined; }
   }
   return result;
 }
@@ -57,6 +60,9 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   const [grammarId, setGrammarId] = useState('');
   const [showChinese, setShowChinese] = useState(false);
   const [showHint, setShowHint] = useState(false);
+  const [revealedTurns, setRevealedTurns] = useState<Set<string>>(() => new Set());
+  const playedTurns = useRef(new Set(resume?.turns.filter(turn => turn.role === 'assistant').map(turn => turn.id) || []));
+  const pickerRef = useRef(false);
   const [recordInfo, setRecordInfo] = useState('');
   const [sendError, setSendError] = useState('');
   const [added, setAdded] = useState<string[]>([]);
@@ -67,6 +73,7 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   const pendingRef = useRef(false);
   const requestGeneration = useRef(0);
   const recordingContext = useRef<{ sessionId: string; draft: string } | null>(null);
+  const submittedClip = useRef<string | null>(null);
   const alive = useRef(true);
   const transcript = useRef<HTMLDivElement>(null);
   function updateComposer(value: Composer) { composerRef.current = value; setComposer(value); return saveComposer(value); }
@@ -77,16 +84,21 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
     // opened after sending belong to the current draft, not that older request.
     updateComposer({ ...current, usedHint: true });
   }
-  const recorder = useRecorder((text, ms) => {
+  const recorder = useRecorder((text, ms, recordingId) => {
     const context = recordingContext.current;
     if (!alive.current || !context || context.sessionId !== sessionRef.current?.id) return;
     const current = composerRef.current.draft;
     // A slow transcription must not erase words typed while it was running.
     const next = current === context.draft || !current.trim() ? text : `${current}\n${text}`;
-    setDraft(next.slice(0, 2000));
+    updateComposer({ ...composerRef.current, draft: next.slice(0, 2000), recordingId });
     setRecordInfo(`识别用了 ${(ms / 1000).toFixed(1)} 秒。请确认文字，再发送。`);
     recordingContext.current = null;
-  }, notice);
+  }, notice, session ? { lessonId: lesson.id, itemId: session.id, context: 'conversation' } : undefined);
+  useEffect(() => {
+    if (recorder.clip?.recordingId && recorder.clip.url !== submittedClip.current && composerRef.current.sessionId === sessionRef.current?.id) {
+      updateComposer({ ...composerRef.current, recordingId: recorder.clip.recordingId });
+    }
+  }, [recorder.clip?.recordingId]);
   useEffect(() => {
     alive.current = true;
     saveComposer(composerRef.current);
@@ -94,8 +106,10 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   }, []);
   function selectSession(value: Session | null) {
     requestGeneration.current++; controller.current?.abort(); controller.current = null;
-    recordingContext.current = null; recorder.stop(); speech.stop();
+    recordingContext.current = null; recorder.clear(); speech.stop();
     sessionRef.current = value; setSession(value); updateComposer(restoreComposer(value));
+    setRevealedTurns(new Set()); pickerRef.current = false;
+    value?.turns.filter(turn => turn.role === 'assistant').forEach(turn => playedTurns.current.add(turn.id));
     pendingRef.current = false; setPending(false); setShowPicker(false); setShowHint(false); setShowChinese(false); setRecordInfo(''); setSendError(''); setAdded([]); setRetryCorrection(null);
   }
   useEffect(() => {
@@ -123,7 +137,13 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
     const request = new AbortController(); controller.current = request;
     const generation = ++requestGeneration.current;
     pendingRef.current = true; setPending(true); speech.stop();
-    return { request, isCurrent: () => alive.current && generation === requestGeneration.current };
+    return { request, audioEpoch: speech.getEpoch(), isCurrent: () => alive.current && generation === requestGeneration.current };
+  }
+  function playNewReply(value: Session, audioEpoch: number) {
+    const reply = value.turns.at(-1);
+    if (!reply || reply.role !== 'assistant' || playedTurns.current.has(reply.id)) return;
+    playedTurns.current.add(reply.id);
+    if (settings.autoplay && !pickerRef.current && recorder.status === 'idle' && sessionRef.current?.id === value.id) speech.sayAuto(reply.text, audioEpoch);
   }
   function endRequest(request: AbortController, isCurrent: () => boolean) {
     if (isCurrent()) { if (controller.current === request) controller.current = null; pendingRef.current = false; setPending(false); }
@@ -131,12 +151,15 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   function startRecording() {
     if (!sessionRef.current || pendingRef.current || recorder.status !== 'idle') return;
     recordingContext.current = { sessionId: sessionRef.current.id, draft: composerRef.current.draft };
+    submittedClip.current = null;
+    updateComposer({ ...composerRef.current, recordingId: undefined });
     speech.stop(); void recorder.start();
   }
   function backToChoices() {
     // Keep the active session and its cached composer intact. In particular,
     // returning to the picker must not settle an uncertain turn or finish it.
-    recordingContext.current = null; recorder.stop(); speech.stop();
+    recordingContext.current = null; recorder.cancel(); speech.stop();
+    pickerRef.current = true;
     saveComposer(composerRef.current); setShowPicker(true);
   }
   function useStarter(text: string) {
@@ -146,38 +169,42 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   }
   async function start(scenarioId?: string) {
     if (pendingRef.current) return;
-    const { request, isCurrent } = beginRequest();
+    const { request, isCurrent, audioEpoch } = beginRequest();
     try {
       const payload = scenarioId ? { lessonId: lesson.id, scenarioId } : { lessonId: lesson.id, mode: 'grammar', ...(grammarId ? { grammarId } : {}) };
       const value = await api<Session>('/sessions', { method: 'POST', body: JSON.stringify(payload), signal: request.signal });
       if (!isCurrent()) return;
       sessionRef.current = value; setSession(value); updateComposer(restoreComposer(value));
+      setRevealedTurns(new Set()); pickerRef.current = false;
       setShowPicker(false); setShowHint(false); setShowChinese(false); setRecordInfo(''); setSendError(''); setAdded([]); setRetryCorrection(null);
-      await refresh(); if (isCurrent() && settings.autoplay && value.turns[0]) speech.say(value.turns[0].text);
+      playNewReply(value, audioEpoch);
+      await refresh();
     } catch (error) { if (isCurrent() && (error as Error).name !== 'AbortError') notice((error as Error).message); }
     finally { endRequest(request, isCurrent); }
   }
   async function send() {
     const currentSession = sessionRef.current;
     const cached = composerRef.current;
-    if (!currentSession || currentSession.status !== 'active' || (!cached.draft.trim() && !cached.pendingRequest) || pendingRef.current || recorder.status !== 'idle') return;
+    if (!currentSession || currentSession.status !== 'active' || (!cached.draft.trim() && !cached.pendingRequest) || pendingRef.current || recorder.status !== 'idle' || recorder.saving) return;
     // First settle an uncertain submission with its original ID, even when the
     // user edited the draft meanwhile. The edited draft is kept for the next turn.
-    const turn: PendingTurn = cached.pendingRequest || { text: cached.draft.trim(), id: crypto.randomUUID(), usedHint: cached.usedHint };
+    const turn: PendingTurn = cached.pendingRequest || { text: cached.draft.trim(), id: crypto.randomUUID(), usedHint: cached.usedHint, recordingId: cached.recordingId || (recorder.clip?.url !== submittedClip.current ? recorder.clip?.recordingId : undefined) };
     if (!updateComposer({ ...cached, pendingRequest: turn })) {
       updateComposer(cached);
       setSendError('浏览器未能保存发送记录。请允许本地存储后重试；你的回答仍在输入框。'); return;
     }
     setSendError(''); setRecordInfo('');
-    const { request, isCurrent } = beginRequest();
+    const { request, isCurrent, audioEpoch } = beginRequest();
     try {
       let next: Session;
       try {
-        next = await api<Session>(`/sessions/${currentSession.id}/turn`, { method: 'POST', body: JSON.stringify({ text: turn.text, usedHint: turn.usedHint, clientTurnId: turn.id }), signal: request.signal });
+        next = await api<Session>(`/sessions/${currentSession.id}/turn`, { method: 'POST', body: JSON.stringify({ text: turn.text, usedHint: turn.usedHint, clientTurnId: turn.id, recordingId: turn.recordingId }), signal: request.signal });
       } catch (error) {
         if (!isCurrent() || sessionRef.current?.id !== currentSession.id || (error as Error).name === 'AbortError') return;
         if (error instanceof ClientApiError && error.code && rejectedTurnCodes.has(error.code)) {
-          updateComposer({ ...composerRef.current, pendingRequest: null });
+          const invalidRecording = error.code === 'RECORDING_NOT_FOUND' || error.code === 'RECORDING_MISMATCH';
+          updateComposer({ ...composerRef.current, pendingRequest: null, ...(invalidRecording ? { recordingId: undefined } : {}) });
+          if (invalidRecording) { submittedClip.current = recorder.clip?.url || null; setSendError('这段录音已不可关联。文字已保留，请再次确认发送，或重新录一句。'); return; }
           const unavailable = error.code === 'SESSION_COMPLETE' || error.code === 'SESSION_NOT_FOUND';
           setSendError(`${error.message} ${unavailable ? '回答已保留，请刷新页面查看最新对话或开始新一轮。' : error.code.startsWith('AI_') ? '你的回答已保留。' : '回答已保留，可修改后重新发送，也可以结束这轮。'}`);
           if (error.code === 'SESSION_COMPLETE') {
@@ -195,10 +222,13 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
       sessionRef.current = next; setSession(next);
       const current = composerRef.current;
       const keepDraft = !!current.draft.trim() && current.draft.trim() !== turn.text;
-      updateComposer({ ...current, draft: keepDraft ? current.draft : '', usedHint: keepDraft ? current.usedHint : false, pendingRequest: null });
+      updateComposer({ ...current, draft: keepDraft ? current.draft : '', usedHint: keepDraft ? current.usedHint : false, recordingId: keepDraft ? current.recordingId : undefined, pendingRequest: null });
+      if (!keepDraft) submittedClip.current = recorder.clip?.url || null;
       setShowHint(false); setShowChinese(false); setSendError('');
       const confirmation = keepDraft ? '上次发送已确认。修改后的文字仍在输入框，请看回复后再发送。' : '';
       setRecordInfo(confirmation);
+      window.dispatchEvent(new Event('nihongo-recordings-changed'));
+      playNewReply(next, audioEpoch);
       try { await refresh(); }
       catch {
         if (isCurrent()) {
@@ -207,7 +237,6 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
           if (next.status === 'complete') notice(message);
         }
       }
-      if (isCurrent() && settings.autoplay) { const reply = next.turns.at(-1); if (reply?.role === 'assistant') speech.say(reply.text); }
     }
     finally { endRequest(request, isCurrent); }
   }
@@ -225,7 +254,7 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   }
   if (!session || showPicker) return <div className="scenario-picker">
     <p className="eyebrow">把这一课，用进对话里</p><h2>练一个场景，或自由聊语法。</h2>
-    {resumableSession && <div className="conversation-resume"><div><strong>未结束的对话已保留</strong><p>{resumableScene?.title} · 已聊 {resumableSession.turnCount} 句</p></div><Button secondary onClick={() => { if (resumableSession.id === session?.id) setShowPicker(false); else selectSession(resumableSession); }}>继续刚才的对话 <ChevronRight size={18}/></Button></div>}
+    {resumableSession && <div className="conversation-resume"><div><strong>未结束的对话已保留</strong><p>{resumableScene?.title} · 已聊 {resumableSession.turnCount} 句</p></div><Button secondary onClick={() => { if (resumableSession.id === session?.id) { pickerRef.current = false; setShowPicker(false); } else selectSession(resumableSession); }}>继续刚才的对话 <ChevronRight size={18}/></Button></div>}
     <section className="grammar-chat-card" aria-labelledby="grammar-chat-entry-title">
       <div className="grammar-chat-heading"><span className="tile-icon lavender"><BookOpen/></span><div><p className="eyebrow">围绕第 {lesson.id} 课 · 随时提问</p><h3 id="grammar-chat-entry-title">语法自由聊</h3></div></div>
       <p>问用法、要例句，或让 AI 陪你练一句。可以输入中文。</p>
@@ -241,18 +270,25 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
     <div className="conversation-title"><div><p className="eyebrow">{grammarMode ? `第 ${lesson.id} 课 · 语法自由聊` : selectedScene?.title}</p><h2>{grammarMode ? session.grammarId ? grammarScope[0]?.title : '围绕本课语法，慢慢聊。' : selectedScene?.goal}</h2></div><span className="pill">{session.status === 'complete' ? '本轮已结束' : grammarMode ? `已聊 ${session.turnCount} 句` : `${session.turnCount} / 6 轮`}</span></div>
     {grammarMode && <details className="grammar-chat-scope"><summary>本次练习的语法 · {grammarScope.length} 个</summary><ul>{grammarScope.map(item => <li key={item.id}>{item.title}</li>)}</ul></details>}
     {grammarMode && session.status === 'active' && session.turnCount >= GRAMMAR_CHAT_MAX_TURNS - 10 && <p className="notice-inline">这次对话快满了。聊到 {GRAMMAR_CHAT_MAX_TURNS} 句后，可以新开一次继续练。</p>}
-    <div className="chat-scroll" ref={transcript} role="region" tabIndex={0} aria-label="本轮对话">{session.turns.map(turn => <div className={`chat-row ${turn.role}`} key={turn.id}><span className="speaker-label">{turn.role === 'user' ? '你' : turn.source === 'lesson' ? grammarMode ? '自由聊开场' : '场景开场 · 范句' : 'DeepSeek'}</span><div className="bubble"><p lang={turn.role === 'user' && grammarMode ? undefined : 'ja'}>{turn.text}</p>{showChinese && turn.translation && <p className="bubble-translation" lang="zh-CN">{turn.translation}</p>}</div></div>)}{pending && <p className="thinking" role="status">正在整理一句适合你的回答……</p>}</div>
-    {session.status === 'active' ? <>
+    <div className="chat-scroll" ref={transcript} role="region" tabIndex={0} aria-label="本轮对话">{session.turns.map(turn => <div className={`chat-row ${turn.role}`} key={turn.id}>
+      <span className="speaker-label">{turn.role === 'user' ? '你' : turn.source === 'lesson' ? grammarMode ? '自由聊开场' : '场景开场 · 范句' : 'DeepSeek'}</span>
+      <div className="bubble">{turn.role === 'user' || revealedTurns.has(turn.id) ? <p id={`turn-text-${turn.id}`} lang={turn.role === 'user' && grammarMode ? undefined : 'ja'}>{turn.text}</p> : <div className="reply-cover"><Headphones size={26} aria-hidden="true"/><p>先听一句，再看原文</p></div>}
+        {showChinese && turn.translation && <p className="bubble-translation" lang="zh-CN">{turn.translation}</p>}
+        {turn.role === 'assistant' && <div className="reply-actions"><button className="text-button" aria-expanded={revealedTurns.has(turn.id)} onClick={() => { setRevealedTurns(previous => { const next = new Set(previous); if (next.has(turn.id)) next.delete(turn.id); else next.add(turn.id); return next; }); if (session.status === 'active' && turn.id === last?.id) markHint(); }}>{revealedTurns.has(turn.id) ? '收起原文' : '显示原文'}</button><button className="text-button" onClick={() => speech.say(turn.text)}><Volume2 size={17}/>听这句</button></div>}
+        {turn.role === 'user' && turn.recordingId && <button className="text-button recording-replay" onClick={() => speech.playUrl(`/api/recordings/${encodeURIComponent(turn.recordingId!)}/audio`, '我的录音')}><Play size={17}/>听我的录音</button>}
+      </div>
+    </div>)}{pending && <p className="thinking" role="status">正在整理一句适合你的回答……</p>}</div>
       <div className="assist-bar"><Button secondary onClick={() => last && speech.say(last.text)}><Repeat2 size={18}/>再听一次</Button><Button secondary onClick={() => last && speech.say(last.text, 'ja-JP', .65)}>慢一点</Button><Button secondary disabled={pending} aria-pressed={showHint} onClick={() => { setShowHint(!showHint); markHint(); }}><Lightbulb size={18}/>给提示</Button><Button secondary disabled={pending} aria-pressed={showChinese} onClick={() => { setShowChinese(!showChinese); markHint(); }}>{showChinese ? '收起中文' : '看中文'}</Button>{grammarMode && <Button secondary disabled={pending || !last?.translation} onClick={() => { if (last?.translation) { markHint(); speech.say(last.translation, 'zh-CN'); } }}><Volume2 size={18}/>听讲解</Button>}</div>
+    {session.status === 'active' ? <>
       {showHint && <div className="hint-panel" role="status">{last?.hint || `试着完成：${selectedScene?.goal}。可以用本课的词和短句。`}</div>}
-      <div className="answer-zone"><div className="record-actions"><button className={`mic-button ${recorder.status === 'recording' ? 'recording' : ''}`} disabled={pending || recorder.status === 'transcribing'} onPointerDown={event => { if (event.button !== 0) return; event.preventDefault(); event.currentTarget.setPointerCapture(event.pointerId); startRecording(); }} onPointerUp={() => recorder.stop()} onPointerCancel={() => recorder.stop()} onLostPointerCapture={() => recorder.stop()} onKeyDown={event => { if (event.code === 'Space' && !event.repeat) { event.preventDefault(); startRecording(); } }} onKeyUp={event => { if (event.code === 'Space') { event.preventDefault(); recorder.stop(); } }} onBlur={() => recorder.stop()} aria-label="按住说话，也可按住空格键"><Mic size={27}/></button><div><strong>{recorder.status === 'recording' ? '正在听，松开结束' : recorder.status === 'transcribing' ? deployment === 'web' ? '正在服务器识别……' : '正在本机识别……' : recorder.status === 'asking' ? '请允许麦克风' : '按住说话'}</strong><p>{grammarMode ? '日语录音 · 中文问题请在下方输入' : '也可以按住空格键 · 最长 30 秒'}</p><button className="text-button" disabled={pending || recorder.status === 'transcribing'} onClick={() => { if (recorder.status === 'recording' || recorder.status === 'asking') recorder.stop(); else startRecording(); }}>{recorder.status === 'recording' || recorder.status === 'asking' ? '点击结束录音' : '或点击开始录音'}</button></div></div>
-        {deployment === 'web' && <p className="tiny-note">录音上传到你的服务器识别，完成后删除。未发送的草稿保留在当前浏览器。</p>}
+      <div className="answer-zone"><RecordingControls recorder={recorder} speech={speech} disabled={pending} onStart={startRecording}/>
+        <p className="tiny-note">录音保存 90 天，可在本课“我的录音”回听或删除。未发送的文字保留在当前浏览器。</p>
         {grammarMode && <div className="grammar-chat-starters" aria-label="提问起点"><p>想从哪里开始？</p><div className="row-actions">{starters.map(starter => <Button key={starter.label} secondary disabled={pending || !!draft.trim() || !!composer.pendingRequest} onClick={() => useStarter(starter.text)}>{starter.label}</Button>)}</div><p className="tiny-note">点一下放入输入框，确认后再发送。</p></div>}
         <label className="answer-label" htmlFor="answer-draft"><Keyboard size={17}/>{grammarMode ? '输入中文提问，或用日语聊一句' : '确认识别文字，或直接输入'}</label><textarea id="answer-draft" value={draft} onChange={event => setDraft(event.target.value)} aria-describedby={sendError ? 'conversation-send-error' : composer.pendingRequest ? 'conversation-pending-turn' : undefined} placeholder={grammarMode ? '例如：这个句型什么时候用？也可以输入日语。' : '用一句简单日语回答……'} maxLength={2000} rows={2} disabled={pending} onKeyDown={event => { if (event.ctrlKey && event.key === 'Enter') { event.preventDefault(); void send(); } }}/>
         {recordInfo && <p className="record-info" role="status">{recordInfo}</p>}
         {sendError && <p id="conversation-send-error" className="conversation-error" role="alert">{sendError}</p>}
         {composer.pendingRequest && !pending && <div id="conversation-pending-turn" className="pending-turn" role="status"><p>待确认的上一句：</p><p lang="ja">{composer.pendingRequest.text}</p><p>{draft.trim() !== composer.pendingRequest.text ? '重试会核对上面这句。修改后的文字保留在输入框，确认后再发送。' : '请点“重试上一句”确认发送结果。'}</p></div>}
-        <div className="answer-footer"><button className="text-button" disabled={pending || recorder.status !== 'idle'} onClick={finish}>结束这轮</button><Button onClick={send} disabled={pending || (!draft.trim() && !composer.pendingRequest) || recorder.status !== 'idle'}><Send size={18}/>{pending ? '等待回复' : composer.pendingRequest ? '重试上一句' : '确认并发送'}</Button></div>
+        <div className="answer-footer"><button className="text-button" disabled={pending || recorder.status !== 'idle'} onClick={finish}>结束这轮</button><Button onClick={send} disabled={pending || (!draft.trim() && !composer.pendingRequest) || recorder.status !== 'idle' || recorder.saving}><Send size={18}/>{pending ? '等待回复' : composer.pendingRequest ? '重试上一句' : '确认并发送'}</Button></div>
       </div>
     </> : <div className="conversation-result"><span className="result-check"><Check/></span><h2>{grammarMode ? '这次自由聊，先到这里。' : '这轮练习，先到这里。'}</h2><p className="muted">{session.completedGoals.length ? `完成的小目标：${session.completedGoals.join('、')}` : '保留这次尝试，下一次可以继续练。'}</p>{session.feedback.length > 0 ? session.feedback.slice(0, 2).map((correction, i) => <div className="correction-card" key={i}><h3>{correction.goal}</h3><p>{correction.explanation}</p><Sentence example={correction.corrected} speech={speech} furigana={settings.furigana}/><div className="row-actions"><Button secondary onClick={() => { setRetryCorrection(correction); speech.stop(); }}><Mic size={17}/>现在重说</Button><Button secondary disabled={added.includes(String(i))} onClick={async () => { try { await addCorrection(correction, `${session.id}-correction-${i}`); setAdded([...added, String(i)]); } catch (error) { notice((error as Error).message); } }}><Plus size={17}/>{added.includes(String(i)) ? '已加入复习' : '加入复习'}</Button></div></div>) : <p className="notice-inline">本轮没有可展示的 AI 纠错。你也可以把课程里的卡点加入复习。</p>}{retryCorrection && <div className="hint-panel"><strong>先合上提示，说一次：{retryCorrection.goal}</strong><p>说完后自己确认；这不是发音评分。</p><Button secondary onClick={() => { setRetryCorrection(null); notice('又练了一次。下次换个情境试试。'); }}>我重说了 <Check size={17}/></Button></div>}<Button onClick={backToChoices}>{grammarMode ? '再选一个练习' : '换个场景'} <ChevronRight size={18}/></Button></div>}
   </div>;

@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { GRAMMAR_CHAT_MAX_TURNS } from '../shared/grammar-chat';
+import { recordingIdSchema, recordingMetadataSchema, speakingAssessmentSchema } from '../shared/recordings';
 
 export const lessonIdSchema = z.number().int().min(1).max(50);
 const id = z.string().trim().min(1).max(160);
@@ -10,12 +11,12 @@ export const correctionSchema = z.object({ goal: short, original: z.string().max
 export const settingsSchema = z.object({ currentLessonId: lessonIdSchema, dailyMinutes: z.union([z.literal(15), z.literal(60)]), largeText: z.boolean(), furigana: z.boolean(), autoplay: z.boolean(), model: z.string().trim().min(1).max(100).regex(/^[a-zA-Z0-9._:-]+$/), hasApiKey: z.boolean(), setupComplete: z.boolean() }).strict();
 export const settingsPatchSchema = settingsSchema.omit({ hasApiKey: true }).partial().extend({ apiKey: z.string().trim().max(512).optional() }).strict();
 export const progressSchema = z.object({ lessonId: lessonIdSchema, stage: z.enum(['understand', 'listen', 'speak', 'conversation']), cursor: z.number().int().min(0).max(10000), status: z.enum(['seen', 'assisted', 'independent']), itemId: id.optional(), updatedAt: timestamp }).strict();
-export const attemptInputSchema = z.object({ lessonId: lessonIdSchema, itemId: id, result: z.enum(['again', 'hint', 'good']), answer: z.string().max(2000).optional(), usedHint: z.boolean().optional() }).strict();
+export const attemptInputSchema = z.object({ lessonId: lessonIdSchema, itemId: id, result: z.enum(['again', 'hint', 'good']), answer: z.string().max(2000).optional(), usedHint: z.boolean().optional(), recordingId: recordingIdSchema.optional(), assessmentId: recordingIdSchema.optional() }).strict();
 export const attemptSchema = attemptInputSchema.extend({ id, createdAt: timestamp }).strict();
 export type Attempt = z.infer<typeof attemptSchema>;
 export const reviewSchema = z.object({ id, lessonId: lessonIdSchema, goal: short, answer: exampleSchema, grammarId: id.optional(), sourceId: id.optional(), dueAt: timestamp, intervalIndex: z.number().int().min(0).max(4), createdAt: timestamp }).strict();
 export const reviewInputSchema = reviewSchema.omit({ id: true, dueAt: true, intervalIndex: true, createdAt: true });
-export const turnSchema = z.object({ id, role: z.enum(['assistant', 'user']), text: z.string().trim().min(1).max(3000), translation: z.string().max(3000).optional(), hint: z.string().max(1500).optional(), source: z.enum(['lesson', 'deepseek', 'user']), createdAt: timestamp }).strict();
+export const turnSchema = z.object({ id, role: z.enum(['assistant', 'user']), text: z.string().trim().min(1).max(3000), translation: z.string().max(3000).optional(), hint: z.string().max(1500).optional(), source: z.enum(['lesson', 'deepseek', 'user']), createdAt: timestamp, recordingId: recordingIdSchema.optional() }).strict();
 export const sessionSchema = z.object({ id, lessonId: lessonIdSchema, scenarioId: id, mode: z.enum(['scenario', 'grammar']).optional(), grammarId: id.optional(), status: z.enum(['active', 'complete']), turnCount: z.number().int().min(0).max(GRAMMAR_CHAT_MAX_TURNS), turns: z.array(turnSchema).min(1).max(1 + GRAMMAR_CHAT_MAX_TURNS * 2), feedback: z.array(correctionSchema).max(2), completedGoals: z.array(short).max(20), updatedAt: timestamp }).strict().superRefine((session, ctx) => {
   if (session.mode === 'grammar') {
     if (session.completedGoals.length) ctx.addIssue({ code: 'custom', path: ['completedGoals'], message: '自由聊不记录场景完成目标。' });
@@ -30,9 +31,12 @@ export const sessionInputSchema = z.object({ lessonId: lessonIdSchema, scenarioI
     if (input.grammarId !== undefined) ctx.addIssue({ code: 'custom', path: ['grammarId'], message: '场景练习不能指定自由聊语法点。' });
   }
 });
-export const userTurnSchema = z.object({ text: z.string().trim().min(1).max(2000), usedHint: z.boolean().default(false), clientTurnId: id }).strict();
+export const userTurnSchema = z.object({ text: z.string().trim().min(1).max(2000), usedHint: z.boolean().default(false), clientTurnId: id, recordingId: recordingIdSchema.optional() }).strict();
 export const aiResponseSchema = z.object({ replyJa: z.string().trim().min(1).max(800), replyZh: z.string().trim().min(1).max(1000), hintZh: z.string().max(600), completedGoals: z.array(short).max(20), corrections: z.array(correctionSchema).max(2), endSession: z.boolean() }).strict();
-export const backupSchema = z.object({ version: z.literal(1), exportedAt: timestamp, settings: settingsSchema.omit({ hasApiKey: true }), progress: z.array(progressSchema).max(10000), attempts: z.array(attemptSchema).max(100000), reviews: z.array(reviewSchema).max(100000), sessions: z.array(sessionSchema).max(100000) }).strict();
+const backupBase = z.object({ exportedAt: timestamp, settings: settingsSchema.omit({ hasApiKey: true }), progress: z.array(progressSchema).max(10000), attempts: z.array(attemptSchema).max(100000), reviews: z.array(reviewSchema).max(100000), sessions: z.array(sessionSchema).max(100000) });
+export const backupV1Schema = backupBase.extend({ version: z.literal(1) }).strict();
+export const backupV2Schema = backupBase.extend({ version: z.literal(2), recordings: z.array(recordingMetadataSchema).max(100000), assessments: z.array(speakingAssessmentSchema).max(100000) }).strict();
+export const backupSchema = z.discriminatedUnion('version', [backupV1Schema, backupV2Schema]);
 export type Backup = z.infer<typeof backupSchema>;
 
 export class ApiError extends Error {

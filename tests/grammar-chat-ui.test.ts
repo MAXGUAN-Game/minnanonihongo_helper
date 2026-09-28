@@ -30,8 +30,10 @@ import { lessons2 } from '/src/content/lessons-26-50.ts';
 import '/src/client/style.css';
 const initial = await fetch('/api/test-session').then(r=>r.json());
 window.speechCalls=[];
-const speech={stop(){},say(...args){window.speechCalls.push(args)},speaking:false};
-const settings={currentLessonId:27,dailyMinutes:15,largeText:true,furigana:true,autoplay:false,model:'mock',hasApiKey:true,setupComplete:true};
+let audioEpoch=0;
+const speech={stop(){audioEpoch++},say(...args){audioEpoch++;window.speechCalls.push(args)},speaking:false,getEpoch(){return audioEpoch},sayAuto(text,expected){if(expected===audioEpoch&&!document.hidden)window.speechCalls.push([text,'auto'])},playUrl(){audioEpoch++}};
+window.stopTestAudio=()=>speech.stop();
+const settings={currentLessonId:27,dailyMinutes:15,largeText:true,furigana:true,autoplay:new URLSearchParams(location.search).has('autoplay'),model:'mock',hasApiKey:true,setupComplete:true};
 function Harness(){
   const [resume,setResume]=React.useState(initial);
   const [message,setMessage]=React.useState('');
@@ -58,7 +60,7 @@ afterAll(async () => {
   if (cacheDir && dirname(resolve(cacheDir)) === resolve(tmpdir()) && basename(cacheDir).startsWith('language-master-grammar-ui-')) await rm(cacheDir, { recursive: true, force: true });
 });
 
-async function setup(initial: Session | null = null, resumeAfterFinish: Session | null = null): Promise<{ page: Page; context: BrowserContext; requests: Array<Record<string, unknown>>; turns: Array<Record<string, unknown>>; finished: string[] }> {
+async function setup(initial: Session | null = null, resumeAfterFinish: Session | null = null, autoplay = false): Promise<{ page: Page; context: BrowserContext; requests: Array<Record<string, unknown>>; turns: Array<Record<string, unknown>>; finished: string[] }> {
   let current = initial;
   const requests: Array<Record<string, unknown>> = [];
   const turns: Array<Record<string, unknown>> = [];
@@ -66,7 +68,7 @@ async function setup(initial: Session | null = null, resumeAfterFinish: Session 
   const context = await browser.newContext({ viewport: { width: 1100, height: 1000 } });
   await context.route('**/*', async route => { if (new URL(route.request().url()).origin !== origin) await route.abort('blockedbyclient'); else await route.fallback(); });
   const page = await context.newPage(); page.setDefaultTimeout(8000);
-  await page.route('**/__grammar-test', route => route.fulfill({ contentType: 'text/html', body: '<!doctype html><html lang="zh-CN"><head><title>语法自由聊测试</title></head><body class="large-text"><div id="root"></div><script type="module" src="/__grammar-harness.tsx"></script></body></html>' }));
+  await page.route('**/__grammar-test*', route => route.fulfill({ contentType: 'text/html', body: '<!doctype html><html lang="zh-CN"><head><title>语法自由聊测试</title></head><body class="large-text"><div id="root"></div><script type="module" src="/__grammar-harness.tsx"></script></body></html>' }));
   await page.route('**/api/test-session', route => route.fulfill({ json: current?.status === 'complete' ? resumeAfterFinish : current }));
   await page.route('**/api/sessions', async route => {
     const input = route.request().postDataJSON(); requests.push(input);
@@ -83,11 +85,70 @@ async function setup(initial: Session | null = null, resumeAfterFinish: Session 
     await route.fulfill({ json: current });
   });
   await page.route('**/api/sessions/*/finish', async route => { finished.push(route.request().url()); current = { ...current!, status: 'complete' }; await route.fulfill({ json: current }); });
-  await page.goto(`${origin}/__grammar-test`);
+  await page.goto(`${origin}/__grammar-test${autoplay ? '?autoplay=1' : ''}`);
   return { page, context, requests, turns, finished };
 }
 
 describe('grammar free chat UI', () => {
+  it('hides each assistant original until explicitly revealed while user text stays visible', async () => {
+    const { page, context } = await setup(makeSession());
+    try {
+      await page.locator('#answer-draft').waitFor();
+      expect(await page.locator('.assistant .bubble p[lang="ja"]').count()).toBe(0);
+      await page.getByRole('button', { name: '显示原文', exact: true }).click();
+      expect(await page.locator('.assistant .bubble p[lang="ja"]').textContent()).toBe(makeSession().turns[0].text);
+      expect(await page.locator('.bubble-translation').count()).toBe(0);
+      await page.locator('#answer-draft').fill('はい、お願いします。');
+      await page.getByRole('button', { name: '确认并发送', exact: true }).click();
+      await page.getByText('已聊 1 句', { exact: true }).waitFor();
+      expect(await page.locator('.chat-row.user .bubble p').textContent()).toBe('はい、お願いします。');
+      expect(await page.locator('.assistant').last().locator('p[lang="ja"]').count()).toBe(0);
+      await page.locator('.assistant').last().getByRole('button', { name: '显示原文', exact: true }).click();
+      expect(await page.locator('.assistant').last().locator('p[lang="ja"]').textContent()).toBe('窓から海が見えます。');
+      await page.getByRole('button', { name: '结束这轮', exact: true }).click();
+      await page.getByText('本轮已结束', { exact: true }).waitFor();
+      expect(await page.locator('.assistant').last().getByRole('button', { name: '收起原文', exact: true }).isVisible()).toBe(true);
+      await page.reload();
+      await page.locator('#answer-draft').waitFor().catch(() => {});
+      expect(await page.locator('.assistant p[lang="ja"]').count()).toBe(0);
+    } finally { await context.close(); }
+  });
+
+  it('autoplays only new replies and never reveals their original or replays restored history', async () => {
+    const { page, context } = await setup(makeSession(), null, true);
+    try {
+      await page.locator('#answer-draft').waitFor();
+      expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([]);
+      await page.locator('#answer-draft').fill('はい、お願いします。');
+      await page.getByRole('button', { name: '确认并发送', exact: true }).click();
+      await page.getByText('已聊 1 句', { exact: true }).waitFor();
+      expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([['窓から海が見えます。', 'auto']]);
+      expect(await page.locator('.assistant p[lang="ja"]').count()).toBe(0);
+      await page.reload(); await page.locator('#answer-draft').waitFor();
+      expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('does not play a late reply after a manual stop or leaving the conversation', async () => {
+    for (const leave of [false, true]) {
+      const { page, context } = await setup(makeSession(), null, true);
+      let release!: () => void;
+      const held = new Promise<void>(resolve => { release = resolve; });
+      let arrived!: () => void;
+      const sent = new Promise<void>(resolve => { arrived = resolve; });
+      await page.route('**/api/sessions/*/turn', async route => { arrived(); await held; await route.fallback(); });
+      try {
+        await page.locator('#answer-draft').fill('はい、お願いします。');
+        await page.getByRole('button', { name: '确认并发送', exact: true }).click(); await sent;
+        if (leave) await page.getByRole('button', { name: '返回练习选择', exact: true }).click();
+        else await page.evaluate(() => (window as any).stopTestAudio());
+        release();
+        await page.waitForFunction(() => JSON.parse(localStorage.getItem('conversation-draft-grammar-session') || '{}').pendingRequest === null);
+        expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([]);
+      } finally { release(); await context.close(); }
+    }
+  });
+
   it('offers the new module alongside both authored scenes and fills an explicit whole-lesson starter without sending', async () => {
     const { page, context, requests, turns } = await setup();
     try {

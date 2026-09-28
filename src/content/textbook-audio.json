@@ -1,0 +1,1330 @@
+{
+  "schemaVersion": 1,
+  "textbookEdition": 2,
+  "publisher": "スリーエーネットワーク",
+  "retrievedAt": "2026-09-28T10:47:55.693Z",
+  "lessons": [
+    {
+      "lessonId": 1,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-001",
+          "order": 1,
+          "filename": "minna_shokyu_1_001.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-1.exp/minna_shokyu_1_001.mp3"
+        },
+        {
+          "id": "minna-2e-1-002",
+          "order": 2,
+          "filename": "minna_shokyu_1_002.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-1.exp/minna_shokyu_1_002.mp3"
+        },
+        {
+          "id": "minna-2e-1-003",
+          "order": 3,
+          "filename": "minna_shokyu_1_003.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-1.exp/minna_shokyu_1_003.mp3"
+        },
+        {
+          "id": "minna-2e-1-004",
+          "order": 4,
+          "filename": "minna_shokyu_1_004.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-1.exp/minna_shokyu_1_004.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 2,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-005",
+          "order": 1,
+          "filename": "minna_shokyu_1_005.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-2.exp/minna_shokyu_1_005.mp3"
+        },
+        {
+          "id": "minna-2e-1-006",
+          "order": 2,
+          "filename": "minna_shokyu_1_006.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-2.exp/minna_shokyu_1_006.mp3"
+        },
+        {
+          "id": "minna-2e-1-007",
+          "order": 3,
+          "filename": "minna_shokyu_1_007.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-2.exp/minna_shokyu_1_007.mp3"
+        },
+        {
+          "id": "minna-2e-1-008",
+          "order": 4,
+          "filename": "minna_shokyu_1_008.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-2.exp/minna_shokyu_1_008.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 3,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-009",
+          "order": 1,
+          "filename": "minna_shokyu_1_009.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-3.exp/minna_shokyu_1_009.mp3"
+        },
+        {
+          "id": "minna-2e-1-010",
+          "order": 2,
+          "filename": "minna_shokyu_1_010.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-3.exp/minna_shokyu_1_010.mp3"
+        },
+        {
+          "id": "minna-2e-1-011",
+          "order": 3,
+          "filename": "minna_shokyu_1_011.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-3.exp/minna_shokyu_1_011.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 4,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-012",
+          "order": 1,
+          "filename": "minna_shokyu_1_012.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-4.exp/minna_shokyu_1_012.mp3"
+        },
+        {
+          "id": "minna-2e-1-013",
+          "order": 2,
+          "filename": "minna_shokyu_1_013.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-4.exp/minna_shokyu_1_013.mp3"
+        },
+        {
+          "id": "minna-2e-1-014",
+          "order": 3,
+          "filename": "minna_shokyu_1_014.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-4.exp/minna_shokyu_1_014.mp3"
+        },
+        {
+          "id": "minna-2e-1-015",
+          "order": 4,
+          "filename": "minna_shokyu_1_015.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-4.exp/minna_shokyu_1_015.mp3"
+        },
+        {
+          "id": "minna-2e-1-016",
+          "order": 5,
+          "filename": "minna_shokyu_1_016.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-4.exp/minna_shokyu_1_016.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 5,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-017",
+          "order": 1,
+          "filename": "minna_shokyu_1_017.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-5.exp/minna_shokyu_1_017.mp3"
+        },
+        {
+          "id": "minna-2e-1-018",
+          "order": 2,
+          "filename": "minna_shokyu_1_018.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-5.exp/minna_shokyu_1_018.mp3"
+        },
+        {
+          "id": "minna-2e-1-019",
+          "order": 3,
+          "filename": "minna_shokyu_1_019.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-5.exp/minna_shokyu_1_019.mp3"
+        },
+        {
+          "id": "minna-2e-1-020",
+          "order": 4,
+          "filename": "minna_shokyu_1_020.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-5.exp/minna_shokyu_1_020.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 6,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-021",
+          "order": 1,
+          "filename": "minna_shokyu_1_021.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-6.exp/minna_shokyu_1_021.mp3"
+        },
+        {
+          "id": "minna-2e-1-022",
+          "order": 2,
+          "filename": "minna_shokyu_1_022.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-6.exp/minna_shokyu_1_022.mp3"
+        },
+        {
+          "id": "minna-2e-1-023",
+          "order": 3,
+          "filename": "minna_shokyu_1_023.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-6.exp/minna_shokyu_1_023.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 7,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-024",
+          "order": 1,
+          "filename": "minna_shokyu_1_024.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-7.exp/minna_shokyu_1_024.mp3"
+        },
+        {
+          "id": "minna-2e-1-025",
+          "order": 2,
+          "filename": "minna_shokyu_1_025.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-7.exp/minna_shokyu_1_025.mp3"
+        },
+        {
+          "id": "minna-2e-1-026",
+          "order": 3,
+          "filename": "minna_shokyu_1_026.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-7.exp/minna_shokyu_1_026.mp3"
+        },
+        {
+          "id": "minna-2e-1-027",
+          "order": 4,
+          "filename": "minna_shokyu_1_027.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-7.exp/minna_shokyu_1_027.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 8,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-028",
+          "order": 1,
+          "filename": "minna_shokyu_1_028.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-8.exp/minna_shokyu_1_028.mp3"
+        },
+        {
+          "id": "minna-2e-1-029",
+          "order": 2,
+          "filename": "minna_shokyu_1_029.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-8.exp/minna_shokyu_1_029.mp3"
+        },
+        {
+          "id": "minna-2e-1-030",
+          "order": 3,
+          "filename": "minna_shokyu_1_030.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-8.exp/minna_shokyu_1_030.mp3"
+        },
+        {
+          "id": "minna-2e-1-031",
+          "order": 4,
+          "filename": "minna_shokyu_1_031.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-8.exp/minna_shokyu_1_031.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 9,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-032",
+          "order": 1,
+          "filename": "minna_shokyu_1_032.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-9.exp/minna_shokyu_1_032.mp3"
+        },
+        {
+          "id": "minna-2e-1-033",
+          "order": 2,
+          "filename": "minna_shokyu_1_033.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-9.exp/minna_shokyu_1_033.mp3"
+        },
+        {
+          "id": "minna-2e-1-034",
+          "order": 3,
+          "filename": "minna_shokyu_1_034.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-9.exp/minna_shokyu_1_034.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 10,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-035",
+          "order": 1,
+          "filename": "minna_shokyu_1_035.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-10.exp/minna_shokyu_1_035.mp3"
+        },
+        {
+          "id": "minna-2e-1-036",
+          "order": 2,
+          "filename": "minna_shokyu_1_036.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-10.exp/minna_shokyu_1_036.mp3"
+        },
+        {
+          "id": "minna-2e-1-037",
+          "order": 3,
+          "filename": "minna_shokyu_1_037.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-10.exp/minna_shokyu_1_037.mp3"
+        },
+        {
+          "id": "minna-2e-1-038",
+          "order": 4,
+          "filename": "minna_shokyu_1_038.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-10.exp/minna_shokyu_1_038.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 11,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-039",
+          "order": 1,
+          "filename": "minna_shokyu_1_039.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-11.exp/minna_shokyu_1_039.mp3"
+        },
+        {
+          "id": "minna-2e-1-040",
+          "order": 2,
+          "filename": "minna_shokyu_1_040.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-11.exp/minna_shokyu_1_040.mp3"
+        },
+        {
+          "id": "minna-2e-1-041",
+          "order": 3,
+          "filename": "minna_shokyu_1_041.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-11.exp/minna_shokyu_1_041.mp3"
+        },
+        {
+          "id": "minna-2e-1-042",
+          "order": 4,
+          "filename": "minna_shokyu_1_042.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-11.exp/minna_shokyu_1_042.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 12,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-043",
+          "order": 1,
+          "filename": "minna_shokyu_1_043.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-12.exp/minna_shokyu_1_043.mp3"
+        },
+        {
+          "id": "minna-2e-1-044",
+          "order": 2,
+          "filename": "minna_shokyu_1_044.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-12.exp/minna_shokyu_1_044.mp3"
+        },
+        {
+          "id": "minna-2e-1-045",
+          "order": 3,
+          "filename": "minna_shokyu_1_045.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-12.exp/minna_shokyu_1_045.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 13,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-046",
+          "order": 1,
+          "filename": "minna_shokyu_1_046.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-13.exp/minna_shokyu_1_046.mp3"
+        },
+        {
+          "id": "minna-2e-1-047",
+          "order": 2,
+          "filename": "minna_shokyu_1_047.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-13.exp/minna_shokyu_1_047.mp3"
+        },
+        {
+          "id": "minna-2e-1-048",
+          "order": 3,
+          "filename": "minna_shokyu_1_048.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-13.exp/minna_shokyu_1_048.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 14,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-049",
+          "order": 1,
+          "filename": "minna_shokyu_1_049.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-14.exp/minna_shokyu_1_049.mp3"
+        },
+        {
+          "id": "minna-2e-1-050",
+          "order": 2,
+          "filename": "minna_shokyu_1_050.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-14.exp/minna_shokyu_1_050.mp3"
+        },
+        {
+          "id": "minna-2e-1-051",
+          "order": 3,
+          "filename": "minna_shokyu_1_051.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-14.exp/minna_shokyu_1_051.mp3"
+        },
+        {
+          "id": "minna-2e-1-052",
+          "order": 4,
+          "filename": "minna_shokyu_1_052.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-14.exp/minna_shokyu_1_052.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 15,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-053",
+          "order": 1,
+          "filename": "minna_shokyu_1_053.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-15.exp/minna_shokyu_1_053.mp3"
+        },
+        {
+          "id": "minna-2e-1-054",
+          "order": 2,
+          "filename": "minna_shokyu_1_054.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-15.exp/minna_shokyu_1_054.mp3"
+        },
+        {
+          "id": "minna-2e-1-055",
+          "order": 3,
+          "filename": "minna_shokyu_1_055.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-15.exp/minna_shokyu_1_055.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 16,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-056",
+          "order": 1,
+          "filename": "minna_shokyu_1_056.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-16.exp/minna_shokyu_1_056.mp3"
+        },
+        {
+          "id": "minna-2e-1-057",
+          "order": 2,
+          "filename": "minna_shokyu_1_057.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-16.exp/minna_shokyu_1_057.mp3"
+        },
+        {
+          "id": "minna-2e-1-058",
+          "order": 3,
+          "filename": "minna_shokyu_1_058.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-16.exp/minna_shokyu_1_058.mp3"
+        },
+        {
+          "id": "minna-2e-1-059",
+          "order": 4,
+          "filename": "minna_shokyu_1_059.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-16.exp/minna_shokyu_1_059.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 17,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-060",
+          "order": 1,
+          "filename": "minna_shokyu_1_060.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-17.exp/minna_shokyu_1_060.mp3"
+        },
+        {
+          "id": "minna-2e-1-061",
+          "order": 2,
+          "filename": "minna_shokyu_1_061.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-17.exp/minna_shokyu_1_061.mp3"
+        },
+        {
+          "id": "minna-2e-1-062",
+          "order": 3,
+          "filename": "minna_shokyu_1_062.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-17.exp/minna_shokyu_1_062.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 18,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-063",
+          "order": 1,
+          "filename": "minna_shokyu_1_063.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-18.exp/minna_shokyu_1_063.mp3"
+        },
+        {
+          "id": "minna-2e-1-064",
+          "order": 2,
+          "filename": "minna_shokyu_1_064.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-18.exp/minna_shokyu_1_064.mp3"
+        },
+        {
+          "id": "minna-2e-1-065",
+          "order": 3,
+          "filename": "minna_shokyu_1_065.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-18.exp/minna_shokyu_1_065.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 19,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-066",
+          "order": 1,
+          "filename": "minna_shokyu_1_066.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-19.exp/minna_shokyu_1_066.mp3"
+        },
+        {
+          "id": "minna-2e-1-067",
+          "order": 2,
+          "filename": "minna_shokyu_1_067.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-19.exp/minna_shokyu_1_067.mp3"
+        },
+        {
+          "id": "minna-2e-1-068",
+          "order": 3,
+          "filename": "minna_shokyu_1_068.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-19.exp/minna_shokyu_1_068.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 20,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-069",
+          "order": 1,
+          "filename": "minna_shokyu_1_069.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-20.exp/minna_shokyu_1_069.mp3"
+        },
+        {
+          "id": "minna-2e-1-070",
+          "order": 2,
+          "filename": "minna_shokyu_1_070.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-20.exp/minna_shokyu_1_070.mp3"
+        },
+        {
+          "id": "minna-2e-1-071",
+          "order": 3,
+          "filename": "minna_shokyu_1_071.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-20.exp/minna_shokyu_1_071.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 21,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-072",
+          "order": 1,
+          "filename": "minna_shokyu_1_072.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-21.exp/minna_shokyu_1_072.mp3"
+        },
+        {
+          "id": "minna-2e-1-073",
+          "order": 2,
+          "filename": "minna_shokyu_1_073.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-21.exp/minna_shokyu_1_073.mp3"
+        },
+        {
+          "id": "minna-2e-1-074",
+          "order": 3,
+          "filename": "minna_shokyu_1_074.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-21.exp/minna_shokyu_1_074.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 22,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-075",
+          "order": 1,
+          "filename": "minna_shokyu_1_075.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-22.exp/minna_shokyu_1_075.mp3"
+        },
+        {
+          "id": "minna-2e-1-076",
+          "order": 2,
+          "filename": "minna_shokyu_1_076.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-22.exp/minna_shokyu_1_076.mp3"
+        },
+        {
+          "id": "minna-2e-1-077",
+          "order": 3,
+          "filename": "minna_shokyu_1_077.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-22.exp/minna_shokyu_1_077.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 23,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-078",
+          "order": 1,
+          "filename": "minna_shokyu_1_078.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-23.exp/minna_shokyu_1_078.mp3"
+        },
+        {
+          "id": "minna-2e-1-079",
+          "order": 2,
+          "filename": "minna_shokyu_1_079.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-23.exp/minna_shokyu_1_079.mp3"
+        },
+        {
+          "id": "minna-2e-1-080",
+          "order": 3,
+          "filename": "minna_shokyu_1_080.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-23.exp/minna_shokyu_1_080.mp3"
+        },
+        {
+          "id": "minna-2e-1-081",
+          "order": 4,
+          "filename": "minna_shokyu_1_081.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-23.exp/minna_shokyu_1_081.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 24,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-082",
+          "order": 1,
+          "filename": "minna_shokyu_1_082.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-24.exp/minna_shokyu_1_082.mp3"
+        },
+        {
+          "id": "minna-2e-1-083",
+          "order": 2,
+          "filename": "minna_shokyu_1_083.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-24.exp/minna_shokyu_1_083.mp3"
+        },
+        {
+          "id": "minna-2e-1-084",
+          "order": 3,
+          "filename": "minna_shokyu_1_084.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-24.exp/minna_shokyu_1_084.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 25,
+      "volume": 1,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/230020/",
+      "tracks": [
+        {
+          "id": "minna-2e-1-085",
+          "order": 1,
+          "filename": "minna_shokyu_1_085.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-25.exp/minna_shokyu_1_085.mp3"
+        },
+        {
+          "id": "minna-2e-1-086",
+          "order": 2,
+          "filename": "minna_shokyu_1_086.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-25.exp/minna_shokyu_1_086.mp3"
+        },
+        {
+          "id": "minna-2e-1-087",
+          "order": 3,
+          "filename": "minna_shokyu_1_087.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-230020/0-0001-01-230020-25.exp/minna_shokyu_1_087.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 26,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-001",
+          "order": 1,
+          "filename": "minna_shokyu_2_001.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-1.exp/minna_shokyu_2_001.mp3"
+        },
+        {
+          "id": "minna-2e-2-002",
+          "order": 2,
+          "filename": "minna_shokyu_2_002.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-1.exp/minna_shokyu_2_002.mp3"
+        },
+        {
+          "id": "minna-2e-2-003",
+          "order": 3,
+          "filename": "minna_shokyu_2_003.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-1.exp/minna_shokyu_2_003.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 27,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-004",
+          "order": 1,
+          "filename": "minna_shokyu_2_004.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-2.exp/minna_shokyu_2_004.mp3"
+        },
+        {
+          "id": "minna-2e-2-005",
+          "order": 2,
+          "filename": "minna_shokyu_2_005.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-2.exp/minna_shokyu_2_005.mp3"
+        },
+        {
+          "id": "minna-2e-2-006",
+          "order": 3,
+          "filename": "minna_shokyu_2_006.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-2.exp/minna_shokyu_2_006.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 28,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-007",
+          "order": 1,
+          "filename": "minna_shokyu_2_007.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-3.exp/minna_shokyu_2_007.mp3"
+        },
+        {
+          "id": "minna-2e-2-008",
+          "order": 2,
+          "filename": "minna_shokyu_2_008.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-3.exp/minna_shokyu_2_008.mp3"
+        },
+        {
+          "id": "minna-2e-2-009",
+          "order": 3,
+          "filename": "minna_shokyu_2_009.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-3.exp/minna_shokyu_2_009.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 29,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-010",
+          "order": 1,
+          "filename": "minna_shokyu_2_010.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-4.exp/minna_shokyu_2_010.mp3"
+        },
+        {
+          "id": "minna-2e-2-011",
+          "order": 2,
+          "filename": "minna_shokyu_2_011.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-4.exp/minna_shokyu_2_011.mp3"
+        },
+        {
+          "id": "minna-2e-2-012",
+          "order": 3,
+          "filename": "minna_shokyu_2_012.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-4.exp/minna_shokyu_2_012.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 30,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-013",
+          "order": 1,
+          "filename": "minna_shokyu_2_013.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-5.exp/minna_shokyu_2_013.mp3"
+        },
+        {
+          "id": "minna-2e-2-014",
+          "order": 2,
+          "filename": "minna_shokyu_2_014.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-5.exp/minna_shokyu_2_014.mp3"
+        },
+        {
+          "id": "minna-2e-2-015",
+          "order": 3,
+          "filename": "minna_shokyu_2_015.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-5.exp/minna_shokyu_2_015.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 31,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-016",
+          "order": 1,
+          "filename": "minna_shokyu_2_016.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-6.exp/minna_shokyu_2_016.mp3"
+        },
+        {
+          "id": "minna-2e-2-017",
+          "order": 2,
+          "filename": "minna_shokyu_2_017.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-6.exp/minna_shokyu_2_017.mp3"
+        },
+        {
+          "id": "minna-2e-2-018",
+          "order": 3,
+          "filename": "minna_shokyu_2_018.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-6.exp/minna_shokyu_2_018.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 32,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-019",
+          "order": 1,
+          "filename": "minna_shokyu_2_019.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-7.exp/minna_shokyu_2_019.mp3"
+        },
+        {
+          "id": "minna-2e-2-020",
+          "order": 2,
+          "filename": "minna_shokyu_2_020.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-7.exp/minna_shokyu_2_020.mp3"
+        },
+        {
+          "id": "minna-2e-2-021",
+          "order": 3,
+          "filename": "minna_shokyu_2_021.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-7.exp/minna_shokyu_2_021.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 33,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-022",
+          "order": 1,
+          "filename": "minna_shokyu_2_022.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-8.exp/minna_shokyu_2_022.mp3"
+        },
+        {
+          "id": "minna-2e-2-023",
+          "order": 2,
+          "filename": "minna_shokyu_2_023.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-8.exp/minna_shokyu_2_023.mp3"
+        },
+        {
+          "id": "minna-2e-2-024",
+          "order": 3,
+          "filename": "minna_shokyu_2_024.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-8.exp/minna_shokyu_2_024.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 34,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-025",
+          "order": 1,
+          "filename": "minna_shokyu_2_025.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-9.exp/minna_shokyu_2_025.mp3"
+        },
+        {
+          "id": "minna-2e-2-026",
+          "order": 2,
+          "filename": "minna_shokyu_2_026.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-9.exp/minna_shokyu_2_026.mp3"
+        },
+        {
+          "id": "minna-2e-2-027",
+          "order": 3,
+          "filename": "minna_shokyu_2_027.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-9.exp/minna_shokyu_2_027.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 35,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-028",
+          "order": 1,
+          "filename": "minna_shokyu_2_028.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-10.exp/minna_shokyu_2_028.mp3"
+        },
+        {
+          "id": "minna-2e-2-029",
+          "order": 2,
+          "filename": "minna_shokyu_2_029.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-10.exp/minna_shokyu_2_029.mp3"
+        },
+        {
+          "id": "minna-2e-2-030",
+          "order": 3,
+          "filename": "minna_shokyu_2_030.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-10.exp/minna_shokyu_2_030.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 36,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-031",
+          "order": 1,
+          "filename": "minna_shokyu_2_031.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-11.exp/minna_shokyu_2_031.mp3"
+        },
+        {
+          "id": "minna-2e-2-032",
+          "order": 2,
+          "filename": "minna_shokyu_2_032.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-11.exp/minna_shokyu_2_032.mp3"
+        },
+        {
+          "id": "minna-2e-2-033",
+          "order": 3,
+          "filename": "minna_shokyu_2_033.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-11.exp/minna_shokyu_2_033.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 37,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-034",
+          "order": 1,
+          "filename": "minna_shokyu_2_034.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-12.exp/minna_shokyu_2_034.mp3"
+        },
+        {
+          "id": "minna-2e-2-035",
+          "order": 2,
+          "filename": "minna_shokyu_2_035.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-12.exp/minna_shokyu_2_035.mp3"
+        },
+        {
+          "id": "minna-2e-2-036",
+          "order": 3,
+          "filename": "minna_shokyu_2_036.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-12.exp/minna_shokyu_2_036.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 38,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-037",
+          "order": 1,
+          "filename": "minna_shokyu_2_037.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-13.exp/minna_shokyu_2_037.mp3"
+        },
+        {
+          "id": "minna-2e-2-038",
+          "order": 2,
+          "filename": "minna_shokyu_2_038.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-13.exp/minna_shokyu_2_038.mp3"
+        },
+        {
+          "id": "minna-2e-2-039",
+          "order": 3,
+          "filename": "minna_shokyu_2_039.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-13.exp/minna_shokyu_2_039.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 39,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-040",
+          "order": 1,
+          "filename": "minna_shokyu_2_040.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-14.exp/minna_shokyu_2_040.mp3"
+        },
+        {
+          "id": "minna-2e-2-041",
+          "order": 2,
+          "filename": "minna_shokyu_2_041.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-14.exp/minna_shokyu_2_041.mp3"
+        },
+        {
+          "id": "minna-2e-2-042",
+          "order": 3,
+          "filename": "minna_shokyu_2_042.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-14.exp/minna_shokyu_2_042.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 40,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-043",
+          "order": 1,
+          "filename": "minna_shokyu_2_043.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-15.exp/minna_shokyu_2_043.mp3"
+        },
+        {
+          "id": "minna-2e-2-044",
+          "order": 2,
+          "filename": "minna_shokyu_2_044.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-15.exp/minna_shokyu_2_044.mp3"
+        },
+        {
+          "id": "minna-2e-2-045",
+          "order": 3,
+          "filename": "minna_shokyu_2_045.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-15.exp/minna_shokyu_2_045.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 41,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-046",
+          "order": 1,
+          "filename": "minna_shokyu_2_046.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-16.exp/minna_shokyu_2_046.mp3"
+        },
+        {
+          "id": "minna-2e-2-047",
+          "order": 2,
+          "filename": "minna_shokyu_2_047.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-16.exp/minna_shokyu_2_047.mp3"
+        },
+        {
+          "id": "minna-2e-2-048",
+          "order": 3,
+          "filename": "minna_shokyu_2_048.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-16.exp/minna_shokyu_2_048.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 42,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-049",
+          "order": 1,
+          "filename": "minna_shokyu_2_049.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-17.exp/minna_shokyu_2_049.mp3"
+        },
+        {
+          "id": "minna-2e-2-050",
+          "order": 2,
+          "filename": "minna_shokyu_2_050.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-17.exp/minna_shokyu_2_050.mp3"
+        },
+        {
+          "id": "minna-2e-2-051",
+          "order": 3,
+          "filename": "minna_shokyu_2_051.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-17.exp/minna_shokyu_2_051.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 43,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-052",
+          "order": 1,
+          "filename": "minna_shokyu_2_052.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-18.exp/minna_shokyu_2_052.mp3"
+        },
+        {
+          "id": "minna-2e-2-053",
+          "order": 2,
+          "filename": "minna_shokyu_2_053.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-18.exp/minna_shokyu_2_053.mp3"
+        },
+        {
+          "id": "minna-2e-2-054",
+          "order": 3,
+          "filename": "minna_shokyu_2_054.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-18.exp/minna_shokyu_2_054.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 44,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-055",
+          "order": 1,
+          "filename": "minna_shokyu_2_055.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-19.exp/minna_shokyu_2_055.mp3"
+        },
+        {
+          "id": "minna-2e-2-056",
+          "order": 2,
+          "filename": "minna_shokyu_2_056.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-19.exp/minna_shokyu_2_056.mp3"
+        },
+        {
+          "id": "minna-2e-2-057",
+          "order": 3,
+          "filename": "minna_shokyu_2_057.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-19.exp/minna_shokyu_2_057.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 45,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-058",
+          "order": 1,
+          "filename": "minna_shokyu_2_058.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-20.exp/minna_shokyu_2_058.mp3"
+        },
+        {
+          "id": "minna-2e-2-059",
+          "order": 2,
+          "filename": "minna_shokyu_2_059.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-20.exp/minna_shokyu_2_059.mp3"
+        },
+        {
+          "id": "minna-2e-2-060",
+          "order": 3,
+          "filename": "minna_shokyu_2_060.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-20.exp/minna_shokyu_2_060.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 46,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-061",
+          "order": 1,
+          "filename": "minna_shokyu_2_061.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-21.exp/minna_shokyu_2_061.mp3"
+        },
+        {
+          "id": "minna-2e-2-062",
+          "order": 2,
+          "filename": "minna_shokyu_2_062.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-21.exp/minna_shokyu_2_062.mp3"
+        },
+        {
+          "id": "minna-2e-2-063",
+          "order": 3,
+          "filename": "minna_shokyu_2_063.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-21.exp/minna_shokyu_2_063.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 47,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-064",
+          "order": 1,
+          "filename": "minna_shokyu_2_064.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-22.exp/minna_shokyu_2_064.mp3"
+        },
+        {
+          "id": "minna-2e-2-065",
+          "order": 2,
+          "filename": "minna_shokyu_2_065.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-22.exp/minna_shokyu_2_065.mp3"
+        },
+        {
+          "id": "minna-2e-2-066",
+          "order": 3,
+          "filename": "minna_shokyu_2_066.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-22.exp/minna_shokyu_2_066.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 48,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-067",
+          "order": 1,
+          "filename": "minna_shokyu_2_067.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-23.exp/minna_shokyu_2_067.mp3"
+        },
+        {
+          "id": "minna-2e-2-068",
+          "order": 2,
+          "filename": "minna_shokyu_2_068.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-23.exp/minna_shokyu_2_068.mp3"
+        },
+        {
+          "id": "minna-2e-2-069",
+          "order": 3,
+          "filename": "minna_shokyu_2_069.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-23.exp/minna_shokyu_2_069.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 49,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-070",
+          "order": 1,
+          "filename": "minna_shokyu_2_070.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-24.exp/minna_shokyu_2_070.mp3"
+        },
+        {
+          "id": "minna-2e-2-071",
+          "order": 2,
+          "filename": "minna_shokyu_2_071.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-24.exp/minna_shokyu_2_071.mp3"
+        },
+        {
+          "id": "minna-2e-2-072",
+          "order": 3,
+          "filename": "minna_shokyu_2_072.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-24.exp/minna_shokyu_2_072.mp3"
+        }
+      ]
+    },
+    {
+      "lessonId": 50,
+      "volume": 2,
+      "sourcePage": "https://www.3anet.co.jp/np/resrcs/240020/",
+      "tracks": [
+        {
+          "id": "minna-2e-2-073",
+          "order": 1,
+          "filename": "minna_shokyu_2_073.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-25.exp/minna_shokyu_2_073.mp3"
+        },
+        {
+          "id": "minna-2e-2-074",
+          "order": 2,
+          "filename": "minna_shokyu_2_074.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-25.exp/minna_shokyu_2_074.mp3"
+        },
+        {
+          "id": "minna-2e-2-075",
+          "order": 3,
+          "filename": "minna_shokyu_2_075.mp3",
+          "url": "https://www.3anet.co.jp/np/secure/0-0001-01-240020/0-0001-01-240020-25.exp/minna_shokyu_2_075.mp3"
+        }
+      ]
+    }
+  ]
+}

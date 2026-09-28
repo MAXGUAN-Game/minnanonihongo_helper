@@ -81,7 +81,7 @@ sudo install -m 644 /tmp/ggml-small.bin ./server-data/speech/ggml-small.bin
 sudo docker compose -f compose.shared.yaml exec app node scripts/setup-speech-linux.mjs
 ```
 
-没有模型时可在最后的命令追加 `--download-model` 明确允许从官方源下载。仅验证已有模型时不下载。短句录音经 HTTPS 上传到自己的服务器，识别完成后删除原始录音。
+没有模型时可在最后的命令追加 `--download-model` 明确允许从官方源下载。仅验证已有模型时不下载。短句录音经 HTTPS 上传到自己的服务器，练习录音保留 90 天，识别临时文件处理后删除。
 
 ## 5. 迁移与验证（约 10 分钟）
 

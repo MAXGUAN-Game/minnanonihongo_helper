@@ -13,6 +13,7 @@ const rootFiles = [
   'deploy/.env.example', 'deploy/configure.mjs', 'deploy/install-docker-ubuntu.sh',
   'deploy/import-offline-images.sh', 'deploy/fix-healthcheck.mjs', 'deploy/enable-ip-https.mjs',
   'scripts/package-web.mjs', 'scripts/package-offline.mjs', 'scripts/setup-speech-linux.mjs',
+  'scripts/refresh-textbook-audio.mjs',
 ];
 const sourceExtensions = new Set(['.ts', '.tsx', '.css', '.svg', '.png', '.webp', '.woff2', '.json', '.md']);
 

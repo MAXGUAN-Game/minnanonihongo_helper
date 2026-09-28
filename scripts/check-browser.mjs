@@ -72,11 +72,13 @@ try {
     assert.equal(await page.locator('.support-levels button').nth(2).getAttribute('aria-pressed'), 'true');
     await page.getByRole('button', { name: '看范句', exact: false }).click();
     await page.getByRole('button', { name: '自己回答', exact: false }).click();
+    await page.locator('#speaking-answer').fill('はい、わかりました。');
     await page.getByRole('button', { name: '独立说出来了' }).click();
     await page.getByText('已记录：借助提示完成。下次试着少看一点。', { exact: true }).waitFor();
     const before = (await api('/backup')).value.attempts.filter(item => item.itemId === lessons[13].speaking[0].id);
     assert.equal(before.at(-1).result, 'hint');
     await page.getByRole('button', { name: '下一张' }).click();
+    await page.locator('#speaking-answer').fill('はい、わかりました。');
     await page.getByRole('button', { name: '独立说出来了' }).click();
     await page.getByText('已记录：这次独立说出来了。', { exact: true }).waitFor();
     await page.reload(); await page.locator('.stage-tabs').waitFor();
@@ -124,7 +126,7 @@ try {
     await page.getByRole('button', { name: '导出记录' }).click();
     const download = await downloadPromise; const exported = path.join(temporary, 'export.json'); await download.saveAs(exported);
     const backup = JSON.parse(await readFile(exported, 'utf8'));
-    assert.equal(backup.version, 1); assert.equal('apiKey' in backup.settings, false); assert.equal('hasApiKey' in backup.settings, false);
+    assert.equal(backup.version, 2); assert.equal('apiKey' in backup.settings, false); assert.equal('hasApiKey' in backup.settings, false);
     const invalid = structuredClone(backup); invalid.settings.currentLessonId = 15; invalid.progress[0].cursor = 999;
     await page.getByLabel('选择学习备份文件').setInputFiles({ name: 'invalid.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(invalid)) });
     await page.getByRole('button', { name: '确认恢复' }).click();
@@ -151,8 +153,9 @@ try {
     await page.locator('.sidebar nav').getByRole('button', { name: '50 课地图' }).focus(); await page.keyboard.press('Enter');
     await page.waitForFunction(() => location.hash === '#lessons');
     await page.locator('.map-toolbar').waitFor();
+    await page.waitForFunction(() => document.activeElement?.tagName === 'H1');
     await page.locator('.map-toolbar .segmented button').nth(1).focus(); await page.keyboard.press('Space');
-    assert.equal(await page.locator('.map-toolbar .segmented button').nth(1).getAttribute('aria-pressed'), 'true');
+    await page.waitForFunction(() => document.querySelectorAll('.map-toolbar .segmented button')[1]?.getAttribute('aria-pressed') === 'true');
     assert.match(await page.locator('.course-number').first().innerText(), /^26$/);
   });
   await check('axe and large-text layout at desktop/mobile widths', async () => {
