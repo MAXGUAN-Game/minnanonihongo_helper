@@ -2,7 +2,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { chromium, type Browser, type BrowserContext, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { createServer, type ViteDevServer } from 'vite';
-import { mkdtemp, rm } from 'node:fs/promises';
+import { mkdir, mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
 import { lessons2 } from '../src/content/lessons-26-50';
@@ -31,12 +31,32 @@ import '/src/client/style.css';
 const initial = await fetch('/api/test-session').then(r=>r.json());
 window.speechCalls=[];
 let audioEpoch=0;
-const speech={stop(){audioEpoch++},say(...args){audioEpoch++;window.speechCalls.push(args)},speaking:false,getEpoch(){return audioEpoch},sayAuto(text,expected){if(expected===audioEpoch&&!document.hidden)window.speechCalls.push([text,'auto'])},playUrl(){audioEpoch++}};
+let lastAudioAction;
+function publishAudio(status,label,sourceId){
+  Object.assign(speech,{status,label,sourceId,speaking:status==='playing'||status==='loading',paused:status==='paused'});
+  window.dispatchEvent(new Event('test-audio-update'));
+}
+function startAudio(text,lang,rate,sourceId,call){
+  audioEpoch++; window.speechCalls.push(call);
+  lastAudioAction=()=>speech.say(text,lang,rate,sourceId);
+  publishAudio('playing',lang==='zh-CN'?'中文讲解':'日语朗读',sourceId);
+}
+const speech={
+  status:'idle',label:'',sourceId:undefined,speaking:false,paused:false,
+  stop(){audioEpoch++;publishAudio('idle','',undefined)},
+  say(text,lang='ja-JP',rate=1,sourceId){startAudio(text,lang,rate,sourceId,lang==='ja-JP'&&rate===1?[text]:rate===1?[text,lang]:[text,lang,rate])},
+  getEpoch(){return audioEpoch},
+  sayAuto(text,expected,lang='ja-JP',rate=1,sourceId){if(expected!==audioEpoch||document.hidden)return false;startAudio(text,lang,rate,sourceId,[text,'auto']);return true},
+  playUrl(url,label='音频',sourceId){audioEpoch++;window.speechCalls.push([url,'url']);lastAudioAction=()=>speech.playUrl(url,label,sourceId);publishAudio('playing',label,sourceId)},
+  pause(){audioEpoch++;publishAudio('paused',speech.label,speech.sourceId)},resume(){audioEpoch++;publishAudio('playing',speech.label,speech.sourceId)},replay(){lastAudioAction?.()},
+};
 window.stopTestAudio=()=>speech.stop();
 const settings={currentLessonId:27,dailyMinutes:15,largeText:true,furigana:true,autoplay:new URLSearchParams(location.search).has('autoplay'),model:'mock',hasApiKey:true,setupComplete:true};
 function Harness(){
   const [resume,setResume]=React.useState(initial);
   const [message,setMessage]=React.useState('');
+  const [,updateAudio]=React.useReducer(value=>value+1,0);
+  React.useEffect(()=>{window.addEventListener('test-audio-update',updateAudio);return()=>window.removeEventListener('test-audio-update',updateAudio)},[]);
   const refresh=async()=>setResume(await fetch('/api/test-session').then(r=>r.json()));
   return <main className="main-area"><div className="page-content"><h1>练习测试</h1><p role="status">{message}</p><section className="study-card"><Conversation lesson={lessons2[1]} resume={resume} settings={settings} speech={speech} notice={setMessage} refresh={refresh} addCorrection={async()=>{}}/></section></div></main>;
 }
@@ -126,6 +146,81 @@ describe('grammar free chat UI', () => {
       expect(await page.locator('.assistant p[lang="ja"]').count()).toBe(0);
       await page.reload(); await page.locator('#answer-draft').waitFor();
       expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it.each([1100, 390])('keeps one inline controller with the playing message at %i px and supports pause, replay, and stop', async width => {
+    const { page, context } = await setup(makeSession(), null, true);
+    try {
+      await page.setViewportSize({ width, height: 1000 });
+      await page.locator('#answer-draft').fill('はい、お願いします。');
+      await page.getByRole('button', { name: '确认并发送', exact: true }).click();
+      await page.getByText('已聊 1 句', { exact: true }).waitFor();
+      const opening = page.locator('.chat-row.assistant .bubble').first();
+      const reply = page.locator('.chat-row.assistant .bubble').last();
+      const allControls = page.getByRole('region', { name: '音频控制', exact: true });
+      const replyControls = reply.getByRole('region', { name: '音频控制', exact: true });
+      expect(await allControls.count()).toBe(1);
+      expect(await opening.locator('.audio-controls').count()).toBe(0);
+      expect(await replyControls.getByRole('status').textContent()).toContain('正在播放');
+      expect(await page.locator('.assistant p[lang="ja"]').count()).toBe(0);
+      expect(await allControls.evaluate(element => getComputedStyle(element).position)).toBe('static');
+      await replyControls.getByRole('button', { name: '暂停', exact: true }).click();
+      expect(await replyControls.getByRole('status').textContent()).toContain('已暂停');
+      await replyControls.getByRole('button', { name: '继续播放', exact: true }).click();
+      expect(await replyControls.getByRole('status').textContent()).toContain('正在播放');
+
+      await opening.getByRole('button', { name: '听这句', exact: true }).click();
+      const openingControls = opening.getByRole('region', { name: '音频控制', exact: true });
+      expect(await openingControls.count()).toBe(1);
+      expect(await replyControls.count()).toBe(0);
+      expect(await allControls.count()).toBe(1);
+      await openingControls.getByRole('button', { name: '从头播放', exact: true }).click();
+      expect(await page.evaluate(() => (window as any).speechCalls.at(-1))).toEqual([makeSession().turns[0].text]);
+      await page.getByRole('button', { name: '慢一点', exact: true }).click();
+      expect(await openingControls.count()).toBe(0);
+      expect(await replyControls.count()).toBe(1);
+      expect(await page.evaluate(() => (window as any).speechCalls.at(-1))).toEqual(['窓から海が見えます。', 'ja-JP', .65]);
+      await page.getByRole('button', { name: '听讲解', exact: true }).click();
+      expect(await replyControls.getByRole('status').textContent()).toContain('中文讲解');
+      expect(await page.locator('.bubble-translation').count()).toBe(0);
+      await page.getByRole('button', { name: '再听一次', exact: true }).click();
+      expect(await replyControls.getByRole('status').textContent()).toContain('日语朗读');
+      expect(await page.locator('.assistant p[lang="ja"]').count()).toBe(0);
+      expect(await allControls.count()).toBe(1);
+
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBe(true);
+      expect(await page.locator('.chat-scroll').evaluate(element => element.scrollWidth <= element.clientWidth + 1)).toBe(true);
+      expect(await replyControls.evaluate(element => {
+        const bounds = element.getBoundingClientRect();
+        const bubble = element.closest('.bubble')!.getBoundingClientRect();
+        return bounds.left >= bubble.left && bounds.right <= bubble.right && element.scrollWidth <= element.clientWidth + 1;
+      })).toBe(true);
+      for (const button of await replyControls.getByRole('button').all()) {
+        expect(await button.evaluate(element => element.getBoundingClientRect().height >= 44)).toBe(true);
+      }
+      await mkdir(resolve('test-results'), { recursive: true });
+      await replyControls.scrollIntoViewIfNeeded();
+      await page.screenshot({ path: resolve(`test-results/v1.1.1-conversation-${width === 390 ? 'mobile' : 'desktop'}.png`), fullPage: true });
+      await replyControls.getByRole('button', { name: '停止', exact: true }).click();
+      expect(await allControls.count()).toBe(0);
+    } finally { await context.close(); }
+  });
+
+  it('places a recorded answer controller inside the user message and removes it when another message plays', async () => {
+    const session = makeSession();
+    session.turns.push({ id: 'recorded-answer', role: 'user', source: 'user', text: '窓から海が見えます。', recordingId: 'test-recording', createdAt: '2026-01-01T00:01:00Z' });
+    const { page, context } = await setup(session);
+    try {
+      const recorded = page.locator('.chat-row.user .bubble');
+      await recorded.getByRole('button', { name: '听我的录音', exact: true }).click();
+      const controls = recorded.getByRole('region', { name: '音频控制', exact: true });
+      expect(await controls.getByRole('status').textContent()).toContain('我的录音');
+      expect(await page.getByRole('region', { name: '音频控制', exact: true }).count()).toBe(1);
+      expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([['/api/recordings/test-recording/audio', 'url']]);
+      await page.locator('.chat-row.assistant').getByRole('button', { name: '听这句', exact: true }).click();
+      expect(await controls.count()).toBe(0);
+      expect(await page.locator('.chat-row.assistant .audio-controls').count()).toBe(1);
     } finally { await context.close(); }
   });
 

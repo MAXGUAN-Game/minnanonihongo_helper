@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Check, Headphones, MessageCircle, RotateCcw, Square, Volume2 } from 'lucide-react';
+import { Check, Headphones, MessageCircle, RotateCcw, Volume2 } from 'lucide-react';
 import type { VoiceCacheStats, VoiceSettings as VoiceSettingsData, VoiceSettingsPatch } from '../shared/voice';
 import { api } from './api';
 import type { Speech } from './speech';
 import { Button } from './ui';
+import { AudioControls } from './AudioControls';
 
 const sentence = 'こんにちは。駅はどこですか。もう一度お願いします。';
 const dialogue = ['こんにちは。駅はどこですか。', '駅は、この道をまっすぐ行ってください。'];
@@ -99,7 +100,7 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
       setKey('');
       window.dispatchEvent(new Event('voice-settings-changed'));
       setMessage('声音设置已保存。');
-      if (preview) await speech.say(preview === 'dialogue' ? dialogue : sentence);
+      if (preview) await speech.say(preview === 'dialogue' ? dialogue : sentence, 'ja-JP', 1, 'voice-settings-preview');
       else notice(deployment === 'web' ? '声音设置已保存在你的服务器。' : '声音设置已保存在本机。');
     } catch (error) {
       if (alive.current) setMessage((error as Error).message);
@@ -182,7 +183,7 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
           </div>
         </fieldset>
       </form>
-      {speech.speaking && <Button secondary className="voice-stop" onClick={speech.stop}><Square size={17} aria-hidden="true"/>停止朗读</Button>}
+      <AudioControls speech={speech} sourceId="voice-settings-preview"/>
       <p className="voice-result" role="status" aria-live="polite">{message}</p>
       <p className="tiny-note">试听会先保存当前选择。中文讲解仍用本机声音；云端失败时会提示，并尝试本机朗读。</p>
       {settings.provider === 'minimax' && <details className="voice-details">

@@ -8,6 +8,8 @@ export type PlaybackStatus = 'idle' | 'loading' | 'playing' | 'paused' | 'blocke
 export function useSpeech(onError: (message: string) => void) {
   const [status, setStatus] = useState<PlaybackStatus>('idle');
   const [label, setLabel] = useState('');
+  const [sourceId, setSourceId] = useState<string>();
+  const sourceIdRef = useRef<string | undefined>(undefined);
   const phase = useRef<PlaybackStatus>('idle');
   const voices = useRef<SpeechSynthesisVoice[]>([]);
   const token = useRef(0);
@@ -25,12 +27,16 @@ export function useSpeech(onError: (message: string) => void) {
   const wake = useCallback(() => { for (const resolve of waiters.current) resolve(); waiters.current.clear(); }, []);
   const stop = useCallback(() => {
     epoch.current++; token.current++; paused.current = false;
+    sourceIdRef.current = undefined;
     activeRequest.current?.abort(); activeRequest.current = null;
     cancelPlayback.current?.(); cancelPlayback.current = null;
     playActive.current = null; activeAudio.current = null;
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-    utterances.current = []; wake(); update('idle'); setLabel('');
+    utterances.current = []; wake(); update('idle'); setLabel(''); setSourceId(undefined);
   }, [update, wake]);
+  const stopSource = useCallback((sourceId: string) => {
+    if (sourceIdRef.current === sourceId) stop();
+  }, [stop]);
   useEffect(() => {
     const changed = () => { if ('speechSynthesis' in window) voices.current = window.speechSynthesis.getVoices(); };
     changed();
@@ -89,12 +95,14 @@ export function useSpeech(onError: (message: string) => void) {
     audio.onerror = () => finish(new Error('音频未能播放。'));
     if (paused.current) update('paused'); else play();
   }), [update]);
-  const say = useCallback((text: string | string[], lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1) => {
+  const say = useCallback((text: string | string[], lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1, sourceId?: string) => {
     stop();
     const current = token.current;
     const lines = (Array.isArray(text) ? text : [text]).map(line => line.trim()).filter(Boolean);
     if (!lines.length) return;
-    lastAction.current = () => say(text, lang, rate);
+    lastAction.current = () => say(text, lang, rate, sourceId);
+    sourceIdRef.current = sourceId;
+    setSourceId(sourceId);
     setLabel(lang === 'ja-JP' ? '日语朗读' : '中文讲解');
     let playbackRate = rate;
     const systemSay = (remaining: string[]) => {
@@ -157,13 +165,15 @@ export function useSpeech(onError: (message: string) => void) {
       } finally { if (activeRequest.current === request) activeRequest.current = null; }
     })();
   }, [stop, update, waitUntilReady, playAudio]);
-  const playUrl = useCallback((url: string, name = '音频') => {
+  const playUrl = useCallback((url: string, name = '音频', sourceId?: string) => {
     stop();
     let parsed: URL;
     try { parsed = new URL(url, location.href); } catch { callbacks.current.onError('音频地址无效。'); return; }
     const local = parsed.origin === location.origin && ['http:', 'https:', 'blob:'].includes(parsed.protocol);
     if (!local && !isOfficialTextbookAudioUrl(parsed.href)) { callbacks.current.onError('这个音频地址不受支持。'); return; }
-    lastAction.current = () => playUrl(url, name);
+    lastAction.current = () => playUrl(url, name, sourceId);
+    sourceIdRef.current = sourceId;
+    setSourceId(sourceId);
     setLabel(name);
     const current = token.current;
     void playAudio(parsed.href, current, false).then(() => { if (current === token.current) update('idle'); }).catch(() => {
@@ -192,11 +202,11 @@ export function useSpeech(onError: (message: string) => void) {
     } else lastAction.current?.();
   }, [wake]);
   const getEpoch = useCallback(() => epoch.current, []);
-  const sayAuto = useCallback((text: string | string[], expectedEpoch: number, lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1) => {
+  const sayAuto = useCallback((text: string | string[], expectedEpoch: number, lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1, sourceId?: string) => {
     if (epoch.current !== expectedEpoch || document.hidden) return false;
-    say(text, lang, rate); return true;
+    say(text, lang, rate, sourceId); return true;
   }, [say]);
-  return { say, sayAuto, stop, pause, resume, replay, playUrl, getEpoch, status, paused: status === 'paused', speaking: status === 'playing' || status === 'loading', label };
+  return { say, sayAuto, stop, stopSource, pause, resume, replay, playUrl, getEpoch, status, paused: status === 'paused', speaking: status === 'playing' || status === 'loading', label, sourceId };
 }
 export type Speech = ReturnType<typeof useSpeech>;
 

@@ -14,6 +14,7 @@ const harness = `
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { useRecorder, useSpeech } from '/src/client/speech.ts';
+import { RecordingControls } from '/src/client/RecordingControls.tsx';
 function Harness() {
   const [item, setItem] = React.useState('speak-1');
   const [text, setText] = React.useState('');
@@ -23,6 +24,7 @@ function Harness() {
   const speech = useSpeech(notice);
   const recorder = useRecorder((text, ms, id) => { setText(text); setCalls(previous => [...previous, {text,ms,id}]); }, notice, {lessonId: 1, context:'speak', itemId:item});
   return <>
+    <RecordingControls recorder={recorder} speech={speech} centered/>
     <button onClick={() => { setText(''); recorder.start(); }}>Start</button>
     <button onClick={recorder.stop}>Stop capture</button>
     <button onClick={recorder.cancel}>Cancel</button>
@@ -47,7 +49,7 @@ createRoot(document.getElementById('root')).render(<Harness/>);
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'language-master-recorder-test-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{
       name: 'isolated-recorder-test',
       resolveId(id) { if (id === '/__recorder-harness.tsx') return id; },
@@ -130,6 +132,117 @@ const capture = async (page: Page) => {
   await page.getByRole('button', { name: 'Stop capture', exact: true }).click();
 };
 const clip = async (page: Page) => JSON.parse(await page.getByLabel('Clip').textContent() || 'null') as { url: string; saved: boolean; recordingId?: string; durationMs: number } | null;
+
+describe('one microphone supports click, hold and keyboard recording', () => {
+  it('keeps recording after a quick click and stops on the next click, with local replay controls', async () => {
+    const { page, context } = await pageFor();
+    try {
+      expect(await page.locator('.mic-button').count()).toBe(1);
+      expect(await page.getByRole('button', { name: '或点击开始录音' }).count()).toBe(0);
+      await page.getByRole('button', { name: '开始录音：点击或按住说话', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      expect(await page.evaluate(() => window.__captureMock.stops)).toBe(0);
+      await page.getByRole('button', { name: '结束录音', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Text').textContent()).toBe('日本語を練習します。');
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(1);
+      expect(await page.evaluate(() => window.__captureMock.stops)).toBe(1);
+      await page.getByRole('button', { name: '听我的录音', exact: true }).click();
+      const controls = page.locator('.recording-preview').getByRole('region', { name: '音频控制' });
+      await controls.getByRole('button', { name: '暂停', exact: true }).click();
+      expect(await page.getByLabel('Playback').textContent()).toBe('paused');
+      await controls.getByRole('button', { name: '继续播放', exact: true }).click();
+      expect(await page.getByLabel('Playback').textContent()).toBe('playing');
+    } finally { await context.close(); }
+  });
+
+  it('starts on press and ends a held pointer on release without restarting from its click', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.clock.install();
+      await page.locator('.mic-button').hover(); await page.mouse.down();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      await page.clock.runFor(350); await page.mouse.up();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      expect(await clip(page)).not.toBeNull();
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(1);
+      expect(await page.evaluate(() => window.__captureMock.stops)).toBe(1);
+    } finally { await context.close(); }
+  });
+
+  it('supports short Space and Enter toggles and ends a held key only once', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.clock.install(); await page.locator('.mic-button').focus();
+      for (const key of ['Space', 'Enter']) {
+        await page.locator('.mic-button').focus();
+        await page.keyboard.press(key);
+        await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+        await page.keyboard.press(key);
+        await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      }
+      await page.locator('.mic-button').focus(); await page.keyboard.down('Space');
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      await page.keyboard.down('Space'); // Browser key repeat must not toggle.
+      await page.clock.runFor(350); await page.keyboard.up('Space');
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(3);
+      expect(await page.evaluate(() => window.__captureMock.stops)).toBe(3);
+    } finally { await context.close(); }
+  });
+
+  it('cancels capture on pointer cancellation or focus loss during a held key', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.locator('.mic-button').hover(); await page.mouse.down();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      await page.locator('.mic-button').dispatchEvent('pointercancel', { pointerId: 1 });
+      await page.mouse.up();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      await page.locator('.mic-button').focus(); await page.keyboard.down('Space');
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      await page.getByRole('button', { name: 'Start', exact: true }).focus();
+      await page.keyboard.up('Space');
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(2);
+      expect(await page.evaluate(() => window.__captureMock.stops)).toBe(2);
+    } finally { await context.close(); }
+  });
+
+  it('honors release during microphone permission while a quick click continues after permission', async () => {
+    const { page, context, uploads } = await pageFor();
+    try {
+      await page.clock.install();
+      await page.evaluate(() => { window.__captureMock.holdPermission = true; });
+      await page.locator('.mic-button').hover(); await page.mouse.down();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('asking');
+      await page.clock.runFor(350); await page.mouse.up();
+      await page.evaluate(() => window.__captureMock.allow?.());
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(0);
+      expect(uploads).toEqual([]);
+      await page.locator('.mic-button').click();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('asking');
+      await page.evaluate(() => window.__captureMock.allow?.());
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      await page.locator('.mic-button').click();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(1);
+    } finally { await context.close(); }
+  });
+
+  it('ends a click recording automatically at 30 seconds', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.clock.install(); await page.locator('.mic-button').click();
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('recording');
+      await page.clock.fastForward(30000);
+      await expect.poll(() => page.getByLabel('Capture status').textContent()).toBe('idle');
+      expect(await clip(page)).not.toBeNull();
+      expect(await page.evaluate(() => window.__captureMock.starts)).toBe(1);
+      expect(await page.evaluate(() => window.__captureMock.stops)).toBe(1);
+    } finally { await context.close(); }
+  });
+});
 
 describe('recording capture, local replay and independent persistence', () => {
   it('caps a slightly late recording timer at exactly 30 seconds for the server WAV', async () => {

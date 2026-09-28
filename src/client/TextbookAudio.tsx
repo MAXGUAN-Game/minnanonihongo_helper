@@ -3,6 +3,7 @@ import { ExternalLink, Headphones, Play } from 'lucide-react';
 import { getTextbookAudioLesson } from '../content/textbook-audio';
 import type { Speech } from './speech';
 import { Button } from './ui';
+import { AudioControls } from './AudioControls';
 
 export function TextbookAudio({ lessonId, speech }: { lessonId: number; speech: Speech }) {
   const selectId = useId();
@@ -12,6 +13,7 @@ export function TextbookAudio({ lessonId, speech }: { lessonId: number; speech: 
   if (!lesson) return <p className="notice-inline" role="status">这课的教材音轨暂未提供。</p>;
   const track = (selection?.lessonId === lessonId ? lesson.tracks.find(item => item.id === selection.trackId) : undefined) ?? lesson.tracks[0];
   const label = `第 ${lessonId} 课 · 官方音轨 ${track.order}`;
+  const sourceId = `textbook:${lessonId}:${track.id}`;
 
   return <section className="textbook-audio" aria-label={`第 ${lessonId} 课教材原声`}>
     <div className="card-label"><Headphones size={18}/>教材原声 · 第 {lessonId} 课</div>
@@ -25,9 +27,9 @@ export function TextbookAudio({ lessonId, speech }: { lessonId: number; speech: 
       }}>
         {lesson.tracks.map(item => <option key={item.id} value={item.id}>官方音轨 {item.order} / {lesson.tracks.length}</option>)}
       </select>
-      <Button onClick={() => speech.playUrl(track.url, label)}><Play size={19}/>播放音轨 {track.order}</Button>
+      <Button onClick={() => speech.playUrl(track.url, label, sourceId)}><Play size={19}/>播放音轨 {track.order}</Button>
+      <AudioControls speech={speech} sourceId={sourceId}/>
     </div>
-    <p className="tiny-note">播放后，可用底部按钮暂停、继续或重听。</p>
     <details className="source-details">
       <summary>音轨文件与来源</summary>
       <p className="tiny-note">{track.filename}</p>

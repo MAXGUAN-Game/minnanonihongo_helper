@@ -105,7 +105,7 @@ try {
     await page.locator('.scenario-card').first().click(); await page.locator('#answer-draft').waitFor();
     assert.match(await page.locator('.speaker-label').first().innerText(), /范句/);
     await page.evaluate(() => { Object.defineProperty(navigator.mediaDevices, 'getUserMedia', { configurable: true, value: async () => { throw new DOMException('Denied for test', 'NotAllowedError'); } }); });
-    await page.getByRole('button', { name: '或点击开始录音' }).click();
+    await page.getByRole('button', { name: '开始录音：点击或按住说话', exact: true }).click();
     await page.getByText(/麦克风未获允许/).waitFor();
     await page.locator('#answer-draft').fill('お願いします。');
     await page.getByRole('button', { name: /^(确认并发送|重试上一句)$/ }).click();
@@ -171,6 +171,25 @@ try {
     }
     assert.equal(audits.some(item => item.overflow), false, 'horizontal overflow found');
     assert.equal(audits.some(item => item.violations.length), false, 'axe violations found');
+  });
+  await check('one centered recorder keeps hints at desktop and mobile widths', async () => {
+    for (const width of [1280, 390]) {
+      await page.setViewportSize({ width, height: 900 });
+      await route('study/14');
+      await clickStage('自己说');
+      const microphone = page.locator('.speaking-practice .mic-button');
+      assert.equal(await microphone.count(), 1);
+      assert.equal(await page.locator('.speaking-space').count(), 0);
+      const micBox = await microphone.boundingBox();
+      const cardBox = await page.locator('.recording-controls.centered .record-actions').boundingBox();
+      assert.ok(micBox && cardBox);
+      assert.ok(Math.abs(micBox.x + micBox.width / 2 - cardBox.x - cardBox.width / 2) < 2, 'microphone must be centered');
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1), false);
+      await page.screenshot({ path: path.join(root, `test-results/v1.1.1-speaking-${width}.png`), fullPage: true });
+      await page.getByRole('button', { name: '卡住了，给我提示', exact: true }).click();
+      await page.locator('.speaking-space .sentence').waitFor();
+      assert.equal(await microphone.count(), 1);
+    }
   });
   await check('200 percent CSS zoom readability in a 1280 px window', async () => {
     await page.setViewportSize({ width: 1280, height: 900 });

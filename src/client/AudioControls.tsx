@@ -1,8 +1,11 @@
 import { Pause, Play, RotateCcw, Square } from 'lucide-react';
+import { useEffect } from 'react';
 import type { Speech } from './speech';
 
-export function AudioControls({ speech }: { speech: Speech }) {
-  if (!speech.label) return null;
+export function AudioControls({ speech, sourceId }: { speech: Speech; sourceId: string }) {
+  const stopSource = speech.stopSource;
+  useEffect(() => () => { stopSource?.(sourceId); }, [stopSource, sourceId]);
+  if (!speech.label || speech.sourceId !== sourceId) return null;
   const resume = speech.status === 'paused' || speech.status === 'blocked';
   return <section className="audio-controls" aria-label="音频控制">
     <p role="status">{speech.label} · {speech.status === 'loading' ? '正在准备' : speech.status === 'paused' ? '已暂停' : speech.status === 'blocked' ? '点一下播放' : speech.status === 'playing' ? '正在播放' : '播放结束'}</p>

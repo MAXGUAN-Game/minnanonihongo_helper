@@ -1,7 +1,7 @@
 :root{font-family:"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;color:#273c34;background:#f5f5ee;font-synthesis:none;--paper:#f5f5ee;--white:#fffef9;--ink:#273c34;--muted:#5a6b61;--green:#315c46;--line:#dce2d5;--lime:#dcebad;--lavender:#e9e3f4;--peach:#f7e2cd;--blue:#e0ecf0;--font:17px;font-size:var(--font);line-height:1.7}
-/* Shared listening and recording controls remain reachable at large text sizes. */
-.audio-controls{position:sticky;bottom:0;z-index:30;background:var(--white);border-top:2px solid var(--green);padding:12px max(16px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom));display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center;box-shadow:0 -4px 20px #273c3412}
-.audio-controls button{min-height:44px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:9px 16px}.audio-controls .button-row{display:flex;flex-wrap:wrap;gap:9px}.audio-controls .button-row button:first-child{background:var(--green);color:white}.audio-controls .row-actions{margin:0}.audio-controls p{font-size:.82rem;overflow-wrap:anywhere}
+/* Playback controls stay beside their sentence, recording, or audio card. */
+.audio-controls{position:static;min-width:0;max-width:100%;margin-top:12px;border:1px solid var(--line);border-radius:14px;padding:12px;background:#f4f6ed;color:var(--ink);font-family:"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.audio-controls button{min-height:44px;display:flex;align-items:center;justify-content:center;gap:6px;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:.78rem}.audio-controls button svg{width:17px;height:17px}.audio-controls .button-row{display:flex;flex-wrap:wrap;gap:8px;max-width:100%}.audio-controls .button-row button:first-child{background:var(--green);color:white}.audio-controls p{font-size:.76rem;overflow-wrap:anywhere}
 .recording-controls,.speaking-practice,.expression-result{display:grid;gap:18px}.recording-preview{padding:16px;border-radius:16px;border:1px solid var(--line);background:var(--paper)}
 .speaking-practice textarea{width:100%;min-height:105px;resize:vertical;border:1px solid #b7c8ad;border-radius:16px;padding:16px;background:white;color:var(--ink);font-size:1.1rem;line-height:1.7}
 .expression-result{padding:22px;border-radius:18px;background:#eef3e5;border:1px solid var(--line)}.expression-score{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.expression-score>strong{font-size:2.6rem;color:var(--green)}.expression-score small{font-size:1rem}.expression-score p{font-size:.88rem}.score-parts{display:flex;gap:12px;flex-wrap:wrap}.score-parts span{background:var(--white);padding:6px 12px;border-radius:12px;font-size:.85rem}.expression-tip{border-top:1px solid var(--line);padding-top:15px}.expression-tip>p{margin-bottom:10px}
@@ -94,3 +94,17 @@ h1:focus{outline:none}
 .grammar-chat-starters{margin-bottom:18px}.grammar-chat-starters>p{font-size:.82rem;color:var(--muted);margin-bottom:10px}.grammar-chat-starters .row-actions{flex-wrap:wrap;gap:8px}.grammar-chat-starters .button{font-size:.78rem;white-space:normal}.grammar-chat-starters .tiny-note{margin:9px 0 0}
 .bubble-translation{white-space:pre-line}
 @container learning (max-width:600px){.grammar-chat-card{padding:20px}.grammar-chat-heading{gap:12px}.grammar-chat-heading .tile-icon{width:45px;height:45px;flex-shrink:0}.grammar-chat-heading h3{font-size:1.2rem}.conversation-resume .button{width:100%}.grammar-chat-starters .button{flex:1 1 9rem}}
+
+/* One central recorder replaces the separate invitation and microphone row. */
+.recording-controls.centered .record-actions{flex-direction:column;justify-content:center;text-align:center;gap:12px;margin-bottom:0;padding:26px 18px;border-radius:20px;background:#f4f4ec}
+.recording-controls.centered .mic-button{width:92px;height:92px;flex-shrink:0}
+.recording-controls.centered .mic-button svg{width:34px;height:34px}
+.recording-controls.centered .record-actions strong{font-size:1.12rem}
+.recording-controls.centered .record-actions p{font-size:.78rem;margin-top:6px}
+.recording-hint{text-align:center}.recording-hint .text-button{min-height:44px}
+.mic-button{touch-action:none}
+.sentence{flex-wrap:wrap}.sentence-text{flex:1}.sentence>.audio-controls{flex-basis:100%}
+.playback-source{min-width:0}.study-top .playback-source{max-width:100%}
+.topbar{height:auto;min-height:88px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}.topbar>.audio-controls{flex-basis:100%;max-width:600px;margin:0 0 0 auto}
+.chat-row .audio-controls{margin-top:12px}.recording-preview .audio-controls{background:var(--white)}
+@media(max-width:600px){.topbar{min-height:70px}.recording-controls.centered .record-actions{padding:22px 14px}.recording-controls.centered .mic-button{width:84px;height:84px}.audio-controls button{padding:8px 10px}.audio-controls .button-row{gap:6px}.audio-controls{padding:10px}.study-top{flex-wrap:wrap}}

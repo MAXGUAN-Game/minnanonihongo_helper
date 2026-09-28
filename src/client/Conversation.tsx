@@ -6,10 +6,12 @@ import { api, ClientApiError } from './api';
 import { Button, Sentence } from './ui';
 import { useRecorder, type Speech } from './speech';
 import { RecordingControls } from './RecordingControls';
+import { AudioControls } from './AudioControls';
 
 type PendingTurn = { text: string; id: string; usedHint: boolean; recordingId?: string };
 type Composer = { sessionId: string | null; draft: string; usedHint: boolean; pendingRequest: PendingTurn | null; recordingId?: string };
 const emptyComposer = (sessionId: string | null): Composer => ({ sessionId, draft: '', usedHint: false, pendingRequest: null });
+const turnAudioSource = (sessionId: string, turnId: string) => `conversation:${sessionId}:${turnId}`;
 const cacheKey = (sessionId: string) => `conversation-draft-${sessionId}`;
 // Only these server errors guarantee that this turn was not committed. A proxy
 // error, unreadable response or unknown code must keep the original request ID.
@@ -120,6 +122,17 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
   }, [lesson.id, resume?.id]);
   useEffect(() => { setGrammarId(''); }, [lesson.id]);
   useEffect(() => { transcript.current?.scrollTo({ top: transcript.current.scrollHeight, behavior: 'instant' }); }, [session?.turns.length]);
+  useEffect(() => {
+    const container = transcript.current;
+    const controls = container?.querySelector<HTMLElement>('.audio-controls');
+    if (!container || !controls) return;
+    // Keep the active sentence's controls visible within the transcript only;
+    // playing an older reply must not send the page back to the newest reply.
+    const bounds = container.getBoundingClientRect();
+    const audioBounds = controls.getBoundingClientRect();
+    if (audioBounds.bottom > bounds.bottom - 12) container.scrollTop += audioBounds.bottom - bounds.bottom + 12;
+    else if (audioBounds.top < bounds.top + 12) container.scrollTop += audioBounds.top - bounds.top - 12;
+  }, [speech.sourceId]);
   const last = session?.turns.filter(turn => turn.role === 'assistant').at(-1);
   const grammarMode = session ? isGrammarChat(session) : false;
   const selectedScene = grammarMode ? getGrammarChatScenario(lesson, session?.grammarId) : lesson.scenarios.find(scene => scene.id === session?.scenarioId);
@@ -143,7 +156,7 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
     const reply = value.turns.at(-1);
     if (!reply || reply.role !== 'assistant' || playedTurns.current.has(reply.id)) return;
     playedTurns.current.add(reply.id);
-    if (settings.autoplay && !pickerRef.current && recorder.status === 'idle' && sessionRef.current?.id === value.id) speech.sayAuto(reply.text, audioEpoch);
+    if (settings.autoplay && !pickerRef.current && recorder.status === 'idle' && sessionRef.current?.id === value.id) speech.sayAuto(reply.text, audioEpoch, 'ja-JP', 1, turnAudioSource(value.id, reply.id));
   }
   function endRequest(request: AbortController, isCurrent: () => boolean) {
     if (isCurrent()) { if (controller.current === request) controller.current = null; pendingRef.current = false; setPending(false); }
@@ -274,11 +287,12 @@ export function Conversation({ lesson, resume, settings, speech, notice, refresh
       <span className="speaker-label">{turn.role === 'user' ? '你' : turn.source === 'lesson' ? grammarMode ? '自由聊开场' : '场景开场 · 范句' : 'DeepSeek'}</span>
       <div className="bubble">{turn.role === 'user' || revealedTurns.has(turn.id) ? <p id={`turn-text-${turn.id}`} lang={turn.role === 'user' && grammarMode ? undefined : 'ja'}>{turn.text}</p> : <div className="reply-cover"><Headphones size={26} aria-hidden="true"/><p>先听一句，再看原文</p></div>}
         {showChinese && turn.translation && <p className="bubble-translation" lang="zh-CN">{turn.translation}</p>}
-        {turn.role === 'assistant' && <div className="reply-actions"><button className="text-button" aria-expanded={revealedTurns.has(turn.id)} onClick={() => { setRevealedTurns(previous => { const next = new Set(previous); if (next.has(turn.id)) next.delete(turn.id); else next.add(turn.id); return next; }); if (session.status === 'active' && turn.id === last?.id) markHint(); }}>{revealedTurns.has(turn.id) ? '收起原文' : '显示原文'}</button><button className="text-button" onClick={() => speech.say(turn.text)}><Volume2 size={17}/>听这句</button></div>}
-        {turn.role === 'user' && turn.recordingId && <button className="text-button recording-replay" onClick={() => speech.playUrl(`/api/recordings/${encodeURIComponent(turn.recordingId!)}/audio`, '我的录音')}><Play size={17}/>听我的录音</button>}
+        {turn.role === 'assistant' && <div className="reply-actions"><button className="text-button" aria-expanded={revealedTurns.has(turn.id)} onClick={() => { setRevealedTurns(previous => { const next = new Set(previous); if (next.has(turn.id)) next.delete(turn.id); else next.add(turn.id); return next; }); if (session.status === 'active' && turn.id === last?.id) markHint(); }}>{revealedTurns.has(turn.id) ? '收起原文' : '显示原文'}</button><button className="text-button" onClick={() => speech.say(turn.text, 'ja-JP', 1, turnAudioSource(session.id, turn.id))}><Volume2 size={17}/>听这句</button></div>}
+        {turn.role === 'user' && turn.recordingId && <button className="text-button recording-replay" onClick={() => speech.playUrl(`/api/recordings/${encodeURIComponent(turn.recordingId!)}/audio`, '我的录音', turnAudioSource(session.id, turn.id))}><Play size={17}/>听我的录音</button>}
+        <AudioControls speech={speech} sourceId={turnAudioSource(session.id, turn.id)}/>
       </div>
     </div>)}{pending && <p className="thinking" role="status">正在整理一句适合你的回答……</p>}</div>
-      <div className="assist-bar"><Button secondary onClick={() => last && speech.say(last.text)}><Repeat2 size={18}/>再听一次</Button><Button secondary onClick={() => last && speech.say(last.text, 'ja-JP', .65)}>慢一点</Button><Button secondary disabled={pending} aria-pressed={showHint} onClick={() => { setShowHint(!showHint); markHint(); }}><Lightbulb size={18}/>给提示</Button><Button secondary disabled={pending} aria-pressed={showChinese} onClick={() => { setShowChinese(!showChinese); markHint(); }}>{showChinese ? '收起中文' : '看中文'}</Button>{grammarMode && <Button secondary disabled={pending || !last?.translation} onClick={() => { if (last?.translation) { markHint(); speech.say(last.translation, 'zh-CN'); } }}><Volume2 size={18}/>听讲解</Button>}</div>
+      <div className="assist-bar"><Button secondary onClick={() => last && speech.say(last.text, 'ja-JP', 1, turnAudioSource(session.id, last.id))}><Repeat2 size={18}/>再听一次</Button><Button secondary onClick={() => last && speech.say(last.text, 'ja-JP', .65, turnAudioSource(session.id, last.id))}>慢一点</Button><Button secondary disabled={pending} aria-pressed={showHint} onClick={() => { setShowHint(!showHint); markHint(); }}><Lightbulb size={18}/>给提示</Button><Button secondary disabled={pending} aria-pressed={showChinese} onClick={() => { setShowChinese(!showChinese); markHint(); }}>{showChinese ? '收起中文' : '看中文'}</Button>{grammarMode && <Button secondary disabled={pending || !last?.translation} onClick={() => { if (last?.translation) { markHint(); speech.say(last.translation, 'zh-CN', 1, turnAudioSource(session.id, last.id)); } }}><Volume2 size={18}/>听讲解</Button>}</div>
     {session.status === 'active' ? <>
       {showHint && <div className="hint-panel" role="status">{last?.hint || `试着完成：${selectedScene?.goal}。可以用本课的词和短句。`}</div>}
       <div className="answer-zone"><RecordingControls recorder={recorder} speech={speech} disabled={pending} onStart={startRecording}/>

@@ -37,22 +37,36 @@ const harness = `
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { useSpeech } from '/src/client/speech.ts';
+import { AudioControls } from '/src/client/AudioControls.tsx';
 function Harness() {
   const [notices, setNotices] = React.useState([]);
+  const [hiddenSources, setHiddenSources] = React.useState([]);
+  const [sequenceSource, setSequenceSource] = React.useState('sequence');
+  const hide = sourceId => setHiddenSources(previous => [...previous, sourceId]);
   const notice = React.useCallback(message => setNotices(previous => [...previous, message]), []);
   const speech = useSpeech(notice);
   return <>
-    <button onClick={() => speech.say(${JSON.stringify(lines)}, 'ja-JP', .65)}>Sequence</button>
-    <button onClick={() => speech.say(${JSON.stringify(replacement)}, 'ja-JP', 1)}>Replay</button>
-    <button onClick={() => speech.say('请再说一遍。', 'zh-CN', .8)}>Chinese</button>
+    <button onClick={() => speech.say(${JSON.stringify(lines)}, 'ja-JP', .65, 'sequence')}>Sequence</button>
+    <button onClick={() => speech.say(${JSON.stringify(replacement)}, 'ja-JP', 1, 'replacement')}>Replay</button>
+    <button onClick={() => speech.say('请再说一遍。', 'zh-CN', .8, 'chinese')}>Chinese</button>
+    <button onClick={() => speech.say('请再说一遍。', 'zh-CN', .8)}>Legacy</button>
     <button onClick={speech.stop}>Stop</button>
     <button onClick={speech.pause}>Pause</button>
     <button onClick={speech.resume}>Resume</button>
     <button onClick={speech.replay}>Restart</button>
-    <button onClick={() => speech.playUrl('/api/recordings/example/audio', '自己的录音')}>URL</button>
-    <button onClick={() => { const epoch = speech.getEpoch(); speech.stop(); speech.sayAuto('迟到的回复', epoch); }}>Stale auto</button>
+    <button onClick={() => speech.playUrl('/api/recordings/example/audio', '自己的录音', 'recording')}>URL</button>
+    <button onClick={() => speech.sayAuto('自动回复', speech.getEpoch(), 'zh-CN', 1, 'automatic')}>Automatic</button>
+    <button onClick={() => { const epoch = speech.getEpoch(); speech.stop(); speech.sayAuto('迟到的回复', epoch, 'zh-CN', 1, 'automatic'); }}>Stale auto</button>
+    <button onClick={() => { const epoch = speech.getEpoch(); speech.say('新的朗读', 'zh-CN', 1, 'chinese'); speech.sayAuto('迟到的回复', epoch, 'zh-CN', 1, 'automatic'); }}>Stale after switch</button>
+    {['sequence', 'replacement', 'recording'].map(sourceId => <button key={sourceId} onClick={() => hide(sourceId)}>Hide {sourceId}</button>)}
+    <button onClick={() => { speech.playUrl('/api/recordings/example/audio', '自己的录音', 'recording'); hide('sequence'); }}>Switch and hide</button>
+    <button onClick={() => setSequenceSource('retargeted')}>Retarget controller</button>
+    <button onClick={() => { speech.say('新的朗读', 'zh-CN', 1, 'retargeted'); setSequenceSource('retargeted'); }}>Switch and retarget</button>
+    {['sequence', 'replacement', 'chinese', 'recording', 'automatic'].filter(sourceId => !hiddenSources.includes(sourceId)).map(sourceId => <div key={sourceId} data-testid={sourceId}><AudioControls speech={speech} sourceId={sourceId === 'sequence' ? sequenceSource : sourceId}/></div>)}
+    <div data-testid="legacy-mock"><AudioControls speech={{ ...speech, sourceId: undefined, stopSource: undefined }} sourceId="legacy-mock"/></div>
     <output aria-label="Playback">{speech.speaking ? 'playing' : 'idle'}</output>
     <output aria-label="Phase">{speech.status}</output>
+    <output aria-label="Source">{speech.sourceId ?? ''}</output>
     <p role="alert">{notices.join('\\n')}</p>
   </>;
 }
@@ -64,7 +78,7 @@ beforeAll(async () => {
   // server replace the other's optimized modules while its first page loads.
   cacheDir = await mkdtemp(join(tmpdir(), 'language-master-voice-test-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{
     name: 'isolated-voice-test',
     resolveId(id) { if (id === '/__voice-harness.tsx') return id; },
@@ -223,22 +237,165 @@ const drain = (page: Page) => page.evaluate(async () => {
 });
 
 describe('voice playback in the browser', () => {
+  it('stops an unmounted source without letting inactive or superseded controller cleanup stop current audio', async () => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.getByRole('button', { name: 'Hide replacement', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe('sequence');
+      expect(await page.getByLabel('Phase').textContent()).toBe('playing');
+      expect((await clips(page))[0]!.paused).toBe(false);
+      await page.getByRole('button', { name: 'Switch and hide', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.getByLabel('Source').textContent()).toBe('recording');
+      expect(await page.getByTestId('sequence').count()).toBe(0);
+      expect((await clips(page))[1]!.paused).toBe(false);
+      await page.getByRole('button', { name: 'Hide recording', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe('');
+      expect(await page.getByLabel('Phase').textContent()).toBe('idle');
+      expect((await clips(page))[1]!.paused).toBe(true);
+      await finish(page, 0);
+      await drain(page);
+      expect(requests).toHaveLength(1);
+    } finally { await context.close(); }
+  });
+
+  it.each([false, true])('cleans up a changed controller source while preserving newer playback: %s', async switchPlayback => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.getByRole('button', { name: switchPlayback ? 'Switch and retarget' : 'Retarget controller', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe(switchPlayback ? 'retargeted' : '');
+      expect(await page.getByLabel('Phase').textContent()).toBe(switchPlayback ? 'playing' : 'idle');
+      expect(await page.getByTestId('sequence').getByRole('region').count()).toBe(switchPlayback ? 1 : 0);
+      expect((await clips(page))[0]!.paused).toBe(true);
+      expect((await local(page)).map(utterance => utterance.text)).toEqual(switchPlayback ? ['新的朗读'] : []);
+    } finally { await context.close(); }
+  });
+
+  it('aborts pending playback when its controller disappears and ignores the late response', async () => {
+    const held = deferred(); const release = deferred();
+    const { page, context, requests } = await pageFor({ synthesize: async route => {
+      held.resolve(); await release.promise;
+      try { await fulfillAudio(route); } catch { /* Aborted requests may already be discarded. */ }
+    } });
+    try {
+      await page.getByRole('button', { name: 'Sequence', exact: true }).click();
+      await held.promise;
+      await page.getByRole('button', { name: 'Hide sequence', exact: true }).click();
+      await expect.poll(() => page.evaluate(() => window.__voiceMock.requests.some(request => request.path === '/api/voice/synthesize' && request.aborted))).toBe(true);
+      release.resolve(); await drain(page);
+      expect(await page.getByLabel('Source').textContent()).toBe('');
+      expect(await page.getByLabel('Phase').textContent()).toBe('idle');
+      expect(await clips(page)).toEqual([]);
+      expect(requests).toHaveLength(1);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+    } finally { release.resolve(); await context.close(); }
+  });
+
+  it('moves inline controls to the current source and keeps them available for completed playback and replay', async () => {
+    const { page, context, requests, settingsRequests } = await pageFor();
+    try {
+      const allControls = page.getByRole('region', { name: '音频控制' });
+      expect(await allControls.count()).toBe(0);
+      await page.getByRole('button', { name: 'Replay', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.getByTestId('replacement').getByRole('region').count()).toBe(1);
+      expect(await page.getByTestId('legacy-mock').getByRole('region').count()).toBe(0);
+
+      await page.getByRole('button', { name: 'URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      const controls = page.getByTestId('recording').getByRole('region', { name: '音频控制' });
+      expect(await page.getByLabel('Source').textContent()).toBe('recording');
+      expect(await page.getByTestId('replacement').getByRole('region').count()).toBe(0);
+      expect(await allControls.count()).toBe(1);
+      await finish(page, 0);
+      await drain(page);
+      expect(await page.getByLabel('Source').textContent()).toBe('recording');
+      expect(await page.getByLabel('Phase').textContent()).toBe('playing');
+
+      await page.evaluate(() => { window.__voiceMock.clips[1]!.currentTime = 6; });
+      await controls.getByRole('button', { name: '从头播放', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.clips[1]!.currentTime)).toBe(0);
+      expect(await page.getByLabel('Source').textContent()).toBe('recording');
+      await finish(page, 1);
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('idle');
+      expect(await controls.getByRole('status').textContent()).toContain('播放结束');
+      await controls.getByRole('button', { name: '从头播放', exact: true }).click();
+      await expect.poll(async () => (await clips(page))[2]?.plays).toBe(1);
+      expect(await page.getByLabel('Source').textContent()).toBe('recording');
+      expect(requests).toHaveLength(1);
+      expect(settingsRequests).toEqual(['GET']);
+
+      await controls.getByRole('button', { name: '停止', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe('');
+      expect(await page.getByLabel('Phase').textContent()).toBe('idle');
+      expect(await allControls.count()).toBe(0);
+    } finally { await context.close(); }
+  });
+
+  it('routes automatic replies to their source and rejects stale replies after a switch or stop', async () => {
+    const { page, context, requests, settingsRequests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Automatic', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe('automatic');
+      expect(await page.getByTestId('automatic').getByRole('region').count()).toBe(1);
+      await page.getByRole('button', { name: 'Stale after switch', exact: true }).click();
+      await drain(page);
+      expect(await page.getByLabel('Source').textContent()).toBe('chinese');
+      expect(await page.getByTestId('automatic').getByRole('region').count()).toBe(0);
+      expect(await page.getByTestId('chinese').getByRole('region').count()).toBe(1);
+      expect((await local(page)).map(utterance => utterance.text)).toEqual(['自动回复', '新的朗读']);
+      await page.getByRole('button', { name: 'Stale auto', exact: true }).click();
+      await drain(page);
+      expect(await page.getByLabel('Source').textContent()).toBe('');
+      expect(await page.getByRole('region', { name: '音频控制' }).count()).toBe(0);
+      expect((await local(page)).map(utterance => utterance.text)).toEqual(['自动回复', '新的朗读']);
+      expect(requests).toEqual([]);
+      expect(settingsRequests).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('preserves the speech source when replaying completed speech and supports calls without a source', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Chinese', exact: true }).click();
+      await page.evaluate(() => window.__voiceMock.local[0]!.onend?.(new Event('end')));
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('idle');
+      await page.getByTestId('chinese').getByRole('button', { name: '从头播放', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe('chinese');
+      expect(await local(page)).toHaveLength(2);
+      await page.getByRole('button', { name: 'Legacy', exact: true }).click();
+      expect(await page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.getByLabel('Source').textContent()).toBe('');
+      expect(await page.getByRole('region', { name: '音频控制' }).count()).toBe(0);
+      expect(await local(page)).toHaveLength(3);
+    } finally { await context.close(); }
+  });
+
   it('pauses while a clip is loading and resumes that same clip before advancing the queue', async () => {
     const held = deferred(); const release = deferred();
     const { page, context, requests } = await pageFor({ synthesize: async route => { held.resolve(); await release.promise; await fulfillAudio(route); } });
     try {
       await page.getByRole('button', { name: 'Sequence', exact: true }).click();
       await held.promise;
-      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      const controls = page.getByTestId('sequence').getByRole('region', { name: '音频控制' });
+      expect(await page.getByLabel('Source').textContent()).toBe('sequence');
+      expect(await page.getByRole('region', { name: '音频控制' }).count()).toBe(1);
+      expect(await controls.getByRole('status').textContent()).toContain('正在准备');
+      await controls.getByRole('button', { name: '暂停', exact: true }).click();
       release.resolve();
       await expect.poll(async () => (await clips(page)).length).toBe(1);
       expect((await clips(page))[0]!.plays).toBe(0);
       expect(await page.getByLabel('Phase').textContent()).toBe('paused');
-      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      await controls.getByRole('button', { name: '继续播放', exact: true }).click();
       await expect.poll(async () => (await clips(page))[0]!.plays).toBe(1);
       await page.evaluate(() => { window.__voiceMock.clips[0]!.currentTime = 1.25; });
       await page.getByRole('button', { name: 'Pause', exact: true }).click();
       await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      expect(await page.getByLabel('Source').textContent()).toBe('sequence');
       expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(1.25);
       expect(requests).toHaveLength(1);
       await finish(page, 0);

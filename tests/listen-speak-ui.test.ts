@@ -17,7 +17,8 @@ import { RecordingHistory } from '/src/client/RecordingHistory.tsx';
 import { lessons1 } from '/src/content/lessons-01-25.ts';
 import '/src/client/style.css';
 window.ratings=[];
-const speech={say(){},stop(){},speaking:false,playUrl(){},getEpoch(){return 0}};
+window.practiceAudioSource=null;
+const speech={say(text,lang,rate,sourceId){window.practiceAudioSource=sourceId},stop(){window.practiceAudioSource=null},stopSource(sourceId){if(window.practiceAudioSource===sourceId)window.practiceAudioSource=null},speaking:false,playUrl(){},getEpoch(){return 0}};
 function Harness(){const [hint,setHint]=React.useState(false);return <main style={{maxWidth:900,margin:'auto',padding:20}}><h1>练习表达</h1><SpeakingPractice lessonId={14} task={lessons1[13].speaking[0]} speech={speech} notice={()=>{}} busy={false} usedHint={hint} furigana={false} onHint={()=>setHint(true)} onRate={async(result,answer)=>window.ratings.push({result,...answer})}/><RecordingHistory lessonId={14} speech={speech}/></main>}
 createRoot(document.getElementById('root')).render(<Harness/>);`;
 
@@ -48,6 +49,22 @@ function assessment(input: { clientAssessmentId: string; text: string }) {
 const ratings = (page: Page) => page.evaluate(() => (window as unknown as { ratings: Array<{ answer: string; result: string }> }).ratings);
 
 describe('speaking and recording history UI', () => {
+  it('stops the reference sentence when its explanation is folded away', async () => {
+    const { page, context, open } = await setup();
+    await page.route('**/api/speaking/assess', route => route.fulfill({ json: assessment(route.request().postDataJSON()) }));
+    try {
+      await open();
+      await page.locator('#speaking-answer').fill('少し待ってください。');
+      await page.getByRole('button', { name: '确认并评分' }).click();
+      const details = page.locator('.expression-result details');
+      await details.locator('summary').click();
+      await details.getByRole('button', { name: `朗读：${task.answer.jp}` }).click();
+      const source = () => page.evaluate(() => (window as unknown as { practiceAudioSource: string | null }).practiceAudioSource);
+      expect(await source()).toEqual(expect.any(String));
+      await details.locator('summary').click();
+      await expect.poll(source).toBeNull();
+    } finally { await context.close(); }
+  });
   it('records the actual answer, keeps hint evidence, and does not treat a score as mastery', async () => {
     const { page, context, open } = await setup();
     const inputs: Record<string, unknown>[] = [];
