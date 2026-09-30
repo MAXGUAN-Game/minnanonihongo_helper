@@ -4,6 +4,7 @@ import { createServer, type ViteDevServer } from 'vite';
 import { mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { basename, dirname, join, resolve } from 'node:path';
+import { textbookAudioLessons } from '../src/content/textbook-audio';
 
 // Exercise the real hook in a browser, with local routes and manually completed
 // audio. No speech provider, operating-system voice, or paid API is contacted.
@@ -18,7 +19,14 @@ const cloudSettings = {
   voice: 'Japanese_SeriousCommander', secondaryVoice: 'Japanese_KindLady', alternateSpeakers: true, speed: 1,
 };
 type SynthesisRequest = { text: string; rate: number; speaker: 'primary' | 'secondary' };
-type Clip = { src: string; plays: number; pauses: number; paused: boolean; currentTime: number; finish: () => void };
+const officialUrl = textbookAudioLessons[0]!.tracks[0]!.url;
+type Clip = {
+  src: string; plays: number; pauses: number; loads: number; paused: boolean; currentTime: number;
+  duration: number; readyState: number; seeking: boolean; ended: boolean;
+  seekable: TimeRanges; buffered: TimeRanges; error: { code: number; message: string } | null;
+  emit: (type: string) => void; metadata: (duration: number) => void; finish: () => void;
+};
+type PendingPlay = { resolve: () => void; reject: (name: string) => void };
 type LocalUtterance = { text: string; lang: string; rate: number; voice?: { localService: boolean }; onend?: ((event: Event) => void) | null };
 type VoiceMock = {
   clips: Clip[];
@@ -28,6 +36,12 @@ type VoiceMock = {
   blobTypes: string[];
   revoked: string[];
   blockNext: boolean;
+  delayMetadataNext: boolean;
+  delayReloadNext: boolean;
+  deferPlayNext: boolean;
+  pendingPlays: PendingPlay[];
+  fetchedUrls: string[];
+  synchronousPlays: number;
   systemPauses: number;
   systemResumes: number;
 };
@@ -54,6 +68,14 @@ function Harness() {
     <button onClick={speech.pause}>Pause</button>
     <button onClick={speech.resume}>Resume</button>
     <button onClick={speech.replay}>Restart</button>
+    <button onClick={() => speech.seekBy(-2)}>Back two seconds</button>
+    <button onClick={() => speech.seekBy(2)}>Forward two seconds</button>
+    <button onClick={speech.togglePlayback}>Toggle</button>
+    <button onClick={() => {
+      const before = window.__voiceMock.clips.reduce((total, clip) => total + clip.plays, 0);
+      speech.playUrl(${JSON.stringify(officialUrl)}, 'Official textbook MP3', 'official');
+      window.__voiceMock.synchronousPlays = window.__voiceMock.clips.reduce((total, clip) => total + clip.plays, 0) - before;
+    }}>Official URL</button>
     <button onClick={() => speech.playUrl('/api/recordings/example/audio', '自己的录音', 'recording')}>URL</button>
     <button onClick={() => speech.sayAuto('自动回复', speech.getEpoch(), 'zh-CN', 1, 'automatic')}>Automatic</button>
     <button onClick={() => { const epoch = speech.getEpoch(); speech.stop(); speech.sayAuto('迟到的回复', epoch, 'zh-CN', 1, 'automatic'); }}>Stale auto</button>
@@ -67,6 +89,10 @@ function Harness() {
     <output aria-label="Playback">{speech.speaking ? 'playing' : 'idle'}</output>
     <output aria-label="Phase">{speech.status}</output>
     <output aria-label="Source">{speech.sourceId ?? ''}</output>
+    <output aria-label="Position">{speech.position}</output>
+    <output aria-label="Duration">{speech.duration ?? ''}</output>
+    <output aria-label="Can seek">{String(speech.canSeek)}</output>
+    <output aria-label="Seek unavailable">{speech.seekUnavailableReason ?? ''}</output>
     <p role="alert">{notices.join('\\n')}</p>
   </>;
 }
@@ -123,31 +149,96 @@ async function pageFor(options: {
   const settingsRequests: string[] = [];
   const externalRequests: string[] = [];
   await context.addInitScript(() => {
-    const state: VoiceMock = { clips: [], local: [], canceled: 0, requests: [], blobTypes: [], revoked: [], blockNext: false, systemPauses: 0, systemResumes: 0 };
+    const state: VoiceMock = {
+      clips: [], local: [], canceled: 0, requests: [], blobTypes: [], revoked: [],
+      blockNext: false, delayMetadataNext: false, delayReloadNext: false, deferPlayNext: false, pendingPlays: [],
+      fetchedUrls: [], synchronousPlays: 0, systemPauses: 0, systemResumes: 0,
+    };
     window.__voiceMock = state;
+    const ranges = (end: number): TimeRanges => ({
+      length: end > 0 ? 1 : 0,
+      start: index => { if (index !== 0 || end <= 0) throw new DOMException('No range', 'IndexSizeError'); return 0; },
+      end: index => { if (index !== 0 || end <= 0) throw new DOMException('No range', 'IndexSizeError'); return end; },
+    });
     class ControlledAudio extends EventTarget {
       src: string;
       plays = 0;
       pauses = 0;
+      loads = 0;
       paused = true;
-      currentTime = 0;
+      duration = 30;
+      readyState = 4;
+      seeking = false;
+      ended = false;
+      error: { code: number; message: string } | null = null;
+      seekable = ranges(30);
+      buffered = ranges(30);
+      private position = 0;
+      private awaitingMetadata: Array<() => void> = [];
       playbackRate = 1;
       onended: ((event: Event) => void) | null = null;
       onerror: ((event: Event) => void) | null = null;
-      constructor(src = '') { super(); this.src = src; state.clips.push(this); }
+      constructor(src = '') {
+        super(); this.src = src;
+        if (state.delayMetadataNext) {
+          state.delayMetadataNext = false;
+          this.duration = NaN; this.readyState = 0; this.seekable = ranges(0); this.buffered = ranges(0);
+        }
+        state.clips.push(this);
+      }
+      get currentTime() { return this.position; }
+      set currentTime(value: number) {
+        this.position = value; this.ended = false; this.seeking = true;
+        this.emit('seeking');
+        queueMicrotask(() => { this.seeking = false; this.emit('seeked'); this.emit('timeupdate'); });
+      }
+      emit(type: string) {
+        if (type === 'waiting') this.readyState = 2;
+        if (type === 'playing') { this.readyState = 4; this.paused = false; }
+        if (type === 'canplay') this.readyState = Math.max(this.readyState, 3);
+        if (type === 'error') this.paused = true;
+        const event = new Event(type);
+        this.dispatchEvent(event);
+        const handler = (this as unknown as Record<string, unknown>)[`on${type}`];
+        if (typeof handler === 'function') handler.call(this, event);
+      }
+      metadata(duration: number) {
+        this.duration = duration; this.readyState = 4; this.seekable = ranges(duration); this.buffered = ranges(duration);
+        this.emit('loadedmetadata'); this.emit('durationchange'); this.emit('canplay');
+        for (const resolve of this.awaitingMetadata.splice(0)) resolve();
+      }
       play() {
         this.plays++;
         if (state.blockNext) { state.blockNext = false; return Promise.reject(new DOMException('Gesture required', 'NotAllowedError')); }
-        this.paused = false; return Promise.resolve();
+        this.paused = false; this.ended = false; this.emit('play');
+        const started = () => { if (!this.paused) this.emit('playing'); };
+        if (state.deferPlayNext || this.readyState < 3) {
+          const deferred = state.deferPlayNext; state.deferPlayNext = false;
+          return new Promise<void>((resolve, reject) => {
+            const pending = {
+              resolve: () => { started(); resolve(); },
+              reject: (name: string) => reject(new DOMException('Playback interrupted', name)),
+            };
+            state.pendingPlays.push(pending);
+            if (!deferred) this.awaitingMetadata.push(pending.resolve);
+          });
+        }
+        return Promise.resolve().then(started);
       }
-      pause() { this.pauses++; this.paused = true; }
-      load() {}
+      pause() { this.pauses++; this.paused = true; this.emit('pause'); }
+      load() {
+        this.loads++; this.error = null;
+        const duration = Number.isFinite(this.duration) ? this.duration : 30;
+        this.position = 0; this.duration = NaN; this.readyState = 0;
+        this.seekable = ranges(0); this.buffered = ranges(0);
+        if (this.src) {
+          if (state.delayReloadNext) state.delayReloadNext = false;
+          else queueMicrotask(() => this.metadata(duration));
+        }
+      }
       removeAttribute(name: string) { if (name === 'src') this.src = ''; }
       finish() {
-        this.paused = true;
-        const event = new Event('ended');
-        this.dispatchEvent(event);
-        this.onended?.(event);
+        this.paused = true; this.ended = true; this.emit('ended');
       }
     }
     Object.defineProperty(window, 'Audio', { configurable: true, value: ControlledAudio });
@@ -174,6 +265,7 @@ async function pageFor(options: {
     Object.defineProperty(window, 'speechSynthesis', { configurable: true, value: synthesis });
     const originalFetch = window.fetch.bind(window);
     window.fetch = (input, init) => {
+      state.fetchedUrls.push(new URL(input instanceof Request ? input.url : String(input), location.href).href);
       const path = new URL(input instanceof Request ? input.url : String(input), location.href).pathname;
       if (!path.startsWith('/api/voice/')) return originalFetch(input, init);
       const signal = init?.signal ?? (input instanceof Request ? input.signal : undefined);
@@ -237,6 +329,288 @@ const drain = (page: Page) => page.evaluate(async () => {
 });
 
 describe('voice playback in the browser', () => {
+  it.each(['URL', 'Official URL', 'Replay'])('seeks %s audio by two seconds, clamps to the file, and preserves a paused position', async button => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: button, exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await expect.poll(() => page.getByLabel('Can seek').textContent()).toBe('true');
+      expect(await page.getByLabel('Duration').textContent()).toBe('30');
+      await page.evaluate(() => { window.__voiceMock.clips[0]!.currentTime = 5; });
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('5');
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('7');
+      await page.getByRole('button', { name: 'Back two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('5');
+      expect((await clips(page))[0]!.plays).toBe(1);
+
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      const playsBeforeSeek = (await clips(page))[0]!.plays;
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('7');
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      expect((await clips(page))[0]).toMatchObject({ paused: true, plays: playsBeforeSeek });
+
+      await page.evaluate(() => { window.__voiceMock.clips[0]!.currentTime = 29.25; });
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('30');
+      await page.evaluate(() => { window.__voiceMock.clips[0]!.currentTime = .75; });
+      await page.getByRole('button', { name: 'Back two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('0');
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      expect(await clips(page)).toHaveLength(1);
+      expect(requests).toHaveLength(button === 'Replay' ? 1 : 0);
+    } finally { await context.close(); }
+  });
+
+  it('disables seeking until finite metadata arrives and keeps a paused load paused', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.evaluate(() => { window.__voiceMock.delayMetadataNext = true; });
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      expect(await page.getByLabel('Can seek').textContent()).toBe('false');
+      expect(await page.getByLabel('Seek unavailable').textContent()).toMatch(/\S/);
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(0);
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      await page.evaluate(() => window.__voiceMock.clips[0]!.metadata(12.5));
+      await expect.poll(() => page.getByLabel('Can seek').textContent()).toBe('true');
+      expect(await page.getByLabel('Duration').textContent()).toBe('12.5');
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      expect((await clips(page))[0]).toMatchObject({ paused: true, plays: 1 });
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('2');
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+    } finally { await context.close(); }
+  });
+
+  it('starts an official MP3 within the user gesture and uses native media without fetching or recreating it', async () => {
+    const { page, context, requests, settingsRequests, externalRequests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.synchronousPlays)).toBe(1);
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect((await clips(page))[0]!.src).toBe(officialUrl);
+      await page.getByRole('button', { name: 'Toggle', exact: true }).click();
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      await page.getByRole('button', { name: 'Toggle', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await clips(page)).toHaveLength(1);
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(2);
+      expect(await page.evaluate(() => window.__voiceMock.fetchedUrls)).not.toContain(officialUrl);
+      expect(await page.evaluate(() => window.__voiceMock.blobTypes)).toEqual([]);
+      expect(requests).toEqual([]); expect(settingsRequests).toEqual([]); expect(externalRequests).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('allows finite progressive audio before seekable ranges arrive but disables seeking for unknown duration and system speech', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => {
+        const clip = window.__voiceMock.clips[0]!;
+        clip.seekable = { length: 0, start: () => { throw new DOMException(); }, end: () => { throw new DOMException(); } };
+        clip.emit('progress');
+      });
+      expect(await page.getByLabel('Can seek').textContent()).toBe('true');
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Position').textContent()).toBe('2');
+      await page.evaluate(() => { const clip = window.__voiceMock.clips[0]!; clip.duration = Infinity; clip.emit('durationchange'); });
+      await expect.poll(() => page.getByLabel('Can seek').textContent()).toBe('false');
+      await page.getByRole('button', { name: 'Forward two seconds', exact: true }).click();
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(2);
+      await page.getByRole('button', { name: 'Chinese', exact: true }).click();
+      expect(await page.getByLabel('Can seek').textContent()).toBe('false');
+      expect(await page.getByLabel('Seek unavailable').textContent()).toMatch(/\S/);
+      expect(await page.getByLabel('Position').textContent()).toBe('0');
+    } finally { await context.close(); }
+  });
+
+  it('reports a waiting or stalled MP3 as buffering and recovers on native media events without replacing it', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => { const clip = window.__voiceMock.clips[0]!; clip.currentTime = 4; clip.emit('waiting'); });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('buffering');
+      await page.evaluate(() => window.__voiceMock.clips[0]!.emit('playing'));
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => { const clip = window.__voiceMock.clips[0]!; clip.readyState = 2; clip.emit('stalled'); });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('buffering');
+      await page.evaluate(() => { const clip = window.__voiceMock.clips[0]!; clip.emit('canplay'); clip.emit('playing'); });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await clips(page)).toHaveLength(1);
+      expect((await clips(page))[0]).toMatchObject({ src: officialUrl, paused: false });
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(4);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+    } finally { await context.close(); }
+  });
+
+  it('keeps a buffering file paused when late canplay or playing events arrive', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => window.__voiceMock.clips[0]!.emit('waiting'));
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('buffering');
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      await page.evaluate(() => { const clip = window.__voiceMock.clips[0]!; clip.emit('canplay'); clip.emit('playing'); });
+      await drain(page);
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      expect((await clips(page))[0]!.paused).toBe(true);
+    } finally { await context.close(); }
+  });
+
+  it('ignores an old AbortError after a pending play was paused and resumed successfully', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.evaluate(() => { window.__voiceMock.deferPlayNext = true; });
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => window.__voiceMock.pendingPlays[0]!.reject('AbortError'));
+      await drain(page);
+      expect(await page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.getByLabel('Source').textContent()).toBe('official');
+      expect((await clips(page))[0]).toMatchObject({ src: officialUrl, paused: false, plays: 2 });
+      expect(await page.getByRole('alert').textContent()).toBe('');
+    } finally { await context.close(); }
+  });
+
+  it('pauses hidden-page media at its current position and waits for an explicit resume', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => {
+        window.__voiceMock.clips[0]!.currentTime = 6;
+        Object.defineProperty(document, 'hidden', { configurable: true, value: true });
+        document.dispatchEvent(new Event('visibilitychange'));
+      });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('paused');
+      expect(await page.getByLabel('Source').textContent()).toBe('official');
+      expect(await page.getByLabel('Position').textContent()).toBe('6');
+      expect((await clips(page))[0]).toMatchObject({ src: officialUrl, paused: true });
+      await page.evaluate(() => {
+        Object.defineProperty(document, 'hidden', { configurable: true, value: false });
+        document.dispatchEvent(new Event('visibilitychange'));
+      });
+      await drain(page);
+      expect(await page.getByLabel('Phase').textContent()).toBe('paused');
+      await page.getByRole('button', { name: 'Resume', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(6);
+      expect(await clips(page)).toHaveLength(1);
+    } finally { await context.close(); }
+  });
+
+  it('shows native MP3 failure truthfully and retries the same URL at its last position', async () => {
+    const { page, context, requests } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => {
+        const clip = window.__voiceMock.clips[0]!;
+        clip.currentTime = 8.25;
+        clip.error = { code: 2, message: 'Network interrupted' }; clip.emit('error');
+      });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('error');
+      expect(await state(page)).toBe('idle');
+      expect(await page.getByLabel('Source').textContent()).toBe('official');
+      expect(await page.getByLabel('Position').textContent()).toBe('8.25');
+      expect(await page.getByRole('alert').textContent()).toMatch(/\S/);
+      await page.getByRole('button', { name: 'Restart', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      const active = await page.evaluate(() => window.__voiceMock.clips.filter(clip => !clip.paused).at(-1));
+      expect(active).toMatchObject({ src: officialUrl });
+      expect(await page.evaluate(() => window.__voiceMock.clips.filter(clip => !clip.paused).at(-1)!.currentTime)).toBe(8.25);
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.loads)).toBe(1);
+      expect(requests).toEqual([]);
+      expect(await local(page)).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('never reports terminal play rejection as playing', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.evaluate(() => { window.__voiceMock.deferPlayNext = true; });
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await page.evaluate(() => window.__voiceMock.pendingPlays[0]!.reject('NotSupportedError'));
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('error');
+      expect(await state(page)).toBe('idle');
+      expect(await page.getByRole('alert').textContent()).toMatch(/\S/);
+      expect((await clips(page))[0]!.paused).toBe(true);
+      expect(await local(page)).toEqual([]);
+    } finally { await context.close(); }
+  });
+
+  it('honors an explicit restart while retry metadata is still loading', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => {
+        const clip = window.__voiceMock.clips[0]!;
+        clip.currentTime = 8.25; clip.error = { code: 2, message: 'Network interrupted' }; clip.emit('error');
+        window.__voiceMock.delayReloadNext = true;
+      });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('error');
+      await page.getByRole('button', { name: 'Restart', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('loading');
+      await page.getByRole('button', { name: 'Pause', exact: true }).click();
+      await page.getByRole('button', { name: 'Restart', exact: true }).click();
+      await page.evaluate(() => window.__voiceMock.clips[0]!.metadata(30));
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.evaluate(() => window.__voiceMock.clips[0]!.currentTime)).toBe(0);
+      expect(await page.getByLabel('Position').textContent()).toBe('0');
+    } finally { await context.close(); }
+  });
+
+  it('turns an unrecovered MP3 stall into a retryable error rather than leaving playback active forever', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.clock.install();
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => { const clip = window.__voiceMock.clips[0]!; clip.currentTime = 3; clip.emit('waiting'); });
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('buffering');
+      await page.clock.fastForward(31000);
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('error');
+      expect(await state(page)).toBe('idle');
+      expect(await page.getByLabel('Source').textContent()).toBe('official');
+      expect(await page.getByLabel('Position').textContent()).toBe('3');
+      expect(await page.getByRole('alert').textContent()).toMatch(/\S/);
+      expect((await clips(page))[0]!.src).toBe(officialUrl);
+    } finally { await context.close(); }
+  });
+
+  it('ignores stale metadata, buffering, playing, errors, and play completion after switching sources', async () => {
+    const { page, context } = await pageFor();
+    try {
+      await page.evaluate(() => { window.__voiceMock.deferPlayNext = true; });
+      await page.getByRole('button', { name: 'Official URL', exact: true }).click();
+      await page.getByRole('button', { name: 'URL', exact: true }).click();
+      await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('playing');
+      await page.evaluate(() => {
+        const old = window.__voiceMock.clips[0]!;
+        old.metadata(999); old.currentTime = 99;
+        old.emit('waiting'); old.emit('stalled'); old.emit('playing');
+        old.error = { code: 2, message: 'Old request failed' }; old.emit('error'); old.finish();
+        window.__voiceMock.pendingPlays[0]!.resolve();
+      });
+      await drain(page);
+      expect(await page.getByLabel('Source').textContent()).toBe('recording');
+      expect(await page.getByLabel('Phase').textContent()).toBe('playing');
+      expect(await page.getByLabel('Duration').textContent()).toBe('30');
+      expect(await page.getByLabel('Position').textContent()).toBe('0');
+      expect((await clips(page))[1]!.paused).toBe(false);
+      expect(await page.getByRole('alert').textContent()).toBe('');
+    } finally { await context.close(); }
+  });
+
   it('stops an unmounted source without letting inactive or superseded controller cleanup stop current audio', async () => {
     const { page, context, requests } = await pageFor();
     try {
@@ -252,7 +626,7 @@ describe('voice playback in the browser', () => {
       expect(await page.getByTestId('sequence').count()).toBe(0);
       expect((await clips(page))[1]!.paused).toBe(false);
       await page.getByRole('button', { name: 'Hide recording', exact: true }).click();
-      expect(await page.getByLabel('Source').textContent()).toBe('');
+      await expect.poll(() => page.getByLabel('Source').textContent()).toBe('');
       expect(await page.getByLabel('Phase').textContent()).toBe('idle');
       expect((await clips(page))[1]!.paused).toBe(true);
       await finish(page, 0);
@@ -324,7 +698,8 @@ describe('voice playback in the browser', () => {
       await expect.poll(() => page.getByLabel('Phase').textContent()).toBe('idle');
       expect(await controls.getByRole('status').textContent()).toContain('播放结束');
       await controls.getByRole('button', { name: '从头播放', exact: true }).click();
-      await expect.poll(async () => (await clips(page))[2]?.plays).toBe(1);
+      await expect.poll(async () => (await clips(page))[1]?.plays).toBe(3);
+      expect(await clips(page)).toHaveLength(2);
       expect(await page.getByLabel('Source').textContent()).toBe('recording');
       expect(requests).toHaveLength(1);
       expect(settingsRequests).toEqual(['GET']);

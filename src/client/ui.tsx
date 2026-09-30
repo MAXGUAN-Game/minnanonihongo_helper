@@ -12,7 +12,7 @@ export function Heading({ eyebrow, title, description, children }: { eyebrow: st
 }
 export function Sentence({ example, speech, furigana, translation = true }: { example: Example; speech: Speech; furigana: boolean; translation?: boolean }) {
   const sourceId = useId();
-  return <div className="sentence"><div className="sentence-text">{furigana && <p className="reading" lang="ja">{example.kana}</p>}<p className="japanese" lang="ja">{example.jp}</p>{translation && <p className="meaning">{example.zh}</p>}</div><button className="icon-button" aria-label={`朗读：${example.jp}`} onClick={() => speech.say(example.jp, 'ja-JP', 1, sourceId)}><Volume2 size={22} /></button><AudioControls speech={speech} sourceId={sourceId}/></div>;
+  return <div className="sentence"><div className="sentence-text">{furigana && <p className="reading" lang="ja">{example.kana}</p>}<p className="japanese" lang="ja">{example.jp}</p>{translation && <p className="meaning">{example.zh}</p>}</div><button className="icon-button" aria-label={`朗读：${example.jp}`} data-audio-source={sourceId} onClick={() => speech.say(example.jp, 'ja-JP', 1, sourceId)}><Volume2 size={22} /></button><AudioControls speech={speech} sourceId={sourceId}/></div>;
 }
 export function ArtPath() {
   return <div className="art-path" aria-label="从学过，到听懂，再到说出来"><div className="art-node lavender"><BookOpen aria-hidden="true" /><b>学过</b></div><ArrowRight className="art-arrow" aria-hidden="true"/><div className="art-node peach"><Headphones aria-hidden="true"/><b>听懂</b></div><ArrowRight className="art-arrow" aria-hidden="true"/><div className="art-node lime"><MessageCircle aria-hidden="true"/><b>说出来</b></div><span className="art-caption"><Leaf size={16}/>每天连接一小步</span></div>;

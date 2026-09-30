@@ -27,7 +27,7 @@ export function TextbookAudio({ lessonId, speech }: { lessonId: number; speech: 
       }}>
         {lesson.tracks.map(item => <option key={item.id} value={item.id}>官方音轨 {item.order} / {lesson.tracks.length}</option>)}
       </select>
-      <Button onClick={() => speech.playUrl(track.url, label, sourceId)}><Play size={19}/>播放音轨 {track.order}</Button>
+      <Button data-audio-source={sourceId} onClick={() => speech.playUrl(track.url, label, sourceId)}><Play size={19}/>播放音轨 {track.order}</Button>
       <AudioControls speech={speech} sourceId={sourceId}/>
     </div>
     <details className="source-details">

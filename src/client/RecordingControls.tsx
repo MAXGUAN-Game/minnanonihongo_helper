@@ -41,7 +41,7 @@ export function RecordingControls({ recorder, speech, disabled = false, onStart,
         <p id={instructionId}>点击录音，再点结束 · 也可按住说话<br/>空格或回车键 · 最长 30 秒</p></div>
     </div>
     {hint && <div className="recording-hint">{hint}</div>}
-    {recorder.clip && <div className="recording-preview"><div className="row-actions"><Button secondary onClick={() => speech.playUrl(recorder.clip!.url, '我的录音', previewSourceId)}><Play size={18}/>听我的录音</Button><span className="tiny-note">{(recorder.clip.durationMs / 1000).toFixed(1)} 秒 · {recorder.saving ? '正在保存' : recorder.clip.saved ? '已保存 · 保留 90 天' : '暂存在本页'}</span></div>
+    {recorder.clip && <div className="recording-preview"><div className="row-actions"><Button secondary data-audio-source={previewSourceId} onClick={() => speech.playUrl(recorder.clip!.url, '我的录音', previewSourceId)}><Play size={18}/>听我的录音</Button><span className="tiny-note">{(recorder.clip.durationMs / 1000).toFixed(1)} 秒 · {recorder.saving ? '正在保存' : recorder.clip.saved ? '已保存 · 保留 90 天' : '暂存在本页'}</span></div>
       <AudioControls speech={speech} sourceId={previewSourceId}/>
       {recorder.saveError && <div role="alert"><p>{recorder.saveError}</p><Button secondary disabled={recorder.saving} onClick={() => void recorder.retrySave()}><RotateCcw size={16}/>重试保存录音</Button></div>}
       {recorder.transcribeError && <div role="alert"><p>{recorder.transcribeError}</p><Button secondary disabled={processing} onClick={() => void recorder.retryTranscribe()}><RotateCcw size={16}/>重新识别</Button></div>}

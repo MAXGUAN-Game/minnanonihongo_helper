@@ -178,8 +178,8 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
           {settings.provider === 'minimax' && <p className="voice-disclosure">AI 合成声音。日语文字会发送给 MiniMax，需联网，按你的语音服务账户计费。</p>}
           <div className="row-actions voice-actions">
             <Button type="submit"><Check size={18} aria-hidden="true"/>{pending === 'save' ? '保存中……' : '保存声音设置'}</Button>
-            <Button secondary onClick={() => void save('sentence')}><Volume2 size={18} aria-hidden="true"/>{pending === 'sentence' ? '准备试听……' : '保存并试听'}</Button>
-            <Button secondary onClick={() => void save('dialogue')}><MessageCircle size={18} aria-hidden="true"/>{pending === 'dialogue' ? '准备对话……' : '试听短对话'}</Button>
+            <Button secondary data-audio-source="voice-settings-preview" onClick={() => void save('sentence')}><Volume2 size={18} aria-hidden="true"/>{pending === 'sentence' ? '准备试听……' : '保存并试听'}</Button>
+            <Button secondary data-audio-source="voice-settings-preview" onClick={() => void save('dialogue')}><MessageCircle size={18} aria-hidden="true"/>{pending === 'dialogue' ? '准备对话……' : '试听短对话'}</Button>
           </div>
         </fieldset>
       </form>

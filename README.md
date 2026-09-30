@@ -10,6 +10,8 @@
 
 最新界面更新：**v1.1.1** 将录音按钮居中，播放控制移到对应语音旁；见 [更新与回退步骤](docs/v1.1.1-release.md)。
 
+本地继续迭代：增加前后跳转 2 秒、空格暂停／播放及教材原声缓冲处理；见 [音频迭代与排查记录](docs/audio-playback-iteration.md)。尚未更新阿里云。
+
 服务器已有其他网站时，优先使用 [共存部署](docs/deployment-shared.md)：单独的 `jp.nbblearnjp.xyz` 站点，沿用现有 HTTPS 网关；`compose.shared.yaml` 只绑定本机端口，避免抢占原站的 80/443。
 
 ## 第一次使用
