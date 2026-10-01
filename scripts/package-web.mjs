@@ -11,7 +11,7 @@ const rootFiles = [
   'README.md', 'deployment-guide.html',
   'deploy/Caddyfile', 'deploy/Caddyfile.shared', 'deploy/nginx-site.conf.example',
   'deploy/.env.example', 'deploy/configure.mjs', 'deploy/install-docker-ubuntu.sh',
-  'deploy/import-offline-images.sh', 'deploy/fix-healthcheck.mjs', 'deploy/enable-ip-https.mjs',
+  'deploy/import-offline-images.sh', 'deploy/fix-healthcheck.mjs', 'deploy/enable-ip-https.mjs', 'deploy/update-release.sh',
   'scripts/package-web.mjs', 'scripts/package-offline.mjs', 'scripts/setup-speech-linux.mjs',
   'scripts/refresh-textbook-audio.mjs',
 ];

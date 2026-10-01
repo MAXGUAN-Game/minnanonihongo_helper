@@ -8,9 +8,7 @@
 
 代码仓库：[minnanonihongo_helper](https://github.com/MAXGUAN-Game/minnanonihongo_helper)。后续迭代、版本标签和服务器更新约定见 [版本管理说明](docs/version-control.md)。推送代码不会自动部署到服务器。
 
-最新界面更新：**v1.1.1** 将录音按钮居中，播放控制移到对应语音旁；见 [更新与回退步骤](docs/v1.1.1-release.md)。
-
-本地继续迭代：增加前后跳转 2 秒、空格暂停／播放及教材原声缓冲处理；见 [音频迭代与排查记录](docs/audio-playback-iteration.md)。尚未更新阿里云。
+最新版本：**v1.1.2** 增加前后跳转 2 秒、空格暂停／播放及教材原声缓冲处理；也包含录音按钮居中、播放控制跟随语音。见 [后台更新与回退步骤](docs/v1.1.2-release.md) 和 [音频排查记录](docs/audio-playback-iteration.md)。服务器须单独执行更新命令。
 
 服务器已有其他网站时，优先使用 [共存部署](docs/deployment-shared.md)：单独的 `jp.nbblearnjp.xyz` 站点，沿用现有 HTTPS 网关；`compose.shared.yaml` 只绑定本机端口，避免抢占原站的 80/443。
 
