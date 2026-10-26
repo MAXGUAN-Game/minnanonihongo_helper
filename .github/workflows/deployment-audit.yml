@@ -1,0 +1,26 @@
+name: Deployment audit regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check-progress-integrity.mjs'
+      - 'deploy/update-session-release.sh'
+      - 'tests/progress-*'
+      - 'tests/session-update.test.ts'
+      - '.github/workflows/deployment-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npx vitest run tests/progress-integrity.test.ts tests/session-update.test.ts tests/session-deployment.test.ts tests/session-auth.test.ts --maxWorkers=2
+      - run: node tests/progress-container.mjs

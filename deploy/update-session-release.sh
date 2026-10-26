@@ -56,7 +56,7 @@ snapshot=true
 compose stop caddy app
 tar -czf "$backup/data-and-config.tar.gz" server-data .env compose.yaml deploy/Caddyfile
 tar -tzf "$backup/data-and-config.tar.gz" >/dev/null
-audit() { docker run --rm --network none --read-only -e DATA_DIR=/app/data -v "$runtime/server-data:/app/data:ro" --entrypoint node "$new_image" scripts/check-progress-integrity.mjs; }
+audit() { docker run --rm --network none --read-only --tmpfs /tmp:rw,nosuid,nodev,noexec,mode=1777 -e DATA_DIR=/app/data -v "$runtime/server-data:/app/data:ro" --entrypoint node "$new_image" scripts/check-progress-integrity.mjs; }
 audit > "$backup/progress-before.json"
 cp -- "$backup/staging/compose.yaml" compose.yaml
 cp -- "$backup/staging/deploy/Caddyfile" deploy/Caddyfile
@@ -66,8 +66,11 @@ docker tag "$new_image" nihongo-web:local
 compose up -d --no-build --pull never --no-deps --wait --wait-timeout 180 app
 [[ $(compose exec -T app node -p 'require("./package.json").version') == "$version" ]] || fail 'Version mismatch.'
 [[ $(docker inspect --format '{{.Image}}' "$(compose ps -q app)") == "$new_image" ]] || fail 'Running image mismatch.'
+# Stop all writers before copying SQLite/WAL for the second audit too.
+compose stop app
 audit > "$backup/progress-after.json"
 cmp "$backup/progress-before.json" "$backup/progress-after.json" || fail 'Historical learning data changed; gateway remains closed.'
+compose up -d --no-build --pull never --no-deps --wait --wait-timeout 180 app
 compose exec -T app node scripts/check-release-auth.mjs "$version"
 compose up -d --no-build --pull never --no-deps caddy
 snapshot=false
