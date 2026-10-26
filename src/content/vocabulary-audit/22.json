@@ -1,0 +1,154 @@
+{
+  "lessonId": 22,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/22.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 27,
+  "entries": [
+    {
+      "sourceId": "1028",
+      "sourceWord": "弁当",
+      "key": "w1028"
+    },
+    {
+      "sourceId": "1373",
+      "sourceWord": "［ネクタイを］します",
+      "key": "w1373"
+    },
+    {
+      "sourceId": "1893",
+      "sourceWord": "では",
+      "key": "w1893"
+    },
+    {
+      "sourceId": "215",
+      "sourceWord": "えーと",
+      "key": "w215"
+    },
+    {
+      "sourceId": "3126",
+      "sourceWord": "ロボット",
+      "key": "w3126"
+    },
+    {
+      "sourceId": "3374",
+      "sourceWord": "都合",
+      "key": "w3374"
+    },
+    {
+      "sourceId": "37",
+      "sourceWord": "私たち",
+      "key": "w37"
+    },
+    {
+      "sourceId": "895",
+      "sourceWord": "ケーキ",
+      "key": "w895"
+    },
+    {
+      "sourceId": "946",
+      "sourceWord": "ユーモア",
+      "key": "w946"
+    },
+    {
+      "sourceId": "962",
+      "sourceWord": "［シャツを］着ます",
+      "key": "w962"
+    },
+    {
+      "sourceId": "963",
+      "sourceWord": "［靴を］履きます",
+      "key": "w963"
+    },
+    {
+      "sourceId": "964",
+      "sourceWord": "［帽子を］かぶります",
+      "key": "w964"
+    },
+    {
+      "sourceId": "965",
+      "sourceWord": "［眼鏡を］かけます",
+      "key": "w965"
+    },
+    {
+      "sourceId": "966",
+      "sourceWord": "生まれます",
+      "key": "w966"
+    },
+    {
+      "sourceId": "967",
+      "sourceWord": "コート",
+      "key": "w967"
+    },
+    {
+      "sourceId": "968",
+      "sourceWord": "スーツ",
+      "key": "w968"
+    },
+    {
+      "sourceId": "969",
+      "sourceWord": "セーター",
+      "key": "w969"
+    },
+    {
+      "sourceId": "970",
+      "sourceWord": "帽子",
+      "key": "w970"
+    },
+    {
+      "sourceId": "971",
+      "sourceWord": "眼鏡",
+      "key": "w971"
+    },
+    {
+      "sourceId": "972",
+      "sourceWord": "よく",
+      "key": "w972"
+    },
+    {
+      "sourceId": "973",
+      "sourceWord": "おめでとうございます。",
+      "key": "w973"
+    },
+    {
+      "sourceId": "974",
+      "sourceWord": "こちら",
+      "key": "w974"
+    },
+    {
+      "sourceId": "975",
+      "sourceWord": "家賃",
+      "key": "w975"
+    },
+    {
+      "sourceId": "977",
+      "sourceWord": "ダイニングキッチン",
+      "key": "w977"
+    },
+    {
+      "sourceId": "978",
+      "sourceWord": "和室",
+      "key": "w978"
+    },
+    {
+      "sourceId": "979",
+      "sourceWord": "押し入れ",
+      "key": "w979"
+    },
+    {
+      "sourceId": "980",
+      "sourceWord": "布団",
+      "key": "w980"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "looking",
+    "paris",
+    "great-wall",
+    "survey"
+  ],
+  "finalCount": 31
+}

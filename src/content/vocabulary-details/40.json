@@ -1,0 +1,729 @@
+{
+  "l40-w1218": {
+    "romaji": "soudan shimasu",
+    "attributes": [
+      "自他两用"
+    ],
+    "explanation": "表示就某个问题向他人征求意见或进行讨论，常与「～について」「～に」搭配。可用于日常口语和正式场合，语气中性。",
+    "example": {
+      "jp": "進路について先生に相談します。",
+      "kana": "しんろについてせんせいにそうだんします。",
+      "romaji": "shinro ni tsuite sensei ni soudan shimasu.",
+      "zh": "我就未来的方向向老师咨询。"
+    }
+  },
+  "l40-w1586": {
+    "romaji": "kazoemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示逐个计算数量，对象多为具体物品或人数。常与「～を」搭配，可用于数数、清点等场景。",
+    "example": {
+      "jp": "子供がお菓子を数えます。",
+      "kana": "こどもがおかしをかぞえます。",
+      "romaji": "kodomo ga okashi o kazoemasu.",
+      "zh": "孩子在数点心。"
+    }
+  },
+  "l40-w1587": {
+    "romaji": "hakarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用工具测量长度、重量、温度等，常与「～を」搭配。也可用于称体重，如「体重を測る」。",
+    "example": {
+      "jp": "毎朝、体重を測ります。",
+      "kana": "まいあさ、たいじゅうをはかります。",
+      "romaji": "maiasa, taijuu o hakarimasu.",
+      "zh": "每天早上称体重。"
+    }
+  },
+  "l40-w1588": {
+    "romaji": "tashikamemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示通过检查或核实来确认某事的真实性、正确性，常与「～を」搭配。可用于确认事实、安全等。",
+    "example": {
+      "jp": "出かける前に鍵を確かめます。",
+      "kana": "でかけるまえにかぎをたしかめます。",
+      "romaji": "dekakeru mae ni kagi o tashikamemasu.",
+      "zh": "出门前确认钥匙。"
+    }
+  },
+  "l40-w1589": {
+    "romaji": "[saizu ga] aimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示尺寸、大小等合适，主语多为「サイズ」「服」等，常用「～が合う」的形式。也可用于颜色、口味等搭配。",
+    "example": {
+      "jp": "この靴はサイズが合います。",
+      "kana": "このくつはさいずがあいます。",
+      "romaji": "kono kutsu wa saizu ga aimasu.",
+      "zh": "这双鞋尺寸合适。"
+    }
+  },
+  "l40-w1590": {
+    "romaji": "shuppatsu shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示从某地出发开始旅程或行程，常与「～を」「～から」搭配。多用于交通、旅行等正式语境。",
+    "example": {
+      "jp": "明日の朝八時に出発します。",
+      "kana": "あしたのあさはちじにしゅっぱつします。",
+      "romaji": "ashita no asa hachiji ni shuppatsu shimasu.",
+      "zh": "明天早上八点出发。"
+    }
+  },
+  "l40-w1591": {
+    "romaji": "touchaku shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示到达目的地，常与「～に」搭配。多用于交通工具、旅行等正式场合，与「着く」意思相近但更正式。",
+    "example": {
+      "jp": "飛行機は十時に到着します。",
+      "kana": "ひこうきはじゅうじにとうちゃくします。",
+      "romaji": "hikouki wa juuji ni touchaku shimasu.",
+      "zh": "飞机十点到达。"
+    }
+  },
+  "l40-w1592": {
+    "romaji": "yoimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因饮酒过多而醉，或因乘车船等感到晕眩。常与「お酒に」「車に」等搭配，也可说「酔っ払う」。",
+    "example": {
+      "jp": "お酒に酔って顔が赤くなりました。",
+      "kana": "おさけによってかおがあかくなりました。",
+      "romaji": "osake ni yotte kao ga akaku narimashita.",
+      "zh": "喝酒醉了，脸变红了。"
+    }
+  },
+  "l40-w1594": {
+    "romaji": "hitsuyou na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示某事物是不可缺少的，常以「～が必要だ」或「必要な～」的形式使用。修饰名词时加「な」。",
+    "example": {
+      "jp": "申し込みには写真が必要です。",
+      "kana": "もうしこみにはしゃしんがひつようです。",
+      "romaji": "moushikomi ni wa shashin ga hitsuyou desu.",
+      "zh": "申请需要照片。"
+    }
+  },
+  "l40-w1597": {
+    "romaji": "bounenkai",
+    "attributes": [],
+    "explanation": "指日本年末（多为12月）举办的聚会，用于慰劳一年来的辛苦，通常有饮酒、表演等活动。",
+    "example": {
+      "jp": "忘年会で歌を歌いました。",
+      "kana": "ぼうねんかいでうたをうたいました。",
+      "romaji": "bounenkai de uta o utaimashita.",
+      "zh": "在年终聚会上唱了歌。"
+    }
+  },
+  "l40-w1598": {
+    "romaji": "shinnenkai",
+    "attributes": [],
+    "explanation": "指新年伊始（多为1月）举办的聚会，用于庆祝新年、增进交流，常与「忘年会」相对。",
+    "example": {
+      "jp": "新年会は来週の金曜日です。",
+      "kana": "しんねんかいはらいしゅうのきんようびです。",
+      "romaji": "shinnenkai wa raishuu no kinyoubi desu.",
+      "zh": "新年聚会是下周五。"
+    }
+  },
+  "l40-w1599": {
+    "romaji": "nijikai",
+    "attributes": [],
+    "explanation": "指在第一次聚会之后继续进行的第二场聚会，通常换个地方继续喝酒聊天，是日本饮酒文化的一部分。",
+    "example": {
+      "jp": "二次会はカラオケに行きます。",
+      "kana": "にじかいはからおけにいきます。",
+      "romaji": "nijikai wa karaoke ni ikimasu.",
+      "zh": "第二场聚会去卡拉OK。"
+    }
+  },
+  "l40-w1600": {
+    "romaji": "taikai",
+    "attributes": [],
+    "explanation": "指大规模的比赛、集会或会议，常与「開く」「行う」「参加する」等搭配。语体较正式，可用于体育、学术等多种场合。",
+    "example": {
+      "jp": "来月、東京でマラソン大会があります。",
+      "kana": "らいげつ、とうきょうでマラソンたいかいがあります。",
+      "romaji": "raigetsu, toukyou de marason taikai ga arimasu.",
+      "zh": "下个月在东京有马拉松大会。"
+    }
+  },
+  "l40-w1601": {
+    "romaji": "marason",
+    "attributes": [],
+    "explanation": "指马拉松运动或比赛，常用「マラソンをする」「マラソン大会」等表达。外来语，日常会话中直接使用。",
+    "example": {
+      "jp": "毎朝、公園でマラソンをしています。",
+      "kana": "まいあさ、こうえんでマラソンをしています。",
+      "romaji": "maiasa, kouen de marason o shite imasu.",
+      "zh": "每天早上在公园跑马拉松。"
+    }
+  },
+  "l40-w1602": {
+    "romaji": "kontesuto",
+    "attributes": [],
+    "explanation": "指比赛、竞赛，多用于才艺、演讲、写作等评比活动，常与「開く」「参加する」「優勝する」搭配。",
+    "example": {
+      "jp": "学校のスピーチコンテストに出ました。",
+      "kana": "がっこうのスピーチコンテストにでました。",
+      "romaji": "gakkou no supiichi kontesuto ni demashita.",
+      "zh": "我参加了学校的演讲比赛。"
+    }
+  },
+  "l40-w1603": {
+    "romaji": "omote",
+    "attributes": [],
+    "explanation": "指物体的正面、表面，也可指房屋临街的一面。与「裏」相对，常用「表と裏」「表紙」等。",
+    "example": {
+      "jp": "紙の表に名前を書いてください。",
+      "kana": "かみのおもてになまえをかいてください。",
+      "romaji": "kami no omote ni namae o kaite kudasai.",
+      "zh": "请在纸的正面写上名字。"
+    }
+  },
+  "l40-w1604": {
+    "romaji": "ura",
+    "attributes": [],
+    "explanation": "指物体的背面、反面，也可指房屋的后侧或事物的内情。与「表」相对，常用「裏返す」「裏口」等。",
+    "example": {
+      "jp": "この紙の裏に地図があります。",
+      "kana": "このかみのうらにちずがあります。",
+      "romaji": "kono kami no ura ni chizu ga arimasu.",
+      "zh": "这张纸的背面有地图。"
+    }
+  },
+  "l40-w1608": {
+    "romaji": "machigai",
+    "attributes": [],
+    "explanation": "指错误、差错，常与「ある」「見つける」「直す」等搭配。也可用于「間違いない」表示没错。",
+    "example": {
+      "jp": "この文には間違いが一つあります。",
+      "kana": "このぶんにはまちがいがひとつあります。",
+      "romaji": "kono bun ni wa machigai ga hitotsu arimasu.",
+      "zh": "这句话里有一个错误。"
+    }
+  },
+  "l40-w1609": {
+    "romaji": "kizu",
+    "attributes": [],
+    "explanation": "指身体上的伤，也指物品上的划痕、损伤。常用「傷がつく」「傷をつける」「傷が治る」等。",
+    "example": {
+      "jp": "机に傷がついてしまいました。",
+      "kana": "つくえにきずがついてしまいました。",
+      "romaji": "tsukue ni kizu ga tsuite shimaimashita.",
+      "zh": "桌子上留下了划痕。"
+    }
+  },
+  "l40-w1610": {
+    "romaji": "zubon",
+    "attributes": [],
+    "explanation": "指裤子，外来语，通常用片假名书写。常与「はく」「穿く」搭配，如「ズボンをはく」。",
+    "example": {
+      "jp": "新しいズボンを買いました。",
+      "kana": "あたらしいズボンをかいました。",
+      "romaji": "atarashii zubon o kaimashita.",
+      "zh": "我买了新裤子。"
+    }
+  },
+  "l40-w1611": {
+    "romaji": "nagasa",
+    "attributes": [],
+    "explanation": "由形容词「長い」加接尾辞「さ」构成，表示长度。常用于测量、比较具体物体的长短。",
+    "example": {
+      "jp": "このテーブルの長さは二メートルです。",
+      "kana": "このテーブルのかたさはにメートルです。",
+      "romaji": "kono teeburu no nagasa wa ni meetoru desu.",
+      "zh": "这张桌子的长度是两米。"
+    }
+  },
+  "l40-w1612": {
+    "romaji": "omosa",
+    "attributes": [],
+    "explanation": "由形容词「重い」加接尾辞「さ」构成，表示重量。常用于询问或描述物体的轻重。",
+    "example": {
+      "jp": "この荷物の重さはどのくらいですか。",
+      "kana": "このにもつのおもさはどのくらいですか。",
+      "romaji": "kono nimotsu no omosa wa dono kurai desu ka.",
+      "zh": "这件行李的重量大约是多少？"
+    }
+  },
+  "l40-w1613": {
+    "romaji": "takasa",
+    "attributes": [],
+    "explanation": "由形容词「高い」加接尾辞「さ」构成，表示高度、海拔或身高等。用于具体测量高度。",
+    "example": {
+      "jp": "この山の高さは三千メートルです。",
+      "kana": "このやまのたかさはさんぜんメートルです。",
+      "romaji": "kono yama no takasa wa sanzen meetoru desu.",
+      "zh": "这座山的高度是三千米。"
+    }
+  },
+  "l40-w1614": {
+    "romaji": "ookisa",
+    "attributes": [],
+    "explanation": "由形容词「大きい」加接尾辞「さ」构成，表示大小、尺寸。常用于比较物体的大小。",
+    "example": {
+      "jp": "この箱とあの箱は大きさが違います。",
+      "kana": "このはことあのはこはおおきさがちがいます。",
+      "romaji": "kono hako to ano hako wa ookisa ga chigaimasu.",
+      "zh": "这个箱子和那个箱子大小不同。"
+    }
+  },
+  "l40-w1615": {
+    "romaji": "bin",
+    "attributes": [],
+    "explanation": "「便」指飞机航班，常用于机场、时刻表等场景，如「～便」表示某次航班。注意与表示邮件、便意的「便」区分。",
+    "example": {
+      "jp": "午後の便で東京へ行きます。",
+      "kana": "ごごのびんでとうきょうへいきます。",
+      "romaji": "gogo no bin de toukyou e ikimasu.",
+      "zh": "坐下午的航班去东京。"
+    }
+  },
+  "l40-w1617": {
+    "romaji": "ko",
+    "attributes": [],
+    "explanation": "「～個」是量词，用于数小件物品，如苹果、鸡蛋等。数字读法需注意「1個（いっこ）」「8個（はっこ）」等音变。",
+    "example": {
+      "jp": "りんごを三個買いました。",
+      "kana": "りんごをさんこかいました。",
+      "romaji": "ringo o sanko kaimashita.",
+      "zh": "买了三个苹果。"
+    }
+  },
+  "l40-w1618": {
+    "romaji": "hon",
+    "attributes": [],
+    "explanation": "「～本」是量词，用于数细长物品，如瓶子、笔、香蕉等。注意数字音变，如「1本（いっぽん）」「3本（さんぼん）」。",
+    "example": {
+      "jp": "ビールを二本ください。",
+      "kana": "びーるをにほんください。",
+      "romaji": "biiru o nihon kudasai.",
+      "zh": "请给我两瓶啤酒。"
+    }
+  },
+  "l40-w1619": {
+    "romaji": "hai",
+    "attributes": [],
+    "explanation": "「～杯」是量词，用于数杯、碗装的饮料或食物，如咖啡、米饭。数字音变如「1杯（いっぱい）」「3杯（さんばい）」。",
+    "example": {
+      "jp": "コーヒーを二杯飲みました。",
+      "kana": "こーひーをにはいのみました。",
+      "romaji": "koohii o nihai nomimashita.",
+      "zh": "喝了两杯咖啡。"
+    }
+  },
+  "l40-w1621": {
+    "romaji": "guramu",
+    "attributes": [],
+    "explanation": "「～グラム」是重量单位“克”，用于表示食材、物品的重量。常与数字直接连接，如「100グラム」。",
+    "example": {
+      "jp": "砂糖を五十グラム入れてください。",
+      "kana": "さとうをごじゅうぐらむいれてください。",
+      "romaji": "satou o gojuu guramu irete kudasai.",
+      "zh": "请放入五十克糖。"
+    }
+  },
+  "l40-w1622": {
+    "romaji": "senchi",
+    "attributes": [],
+    "explanation": "「～センチ」是长度单位“厘米”，用于表示身高、尺寸等。口语中常省略「メートル」，直接说「～センチ」。",
+    "example": {
+      "jp": "この紙は縦が三十センチです。",
+      "kana": "このかみはたてがさんじゅっせんちです。",
+      "romaji": "kono kami wa tate ga sanjuu senchi desu.",
+      "zh": "这张纸竖着是三十厘米。"
+    }
+  },
+  "l40-w1623": {
+    "romaji": "miri",
+    "attributes": [],
+    "explanation": "「～ミリ」是长度单位“毫米”，用于表示精确尺寸或降雨量等。常与数字连接，如「5ミリ」。",
+    "example": {
+      "jp": "雨が十ミリ降りました。",
+      "kana": "あめがじゅうみりふりました。",
+      "romaji": "ame ga juu miri furimashita.",
+      "zh": "下了十毫米的雨。"
+    }
+  },
+  "l40-w1624": {
+    "romaji": "ijou",
+    "attributes": [],
+    "explanation": "「～以上」表示数量或程度在此之上，且包含该数字本身。常用于说明最低限度，如「20歳以上」。",
+    "example": {
+      "jp": "このクラスには三十人以上います。",
+      "kana": "このくらすにはさんじゅうにんいじょういます。",
+      "romaji": "kono kurasu ni wa sanjuu nin ijou imasu.",
+      "zh": "这个班有三十人以上。"
+    }
+  },
+  "l40-w1625": {
+    "romaji": "ika",
+    "attributes": [],
+    "explanation": "「～以下」表示数量或程度在此之下，且包含该数字本身。常用于说明上限，如「10歳以下」。",
+    "example": {
+      "jp": "参加者は十人以下でした。",
+      "kana": "さんかしゃはじゅうにんいかでした。",
+      "romaji": "sankasha wa juu nin ika deshita.",
+      "zh": "参加者在十人以下。"
+    }
+  },
+  "l40-w1627": {
+    "romaji": "dou deshou ka",
+    "attributes": [],
+    "explanation": "「どうでしょうか」是「どうですか」的委婉说法，用于礼貌地询问意见或提出建议，语气比「どうですか」更客气。",
+    "example": {
+      "jp": "このプランはどうでしょうか。",
+      "kana": "このぷらんはどうでしょうか。",
+      "romaji": "kono puran wa dou deshou ka.",
+      "zh": "这个方案怎么样呢？"
+    }
+  },
+  "l40-w1629": {
+    "romaji": "tesuto",
+    "attributes": [],
+    "explanation": "「テスト」指测验、考试，多用于学校或培训中的小考。与「試験」相比，规模较小、较口语化。",
+    "example": {
+      "jp": "明日は日本語のテストがあります。",
+      "kana": "あしたはにほんごのてすとがあります。",
+      "romaji": "ashita wa nihongo no tesuto ga arimasu.",
+      "zh": "明天有日语测验。"
+    }
+  },
+  "l40-w1630": {
+    "romaji": "seiseki",
+    "attributes": [],
+    "explanation": "「成績」指学习成绩或工作成果，常用于学校、公司等评价场合。可说「成績がいい／悪い」。",
+    "example": {
+      "jp": "今学期の成績が上がりました。",
+      "kana": "こんがっきのせいせきがあがりました。",
+      "romaji": "kongakki no seiseki ga agarimashita.",
+      "zh": "这学期的成绩提高了。"
+    }
+  },
+  "l40-w1631": {
+    "romaji": "tokorode",
+    "attributes": [],
+    "explanation": "用于转换话题的接续词，表示“顺便说一下、话说回来”。多用于口语，在对方说完后引出新话题，不用于正式书面语。",
+    "example": {
+      "jp": "ところで、明日の会議は何時からですか。",
+      "kana": "ところで、あしたのかいぎはなんじからですか。",
+      "romaji": "tokorode, ashita no kaigi wa nanji kara desu ka.",
+      "zh": "话说回来，明天的会议从几点开始？"
+    }
+  },
+  "l40-w1632": {
+    "romaji": "irasshaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「来る」「行く」「いる」的尊敬语，用于描述尊长或客人的动作。本课表示“来/在”，常见于接待或正式场合。",
+    "example": {
+      "jp": "先生は今、研究室にいらっしゃいます。",
+      "kana": "せんせいはいます、けんきゅうしつにいらっしゃいます。",
+      "romaji": "sensei wa ima, kenkyuushitsu ni irasshaimasu.",
+      "zh": "老师现在在研究室。"
+    }
+  },
+  "l40-w1633": {
+    "romaji": "yousu",
+    "attributes": [],
+    "explanation": "表示人、事物或事态呈现出的外观、情形。常与「見る」「うかがう」等搭配，如「様子を見る」观察情况。",
+    "example": {
+      "jp": "外の様子を見てきます。",
+      "kana": "そとのようすをみてきます。",
+      "romaji": "soto no yousu o mite kimasu.",
+      "zh": "我去看看外面的情况。"
+    }
+  },
+  "l40-w1778": {
+    "romaji": "umaku ikimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示事情进展顺利，常用「うまくいく」的形式。主语多为事情、计划等，不用于人本身“擅长”。",
+    "example": {
+      "jp": "新しい計画はうまくいっています。",
+      "kana": "あたらしいけいかくはうまくいっています。",
+      "romaji": "atarashii keikaku wa umaku itte imasu.",
+      "zh": "新计划进展顺利。"
+    }
+  },
+  "l40-w1830": {
+    "romaji": "tenkiyohou",
+    "attributes": [],
+    "explanation": "指天气预报，常与「見る」「聞く」「によると」等搭配。是日常获取天气信息时的常用名词。",
+    "example": {
+      "jp": "天気予報によると、明日は雨だそうです。",
+      "kana": "てんきよほうによると、あしたはあめだそうです。",
+      "romaji": "tenkiyohou ni yoru to, ashita wa ame da sou desu.",
+      "zh": "据天气预报说，明天好像下雨。"
+    }
+  },
+  "l40-w3208": {
+    "romaji": "otoshori",
+    "attributes": [],
+    "explanation": "对高龄者的礼貌说法，比「老人」更委婉。常用于社会福利、公共交通等语境，如「お年寄りに席を譲る」。",
+    "example": {
+      "jp": "電車でお年寄りに席を譲りました。",
+      "kana": "でんしゃでおとしよりにせきをゆずりました。",
+      "romaji": "densha de otoshori ni seki o yuzurimashita.",
+      "zh": "在电车上给老年人让了座。"
+    }
+  },
+  "l40-w5647": {
+    "romaji": "demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "本课指考试中“出题、有题目出现”，主语是「問題」。常用「問題が出る」表示考题出现，也可说「試験に出る」。",
+    "example": {
+      "jp": "この試験には難しい問題が出ます。",
+      "kana": "このしけんにはむずかしいもんだいがでます。",
+      "romaji": "kono shiken ni wa muzukashii mondai ga demasu.",
+      "zh": "这个考试会出难题。"
+    }
+  },
+  "l40-w5652": {
+    "romaji": "happyoukai",
+    "attributes": [],
+    "explanation": "指展示成果、发表研究或表演的集会，如学习成果发表会、音乐会等。常与「開く」「行う」搭配。",
+    "example": {
+      "jp": "来週、日本語の発表会があります。",
+      "kana": "らいしゅう、にほんごのはっぴょうかいがあります。",
+      "romaji": "raishuu, nihongo no happyoukai ga arimasu.",
+      "zh": "下周有日语发表会。"
+    }
+  },
+  "l40-weigh": {
+    "romaji": "hakarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用秤等测量重量或容量，宾语常为「重さ」「体重」「米」等。注意与「測る」（测量长度等）区分。",
+    "example": {
+      "jp": "荷物の重さを量ります。",
+      "kana": "にもつのおもさをはかります。",
+      "romaji": "nimotsu no omosa o hakarimasu.",
+      "zh": "称行李的重量。"
+    }
+  },
+  "l40-nagasaki": {
+    "romaji": "Nagasaki",
+    "attributes": [],
+    "explanation": "日本九州地区的县名及城市名，也是历史悠久的港口城市。常与「長崎県」「長崎市」等搭配使用。",
+    "example": {
+      "jp": "去年、家族と長崎へ旅行に行きました。",
+      "kana": "きょねん、かぞくとながさきへりょこうにいきました。",
+      "romaji": "kyonen, kazoku to Nagasaki e ryokou ni ikimashita.",
+      "zh": "去年和家人去长崎旅行了。"
+    }
+  },
+  "l40-sendai": {
+    "romaji": "Sendai",
+    "attributes": [],
+    "explanation": "日本宫城县的首府城市，也是东北地区的主要城市。常与「仙台駅」「仙台市」等搭配。",
+    "example": {
+      "jp": "仙台で牛タンを食べました。",
+      "kana": "せんだいでぎゅうたんをたべました。",
+      "romaji": "Sendai de gyuutan o tabemashita.",
+      "zh": "在仙台吃了牛舌。"
+    }
+  },
+  "l40-jl": {
+    "romaji": "jei eru",
+    "attributes": [],
+    "explanation": "日本航空（Japan Airlines）的航班代码，用于航班号前，如「JL123便」。读作「ジェイエル」。",
+    "example": {
+      "jp": "JL123便は何時に出発しますか。",
+      "kana": "じぇいえるひゃくにじゅうさんびんはなんじにしゅっぱつしますか。",
+      "romaji": "jei eru hyaku nijuu san bin wa nanji ni shuppatsu shimasu ka.",
+      "zh": "JL123航班几点出发？"
+    }
+  },
+  "l40-tanabata": {
+    "romaji": "tanabata matsuri",
+    "attributes": [],
+    "explanation": "指日本每年7月7日前后举行的七夕节庆活动，各地神社和商店街会挂装饰、写短册。作为名词常与「行く」「見る」等动词搭配。",
+    "example": {
+      "jp": "七夕祭りで短冊に願いを書いた。",
+      "kana": "たなばたまつりでたんざくにねがいをかいた。",
+      "romaji": "tanabata matsuri de tanzaku ni negai o kaita.",
+      "zh": "在七夕祭上把愿望写在了短册上。"
+    }
+  },
+  "l40-toshogu": {
+    "romaji": "tōshōgū",
+    "attributes": [],
+    "explanation": "专有名词，特指祭祀德川家康的东照宫，最著名的是栃木县日光东照宫。常作为观光地名称使用，前面可加地名如「日光東照宮」。",
+    "example": {
+      "jp": "日光の東照宮は世界遺産です。",
+      "kana": "にっこうのとうしょうぐうはせかいいさんです。",
+      "romaji": "nikkō no tōshōgū wa sekai isan desu.",
+      "zh": "日光的东照宫是世界遗产。"
+    }
+  },
+  "l40-incident": {
+    "romaji": "jiken",
+    "attributes": [],
+    "explanation": "指社会上发生的重大事件，常含犯罪、事故等负面色彩。与「事故」不同，多用于新闻报道或警方语境。",
+    "example": {
+      "jp": "昨夜、駅の近くで事件が起きた。",
+      "kana": "ゆうべ、えきのちかくでじけんがおきた。",
+      "romaji": "yūbe, eki no chikaku de jiken ga okita.",
+      "zh": "昨晚在车站附近发生了事件。"
+    }
+  },
+  "l40-motorcycle": {
+    "romaji": "ōtobai",
+    "attributes": [],
+    "explanation": "外来语，指摩托车，比「バイク」稍正式。常与「乗る」「運転する」搭配，也可说「オートバイに乗る」。",
+    "example": {
+      "jp": "父は毎朝オートバイで会社へ行く。",
+      "kana": "ちちはまいあさおーとばいでかいしゃへいく。",
+      "romaji": "chichi wa maiasa ōtobai de kaisha e iku.",
+      "zh": "父亲每天早上骑摩托车去公司。"
+    }
+  },
+  "l40-bomb": {
+    "romaji": "bakudan",
+    "attributes": [],
+    "explanation": "指炸弹，常用于新闻或战争语境。可搭配「爆発する」「落とす」「仕掛ける」等动词。",
+    "example": {
+      "jp": "古い爆弾が工事現場で見つかった。",
+      "kana": "ふるいばくだんがこうじげんばでみつかった。",
+      "romaji": "furui bakudan ga kōji genba de mitsukatta.",
+      "zh": "在施工现场发现了旧炸弹。"
+    }
+  },
+  "l40-load": {
+    "romaji": "tsumimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示把货物装到车、船等上面，或把东西堆积起来。常用「～を車に積む」「荷物を積む」的形式。",
+    "example": {
+      "jp": "トラックに荷物を積みます。",
+      "kana": "とらっくににもつをつみます。",
+      "romaji": "torakku ni nimotsu o tsumimasu.",
+      "zh": "把货物装到卡车上。"
+    }
+  },
+  "l40-driver": {
+    "romaji": "untenshu",
+    "attributes": [],
+    "explanation": "指以驾驶为职业的人，如出租车、公交车司机。普通说“开车的人”时多用「運転している人」，而「運転手」更偏职业称呼。",
+    "example": {
+      "jp": "タクシーの運転手に道を聞いた。",
+      "kana": "たくしーのうんてんしゅにみちをきいた。",
+      "romaji": "takushī no untenshu ni michi o kiita.",
+      "zh": "向出租车司机问了路。"
+    }
+  },
+  "l40-distant": {
+    "romaji": "hanareta",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「離れる」的过去式/连体形式，表示“相隔的、远离的”，常修饰地点或位置，如「駅から離れた店」。注意不是形容词。",
+    "example": {
+      "jp": "駅から離れた静かな町に住んでいる。",
+      "kana": "えきからはなれたしずかなまちにすんでいる。",
+      "romaji": "eki kara hanareta shizuka na machi ni sunde iru.",
+      "zh": "住在离车站较远的安静小镇上。"
+    }
+  },
+  "l40-suddenly": {
+    "romaji": "kyū ni",
+    "attributes": [],
+    "explanation": "副词，表示事情发生得突然、没有预兆。常与瞬间动词如「降る」「止まる」「変わる」搭配，口语中也可说「急に」。",
+    "example": {
+      "jp": "急に雨が降ってきた。",
+      "kana": "きゅうにあめがふってきた。",
+      "romaji": "kyū ni ame ga futte kita.",
+      "zh": "突然下起雨来了。"
+    }
+  },
+  "l40-move": {
+    "romaji": "ugokashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示使某物移动、开动或调动。与自动词「動く」相对，常用「～を動かす」形式。",
+    "example": {
+      "jp": "机を少し右に動かします。",
+      "kana": "つくえをすこしみぎにうごかします。",
+      "romaji": "tsukue o sukoshi migi ni ugokashimasu.",
+      "zh": "把桌子稍微往右移动。"
+    }
+  },
+  "l40-hard": {
+    "romaji": "isshōkenmei",
+    "attributes": [],
+    "explanation": "副词/な形容词，表示拼命、全力以赴地做某事。常与「勉強する」「働く」「練習する」等搭配，也可作「一生懸命な人」。",
+    "example": {
+      "jp": "毎日一生懸命日本語を勉強しています。",
+      "kana": "まいにちいっしょうけんめいにほんごをべんきょうしています。",
+      "romaji": "mainichi isshōkenmei nihongo o benkyō shite imasu.",
+      "zh": "每天拼命学习日语。"
+    }
+  },
+  "l40-criminal": {
+    "romaji": "hannin",
+    "attributes": [],
+    "explanation": "指犯罪的人，即犯人、罪犯。常用于新闻或推理语境，与「犯罪者」近义但更口语化。",
+    "example": {
+      "jp": "警察はまだ犯人を見つけていない。",
+      "kana": "けいさつはまだはんにんをみつけていない。",
+      "romaji": "keisatsu wa mada hannin o mitsukete inai.",
+      "zh": "警察还没有找到犯人。"
+    }
+  },
+  "l40-man": {
+    "romaji": "otoko",
+    "attributes": [],
+    "explanation": "指成年男性，也可泛指男子。日常口语中常用，但直接称呼对方时需注意语境，避免失礼。",
+    "example": {
+      "jp": "あの男は私の兄です。",
+      "kana": "あのおとこはわたしのあにです。",
+      "romaji": "ano otoko wa watashi no ani desu.",
+      "zh": "那个男子是我哥哥。"
+    }
+  },
+  "l40-obtain": {
+    "romaji": "te ni iremasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示通过努力或某种手段获得某物，常用于具体物品或抽象事物如信息、机会等。较“もらう”更强调主动获取。",
+    "example": {
+      "jp": "やっと切符を手に入れました。",
+      "kana": "やっときっぷをてにいれました。",
+      "romaji": "yatto kippu o te ni iremashita.",
+      "zh": "终于得到了票。"
+    }
+  },
+  "l40-still": {
+    "romaji": "imademo",
+    "attributes": [],
+    "explanation": "表示从过去到现在状态持续不变，常与现在时或持续动作搭配。语气比“まだ”更强调时间跨度。",
+    "example": {
+      "jp": "今でもその歌を覚えています。",
+      "kana": "いまでもそのうたをおぼえています。",
+      "romaji": "imademo sono uta o oboete imasu.",
+      "zh": "至今仍然记得那首歌。"
+    }
+  }
+}

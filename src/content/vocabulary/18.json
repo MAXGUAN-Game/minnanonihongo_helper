@@ -1,0 +1,226 @@
+{
+  "lessonId": 18,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/18.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源28条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终30条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/18.json。",
+    "第二来源将弹奏写为引きます，按钢琴语境及主来源校正为弾きます。"
+  ],
+  "words": [
+    {
+      "key": "w1280",
+      "word": "インターネット",
+      "reading": "いんたーねっと",
+      "partOfSpeech": "名词",
+      "meaning": "互联网"
+    },
+    {
+      "key": "w2430",
+      "word": "ピアノ",
+      "reading": "ぴあの",
+      "partOfSpeech": "名词",
+      "meaning": "钢琴"
+    },
+    {
+      "key": "w749",
+      "word": "特に",
+      "reading": "とくに",
+      "partOfSpeech": "副词",
+      "meaning": "尤其；特别"
+    },
+    {
+      "key": "w838",
+      "word": "できます",
+      "reading": "できます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "会；能够"
+    },
+    {
+      "key": "w839",
+      "word": "洗います",
+      "reading": "あらいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "洗"
+    },
+    {
+      "key": "w840",
+      "word": "弾きます",
+      "reading": "ひきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "弹奏（钢琴、弦乐器）"
+    },
+    {
+      "key": "w841",
+      "word": "歌います",
+      "reading": "うたいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "唱歌"
+    },
+    {
+      "key": "w842",
+      "word": "集めます",
+      "reading": "あつめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "收集"
+    },
+    {
+      "key": "w843",
+      "word": "捨てます",
+      "reading": "すてます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "丢弃"
+    },
+    {
+      "key": "w844",
+      "word": "換えます",
+      "reading": "かえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "交换；兑换"
+    },
+    {
+      "key": "w845",
+      "word": "運転します",
+      "reading": "うんてんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "驾驶"
+    },
+    {
+      "key": "w846",
+      "word": "予約します",
+      "reading": "よやくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "预约"
+    },
+    {
+      "key": "w849",
+      "word": "～メートル",
+      "reading": "～めーとる",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……米"
+    },
+    {
+      "key": "w851",
+      "word": "現金",
+      "reading": "げんきん",
+      "partOfSpeech": "名词",
+      "meaning": "现金"
+    },
+    {
+      "key": "w852",
+      "word": "趣味",
+      "reading": "しゅみ",
+      "partOfSpeech": "名词",
+      "meaning": "爱好"
+    },
+    {
+      "key": "w853",
+      "word": "日記",
+      "reading": "にっき",
+      "partOfSpeech": "名词",
+      "meaning": "日记"
+    },
+    {
+      "key": "w854",
+      "word": "お祈り",
+      "reading": "おいのり",
+      "partOfSpeech": "名词",
+      "meaning": "祈祷"
+    },
+    {
+      "key": "w855",
+      "word": "課長",
+      "reading": "かちょう",
+      "partOfSpeech": "名词",
+      "meaning": "科长"
+    },
+    {
+      "key": "w856",
+      "word": "部長",
+      "reading": "ぶちょう",
+      "partOfSpeech": "名词",
+      "meaning": "部长"
+    },
+    {
+      "key": "w857",
+      "word": "社長",
+      "reading": "しゃちょう",
+      "partOfSpeech": "名词",
+      "meaning": "公司总经理；社长"
+    },
+    {
+      "key": "w858",
+      "word": "動物",
+      "reading": "どうぶつ",
+      "partOfSpeech": "名词",
+      "meaning": "动物"
+    },
+    {
+      "key": "w859",
+      "word": "馬",
+      "reading": "うま",
+      "partOfSpeech": "名词",
+      "meaning": "马"
+    },
+    {
+      "key": "w860",
+      "word": "へえ",
+      "reading": "へえ",
+      "partOfSpeech": "表达",
+      "meaning": "哎呀；是吗"
+    },
+    {
+      "key": "w861",
+      "word": "それはおもしろいですね",
+      "reading": "それはおもしろいですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "那真有意思"
+    },
+    {
+      "key": "w862",
+      "word": "なかなか",
+      "reading": "なかなか",
+      "partOfSpeech": "副词",
+      "meaning": "不容易（后接否定）"
+    },
+    {
+      "key": "w864",
+      "word": "本当ですか",
+      "reading": "ほんとうですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "真的吗"
+    },
+    {
+      "key": "w865",
+      "word": "ぜひ",
+      "reading": "ぜひ",
+      "partOfSpeech": "副词",
+      "meaning": "务必；一定"
+    },
+    {
+      "key": "furusato",
+      "word": "故郷",
+      "reading": "ふるさと",
+      "partOfSpeech": "专有名词",
+      "meaning": "《故乡》（歌曲名）"
+    },
+    {
+      "key": "beatles",
+      "word": "ビートルズ",
+      "reading": "びーとるず",
+      "partOfSpeech": "专有名词",
+      "meaning": "披头士乐队"
+    },
+    {
+      "key": "akihabara",
+      "word": "秋葉原",
+      "reading": "あきはばら",
+      "partOfSpeech": "专有名词",
+      "meaning": "秋叶原"
+    }
+  ]
+}

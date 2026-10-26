@@ -1,0 +1,14 @@
+{
+  "lessonId": 23,
+  "model": "deepseek-flash",
+  "reviewedCount": 28,
+  "corrections": [
+    {
+      "id": "l23-v5",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "触ります（触る）表示“触碰某物”，典型用法为「～に触る」，但按论元结构需带接触对象，教材通常标为他动词；若按自动词处理则与「さわる」的宾语用法不符。"
+    }
+  ]
+}

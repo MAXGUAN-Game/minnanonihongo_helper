@@ -2,7 +2,7 @@ import { timingSafeEqual } from 'node:crypto';
 import type { FastifyRequest } from 'fastify';
 import { ApiError } from './schemas';
 
-export type Deployment = { mode: 'local'; host: string } | { mode: 'web'; host: string; origin: string; publicHost: string; proxyToken: string; icpNumber?: string };
+export type Deployment = { mode: 'local'; host: string } | { mode: 'web'; host: string; origin: string; publicHost: string; proxyToken: string; icpNumber?: string; auth?: { username: string; passwordHash: string } };
 export function deploymentConfig(environment: NodeJS.ProcessEnv = process.env): Deployment {
   const mode = environment.DEPLOYMENT || 'local';
   const host = environment.HOST || (mode === 'web' ? '0.0.0.0' : '127.0.0.1');
@@ -20,7 +20,9 @@ export function deploymentConfig(environment: NodeJS.ProcessEnv = process.env): 
   if (!['127.0.0.1', '::1', '0.0.0.0'].includes(host)) throw new Error('Unsupported HOST.');
   const icpNumber = environment.ICP_NUMBER?.trim() || '';
   if (icpNumber.length > 64 || /[\r\n\u0000-\u001f]/.test(icpNumber)) throw new Error('ICP_NUMBER must be a single line of at most 64 characters.');
-  return { mode, host, origin: origin.origin, publicHost: origin.host, proxyToken, icpNumber };
+  const username = environment.APP_AUTH_USER || '', passwordHash = environment.APP_AUTH_HASH || '';
+  if ((username || passwordHash) && (!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,31}$/.test(username) || !/^\$2[aby]\$\d{2}\$[./A-Za-z0-9]{53}$/.test(passwordHash))) throw new Error('Invalid APP_AUTH_USER or bcrypt APP_AUTH_HASH.');
+  return { mode, host, origin: origin.origin, publicHost: origin.host, proxyToken, icpNumber, ...(username && passwordHash ? { auth: { username, passwordHash } } : {}) };
 }
 
 function loopback(host: string) { return ['localhost', '127.0.0.1', '[::1]', '::1'].includes(host.toLowerCase()); }

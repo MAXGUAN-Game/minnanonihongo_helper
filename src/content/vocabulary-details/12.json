@@ -1,0 +1,652 @@
+{
+  "l12-w2158": {
+    "romaji": "remon",
+    "attributes": [],
+    "explanation": "指柠檬这种水果，常用来表示酸味或黄色。可搭配「レモンを切る」「レモン汁」等。注意是外来语，用片假名书写。",
+    "example": {
+      "jp": "レモンを一つ買いました。",
+      "kana": "れもんをひとつかいました。",
+      "romaji": "remon o hitotsu kaimashita.",
+      "zh": "买了一个柠檬。"
+    }
+  },
+  "l12-w294": {
+    "romaji": "gyūniku",
+    "attributes": [],
+    "explanation": "指牛肉，常用于烹饪或购物场景。可搭配「牛肉を焼く」「牛肉の値段」等。注意「牛」读「ぎゅう」。",
+    "example": {
+      "jp": "牛肉は高いですね。",
+      "kana": "ぎゅうにくはたかいですね。",
+      "romaji": "gyūniku wa takai desu ne.",
+      "zh": "牛肉真贵啊。"
+    }
+  },
+  "l12-w295": {
+    "romaji": "butaniku",
+    "attributes": [],
+    "explanation": "指猪肉，日常饮食常用词。可搭配「豚肉を炒める」「豚肉の生姜焼き」等。注意「豚」读「ぶた」。",
+    "example": {
+      "jp": "豚肉をフライパンで炒めます。",
+      "kana": "ぶたにくをふらいぱんでいためます。",
+      "romaji": "butaniku o furaipan de itamemasu.",
+      "zh": "用平底锅炒猪肉。"
+    }
+  },
+  "l12-w296": {
+    "romaji": "toriniku",
+    "attributes": [],
+    "explanation": "指鸡肉，常用食材。可搭配「鶏肉を煮る」「鶏肉の唐揚げ」等。注意「鶏」读「とり」。",
+    "example": {
+      "jp": "鶏肉は柔らかくておいしいです。",
+      "kana": "とりにくはやわらかくておいしいです。",
+      "romaji": "toriniku wa yawarakakute oishii desu.",
+      "zh": "鸡肉又软又好吃。"
+    }
+  },
+  "l12-v10": {
+    "romaji": "ichiban",
+    "attributes": [],
+    "explanation": "表示“最、第一”，常用于比较句中，后接形容词或动词。可搭配「一番好き」「一番早い」等。也可单独作名词表示第一名。",
+    "example": {
+      "jp": "この店のラーメンが一番好きです。",
+      "kana": "このみせのらーめんがいちばんすきです。",
+      "romaji": "kono mise no rāmen ga ichiban suki desu.",
+      "zh": "最喜欢这家店的拉面。"
+    }
+  },
+  "l12-w599": {
+    "romaji": "kantanna",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示“简单、容易”，形容事物不复杂。修饰名词时加「な」，如「簡単な問題」；作谓语时用「簡単だ」。注意与「易しい」区别：后者多指容易理解或做。",
+    "example": {
+      "jp": "このテストは簡単でした。",
+      "kana": "このてすとはかんたんでした。",
+      "romaji": "kono tesuto wa kantandeshita.",
+      "zh": "这次考试很简单。"
+    }
+  },
+  "l12-v2": {
+    "romaji": "chikai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示距离近，可指空间或时间接近。可搭配「駅に近い」「近い将来」等。注意与「近く」名词用法不同。",
+    "example": {
+      "jp": "私の家は駅に近いです。",
+      "kana": "わたしのいえはえきにちかいです。",
+      "romaji": "watashi no ie wa eki ni chikai desu.",
+      "zh": "我家离车站很近。"
+    }
+  },
+  "l12-v3": {
+    "romaji": "tōi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示距离远，可指空间或时间久远。可搭配「学校から遠い」「遠い昔」等。注意与「近い」反义。",
+    "example": {
+      "jp": "空港はここから遠いですか。",
+      "kana": "くうこうはここからとおいですか。",
+      "romaji": "kūkō wa koko kara tōi desu ka.",
+      "zh": "机场离这里远吗？"
+    }
+  },
+  "l12-w602": {
+    "romaji": "hayai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示时间早，比通常时间提前。可搭配「朝早い」「早く起きる」等。注意与「速い」同音但意义不同，后者指速度快。",
+    "example": {
+      "jp": "今日は早く家を出ました。",
+      "kana": "きょうははやくいえをでました。",
+      "romaji": "kyō wa hayaku ie o demashita.",
+      "zh": "今天很早就出门了。"
+    }
+  },
+  "l12-w603": {
+    "romaji": "osoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示时间晚或速度慢。可搭配「夜遅い」「遅く寝る」等。注意与「速い」反义，但也可表示动作慢。",
+    "example": {
+      "jp": "昨日は遅く寝ました。",
+      "kana": "きのうはおそくねました。",
+      "romaji": "kinō wa osoku nemashita.",
+      "zh": "昨天很晚才睡。"
+    }
+  },
+  "l12-v4": {
+    "romaji": "hayai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示速度快捷，用于交通工具、动作等。可搭配「足が速い」「速く走る」等。注意与「早い」同音，但侧重速度。",
+    "example": {
+      "jp": "この電車はとても速いです。",
+      "kana": "このでんしゃはとてもはやいです。",
+      "romaji": "kono densha wa totemo hayai desu.",
+      "zh": "这趟电车非常快。"
+    }
+  },
+  "l12-w606": {
+    "romaji": "ōi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示数量多，常用于人、物、次数等。可搭配「人が多い」「質問が多い」等。注意修饰名词时用「多い＋名詞」不常见，常用「多くの名詞」。",
+    "example": {
+      "jp": "この公園は人が多いですね。",
+      "kana": "このこうえんはひとがおおいですね。",
+      "romaji": "kono kōen wa hito ga ōi desu ne.",
+      "zh": "这个公园人真多啊。"
+    }
+  },
+  "l12-w607": {
+    "romaji": "sukunai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示数量或程度少，常用于否定或比较语境。修饰名词时用「少ない＋名詞」，不能用于人（人少说「人が少ない」）。",
+    "example": {
+      "jp": "この店は客が少ない。",
+      "kana": "このみせはきゃくがすくない。",
+      "romaji": "kono mise wa kyaku ga sukunai.",
+      "zh": "这家店客人很少。"
+    }
+  },
+  "l12-w608": {
+    "romaji": "atatakai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "指物体温度温热、不烫，如食物、饮料、房间等。与「暖かい」同音但汉字不同，侧重触觉温度。",
+    "example": {
+      "jp": "温かいスープを飲みます。",
+      "kana": "あたたかいすーぷをのみます。",
+      "romaji": "atatakai sūpu o nomimasu.",
+      "zh": "喝温热的汤。"
+    }
+  },
+  "l12-w609": {
+    "romaji": "atatakai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "指气候、天气温暖宜人，如春天或室内环境。与「温かい」同音，但汉字「暖」多用于天气、气氛。",
+    "example": {
+      "jp": "今日は暖かいですね。",
+      "kana": "きょうはあたたかいですね。",
+      "romaji": "kyō wa atatakai desu ne.",
+      "zh": "今天真暖和啊。"
+    }
+  },
+  "l12-w610": {
+    "romaji": "suzushii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示凉爽、凉快，多用于夏天气候或通风良好的地方，褒义。比「寒い」程度轻。",
+    "example": {
+      "jp": "この部屋は涼しいです。",
+      "kana": "このへやはすずしいです。",
+      "romaji": "kono heya wa suzushii desu.",
+      "zh": "这个房间很凉爽。"
+    }
+  },
+  "l12-w611": {
+    "romaji": "amai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示味道甜，也可引申为宽松、天真。反义词是「辛い」。",
+    "example": {
+      "jp": "このケーキはとても甘いです。",
+      "kana": "このけーきはとてもあまいです。",
+      "romaji": "kono kēki wa totemo amai desu.",
+      "zh": "这个蛋糕非常甜。"
+    }
+  },
+  "l12-w612": {
+    "romaji": "karai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示味道辣，如辣椒、咖喱等。注意与表示咸的「しょっぱい」区分。",
+    "example": {
+      "jp": "このカレーは辛いです。",
+      "kana": "このかれーはからいです。",
+      "romaji": "kono karē wa karai desu.",
+      "zh": "这个咖喱很辣。"
+    }
+  },
+  "l12-v5": {
+    "romaji": "omoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示重量重，也可形容心情沉重、负担大。反义词是「軽い」。",
+    "example": {
+      "jp": "この荷物は重いです。",
+      "kana": "このにもつはおもいです。",
+      "romaji": "kono nimotsu wa omoi desu.",
+      "zh": "这个行李很重。"
+    }
+  },
+  "l12-v6": {
+    "romaji": "karui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示重量轻，也可形容轻松、简单。反义词是「重い」。",
+    "example": {
+      "jp": "このかばんは軽いです。",
+      "kana": "このかばんはかるいです。",
+      "romaji": "kono kaban wa karui desu.",
+      "zh": "这个包很轻。"
+    }
+  },
+  "l12-w615": {
+    "romaji": "[kōhī ga] ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「いい」在比较选择时表示“（某物）更好、更想要”，常用「AよりBがいい」句型。此处特指选择咖啡。",
+    "example": {
+      "jp": "紅茶よりコーヒーがいいです。",
+      "kana": "こうちゃよりこーひーがいいです。",
+      "romaji": "kōcha yori kōhī ga ii desu.",
+      "zh": "比起红茶，我更想要咖啡。"
+    }
+  },
+  "l12-w616": {
+    "romaji": "kisetsu",
+    "attributes": [],
+    "explanation": "指季节，常与「春」「夏」「秋」「冬」搭配。可说「季節の変わり目」等。",
+    "example": {
+      "jp": "好きな季節は春です。",
+      "kana": "すきなきせつははるです。",
+      "romaji": "suki na kisetsu wa haru desu.",
+      "zh": "喜欢的季节是春天。"
+    }
+  },
+  "l12-v7": {
+    "romaji": "haru",
+    "attributes": [],
+    "explanation": "指春季，通常指3月到5月。常与「桜」「暖かい」等词搭配。",
+    "example": {
+      "jp": "春に桜が咲きます。",
+      "kana": "はるにさくらがさきます。",
+      "romaji": "haru ni sakura ga sakimasu.",
+      "zh": "春天樱花开放。"
+    }
+  },
+  "l12-w618": {
+    "romaji": "natsu",
+    "attributes": [],
+    "explanation": "指夏季，通常指6月到8月。常与「暑い」「海」「祭り」等词搭配。",
+    "example": {
+      "jp": "夏は海で泳ぎます。",
+      "kana": "なつはうみでおよぎます。",
+      "romaji": "natsu wa umi de oyogimasu.",
+      "zh": "夏天在海里游泳。"
+    }
+  },
+  "l12-v8": {
+    "romaji": "aki",
+    "attributes": [],
+    "explanation": "指一年四季中的秋季，常与红叶、食欲等文化意象搭配。口语中可直接说「秋」，也可说「秋に」「秋の」等。",
+    "example": {
+      "jp": "秋は紅葉がきれいです。",
+      "kana": "あきはこうようがきれいです。",
+      "romaji": "aki wa kōyō ga kirei desu.",
+      "zh": "秋天红叶很美。"
+    }
+  },
+  "l12-w620": {
+    "romaji": "fuyu",
+    "attributes": [],
+    "explanation": "指冬季，常与寒冷、雪等话题关联。可作季节主题使用，如「冬休み」「冬のスポーツ」。",
+    "example": {
+      "jp": "冬は雪がたくさん降ります。",
+      "kana": "ふゆはゆきがたくさんふります。",
+      "romaji": "fuyu wa yuki ga takusan furimasu.",
+      "zh": "冬天会下很多雪。"
+    }
+  },
+  "l12-w621": {
+    "romaji": "tenki",
+    "attributes": [],
+    "explanation": "指某时某地的天气状况，常与「いい」「悪い」搭配。日常寒暄中常用「今日はいい天気ですね」。",
+    "example": {
+      "jp": "今日はとてもいい天気ですね。",
+      "kana": "きょうはとてもいいてんきですね。",
+      "romaji": "kyō wa totemo ii tenki desu ne.",
+      "zh": "今天天气真好啊。"
+    }
+  },
+  "l12-w622": {
+    "romaji": "ame",
+    "attributes": [],
+    "explanation": "指自然降雨，常与动词「降る」搭配。注意与「飴（あめ）」同音，需根据语境区分。",
+    "example": {
+      "jp": "明日は雨が降るでしょう。",
+      "kana": "あしたはあめがふるでしょう。",
+      "romaji": "ashita wa ame ga furu deshō.",
+      "zh": "明天可能会下雨吧。"
+    }
+  },
+  "l12-w623": {
+    "romaji": "yuki",
+    "attributes": [],
+    "explanation": "指自然降雪，常与「降る」搭配。也可构成「雪国」「雪祭り」等复合词。",
+    "example": {
+      "jp": "北海道では雪がたくさん降ります。",
+      "kana": "ほっかいどうではゆきがたくさんふります。",
+      "romaji": "hokkaidō de wa yuki ga takusan furimasu.",
+      "zh": "北海道会下很多雪。"
+    }
+  },
+  "l12-w624": {
+    "romaji": "kumori",
+    "attributes": [],
+    "explanation": "指天空被云覆盖的状态，天气预报中常用「曇り」表示阴天。也可说「曇り空」。",
+    "example": {
+      "jp": "今日は曇りで、少し寒いです。",
+      "kana": "きょうはくもりで、すこしさむいです。",
+      "romaji": "kyō wa kumori de, sukoshi samui desu.",
+      "zh": "今天阴天，有点冷。"
+    }
+  },
+  "l12-w625": {
+    "romaji": "hoteru",
+    "attributes": [],
+    "explanation": "外来语，指提供住宿的酒店，通常比「旅館」更现代化。常与「に泊まる」搭配。",
+    "example": {
+      "jp": "駅の近くのホテルに泊まりました。",
+      "kana": "えきのちかくのほてるにとまりました。",
+      "romaji": "eki no chikaku no hoteru ni tomarimashita.",
+      "zh": "我住在车站附近的酒店。"
+    }
+  },
+  "l12-w626": {
+    "romaji": "kūkō",
+    "attributes": [],
+    "explanation": "指机场，常用于交通出行场景。常见搭配有「空港まで」「空港で」等。",
+    "example": {
+      "jp": "友だちを空港まで迎えに行きます。",
+      "kana": "ともだちをくうこうまでむかえにいきます。",
+      "romaji": "tomodachi o kūkō made mukae ni ikimasu.",
+      "zh": "我去机场接朋友。"
+    }
+  },
+  "l12-w627": {
+    "romaji": "umi",
+    "attributes": [],
+    "explanation": "指海洋，常与「泳ぐ」「見る」等动词搭配。也用于「海の日」等固定说法。",
+    "example": {
+      "jp": "夏休みに家族で海へ行きます。",
+      "kana": "なつやすみにかぞくでうみへいきます。",
+      "romaji": "natsuyasumi ni kazoku de umi e ikimasu.",
+      "zh": "暑假和家人去海边。"
+    }
+  },
+  "l12-w628": {
+    "romaji": "sekai",
+    "attributes": [],
+    "explanation": "指世界、全球，常用于范围表达。可构成「世界中」「世界一」等惯用表达。",
+    "example": {
+      "jp": "世界にはたくさんの国があります。",
+      "kana": "せかいにはたくさんのくにがあります。",
+      "romaji": "sekai ni wa takusan no kuni ga arimasu.",
+      "zh": "世界上有很多国家。"
+    }
+  },
+  "l12-w629": {
+    "romaji": "pātī",
+    "attributes": [],
+    "explanation": "外来语，指社交聚会，常与「する」「開く」「参加する」搭配。注意长音标记。",
+    "example": {
+      "jp": "土曜日に友だちの家でパーティーをします。",
+      "kana": "どようびにともだちのいえでぱーてぃーをします。",
+      "romaji": "doyōbi ni tomodachi no ie de pātī o shimasu.",
+      "zh": "星期六在朋友家开聚会。"
+    }
+  },
+  "l12-w630": {
+    "romaji": "(o)matsuri",
+    "attributes": [],
+    "explanation": "指传统节日或祭典活动，常与「行く」「参加する」搭配。带「お」时更礼貌、口语化。",
+    "example": {
+      "jp": "夏休みに神社のお祭りに行きました。",
+      "kana": "なつやすみにじんじゃのおまつりにいきました。",
+      "romaji": "natsuyasumi ni jinja no omatsuri ni ikimashita.",
+      "zh": "暑假去了神社的祭典。"
+    }
+  },
+  "l12-w632": {
+    "romaji": "sukiyaki",
+    "attributes": [],
+    "explanation": "指日式牛肉火锅，将薄切牛肉与蔬菜、豆腐等用甜咸酱汁炖煮。常作为聚餐或冬季料理提及，口语中直接说「すき焼き」即可。",
+    "example": {
+      "jp": "今夜は家族ですき焼きを食べます。",
+      "kana": "こんやはかぞくですきやきをたべます。",
+      "romaji": "kon ya wa kazoku de sukiyaki o tabemasu.",
+      "zh": "今晚和家人一起吃寿喜烧。"
+    }
+  },
+  "l12-w633": {
+    "romaji": "sashimi",
+    "attributes": [],
+    "explanation": "指生鱼片，将新鲜鱼贝类切成薄片直接食用。常与「刺身を食べる」搭配，注意与「寿司」区分，刺身通常不配醋饭。",
+    "example": {
+      "jp": "この店の刺身はとても新鮮です。",
+      "kana": "このみせのさしみはとてもしんせんです。",
+      "romaji": "kono mise no sashimi wa totemo shinsen desu.",
+      "zh": "这家店的生鱼片非常新鲜。"
+    }
+  },
+  "l12-w634": {
+    "romaji": "sushi",
+    "attributes": [],
+    "explanation": "指寿司，以醋饭搭配鱼贝类等食材的日本料理。常与「寿司を握る」「寿司を食べる」搭配，口语中可单独使用。",
+    "example": {
+      "jp": "駅の近くに新しい寿司屋ができました。",
+      "kana": "えきのちかくにあたらしいすしやができました。",
+      "romaji": "eki no chikaku ni atarashii sushiya ga dekimashita.",
+      "zh": "车站附近开了一家新的寿司店。"
+    }
+  },
+  "l12-w635": {
+    "romaji": "tenpura",
+    "attributes": [],
+    "explanation": "指天妇罗，将鱼虾蔬菜裹面糊油炸的料理。常与「天ぷらを揚げる」搭配，可作盖饭或单独菜品。",
+    "example": {
+      "jp": "母がえびの天ぷらを作ってくれました。",
+      "kana": "ははがえびのてんぷらをつくってくれました。",
+      "romaji": "haha ga ebi no tenpura o tsukutte kuremashita.",
+      "zh": "妈妈给我做了炸虾天妇罗。"
+    }
+  },
+  "l12-w636": {
+    "romaji": "ikebana",
+    "attributes": [],
+    "explanation": "指插花，日本传统花道艺术。常与「生け花を習う」搭配，注意汉字写作「生け花」，口语中直接使用。",
+    "example": {
+      "jp": "祖母は毎週生け花を習っています。",
+      "kana": "そぼはまいしゅういけばなをならっています。",
+      "romaji": "sobo wa maishuu ikebana o naratte imasu.",
+      "zh": "祖母每周都在学插花。"
+    }
+  },
+  "l12-v9": {
+    "romaji": "dochira",
+    "attributes": [],
+    "explanation": "用于在两者之间询问“哪一个”，礼貌程度高于「どっち」。可单独使用或接助词，如「どちらがいいですか」。",
+    "example": {
+      "jp": "コーヒーと紅茶と、どちらがいいですか。",
+      "kana": "こーひーとこうちゃと、どちらがいいですか。",
+      "romaji": "koohii to koucha to, dochira ga ii desu ka.",
+      "zh": "咖啡和红茶，你要哪一个？"
+    }
+  },
+  "l12-w639": {
+    "romaji": "dochira mo",
+    "attributes": [],
+    "explanation": "表示“两个都”，后接肯定表达。常与「どちらも好きです」等搭配，注意与否定「どちらも～ない」区分。",
+    "example": {
+      "jp": "この二つの料理はどちらもおいしいです。",
+      "kana": "このふたつのりょうりはどちらもおいしいです。",
+      "romaji": "kono futatsu no ryouri wa dochira mo oishii desu.",
+      "zh": "这两道菜都很好吃。"
+    }
+  },
+  "l12-w640": {
+    "romaji": "zutto",
+    "attributes": [],
+    "explanation": "表示比较时“……得多”，强调程度差距大。常与形容词或「好き」等搭配，如「ずっと安い」。也可表示“一直”，但本课侧重比较用法。",
+    "example": {
+      "jp": "この店のラーメンはあの店よりずっとおいしいです。",
+      "kana": "このみせのらーめんはあのみせよりずっとおいしいです。",
+      "romaji": "kono mise no raamen wa ano mise yori zutto oishii desu.",
+      "zh": "这家店的拉面比那家店好吃得多。"
+    }
+  },
+  "l12-w641": {
+    "romaji": "hajimete",
+    "attributes": [],
+    "explanation": "表示“第一次”，常与「初めて～する」搭配。注意与「始めて」（开始做）区分，本词强调首次经历。",
+    "example": {
+      "jp": "昨日初めてすき焼きを食べました。",
+      "kana": "きのうはじめてすきやきをたべました。",
+      "romaji": "kinou hajimete sukiyaki o tabemashita.",
+      "zh": "昨天第一次吃了寿喜烧。"
+    }
+  },
+  "l12-w642": {
+    "romaji": "tadaima",
+    "attributes": [],
+    "explanation": "回家进门时的固定寒暄，意为“我回来了”。家人通常回应「お帰りなさい」。也可表示“现在”，但本课为寒暄用法。",
+    "example": {
+      "jp": "「ただいま。」と家に入りました。",
+      "kana": "「ただいま。」といえにはいりました。",
+      "romaji": "tadaima to ie ni hairimashita.",
+      "zh": "说着“我回来了”进了家门。"
+    }
+  },
+  "l12-w643": {
+    "romaji": "okaerinasai",
+    "attributes": [],
+    "explanation": "对回家的人说的固定寒暄，意为“欢迎回来”。通常回应「ただいま」。注意礼貌程度，对家人或熟人使用。",
+    "example": {
+      "jp": "母が「お帰りなさい」と言いました。",
+      "kana": "ははが「おかえりなさい」といいました。",
+      "romaji": "haha ga okaerinasai to iimashita.",
+      "zh": "妈妈说“欢迎回来”。"
+    }
+  },
+  "l12-w645": {
+    "romaji": "demo",
+    "attributes": [],
+    "explanation": "表示转折的接续词，意为“但是”，用于句首引出相反或补充内容。口语常用，语气比「しかし」随意。",
+    "example": {
+      "jp": "この店は安いです。でも、おいしくないです。",
+      "kana": "このみせはやすいです。でも、おいしくないです。",
+      "romaji": "kono mise wa yasui desu. demo, oishikunai desu.",
+      "zh": "这家店便宜。但是，不好吃。"
+    }
+  },
+  "l12-w646": {
+    "romaji": "tsukaremashita",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「疲れました」是「疲れる」的礼貌过去式，用于表示自己或他人已经感到疲劳。常用于日常会话中表达“累了”，语气客气，也可用于回应关心。",
+    "example": {
+      "jp": "今日は仕事が多くて、本当に疲れました。",
+      "kana": "きょうはしごとがおおくて、ほんとうにつかれました。",
+      "romaji": "kyou wa shigoto ga ookute, hontou ni tsukaremashita.",
+      "zh": "今天工作很多，真的累了。"
+    }
+  },
+  "l12-tea": {
+    "romaji": "koucha",
+    "attributes": [],
+    "explanation": "「紅茶」指红茶，是名词。日语中“红茶”说「紅茶」，不叫「赤茶」。常与「飲む」「入れる」等动词搭配，也可说「紅茶を一杯」。",
+    "example": {
+      "jp": "朝はいつも紅茶を飲みます。",
+      "kana": "あさはいつもこうちゃをのみます。",
+      "romaji": "asa wa itsumo koucha o nomimasu.",
+      "zh": "早上总是喝红茶。"
+    }
+  },
+  "l12-crowded": {
+    "romaji": "waa, sugoi hito desu ne",
+    "attributes": [],
+    "explanation": "「わあ、すごい人ですね」是看到人多时发出的感叹，意为“哇，人真多啊”。「すごい」在这里表示数量惊人，常与「人」搭配；句末「ね」寻求共鸣。",
+    "example": {
+      "jp": "わあ、すごい人ですね。何かあるんですか。",
+      "kana": "わあ、すごいひとですね。なにかあるんですか。",
+      "romaji": "waa, sugoi hito desu ne. nanika aru n desu ka.",
+      "zh": "哇，人真多啊。是有什么活动吗？"
+    }
+  },
+  "l12-gion": {
+    "romaji": "Gion Matsuri",
+    "attributes": [],
+    "explanation": "「祇園祭」是京都八坂神社的祭典，日本三大祭之一，专有名词。读作「ぎおんまつり」，口语中常说「祇園さん」。",
+    "example": {
+      "jp": "七月に京都で祇園祭があります。",
+      "kana": "しちがつにきょうとでぎおんまつりがあります。",
+      "romaji": "shichigatsu ni Kyouto de Gion Matsuri ga arimasu.",
+      "zh": "七月在京都举行祇园祭。"
+    }
+  },
+  "l12-hongkong": {
+    "romaji": "Honkon",
+    "attributes": [],
+    "explanation": "「香港」是地名，日语读作「ほんこん」，不是汉语读音。可接「へ行く」「に住む」等，正式场合也写汉字「香港」。",
+    "example": {
+      "jp": "来月、香港へ旅行に行きます。",
+      "kana": "らいげつ、ほんこんへりょこうにいきます。",
+      "romaji": "raigetsu, Honkon e ryokou ni ikimasu.",
+      "zh": "下个月去香港旅行。"
+    }
+  },
+  "l12-singapore": {
+    "romaji": "Shingapooru",
+    "attributes": [],
+    "explanation": "「シンガポール」是新加坡的日语外来语名称，专有名词。注意长音写作「ポール」，发音时拉长。常与「へ行く」「から来る」等搭配。",
+    "example": {
+      "jp": "友だちがシンガポールから来ました。",
+      "kana": "ともだちがしんがぽーるからきました。",
+      "romaji": "tomodachi ga Shingapooru kara kimashita.",
+      "zh": "朋友从新加坡来了。"
+    }
+  },
+  "l12-abc-store": {
+    "romaji": "Ee Bii Shii SuToa",
+    "attributes": [],
+    "explanation": "「ABCストア」是教材中出现的商店名，专有名词。读作「えーびーしーすとあ」，其中「ABC」按字母名称读，「ストア」是“store”的外来语。",
+    "example": {
+      "jp": "ABCストアでお弁当を買いました。",
+      "kana": "えーびーしーすとあでおべんとうをかいました。",
+      "romaji": "Ee Bii Shii SuToa de obentou o kaimashita.",
+      "zh": "在ABC商店买了便当。"
+    }
+  },
+  "l12-japan-store": {
+    "romaji": "Japan",
+    "attributes": [],
+    "explanation": "「ジャパン」是教材中的商店名，来自英语“Japan”，专有名词。读作「じゃぱん」，注意不是国家名「日本（にほん）」的通常说法。",
+    "example": {
+      "jp": "ジャパンでお土産を買いました。",
+      "kana": "じゃぱんでおみやげをかいました。",
+      "romaji": "Japan de omiyage o kaimashita.",
+      "zh": "在Japan商店买了特产。"
+    }
+  }
+}

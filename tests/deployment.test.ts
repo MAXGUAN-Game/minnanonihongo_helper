@@ -1,3 +1,4 @@
+import { authEnvironment, authCookie, seedAuthSession } from './auth-fixture';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import fastifyStatic from '@fastify/static';
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
@@ -10,17 +11,17 @@ import { getLesson } from '../src/content';
 const publicOrigin = 'https://japanese.example.com';
 const publicHost = 'japanese.example.com';
 const proxyToken = 'deployment-test-proxy-token-1234567890';
-const environment = { DEPLOYMENT: 'web', APP_PUBLIC_ORIGIN: publicOrigin, APP_PROXY_TOKEN: proxyToken };
+const environment = { ...authEnvironment, DEPLOYMENT: 'web', APP_PUBLIC_ORIGIN: publicOrigin, APP_PROXY_TOKEN: proxyToken };
 const web = deploymentConfig(environment);
 const apps: ReturnType<typeof buildApp>[] = [];
 const directories: string[] = [];
 function headers(origin: string | undefined = undefined): Record<string, string> {
-  return { host: publicHost, 'x-nihongo-proxy': proxyToken, ...(origin !== undefined ? { origin } : {}) };
+  return { cookie: authCookie, host: publicHost, 'x-nihongo-proxy': proxyToken, ...(origin !== undefined ? { origin } : {}) };
 }
 function create(options: AppOptions = {}) {
   const dataDir = options.dataDir ?? mkdtempSync(join(tmpdir(), 'nihongo-deployment-test-'));
   if (!directories.includes(dataDir)) directories.push(dataDir);
-  const app = buildApp({ ...options, dataDir }); apps.push(app);
+  const app = buildApp({ ...options, dataDir }); apps.push(app); if (options.deployment?.mode === 'web') seedAuthSession(dataDir);
   return { app, dataDir };
 }
 async function addStaticFixture(app: ReturnType<typeof buildApp>, dataDir: string) {

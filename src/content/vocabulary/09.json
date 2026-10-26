@@ -1,0 +1,414 @@
+{
+  "lessonId": 9,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/9.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源55条，排除0条旧版或跨课条目，合并同形同义项并补入第二来源，最终57条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/09.json。"
+  ],
+  "words": [
+    {
+      "key": "w376",
+      "word": "旅行",
+      "reading": "りょこう",
+      "partOfSpeech": "名词",
+      "meaning": "旅行"
+    },
+    {
+      "key": "w438",
+      "word": "分かります",
+      "reading": "わかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "明白；懂"
+    },
+    {
+      "key": "w439",
+      "word": "あります",
+      "reading": "あります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "有（拥有）"
+    },
+    {
+      "key": "w440",
+      "word": "好きな",
+      "reading": "すきな",
+      "partOfSpeech": "な形容词",
+      "meaning": "喜欢的"
+    },
+    {
+      "key": "w441",
+      "word": "嫌いな",
+      "reading": "きらいな",
+      "partOfSpeech": "な形容词",
+      "meaning": "讨厌的"
+    },
+    {
+      "key": "w442",
+      "word": "上手な",
+      "reading": "じょうずな",
+      "partOfSpeech": "な形容词",
+      "meaning": "擅长的"
+    },
+    {
+      "key": "w443",
+      "word": "下手な",
+      "reading": "へたな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不擅长的"
+    },
+    {
+      "key": "w444",
+      "word": "料理",
+      "reading": "りょうり",
+      "partOfSpeech": "名词",
+      "meaning": "菜肴；烹饪"
+    },
+    {
+      "key": "w445",
+      "word": "飲み物",
+      "reading": "のみもの",
+      "partOfSpeech": "名词",
+      "meaning": "饮料"
+    },
+    {
+      "key": "w446",
+      "word": "スポーツ",
+      "reading": "すぽーつ",
+      "partOfSpeech": "名词",
+      "meaning": "运动"
+    },
+    {
+      "key": "w447",
+      "word": "野球",
+      "reading": "やきゅう",
+      "partOfSpeech": "名词",
+      "meaning": "棒球"
+    },
+    {
+      "key": "w448",
+      "word": "ダンス",
+      "reading": "だんす",
+      "partOfSpeech": "名词",
+      "meaning": "舞蹈"
+    },
+    {
+      "key": "w449",
+      "word": "音楽",
+      "reading": "おんがく",
+      "partOfSpeech": "名词",
+      "meaning": "音乐"
+    },
+    {
+      "key": "w450",
+      "word": "歌",
+      "reading": "うた",
+      "partOfSpeech": "名词",
+      "meaning": "歌曲"
+    },
+    {
+      "key": "w451",
+      "word": "クラシック",
+      "reading": "くらしっく",
+      "partOfSpeech": "名词",
+      "meaning": "古典音乐"
+    },
+    {
+      "key": "w452",
+      "word": "ジャズ",
+      "reading": "じゃず",
+      "partOfSpeech": "名词",
+      "meaning": "爵士乐"
+    },
+    {
+      "key": "w453",
+      "word": "コンサート",
+      "reading": "こんさーと",
+      "partOfSpeech": "名词",
+      "meaning": "音乐会"
+    },
+    {
+      "key": "w454",
+      "word": "カラオケ",
+      "reading": "からおけ",
+      "partOfSpeech": "名词",
+      "meaning": "卡拉OK"
+    },
+    {
+      "key": "w455",
+      "word": "歌舞伎",
+      "reading": "かぶき",
+      "partOfSpeech": "名词",
+      "meaning": "歌舞伎"
+    },
+    {
+      "key": "w456",
+      "word": "絵",
+      "reading": "え",
+      "partOfSpeech": "名词",
+      "meaning": "画"
+    },
+    {
+      "key": "w457",
+      "word": "字",
+      "reading": "じ",
+      "partOfSpeech": "名词",
+      "meaning": "字"
+    },
+    {
+      "key": "w458",
+      "word": "漢字",
+      "reading": "かんじ",
+      "partOfSpeech": "名词",
+      "meaning": "汉字"
+    },
+    {
+      "key": "w459",
+      "word": "ひらがな",
+      "reading": "ひらがな",
+      "partOfSpeech": "名词",
+      "meaning": "平假名"
+    },
+    {
+      "key": "w460",
+      "word": "かたかな",
+      "reading": "かたかな",
+      "partOfSpeech": "名词",
+      "meaning": "片假名"
+    },
+    {
+      "key": "w461",
+      "word": "ローマ字",
+      "reading": "ろーまじ",
+      "partOfSpeech": "名词",
+      "meaning": "罗马字"
+    },
+    {
+      "key": "w462",
+      "word": "細かいお金",
+      "reading": "こまかいおかね",
+      "partOfSpeech": "名词",
+      "meaning": "零钱"
+    },
+    {
+      "key": "w463",
+      "word": "チケット",
+      "reading": "ちけっと",
+      "partOfSpeech": "名词",
+      "meaning": "票"
+    },
+    {
+      "key": "w464",
+      "word": "時間",
+      "reading": "じかん",
+      "partOfSpeech": "名词",
+      "meaning": "时间"
+    },
+    {
+      "key": "w465",
+      "word": "用事",
+      "reading": "ようじ",
+      "partOfSpeech": "名词",
+      "meaning": "事情；要办的事"
+    },
+    {
+      "key": "w466",
+      "word": "約束",
+      "reading": "やくそく",
+      "partOfSpeech": "名词",
+      "meaning": "约定"
+    },
+    {
+      "key": "w467",
+      "word": "ご主人",
+      "reading": "ごしゅじん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的丈夫"
+    },
+    {
+      "key": "w468",
+      "word": "主人",
+      "reading": "しゅじん",
+      "partOfSpeech": "名词",
+      "meaning": "自己的丈夫"
+    },
+    {
+      "key": "w469",
+      "word": "夫",
+      "reading": "おっと",
+      "partOfSpeech": "名词",
+      "meaning": "自己的丈夫"
+    },
+    {
+      "key": "w470",
+      "word": "奥さん",
+      "reading": "おくさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的妻子"
+    },
+    {
+      "key": "w471",
+      "word": "妻",
+      "reading": "つま",
+      "partOfSpeech": "名词",
+      "meaning": "自己的妻子"
+    },
+    {
+      "key": "w472",
+      "word": "家内",
+      "reading": "かない",
+      "partOfSpeech": "名词",
+      "meaning": "自己的妻子（谦称）"
+    },
+    {
+      "key": "w473",
+      "word": "子ども",
+      "reading": "こども",
+      "partOfSpeech": "名词",
+      "meaning": "孩子"
+    },
+    {
+      "key": "w474",
+      "word": "よく",
+      "reading": "よく",
+      "partOfSpeech": "表达",
+      "meaning": "很；充分地"
+    },
+    {
+      "key": "w475",
+      "word": "だいたい",
+      "reading": "だいたい",
+      "partOfSpeech": "副词",
+      "meaning": "大致"
+    },
+    {
+      "key": "w476",
+      "word": "たくさん",
+      "reading": "たくさん",
+      "partOfSpeech": "表达",
+      "meaning": "很多"
+    },
+    {
+      "key": "w477",
+      "word": "少し",
+      "reading": "すこし",
+      "partOfSpeech": "副词",
+      "meaning": "一点；少量"
+    },
+    {
+      "key": "w478",
+      "word": "全然",
+      "reading": "ぜんぜん",
+      "partOfSpeech": "副词",
+      "meaning": "完全不（后接否定）"
+    },
+    {
+      "key": "w479",
+      "word": "早く",
+      "reading": "はやく",
+      "partOfSpeech": "副词",
+      "meaning": "早些"
+    },
+    {
+      "key": "w480",
+      "word": "速く",
+      "reading": "はやく",
+      "partOfSpeech": "副词",
+      "meaning": "快速地"
+    },
+    {
+      "key": "w481",
+      "word": "～から",
+      "reading": "～から",
+      "partOfSpeech": "表达",
+      "meaning": "因为……"
+    },
+    {
+      "key": "w482",
+      "word": "どうして",
+      "reading": "どうして",
+      "partOfSpeech": "表达",
+      "meaning": "为什么"
+    },
+    {
+      "key": "w483",
+      "word": "残念ですね",
+      "reading": "ざんねんですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "真遗憾"
+    },
+    {
+      "key": "w484",
+      "word": "すみません",
+      "reading": "すみません",
+      "partOfSpeech": "固定表达",
+      "meaning": "对不起；劳驾"
+    },
+    {
+      "key": "w486",
+      "word": "ああ",
+      "reading": "ああ",
+      "partOfSpeech": "表达",
+      "meaning": "啊"
+    },
+    {
+      "key": "w487",
+      "word": "一緒にいかがですか",
+      "reading": "いっしょにいかがですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "一起参加怎么样"
+    },
+    {
+      "key": "w488",
+      "word": "～はちょっと……",
+      "reading": "～はちょっと……",
+      "partOfSpeech": "固定表达",
+      "meaning": "……有点不方便（委婉拒绝）"
+    },
+    {
+      "key": "w489",
+      "word": "だめですか",
+      "reading": "だめですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "不行吗"
+    },
+    {
+      "key": "w490",
+      "word": "また今度お願いします",
+      "reading": "またこんどおねがいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "下次请再邀请我"
+    },
+    {
+      "key": "w720",
+      "word": "いいですよ",
+      "reading": "いいですよ",
+      "partOfSpeech": "固定表达",
+      "meaning": "可以啊"
+    },
+    {
+      "key": "w943",
+      "word": "アルバイト",
+      "reading": "あるばいと",
+      "partOfSpeech": "名词",
+      "meaning": "兼职"
+    },
+    {
+      "key": "lend-please",
+      "word": "貸してください",
+      "reading": "かしてください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请借给我"
+    },
+    {
+      "key": "unfortunately",
+      "word": "残念ですが",
+      "reading": "ざんねんですが",
+      "partOfSpeech": "固定表达",
+      "meaning": "很遗憾，不过……"
+    }
+  ]
+}

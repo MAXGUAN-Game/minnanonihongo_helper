@@ -1,0 +1,254 @@
+{
+  "l20-w44": {
+    "romaji": "~kun",
+    "attributes": [],
+    "explanation": "接在男性名字或姓氏后，表示亲昵或上对下的称呼，多用于男孩、晚辈或同辈男性之间；不能用于长辈或上级。",
+    "example": {
+      "jp": "田中君、元気？",
+      "kana": "たなかくん、げんき？",
+      "romaji": "tanaka kun, genki?",
+      "zh": "田中君，你好吗？"
+    }
+  },
+  "l20-w677": {
+    "romaji": "onaka ga ippai desu",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "固定说法，表示“吃饱了”。口语中可省略“です”说“お腹いっぱい”。注意不是“肚子满了”的字面意思。",
+    "example": {
+      "jp": "ごちそうさまでした。お腹がいっぱいです。",
+      "kana": "ごちそうさまでした。おなかがいっぱいです。",
+      "romaji": "gochisousama deshita. onaka ga ippai desu.",
+      "zh": "多谢款待。我吃饱了。"
+    }
+  },
+  "l20-w896": {
+    "romaji": "[biza ga] irimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示“需要……”时用“～が要ります”，主语是需要的东西。否定形为“要りません”。注意与“必要です”语体不同，前者更口语。",
+    "example": {
+      "jp": "この国へ行くにはビザが要りますか。",
+      "kana": "このくにへいくにはびざがいりますか。",
+      "romaji": "kono kuni e iku ni wa biza ga irimasu ka.",
+      "zh": "去这个国家需要签证吗？"
+    }
+  },
+  "l20-w897": {
+    "romaji": "shirabemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示调查、查阅信息或原因，宾语用“を”。常用于查词典、查资料、调查事实等。",
+    "example": {
+      "jp": "分からない言葉を辞書で調べます。",
+      "kana": "わからないことばをじしょでしらべます。",
+      "romaji": "wakaranai kotoba o jisho de shirabemasu.",
+      "zh": "用词典查不懂的词。"
+    }
+  },
+  "l20-w900": {
+    "romaji": "shuuri shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示修理物品，宾语用“を”。可用于修理机器、家具、建筑等，比“直します”更正式具体。",
+    "example": {
+      "jp": "壊れた自転車を修理します。",
+      "kana": "こわれたじてんしゃをしゅうりします。",
+      "romaji": "kowareta jitensha o shuuri shimasu.",
+      "zh": "修理坏了的自行车。"
+    }
+  },
+  "l20-v1": {
+    "romaji": "boku",
+    "attributes": [],
+    "explanation": "男性自称，语气较随意、亲切，多用于同辈或晚辈之间；正式场合或对上级一般用“私”。",
+    "example": {
+      "jp": "僕は学生です。",
+      "kana": "ぼくはがくせいです。",
+      "romaji": "boku wa gakusei desu.",
+      "zh": "我是学生。"
+    }
+  },
+  "l20-v2": {
+    "romaji": "kimi",
+    "attributes": [],
+    "explanation": "称呼对方“你”，多用于平辈或晚辈，带有亲近或上对下的语气；对上级或不熟悉的人不宜使用。",
+    "example": {
+      "jp": "君の名前は何ですか。",
+      "kana": "きみのなまえはなんですか。",
+      "romaji": "kimi no namae wa nan desu ka.",
+      "zh": "你叫什么名字？"
+    }
+  },
+  "l20-v3": {
+    "romaji": "un",
+    "attributes": [],
+    "explanation": "随意的肯定应答，相当于“嗯、对”，用于朋友或熟人之间；正式场合应说“はい”。",
+    "example": {
+      "jp": "明日来る？うん、行くよ。",
+      "kana": "あしたくる？うん、いくよ。",
+      "romaji": "ashita kuru? un, iku yo.",
+      "zh": "明天来吗？嗯，去哦。"
+    }
+  },
+  "l20-v4": {
+    "romaji": "uun",
+    "attributes": [],
+    "explanation": "随意的否定应答，相当于“不、不是”，用于朋友或熟人之间；正式场合应说“いいえ”。",
+    "example": {
+      "jp": "これでいい？ううん、だめだよ。",
+      "kana": "これでいい？ううん、だめだよ。",
+      "romaji": "kore de ii? uun, dame da yo.",
+      "zh": "这样行吗？不，不行哦。"
+    }
+  },
+  "l20-v8": {
+    "romaji": "kotoba",
+    "attributes": [],
+    "explanation": "指语言或词语，可表示某种语言、说法、措辞。常用搭配如“言葉を覚える”“言葉の意味”。",
+    "example": {
+      "jp": "この言葉の意味が分かりません。",
+      "kana": "このことばのいみがわかりません。",
+      "romaji": "kono kotoba no imi ga wakarimasen.",
+      "zh": "我不懂这个词的意思。"
+    }
+  },
+  "l20-w910": {
+    "romaji": "kimono",
+    "attributes": [],
+    "explanation": "指日本传统服装“和服”，也可泛指衣服，但现代多特指和服。常说“着物を着る”。",
+    "example": {
+      "jp": "お祭りで着物を着ました。",
+      "kana": "おまつりできものをきました。",
+      "romaji": "omatsuri de kimono o kimashita.",
+      "zh": "在庙会上穿了和服。"
+    }
+  },
+  "l20-w911": {
+    "romaji": "biza",
+    "attributes": [],
+    "explanation": "指护照上的入境许可“签证”。常用搭配“ビザを取る”“ビザが要ります”。",
+    "example": {
+      "jp": "アメリカへ行くためにビザを取りました。",
+      "kana": "あめりかへいくためにびざをとりました。",
+      "romaji": "amerika e iku tame ni biza o torimashita.",
+      "zh": "为了去美国办了签证。"
+    }
+  },
+  "l20-w912": {
+    "romaji": "hajime",
+    "attributes": [],
+    "explanation": "表示事物的开始、起初阶段，常与「～に」「～から」搭配。注意与动词「始める」区分，此为名词。",
+    "example": {
+      "jp": "初めは難しいと思った。",
+      "kana": "はじめはむずかしいとおもった。",
+      "romaji": "hajime wa muzukashii to omotta.",
+      "zh": "一开始觉得很难。"
+    }
+  },
+  "l20-w913": {
+    "romaji": "owari",
+    "attributes": [],
+    "explanation": "表示事物的结束、末尾，常与「～に」「～から」搭配。与动词「終わる」相关，但为名词用法。",
+    "example": {
+      "jp": "映画の終わりは悲しかった。",
+      "kana": "えいがのおわりはかなしかった。",
+      "romaji": "eiga no owari wa kanashikatta.",
+      "zh": "电影的结局很悲伤。"
+    }
+  },
+  "l20-w914": {
+    "romaji": "kocchi",
+    "attributes": [],
+    "explanation": "口语中指示离说话人较近的方向或事物，也可指代自己这一方。比「こちら」更随意。",
+    "example": {
+      "jp": "こっちの道が近いよ。",
+      "kana": "こっちのみちがちかいよ。",
+      "romaji": "kocchi no michi ga chikai yo.",
+      "zh": "这边的路更近哦。"
+    }
+  },
+  "l20-w915": {
+    "romaji": "socchi",
+    "attributes": [],
+    "explanation": "口语中指示离听话人较近的方向或事物，也可指代对方那一方。比「そちら」更随意。",
+    "example": {
+      "jp": "そっちの天気はどう？",
+      "kana": "そっちのてんきはどう？",
+      "romaji": "socchi no tenki wa dou?",
+      "zh": "你那边的天气怎么样？"
+    }
+  },
+  "l20-w916": {
+    "romaji": "acchi",
+    "attributes": [],
+    "explanation": "口语中指示离说话人和听话人都较远的方向或事物。比「あちら」更随意。",
+    "example": {
+      "jp": "あっちに公園がある。",
+      "kana": "あっちにこうえんがある。",
+      "romaji": "acchi ni kouen ga aru.",
+      "zh": "那边有个公园。"
+    }
+  },
+  "l20-w917": {
+    "romaji": "docchi",
+    "attributes": [],
+    "explanation": "口语中用于询问两个事物或方向中的哪一个，相当于「どちら」。",
+    "example": {
+      "jp": "どっちの色が好き？",
+      "kana": "どっちのいろがすき？",
+      "romaji": "docchi no iro ga suki?",
+      "zh": "你喜欢哪个颜色？"
+    }
+  },
+  "l20-w919": {
+    "romaji": "minna de",
+    "attributes": [],
+    "explanation": "由「みんな」（大家）加助词「で」构成，表示大家一起做某事，强调共同参与。",
+    "example": {
+      "jp": "みんなで写真を撮ろう。",
+      "kana": "みんなでしゃしんをとろう。",
+      "romaji": "minna de shashin o torou.",
+      "zh": "大家一起拍照吧。"
+    }
+  },
+  "l20-w920": {
+    "romaji": "~kedo",
+    "attributes": [],
+    "explanation": "接续助词，用于连接两个分句，表示转折或铺垫，口语中常用「けど」，比「が」更随意。",
+    "example": {
+      "jp": "安いけど、あまり美味しくない。",
+      "kana": "やすいけど、あまりおいしくない。",
+      "romaji": "yasui kedo, amari oishikunai.",
+      "zh": "虽然便宜，但不太好吃。"
+    }
+  },
+  "l20-w924": {
+    "romaji": "yokattara",
+    "attributes": [],
+    "explanation": "「よければ」的口语形式，用于委婉地提出建议或邀请，意为“如果方便的话”。",
+    "example": {
+      "jp": "よかったら、一緒に行きませんか。",
+      "kana": "よかったら、いっしょにいきませんか。",
+      "romaji": "yokattara, issho ni ikimasen ka.",
+      "zh": "如果方便的话，一起去吗？"
+    }
+  },
+  "l20-w925": {
+    "romaji": "iroiro",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示种类繁多、各种各样，可作名词或副词使用，常修饰动词或名词。",
+    "example": {
+      "jp": "色々な国を旅行したい。",
+      "kana": "いろいろなくにをりょこうしたい。",
+      "romaji": "iroiro na kuni o ryokou shitai.",
+      "zh": "我想去各种国家旅行。"
+    }
+  }
+}

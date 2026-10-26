@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { chmodSync, mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import Fastify from 'fastify';
@@ -64,10 +64,54 @@ describe('speech deployment configuration', () => {
   it('reports ready only when both configured speech files exist', () => {
     const dataDir = temporary();
     const environment = { WHISPER_BINARY: path.join(dataDir, 'whisper-cli'), WHISPER_MODEL: path.join(dataDir, 'small.bin') };
-    writeFileSync(environment.WHISPER_BINARY, 'binary fixture');
+    writeFileSync(environment.WHISPER_BINARY, 'binary fixture', { mode: 0o700 });
     expect(getSpeechStatus(dataDir, environment, 'linux')).toMatchObject({ ready: false, binaryReady: true, modelReady: false });
+    expect(getSpeechStatus(dataDir, environment, 'linux').message).toContain('模型缺失');
     writeFileSync(environment.WHISPER_MODEL, 'model fixture');
     expect(getSpeechStatus(dataDir, environment, 'linux')).toMatchObject({ ready: true, message: '日语语音识别服务已就绪' });
+  });
+  it('identifies a missing program separately from a missing model', () => {
+    const dataDir = temporary();
+    const environment = { WHISPER_BINARY: path.join(dataDir, 'whisper-cli'), WHISPER_MODEL: path.join(dataDir, 'small.bin') };
+    writeFileSync(environment.WHISPER_MODEL, 'model fixture');
+    expect(getSpeechStatus(dataDir, environment, 'linux')).toMatchObject({ ready: false, binaryReady: false, modelReady: true });
+    expect(getSpeechStatus(dataDir, environment, 'linux').message).toContain('程序缺失');
+  });
+  it('rejects directories and empty files instead of reporting the installation ready', () => {
+    const dataDir = temporary();
+    const environment = { WHISPER_BINARY: path.join(dataDir, 'whisper-cli'), WHISPER_MODEL: path.join(dataDir, 'small.bin') };
+    mkdirSync(environment.WHISPER_BINARY); mkdirSync(environment.WHISPER_MODEL);
+    expect(getSpeechStatus(dataDir, environment, 'linux')).toMatchObject({ ready: false, binaryReady: false, modelReady: false });
+    const empty = { WHISPER_BINARY: path.join(dataDir, 'empty-cli'), WHISPER_MODEL: path.join(dataDir, 'empty.bin') };
+    writeFileSync(empty.WHISPER_BINARY, '', { mode: 0o700 }); writeFileSync(empty.WHISPER_MODEL, '');
+    expect(getSpeechStatus(dataDir, empty, 'linux')).toMatchObject({ ready: false, binaryReady: false, modelReady: false });
+  });
+  it.skipIf(process.platform === 'win32')('rejects a Linux program without execute permission', () => {
+    const dataDir = temporary();
+    const environment = { WHISPER_BINARY: path.join(dataDir, 'whisper-cli'), WHISPER_MODEL: path.join(dataDir, 'small.bin') };
+    writeFileSync(environment.WHISPER_BINARY, 'binary fixture', { mode: 0o600 });
+    chmodSync(environment.WHISPER_BINARY, 0o600);
+    writeFileSync(environment.WHISPER_MODEL, 'model fixture');
+    expect(getSpeechStatus(dataDir, environment, 'linux')).toMatchObject({ ready: false, binaryReady: false, modelReady: true });
+  });
+  it('rechecks installed files without restarting and reports the same diagnosis on status and transcription', async () => {
+    const dataDir = temporary();
+    const binary = path.join(dataDir, 'whisper-cli'), model = path.join(dataDir, 'small.bin');
+    vi.stubEnv('DEPLOYMENT', 'web'); vi.stubEnv('WHISPER_BINARY', binary); vi.stubEnv('WHISPER_MODEL', model); vi.stubEnv('WHISPER_THREADS', '2');
+    writeFileSync(binary, 'binary fixture', { mode: 0o700 });
+    const app = Fastify(); registerSpeechRoutes(app, dataDir);
+    try {
+      const before = (await app.inject('/api/speech/status')).json();
+      expect(before).toMatchObject({ ready: false, binaryReady: true, modelReady: false });
+      const rejected = await app.inject({ method: 'POST', url: '/api/speech/transcribe', headers: { 'Content-Type': 'audio/wav' }, payload: Buffer.from('recording fixture') });
+      expect(rejected.statusCode).toBe(503);
+      expect(rejected.json()).toEqual({ code: 'SPEECH_NOT_INSTALLED', error: before.message });
+      writeFileSync(model, 'model fixture');
+      expect((await app.inject('/api/speech/status')).json()).toMatchObject({ ready: true, binaryReady: true, modelReady: true });
+      // Once installed, the request reaches audio validation rather than the missing-model branch.
+      const invalid = await app.inject({ method: 'POST', url: '/api/speech/transcribe', headers: { 'Content-Type': 'audio/wav' }, payload: Buffer.from('recording fixture') });
+      expect(invalid.statusCode).toBe(400); expect(invalid.json().code).toBe('INVALID_AUDIO');
+    } finally { await app.close(); }
   });
   it('returns an actionable cloud error when recording reaches an unconfigured server', async () => {
     vi.stubEnv('DEPLOYMENT', 'web');

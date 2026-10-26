@@ -1,0 +1,211 @@
+{
+  "lessonId": 45,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/45.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源25条，排除6条旧版或跨课条目，合并同形同义项并补入第二来源，最终28条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/45.json。"
+  ],
+  "words": [
+    {
+      "key": "w1217",
+      "word": "知らせます",
+      "reading": "しらせます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "通知"
+    },
+    {
+      "key": "w1775",
+      "word": "信じます",
+      "reading": "しんじます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "相信"
+    },
+    {
+      "key": "w1777",
+      "word": "キャンセルします",
+      "reading": "きゃんせるします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "取消"
+    },
+    {
+      "key": "w1779",
+      "word": "保証書",
+      "reading": "ほしょうしょ",
+      "partOfSpeech": "名词",
+      "meaning": "保修单"
+    },
+    {
+      "key": "w1780",
+      "word": "領収書",
+      "reading": "りょうしゅうしょ",
+      "partOfSpeech": "名词",
+      "meaning": "收据"
+    },
+    {
+      "key": "w1783",
+      "word": "キャンプ",
+      "reading": "きゃんぷ",
+      "partOfSpeech": "名词",
+      "meaning": "露营"
+    },
+    {
+      "key": "w1785",
+      "word": "中止",
+      "reading": "ちゅうし",
+      "partOfSpeech": "名词",
+      "meaning": "中止"
+    },
+    {
+      "key": "w1786",
+      "word": "点",
+      "reading": "てん",
+      "partOfSpeech": "名词",
+      "meaning": "分数；点"
+    },
+    {
+      "key": "w1790",
+      "word": "急に",
+      "reading": "きゅうに",
+      "partOfSpeech": "副词",
+      "meaning": "突然"
+    },
+    {
+      "key": "w1791",
+      "word": "楽しみにしています",
+      "reading": "たのしみにしています",
+      "partOfSpeech": "固定表达",
+      "meaning": "很期待"
+    },
+    {
+      "key": "w1792",
+      "word": "以上です",
+      "reading": "いじょうです",
+      "partOfSpeech": "固定表达",
+      "meaning": "以上就是全部"
+    },
+    {
+      "key": "w1793",
+      "word": "係員",
+      "reading": "かかりいん",
+      "partOfSpeech": "名词",
+      "meaning": "工作人员"
+    },
+    {
+      "key": "w1794",
+      "word": "コース",
+      "reading": "こーす",
+      "partOfSpeech": "名词",
+      "meaning": "路线；赛道"
+    },
+    {
+      "key": "w1795",
+      "word": "スタート",
+      "reading": "すたーと",
+      "partOfSpeech": "名词",
+      "meaning": "开始；起点"
+    },
+    {
+      "key": "w1796",
+      "word": "～位",
+      "reading": "～い",
+      "partOfSpeech": "表达",
+      "meaning": "第……名"
+    },
+    {
+      "key": "w1797",
+      "word": "優勝します",
+      "reading": "ゆうしょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "夺冠"
+    },
+    {
+      "key": "w3201",
+      "word": "梅",
+      "reading": "うめ",
+      "partOfSpeech": "名词",
+      "meaning": "梅花；梅树"
+    },
+    {
+      "key": "w3449",
+      "word": "１１９番",
+      "reading": "ひゃくじゅうきゅうばん",
+      "partOfSpeech": "名词",
+      "meaning": "119号（日本急救、火警电话）"
+    },
+    {
+      "key": "w3450",
+      "word": "１１０番",
+      "reading": "ひゃくとおばん",
+      "partOfSpeech": "名词",
+      "meaning": "110号（日本报警电话）"
+    },
+    {
+      "key": "force",
+      "word": "無理に",
+      "reading": "むりに",
+      "partOfSpeech": "副词",
+      "meaning": "勉强地；强行"
+    },
+    {
+      "key": "worry",
+      "word": "悩み",
+      "reading": "なやみ",
+      "partOfSpeech": "名词",
+      "meaning": "烦恼"
+    },
+    {
+      "key": "alarm",
+      "word": "目覚まし時計",
+      "reading": "めざましどけい",
+      "partOfSpeech": "名词",
+      "meaning": "闹钟"
+    },
+    {
+      "key": "wake",
+      "word": "目が覚めます",
+      "reading": "めがさめます",
+      "partOfSpeech": "动词表达",
+      "meaning": "醒来"
+    },
+    {
+      "key": "student",
+      "word": "大学生",
+      "reading": "だいがくせい",
+      "partOfSpeech": "名词",
+      "meaning": "大学生"
+    },
+    {
+      "key": "answer",
+      "word": "回答",
+      "reading": "かいとう",
+      "partOfSpeech": "名词",
+      "meaning": "回答"
+    },
+    {
+      "key": "ring",
+      "word": "鳴ります",
+      "reading": "なります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "响起"
+    },
+    {
+      "key": "set",
+      "word": "セットします",
+      "reading": "せっとします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "设置"
+    },
+    {
+      "key": "still",
+      "word": "それでも",
+      "reading": "それでも",
+      "partOfSpeech": "接续词",
+      "meaning": "即便如此"
+    }
+  ]
+}

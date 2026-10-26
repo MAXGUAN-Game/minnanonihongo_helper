@@ -1,0 +1,198 @@
+{
+  "lessonId": 13,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/13.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 36,
+  "entries": [
+    {
+      "sourceId": "1007",
+      "sourceWord": "お正月",
+      "key": "w1007"
+    },
+    {
+      "sourceId": "160",
+      "sourceWord": "～でございます。",
+      "key": "w160"
+    },
+    {
+      "sourceId": "2558",
+      "sourceWord": "おなかがすきます",
+      "key": "w2558"
+    },
+    {
+      "sourceId": "2944",
+      "sourceWord": "のどが渇きます",
+      "key": "w2944"
+    },
+    {
+      "sourceId": "647",
+      "sourceWord": "遊びます",
+      "key": "w647"
+    },
+    {
+      "sourceId": "648",
+      "sourceWord": "泳ぎます",
+      "key": "w648"
+    },
+    {
+      "sourceId": "649",
+      "sourceWord": "迎えます",
+      "key": "w649"
+    },
+    {
+      "sourceId": "650",
+      "sourceWord": "疲れます",
+      "key": "w650"
+    },
+    {
+      "sourceId": "654",
+      "sourceWord": "結婚します",
+      "key": "w654"
+    },
+    {
+      "sourceId": "655",
+      "sourceWord": "買い物します",
+      "key": "w655"
+    },
+    {
+      "sourceId": "656",
+      "sourceWord": "食事します",
+      "key": "w656"
+    },
+    {
+      "sourceId": "657",
+      "sourceWord": "散歩します",
+      "key": "w657"
+    },
+    {
+      "sourceId": "658",
+      "sourceWord": "大変な",
+      "key": "w658"
+    },
+    {
+      "sourceId": "659",
+      "sourceWord": "欲しい",
+      "key": "w659"
+    },
+    {
+      "sourceId": "661",
+      "sourceWord": "広い",
+      "key": "w661"
+    },
+    {
+      "sourceId": "662",
+      "sourceWord": "狭い",
+      "key": "w662"
+    },
+    {
+      "sourceId": "664",
+      "sourceWord": "プール",
+      "key": "w664"
+    },
+    {
+      "sourceId": "665",
+      "sourceWord": "川",
+      "key": "w665"
+    },
+    {
+      "sourceId": "667",
+      "sourceWord": "美術",
+      "key": "w667"
+    },
+    {
+      "sourceId": "668",
+      "sourceWord": "釣り",
+      "key": "w668"
+    },
+    {
+      "sourceId": "669",
+      "sourceWord": "スキー",
+      "key": "w669"
+    },
+    {
+      "sourceId": "672",
+      "sourceWord": "週末",
+      "key": "w672"
+    },
+    {
+      "sourceId": "673",
+      "sourceWord": "～ごろ",
+      "key": "w673"
+    },
+    {
+      "sourceId": "674",
+      "sourceWord": "何か",
+      "key": "w674"
+    },
+    {
+      "sourceId": "675",
+      "sourceWord": "どこか",
+      "key": "w675"
+    },
+    {
+      "sourceId": "676",
+      "sourceWord": "お腹がすきました。",
+      "key": "w676"
+    },
+    {
+      "sourceId": "678",
+      "sourceWord": "喉が渇きました。",
+      "key": "w678"
+    },
+    {
+      "sourceId": "679",
+      "sourceWord": "そうですね。",
+      "key": "w679"
+    },
+    {
+      "sourceId": "680",
+      "sourceWord": "そうしましょう。",
+      "key": "w680"
+    },
+    {
+      "sourceId": "681",
+      "sourceWord": "ご注文は？",
+      "key": "w681"
+    },
+    {
+      "sourceId": "682",
+      "sourceWord": "定食",
+      "key": "w682"
+    },
+    {
+      "sourceId": "683",
+      "sourceWord": "牛どん",
+      "key": "w683"
+    },
+    {
+      "sourceId": "684",
+      "sourceWord": "少々お待ちください。",
+      "key": "w684"
+    },
+    {
+      "sourceId": "685",
+      "sourceWord": "別々に",
+      "key": "w685"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "651",
+      "sourceWord": "［手紙を］出します",
+      "reason": "旧版本课词项，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "671",
+      "sourceWord": "登録",
+      "reason": "旧版登记场景词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "akikkusu",
+    "ohayo-tv"
+  ],
+  "finalCount": 36
+}

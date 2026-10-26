@@ -1,0 +1,35 @@
+{
+  "lessonId": 13,
+  "model": "deepseek-flash",
+  "reviewedCount": 36,
+  "corrections": [
+    {
+      "id": "l13-w655",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「買い物します」是自动词，表示购物行为，不直接带宾语。"
+    },
+    {
+      "id": "l13-w656",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「食事します」是自动词，表示吃饭行为，不直接带宾语。"
+    },
+    {
+      "id": "l13-w657",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「散歩します」是自动词，表示散步行为，不直接带宾语。"
+    },
+    {
+      "id": "l13-w654",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「結婚します」是自动词，表示结婚行为，不直接带宾语。"
+    }
+  ]
+}

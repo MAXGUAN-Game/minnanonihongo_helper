@@ -1,0 +1,225 @@
+{
+  "lessonId": 38,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/38.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 38,
+  "entries": [
+    {
+      "sourceId": "1053",
+      "sourceWord": "［に］参加します",
+      "key": "w1053"
+    },
+    {
+      "sourceId": "1137",
+      "sourceWord": "習慣",
+      "key": "w1137"
+    },
+    {
+      "sourceId": "1416",
+      "sourceWord": "村",
+      "key": "w1416"
+    },
+    {
+      "sourceId": "1427",
+      "sourceWord": "方法",
+      "key": "w1427"
+    },
+    {
+      "sourceId": "1455",
+      "sourceWord": "工場",
+      "key": "w1455"
+    },
+    {
+      "sourceId": "1456",
+      "sourceWord": "健康",
+      "key": "w1456"
+    },
+    {
+      "sourceId": "1516",
+      "sourceWord": "育てます",
+      "key": "w1516"
+    },
+    {
+      "sourceId": "1517",
+      "sourceWord": "運びます",
+      "key": "w1517"
+    },
+    {
+      "sourceId": "1519",
+      "sourceWord": "入院します",
+      "key": "w1519"
+    },
+    {
+      "sourceId": "1520",
+      "sourceWord": "退院します",
+      "key": "w1520"
+    },
+    {
+      "sourceId": "1521",
+      "sourceWord": "［電源を］入れます",
+      "key": "w1521"
+    },
+    {
+      "sourceId": "1522",
+      "sourceWord": "［電源を］切ります",
+      "key": "w1522"
+    },
+    {
+      "sourceId": "1523",
+      "sourceWord": "［鍵を］掛けます",
+      "key": "w1523"
+    },
+    {
+      "sourceId": "1524",
+      "sourceWord": "気持ちがいい",
+      "key": "w1524"
+    },
+    {
+      "sourceId": "1525",
+      "sourceWord": "気持ちが悪い",
+      "key": "w1525"
+    },
+    {
+      "sourceId": "1526",
+      "sourceWord": "大きな",
+      "key": "w1526"
+    },
+    {
+      "sourceId": "1527",
+      "sourceWord": "小さな",
+      "key": "w1527"
+    },
+    {
+      "sourceId": "1528",
+      "sourceWord": "赤ちゃん",
+      "key": "w1528"
+    },
+    {
+      "sourceId": "1529",
+      "sourceWord": "小学校",
+      "key": "w1529"
+    },
+    {
+      "sourceId": "1530",
+      "sourceWord": "中学校",
+      "key": "w1530"
+    },
+    {
+      "sourceId": "1531",
+      "sourceWord": "駅前",
+      "key": "w1531"
+    },
+    {
+      "sourceId": "1532",
+      "sourceWord": "海岸",
+      "key": "w1532"
+    },
+    {
+      "sourceId": "1535",
+      "sourceWord": "電源",
+      "key": "w1535"
+    },
+    {
+      "sourceId": "1536",
+      "sourceWord": "～製",
+      "key": "w1536"
+    },
+    {
+      "sourceId": "1537",
+      "sourceWord": "あ、いけない。",
+      "key": "w1537"
+    },
+    {
+      "sourceId": "1538",
+      "sourceWord": "お先に失礼します。",
+      "key": "w1538"
+    },
+    {
+      "sourceId": "1539",
+      "sourceWord": "回覧",
+      "key": "w1539"
+    },
+    {
+      "sourceId": "1540",
+      "sourceWord": "研究室",
+      "key": "w1540"
+    },
+    {
+      "sourceId": "1541",
+      "sourceWord": "きちんと",
+      "key": "w1541"
+    },
+    {
+      "sourceId": "1542",
+      "sourceWord": "整理します",
+      "key": "w1542"
+    },
+    {
+      "sourceId": "1543",
+      "sourceWord": "～という本",
+      "key": "w1543"
+    },
+    {
+      "sourceId": "1544",
+      "sourceWord": "～冊",
+      "key": "w1544"
+    },
+    {
+      "sourceId": "1545",
+      "sourceWord": "判子",
+      "key": "w1545"
+    },
+    {
+      "sourceId": "1546",
+      "sourceWord": "［判子を］押します",
+      "key": "w1546"
+    },
+    {
+      "sourceId": "1657",
+      "sourceWord": "指輪",
+      "key": "w1657"
+    },
+    {
+      "sourceId": "1666",
+      "sourceWord": "一昨年",
+      "key": "w1666"
+    },
+    {
+      "sourceId": "2517",
+      "sourceWord": "嘘をつきます",
+      "key": "w2517"
+    },
+    {
+      "sourceId": "5646",
+      "sourceWord": "かな",
+      "key": "w5646"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "called",
+    "dome",
+    "izumo",
+    "chiangmai",
+    "twins",
+    "sisters",
+    "grade5",
+    "similar",
+    "personality",
+    "quiet",
+    "kind",
+    "care",
+    "time",
+    "love",
+    "point",
+    "strong-willed",
+    "quarrel",
+    "strange",
+    "age",
+    "way"
+  ],
+  "finalCount": 58
+}

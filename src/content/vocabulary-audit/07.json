@@ -1,0 +1,257 @@
+{
+  "lessonId": 7,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/7.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 48,
+  "entries": [
+    {
+      "sourceId": "1008",
+      "sourceWord": "ごちそうさまでした。",
+      "key": "w1008"
+    },
+    {
+      "sourceId": "3072",
+      "sourceWord": "メール",
+      "key": "w3072"
+    },
+    {
+      "sourceId": "3267",
+      "sourceWord": "ケータイ",
+      "key": "w3267"
+    },
+    {
+      "sourceId": "332",
+      "sourceWord": "切ります",
+      "key": "w332"
+    },
+    {
+      "sourceId": "333",
+      "sourceWord": "送ります",
+      "key": "w333"
+    },
+    {
+      "sourceId": "334",
+      "sourceWord": "あげます",
+      "key": "w334"
+    },
+    {
+      "sourceId": "335",
+      "sourceWord": "もらいます",
+      "key": "w335"
+    },
+    {
+      "sourceId": "336",
+      "sourceWord": "貸します",
+      "key": "w336"
+    },
+    {
+      "sourceId": "337",
+      "sourceWord": "借ります",
+      "key": "w337"
+    },
+    {
+      "sourceId": "338",
+      "sourceWord": "教えます",
+      "key": "w338"
+    },
+    {
+      "sourceId": "339",
+      "sourceWord": "習います",
+      "key": "w339"
+    },
+    {
+      "sourceId": "340",
+      "sourceWord": "［電話を］かけます",
+      "key": "w340"
+    },
+    {
+      "sourceId": "341",
+      "sourceWord": "手",
+      "key": "w341"
+    },
+    {
+      "sourceId": "342",
+      "sourceWord": "箸",
+      "key": "w342"
+    },
+    {
+      "sourceId": "343",
+      "sourceWord": "スプーン",
+      "key": "w343"
+    },
+    {
+      "sourceId": "344",
+      "sourceWord": "ナイフ",
+      "key": "w344"
+    },
+    {
+      "sourceId": "345",
+      "sourceWord": "フォ－ク",
+      "key": "w345"
+    },
+    {
+      "sourceId": "346",
+      "sourceWord": "はさみ",
+      "key": "w346"
+    },
+    {
+      "sourceId": "349",
+      "sourceWord": "パソコン",
+      "key": "w349"
+    },
+    {
+      "sourceId": "350",
+      "sourceWord": "パンチ",
+      "key": "w350"
+    },
+    {
+      "sourceId": "351",
+      "sourceWord": "ホチキス",
+      "key": "w351"
+    },
+    {
+      "sourceId": "352",
+      "sourceWord": "セロテ－プ",
+      "key": "w352"
+    },
+    {
+      "sourceId": "353",
+      "sourceWord": "消しゴム",
+      "key": "w353"
+    },
+    {
+      "sourceId": "354",
+      "sourceWord": "紙",
+      "key": "w354"
+    },
+    {
+      "sourceId": "355",
+      "sourceWord": "花",
+      "key": "w355"
+    },
+    {
+      "sourceId": "356",
+      "sourceWord": "シャツ",
+      "key": "w356"
+    },
+    {
+      "sourceId": "357",
+      "sourceWord": "プレゼント",
+      "key": "w357"
+    },
+    {
+      "sourceId": "358",
+      "sourceWord": "荷物",
+      "key": "w358"
+    },
+    {
+      "sourceId": "359",
+      "sourceWord": "お金",
+      "key": "w359"
+    },
+    {
+      "sourceId": "360",
+      "sourceWord": "切符",
+      "key": "w360"
+    },
+    {
+      "sourceId": "361",
+      "sourceWord": "クリスマス",
+      "key": "w361"
+    },
+    {
+      "sourceId": "362",
+      "sourceWord": "父",
+      "key": "w362"
+    },
+    {
+      "sourceId": "363",
+      "sourceWord": "母",
+      "key": "w363"
+    },
+    {
+      "sourceId": "364",
+      "sourceWord": "お父さん",
+      "key": "w364"
+    },
+    {
+      "sourceId": "365",
+      "sourceWord": "お母さん",
+      "key": "w365"
+    },
+    {
+      "sourceId": "366",
+      "sourceWord": "もう",
+      "key": "w366"
+    },
+    {
+      "sourceId": "367",
+      "sourceWord": "まだ",
+      "key": "w367"
+    },
+    {
+      "sourceId": "368",
+      "sourceWord": "これから",
+      "key": "w368"
+    },
+    {
+      "sourceId": "369",
+      "sourceWord": "素敵ですね。",
+      "key": "w369"
+    },
+    {
+      "sourceId": "371",
+      "sourceWord": "いらっしゃい。",
+      "key": "w371"
+    },
+    {
+      "sourceId": "372",
+      "sourceWord": "どうぞお上がりください。",
+      "key": "w372"
+    },
+    {
+      "sourceId": "373",
+      "sourceWord": "失礼します。",
+      "key": "w373"
+    },
+    {
+      "sourceId": "374",
+      "sourceWord": "～はいかがですか。",
+      "key": "w374"
+    },
+    {
+      "sourceId": "375",
+      "sourceWord": "いただきます。",
+      "key": "w375"
+    },
+    {
+      "sourceId": "4855",
+      "sourceWord": "年賀状",
+      "key": "w4855"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "347",
+      "sourceWord": "ファックス",
+      "reason": "旧版设备词；第二版交叉表以ケータイ、メール等补充，不收录传真。"
+    },
+    {
+      "sourceId": "348",
+      "sourceWord": "ワープロ",
+      "reason": "旧版文字处理机词；第二版交叉表未收录。"
+    },
+    {
+      "sourceId": "370",
+      "sourceWord": "ごめんください。",
+      "reason": "旧版登门对话用语；第二版交叉表未收录。"
+    }
+  ],
+  "secondaryAdditions": [
+    "spain"
+  ],
+  "finalCount": 46
+}

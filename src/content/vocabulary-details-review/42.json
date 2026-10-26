@@ -1,0 +1,14 @@
+{
+  "lessonId": 42,
+  "model": "deepseek-flash",
+  "reviewedCount": 54,
+  "corrections": [
+    {
+      "id": "l42-w1708",
+      "attributes": [
+        "な形容词"
+      ],
+      "reason": "「なぜ」词性应为副词（疑问副词），不是名词，且不适用形容词属性，故不添加形容词标签。"
+    }
+  ]
+}

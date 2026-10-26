@@ -1,0 +1,394 @@
+{
+  "lessonId": 21,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/21.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源44条，排除3条旧版或跨课条目，合并同形同义项并补入第二来源，最终54条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/21.json。",
+    "两来源交通工具写法不同：主来源为自動車、第二来源为自転車。自転車已在第5课收录，本课保留自動車；すごい的不同中文义项合并，不重复出成两个词。"
+  ],
+  "words": [
+    {
+      "key": "w101",
+      "word": "自動車",
+      "reading": "じどうしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "汽车"
+    },
+    {
+      "key": "w1031",
+      "word": "留学します",
+      "reading": "りゅうがくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "留学"
+    },
+    {
+      "key": "w1120",
+      "word": "夢",
+      "reading": "ゆめ",
+      "partOfSpeech": "名词",
+      "meaning": "梦想；梦"
+    },
+    {
+      "key": "w1307",
+      "word": "月",
+      "reading": "つき",
+      "partOfSpeech": "名词",
+      "meaning": "月亮"
+    },
+    {
+      "key": "w1505",
+      "word": "漫画",
+      "reading": "まんが",
+      "partOfSpeech": "名词",
+      "meaning": "漫画"
+    },
+    {
+      "key": "w1533",
+      "word": "嘘",
+      "reading": "うそ",
+      "partOfSpeech": "名词",
+      "meaning": "谎言"
+    },
+    {
+      "key": "w1596",
+      "word": "地球",
+      "reading": "ちきゅう",
+      "partOfSpeech": "名词",
+      "meaning": "地球"
+    },
+    {
+      "key": "w1607",
+      "word": "本当",
+      "reading": "ほんとう",
+      "partOfSpeech": "名词",
+      "meaning": "真的；事实"
+    },
+    {
+      "key": "w1865",
+      "word": "久しぶり",
+      "reading": "ひさしぶり",
+      "partOfSpeech": "名词",
+      "meaning": "久违"
+    },
+    {
+      "key": "w1920",
+      "word": "放送します",
+      "reading": "ほうそうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "广播"
+    },
+    {
+      "key": "w2480",
+      "word": "アニメ",
+      "reading": "あにめ",
+      "partOfSpeech": "名词",
+      "meaning": "动画片"
+    },
+    {
+      "key": "w3553",
+      "word": "すごい",
+      "reading": "すごい",
+      "partOfSpeech": "い形容词",
+      "meaning": "厉害的；惊人的；可怕的"
+    },
+    {
+      "key": "w4617",
+      "word": "天才",
+      "reading": "てんさい",
+      "partOfSpeech": "名词",
+      "meaning": "天才"
+    },
+    {
+      "key": "w762",
+      "word": "［会社を］やめます",
+      "reading": "［かいしゃを］やめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "辞去（工作）"
+    },
+    {
+      "key": "w909",
+      "word": "物価",
+      "reading": "ぶっか",
+      "partOfSpeech": "名词",
+      "meaning": "物价"
+    },
+    {
+      "key": "w926",
+      "word": "思います",
+      "reading": "おもいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "想；认为"
+    },
+    {
+      "key": "w927",
+      "word": "言います",
+      "reading": "いいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "说"
+    },
+    {
+      "key": "w929",
+      "word": "勝ちます",
+      "reading": "かちます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "赢"
+    },
+    {
+      "key": "w930",
+      "word": "負けます",
+      "reading": "まけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "输"
+    },
+    {
+      "key": "w931",
+      "word": "［お祭りが］あります",
+      "reading": "［おまつりが］あります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "举办（祭典）"
+    },
+    {
+      "key": "w932",
+      "word": "役に立ちます",
+      "reading": "やくにたちます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "有用"
+    },
+    {
+      "key": "w933",
+      "word": "無駄な",
+      "reading": "むだな",
+      "partOfSpeech": "な形容词",
+      "meaning": "浪费的；徒劳的"
+    },
+    {
+      "key": "w934",
+      "word": "不便な",
+      "reading": "ふべんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不方便的"
+    },
+    {
+      "key": "w940",
+      "word": "ニュース",
+      "reading": "にゅーす",
+      "partOfSpeech": "名词",
+      "meaning": "新闻"
+    },
+    {
+      "key": "w942",
+      "word": "試合",
+      "reading": "しあい",
+      "partOfSpeech": "名词",
+      "meaning": "比赛"
+    },
+    {
+      "key": "w944",
+      "word": "意見",
+      "reading": "いけん",
+      "partOfSpeech": "名词",
+      "meaning": "意见"
+    },
+    {
+      "key": "w945",
+      "word": "お話",
+      "reading": "おはなし",
+      "partOfSpeech": "名词",
+      "meaning": "话；故事"
+    },
+    {
+      "key": "w947",
+      "word": "無駄",
+      "reading": "むだ",
+      "partOfSpeech": "名词",
+      "meaning": "浪费"
+    },
+    {
+      "key": "w948",
+      "word": "デザイン",
+      "reading": "でざいん",
+      "partOfSpeech": "名词",
+      "meaning": "设计"
+    },
+    {
+      "key": "w949",
+      "word": "交通",
+      "reading": "こうつう",
+      "partOfSpeech": "名词",
+      "meaning": "交通"
+    },
+    {
+      "key": "w951",
+      "word": "最近",
+      "reading": "さいきん",
+      "partOfSpeech": "名词",
+      "meaning": "最近"
+    },
+    {
+      "key": "w952",
+      "word": "多分",
+      "reading": "たぶん",
+      "partOfSpeech": "副词",
+      "meaning": "大概"
+    },
+    {
+      "key": "w953",
+      "word": "きっと",
+      "reading": "きっと",
+      "partOfSpeech": "副词",
+      "meaning": "一定"
+    },
+    {
+      "key": "w954",
+      "word": "本当に",
+      "reading": "ほんとうに",
+      "partOfSpeech": "副词",
+      "meaning": "真的；确实"
+    },
+    {
+      "key": "w955",
+      "word": "そんなに",
+      "reading": "そんなに",
+      "partOfSpeech": "副词",
+      "meaning": "那么（多）"
+    },
+    {
+      "key": "w956",
+      "word": "～について",
+      "reading": "～について",
+      "partOfSpeech": "表达",
+      "meaning": "关于……"
+    },
+    {
+      "key": "w959",
+      "word": "～でも飲みませんか",
+      "reading": "～でものみませんか",
+      "partOfSpeech": "表达",
+      "meaning": "喝点……怎么样"
+    },
+    {
+      "key": "w961",
+      "word": "もちろん",
+      "reading": "もちろん",
+      "partOfSpeech": "副词",
+      "meaning": "当然"
+    },
+    {
+      "key": "w988",
+      "word": "［車が］動きます",
+      "reading": "［くるまが］うごきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "运转；移动（车辆）"
+    },
+    {
+      "key": "w991",
+      "word": "気をつけます",
+      "reading": "きをつけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "注意；小心"
+    },
+    {
+      "key": "broadcast",
+      "word": "放送",
+      "reading": "ほうそう",
+      "partOfSpeech": "名词",
+      "meaning": "广播"
+    },
+    {
+      "key": "long-time",
+      "word": "久しぶりですね",
+      "reading": "ひさしぶりですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "好久不见"
+    },
+    {
+      "key": "must-go",
+      "word": "もう帰らないと…",
+      "reading": "もうかえらないと…",
+      "partOfSpeech": "固定表达",
+      "meaning": "我得回去了……"
+    },
+    {
+      "key": "einstein",
+      "word": "アインシュタイン",
+      "reading": "あいんしゅたいん",
+      "partOfSpeech": "专有名词",
+      "meaning": "爱因斯坦"
+    },
+    {
+      "key": "gagarin",
+      "word": "ガガーリン",
+      "reading": "ががーりん",
+      "partOfSpeech": "专有名词",
+      "meaning": "加加林"
+    },
+    {
+      "key": "galileo",
+      "word": "ガリレオ",
+      "reading": "がりれお",
+      "partOfSpeech": "专有名词",
+      "meaning": "伽利略"
+    },
+    {
+      "key": "king",
+      "word": "キング牧師",
+      "reading": "きんぐぼくし",
+      "partOfSpeech": "专有名词",
+      "meaning": "金牧师"
+    },
+    {
+      "key": "franklin",
+      "word": "フランクリン",
+      "reading": "ふらんくりん",
+      "partOfSpeech": "专有名词",
+      "meaning": "富兰克林"
+    },
+    {
+      "key": "kaguya",
+      "word": "かぐや姫",
+      "reading": "かぐやひめ",
+      "partOfSpeech": "专有名词",
+      "meaning": "辉夜姬"
+    },
+    {
+      "key": "tenjin",
+      "word": "天神祭",
+      "reading": "てんじんまつり",
+      "partOfSpeech": "专有名词",
+      "meaning": "天神祭"
+    },
+    {
+      "key": "yoshino",
+      "word": "吉野山",
+      "reading": "よしのやま",
+      "partOfSpeech": "专有名词",
+      "meaning": "吉野山"
+    },
+    {
+      "key": "kangaroo",
+      "word": "カンガルー",
+      "reading": "かんがるー",
+      "partOfSpeech": "名词",
+      "meaning": "袋鼠"
+    },
+    {
+      "key": "hook",
+      "word": "キャプテン・フック",
+      "reading": "きゃぷてん・ふっく",
+      "partOfSpeech": "专有名词",
+      "meaning": "胡克船长（教材店名）"
+    },
+    {
+      "key": "yonen",
+      "word": "ヨーネン",
+      "reading": "よーねん",
+      "partOfSpeech": "专有名词",
+      "meaning": "Yonen（教材专名）"
+    }
+  ]
+}

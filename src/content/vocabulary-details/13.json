@@ -1,0 +1,426 @@
+{
+  "l13-w1007": {
+    "romaji": "oshōgatsu",
+    "attributes": [],
+    "explanation": "指日本的新年期间（通常为1月1日至3日），是日本最重要的传统节日之一。常与「お正月に」「お正月は」等搭配使用，前面加「お」表示郑重。",
+    "example": {
+      "jp": "お正月に家族と初詣に行きます。",
+      "kana": "おしょうがつにかぞくとはつもうでにいきます。",
+      "romaji": "oshōgatsu ni kazoku to hatsumōde ni ikimasu.",
+      "zh": "新年时和家人一起去初次参拜。"
+    }
+  },
+  "l13-w160": {
+    "romaji": "de gozaimasu",
+    "attributes": [],
+    "explanation": "「です」的郑重表达，用于正式场合或对上级、客人表示礼貌。常接在名词或な形容词后，否定形式为「ではございません」。",
+    "example": {
+      "jp": "こちらは受付でございます。",
+      "kana": "こちらはうけつけでございます。",
+      "romaji": "kochira wa uketsuke de gozaimasu.",
+      "zh": "这里是接待处。"
+    }
+  },
+  "l13-w2558": {
+    "romaji": "onaka ga sukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定搭配，表示肚子饿了。主语用「おなかが」，动词「すく」表示空、饿。口语中常用「おなかすいた」的简体形式。",
+    "example": {
+      "jp": "朝ごはんを食べていないので、おなかがすきました。",
+      "kana": "あさごはんをたべていないので、おなかがすきました。",
+      "romaji": "asagohan o tabete inai node, onaka ga sukimashita.",
+      "zh": "因为没吃早饭，肚子饿了。"
+    }
+  },
+  "l13-w2944": {
+    "romaji": "nodo ga kawakimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定搭配，表示口渴。主语用「のどが」，动词「渇く」表示干渴。常用于描述运动后或天气热时想喝水的感觉。",
+    "example": {
+      "jp": "運動した後、のどが渇きました。",
+      "kana": "うんどうしたあと、のどがかわきました。",
+      "romaji": "undō shita ato, nodo ga kawakimashita.",
+      "zh": "运动后口渴了。"
+    }
+  },
+  "l13-v3": {
+    "romaji": "asobimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示玩耍、游乐或消遣。常与「公園で」「友達と」等搭配，也可用于邀请「遊びに来てください」。注意不要与「遊ぶ」的他动词用法混淆，通常为自动词。",
+    "example": {
+      "jp": "週末は公園で子供と遊びます。",
+      "kana": "しゅうまつはこうえんでこどもとあそびます。",
+      "romaji": "shūmatsu wa kōen de kodomo to asobimasu.",
+      "zh": "周末在公园和孩子玩。"
+    }
+  },
+  "l13-v4": {
+    "romaji": "oyogimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示游泳。常与场所「プールで」「海で」搭配。也可用于「泳げる」可能形表示会游泳。",
+    "example": {
+      "jp": "夏休みに海で泳ぎます。",
+      "kana": "なつやすみにうみでおよぎます。",
+      "romaji": "natsuyasumi ni umi de oyogimasu.",
+      "zh": "暑假在海里游泳。"
+    }
+  },
+  "l13-v2": {
+    "romaji": "mukaemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示迎接、接待。常与「駅で」「空港へ」等搭配，对象用「を」或「に」。也可用于迎接客人、新年等抽象意义。",
+    "example": {
+      "jp": "友達を駅まで迎えに行きます。",
+      "kana": "ともだちをえきまでむかえにいきます。",
+      "romaji": "tomodachi o eki made mukae ni ikimasu.",
+      "zh": "去车站接朋友。"
+    }
+  },
+  "l13-w650": {
+    "romaji": "tsukaremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示疲劳、累。常以「疲れました」的形式表达“我累了”。也可用于「疲れている」表示状态。注意与「疲れる」的他动词用法区分，通常为自动词。",
+    "example": {
+      "jp": "一日中歩いて、とても疲れました。",
+      "kana": "いちにちじゅうあるいて、とてもつかれました。",
+      "romaji": "ichinichijū aruite, totemo tsukaremashita.",
+      "zh": "走了一整天，非常累。"
+    }
+  },
+  "l13-w654": {
+    "romaji": "kekkon shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示结婚。常用「～と結婚します」表示和某人结婚，或「結婚しています」表示已婚状态。注意「結婚する」是自动词，助词用「と」或「に」。",
+    "example": {
+      "jp": "来月、彼女と結婚します。",
+      "kana": "らいげつ、かのじょとけっこんします。",
+      "romaji": "raigetsu, kanojo to kekkon shimasu.",
+      "zh": "下个月和她结婚。"
+    }
+  },
+  "l13-w655": {
+    "romaji": "kaimono shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示购物、买东西。常与场所「デパートで」「スーパーに」搭配。是「買い物をする」的动词化形式，属于サ变动词。",
+    "example": {
+      "jp": "デパートで買い物します。",
+      "kana": "デパートでかいものします。",
+      "romaji": "depāto de kaimono shimasu.",
+      "zh": "在百货商店购物。"
+    }
+  },
+  "l13-w656": {
+    "romaji": "shokuji shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示吃饭、用餐。比「食べる」更正式，常用于「食事をする」的形式。可搭配「朝食を食事する」但不常见，通常单独使用或与时间场所搭配。",
+    "example": {
+      "jp": "家族と一緒に食事します。",
+      "kana": "かぞくといっしょにしょくじします。",
+      "romaji": "kazoku to issho ni shokuji shimasu.",
+      "zh": "和家人一起吃饭。"
+    }
+  },
+  "l13-w657": {
+    "romaji": "sanpo shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示散步。常与场所「公園を」「川沿いを」搭配，助词用「を」表示经过的场所。是「散歩をする」的动词化形式，属于サ变动词。",
+    "example": {
+      "jp": "毎朝、公園を散歩します。",
+      "kana": "まいあさ、こうえんをさんぽします。",
+      "romaji": "maiasa, kōen o sanpo shimasu.",
+      "zh": "每天早上在公园散步。"
+    }
+  },
+  "l13-w658": {
+    "romaji": "taihen na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示事情或状况非常辛苦、艰难，常修饰名词或作谓语。口语中也可单独说「大変」表示“不得了”。",
+    "example": {
+      "jp": "大変な仕事をやり遂げた。",
+      "kana": "たいへんなしごとをやりとげた。",
+      "romaji": "taihen na shigoto o yaritogeta.",
+      "zh": "完成了一项艰难的工作。"
+    }
+  },
+  "l13-v1": {
+    "romaji": "hoshii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示说话人想要某物，通常用于第一人称；询问第二人称时多用「欲しいですか」。不能直接表示想要做某事（那用「～たい」）。",
+    "example": {
+      "jp": "新しい自転車が欲しいです。",
+      "kana": "あたらしいじてんしゃがほしいです。",
+      "romaji": "atarashii jitensha ga hoshii desu.",
+      "zh": "我想要一辆新自行车。"
+    }
+  },
+  "l13-w661": {
+    "romaji": "hiroi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "形容空间、面积宽广，也可形容视野、心胸开阔。反义词是「狭い」。",
+    "example": {
+      "jp": "この公園はとても広いですね。",
+      "kana": "このこうえんはとてもひろいですね。",
+      "romaji": "kono kōen wa totemo hiroi desu ne.",
+      "zh": "这个公园真宽敞啊。"
+    }
+  },
+  "l13-w662": {
+    "romaji": "semai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "形容空间狭窄、地方小，也可形容心胸或视野狭窄。反义词是「広い」。",
+    "example": {
+      "jp": "私の部屋は狭いですが、きれいです。",
+      "kana": "わたしのへやはせまいですが、きれいです。",
+      "romaji": "watashi no heya wa semai desu ga, kirei desu.",
+      "zh": "我的房间虽然小，但很干净。"
+    }
+  },
+  "l13-w664": {
+    "romaji": "pūru",
+    "attributes": [],
+    "explanation": "指游泳池，也可指游泳这项运动。常与「泳ぐ」搭配，如「プールで泳ぐ」。",
+    "example": {
+      "jp": "夏はプールで泳ぐのが好きです。",
+      "kana": "なつはぷーるでおよぐのがすきです。",
+      "romaji": "natsu wa pūru de oyogu no ga suki desu.",
+      "zh": "夏天我喜欢在游泳池游泳。"
+    }
+  },
+  "l13-w665": {
+    "romaji": "kawa",
+    "attributes": [],
+    "explanation": "指自然流动的河流。常见搭配有「川で釣りをする」「川を渡る」。",
+    "example": {
+      "jp": "子供たちが川で遊んでいます。",
+      "kana": "こどもたちがかわであそんでいます。",
+      "romaji": "kodomo tachi ga kawa de asonde imasu.",
+      "zh": "孩子们在河里玩耍。"
+    }
+  },
+  "l13-w667": {
+    "romaji": "bijutsu",
+    "attributes": [],
+    "explanation": "指美术、艺术，包括绘画、雕塑等。常说「美術館」「美術の授業」。",
+    "example": {
+      "jp": "週末に美術館へ行きました。",
+      "kana": "しゅうまつにびじゅつかんへいきました。",
+      "romaji": "shūmatsu ni bijutsukan e ikimashita.",
+      "zh": "周末去了美术馆。"
+    }
+  },
+  "l13-w668": {
+    "romaji": "tsuri",
+    "attributes": [],
+    "explanation": "指钓鱼这项活动，常用「釣りをする」「釣りに行く」。动词是「釣る」。",
+    "example": {
+      "jp": "父は毎週釣りに行きます。",
+      "kana": "ちちはまいしゅうつりにいきます。",
+      "romaji": "chichi wa maishū tsuri ni ikimasu.",
+      "zh": "父亲每周都去钓鱼。"
+    }
+  },
+  "l13-w669": {
+    "romaji": "sukī",
+    "attributes": [],
+    "explanation": "指滑雪运动或滑雪板。常用「スキーをする」「スキーに行く」。",
+    "example": {
+      "jp": "冬休みに家族でスキーをします。",
+      "kana": "ふゆやすみにかぞくですきーをします。",
+      "romaji": "fuyuyasumi ni kazoku de sukī o shimasu.",
+      "zh": "寒假和家人一起滑雪。"
+    }
+  },
+  "l13-w672": {
+    "romaji": "shūmatsu",
+    "attributes": [],
+    "explanation": "指一周的末尾，通常包括星期六和星期日。常说「週末に」「週末は」。",
+    "example": {
+      "jp": "週末は家でゆっくり休みます。",
+      "kana": "しゅうまつはうちでゆっくりやすみます。",
+      "romaji": "shūmatsu wa uchi de yukkuri yasumimasu.",
+      "zh": "周末在家好好休息。"
+    }
+  },
+  "l13-w673": {
+    "romaji": "~goro",
+    "attributes": [],
+    "explanation": "接在时间词后，表示大致的时间点，如「三時ごろ」「週末ごろ」。不能接在时间段之后（那用「～ぐらい」）。",
+    "example": {
+      "jp": "会議は三時ごろ終わります。",
+      "kana": "かいぎはさんじごろおわります。",
+      "romaji": "kaigi wa sanji goro owarimasu.",
+      "zh": "会议三点左右结束。"
+    }
+  },
+  "l13-v10": {
+    "romaji": "nanika",
+    "attributes": [],
+    "explanation": "表示不确定的某物，相当于“什么东西”。常用于疑问句或肯定句中，如「何か食べたい」。",
+    "example": {
+      "jp": "何か冷たい飲み物が欲しいです。",
+      "kana": "なにかつめたいのみものがほしいです。",
+      "romaji": "nanika tsumetai nomimono ga hoshii desu.",
+      "zh": "想要点冷饮。"
+    }
+  },
+  "l13-w675": {
+    "romaji": "dokoka",
+    "attributes": [],
+    "explanation": "表示不确定的某个地方，常用于询问或提议去某处。口语中可单独使用，也可后接助词「に」「で」等。",
+    "example": {
+      "jp": "どこか静かな場所で話しましょう。",
+      "kana": "どこかしずかなばしょではなしましょう。",
+      "romaji": "dokoka shizukana basho de hanashimashou.",
+      "zh": "我们在某个安静的地方谈吧。"
+    }
+  },
+  "l13-w676": {
+    "romaji": "onaka ga sukimashita",
+    "attributes": [],
+    "explanation": "固定表达，礼貌地表示自己肚子饿了。常用「お腹が空く」的敬体过去式，口语中也可说「お腹すいた」。",
+    "example": {
+      "jp": "朝から何も食べていないので、お腹がすきました。",
+      "kana": "あさからなにもたべていないので、おなかがすきました。",
+      "romaji": "asa kara nanimo tabeteinai node, onaka ga sukimashita.",
+      "zh": "从早上什么都没吃，所以肚子饿了。"
+    }
+  },
+  "l13-w678": {
+    "romaji": "nodo ga kawakimashita",
+    "attributes": [],
+    "explanation": "固定表达，礼貌地表示口渴了。动词「渇く」用于喉咙干燥，常见搭配「喉が渇く」。",
+    "example": {
+      "jp": "運動した後で喉が渇きました。",
+      "kana": "うんどうしたあとでのどがかわきました。",
+      "romaji": "undou shita ato de nodo ga kawakimashita.",
+      "zh": "运动之后口渴了。"
+    }
+  },
+  "l13-w679": {
+    "romaji": "sou desu ne",
+    "attributes": [],
+    "explanation": "表示赞同对方意见或稍作思考的应答语，语气随和。常用于对话中接话，也可表示“是啊，确实如此”。",
+    "example": {
+      "jp": "「今日は寒いですね。」「そうですね。」",
+      "kana": "「きょうはさむいですね。」「そうですね。」",
+      "romaji": "kyou wa samui desu ne. sou desu ne.",
+      "zh": "“今天真冷啊。”“是啊。”"
+    }
+  },
+  "l13-w680": {
+    "romaji": "sou shimashou",
+    "attributes": [],
+    "explanation": "用于提议或同意按某方案行事，意为“就这么办吧”。是「そうする」的意志形敬体，常用于决定后。",
+    "example": {
+      "jp": "「駅前で待ち合わせはどうですか。」「そうしましょう。」",
+      "kana": "「えきまえでまちあわせはどうですか。」「そうしましょう。」",
+      "romaji": "ekimae de machiawase wa dou desu ka. sou shimashou.",
+      "zh": "“在车站前碰头怎么样？”“就这么办吧。”"
+    }
+  },
+  "l13-w681": {
+    "romaji": "gochuumon wa",
+    "attributes": [],
+    "explanation": "餐厅服务员点餐时的礼貌问法，完整说法常为「ご注文はお決まりですか」。省略后句，语气简洁。",
+    "example": {
+      "jp": "店員：「ご注文は？」客：「牛丼をください。」",
+      "kana": "「ごちゅうもんは？」「ぎゅうどんをください。」",
+      "romaji": "gochuumon wa. gyuudon o kudasai.",
+      "zh": "店员：“您点什么？”客人：“请给我牛肉盖饭。”"
+    }
+  },
+  "l13-w682": {
+    "romaji": "teishoku",
+    "attributes": [],
+    "explanation": "指日本餐厅中搭配好的套餐，通常包括主菜、米饭、汤和副菜。常与「定食を頼む」等搭配。",
+    "example": {
+      "jp": "この店の焼き魚定食は人気があります。",
+      "kana": "このみせのやきざかなていしょくはにんきがあります。",
+      "romaji": "kono mise no yakizakana teishoku wa ninki ga arimasu.",
+      "zh": "这家店的烤鱼套餐很受欢迎。"
+    }
+  },
+  "l13-w683": {
+    "romaji": "gyuudon",
+    "attributes": [],
+    "explanation": "指在米饭上铺牛肉和洋葱等煮成的盖饭，是日本常见的快餐。点餐时常用「牛丼をください」。",
+    "example": {
+      "jp": "昼ご飯に牛丼を食べました。",
+      "kana": "ひるごはんにぎゅうどんをたべました。",
+      "romaji": "hirugohan ni gyuudon o tabemashita.",
+      "zh": "午饭吃了牛肉盖饭。"
+    }
+  },
+  "l13-w684": {
+    "romaji": "shoushou omachi kudasai",
+    "attributes": [],
+    "explanation": "服务行业常用的礼貌表达，意为“请稍等片刻”。「少々」是“稍微、一会儿”的郑重说法。",
+    "example": {
+      "jp": "受付で「少々お待ちください」と言われました。",
+      "kana": "うけつけで「しょうしょうおまちください」といわれました。",
+      "romaji": "uketsuke de shoushou omachi kudasai to iwaremashita.",
+      "zh": "在接待处被说了“请稍等”。"
+    }
+  },
+  "l13-v9": {
+    "romaji": "betsubetsu ni",
+    "attributes": [],
+    "explanation": "表示分开、各自进行，常用于结账、点餐或行动时。可修饰动词，如「別々に払う」「別々に行く」。",
+    "example": {
+      "jp": "会計は別々にお願いします。",
+      "kana": "かいけいはべつべつにおねがいします。",
+      "romaji": "kaikei wa betsubetsu ni onegaishimasu.",
+      "zh": "结账请分开算。"
+    }
+  },
+  "l13-akikkusu": {
+    "romaji": "Akikkusu",
+    "attributes": [],
+    "explanation": "教材中出现的公司名称，作为专有名词使用。通常直接以片假名书写，不加「さん」等。",
+    "example": {
+      "jp": "アキックスは東京にある会社です。",
+      "kana": "あきっくすはとうきょうにあるかいしゃです。",
+      "romaji": "Akikkusu wa Toukyou ni aru kaisha desu.",
+      "zh": "Akikkusu是位于东京的公司。"
+    }
+  },
+  "l13-ohayo-tv": {
+    "romaji": "Ohayou Terebi",
+    "attributes": [],
+    "explanation": "教材中出现的电视台名称，作为专有名词使用。读作「おはようテレビ」，书写时汉字与片假名混合。",
+    "example": {
+      "jp": "おはようテレビでニュースを見ます。",
+      "kana": "おはようてれびでにゅーすをみます。",
+      "romaji": "Ohayou Terebi de nyuusu o mimasu.",
+      "zh": "在早安电视台看新闻。"
+    }
+  }
+}

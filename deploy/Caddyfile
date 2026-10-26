@@ -13,13 +13,11 @@
 		-Server
 	}
 
-	# Explicit ordering prevents any route (including /api/health) bypassing login.
+	# The application verifies persistent version-bound sessions; proxy and origin checks remain mandatory.
 	route {
-		basic_auth {
-			{$APP_AUTH_USER} {$APP_AUTH_HASH}
-		}
 		reverse_proxy app:4317 {
 			header_up -Authorization
+			header_up X-Nihongo-Client-IP {http.request.remote.host}
 			header_up X-Nihongo-Proxy {$APP_PROXY_TOKEN}
 			transport http {
 				dial_timeout 10s

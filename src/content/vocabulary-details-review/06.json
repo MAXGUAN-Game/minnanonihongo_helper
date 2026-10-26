@@ -1,0 +1,21 @@
+{
+  "lessonId": 6,
+  "model": "deepseek-flash",
+  "reviewedCount": 55,
+  "corrections": [
+    {
+      "id": "l6-aimasu",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「会う」表示见面，对象用「に」而非「を」，是自动词。"
+    },
+    {
+      "id": "l6-wakarimashita",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「分かる」是自动词，表示明白的状态，对象用「が」。"
+    }
+  ]
+}

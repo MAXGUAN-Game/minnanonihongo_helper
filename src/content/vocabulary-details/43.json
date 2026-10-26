@@ -1,0 +1,311 @@
+{
+  "l43-w1134": {
+    "romaji": "yasashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示对人的态度温和、体贴，也可形容性格善良。常用于日常口语和书面语，注意与「優れる」（优秀）区分。",
+    "example": {
+      "jp": "彼女はとても優しい人です。",
+      "kana": "かのじょはとてもやさしいひとです。",
+      "romaji": "kanojo wa totemo yasashii hito desu.",
+      "zh": "她是个非常温柔的人。"
+    }
+  },
+  "l43-w1410": {
+    "romaji": "rakuna",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容事物不费力、轻松，或形容人感觉舒适、放松。修饰名词时加「な」，如「楽な仕事」。",
+    "example": {
+      "jp": "この仕事は楽なほうです。",
+      "kana": "このしごとはらくなほうです。",
+      "romaji": "kono shigoto wa rakuna hō desu.",
+      "zh": "这份工作算是轻松的。"
+    }
+  },
+  "l43-w1712": {
+    "romaji": "fuemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示数量、程度等增加，主语为增加的事物。常用于经济、统计等客观描述，如「輸出が増えます」。",
+    "example": {
+      "jp": "今年は輸出が増えました。",
+      "kana": "ことしはゆしゅつがふえました。",
+      "romaji": "kotoshi wa yushutsu ga fuemashita.",
+      "zh": "今年出口增加了。"
+    }
+  },
+  "l43-w1713": {
+    "romaji": "herimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示数量、程度等减少，主语为减少的事物。与「増えます」相对，多用于客观叙述。",
+    "example": {
+      "jp": "人口が減っています。",
+      "kana": "じんこうがへっています。",
+      "romaji": "jinkō ga hette imasu.",
+      "zh": "人口正在减少。"
+    }
+  },
+  "l43-w1714": {
+    "romaji": "agarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示价格、数量、程度等上升，主语为上升的事物。常用于物价、气温等，如「値段が上がります」。",
+    "example": {
+      "jp": "野菜の値段が上がりました。",
+      "kana": "やさいのねだんがあがりました。",
+      "romaji": "yasai no nedan ga agarimashita.",
+      "zh": "蔬菜的价格上涨了。"
+    }
+  },
+  "l43-w1715": {
+    "romaji": "sagarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示价格、数量、程度等下降，主语为下降的事物。与「上がります」相对，多用于客观描述。",
+    "example": {
+      "jp": "ガソリンの値段が下がりました。",
+      "kana": "がそりんのねだんがさがりました。",
+      "romaji": "gasorin no nedan ga sagarimashita.",
+      "zh": "汽油的价格下降了。"
+    }
+  },
+  "l43-w1716": {
+    "romaji": "kiremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示线状物断开、断裂，主语为断开的东西。强调自然或意外断开，与他动词「切ります」相对。",
+    "example": {
+      "jp": "かばんの紐が切れました。",
+      "kana": "かばんのひもがきれました。",
+      "romaji": "kaban no himo ga kiremashita.",
+      "zh": "包的绳子断了。"
+    }
+  },
+  "l43-w1717": {
+    "romaji": "toremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示附着的东西脱落、掉下，主语为脱落物。常用于纽扣、标签等，与他动词「取ります」相对。",
+    "example": {
+      "jp": "シャツのボタンが取れました。",
+      "kana": "しゃつのぼたんがとれました。",
+      "romaji": "shatsu no botan ga toremashita.",
+      "zh": "衬衫的纽扣掉了。"
+    }
+  },
+  "l43-w1718": {
+    "romaji": "ochimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物体从高处落下、掉落，主语为落下物。强调自然掉落，与他动词「落とします」相对。",
+    "example": {
+      "jp": "荷物が床に落ちました。",
+      "kana": "にもつがゆかにおちました。",
+      "romaji": "nimotsu ga yuka ni ochimashita.",
+      "zh": "行李掉到地板上了。"
+    }
+  },
+  "l43-w1719": {
+    "romaji": "nakunarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物品用完、耗尽，主语为消耗品。强调从有到无的变化，如「ガソリンがなくなります」。",
+    "example": {
+      "jp": "車のガソリンがなくなりました。",
+      "kana": "くるまのがそりんがなくなりました。",
+      "romaji": "kuruma no gasorin ga nakunarimashita.",
+      "zh": "汽车的汽油用完了。"
+    }
+  },
+  "l43-w1722": {
+    "romaji": "shiawasena",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容人感到幸福、美满，或形容事物令人幸福。修饰名词时加「な」，如「幸せな家庭」。",
+    "example": {
+      "jp": "彼らは幸せな生活を送っています。",
+      "kana": "かれらはしあわせなせいかつをおくっています。",
+      "romaji": "karera wa shiawasena seikatsu o okutte imasu.",
+      "zh": "他们过着幸福的生活。"
+    }
+  },
+  "l43-w1723": {
+    "romaji": "umai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "口语中表示食物好吃，或表示技术高超、擅长。比「おいしい」「上手」更随意，多用于男性或非正式场合。",
+    "example": {
+      "jp": "このラーメンはうまいですね。",
+      "kana": "このらーめんはうまいですね。",
+      "romaji": "kono rāmen wa umai desu ne.",
+      "zh": "这碗拉面真好吃啊。"
+    }
+  },
+  "l43-w1724": {
+    "romaji": "mazui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示食物味道不好，也可引申为情况不妙、尴尬。口语中常用于否定对方提议或表示事情进展不顺。",
+    "example": {
+      "jp": "この料理はまずい。",
+      "kana": "このりょうりはまずい。",
+      "romaji": "kono ryōri wa mazui.",
+      "zh": "这道菜很难吃。"
+    }
+  },
+  "l43-w1725": {
+    "romaji": "tsumaranai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "形容事物无聊、没意思，也可表示微不足道、不值一提。常用于评价电影、话题或日常感受。",
+    "example": {
+      "jp": "この映画はつまらない。",
+      "kana": "このえいがはつまらない。",
+      "romaji": "kono eiga wa tsumaranai.",
+      "zh": "这部电影很无聊。"
+    }
+  },
+  "l43-w1726": {
+    "romaji": "gasorin",
+    "attributes": [],
+    "explanation": "指汽车等使用的燃料汽油，来自英语 gasoline。常与“入れる”“スタンド”等搭配。",
+    "example": {
+      "jp": "車にガソリンを入れる。",
+      "kana": "くるまにがそりんをいれる。",
+      "romaji": "kuruma ni gasorin o ireru.",
+      "zh": "给车加汽油。"
+    }
+  },
+  "l43-w1727": {
+    "romaji": "hi",
+    "attributes": [],
+    "explanation": "指燃烧的火，也可指灯火。常用搭配有“火をつける”“火を消す”。注意与“日（ひ）”同音但意义不同。",
+    "example": {
+      "jp": "火を消してください。",
+      "kana": "ひをけしてください。",
+      "romaji": "hi o keshite kudasai.",
+      "zh": "请把火灭掉。"
+    }
+  },
+  "l43-w1731": {
+    "romaji": "ima ni mo",
+    "attributes": [],
+    "explanation": "副词性表达，表示某种状态即将发生，常与“～そうだ”“～ようだ”等推测表达呼应，带有紧迫感。",
+    "example": {
+      "jp": "今にも雨が降りそうだ。",
+      "kana": "いまにもあめがふりそうだ。",
+      "romaji": "ima ni mo ame ga furisō da.",
+      "zh": "眼看就要下雨了。"
+    }
+  },
+  "l43-w1732": {
+    "romaji": "wā",
+    "attributes": [],
+    "explanation": "感叹词，表示惊讶、喜悦或赞叹，相当于中文的“哇”。口语中使用，语气随语境变化。",
+    "example": {
+      "jp": "わあ、きれいな花だ。",
+      "kana": "わあ、きれいなはなだ。",
+      "romaji": "wā, kirei na hana da.",
+      "zh": "哇，好漂亮的花。"
+    }
+  },
+  "l43-w4848": {
+    "romaji": "henna",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "“変だ”的连体形，表示奇怪、反常、可疑。可直接修饰名词，也可用于口语中表达“不对劲”。",
+    "example": {
+      "jp": "変な音が聞こえる。",
+      "kana": "へんなおとがきこえる。",
+      "romaji": "henna oto ga kikoeru.",
+      "zh": "听到奇怪的声音。"
+    }
+  },
+  "l43-brochure": {
+    "romaji": "panfuretto",
+    "attributes": [],
+    "explanation": "指宣传册、小册子，常用于旅游介绍、商品说明等。来自英语 pamphlet，但日语中多指装订成册的宣传品。",
+    "example": {
+      "jp": "旅行のパンフレットをもらう。",
+      "kana": "りょこうのぱんふれっとをもらう。",
+      "romaji": "ryokō no panfuretto o morau.",
+      "zh": "拿到旅游宣传册。"
+    }
+  },
+  "l43-rose": {
+    "romaji": "bara",
+    "attributes": [],
+    "explanation": "指玫瑰或蔷薇，常作为花卉名称使用。日语中“ばら”一般泛指蔷薇科观赏花，包括玫瑰。",
+    "example": {
+      "jp": "庭にばらを植える。",
+      "kana": "にわにばらをうえる。",
+      "romaji": "niwa ni bara o ueru.",
+      "zh": "在院子里种玫瑰。"
+    }
+  },
+  "l43-drive": {
+    "romaji": "doraibu",
+    "attributes": [],
+    "explanation": "指驾驶汽车出游、兜风，强调休闲目的。常用“ドライブに行く”表示去兜风。",
+    "example": {
+      "jp": "週末に海へドライブに行く。",
+      "kana": "しゅうまつにうみへどらいぶにいく。",
+      "romaji": "shūmatsu ni umi e doraibu ni iku.",
+      "zh": "周末去海边兜风。"
+    }
+  },
+  "l43-reason": {
+    "romaji": "riyū",
+    "attributes": [],
+    "explanation": "表示理由、原因，常用于说明行为或现象的根据。常见搭配有“理由を説明する”“～理由で”。",
+    "example": {
+      "jp": "遅刻した理由を教えてください。",
+      "kana": "ちこくしたりゆうをおしえてください。",
+      "romaji": "chikoku shita riyū o oshiete kudasai.",
+      "zh": "请告诉我迟到的理由。"
+    }
+  },
+  "l43-apologize": {
+    "romaji": "ayamarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词“謝る”的礼貌形，表示道歉、认错。常与“～に”“～を”搭配，如“先生に謝る”“過ちを謝る”。",
+    "example": {
+      "jp": "友達に謝ります。",
+      "kana": "ともだちにあやまります。",
+      "romaji": "tomodachi ni ayamarimasu.",
+      "zh": "向朋友道歉。"
+    }
+  },
+  "l43-get-acquainted": {
+    "romaji": "shiriaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示与某人建立认识关系，即“结识、认识某人”。常用「人と知り合う」或「人を知り合う」的形式，强调从不相识到相识的过程，与单纯表示状态的「知っています」不同。",
+    "example": {
+      "jp": "去年、仕事で田中さんと知り合いました。",
+      "kana": "きょねん、しごとでたなかさんとしりあいました。",
+      "romaji": "kyonen, shigoto de tanaka san to shiriaimashita.",
+      "zh": "去年因为工作结识了田中先生。"
+    }
+  }
+}

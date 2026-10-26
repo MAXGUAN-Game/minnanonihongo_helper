@@ -1,0 +1,159 @@
+{
+  "lessonId": 18,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/18.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 28,
+  "entries": [
+    {
+      "sourceId": "1280",
+      "sourceWord": "インターネット",
+      "key": "w1280"
+    },
+    {
+      "sourceId": "2430",
+      "sourceWord": "ピアノ",
+      "key": "w2430"
+    },
+    {
+      "sourceId": "749",
+      "sourceWord": "特に",
+      "key": "w749"
+    },
+    {
+      "sourceId": "838",
+      "sourceWord": "できます",
+      "key": "w838"
+    },
+    {
+      "sourceId": "839",
+      "sourceWord": "洗います",
+      "key": "w839"
+    },
+    {
+      "sourceId": "840",
+      "sourceWord": "弾きます",
+      "key": "w840"
+    },
+    {
+      "sourceId": "841",
+      "sourceWord": "歌います",
+      "key": "w841"
+    },
+    {
+      "sourceId": "842",
+      "sourceWord": "集めます",
+      "key": "w842"
+    },
+    {
+      "sourceId": "843",
+      "sourceWord": "捨てます",
+      "key": "w843"
+    },
+    {
+      "sourceId": "844",
+      "sourceWord": "換えます",
+      "key": "w844"
+    },
+    {
+      "sourceId": "845",
+      "sourceWord": "運転します",
+      "key": "w845"
+    },
+    {
+      "sourceId": "846",
+      "sourceWord": "予約します",
+      "key": "w846"
+    },
+    {
+      "sourceId": "849",
+      "sourceWord": "～メートル",
+      "key": "w849"
+    },
+    {
+      "sourceId": "851",
+      "sourceWord": "現金",
+      "key": "w851"
+    },
+    {
+      "sourceId": "852",
+      "sourceWord": "趣味",
+      "key": "w852"
+    },
+    {
+      "sourceId": "853",
+      "sourceWord": "日記",
+      "key": "w853"
+    },
+    {
+      "sourceId": "854",
+      "sourceWord": "お祈り",
+      "key": "w854"
+    },
+    {
+      "sourceId": "855",
+      "sourceWord": "課長",
+      "key": "w855"
+    },
+    {
+      "sourceId": "856",
+      "sourceWord": "部長",
+      "key": "w856"
+    },
+    {
+      "sourceId": "857",
+      "sourceWord": "社長",
+      "key": "w857"
+    },
+    {
+      "sourceId": "858",
+      "sourceWord": "動物",
+      "key": "w858"
+    },
+    {
+      "sourceId": "859",
+      "sourceWord": "馬",
+      "key": "w859"
+    },
+    {
+      "sourceId": "860",
+      "sourceWord": "へえ",
+      "key": "w860"
+    },
+    {
+      "sourceId": "861",
+      "sourceWord": "それはおもしろいですね。",
+      "key": "w861"
+    },
+    {
+      "sourceId": "862",
+      "sourceWord": "なかなか",
+      "key": "w862"
+    },
+    {
+      "sourceId": "864",
+      "sourceWord": "本当ですか。",
+      "key": "w864"
+    },
+    {
+      "sourceId": "865",
+      "sourceWord": "ぜひ",
+      "key": "w865"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "863",
+      "sourceWord": "牧場",
+      "reason": "旧版牧场对话词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "furusato",
+    "beatles",
+    "akihabara"
+  ],
+  "finalCount": 30
+}

@@ -1,0 +1,157 @@
+{
+  "lessonId": 43,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/43.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 27,
+  "entries": [
+    {
+      "sourceId": "1134",
+      "sourceWord": "優しい",
+      "key": "w1134"
+    },
+    {
+      "sourceId": "1410",
+      "sourceWord": "楽な",
+      "key": "w1410"
+    },
+    {
+      "sourceId": "1712",
+      "sourceWord": "［輸出が］増えます",
+      "key": "w1712"
+    },
+    {
+      "sourceId": "1713",
+      "sourceWord": "［輸出が］減ります",
+      "key": "w1713"
+    },
+    {
+      "sourceId": "1714",
+      "sourceWord": "［値段が］上がります",
+      "key": "w1714"
+    },
+    {
+      "sourceId": "1715",
+      "sourceWord": "［値段が］下がります",
+      "key": "w1715"
+    },
+    {
+      "sourceId": "1716",
+      "sourceWord": "［紐が］切れます",
+      "key": "w1716"
+    },
+    {
+      "sourceId": "1717",
+      "sourceWord": "［ボタンが］取れます",
+      "key": "w1717"
+    },
+    {
+      "sourceId": "1718",
+      "sourceWord": "［荷物が］落ちます",
+      "key": "w1718"
+    },
+    {
+      "sourceId": "1719",
+      "sourceWord": "［が］なくなります",
+      "key": "w1719"
+    },
+    {
+      "sourceId": "1722",
+      "sourceWord": "幸せな",
+      "key": "w1722"
+    },
+    {
+      "sourceId": "1723",
+      "sourceWord": "うまい",
+      "key": "w1723"
+    },
+    {
+      "sourceId": "1724",
+      "sourceWord": "まずい",
+      "key": "w1724"
+    },
+    {
+      "sourceId": "1725",
+      "sourceWord": "つまらない",
+      "key": "w1725"
+    },
+    {
+      "sourceId": "1726",
+      "sourceWord": "ガソリン",
+      "key": "w1726"
+    },
+    {
+      "sourceId": "1727",
+      "sourceWord": "火",
+      "key": "w1727"
+    },
+    {
+      "sourceId": "1731",
+      "sourceWord": "今にも",
+      "key": "w1731"
+    },
+    {
+      "sourceId": "1732",
+      "sourceWord": "わあ",
+      "key": "w1732"
+    },
+    {
+      "sourceId": "4848",
+      "sourceWord": "変な",
+      "key": "w4848"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1730",
+      "sourceWord": "センス",
+      "reason": "旧版服装品位词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1733",
+      "sourceWord": "会員",
+      "reason": "旧版会员介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1734",
+      "sourceWord": "適当な",
+      "reason": "旧版相亲介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1735",
+      "sourceWord": "年齢",
+      "reason": "旧版相亲介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1736",
+      "sourceWord": "収入",
+      "reason": "旧版相亲介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1737",
+      "sourceWord": "ぴったり",
+      "reason": "旧版相亲介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1738",
+      "sourceWord": "その上",
+      "reason": "旧版相亲介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1739",
+      "sourceWord": "～と言います",
+      "reason": "旧版相亲介绍表达，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "brochure",
+    "rose",
+    "drive",
+    "reason",
+    "apologize",
+    "get-acquainted"
+  ],
+  "finalCount": 25
+}

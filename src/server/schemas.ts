@@ -1,16 +1,20 @@
 import { z } from 'zod';
 import { GRAMMAR_CHAT_MAX_TURNS } from '../shared/grammar-chat';
 import { recordingIdSchema, recordingMetadataSchema, speakingAssessmentSchema } from '../shared/recordings';
+import { practiceQuestionSchema, practiceAttemptSchema, practicePositionSchema } from '../shared/ai-practice';
 
 export const lessonIdSchema = z.number().int().min(1).max(50);
 const id = z.string().trim().min(1).max(160);
 const short = z.string().trim().min(1).max(1000);
 const timestamp = z.iso.datetime({ offset: true });
+export const vocabularyMasterySchema = z.object({ wordId: id, lessonId: lessonIdSchema, mastered: z.boolean(), updatedAt: timestamp }).strict();
 export const exampleSchema = z.object({ jp: short, kana: z.string().max(1500), zh: short }).strict();
 export const correctionSchema = z.object({ goal: short, original: z.string().max(2000), corrected: exampleSchema, explanation: short, grammarId: id.optional() }).strict();
 export const settingsSchema = z.object({ currentLessonId: lessonIdSchema, dailyMinutes: z.union([z.literal(15), z.literal(60)]), largeText: z.boolean(), furigana: z.boolean(), autoplay: z.boolean(), model: z.string().trim().min(1).max(100).regex(/^[a-zA-Z0-9._:-]+$/), hasApiKey: z.boolean(), setupComplete: z.boolean() }).strict();
 export const settingsPatchSchema = settingsSchema.omit({ hasApiKey: true }).partial().extend({ apiKey: z.string().trim().max(512).optional() }).strict();
-export const progressSchema = z.object({ lessonId: lessonIdSchema, stage: z.enum(['understand', 'listen', 'speak', 'conversation']), cursor: z.number().int().min(0).max(10000), status: z.enum(['seen', 'assisted', 'independent']), itemId: id.optional(), updatedAt: timestamp }).strict();
+export const progressSchema = z.object({ lessonId: lessonIdSchema, stage: z.enum(['vocabulary', 'understand', 'listen', 'speak', 'conversation']), cursor: z.number().int().min(0).max(10000), status: z.enum(['seen', 'assisted', 'independent']), itemId: id.optional(), updatedAt: timestamp,
+  manualProgress: z.object({ score: z.number().min(0).max(100), baselineCount: z.number().int().min(0).max(100000) }).strict().optional(),
+}).strict();
 export const attemptInputSchema = z.object({ lessonId: lessonIdSchema, itemId: id, result: z.enum(['again', 'hint', 'good']), answer: z.string().max(2000).optional(), usedHint: z.boolean().optional(), recordingId: recordingIdSchema.optional(), assessmentId: recordingIdSchema.optional() }).strict();
 export const attemptSchema = attemptInputSchema.extend({ id, createdAt: timestamp }).strict();
 export type Attempt = z.infer<typeof attemptSchema>;
@@ -36,7 +40,12 @@ export const aiResponseSchema = z.object({ replyJa: z.string().trim().min(1).max
 const backupBase = z.object({ exportedAt: timestamp, settings: settingsSchema.omit({ hasApiKey: true }), progress: z.array(progressSchema).max(10000), attempts: z.array(attemptSchema).max(100000), reviews: z.array(reviewSchema).max(100000), sessions: z.array(sessionSchema).max(100000) });
 export const backupV1Schema = backupBase.extend({ version: z.literal(1) }).strict();
 export const backupV2Schema = backupBase.extend({ version: z.literal(2), recordings: z.array(recordingMetadataSchema).max(100000), assessments: z.array(speakingAssessmentSchema).max(100000) }).strict();
-export const backupSchema = z.discriminatedUnion('version', [backupV1Schema, backupV2Schema]);
+export const backupV3Schema = backupBase.extend({ version: z.literal(3), recordings: z.array(recordingMetadataSchema).max(100000), assessments: z.array(speakingAssessmentSchema).max(100000),
+  aiQuestions: z.array(practiceQuestionSchema).max(100000), aiAttempts: z.array(practiceAttemptSchema).max(100000), aiPositions: z.array(practicePositionSchema).max(150) }).strict();
+export const backupV4Schema = backupBase.extend({ version: z.literal(4), recordings: z.array(recordingMetadataSchema).max(0), assessments: z.array(speakingAssessmentSchema).max(100000),
+  aiQuestions: z.array(practiceQuestionSchema).max(100000), aiAttempts: z.array(practiceAttemptSchema).max(100000), aiPositions: z.array(practicePositionSchema).max(200), vocabularyMastery: z.array(vocabularyMasterySchema).max(10000).default([]) }).strict()
+  .refine(value => !JSON.stringify(value).includes('"recordingId":'), 'v4备份不能包含录音存档关联。');
+export const backupSchema = z.discriminatedUnion('version', [backupV1Schema, backupV2Schema, backupV3Schema, backupV4Schema]);
 export type Backup = z.infer<typeof backupSchema>;
 
 export class ApiError extends Error {

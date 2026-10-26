@@ -44,6 +44,7 @@ function startAudio(text,lang,rate,sourceId,call){
 const speech={
   status:'idle',label:'',sourceId:undefined,speaking:false,paused:false,
   stop(){audioEpoch++;publishAudio('idle','',undefined)},
+  stopSource(sourceId){if(speech.sourceId===sourceId)speech.stop()},
   say(text,lang='ja-JP',rate=1,sourceId){startAudio(text,lang,rate,sourceId,lang==='ja-JP'&&rate===1?[text]:rate===1?[text,lang]:[text,lang,rate])},
   getEpoch(){return audioEpoch},
   sayAuto(text,expected,lang='ja-JP',rate=1,sourceId){if(expected!==audioEpoch||document.hidden)return false;startAudio(text,lang,rate,sourceId,[text,'auto']);return true},
@@ -65,7 +66,7 @@ createRoot(document.getElementById('root')).render(<Harness/>);
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'language-master-grammar-ui-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{ name: 'isolated-grammar-chat',
       resolveId(id) { if (id === '/__grammar-harness.tsx') return id; }, load(id) { if (id === '/__grammar-harness.tsx') return harness; },
     }] });
@@ -158,8 +159,8 @@ describe('grammar free chat UI', () => {
       await page.getByText('已聊 1 句', { exact: true }).waitFor();
       const opening = page.locator('.chat-row.assistant .bubble').first();
       const reply = page.locator('.chat-row.assistant .bubble').last();
-      const allControls = page.getByRole('region', { name: '音频控制', exact: true });
-      const replyControls = reply.getByRole('region', { name: '音频控制', exact: true });
+      const allControls = page.getByRole('group', { name: '音频控制', exact: true });
+      const replyControls = reply.getByRole('group', { name: '音频控制', exact: true });
       expect(await allControls.count()).toBe(1);
       expect(await opening.locator('.audio-controls').count()).toBe(0);
       expect(await replyControls.getByRole('status').textContent()).toContain('正在播放');
@@ -167,11 +168,11 @@ describe('grammar free chat UI', () => {
       expect(await allControls.evaluate(element => getComputedStyle(element).position)).toBe('static');
       await replyControls.getByRole('button', { name: '暂停', exact: true }).click();
       expect(await replyControls.getByRole('status').textContent()).toContain('已暂停');
-      await replyControls.getByRole('button', { name: '继续播放', exact: true }).click();
+      await replyControls.getByRole('button', { name: '播放', exact: true }).click();
       expect(await replyControls.getByRole('status').textContent()).toContain('正在播放');
 
       await opening.getByRole('button', { name: '听这句', exact: true }).click();
-      const openingControls = opening.getByRole('region', { name: '音频控制', exact: true });
+      const openingControls = opening.getByRole('group', { name: '音频控制', exact: true });
       expect(await openingControls.count()).toBe(1);
       expect(await replyControls.count()).toBe(0);
       expect(await allControls.count()).toBe(1);
@@ -182,10 +183,10 @@ describe('grammar free chat UI', () => {
       expect(await replyControls.count()).toBe(1);
       expect(await page.evaluate(() => (window as any).speechCalls.at(-1))).toEqual(['窓から海が見えます。', 'ja-JP', .65]);
       await page.getByRole('button', { name: '听讲解', exact: true }).click();
-      expect(await replyControls.getByRole('status').textContent()).toContain('中文讲解');
+      expect(await replyControls.getByRole('status').textContent()).toContain('正在播放');
       expect(await page.locator('.bubble-translation').count()).toBe(0);
       await page.getByRole('button', { name: '再听一次', exact: true }).click();
-      expect(await replyControls.getByRole('status').textContent()).toContain('日语朗读');
+      expect(await replyControls.getByRole('status').textContent()).toContain('正在播放');
       expect(await page.locator('.assistant p[lang="ja"]').count()).toBe(0);
       expect(await allControls.count()).toBe(1);
 
@@ -203,7 +204,7 @@ describe('grammar free chat UI', () => {
       await replyControls.scrollIntoViewIfNeeded();
       await page.screenshot({ path: resolve(`test-results/v1.1.1-conversation-${width === 390 ? 'mobile' : 'desktop'}.png`), fullPage: true });
       await replyControls.getByRole('button', { name: '停止', exact: true }).click();
-      expect(await allControls.count()).toBe(0);
+      await expect.poll(() => allControls.count()).toBe(0);
     } finally { await context.close(); }
   });
 
@@ -214,9 +215,9 @@ describe('grammar free chat UI', () => {
     try {
       const recorded = page.locator('.chat-row.user .bubble');
       await recorded.getByRole('button', { name: '听我的录音', exact: true }).click();
-      const controls = recorded.getByRole('region', { name: '音频控制', exact: true });
-      expect(await controls.getByRole('status').textContent()).toContain('我的录音');
-      expect(await page.getByRole('region', { name: '音频控制', exact: true }).count()).toBe(1);
+      const controls = recorded.getByRole('group', { name: '音频控制', exact: true });
+      expect(await controls.getByRole('status').textContent()).toContain('正在播放');
+      expect(await page.getByRole('group', { name: '音频控制', exact: true }).count()).toBe(1);
       expect(await page.evaluate(() => (window as any).speechCalls)).toEqual([['/api/recordings/test-recording/audio', 'url']]);
       await page.locator('.chat-row.assistant').getByRole('button', { name: '听这句', exact: true }).click();
       expect(await controls.count()).toBe(0);

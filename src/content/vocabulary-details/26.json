@@ -1,0 +1,558 @@
+{
+  "l26-w1046": {
+    "romaji": "mimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「見ます」是「見る」的礼貌体，表示“看、观看”，也可用于“查看、检查”具体事物。搭配多为电影、电视、文件、情况等。",
+    "example": {
+      "jp": "昨日、家族と映画を見ました。",
+      "kana": "きのう、かぞくとえいがをみました。",
+      "romaji": "kinou, kazoku to eiga o mimashita.",
+      "zh": "昨天和家人看了电影。"
+    }
+  },
+  "l26-w1047": {
+    "romaji": "mimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「診ます」是「診る」的礼貌体，专指医生诊察、检查病人或病情。与「見ます」同音但汉字不同，医疗场景中常用。",
+    "example": {
+      "jp": "医者は患者の胸を診ました。",
+      "kana": "いしゃはかんじゃのむねをみました。",
+      "romaji": "isha wa kanja no mune o mimashita.",
+      "zh": "医生检查了患者的胸部。"
+    }
+  },
+  "l26-w1048": {
+    "romaji": "sagashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「探します」是「探す」的礼貌体，表示寻找人或物，也可用于寻求机会、工作等抽象对象。宾语用「を」标记。",
+    "example": {
+      "jp": "駅で友達を探しています。",
+      "kana": "えきでともだちをさがしています。",
+      "romaji": "eki de tomodachi o sagashite imasu.",
+      "zh": "正在车站找朋友。"
+    }
+  },
+  "l26-w1049": {
+    "romaji": "sagashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「捜します」是「捜す」的礼貌体，多用于搜寻失物、失踪者等，强调寻找下落。与「探します」同音，但汉字侧重搜寻。",
+    "example": {
+      "jp": "警察がなくした財布を捜しています。",
+      "kana": "けいさつがなくしたさいふをさがしています。",
+      "romaji": "keisatsu ga nakushita saifu o sagashite imasu.",
+      "zh": "警察正在寻找丢失的钱包。"
+    }
+  },
+  "l26-w1050": {
+    "romaji": "okuremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「遅れます」是「遅れる」的礼貌体，表示迟到、晚点或落后于预定时间。常用「～に遅れる」表示赶不上某时间。",
+    "example": {
+      "jp": "電車が事故で遅れました。",
+      "kana": "でんしゃがじこでおくれました。",
+      "romaji": "densha ga jiko de okuremashita.",
+      "zh": "电车因事故晚点了。"
+    }
+  },
+  "l26-w1051": {
+    "romaji": "maniaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「間に合います」是「間に合う」的礼貌体，表示赶得上时间或够用。常用「～に間に合う」表示赶上某期限。",
+    "example": {
+      "jp": "急げば最終電車に間に合います。",
+      "kana": "いそげばさいしゅうでんしゃにまにあいます。",
+      "romaji": "isogeba saishuu densha ni maniaimasu.",
+      "zh": "快一点的话能赶上末班电车。"
+    }
+  },
+  "l26-w1052": {
+    "romaji": "yarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「やります」是「やる」的礼貌体，表示“做、干”，语气较随便，可用于工作、作业、活动等。也可表示“给（动植物等）”。",
+    "example": {
+      "jp": "日曜日にボランティアをやります。",
+      "kana": "にちようびにぼらんてぃあをやります。",
+      "romaji": "nichiyoubi ni borantia o yarimasu.",
+      "zh": "星期天做志愿者活动。"
+    }
+  },
+  "l26-w1057": {
+    "romaji": "kibun ga ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「気分がいい」表示心情好或身体感觉舒服，常用于描述当时的状态。反义是「気分が悪い」。",
+    "example": {
+      "jp": "今日は天気がよくて気分がいいです。",
+      "kana": "きょうはてんきがよくてきぶんがいいです。",
+      "romaji": "kyou wa tenki ga yokute kibun ga ii desu.",
+      "zh": "今天天气好，心情很舒服。"
+    }
+  },
+  "l26-w1058": {
+    "romaji": "kibun ga warui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「気分が悪い」表示心情不好或身体不舒服，也可用于觉得恶心、不快的场合。注意与「機嫌が悪い」区别，后者多指情绪不佳。",
+    "example": {
+      "jp": "朝から気分が悪いので、学校を休みます。",
+      "kana": "あさからきぶんがわるいので、がっこうをやすみます。",
+      "romaji": "asa kara kibun ga warui node, gakkou o yasumimasu.",
+      "zh": "从早上开始不舒服，所以不去学校了。"
+    }
+  },
+  "l26-w1061": {
+    "romaji": "undoukai",
+    "attributes": [],
+    "explanation": "「運動会」指学校或社区举办的运动会，通常有各种竞技和表演项目。是日本学校秋季常见活动。",
+    "example": {
+      "jp": "来週の日曜日に小学校の運動会があります。",
+      "kana": "らいしゅうのにちようびにしょうがっこうのうんどうかいがあります。",
+      "romaji": "raishuu no nichiyoubi ni shougakkou no undoukai ga arimasu.",
+      "zh": "下周日有小学的运动会。"
+    }
+  },
+  "l26-w1062": {
+    "romaji": "basho",
+    "attributes": [],
+    "explanation": "「場所」表示地点、场所，可用于具体或抽象的位置。常与「～の場所」搭配，指某事物所在的地方。",
+    "example": {
+      "jp": "待ち合わせの場所を地図で確認します。",
+      "kana": "まちあわせのばしょをちずでかくにんします。",
+      "romaji": "machiawase no basho o chizu de kakunin shimasu.",
+      "zh": "用地图确认碰头的地点。"
+    }
+  },
+  "l26-w1063": {
+    "romaji": "borantia",
+    "attributes": [],
+    "explanation": "「ボランティア」指志愿者或志愿活动，常用于社区服务、救灾、环保等无偿活动。可作名词直接使用。",
+    "example": {
+      "jp": "週末に公園でボランティアをします。",
+      "kana": "しゅうまつにこうえんでぼらんてぃあをします。",
+      "romaji": "shuumatsu ni kouen de borantia o shimasu.",
+      "zh": "周末在公园做志愿者活动。"
+    }
+  },
+  "l26-w1064": {
+    "romaji": "~ben",
+    "attributes": [],
+    "explanation": "接在地区名后构成名词，表示该地区的方言。例如「大阪弁」「東北弁」。注意不能单独使用，必须前接地名。",
+    "example": {
+      "jp": "彼は関西弁で話します。",
+      "kana": "かれはかんさいべんではなします。",
+      "romaji": "kare wa kansai ben de hanashimasu.",
+      "zh": "他用关西方言说话。"
+    }
+  },
+  "l26-w1065": {
+    "romaji": "kondo",
+    "attributes": [],
+    "explanation": "名词，表示“这次”或“下次”，具体含义需根据上下文判断。常与「～は」「～の」等搭配。",
+    "example": {
+      "jp": "今度の日曜日に映画を見に行きます。",
+      "kana": "こんどのにちようびにえいがをみにいきます。",
+      "romaji": "kondo no nichiyoubi ni eiga o mi ni ikimasu.",
+      "zh": "这个星期天要去看电影。"
+    }
+  },
+  "l26-w1066": {
+    "romaji": "zuibun",
+    "attributes": [],
+    "explanation": "副词，表示程度相当高，相当于“相当”“很”。常用于口语，带有感叹语气。",
+    "example": {
+      "jp": "今日は随分寒いですね。",
+      "kana": "きょうはずいぶんさむいですね。",
+      "romaji": "kyou wa zuibun samui desu ne.",
+      "zh": "今天相当冷啊。"
+    }
+  },
+  "l26-w1067": {
+    "romaji": "chokusetsu",
+    "attributes": [],
+    "explanation": "副词，表示不经过中间事物，直接进行动作。常与「～に」「～と」等搭配。",
+    "example": {
+      "jp": "直接本人に聞いてください。",
+      "kana": "ちょくせつほんにんにきいてください。",
+      "romaji": "chokusetsu honnin ni kiite kudasai.",
+      "zh": "请直接问本人。"
+    }
+  },
+  "l26-w1068": {
+    "romaji": "itsudemo",
+    "attributes": [],
+    "explanation": "副词，表示任何时候都行，相当于“随时”。常用于肯定句，表示随时可能。",
+    "example": {
+      "jp": "いつでも電話してください。",
+      "kana": "いつでもでんわしてください。",
+      "romaji": "itsudemo denwa shite kudasai.",
+      "zh": "请随时打电话。"
+    }
+  },
+  "l26-w1069": {
+    "romaji": "dokodemo",
+    "attributes": [],
+    "explanation": "代词性副词，表示任何地方都行，相当于“哪里都”。常与肯定谓语搭配。",
+    "example": {
+      "jp": "どこでもいいから座ってください。",
+      "kana": "どこでもいいからすわってください。",
+      "romaji": "dokodemo ii kara suwatte kudasai.",
+      "zh": "哪里都行，请坐。"
+    }
+  },
+  "l26-w1070": {
+    "romaji": "daredemo",
+    "attributes": [],
+    "explanation": "代词性副词，表示任何人，相当于“谁都”。常用于肯定句，表示无一例外。",
+    "example": {
+      "jp": "誰でも参加できます。",
+      "kana": "だれでもさんかできます。",
+      "romaji": "daredemo sanka dekimasu.",
+      "zh": "谁都可以参加。"
+    }
+  },
+  "l26-w1071": {
+    "romaji": "nandemo",
+    "attributes": [],
+    "explanation": "代词性副词，表示任何东西或事情，相当于“什么都”。常用于肯定句，表示全部。",
+    "example": {
+      "jp": "何でも食べます。",
+      "kana": "なんでもたべます。",
+      "romaji": "nandemo tabemasu.",
+      "zh": "什么都吃。"
+    }
+  },
+  "l26-w1072": {
+    "romaji": "konna~",
+    "attributes": [],
+    "explanation": "连体词，表示“这样的”，指代说话人身边或刚提到的事物。后接名词。",
+    "example": {
+      "jp": "こんな本が好きです。",
+      "kana": "こんなほんがすきです。",
+      "romaji": "konna hon ga suki desu.",
+      "zh": "喜欢这样的书。"
+    }
+  },
+  "l26-w1073": {
+    "romaji": "sonna~",
+    "attributes": [],
+    "explanation": "连体词，表示“那样的”，指代对方身边或对方刚提到的事物。后接名词。",
+    "example": {
+      "jp": "そんなことは知りません。",
+      "kana": "そんなことはしりません。",
+      "romaji": "sonna koto wa shirimasen.",
+      "zh": "那样的事我不知道。"
+    }
+  },
+  "l26-w1074": {
+    "romaji": "anna~",
+    "attributes": [],
+    "explanation": "连体词，表示“那样的”，指代离双方都远的事物或双方都知道的事物。后接名词。",
+    "example": {
+      "jp": "あんな家に住みたいです。",
+      "kana": "あんないえにすみたいです。",
+      "romaji": "anna ie ni sumitai desu.",
+      "zh": "想住那样的房子。"
+    }
+  },
+  "l26-w1075": {
+    "romaji": "[heya ga] katazukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅰ（五段），自动词，表示房间等变得整齐。主语用「が」提示。他动词形式为「片づける」。",
+    "example": {
+      "jp": "部屋が片づきました。",
+      "kana": "へやがかたづきました。",
+      "romaji": "heya ga katazukimashita.",
+      "zh": "房间收拾好了。"
+    }
+  },
+  "l26-w1076": {
+    "romaji": "gomi",
+    "attributes": [],
+    "explanation": "指日常生活产生的垃圾、废弃物。常与「出す」「捨てる」等动词搭配，注意日本有严格的垃圾分类规则。",
+    "example": {
+      "jp": "ごみは月曜日に出してください。",
+      "kana": "ごみはげつようびにだしてください。",
+      "romaji": "gomi wa getsuyoubi ni dashite kudasai.",
+      "zh": "请在星期一把垃圾拿出去。"
+    }
+  },
+  "l26-w1077": {
+    "romaji": "dashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「出す」的礼貌体，意为把垃圾拿到指定地点。常与「ごみを」搭配，表示倒垃圾。",
+    "example": {
+      "jp": "朝八時までにごみを出します。",
+      "kana": "あさはちじまでにごみをだします。",
+      "romaji": "asa hachiji made ni gomi o dashimasu.",
+      "zh": "早上八点前倒垃圾。"
+    }
+  },
+  "l26-w1080": {
+    "romaji": "okiba",
+    "attributes": [],
+    "explanation": "表示放置物品的场所，常与「ごみ」等词复合，如「ごみ置き場」。",
+    "example": {
+      "jp": "ごみ置き場はどこですか。",
+      "kana": "ごみおきばはどこですか。",
+      "romaji": "gomi okiba wa doko desu ka.",
+      "zh": "垃圾放置处在哪里？"
+    }
+  },
+  "l26-w1081": {
+    "romaji": "yoko",
+    "attributes": [],
+    "explanation": "表示横向、旁边、侧面。常与「の」连用，如「駅の横」，指某物的旁边。",
+    "example": {
+      "jp": "銀行の横に郵便局があります。",
+      "kana": "ぎんこうのよこにゆうびんきょくがあります。",
+      "romaji": "ginkou no yoko ni yuubinkyoku ga arimasu.",
+      "zh": "银行旁边有邮局。"
+    }
+  },
+  "l26-w1082": {
+    "romaji": "bin",
+    "attributes": [],
+    "explanation": "指玻璃或塑料制的瓶子，常用于饮料、酒等。垃圾分类时通常单独一类。",
+    "example": {
+      "jp": "空の瓶を集めてください。",
+      "kana": "あきのびんをあつめてください。",
+      "romaji": "aki no bin o atsumete kudasai.",
+      "zh": "请把空瓶子收集起来。"
+    }
+  },
+  "l26-w1083": {
+    "romaji": "kan",
+    "attributes": [],
+    "explanation": "指金属制的罐子，如易拉罐、罐头等。与「瓶」类似，属于可回收垃圾。",
+    "example": {
+      "jp": "缶は資源ごみです。",
+      "kana": "かんはしげんごみです。",
+      "romaji": "kan wa shigen gomi desu.",
+      "zh": "罐子属于资源垃圾。"
+    }
+  },
+  "l26-w1085": {
+    "romaji": "gasu",
+    "attributes": [],
+    "explanation": "指煤气、燃气等气体燃料。常用「ガス会社」「ガス代」等搭配。",
+    "example": {
+      "jp": "ガスの火を消してください。",
+      "kana": "がすのひをけしてください。",
+      "romaji": "gasu no hi o keshite kudasai.",
+      "zh": "请把煤气火关掉。"
+    }
+  },
+  "l26-w1086": {
+    "romaji": "-gaisha",
+    "attributes": [],
+    "explanation": "接在名词后表示公司，如「ガス会社」「運送会社」。不能单独使用。",
+    "example": {
+      "jp": "父はガス会社で働いています。",
+      "kana": "ちちはがすがいしゃではたらいています。",
+      "romaji": "chichi wa gasu gaisha de hataraite imasu.",
+      "zh": "父亲在燃气公司工作。"
+    }
+  },
+  "l26-w1087": {
+    "romaji": "renrakushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「連絡する」的礼貌体，意为联系、联络。常与「に」或「と」搭配，如「先生に連絡します」。",
+    "example": {
+      "jp": "後で会社に連絡します。",
+      "kana": "あとでかいしゃにれんらくします。",
+      "romaji": "ato de kaisha ni renraku shimasu.",
+      "zh": "稍后联系公司。"
+    }
+  },
+  "l26-w1191": {
+    "romaji": "saifu",
+    "attributes": [],
+    "explanation": "指钱包，用于装钱和卡片。常与「落とす」「拾う」等动词搭配。",
+    "example": {
+      "jp": "財布を落としてしまいました。",
+      "kana": "さいふをおとしてしまいました。",
+      "romaji": "saifu o otoshite shimaimashita.",
+      "zh": "我把钱包弄丢了。"
+    }
+  },
+  "l26-w1377": {
+    "romaji": "bon'odori",
+    "attributes": [],
+    "explanation": "指盂兰盆节期间跳的传统舞蹈，是日本夏季的民俗活动。",
+    "example": {
+      "jp": "夏祭りで盆踊りを見ました。",
+      "kana": "なつまつりでぼんおどりをみました。",
+      "romaji": "natsumatsuri de bon'odori o mimashita.",
+      "zh": "在夏日祭上看了盂兰盆舞。"
+    }
+  },
+  "l26-w1408": {
+    "romaji": "hiroimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「拾う」的礼貌体，意为捡起、拾取。常与「財布」「ごみ」等搭配。",
+    "example": {
+      "jp": "道でお金を拾いました。",
+      "kana": "みちでおかねをひろいました。",
+      "romaji": "michi de okane o hiroimashita.",
+      "zh": "在路上捡到了钱。"
+    }
+  },
+  "l26-w3461": {
+    "romaji": "heijitsu",
+    "attributes": [],
+    "explanation": "指除周末和节假日以外的工作日，常用于区分日期或安排日程。与「休日」相对，多用于正式或书面语境。",
+    "example": {
+      "jp": "平日は電車がとても混みます。",
+      "kana": "へいじつはでんしゃがとてもこみます。",
+      "romaji": "heijitsu wa densha ga totemo komimasu.",
+      "zh": "工作日电车非常拥挤。"
+    }
+  },
+  "l26-w5637": {
+    "romaji": "furīmāketto",
+    "attributes": [],
+    "explanation": "指在户外或室内场地临时开设的二手商品集市，常译作“跳蚤市场”。口语中常简称为「フリマ」。",
+    "example": {
+      "jp": "日曜日に公園でフリーマーケットがあります。",
+      "kana": "にちようびにこうえんでふりーまーけっとがあります。",
+      "romaji": "nichiyōbi ni kōen de furīmāketto ga arimasu.",
+      "zh": "星期天在公园有跳蚤市场。"
+    }
+  },
+  "l26-w5638": {
+    "romaji": "kokkaigi jidō",
+    "attributes": [],
+    "explanation": "指日本国会的议事堂建筑，位于东京永田町。常作为参观景点或政治象征出现。",
+    "example": {
+      "jp": "国会議事堂の前で写真を撮りました。",
+      "kana": "こっかいぎじどうのまえでしゃしんをとりました。",
+      "romaji": "kokkaigi jidō no mae de shashin o torimashita.",
+      "zh": "在国会议事堂前拍了照片。"
+    }
+  },
+  "l26-w5639": {
+    "romaji": "moeru gomi",
+    "attributes": [],
+    "explanation": "指可燃垃圾，即可以焚烧处理的家庭垃圾。日本各地垃圾分类规则不同，投放日期和袋子的要求也不同。",
+    "example": {
+      "jp": "燃えるごみは月曜日に出してください。",
+      "kana": "もえるごみはげつようびにだしてください。",
+      "romaji": "moeru gomi wa getsuyōbi ni dashite kudasai.",
+      "zh": "请在星期一把可燃垃圾拿出去。"
+    }
+  },
+  "l26-edoya": {
+    "romaji": "edoyasutoa",
+    "attributes": [],
+    "explanation": "教材中虚构的商店名称，可理解为“江户屋商店”。专有名词，通常不加「さん」等敬称直接使用。",
+    "example": {
+      "jp": "エドヤストアで牛乳を買いました。",
+      "kana": "えどやすとあでぎゅうにゅうをかいました。",
+      "romaji": "edoyasutoa de gyūnyū o kaimashita.",
+      "zh": "在江户屋商店买了牛奶。"
+    }
+  },
+  "l26-hoshide": {
+    "romaji": "hoshide akihiko",
+    "attributes": [],
+    "explanation": "日本宇航员星出彰彦的姓名。专有名词，在句中可直接使用，正式场合可加「さん」。",
+    "example": {
+      "jp": "星出彰彦さんは宇宙飛行士です。",
+      "kana": "ほしであきひこさんはうちゅうひこうしです。",
+      "romaji": "hoshide akihiko san wa uchū hikōshi desu.",
+      "zh": "星出彰彦是宇航员。"
+    }
+  },
+  "l26-space": {
+    "romaji": "uchū",
+    "attributes": [],
+    "explanation": "指地球大气层以外的空间，即宇宙。常见搭配有「宇宙に行く」「宇宙から見る」等。",
+    "example": {
+      "jp": "宇宙から地球を見てみたいです。",
+      "kana": "うちゅうからちきゅうをみてみたいです。",
+      "romaji": "uchū kara chikyū o mite mitai desu.",
+      "zh": "我想从宇宙看看地球。"
+    }
+  },
+  "l26-sama": {
+    "romaji": "sama",
+    "attributes": [],
+    "explanation": "接在姓名或称呼后表示高度敬意的敬称，比「さん」更郑重，常用于商务信函、服务行业或对尊长。",
+    "example": {
+      "jp": "田中様、お電話ありがとうございます。",
+      "kana": "たなかさま、おでんわありがとうございます。",
+      "romaji": "tanaka sama, odenwa arigatō gozaimasu.",
+      "zh": "田中先生，感谢您的来电。"
+    }
+  },
+  "l26-spaceship": {
+    "romaji": "uchūsen",
+    "attributes": [],
+    "explanation": "指在宇宙中航行的载人飞船或航天器。与「宇宙ステーション」不同，强调飞行器本身。",
+    "example": {
+      "jp": "宇宙船が地球の周りを回っています。",
+      "kana": "うちゅうせんがちきゅうのまわりをまわっています。",
+      "romaji": "uchūsen ga chikyū no mawari o mawatte imasu.",
+      "zh": "宇宙飞船正绕着地球飞行。"
+    }
+  },
+  "l26-space-station": {
+    "romaji": "uchū sutēshon",
+    "attributes": [],
+    "explanation": "指在宇宙空间长期运行、供宇航员居住和工作的设施，如国际空间站。常与「宇宙船」区分使用。",
+    "example": {
+      "jp": "宇宙ステーションで実験を行います。",
+      "kana": "うちゅうすてーしょんでじっけんをおこないます。",
+      "romaji": "uchū sutēshon de jikken o okonaimasu.",
+      "zh": "在空间站进行实验。"
+    }
+  },
+  "l26-different": {
+    "romaji": "chigaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「違う」的礼貌形，表示“不同、不一样”。常用于否定对方的说法或指出差异，如「いいえ、違います」。",
+    "example": {
+      "jp": "私の意見はあなたと違います。",
+      "kana": "わたしのいけんはあなたとちがいます。",
+      "romaji": "watashi no iken wa anata to chigaimasu.",
+      "zh": "我的意见和你不同。"
+    }
+  },
+  "l26-astronaut": {
+    "romaji": "uchū hikōshi",
+    "attributes": [],
+    "explanation": "指接受训练并在宇宙中执行任务的宇航员。日本常通过JAXA选拔，如星出彰彦等。",
+    "example": {
+      "jp": "将来、宇宙飛行士になりたいです。",
+      "kana": "しょうらい、うちゅうひこうしになりたいです。",
+      "romaji": "shōrai, uchū hikōshi ni naritai desu.",
+      "zh": "将来我想成为宇航员。"
+    }
+  }
+}

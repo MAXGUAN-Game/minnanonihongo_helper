@@ -1,0 +1,21 @@
+{
+  "lessonId": 24,
+  "model": "deepseek-flash",
+  "reviewedCount": 22,
+  "corrections": [
+    {
+      "id": "l24-v1",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「くれます」是授受动词，以“人に物をくれる”结构带宾语，属于他动词。"
+    },
+    {
+      "id": "l24-w992",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「引っ越しします」表示自身迁移，不带宾语，是自动词，不是自他两用。"
+    }
+  ]
+}

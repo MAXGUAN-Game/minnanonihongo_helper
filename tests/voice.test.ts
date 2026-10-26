@@ -43,6 +43,17 @@ afterEach(async () => {
 });
 
 describe('independent cloud voice settings', () => {
+  it('fixes AI dialogue A as male and B as female independently of voice preferences and caches each separately', async () => {
+    const voiceFetch = mockVoice(); const { app } = create({ voiceFetch });
+    await configure(app, { voice: 'Japanese_CalmLady', secondaryVoice: 'Japanese_CalmLady', alternateSpeakers: false });
+    for (const speaker of ['dialogue-a', 'dialogue-b']) {
+      expect((await synthesize(app, { text: 'こんにちは。', speaker })).statusCode).toBe(200);
+      expect((await synthesize(app, { text: 'こんにちは。', speaker })).headers['x-voice-cache']).toBe('hit');
+    }
+    expect(voiceFetch).toHaveBeenCalledTimes(2);
+    const bodies = voiceFetch.mock.calls.map(([, init]) => JSON.parse(String(init?.body)));
+    expect(bodies.map(body => body.voice_setting.voice_id)).toEqual(['Japanese_GentleButler', 'Japanese_KindLady']);
+  });
   it('defaults to system speech and persists MiniMax settings without changing or exporting either secret', async () => {
     const first = create();
     expect((await first.app.inject('/api/voice/settings')).json()).toEqual(DEFAULT_VOICE_SETTINGS);

@@ -1,0 +1,283 @@
+{
+  "lessonId": 12,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/12.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 52,
+  "entries": [
+    {
+      "sourceId": "2158",
+      "sourceWord": "レモン",
+      "key": "w2158"
+    },
+    {
+      "sourceId": "294",
+      "sourceWord": "牛肉",
+      "key": "w294"
+    },
+    {
+      "sourceId": "295",
+      "sourceWord": "豚肉",
+      "key": "w295"
+    },
+    {
+      "sourceId": "296",
+      "sourceWord": "鶏肉",
+      "key": "w296"
+    },
+    {
+      "sourceId": "532",
+      "sourceWord": "一番",
+      "key": "w532"
+    },
+    {
+      "sourceId": "599",
+      "sourceWord": "簡単な",
+      "key": "w599"
+    },
+    {
+      "sourceId": "600",
+      "sourceWord": "近い",
+      "key": "w600"
+    },
+    {
+      "sourceId": "601",
+      "sourceWord": "遠い",
+      "key": "w601"
+    },
+    {
+      "sourceId": "602",
+      "sourceWord": "早い",
+      "key": "w602"
+    },
+    {
+      "sourceId": "603",
+      "sourceWord": "遅い",
+      "key": "w603"
+    },
+    {
+      "sourceId": "604",
+      "sourceWord": "遅い",
+      "key": "w603"
+    },
+    {
+      "sourceId": "605",
+      "sourceWord": "速い",
+      "key": "w605"
+    },
+    {
+      "sourceId": "606",
+      "sourceWord": "多い",
+      "key": "w606"
+    },
+    {
+      "sourceId": "607",
+      "sourceWord": "少ない",
+      "key": "w607"
+    },
+    {
+      "sourceId": "608",
+      "sourceWord": "温かい",
+      "key": "w608"
+    },
+    {
+      "sourceId": "609",
+      "sourceWord": "暖かい",
+      "key": "w609"
+    },
+    {
+      "sourceId": "610",
+      "sourceWord": "涼しい",
+      "key": "w610"
+    },
+    {
+      "sourceId": "611",
+      "sourceWord": "甘い",
+      "key": "w611"
+    },
+    {
+      "sourceId": "612",
+      "sourceWord": "辛い",
+      "key": "w612"
+    },
+    {
+      "sourceId": "613",
+      "sourceWord": "重い",
+      "key": "w613"
+    },
+    {
+      "sourceId": "614",
+      "sourceWord": "軽い",
+      "key": "w614"
+    },
+    {
+      "sourceId": "615",
+      "sourceWord": "［コーヒーが］いい",
+      "key": "w615"
+    },
+    {
+      "sourceId": "616",
+      "sourceWord": "季節",
+      "key": "w616"
+    },
+    {
+      "sourceId": "617",
+      "sourceWord": "春",
+      "key": "w617"
+    },
+    {
+      "sourceId": "618",
+      "sourceWord": "夏",
+      "key": "w618"
+    },
+    {
+      "sourceId": "619",
+      "sourceWord": "秋",
+      "key": "w619"
+    },
+    {
+      "sourceId": "620",
+      "sourceWord": "冬",
+      "key": "w620"
+    },
+    {
+      "sourceId": "621",
+      "sourceWord": "天気",
+      "key": "w621"
+    },
+    {
+      "sourceId": "622",
+      "sourceWord": "雨",
+      "key": "w622"
+    },
+    {
+      "sourceId": "623",
+      "sourceWord": "雪",
+      "key": "w623"
+    },
+    {
+      "sourceId": "624",
+      "sourceWord": "曇り",
+      "key": "w624"
+    },
+    {
+      "sourceId": "625",
+      "sourceWord": "ホテル",
+      "key": "w625"
+    },
+    {
+      "sourceId": "626",
+      "sourceWord": "空港",
+      "key": "w626"
+    },
+    {
+      "sourceId": "627",
+      "sourceWord": "海",
+      "key": "w627"
+    },
+    {
+      "sourceId": "628",
+      "sourceWord": "世界",
+      "key": "w628"
+    },
+    {
+      "sourceId": "629",
+      "sourceWord": "パーティー",
+      "key": "w629"
+    },
+    {
+      "sourceId": "630",
+      "sourceWord": "(お)祭り",
+      "key": "w630"
+    },
+    {
+      "sourceId": "632",
+      "sourceWord": "すき焼き",
+      "key": "w632"
+    },
+    {
+      "sourceId": "633",
+      "sourceWord": "刺身",
+      "key": "w633"
+    },
+    {
+      "sourceId": "634",
+      "sourceWord": "寿司",
+      "key": "w634"
+    },
+    {
+      "sourceId": "635",
+      "sourceWord": "天ぷら",
+      "key": "w635"
+    },
+    {
+      "sourceId": "636",
+      "sourceWord": "生け花",
+      "key": "w636"
+    },
+    {
+      "sourceId": "638",
+      "sourceWord": "どちら",
+      "key": "w638"
+    },
+    {
+      "sourceId": "639",
+      "sourceWord": "どちらも",
+      "key": "w639"
+    },
+    {
+      "sourceId": "640",
+      "sourceWord": "ずっと",
+      "key": "w640"
+    },
+    {
+      "sourceId": "641",
+      "sourceWord": "初めて",
+      "key": "w641"
+    },
+    {
+      "sourceId": "642",
+      "sourceWord": "ただいま。",
+      "key": "w642"
+    },
+    {
+      "sourceId": "643",
+      "sourceWord": "お帰りなさい。",
+      "key": "w643"
+    },
+    {
+      "sourceId": "645",
+      "sourceWord": "でも",
+      "key": "w645"
+    },
+    {
+      "sourceId": "646",
+      "sourceWord": "疲れました。",
+      "key": "w646"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "631",
+      "sourceWord": "試験",
+      "reason": "第二版在第4课列为新词。"
+    },
+    {
+      "sourceId": "637",
+      "sourceWord": "紅葉",
+      "reason": "旧版秋景词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "tea",
+    "crowded",
+    "gion",
+    "hongkong",
+    "singapore",
+    "abc-store",
+    "japan-store"
+  ],
+  "finalCount": 56
+}

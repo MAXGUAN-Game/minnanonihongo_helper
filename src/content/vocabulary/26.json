@@ -1,0 +1,352 @@
+{
+  "lessonId": 26,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/26.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源45条，排除5条旧版或跨课条目，合并同形同义项并补入第二来源，最终48条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/26.json。",
+    "补入第二来源阅读短文词汇，保留見ます／診ます、探します／捜します的异字义项。"
+  ],
+  "words": [
+    {
+      "key": "w1046",
+      "word": "見ます",
+      "reading": "みます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "看；检查"
+    },
+    {
+      "key": "w1047",
+      "word": "診ます",
+      "reading": "みます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "诊察"
+    },
+    {
+      "key": "w1048",
+      "word": "探します",
+      "reading": "さがします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "寻找"
+    },
+    {
+      "key": "w1049",
+      "word": "捜します",
+      "reading": "さがします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "搜寻（失物等）"
+    },
+    {
+      "key": "w1050",
+      "word": "遅れます",
+      "reading": "おくれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "迟到"
+    },
+    {
+      "key": "w1051",
+      "word": "間に合います",
+      "reading": "まにあいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "赶得上"
+    },
+    {
+      "key": "w1052",
+      "word": "やります",
+      "reading": "やります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "做"
+    },
+    {
+      "key": "w1057",
+      "word": "気分がいい",
+      "reading": "きぶんがいい",
+      "partOfSpeech": "い形容词",
+      "meaning": "感觉舒服"
+    },
+    {
+      "key": "w1058",
+      "word": "気分が悪い",
+      "reading": "きぶんがわるい",
+      "partOfSpeech": "い形容词",
+      "meaning": "感觉不舒服"
+    },
+    {
+      "key": "w1061",
+      "word": "運動会",
+      "reading": "うんどうかい",
+      "partOfSpeech": "名词",
+      "meaning": "运动会"
+    },
+    {
+      "key": "w1062",
+      "word": "場所",
+      "reading": "ばしょ",
+      "partOfSpeech": "名词",
+      "meaning": "地点"
+    },
+    {
+      "key": "w1063",
+      "word": "ボランティア",
+      "reading": "ぼらんてぃあ",
+      "partOfSpeech": "名词",
+      "meaning": "志愿者；志愿活动"
+    },
+    {
+      "key": "w1064",
+      "word": "～弁",
+      "reading": "～べん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……方言"
+    },
+    {
+      "key": "w1065",
+      "word": "今度",
+      "reading": "こんど",
+      "partOfSpeech": "名词",
+      "meaning": "这次；下次"
+    },
+    {
+      "key": "w1066",
+      "word": "随分",
+      "reading": "ずいぶん",
+      "partOfSpeech": "副词",
+      "meaning": "相当；很"
+    },
+    {
+      "key": "w1067",
+      "word": "直接",
+      "reading": "ちょくせつ",
+      "partOfSpeech": "副词",
+      "meaning": "直接"
+    },
+    {
+      "key": "w1068",
+      "word": "いつでも",
+      "reading": "いつでも",
+      "partOfSpeech": "副词",
+      "meaning": "随时"
+    },
+    {
+      "key": "w1069",
+      "word": "どこでも",
+      "reading": "どこでも",
+      "partOfSpeech": "表达",
+      "meaning": "任何地方"
+    },
+    {
+      "key": "w1070",
+      "word": "誰でも",
+      "reading": "だれでも",
+      "partOfSpeech": "表达",
+      "meaning": "任何人"
+    },
+    {
+      "key": "w1071",
+      "word": "何でも",
+      "reading": "なんでも",
+      "partOfSpeech": "表达",
+      "meaning": "任何东西；无论什么"
+    },
+    {
+      "key": "w1072",
+      "word": "こんな～",
+      "reading": "こんな～",
+      "partOfSpeech": "连体词",
+      "meaning": "这样的……"
+    },
+    {
+      "key": "w1073",
+      "word": "そんな～",
+      "reading": "そんな～",
+      "partOfSpeech": "连体词",
+      "meaning": "那样的……（近对方）"
+    },
+    {
+      "key": "w1074",
+      "word": "あんな～",
+      "reading": "あんな～",
+      "partOfSpeech": "连体词",
+      "meaning": "那样的……（远处）"
+    },
+    {
+      "key": "w1075",
+      "word": "［部屋が］片づきます",
+      "reading": "［へやが］かたづきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "收拾整齐（房间）"
+    },
+    {
+      "key": "w1076",
+      "word": "ごみ",
+      "reading": "ごみ",
+      "partOfSpeech": "名词",
+      "meaning": "垃圾"
+    },
+    {
+      "key": "w1077",
+      "word": "［ごみを］出します",
+      "reading": "［ごみを］だします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "倒出（垃圾）"
+    },
+    {
+      "key": "w1080",
+      "word": "置き場",
+      "reading": "おきば",
+      "partOfSpeech": "名词",
+      "meaning": "放置处"
+    },
+    {
+      "key": "w1081",
+      "word": "横",
+      "reading": "よこ",
+      "partOfSpeech": "名词",
+      "meaning": "旁边"
+    },
+    {
+      "key": "w1082",
+      "word": "瓶",
+      "reading": "びん",
+      "partOfSpeech": "名词",
+      "meaning": "瓶子"
+    },
+    {
+      "key": "w1083",
+      "word": "缶",
+      "reading": "かん",
+      "partOfSpeech": "名词",
+      "meaning": "罐"
+    },
+    {
+      "key": "w1085",
+      "word": "ガス",
+      "reading": "がす",
+      "partOfSpeech": "名词",
+      "meaning": "煤气；燃气"
+    },
+    {
+      "key": "w1086",
+      "word": "～会社",
+      "reading": "～がいしゃ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……公司"
+    },
+    {
+      "key": "w1087",
+      "word": "連絡します",
+      "reading": "れんらくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "联系"
+    },
+    {
+      "key": "w1191",
+      "word": "財布",
+      "reading": "さいふ",
+      "partOfSpeech": "名词",
+      "meaning": "钱包"
+    },
+    {
+      "key": "w1377",
+      "word": "盆踊り",
+      "reading": "ぼんおどり",
+      "partOfSpeech": "名词",
+      "meaning": "盂兰盆舞"
+    },
+    {
+      "key": "w1408",
+      "word": "拾います",
+      "reading": "ひろいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "捡"
+    },
+    {
+      "key": "w3461",
+      "word": "平日",
+      "reading": "へいじつ",
+      "partOfSpeech": "名词",
+      "meaning": "工作日"
+    },
+    {
+      "key": "w5637",
+      "word": "フリーマーケット",
+      "reading": "ふりーまーけっと",
+      "partOfSpeech": "名词",
+      "meaning": "跳蚤市场"
+    },
+    {
+      "key": "w5638",
+      "word": "国会議事堂",
+      "reading": "こっかいぎじどう",
+      "partOfSpeech": "名词",
+      "meaning": "国会议事堂"
+    },
+    {
+      "key": "w5639",
+      "word": "燃えるごみ",
+      "reading": "もえるごみ",
+      "partOfSpeech": "名词",
+      "meaning": "可燃垃圾"
+    },
+    {
+      "key": "edoya",
+      "word": "エドヤストア",
+      "reading": "えどやすとあ",
+      "partOfSpeech": "专有名词",
+      "meaning": "江户屋商店（教材店名）"
+    },
+    {
+      "key": "hoshide",
+      "word": "星出彰彦",
+      "reading": "ほしであきひこ",
+      "partOfSpeech": "专有名词",
+      "meaning": "星出彰彦（宇航员）"
+    },
+    {
+      "key": "space",
+      "word": "宇宙",
+      "reading": "うちゅう",
+      "partOfSpeech": "名词",
+      "meaning": "宇宙"
+    },
+    {
+      "key": "sama",
+      "word": "～様",
+      "reading": "～さま",
+      "partOfSpeech": "接尾词",
+      "meaning": "……先生／女士（敬称）"
+    },
+    {
+      "key": "spaceship",
+      "word": "宇宙船",
+      "reading": "うちゅうせん",
+      "partOfSpeech": "名词",
+      "meaning": "宇宙飞船"
+    },
+    {
+      "key": "space-station",
+      "word": "宇宙ステーション",
+      "reading": "うちゅうすてーしょん",
+      "partOfSpeech": "名词",
+      "meaning": "空间站"
+    },
+    {
+      "key": "different",
+      "word": "違います",
+      "reading": "ちがいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "不同"
+    },
+    {
+      "key": "astronaut",
+      "word": "宇宙飛行士",
+      "reading": "うちゅうひこうし",
+      "partOfSpeech": "名词",
+      "meaning": "宇航员"
+    }
+  ]
+}

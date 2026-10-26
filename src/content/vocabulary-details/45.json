@@ -1,0 +1,328 @@
+{
+  "l45-w1217": {
+    "romaji": "shirasemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「知らせます」是「知る」的使役形式，但常作为独立他动词使用，意为“通知、告知”。多用于正式场合，如向对方传达消息、联络事项等。",
+    "example": {
+      "jp": "明日の会議の時間を皆に知らせます。",
+      "kana": "あしたのかいぎのじかんをみんなにしらせます。",
+      "romaji": "ashita no kaigi no jikan o minna ni shirasemasu.",
+      "zh": "我会把明天会议的时间通知大家。"
+    }
+  },
+  "l45-w1775": {
+    "romaji": "shinjimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示相信某人或某事，常用「～を信じます」的形式。也可用于相信对方说的话或某种事实。",
+    "example": {
+      "jp": "私はあなたの話を信じます。",
+      "kana": "わたしはあなたのはなしをしんじます。",
+      "romaji": "watashi wa anata no hanashi o shinjimasu.",
+      "zh": "我相信你说的话。"
+    }
+  },
+  "l45-w1777": {
+    "romaji": "kyanseru shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「キャンセルします」是サ变动词，表示取消预约、订单、计划等。常与「予約」「注文」等词搭配。",
+    "example": {
+      "jp": "ホテルの予約をキャンセルします。",
+      "kana": "ほてるのよやくをきゃんせるします。",
+      "romaji": "hoteru no yoyaku o kyanseru shimasu.",
+      "zh": "取消酒店的预约。"
+    }
+  },
+  "l45-w1779": {
+    "romaji": "hoshōsho",
+    "attributes": [],
+    "explanation": "「保証書」指商品保修单或保证书，购买电器等商品时附带的证明文件，用于保修服务。",
+    "example": {
+      "jp": "この電化製品の保証書はどこですか。",
+      "kana": "このでんかせいひんのほしょうしょはどこですか。",
+      "romaji": "kono denkaseihin no hoshōsho wa doko desu ka.",
+      "zh": "这个电器的保修单在哪里？"
+    }
+  },
+  "l45-w1780": {
+    "romaji": "ryōshūsho",
+    "attributes": [],
+    "explanation": "「領収書」指收据，证明已付款的凭证，常用于报销或作为付款证明。",
+    "example": {
+      "jp": "領収書をいただけますか。",
+      "kana": "りょうしゅうしょをいただけますか。",
+      "romaji": "ryōshūsho o itadakemasu ka.",
+      "zh": "能给我收据吗？"
+    }
+  },
+  "l45-w1783": {
+    "romaji": "kyanpu",
+    "attributes": [],
+    "explanation": "「キャンプ」指露营活动，也可指夏令营等。常用「キャンプに行く」表示去露营。",
+    "example": {
+      "jp": "週末に家族でキャンプに行きます。",
+      "kana": "しゅうまつにかぞくできゃんぷにいきます。",
+      "romaji": "shūmatsu ni kazoku de kyanpu ni ikimasu.",
+      "zh": "周末和家人去露营。"
+    }
+  },
+  "l45-w1785": {
+    "romaji": "chūshi",
+    "attributes": [],
+    "explanation": "「中止」表示活动中止、取消，多用于因故停止正在进行的计划或活动。常与「～が中止になる」搭配。",
+    "example": {
+      "jp": "雨で試合が中止になりました。",
+      "kana": "あめでしあいがちゅうしになりました。",
+      "romaji": "ame de shiai ga chūshi ni narimashita.",
+      "zh": "因为下雨比赛中止了。"
+    }
+  },
+  "l45-w1786": {
+    "romaji": "ten",
+    "attributes": [],
+    "explanation": "「点」可表示分数、得分，也可表示点、斑点。考试或比赛中常用「点を取る」「点が高い」等。",
+    "example": {
+      "jp": "数学のテストでいい点を取りました。",
+      "kana": "すうがくのてすとでいいてんをとりました。",
+      "romaji": "sūgaku no tesuto de ii ten o torimashita.",
+      "zh": "数学考试得了好分数。"
+    }
+  },
+  "l45-w1790": {
+    "romaji": "kyū ni",
+    "attributes": [],
+    "explanation": "「急に」是副词，表示突然、骤然，修饰动词或形容词，强调变化发生得快且出乎意料。",
+    "example": {
+      "jp": "急に雨が降ってきました。",
+      "kana": "きゅうにあめがふってきました。",
+      "romaji": "kyū ni ame ga futte kimashita.",
+      "zh": "突然下起雨来了。"
+    }
+  },
+  "l45-w1791": {
+    "romaji": "tanoshimi ni shite imasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定表达，意为“很期待”，用于期待即将发生的事情，如旅行、见面等。常单独使用或接「～を楽しみにしています」。",
+    "example": {
+      "jp": "来週の旅行を楽しみにしています。",
+      "kana": "らいしゅうのりょこうをたのしみにしています。",
+      "romaji": "raishū no ryokō o tanoshimi ni shite imasu.",
+      "zh": "我很期待下周的旅行。"
+    }
+  },
+  "l45-w1792": {
+    "romaji": "ijō desu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定表达，意为“以上就是全部”，常用于报告、说明或列举结束后，表示没有更多内容。",
+    "example": {
+      "jp": "説明は以上です。質問はありますか。",
+      "kana": "せつめいはいいじょうです。しつもんはありますか。",
+      "romaji": "setsumei wa ijō desu. shitsumon wa arimasu ka.",
+      "zh": "说明就到这里。有问题吗？"
+    }
+  },
+  "l45-w1793": {
+    "romaji": "kakariin",
+    "attributes": [],
+    "explanation": "「係員」指负责某项事务的工作人员，常见于车站、会场、银行等场所，指引导或处理事务的人。",
+    "example": {
+      "jp": "分からないことは係員に聞いてください。",
+      "kana": "わからないことはかかりいんにきいてください。",
+      "romaji": "wakaranai koto wa kakariin ni kiite kudasai.",
+      "zh": "有不明白的事请问工作人员。"
+    }
+  },
+  "l45-w1794": {
+    "romaji": "kōsu",
+    "attributes": [],
+    "explanation": "指设定的路线、跑道或课程。常用于赛跑、马拉松、餐厅套餐等语境，注意与「コート」（球场）区分。",
+    "example": {
+      "jp": "マラソンのコースは海沿いです。",
+      "kana": "まらそんのこーすはうみぞいです。",
+      "romaji": "marason no kōsu wa umizoi desu.",
+      "zh": "马拉松的路线是沿海的。"
+    }
+  },
+  "l45-w1795": {
+    "romaji": "sutāto",
+    "attributes": [],
+    "explanation": "表示开始、出发或起点，常用于比赛、活动等。也可作动词「スタートする」，但本词条为名词用法。",
+    "example": {
+      "jp": "スタートの合図で走り出した。",
+      "kana": "すたーとのあいずではしりだした。",
+      "romaji": "sutāto no aizu de hashiridashita.",
+      "zh": "随着起跑信号跑了出去。"
+    }
+  },
+  "l45-w1796": {
+    "romaji": "i",
+    "attributes": [],
+    "explanation": "接在数字后表示名次，如「1位」「2位」。注意与表示顺序的「番目」不同，多用于比赛结果。",
+    "example": {
+      "jp": "彼はレースで3位になりました。",
+      "kana": "かれはれーすでさんいになりました。",
+      "romaji": "kare wa rēsu de san'i ni narimashita.",
+      "zh": "他在比赛中获得了第3名。"
+    }
+  },
+  "l45-w1797": {
+    "romaji": "yūshō shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在比赛或竞赛中获得冠军。常用「～で優勝する」表示在某项赛事中夺冠。",
+    "example": {
+      "jp": "日本のチームが大会で優勝しました。",
+      "kana": "にほんのちーむがたいかいでゆうしょうしました。",
+      "romaji": "nihon no chīmu ga taikai de yūshō shimashita.",
+      "zh": "日本队在大会上夺冠了。"
+    }
+  },
+  "l45-w3201": {
+    "romaji": "ume",
+    "attributes": [],
+    "explanation": "指梅树或梅花，也常指梅子。日本文化中常与赏花、梅干等关联，季节感较强。",
+    "example": {
+      "jp": "庭に梅の花が咲いています。",
+      "kana": "にわにうめのはながさいています。",
+      "romaji": "niwa ni ume no hana ga saite imasu.",
+      "zh": "院子里的梅花开了。"
+    }
+  },
+  "l45-w3449": {
+    "romaji": "hyakujūkyūban",
+    "attributes": [],
+    "explanation": "日本的紧急电话号码，用于火警和急救。拨打时直接说「119番」，注意与报警电话110区分。",
+    "example": {
+      "jp": "火事のときは119番に電話してください。",
+      "kana": "かじのときはひゃくじゅうきゅうばんにでんわしてください。",
+      "romaji": "kaji no toki wa hyakujūkyūban ni denwa shite kudasai.",
+      "zh": "发生火灾时请拨打119。"
+    }
+  },
+  "l45-w3450": {
+    "romaji": "hyakutōban",
+    "attributes": [],
+    "explanation": "日本的报警电话号码，用于刑事案件或事故。遇到紧急情况时拨打110联系警察。",
+    "example": {
+      "jp": "事故を見たら110番に通報しましょう。",
+      "kana": "じこをみたらひゃくとおばんにつうほうしましょう。",
+      "romaji": "jiko o mitara hyakutōban ni tsūhō shimashō.",
+      "zh": "看到事故的话报警吧。"
+    }
+  },
+  "l45-force": {
+    "romaji": "murini",
+    "attributes": [],
+    "explanation": "表示勉强、强行做某事，常含不自然或过度之意。多修饰动词，如「無理に食べる」「無理に笑う」。",
+    "example": {
+      "jp": "無理に食べなくてもいいですよ。",
+      "kana": "むりにたべなくてもいいですよ。",
+      "romaji": "muri ni tabenakute mo ii desu yo.",
+      "zh": "不用勉强吃也可以哦。"
+    }
+  },
+  "l45-worry": {
+    "romaji": "nayami",
+    "attributes": [],
+    "explanation": "指烦恼、苦恼的事情，常与「相談する」「抱える」等搭配。比「心配」更侧重个人内心的困扰。",
+    "example": {
+      "jp": "悩みがあったら友達に相談してください。",
+      "kana": "なやみがあったらともだちにそうだんしてください。",
+      "romaji": "nayami ga attara tomodachi ni sōdan shite kudasai.",
+      "zh": "有烦恼的话请和朋友商量。"
+    }
+  },
+  "l45-alarm": {
+    "romaji": "mezamashidokei",
+    "attributes": [],
+    "explanation": "指闹钟，用于设定时间提醒起床。常说「目覚まし時計をかける/セットする」。",
+    "example": {
+      "jp": "毎晩目覚まし時計をセットします。",
+      "kana": "まいばんめざましどけいをせっとします。",
+      "romaji": "maiban mezamashidokei o setto shimasu.",
+      "zh": "每天晚上设定闹钟。"
+    }
+  },
+  "l45-wake": {
+    "romaji": "me ga samemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示睡醒、觉醒，是自然醒来的表达。与「起きます」（起床）不同，侧重睁开眼睛的状态。",
+    "example": {
+      "jp": "朝はいつも六時に目が覚めます。",
+      "kana": "あさはいつもろくじにめがさめます。",
+      "romaji": "asa wa itsumo roku ji ni me ga samemasu.",
+      "zh": "早上总是六点醒来。"
+    }
+  },
+  "l45-student": {
+    "romaji": "daigakusei",
+    "attributes": [],
+    "explanation": "指大学生，常用于介绍身份或职业。注意与「大学院生」（研究生）区分。",
+    "example": {
+      "jp": "姉は東京の大学生です。",
+      "kana": "あねはとうきょうのだいがくせいです。",
+      "romaji": "ane wa tōkyō no daigakusei desu.",
+      "zh": "姐姐是东京的大学生。"
+    }
+  },
+  "l45-answer": {
+    "romaji": "kaitō",
+    "attributes": [],
+    "explanation": "名词，指对提问、问卷或呼叫作出的答复，常用于考试、采访、问卷调查等正式场合；比日常口语的「答え」更书面。",
+    "example": {
+      "jp": "アンケートの回答を集めています。",
+      "kana": "あんけーとのかいとうをあつめています。",
+      "romaji": "ankēto no kaitō o atsumete imasu.",
+      "zh": "正在收集问卷的回答。"
+    }
+  },
+  "l45-ring": {
+    "romaji": "narimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「鳴る」的礼貌形，用于铃声、电话、警报等声音自动响起；主语是发出声音的物体，不用「を」标记宾语。",
+    "example": {
+      "jp": "授業中に携帯電話が鳴りました。",
+      "kana": "じゅぎょうちゅうにけいたいでんわがなりました。",
+      "romaji": "jugyōchū ni keitaidenwa ga narimashita.",
+      "zh": "上课时手机响了。"
+    }
+  },
+  "l45-set": {
+    "romaji": "settoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「セットする」的礼貌形，表示把机器调到所需状态或把物品配成一套；常与「タイマー」「アラーム」等搭配。",
+    "example": {
+      "jp": "寝る前に目覚まし時計をセットします。",
+      "kana": "ねるまえにめざましどけいをせっとします。",
+      "romaji": "neru mae ni mezamashidokei o settoshimasu.",
+      "zh": "睡前设置闹钟。"
+    }
+  },
+  "l45-still": {
+    "romaji": "soredemo",
+    "attributes": [],
+    "explanation": "接续词，表示在前述情况或让步之后仍坚持后项，相当于“尽管如此”；多用于书面或较正式的叙述。",
+    "example": {
+      "jp": "雨が降っています。それでも試合は行われます。",
+      "kana": "あめがふっています。それでもしあいはおこなわれます。",
+      "romaji": "ame ga futte imasu. soredemo shiai wa okonawaremasu.",
+      "zh": "正在下雨。即便如此，比赛仍将举行。"
+    }
+  }
+}

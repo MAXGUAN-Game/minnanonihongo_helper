@@ -1,0 +1,185 @@
+{
+  "lessonId": 47,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/47.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 33,
+  "entries": [
+    {
+      "sourceId": "1078",
+      "sourceWord": "燃えます",
+      "key": "w1078"
+    },
+    {
+      "sourceId": "1290",
+      "sourceWord": "［風が］吹きます",
+      "key": "w1290"
+    },
+    {
+      "sourceId": "1518",
+      "sourceWord": "亡くなります",
+      "key": "w1518"
+    },
+    {
+      "sourceId": "1704",
+      "sourceWord": "データ",
+      "key": "w1704"
+    },
+    {
+      "sourceId": "1820",
+      "sourceWord": "［人が］集まります",
+      "key": "w1820"
+    },
+    {
+      "sourceId": "1821",
+      "sourceWord": "別れます",
+      "key": "w1821"
+    },
+    {
+      "sourceId": "1822",
+      "sourceWord": "長生きします",
+      "key": "w1822"
+    },
+    {
+      "sourceId": "1823",
+      "sourceWord": "音がします",
+      "key": "w1823"
+    },
+    {
+      "sourceId": "1824",
+      "sourceWord": "声がします",
+      "key": "w1824"
+    },
+    {
+      "sourceId": "1825",
+      "sourceWord": "味がします",
+      "key": "w1825"
+    },
+    {
+      "sourceId": "1826",
+      "sourceWord": "匂いがします",
+      "key": "w1826"
+    },
+    {
+      "sourceId": "1828",
+      "sourceWord": "ひどい",
+      "key": "w1828"
+    },
+    {
+      "sourceId": "1829",
+      "sourceWord": "怖い",
+      "key": "w1829"
+    },
+    {
+      "sourceId": "1832",
+      "sourceWord": "実験",
+      "key": "w1832"
+    },
+    {
+      "sourceId": "1833",
+      "sourceWord": "人口",
+      "key": "w1833"
+    },
+    {
+      "sourceId": "1834",
+      "sourceWord": "臭い",
+      "key": "w1834"
+    },
+    {
+      "sourceId": "1835",
+      "sourceWord": "科学",
+      "key": "w1835"
+    },
+    {
+      "sourceId": "1836",
+      "sourceWord": "医学",
+      "key": "w1836"
+    },
+    {
+      "sourceId": "1837",
+      "sourceWord": "文学",
+      "key": "w1837"
+    },
+    {
+      "sourceId": "1838",
+      "sourceWord": "パトカー",
+      "key": "w1838"
+    },
+    {
+      "sourceId": "1839",
+      "sourceWord": "救急車",
+      "key": "w1839"
+    },
+    {
+      "sourceId": "1840",
+      "sourceWord": "賛成",
+      "key": "w1840"
+    },
+    {
+      "sourceId": "1841",
+      "sourceWord": "反対",
+      "key": "w1841"
+    },
+    {
+      "sourceId": "1842",
+      "sourceWord": "男性",
+      "key": "w1842"
+    },
+    {
+      "sourceId": "1843",
+      "sourceWord": "女性",
+      "key": "w1843"
+    },
+    {
+      "sourceId": "1844",
+      "sourceWord": "どうも",
+      "key": "w1844"
+    },
+    {
+      "sourceId": "1845",
+      "sourceWord": "～によると",
+      "key": "w1845"
+    },
+    {
+      "sourceId": "1846",
+      "sourceWord": "恋人",
+      "key": "w1846"
+    },
+    {
+      "sourceId": "1847",
+      "sourceWord": "婚約します",
+      "key": "w1847"
+    },
+    {
+      "sourceId": "1848",
+      "sourceWord": "相手",
+      "key": "w1848"
+    },
+    {
+      "sourceId": "1849",
+      "sourceWord": "知り合います",
+      "key": "w1849"
+    },
+    {
+      "sourceId": "1854",
+      "sourceWord": "厳しい",
+      "key": "w1854"
+    },
+    {
+      "sourceId": "938",
+      "sourceWord": "大統領",
+      "key": "w938"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "makeup",
+    "care",
+    "long-life",
+    "reason",
+    "relation"
+  ],
+  "finalCount": 38
+}

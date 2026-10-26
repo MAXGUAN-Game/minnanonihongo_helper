@@ -1,0 +1,264 @@
+{
+  "l24-v1": {
+    "romaji": "kuremasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示别人给“我”或“我方的人”某物，主语是给予者。不能用于自己给别人的场合，此时用「あげます」。",
+    "example": {
+      "jp": "友達が本をくれました。",
+      "kana": "ともだちがほんをくれました。",
+      "romaji": "tomodachi ga hon o kuremashita.",
+      "zh": "朋友给了我一本书。"
+    }
+  },
+  "l24-v2": {
+    "romaji": "tsureteikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示带人（或动物）去别处，强调从说话地点向远处移动。对象用「を」表示，目的地用「に」或「へ」。",
+    "example": {
+      "jp": "弟を公園に連れて行きます。",
+      "kana": "おとうとをこうえんにつれていきます。",
+      "romaji": "otōto o kōen ni tsureteikimasu.",
+      "zh": "带弟弟去公园。"
+    }
+  },
+  "l24-v3": {
+    "romaji": "tsuretekimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示带人（或动物）来到说话人所在的地方，强调向说话人方向移动。对象用「を」表示。",
+    "example": {
+      "jp": "友達を家に連れて来ます。",
+      "kana": "ともだちをいえにつれてきます。",
+      "romaji": "tomodachi o ie ni tsuretekimasu.",
+      "zh": "带朋友来家里。"
+    }
+  },
+  "l24-w1014": {
+    "romaji": "hito o okurimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示送人（到某地），常与目的地「まで」或「に」搭配。也可用于送行，但送行更常用「見送ります」。",
+    "example": {
+      "jp": "駅まで友達を送ります。",
+      "kana": "えきまでともだちをおくります。",
+      "romaji": "eki made tomodachi o okurimasu.",
+      "zh": "送朋友到车站。"
+    }
+  },
+  "l24-v4": {
+    "romaji": "shōkaishimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示向别人介绍某人或某事物。介绍人时常用「AさんにBさんを紹介します」。",
+    "example": {
+      "jp": "先生に友達を紹介します。",
+      "kana": "せんせいにともだちをしょうかいします。",
+      "romaji": "sensei ni tomodachi o shōkaishimasu.",
+      "zh": "向老师介绍朋友。"
+    }
+  },
+  "l24-v5": {
+    "romaji": "annai shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示带路、引导参观或介绍情况。常与「案内してあげます」「ご案内します」等搭配。",
+    "example": {
+      "jp": "町を案内します。",
+      "kana": "まちをあんないします。",
+      "romaji": "machi o annai shimasu.",
+      "zh": "带人游览城镇。"
+    }
+  },
+  "l24-v6": {
+    "romaji": "setsumei shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示对某事物进行说明、解释。内容用「を」表示，听者用「に」表示。",
+    "example": {
+      "jp": "使い方を説明します。",
+      "kana": "つかいかたをせつめいします。",
+      "romaji": "tsukaikata o setsumei shimasu.",
+      "zh": "说明使用方法。"
+    }
+  },
+  "l24-w1019": {
+    "romaji": "ojiichan",
+    "attributes": [],
+    "explanation": "对“爷爷”的亲昵称呼，常用于家庭内或对小孩说话。正式场合或提及别人爷爷时多用「おじいさん」。",
+    "example": {
+      "jp": "おじいちゃんは元気です。",
+      "kana": "おじいちゃんはげんきです。",
+      "romaji": "ojiichan wa genki desu.",
+      "zh": "爷爷很健康。"
+    }
+  },
+  "l24-w1020": {
+    "romaji": "obaachan",
+    "attributes": [],
+    "explanation": "对“奶奶”的亲昵称呼，语气亲切。正式场合或提及别人奶奶时多用「おばあさん」。",
+    "example": {
+      "jp": "おばあちゃんと買い物に行きます。",
+      "kana": "おばあちゃんとかいものにいきます。",
+      "romaji": "obaachan to kaimono ni ikimasu.",
+      "zh": "和奶奶去买东西。"
+    }
+  },
+  "l24-v8": {
+    "romaji": "junbi",
+    "attributes": [],
+    "explanation": "表示为了某事而事先做好准备，常与「する」搭配成「準備する」。也可说「準備ができる」。",
+    "example": {
+      "jp": "旅行の準備をします。",
+      "kana": "りょこうのじゅんびをします。",
+      "romaji": "ryokō no junbi o shimasu.",
+      "zh": "做旅行的准备。"
+    }
+  },
+  "l24-w1023": {
+    "romaji": "okashi",
+    "attributes": [],
+    "explanation": "泛指点心、零食、糖果等，比「菓子」更口语化。常指甜食，也可包括咸味零食。",
+    "example": {
+      "jp": "お菓子を食べながら話します。",
+      "kana": "おかしをたべながらはなします。",
+      "romaji": "okashi o tabenagara hanashimasu.",
+      "zh": "一边吃点心一边聊天。"
+    }
+  },
+  "l24-v10": {
+    "romaji": "zenbu",
+    "attributes": [],
+    "explanation": "表示全部、所有，可作名词或副词使用。常与「の」连接名词，或直接修饰动词。",
+    "example": {
+      "jp": "お菓子を全部食べました。",
+      "kana": "おかしをぜんぶたべました。",
+      "romaji": "okashi o zenbu tabemashita.",
+      "zh": "把点心全部吃完了。"
+    }
+  },
+  "l24-w1025": {
+    "romaji": "jibun de",
+    "attributes": [],
+    "explanation": "表示不借助他人，由自己亲自做某事。常修饰动词，强调动作主体的自主性。",
+    "example": {
+      "jp": "自分の部屋は自分で掃除します。",
+      "kana": "じぶんのへやはじぶんでそうじします。",
+      "romaji": "jibun no heya wa jibun de souji shimasu.",
+      "zh": "自己的房间自己打扫。"
+    }
+  },
+  "l24-w1026": {
+    "romaji": "hoka ni",
+    "attributes": [],
+    "explanation": "表示除此之外还有其他事物，常用于列举或补充说明。后接名词时用「他の」，单独使用时用「他に」。",
+    "example": {
+      "jp": "他に質問はありませんか。",
+      "kana": "ほかにしつもんはありませんか。",
+      "romaji": "hoka ni shitsumon wa arimasen ka.",
+      "zh": "还有其他的问题吗？"
+    }
+  },
+  "l24-w1166": {
+    "romaji": "hōmusutei",
+    "attributes": [],
+    "explanation": "指留学生等寄宿在当地家庭中，体验当地生活的住宿方式。常与「する」搭配构成动词「ホームステイする」。",
+    "example": {
+      "jp": "夏休みにホームステイをしました。",
+      "kana": "なつやすみにほーむすていをしました。",
+      "romaji": "natsuyasumi ni hōmusutei o shimashita.",
+      "zh": "暑假体验了寄宿家庭。"
+    }
+  },
+  "l24-w1933": {
+    "romaji": "ojīsan",
+    "attributes": [],
+    "explanation": "指祖父或老年男性，也可用于称呼陌生的老先生。当面称呼时前面常加「お」，但提及自己祖父时一般说「祖父」。",
+    "example": {
+      "jp": "おじいさんは毎朝散歩します。",
+      "kana": "おじいさんはまいあささんぽします。",
+      "romaji": "ojīsan wa maiasa sanpo shimasu.",
+      "zh": "爷爷每天早上散步。"
+    }
+  },
+  "l24-w1934": {
+    "romaji": "obāsan",
+    "attributes": [],
+    "explanation": "指祖母或老年女性，也可用于称呼陌生的老太太。当面称呼时前面常加「お」，但提及自己祖母时一般说「祖母」。",
+    "example": {
+      "jp": "おばあさんが作ったおにぎりはおいしいです。",
+      "kana": "おばあさんがつくったおにぎりはおいしいです。",
+      "romaji": "obāsan ga tsukutta onigiri wa oishii desu.",
+      "zh": "奶奶做的饭团很好吃。"
+    }
+  },
+  "l24-w898": {
+    "romaji": "naoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示修理损坏的物品，使其恢复原状。常与「自転車」「時計」等具体物品搭配。",
+    "example": {
+      "jp": "壊れた自転車を直しました。",
+      "kana": "こわれたじてんしゃをなおしました。",
+      "romaji": "kowareta jitensha o naoshimashita.",
+      "zh": "修好了坏掉的自行车。"
+    }
+  },
+  "l24-w899": {
+    "romaji": "naoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示改正错误或修改不完善之处，常与「答え」「間違い」「文章」等搭配。",
+    "example": {
+      "jp": "間違えた答えを直してください。",
+      "kana": "まちがえたこたえをなおしてください。",
+      "romaji": "machigaeta kotae o naoshite kudasai.",
+      "zh": "请改正错误的答案。"
+    }
+  },
+  "l24-w992": {
+    "romaji": "hikkoshishimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示搬到新的住所，常与「～に」或「～から～へ」搭配。也可说「引っ越しをする」。",
+    "example": {
+      "jp": "来月、新しいアパートに引っ越しします。",
+      "kana": "らいげつ、あたらしいあぱーとにひっこしします。",
+      "romaji": "raigetsu, atarashii apāto ni hikkoshishimasu.",
+      "zh": "下个月搬到新公寓。"
+    }
+  },
+  "l24-moving": {
+    "romaji": "hikkoshi",
+    "attributes": [],
+    "explanation": "指搬家这一行为或事件，常与「する」搭配构成动词「引っ越しする」。也可说「引っ越しをする」。",
+    "example": {
+      "jp": "引っ越しの準備で忙しいです。",
+      "kana": "ひっこしのじゅんびでいそがしいです。",
+      "romaji": "hikkoshi no junbi de isogashii desu.",
+      "zh": "因为准备搬家很忙。"
+    }
+  },
+  "l24-mothers-day": {
+    "romaji": "haha no hi",
+    "attributes": [],
+    "explanation": "指感谢母亲的节日，通常在五月第二个星期日。常与「プレゼント」「カーネーション」等搭配。",
+    "example": {
+      "jp": "母の日にカーネーションを贈りました。",
+      "kana": "ははのひにかーねーしょんをおくりました。",
+      "romaji": "haha no hi ni kānēshon o okurimashita.",
+      "zh": "母亲节送了康乃馨。"
+    }
+  }
+}

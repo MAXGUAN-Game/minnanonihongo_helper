@@ -1,0 +1,169 @@
+{
+  "lessonId": 31,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/31.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 28,
+  "entries": [
+    {
+      "sourceId": "1054",
+      "sourceWord": "申し込みます",
+      "key": "w1054"
+    },
+    {
+      "sourceId": "1092",
+      "sourceWord": "［休みを］取ります",
+      "key": "w1092"
+    },
+    {
+      "sourceId": "1222",
+      "sourceWord": "お子さん",
+      "key": "w1222"
+    },
+    {
+      "sourceId": "1254",
+      "sourceWord": "続けます",
+      "key": "w1254"
+    },
+    {
+      "sourceId": "1255",
+      "sourceWord": "見つけます",
+      "key": "w1255"
+    },
+    {
+      "sourceId": "1256",
+      "sourceWord": "［試験を］受けます",
+      "key": "w1256"
+    },
+    {
+      "sourceId": "1260",
+      "sourceWord": "休憩します",
+      "key": "w1260"
+    },
+    {
+      "sourceId": "1261",
+      "sourceWord": "連休",
+      "key": "w1261"
+    },
+    {
+      "sourceId": "1262",
+      "sourceWord": "作文",
+      "key": "w1262"
+    },
+    {
+      "sourceId": "1263",
+      "sourceWord": "展覧会",
+      "key": "w1263"
+    },
+    {
+      "sourceId": "1264",
+      "sourceWord": "結婚式",
+      "key": "w1264"
+    },
+    {
+      "sourceId": "1265",
+      "sourceWord": "お葬式",
+      "key": "w1265"
+    },
+    {
+      "sourceId": "1266",
+      "sourceWord": "式",
+      "key": "w1266"
+    },
+    {
+      "sourceId": "1267",
+      "sourceWord": "本社",
+      "key": "w1267"
+    },
+    {
+      "sourceId": "1268",
+      "sourceWord": "支店",
+      "key": "w1268"
+    },
+    {
+      "sourceId": "1269",
+      "sourceWord": "教会",
+      "key": "w1269"
+    },
+    {
+      "sourceId": "1270",
+      "sourceWord": "大学院",
+      "key": "w1270"
+    },
+    {
+      "sourceId": "1271",
+      "sourceWord": "動物園",
+      "key": "w1271"
+    },
+    {
+      "sourceId": "1272",
+      "sourceWord": "温泉",
+      "key": "w1272"
+    },
+    {
+      "sourceId": "1275",
+      "sourceWord": "～の方",
+      "key": "w1275"
+    },
+    {
+      "sourceId": "1276",
+      "sourceWord": "ずっと",
+      "key": "w1276"
+    },
+    {
+      "sourceId": "1277",
+      "sourceWord": "残ります",
+      "key": "w1277"
+    },
+    {
+      "sourceId": "1278",
+      "sourceWord": "月に",
+      "key": "w1278"
+    },
+    {
+      "sourceId": "1616",
+      "sourceWord": "～号",
+      "key": "w1616"
+    },
+    {
+      "sourceId": "1831",
+      "sourceWord": "発表",
+      "key": "w1831"
+    },
+    {
+      "sourceId": "3223",
+      "sourceWord": "帰り",
+      "key": "w3223"
+    },
+    {
+      "sourceId": "3413",
+      "sourceWord": "入学試験",
+      "key": "w3413"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1279",
+      "sourceWord": "普通の",
+      "reason": "旧版普通列车用词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "bali",
+    "picasso",
+    "nozomi",
+    "shinkobe",
+    "village",
+    "graduate",
+    "cinema",
+    "dislike",
+    "sky",
+    "close",
+    "city",
+    "children",
+    "freely"
+  ],
+  "finalCount": 40
+}

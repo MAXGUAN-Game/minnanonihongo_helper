@@ -1,0 +1,380 @@
+{
+  "lessonId": 39,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/39.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源45条，排除3条旧版或跨课条目，合并同形同义项并补入第二来源，最终52条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/39.json。",
+    "第二来源的邪悪按主来源及妨碍语义校正为邪魔；通ります的道路搭配使用道を。"
+  ],
+  "words": [
+    {
+      "key": "w1422",
+      "word": "ハイキング",
+      "reading": "はいきんぐ",
+      "partOfSpeech": "名词",
+      "meaning": "徒步旅行"
+    },
+    {
+      "key": "w1426",
+      "word": "操作",
+      "reading": "そうさ",
+      "partOfSpeech": "名词",
+      "meaning": "操作"
+    },
+    {
+      "key": "w1447",
+      "word": "太ります",
+      "reading": "ふとります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "变胖"
+    },
+    {
+      "key": "w1448",
+      "word": "痩せます",
+      "reading": "やせます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "变瘦"
+    },
+    {
+      "key": "w1451",
+      "word": "硬い",
+      "reading": "かたい",
+      "partOfSpeech": "い形容词",
+      "meaning": "硬的"
+    },
+    {
+      "key": "w1452",
+      "word": "軟らかい",
+      "reading": "やわらかい",
+      "partOfSpeech": "い形容词",
+      "meaning": "柔软的"
+    },
+    {
+      "key": "w1547",
+      "word": "［質問に］答えます",
+      "reading": "［しつもんに］こたえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "回答（问题）"
+    },
+    {
+      "key": "w1548",
+      "word": "［ビルが］倒れます",
+      "reading": "［びるが］たおれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "倒塌（大楼）"
+    },
+    {
+      "key": "w1552",
+      "word": "［道を］通ります",
+      "reading": "［みちを］とおります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "经过（道路）"
+    },
+    {
+      "key": "w1553",
+      "word": "死にます",
+      "reading": "しにます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "死亡"
+    },
+    {
+      "key": "w1554",
+      "word": "びっくりします",
+      "reading": "びっくりします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "吃惊"
+    },
+    {
+      "key": "w1555",
+      "word": "がっかりします",
+      "reading": "がっかりします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "失望"
+    },
+    {
+      "key": "w1556",
+      "word": "安心します",
+      "reading": "あんしんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "放心"
+    },
+    {
+      "key": "w1559",
+      "word": "喧嘩します",
+      "reading": "けんかします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "争吵"
+    },
+    {
+      "key": "w1560",
+      "word": "離婚します",
+      "reading": "りこんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "离婚"
+    },
+    {
+      "key": "w1561",
+      "word": "複雑な",
+      "reading": "ふくざつな",
+      "partOfSpeech": "な形容词",
+      "meaning": "复杂的"
+    },
+    {
+      "key": "w1562",
+      "word": "邪魔な",
+      "reading": "じゃまな",
+      "partOfSpeech": "な形容词",
+      "meaning": "碍事的"
+    },
+    {
+      "key": "w1563",
+      "word": "汚い",
+      "reading": "きたない",
+      "partOfSpeech": "い形容词",
+      "meaning": "脏的"
+    },
+    {
+      "key": "w1564",
+      "word": "嬉しい",
+      "reading": "うれしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "高兴的"
+    },
+    {
+      "key": "w1565",
+      "word": "悲しい",
+      "reading": "かなしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "悲伤的"
+    },
+    {
+      "key": "w1566",
+      "word": "恥ずかしい",
+      "reading": "はずかしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "害羞的；难为情的"
+    },
+    {
+      "key": "w1567",
+      "word": "地震",
+      "reading": "じしん",
+      "partOfSpeech": "名词",
+      "meaning": "地震"
+    },
+    {
+      "key": "w1568",
+      "word": "台風",
+      "reading": "たいふう",
+      "partOfSpeech": "名词",
+      "meaning": "台风"
+    },
+    {
+      "key": "w1569",
+      "word": "火事",
+      "reading": "かじ",
+      "partOfSpeech": "名词",
+      "meaning": "火灾"
+    },
+    {
+      "key": "w1570",
+      "word": "事故",
+      "reading": "じこ",
+      "partOfSpeech": "名词",
+      "meaning": "事故"
+    },
+    {
+      "key": "w1571",
+      "word": "お見合い",
+      "reading": "おみあい",
+      "partOfSpeech": "名词",
+      "meaning": "相亲"
+    },
+    {
+      "key": "w1572",
+      "word": "電話代",
+      "reading": "でんわだい",
+      "partOfSpeech": "名词",
+      "meaning": "电话费"
+    },
+    {
+      "key": "w1573",
+      "word": "～代",
+      "reading": "～だい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……费"
+    },
+    {
+      "key": "w1574",
+      "word": "フロント",
+      "reading": "ふろんと",
+      "partOfSpeech": "名词",
+      "meaning": "前台"
+    },
+    {
+      "key": "w1575",
+      "word": "～号室",
+      "reading": "～ごうしつ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……号房间"
+    },
+    {
+      "key": "w1577",
+      "word": "タオル",
+      "reading": "たおる",
+      "partOfSpeech": "名词",
+      "meaning": "毛巾"
+    },
+    {
+      "key": "w1578",
+      "word": "石鹸",
+      "reading": "せっけん",
+      "partOfSpeech": "名词",
+      "meaning": "肥皂"
+    },
+    {
+      "key": "w1579",
+      "word": "大勢",
+      "reading": "おおぜい",
+      "partOfSpeech": "名词",
+      "meaning": "很多人"
+    },
+    {
+      "key": "w1580",
+      "word": "お疲れさまでした",
+      "reading": "おつかれさまでした",
+      "partOfSpeech": "固定表达",
+      "meaning": "辛苦了"
+    },
+    {
+      "key": "w1581",
+      "word": "伺います",
+      "reading": "うかがいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拜访；去（谦让语）"
+    },
+    {
+      "key": "w1582",
+      "word": "途中で",
+      "reading": "とちゅうで",
+      "partOfSpeech": "表达",
+      "meaning": "途中"
+    },
+    {
+      "key": "w1583",
+      "word": "トラック",
+      "reading": "とらっく",
+      "partOfSpeech": "名词",
+      "meaning": "卡车"
+    },
+    {
+      "key": "w1584",
+      "word": "ぶつかります",
+      "reading": "ぶつかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "碰撞"
+    },
+    {
+      "key": "w1884",
+      "word": "会場",
+      "reading": "かいじょう",
+      "partOfSpeech": "名词",
+      "meaning": "会场"
+    },
+    {
+      "key": "w3236",
+      "word": "雷",
+      "reading": "かみなり",
+      "partOfSpeech": "名词",
+      "meaning": "雷"
+    },
+    {
+      "key": "w3375",
+      "word": "津波",
+      "reading": "つなみ",
+      "partOfSpeech": "名词",
+      "meaning": "海啸"
+    },
+    {
+      "key": "w937",
+      "word": "首相",
+      "reading": "しゅしょう",
+      "partOfSpeech": "名词",
+      "meaning": "首相"
+    },
+    {
+      "key": "shop",
+      "word": "～屋",
+      "reading": "～や",
+      "partOfSpeech": "接尾词",
+      "meaning": "……店"
+    },
+    {
+      "key": "adult",
+      "word": "大人",
+      "reading": "おとな",
+      "partOfSpeech": "名词",
+      "meaning": "成年人"
+    },
+    {
+      "key": "however",
+      "word": "しかし",
+      "reading": "しかし",
+      "partOfSpeech": "接续词",
+      "meaning": "但是"
+    },
+    {
+      "key": "also",
+      "word": "また",
+      "reading": "また",
+      "partOfSpeech": "接续词",
+      "meaning": "此外"
+    },
+    {
+      "key": "western-clothes",
+      "word": "洋服",
+      "reading": "ようふく",
+      "partOfSpeech": "名词",
+      "meaning": "西式服装"
+    },
+    {
+      "key": "westernize",
+      "word": "西洋化します",
+      "reading": "せいようかします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "西洋化"
+    },
+    {
+      "key": "suit",
+      "word": "合います",
+      "reading": "あいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "适合；相配"
+    },
+    {
+      "key": "now",
+      "word": "今では",
+      "reading": "いまでは",
+      "partOfSpeech": "表达",
+      "meaning": "如今"
+    },
+    {
+      "key": "coming-of-age",
+      "word": "成人式",
+      "reading": "せいじんしき",
+      "partOfSpeech": "名词",
+      "meaning": "成人礼"
+    },
+    {
+      "key": "traditional",
+      "word": "伝統的な",
+      "reading": "でんとうてきな",
+      "partOfSpeech": "な形容词",
+      "meaning": "传统的"
+    }
+  ]
+}

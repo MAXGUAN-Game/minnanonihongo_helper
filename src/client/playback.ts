@@ -1,10 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { VoiceSettings } from '../shared/voice';
+import type { VoiceSettings, VoiceSpeaker } from '../shared/voice';
 import { isOfficialTextbookAudioUrl } from '../content/textbook-audio';
 
 export type PlaybackStatus = 'idle' | 'loading' | 'playing' | 'paused' | 'blocked' | 'buffering' | 'error';
 
 export function useSpeech(onError: (message: string) => void) {
+  const [playbackRate, setRate] = useState(1);
+  const rateRef = useRef(1);
   const [status, setStatus] = useState<PlaybackStatus>('idle');
   const [label, setLabel] = useState('');
   const [sourceId, setSourceId] = useState<string>();
@@ -26,6 +28,8 @@ export function useSpeech(onError: (message: string) => void) {
   const pauseActive = useRef<(() => void) | null>(null);
   const cancelPlayback = useRef<(() => void) | null>(null);
   const lastAction = useRef<(() => void) | null>(null);
+  const restartSystem = useRef<(() => void) | null>(null);
+  const sequence = useRef(false);
   const waiters = useRef<Set<() => void>>(new Set());
   const callbacks = useRef({ onError }); callbacks.current = { onError };
   const update = useCallback((next: PlaybackStatus) => { phase.current = next; setStatus(next); }, []);
@@ -36,6 +40,7 @@ export function useSpeech(onError: (message: string) => void) {
     activeRequest.current?.abort(); activeRequest.current = null;
     cancelPlayback.current?.(); cancelPlayback.current = null;
     activeAudio.current = null; playActive.current = null; pauseActive.current = null;
+    restartSystem.current = null;
     if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     utterances.current = []; wake(); update('idle'); setLabel(''); setSourceId(undefined); resetTimeline();
   }, [wake, update, resetTimeline]);
@@ -48,6 +53,7 @@ export function useSpeech(onError: (message: string) => void) {
   const playAudio = useCallback((url: string, current: number, owned: boolean, retain = false) => new Promise<void>((resolve, reject) => {
     // Keep publisher MP3s as direct media sources: no CORS fetch or proxy.
     const audio = new Audio(url); activeAudio.current = audio;
+    audio.playbackRate = rateRef.current; audio.preservesPitch = true;
     audio.preload = 'auto';
     let disposed = false, settled = false, failed = false;
     let playGeneration = 0;
@@ -160,12 +166,15 @@ export function useSpeech(onError: (message: string) => void) {
     if (paused.current) update('paused'); else play();
   }), [update]);
 
-  const say = useCallback((text: string | string[], lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1, id?: string) => {
+  const say = useCallback((text: string | string[], lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1, id?: string, speakers?: VoiceSpeaker | VoiceSpeaker[]) => {
     stop();
     const current = token.current;
     const lines = (Array.isArray(text) ? text : [text]).map(line => line.trim()).filter(Boolean);
+    sequence.current = lines.length > 1;
     if (!lines.length) return;
-    lastAction.current = () => say(text, lang, rate, id);
+    lastAction.current = () => say(text, lang, rate, id, speakers);
+    const speakerFor = (index: number) => Array.isArray(speakers) ? speakers[index] : speakers;
+    const fixedDialogue = lines.some((_, index) => ['dialogue-a', 'dialogue-b'].includes(speakerFor(index) ?? ''));
     hasSource.current = true; source.current = id; setSourceId(id); setLabel(lang === 'ja-JP' ? '日语朗读' : '中文讲解');
     let playbackRate = rate;
     const systemSay = (remaining: string[]) => {
@@ -175,21 +184,34 @@ export function useSpeech(onError: (message: string) => void) {
       voices.current = window.speechSynthesis.getVoices();
       const voice = voices.current.find(v => v.localService && v.lang.toLowerCase() === lang.toLowerCase()) || voices.current.find(v => v.localService && v.lang.startsWith(lang.slice(0, 2)));
       if (!voice) { update('error'); callbacks.current.onError(`未找到这个设备的${lang === 'ja-JP' ? '日语' : '中文'}声音。请在设备设置中添加语音包，然后重新打开浏览器。`); return; }
-      utterances.current = remaining.map((line, index) => {
-        const u = new SpeechSynthesisUtterance(line); u.lang = lang; u.voice = voice; u.rate = playbackRate;
-        u.onend = () => { if (current === token.current && index === remaining.length - 1) { update('idle'); utterances.current = []; } };
+      let sentenceIndex = 0;
+      let generation = 0;
+      const enqueueFrom = (start: number) => {
+      const ownGeneration = ++generation;
+      utterances.current = remaining.slice(start).map((line, offset) => {
+        const index = start + offset;
+        const u = new SpeechSynthesisUtterance(line); u.lang = lang; u.voice = voice; u.rate = playbackRate * rateRef.current;
+        u.onstart = () => { if (current === token.current && generation === ownGeneration) sentenceIndex = index; };
+        u.onend = () => { if (current === token.current && generation === ownGeneration && index === remaining.length - 1) { update('idle'); utterances.current = []; } };
         u.onerror = event => {
-          if (current !== token.current) return;
+          if (current !== token.current || generation !== ownGeneration) return;
           utterances.current = []; update('error');
           if (!['interrupted', 'canceled'].includes(event.error)) callbacks.current.onError('朗读未成功。请重试，或在设置里检查系统声音。');
         };
         return u;
       });
       const enqueue = () => {
-        if (current !== token.current) return;
+        if (current !== token.current || generation !== ownGeneration) return;
         window.speechSynthesis.resume(); utterances.current.forEach(u => window.speechSynthesis.speak(u)); update('playing');
       };
       if (paused.current) { update('paused'); void waitUntilReady(current).then(ready => { if (ready) enqueue(); }); } else enqueue();
+      };
+      restartSystem.current = () => {
+        generation++;
+        window.speechSynthesis.cancel();
+        enqueueFrom(sentenceIndex);
+      };
+      enqueueFrom(0);
     };
     if (lang === 'zh-CN') { systemSay(lines); return; }
     const request = new AbortController(); activeRequest.current = request; update('loading');
@@ -201,14 +223,17 @@ export function useSpeech(onError: (message: string) => void) {
         const settings = await response.json() as VoiceSettings;
         if (current !== token.current) return;
         if (typeof settings.speed === 'number' && settings.speed >= .8 && settings.speed <= 1.2) playbackRate = rate * settings.speed;
-        if (settings.provider === 'system') { systemSay(lines); return; }
+        if (settings.provider === 'system') {
+          if (fixedDialogue) throw new Error('男女对话需要 MiniMax 云语音，请在语音设置中启用。');
+          systemSay(lines); return;
+        }
         if (settings.provider !== 'minimax') throw new Error('语音服务设置无效。');
         for (index = 0; index < lines.length; index++) {
           if (!await waitUntilReady(current)) return;
           update('loading');
           const clip = await fetch('/api/voice/synthesize', {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: lines[index], rate, speaker: index % 2 ? 'secondary' : 'primary' }), signal: request.signal,
+            body: JSON.stringify({ text: lines[index], rate, speaker: speakerFor(index) ?? (index % 2 ? 'secondary' : 'primary') }), signal: request.signal,
           });
           if (!clip.ok) { const failure = await clip.json().catch(() => ({})); throw new Error(typeof failure.error === 'string' ? failure.error : '云端语音暂时没有响应。'); }
           const blob = await clip.blob();
@@ -218,6 +243,9 @@ export function useSpeech(onError: (message: string) => void) {
         if (current === token.current) update('idle');
       } catch (error) {
         if (current !== token.current || request.signal.aborted) return;
+        if (fixedDialogue) {
+          update('error'); callbacks.current.onError(`${error instanceof Error ? error.message : '对话音频暂时不可用。'} 请重试播放，A为男性、B为女性。`); return;
+        }
         callbacks.current.onError(`${error instanceof Error ? error.message : '云端语音暂时不可用。'} 已改用本机朗读，可在设置里重新试听。`);
         systemSay(lines.slice(index));
       } finally { if (activeRequest.current === request) activeRequest.current = null; }
@@ -225,6 +253,7 @@ export function useSpeech(onError: (message: string) => void) {
   }, [stop, update, waitUntilReady, playAudio]);
   const playUrl = useCallback((url: string, name = '音频', id?: string) => {
     stop();
+    sequence.current = false;
     let parsed: URL;
     try { parsed = new URL(url, location.href); } catch { callbacks.current.onError('音频地址无效。'); return; }
     const local = parsed.origin === location.origin && ['http:', 'https:', 'blob:'].includes(parsed.protocol);
@@ -250,7 +279,8 @@ export function useSpeech(onError: (message: string) => void) {
     wake();
   }, [update, wake]);
   const replay = useCallback(() => {
-    if (activeAudio.current && playActive.current) {
+    if (sequence.current) lastAction.current?.();
+    else if (activeAudio.current && playActive.current) {
       epoch.current++; paused.current = false;
       playActive.current(phase.current !== 'error'); wake();
     } else lastAction.current?.();
@@ -274,6 +304,16 @@ export function useSpeech(onError: (message: string) => void) {
     else pause();
   }, [pause, resume, replay]);
   const getEpoch = useCallback(() => epoch.current, []);
+  const setPlaybackRate = useCallback((value: number) => {
+    if (![.75, 1, 1.25].includes(value)) return;
+    rateRef.current = value; setRate(value);
+    if (activeAudio.current) activeAudio.current.playbackRate = value;
+    else if (utterances.current.length) {
+      const wasPaused = paused.current;
+      restartSystem.current?.();
+      if (wasPaused) { paused.current = true; window.speechSynthesis.pause(); update('paused'); }
+    }
+  }, [update]);
   const sayAuto = useCallback((text: string | string[], expectedEpoch: number, lang: 'ja-JP' | 'zh-CN' = 'ja-JP', rate = 1, id?: string) => {
     if (epoch.current !== expectedEpoch || document.hidden) return false;
     say(text, lang, rate, id); return true;
@@ -309,6 +349,6 @@ export function useSpeech(onError: (message: string) => void) {
       window.removeEventListener('voice-settings-changed', stop); window.removeEventListener('nihongo-recording-start', stop);
     };
   }, [stop, pause, togglePlayback]);
-  return { say, sayAuto, stop, stopSource, pause, resume, replay, playUrl, seekBy, togglePlayback, getEpoch, status, paused: status === 'paused', speaking: ['playing', 'loading', 'buffering'].includes(status), label, sourceId, position, duration, canSeek, seekUnavailableReason };
+  return { say, sayAuto, stop, stopSource, pause, resume, replay, playUrl, seekBy, togglePlayback, getEpoch, status, paused: status === 'paused', speaking: ['playing', 'loading', 'buffering'].includes(status), label, sourceId, position, duration, canSeek, seekUnavailableReason, playbackRate, setPlaybackRate };
 }
 export type Speech = ReturnType<typeof useSpeech>;

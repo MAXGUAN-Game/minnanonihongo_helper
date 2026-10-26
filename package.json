@@ -1,23 +1,28 @@
 {
   "name": "nihongo-small-steps",
-  "version": "1.1.2",
+  "version": "1.4.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server/index.ts",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run validate:vocabulary && tsc --noEmit && vite build",
     "start": "node --use-env-proxy --import tsx src/server/index.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "node --import tsx scripts/check-browser.mjs",
+    "check:speech": "node --import tsx scripts/check-speech.mjs",
     "setup:speech": "node scripts/setup-speech.mjs",
     "setup:speech:linux": "node scripts/setup-speech-linux.mjs",
     "package:web": "node scripts/package-web.mjs",
     "package:offline": "node scripts/package-offline.mjs",
-    "launch": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1"
+    "launch": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1",
+    "validate:vocabulary": "node --import tsx scripts/validate-vocabulary-details.ts",
+    "generate:vocabulary": "node --use-env-proxy --import tsx scripts/generate-vocabulary-details.ts",
+    "generate:vocabulary-audio": "node --use-env-proxy --import tsx scripts/generate-vocabulary-audio.ts"
   },
   "dependencies": {
     "@fastify/static": "^10.1.5",
+    "bcryptjs": "^3.0.3",
     "better-sqlite3": "13.0.3",
     "fastify": "^5.6.0",
     "lucide-react": "1.33.0",

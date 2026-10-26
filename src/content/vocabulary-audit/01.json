@@ -1,0 +1,209 @@
+{
+  "lessonId": 1,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/1.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 33,
+  "entries": [
+    {
+      "sourceId": "36",
+      "sourceWord": "私",
+      "key": "watashi"
+    },
+    {
+      "sourceId": "38",
+      "sourceWord": "あなた",
+      "key": "anata"
+    },
+    {
+      "sourceId": "39",
+      "sourceWord": "あの人",
+      "key": "anohito"
+    },
+    {
+      "sourceId": "40",
+      "sourceWord": "あの方",
+      "key": "anokata"
+    },
+    {
+      "sourceId": "42",
+      "sourceWord": "～さん",
+      "key": "san"
+    },
+    {
+      "sourceId": "43",
+      "sourceWord": "～ちゃん",
+      "key": "chan"
+    },
+    {
+      "sourceId": "45",
+      "sourceWord": "～人",
+      "key": "jin"
+    },
+    {
+      "sourceId": "46",
+      "sourceWord": "先生",
+      "key": "sensei"
+    },
+    {
+      "sourceId": "47",
+      "sourceWord": "教師",
+      "key": "kyoushi"
+    },
+    {
+      "sourceId": "48",
+      "sourceWord": "学生",
+      "key": "gakusei"
+    },
+    {
+      "sourceId": "49",
+      "sourceWord": "会社員",
+      "key": "kaishain"
+    },
+    {
+      "sourceId": "50",
+      "sourceWord": "社員",
+      "key": "shain"
+    },
+    {
+      "sourceId": "51",
+      "sourceWord": "銀行員",
+      "key": "ginkouin"
+    },
+    {
+      "sourceId": "52",
+      "sourceWord": "医者",
+      "key": "isha"
+    },
+    {
+      "sourceId": "53",
+      "sourceWord": "研究者",
+      "key": "kenkyuusha"
+    },
+    {
+      "sourceId": "55",
+      "sourceWord": "大学",
+      "key": "daigaku"
+    },
+    {
+      "sourceId": "56",
+      "sourceWord": "病院",
+      "key": "byouin"
+    },
+    {
+      "sourceId": "58",
+      "sourceWord": "誰",
+      "key": "dare"
+    },
+    {
+      "sourceId": "59",
+      "sourceWord": "どなた",
+      "key": "donata"
+    },
+    {
+      "sourceId": "60",
+      "sourceWord": "歳",
+      "key": "sai"
+    },
+    {
+      "sourceId": "61",
+      "sourceWord": "何歳",
+      "key": "nansai"
+    },
+    {
+      "sourceId": "62",
+      "sourceWord": "おいくつ",
+      "key": "oikutsu"
+    },
+    {
+      "sourceId": "63",
+      "sourceWord": "はい",
+      "key": "hai"
+    },
+    {
+      "sourceId": "64",
+      "sourceWord": "いいえ",
+      "key": "iie"
+    },
+    {
+      "sourceId": "65",
+      "sourceWord": "失礼ですが",
+      "key": "shitsureidesuga"
+    },
+    {
+      "sourceId": "66",
+      "sourceWord": "お名前は?",
+      "key": "onamaewa"
+    },
+    {
+      "sourceId": "67",
+      "sourceWord": "初めまして。",
+      "key": "hajimemashite"
+    },
+    {
+      "sourceId": "68",
+      "sourceWord": "どうぞよろしく。",
+      "key": "yoroshiku"
+    },
+    {
+      "sourceId": "69",
+      "sourceWord": "よろしくお願いします。",
+      "key": "yoroshiku"
+    },
+    {
+      "sourceId": "70",
+      "sourceWord": "どうぞよろしくお願いします。",
+      "key": "yoroshiku"
+    },
+    {
+      "sourceId": "71",
+      "sourceWord": "こちらは～さんです。",
+      "key": "kochirawasan"
+    },
+    {
+      "sourceId": "72",
+      "sourceWord": "～から来ました。",
+      "key": "karakimashita"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "54",
+      "sourceWord": "エンジニア",
+      "reason": "第二版第1课交叉表不列此旧版新词。"
+    }
+  ],
+  "secondaryAdditions": [
+    "nihon",
+    "amerika",
+    "igirisu",
+    "indo",
+    "indoneshia",
+    "kankoku",
+    "tai",
+    "chuugoku",
+    "doitsu",
+    "burajiru",
+    "imc",
+    "powerdenki",
+    "burajirueaa",
+    "akc",
+    "sakuradiagaku",
+    "fujidaigaku",
+    "koubebyouin",
+    "miraa",
+    "yamada",
+    "watto",
+    "tawapon",
+    "shumitto",
+    "guputa",
+    "ii",
+    "wan",
+    "karina",
+    "santosu"
+  ],
+  "finalCount": 57,
+  "reviewedAt": "2026-10-24"
+}

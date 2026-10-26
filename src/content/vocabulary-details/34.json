@@ -1,0 +1,595 @@
+{
+  "l34-w1273": {
+    "romaji": "okyakusan",
+    "attributes": [],
+    "explanation": "「お客さん」是对客人、顾客的礼貌称呼，常用于服务业或日常会话。比「客」更口语、亲切，不能用于称呼自己。",
+    "example": {
+      "jp": "お客さんが店に来ました。",
+      "kana": "おきゃくさんがみせにきました。",
+      "romaji": "okyakusan ga mise ni kimashita.",
+      "zh": "客人来店里了。"
+    }
+  },
+  "l34-w1366": {
+    "romaji": "migakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「磨きます」表示摩擦使表面清洁或光亮，搭配「歯」时意为刷牙。需用助词「を」标示对象。",
+    "example": {
+      "jp": "毎朝、歯を磨きます。",
+      "kana": "まいあさ、はをみがきます。",
+      "romaji": "maiasa, ha o migakimasu.",
+      "zh": "每天早上刷牙。"
+    }
+  },
+  "l34-w1367": {
+    "romaji": "migakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「磨きます」用于「靴」时表示擦亮皮鞋，通过摩擦使表面光洁。与「歯を磨く」同形但对象不同。",
+    "example": {
+      "jp": "出かける前に靴を磨きます。",
+      "kana": "でかけるまえにくつをみがきます。",
+      "romaji": "dekakeru mae ni kutsu o migakimasu.",
+      "zh": "出门前擦亮鞋子。"
+    }
+  },
+  "l34-w1368": {
+    "romaji": "kumitatemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「組み立てます」指把零件或部件组合成整体，常用于家具、模型等。对象用「を」标示。",
+    "example": {
+      "jp": "説明書を見て棚を組み立てます。",
+      "kana": "せつめいしょをみてたなをくみたてます。",
+      "romaji": "setsumeisho o mite tana o kumitatemasu.",
+      "zh": "看着说明书组装架子。"
+    }
+  },
+  "l34-w1369": {
+    "romaji": "orimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「折ります」表示把纸、布等折叠起来，也可指折断。本课义为折叠，对象用「を」。",
+    "example": {
+      "jp": "紙を半分に折ります。",
+      "kana": "かみをはんぶんにおります。",
+      "romaji": "kami o hanbun ni orimasu.",
+      "zh": "把纸对折。"
+    }
+  },
+  "l34-w1370": {
+    "romaji": "ki ga tsukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「気がつきます」表示注意到、察觉到某事，常用「～に気がつく」的形式。不能用作他动词带「を」。",
+    "example": {
+      "jp": "間違いに気がつきました。",
+      "kana": "まちがいにきがつきました。",
+      "romaji": "machigai ni ki ga tsukimashita.",
+      "zh": "注意到了错误。"
+    }
+  },
+  "l34-w1371": {
+    "romaji": "tsukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「つけます」表示把食物蘸上调料，如酱油、盐等。对象用「を」，调料用「に」或「につけて」。",
+    "example": {
+      "jp": "刺身に醤油をつけます。",
+      "kana": "さしみにしょうゆをつけます。",
+      "romaji": "sashimi ni shōyu o tsukemasu.",
+      "zh": "给生鱼片蘸酱油。"
+    }
+  },
+  "l34-w1372": {
+    "romaji": "mitsukarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「見つかります」表示（失物等）被找到，主语是找到的东西，用「が」标示。与他动词「見つけます」相对。",
+    "example": {
+      "jp": "なくした鍵が見つかりました。",
+      "kana": "なくしたかぎがみつかりました。",
+      "romaji": "nakushita kagi ga mitsukarimashita.",
+      "zh": "丢失的钥匙找到了。"
+    }
+  },
+  "l34-w1374": {
+    "romaji": "shitsumonshimasu",
+    "attributes": [
+      "自他两用"
+    ],
+    "explanation": "「質問します」是サ变动词，表示向人提问，内容用「を」或「について」等。礼貌体，常用于课堂或正式场合。",
+    "example": {
+      "jp": "先生に質問します。",
+      "kana": "せんせいにしつもんします。",
+      "romaji": "sensei ni shitsumonshimasu.",
+      "zh": "向老师提问。"
+    }
+  },
+  "l34-w1378": {
+    "romaji": "supōtsukurabu",
+    "attributes": [],
+    "explanation": "「スポーツクラブ」指进行健身、运动训练的会员制设施，也可指学校的体育社团。外来语，口语常用。",
+    "example": {
+      "jp": "週に二回スポーツクラブに通っています。",
+      "kana": "しゅうにかいすぽーつくらぶにかよっています。",
+      "romaji": "shū ni kai supōtsukurabu ni kayotte imasu.",
+      "zh": "每周去两次健身俱乐部。"
+    }
+  },
+  "l34-v1": {
+    "romaji": "setsumeisho",
+    "attributes": [],
+    "explanation": "「説明書」指产品附带的说明书，用于解释使用方法或组装步骤。常与「読む」「見る」搭配。",
+    "example": {
+      "jp": "説明書をよく読んでください。",
+      "kana": "せつめいしょをよくよんでください。",
+      "romaji": "setsumeisho o yoku yonde kudasai.",
+      "zh": "请仔细阅读说明书。"
+    }
+  },
+  "l34-w1383": {
+    "romaji": "zu",
+    "attributes": [],
+    "explanation": "「図」指用线条绘制的图形、图表或示意图，常用于说明书、教科书。可构成「図で示す」等表达。",
+    "example": {
+      "jp": "この図を見て組み立ててください。",
+      "kana": "このずをみてくみたててください。",
+      "romaji": "kono zu o mite kumitatete kudasai.",
+      "zh": "请看这张图进行组装。"
+    }
+  },
+  "l34-w1384": {
+    "romaji": "sen",
+    "attributes": [],
+    "explanation": "指细长的线条，也用于铁路线、电话线等。与「ライン」相比更具体，常与「引く」搭配表示画线。",
+    "example": {
+      "jp": "紙に線を引いてください。",
+      "kana": "かみにせんをひいてください。",
+      "romaji": "kami ni sen o hiite kudasai.",
+      "zh": "请在纸上画一条线。"
+    }
+  },
+  "l34-w1385": {
+    "romaji": "yajirushi",
+    "attributes": [],
+    "explanation": "表示方向的箭头符号，常用于指示牌、地图或说明图中。可单独使用，也可说「矢印の方向」。",
+    "example": {
+      "jp": "矢印の方向に進んでください。",
+      "kana": "やじるしのほうこうにすすんでください。",
+      "romaji": "yajirushi no hōkō ni susunde kudasai.",
+      "zh": "请朝箭头方向前进。"
+    }
+  },
+  "l34-w1386": {
+    "romaji": "kuro",
+    "attributes": [],
+    "explanation": "表示黑色，可作名词直接指黑色事物，如「黒が好き」。也可构成复合词如「黒板」。",
+    "example": {
+      "jp": "このペンは黒です。",
+      "kana": "このぺんはくろです。",
+      "romaji": "kono pen wa kuro desu.",
+      "zh": "这支笔是黑色的。"
+    }
+  },
+  "l34-w1387": {
+    "romaji": "shiro",
+    "attributes": [],
+    "explanation": "表示白色，可作名词使用，如「白が好き」。也常用于「白黒」等复合词。",
+    "example": {
+      "jp": "白のシャツを着ます。",
+      "kana": "しろのしゃつをきます。",
+      "romaji": "shiro no shatsu o kimasu.",
+      "zh": "穿白色的衬衫。"
+    }
+  },
+  "l34-w1388": {
+    "romaji": "aka",
+    "attributes": [],
+    "explanation": "表示红色，可作名词指红色，如「赤が好き」。也常用于「赤ちゃん」「赤字」等词。",
+    "example": {
+      "jp": "赤のペンで書いてください。",
+      "kana": "あかのぺんでかいてください。",
+      "romaji": "aka no pen de kaite kudasai.",
+      "zh": "请用红色的笔写。"
+    }
+  },
+  "l34-w1389": {
+    "romaji": "ao",
+    "attributes": [],
+    "explanation": "表示蓝色，也可指绿色（如青信号）。作名词使用，如「青が好き」。",
+    "example": {
+      "jp": "空の青がきれいです。",
+      "kana": "そらのあおがきれいです。",
+      "romaji": "sora no ao ga kirei desu.",
+      "zh": "天空的蓝色很美。"
+    }
+  },
+  "l34-w1390": {
+    "romaji": "kon",
+    "attributes": [],
+    "explanation": "指深蓝色、藏青色，常用于「紺色」「紺の制服」等。比「青」更深，多用于衣物。",
+    "example": {
+      "jp": "紺のズボンをはきます。",
+      "kana": "こんのずぼんをはきます。",
+      "romaji": "kon no zubon o hakimasu.",
+      "zh": "穿藏青色的裤子。"
+    }
+  },
+  "l34-w1391": {
+    "romaji": "kiiro",
+    "attributes": [],
+    "explanation": "表示黄色，可作名词使用，如「黄色が好き」。也常与「の」连接名词，如「黄色の花」。",
+    "example": {
+      "jp": "黄色の花が咲いています。",
+      "kana": "きいろのはながさいています。",
+      "romaji": "kiiro no hana ga saite imasu.",
+      "zh": "黄色的花正在开放。"
+    }
+  },
+  "l34-w1392": {
+    "romaji": "chairo",
+    "attributes": [],
+    "explanation": "表示茶色、褐色，可作名词使用，如「茶色が好き」。常用于描述头发、皮革等颜色。",
+    "example": {
+      "jp": "茶色の靴を買いました。",
+      "kana": "ちゃいろのくつをかいました。",
+      "romaji": "chairo no kutsu o kaimashita.",
+      "zh": "买了茶色的鞋子。"
+    }
+  },
+  "l34-w1393": {
+    "romaji": "shōyu",
+    "attributes": [],
+    "explanation": "指酱油，日本常用调味料。常与「さしみ」「寿司」等搭配，也可说「醤油をかける」。",
+    "example": {
+      "jp": "刺身に醤油をつけて食べます。",
+      "kana": "さしみにしょうゆをつけてたべます。",
+      "romaji": "sashimi ni shōyu o tsukete tabemasu.",
+      "zh": "生鱼片蘸酱油吃。"
+    }
+  },
+  "l34-w1394": {
+    "romaji": "sōsu",
+    "attributes": [],
+    "explanation": "指调味汁、沙司，常用于西餐或炸物。与「醤油」不同，多指浓稠的调味液。",
+    "example": {
+      "jp": "コロッケにソースをかけます。",
+      "kana": "ころっけにそーすをかけます。",
+      "romaji": "korokke ni sōsu o kakemasu.",
+      "zh": "在可乐饼上浇调味汁。"
+    }
+  },
+  "l34-w1395": {
+    "romaji": "~ka~",
+    "attributes": [],
+    "explanation": "表示选择关系，连接两个名词或句子，意为“……或……”。常与「どちらか」呼应，口语中也可省略后项。",
+    "example": {
+      "jp": "コーヒーか紅茶か、どちらにしますか。",
+      "kana": "こーひーかこうちゃか、どちらにしますか。",
+      "romaji": "kōhī ka kōcha ka, dochira ni shimasu ka.",
+      "zh": "咖啡或红茶，您选哪个？"
+    }
+  },
+  "l34-w1396": {
+    "romaji": "yuube",
+    "attributes": [],
+    "explanation": "指“昨晚”，是「ゆうべ」的汉字写法，常用于口语和日常叙述。与「きのうの夜」意思相同，但更简洁。",
+    "example": {
+      "jp": "夕べは雨が降りました。",
+      "kana": "ゆうべはあめがふりました。",
+      "romaji": "yuube wa ame ga furimashita.",
+      "zh": "昨晚下雨了。"
+    }
+  },
+  "l34-w1397": {
+    "romaji": "sakki",
+    "attributes": [],
+    "explanation": "表示“刚才、方才”，指说话前很短的时间，常用于口语。比「さっき」更随便的说法是「さっき」，正式场合可用「先ほど」。",
+    "example": {
+      "jp": "さっき田中さんから電話がありました。",
+      "kana": "さっきたなかさんからでんわがありました。",
+      "romaji": "sakki tanaka san kara denwa ga arimashita.",
+      "zh": "刚才田中先生/女士打来了电话。"
+    }
+  },
+  "l34-w1398": {
+    "romaji": "sadou",
+    "attributes": [],
+    "explanation": "指日本传统的茶道文化，包括抹茶的点茶法、礼仪和精神修养。常与「茶道を習う」等搭配。",
+    "example": {
+      "jp": "週に一度茶道を習っています。",
+      "kana": "しゅうにいちどさどうをならっています。",
+      "romaji": "shuu ni ichido sadou o naratte imasu.",
+      "zh": "我每周学一次茶道。"
+    }
+  },
+  "l34-w1399": {
+    "romaji": "ocha o tatemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "特指点抹茶（用茶筅刷出泡沫），是茶道用语。一般泡茶说「お茶を入れます」，不说「たてます」。",
+    "example": {
+      "jp": "先生がお茶をたててくださいました。",
+      "kana": "せんせいがおちゃをたててくださいました。",
+      "romaji": "sensei ga ocha o tatete kudasaimashita.",
+      "zh": "老师为我点了抹茶。"
+    }
+  },
+  "l34-w1400": {
+    "romaji": "saki ni",
+    "attributes": [],
+    "explanation": "表示“先、事先”，常用于「先に～する」表示比对方早做某事，或「先に失礼します」等客套话。",
+    "example": {
+      "jp": "お先に失礼します。",
+      "kana": "おさきにしつれいします。",
+      "romaji": "osaki ni shitsurei shimasu.",
+      "zh": "我先走了（告辞）。"
+    }
+  },
+  "l34-w1401": {
+    "romaji": "nosemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把东西放在某物之上，如把菜放在饭上、把行李放在架子上。常与「～に」搭配。",
+    "example": {
+      "jp": "ご飯の上に卵を載せます。",
+      "kana": "ごはんのうえにたまごをのせます。",
+      "romaji": "gohan no ue ni tamago o nosemasu.",
+      "zh": "把鸡蛋放在米饭上。"
+    }
+  },
+  "l34-w1402": {
+    "romaji": "kore de ii desu ka",
+    "attributes": [],
+    "explanation": "用于确认做法、状态或程度是否合适，意为“这样行吗？”。语气礼貌，常用于请对方确认。",
+    "example": {
+      "jp": "お茶はこれでいいですか。",
+      "kana": "おちゃはこれでいいですか。",
+      "romaji": "ocha wa kore de ii desu ka.",
+      "zh": "茶这样行吗？"
+    }
+  },
+  "l34-w1403": {
+    "romaji": "nigai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示味道苦，可用于咖啡、药、抹茶等。也可引申为“痛苦的、严峻的”，如「苦い経験」。",
+    "example": {
+      "jp": "この抹茶は少し苦いです。",
+      "kana": "このまっちゃはすこしにがいです。",
+      "romaji": "kono matcha wa sukoshi nigai desu.",
+      "zh": "这抹茶有点苦。"
+    }
+  },
+  "l34-w1827": {
+    "romaji": "[kasa o] sashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示撑伞，固定搭配「傘をさす」。也可用于「日傘をさす」。注意不要与「差す」的其他义项混淆。",
+    "example": {
+      "jp": "雨が降っているので傘をさします。",
+      "kana": "あめがふっているのでかさをさします。",
+      "romaji": "ame ga futte iru node kasa o sashimasu.",
+      "zh": "因为在下雨，所以打伞。"
+    }
+  },
+  "l34-w2761": {
+    "romaji": "shiro",
+    "attributes": [],
+    "explanation": "指城堡，特指日本传统城堡建筑，如「大阪城」。注意与「白（しろ）」同音，需根据上下文区分。",
+    "example": {
+      "jp": "京都で古い城を見ました。",
+      "kana": "きょうとでふるいしろをみました。",
+      "romaji": "kyouto de furui shiro o mimashita.",
+      "zh": "在京都看了古老的城堡。"
+    }
+  },
+  "l34-how": {
+    "romaji": "ikaga desu ka",
+    "attributes": [],
+    "explanation": "「どうですか」的礼貌说法，用于询问对方的意见、感受或状况，意为“您觉得怎么样”。常用于接待或正式场合。",
+    "example": {
+      "jp": "お茶はいかがですか。",
+      "kana": "おちゃはいかがですか。",
+      "romaji": "ocha wa ikaga desu ka.",
+      "zh": "您来点茶怎么样？"
+    }
+  },
+  "l34-oyakodon": {
+    "romaji": "oyakodonburi",
+    "attributes": [],
+    "explanation": "指鸡肉和鸡蛋盖在米饭上的盖饭，因“亲子”得名。口语常简称「親子丼（おやこどん）」。",
+    "example": {
+      "jp": "昼ご飯に親子どんぶりを食べました。",
+      "kana": "ひるごはんにおやこどんぶりをたべました。",
+      "romaji": "hirugohan ni oyakodonburi o tabemashita.",
+      "zh": "午饭吃了鸡肉鸡蛋盖饭。"
+    }
+  },
+  "l34-ingredients": {
+    "romaji": "zairyō",
+    "attributes": [],
+    "explanation": "指制作食物所需的原材料，常用于烹饪语境。比「材料」更正式，日常也说「材料（ざいりょう）」。",
+    "example": {
+      "jp": "料理の材料をそろえます。",
+      "kana": "りょうりのざいりょうをそろえます。",
+      "romaji": "ryōri no zairyō o soroemasu.",
+      "zh": "准备做菜的材料。"
+    }
+  },
+  "l34-servings": {
+    "romaji": "~bun",
+    "attributes": [],
+    "explanation": "接在数量词后表示份数，如「二人分」是两人份。也可接在时间词后表示时间量，但本课指食物份数。",
+    "example": {
+      "jp": "三人分のカレーを作ります。",
+      "kana": "さんにんぶんのかれーをつくります。",
+      "romaji": "sanninbun no karē o tsukurimasu.",
+      "zh": "做三人份的咖喱。"
+    }
+  },
+  "l34-grams": {
+    "romaji": "guramu",
+    "attributes": [],
+    "explanation": "重量单位，符号g。外来语，常用片假名书写。前面直接接数字，如「100グラム」。",
+    "example": {
+      "jp": "砂糖を五十グラム入れてください。",
+      "kana": "さとうをごじゅうぐらむいれてください。",
+      "romaji": "satō o gojū guramu irete kudasai.",
+      "zh": "请放入五十克糖。"
+    }
+  },
+  "l34-pieces": {
+    "romaji": "ko",
+    "attributes": [],
+    "explanation": "用于数小圆形或块状物品的量词，如鸡蛋、苹果、洋葱等。数字读法有特殊变化，如「一個（いっこ）」「二個（にこ）」。",
+    "example": {
+      "jp": "たまねぎを二個買いました。",
+      "kana": "たまねぎをにこかいました。",
+      "romaji": "tamanegi o niko kaimashita.",
+      "zh": "买了两个洋葱。"
+    }
+  },
+  "l34-onion": {
+    "romaji": "tamanegi",
+    "attributes": [],
+    "explanation": "常见蔬菜，汉字写作「玉葱」。日常多用平假名。切洋葱时常用「たまねぎを切る」。",
+    "example": {
+      "jp": "たまねぎを薄く切ります。",
+      "kana": "たまねぎをうすくきります。",
+      "romaji": "tamanegi o usuku kirimasu.",
+      "zh": "把洋葱切薄片。"
+    }
+  },
+  "l34-quarter": {
+    "romaji": "yonbun no ichi",
+    "attributes": [],
+    "explanation": "分数表达，表示四分之一。读作「よんぶんのいち」，注意「四分の一」的「分」读「ぶん」。",
+    "example": {
+      "jp": "ケーキを四分の一に切ります。",
+      "kana": "けーきをよんぶんのいちにきります。",
+      "romaji": "kēki o yonbun no ichi ni kirimasu.",
+      "zh": "把蛋糕切成四分之一。"
+    }
+  },
+  "l34-seasoning": {
+    "romaji": "chōmiryō",
+    "attributes": [],
+    "explanation": "指盐、酱油、糖等调味品。烹饪中常说「調味料を加える」。",
+    "example": {
+      "jp": "味が足りないので調味料を足します。",
+      "kana": "あじがたりないのでちょうみりょうをたします。",
+      "romaji": "aji ga tarinai node chōmiryō o tashimasu.",
+      "zh": "味道不够，所以加调味料。"
+    }
+  },
+  "l34-appropriate-size": {
+    "romaji": "tekitō na ōkisa ni",
+    "attributes": [],
+    "explanation": "表示“切成合适的大小”，常用「適当な大きさに切る」。注意「適当」在此是“合适”之意，不是“随便”。",
+    "example": {
+      "jp": "野菜を適当な大きさに切ってください。",
+      "kana": "やさいをてきとうなおおきさにきってください。",
+      "romaji": "yasai o tekitō na ōkisa ni kitte kudasai.",
+      "zh": "请把蔬菜切成合适的大小。"
+    }
+  },
+  "l34-pot": {
+    "romaji": "nabe",
+    "attributes": [],
+    "explanation": "烹饪用的锅，通常指深锅。常用「なべで煮る」。",
+    "example": {
+      "jp": "なべに水を入れます。",
+      "kana": "なべにみずをいれます。",
+      "romaji": "nabe ni mizu o iremasu.",
+      "zh": "往锅里加水。"
+    }
+  },
+  "l34-fire": {
+    "romaji": "hi",
+    "attributes": [],
+    "explanation": "指火，常用于烹饪时调节火力，如「火を弱くする」「火を止める」。",
+    "example": {
+      "jp": "火が強いので弱くしてください。",
+      "kana": "ひがつよいのでよわくしてください。",
+      "romaji": "hi ga tsuyoi node yowaku shite kudasai.",
+      "zh": "火太旺了，请调小一点。"
+    }
+  },
+  "l34-heat": {
+    "romaji": "hi ni kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "固定表达，意为“放到火上加热”，常用于开始烹饪时。原形「火にかける」。",
+    "example": {
+      "jp": "なべを火にかけます。",
+      "kana": "なべをひにかけます。",
+      "romaji": "nabe o hi ni kakemasu.",
+      "zh": "把锅放到火上加热。"
+    }
+  },
+  "l34-cook": {
+    "romaji": "nimsu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用液体（如水、汤汁）煮食物。他动词，常用「～を煮る」。注意与「煮える」（自动词）区别。",
+    "example": {
+      "jp": "野菜を弱火で煮ます。",
+      "kana": "やさいをよわびでにます。",
+      "romaji": "yasai o yowabi de nimasu.",
+      "zh": "用小火煮蔬菜。"
+    }
+  },
+  "l34-cooked": {
+    "romaji": "niemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示食物被煮好、煮熟的状态，强调自然结果，常用「ご飯が煮える」「野菜が煮える」等搭配。注意与「煮る」（他动词）区别，不能说「ご飯を煮える」。",
+    "example": {
+      "jp": "ご飯が煮えました。",
+      "kana": "ごはんがにえました。",
+      "romaji": "gohan ga niemashita.",
+      "zh": "饭煮好了。"
+    }
+  },
+  "l34-bowl": {
+    "romaji": "donburi",
+    "attributes": [],
+    "explanation": "指较深的大碗，也常指盛在碗里的盖饭，如「牛丼」「親子丼」等。口语中可直接说「どんぶり物」表示盖饭类。",
+    "example": {
+      "jp": "この店のどんぶりは大きいです。",
+      "kana": "このみせのどんぶりはおおきいです。",
+      "romaji": "kono mise no donburi wa ookii desu.",
+      "zh": "这家店的碗很大。"
+    }
+  },
+  "l34-time-passes": {
+    "romaji": "tachimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示时间经过、流逝，常用「時間がたちます」「月日がたちます」等搭配。汉字写作「経つ」，但初学者常以假名形式出现。",
+    "example": {
+      "jp": "あっという間に時間がたちました。",
+      "kana": "あっというまにじかんがたちました。",
+      "romaji": "a tto iu ma ni jikan ga tachimashita.",
+      "zh": "转眼间时间就过去了。"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "lessonId": 40,
+  "model": "deepseek-flash",
+  "reviewedCount": 63,
+  "corrections": [
+    {
+      "id": "l40-w1218",
+      "attributes": [
+        "自他两用"
+      ],
+      "reason": "相談する可表示相互商量（自动词）也可表示向人咨询（他动词），按词义标自他两用。"
+    },
+    {
+      "id": "l40-w1590",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "出発する表示主体出发，无宾语，是自动词。"
+    },
+    {
+      "id": "l40-w1591",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "到着する表示主体到达，无宾语，是自动词。"
+    }
+  ]
+}

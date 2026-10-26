@@ -1,0 +1,336 @@
+{
+  "lessonId": 2,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/2.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "候选表中的テレホンカード、カセットテープ、テープレコーダー未见第二版交叉表，暂不纳入。第二版交叉表列出CD和お土産，需要补入。",
+    "逐项核对完成：候选50条，排除旧版3条、感谢表达合并减少3条，再由交叉表补入えっ／あ，共46条。覆盖明细见vocabulary-audit/02.json。"
+  ],
+  "words": [
+    {
+      "key": "kore",
+      "word": "これ",
+      "reading": "これ",
+      "partOfSpeech": "指示代名词",
+      "meaning": "这个（靠近说话人）"
+    },
+    {
+      "key": "sore",
+      "word": "それ",
+      "reading": "それ",
+      "partOfSpeech": "指示代名词",
+      "meaning": "那个（靠近听话人）"
+    },
+    {
+      "key": "are",
+      "word": "あれ",
+      "reading": "あれ",
+      "partOfSpeech": "指示代名词",
+      "meaning": "那个（离双方都远）"
+    },
+    {
+      "key": "kono",
+      "word": "この～",
+      "reading": "この～",
+      "partOfSpeech": "连体词",
+      "meaning": "这个……（后接名词）"
+    },
+    {
+      "key": "sono",
+      "word": "その～",
+      "reading": "その～",
+      "partOfSpeech": "连体词",
+      "meaning": "那个……（后接名词，靠近听话人）"
+    },
+    {
+      "key": "ano",
+      "word": "あの～",
+      "reading": "あの～",
+      "partOfSpeech": "连体词",
+      "meaning": "那个……（后接名词，离双方都远）"
+    },
+    {
+      "key": "hon",
+      "word": "本",
+      "reading": "ほん",
+      "partOfSpeech": "名词",
+      "meaning": "书"
+    },
+    {
+      "key": "jisho",
+      "word": "辞書",
+      "reading": "じしょ",
+      "partOfSpeech": "名词",
+      "meaning": "词典"
+    },
+    {
+      "key": "zasshi",
+      "word": "雑誌",
+      "reading": "ざっし",
+      "partOfSpeech": "名词",
+      "meaning": "杂志"
+    },
+    {
+      "key": "shinbun",
+      "word": "新聞",
+      "reading": "しんぶん",
+      "partOfSpeech": "名词",
+      "meaning": "报纸"
+    },
+    {
+      "key": "nooto",
+      "word": "ノート",
+      "reading": "のーと",
+      "partOfSpeech": "名词",
+      "meaning": "笔记本"
+    },
+    {
+      "key": "techou",
+      "word": "手帳",
+      "reading": "てちょう",
+      "partOfSpeech": "名词",
+      "meaning": "记事本"
+    },
+    {
+      "key": "meishi",
+      "word": "名刺",
+      "reading": "めいし",
+      "partOfSpeech": "名词",
+      "meaning": "名片"
+    },
+    {
+      "key": "kaado",
+      "word": "カード",
+      "reading": "かーど",
+      "partOfSpeech": "名词",
+      "meaning": "卡片；卡"
+    },
+    {
+      "key": "enpitsu",
+      "word": "鉛筆",
+      "reading": "えんぴつ",
+      "partOfSpeech": "名词",
+      "meaning": "铅笔"
+    },
+    {
+      "key": "boorupen",
+      "word": "ボールペン",
+      "reading": "ぼーるぺん",
+      "partOfSpeech": "名词",
+      "meaning": "圆珠笔"
+    },
+    {
+      "key": "shaapupenshiru",
+      "word": "シャープペンシル",
+      "reading": "しゃーぷぺんしる",
+      "partOfSpeech": "名词",
+      "meaning": "自动铅笔"
+    },
+    {
+      "key": "kagi",
+      "word": "鍵",
+      "reading": "かぎ",
+      "partOfSpeech": "名词",
+      "meaning": "钥匙"
+    },
+    {
+      "key": "tokei",
+      "word": "時計",
+      "reading": "とけい",
+      "partOfSpeech": "名词",
+      "meaning": "钟；表"
+    },
+    {
+      "key": "kasa",
+      "word": "傘",
+      "reading": "かさ",
+      "partOfSpeech": "名词",
+      "meaning": "伞"
+    },
+    {
+      "key": "kaban",
+      "word": "かばん",
+      "reading": "かばん",
+      "partOfSpeech": "名词",
+      "meaning": "包；书包；手提包"
+    },
+    {
+      "key": "cd",
+      "word": "CD",
+      "reading": "しーでぃー",
+      "partOfSpeech": "名词",
+      "meaning": "光盘"
+    },
+    {
+      "key": "terebi",
+      "word": "テレビ",
+      "reading": "てれび",
+      "partOfSpeech": "名词",
+      "meaning": "电视机；电视"
+    },
+    {
+      "key": "rajio",
+      "word": "ラジオ",
+      "reading": "らじお",
+      "partOfSpeech": "名词",
+      "meaning": "收音机；广播"
+    },
+    {
+      "key": "kamera",
+      "word": "カメラ",
+      "reading": "かめら",
+      "partOfSpeech": "名词",
+      "meaning": "照相机"
+    },
+    {
+      "key": "konpyuutaa",
+      "word": "コンピューター",
+      "reading": "こんぴゅーたー",
+      "partOfSpeech": "名词",
+      "meaning": "电脑；计算机"
+    },
+    {
+      "key": "kuruma",
+      "word": "車",
+      "reading": "くるま",
+      "partOfSpeech": "名词",
+      "meaning": "汽车；车"
+    },
+    {
+      "key": "tsukue",
+      "word": "机",
+      "reading": "つくえ",
+      "partOfSpeech": "名词",
+      "meaning": "桌子；书桌"
+    },
+    {
+      "key": "isu",
+      "word": "いす",
+      "reading": "いす",
+      "partOfSpeech": "名词",
+      "meaning": "椅子"
+    },
+    {
+      "key": "chokoreeto",
+      "word": "チョコレート",
+      "reading": "ちょこれーと",
+      "partOfSpeech": "名词",
+      "meaning": "巧克力"
+    },
+    {
+      "key": "koohii",
+      "word": "コーヒー",
+      "reading": "こーひー",
+      "partOfSpeech": "名词",
+      "meaning": "咖啡"
+    },
+    {
+      "key": "omiyage",
+      "word": "お土産",
+      "reading": "おみやげ",
+      "partOfSpeech": "名词",
+      "meaning": "伴手礼；土特产；纪念品"
+    },
+    {
+      "key": "eigo",
+      "word": "英語",
+      "reading": "えいご",
+      "partOfSpeech": "名词",
+      "meaning": "英语"
+    },
+    {
+      "key": "nihongo",
+      "word": "日本語",
+      "reading": "にほんご",
+      "partOfSpeech": "名词",
+      "meaning": "日语"
+    },
+    {
+      "key": "go",
+      "word": "～語",
+      "reading": "～ご",
+      "partOfSpeech": "接尾词",
+      "meaning": "……语；……语言"
+    },
+    {
+      "key": "nan",
+      "word": "何",
+      "reading": "なん",
+      "partOfSpeech": "疑问代名词",
+      "meaning": "什么"
+    },
+    {
+      "key": "sou",
+      "word": "そう",
+      "reading": "そう",
+      "partOfSpeech": "副词／应答",
+      "meaning": "那样；是的（そうです）"
+    },
+    {
+      "key": "chigaimasu",
+      "word": "違います",
+      "reading": "ちがいます",
+      "partOfSpeech": "固定表达／动词",
+      "meaning": "不对；不是"
+    },
+    {
+      "key": "soudesuka",
+      "word": "そうですか",
+      "reading": "そうですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "是吗；原来如此"
+    },
+    {
+      "key": "anou",
+      "word": "あのう",
+      "reading": "あのう",
+      "partOfSpeech": "感叹词",
+      "meaning": "那个……；请问……（引起注意或表示犹豫）"
+    },
+    {
+      "key": "douzo",
+      "word": "どうぞ",
+      "reading": "どうぞ",
+      "partOfSpeech": "副词／固定表达",
+      "meaning": "请（递物、邀请等）"
+    },
+    {
+      "key": "arigatou",
+      "word": "どうもありがとうございます",
+      "reading": "どうもありがとうございます",
+      "partOfSpeech": "固定表达",
+      "meaning": "非常感谢（也可说「ありがとう」「ありがとうございます」「どうも」）"
+    },
+    {
+      "key": "korekaraosewani",
+      "word": "これからお世話になります",
+      "reading": "これからおせわになります",
+      "partOfSpeech": "固定表达",
+      "meaning": "今后要承蒙您关照了"
+    },
+    {
+      "key": "kochirakoso",
+      "word": "こちらこそよろしくお願いします",
+      "reading": "こちらこそよろしくおねがいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "我才要请您多关照"
+    },
+    {
+      "key": "e",
+      "word": "えっ",
+      "reading": "えっ",
+      "partOfSpeech": "感叹词",
+      "meaning": "啊？（惊讶或没听清时）"
+    },
+    {
+      "key": "a",
+      "word": "あ",
+      "reading": "あ",
+      "partOfSpeech": "感叹词",
+      "meaning": "啊（发现、想起某事时）"
+    }
+  ]
+}

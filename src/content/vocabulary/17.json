@@ -1,0 +1,274 @@
+{
+  "lessonId": 17,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/17.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源38条，排除2条旧版或跨课条目，合并同形同义项并补入第二来源，最终37条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/17.json。"
+  ],
+  "words": [
+    {
+      "key": "w598",
+      "word": "それから",
+      "reading": "それから",
+      "partOfSpeech": "表达",
+      "meaning": "然后；还有"
+    },
+    {
+      "key": "w800",
+      "word": "覚えます",
+      "reading": "おぼえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "记住"
+    },
+    {
+      "key": "w801",
+      "word": "忘れます",
+      "reading": "わすれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "忘记"
+    },
+    {
+      "key": "w802",
+      "word": "なくします",
+      "reading": "なくします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "弄丢"
+    },
+    {
+      "key": "w804",
+      "word": "払います",
+      "reading": "はらいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "付款"
+    },
+    {
+      "key": "w805",
+      "word": "返します",
+      "reading": "かえします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "归还"
+    },
+    {
+      "key": "w806",
+      "word": "出かけます",
+      "reading": "でかけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出门"
+    },
+    {
+      "key": "w807",
+      "word": "脱ぎます",
+      "reading": "ぬぎます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "脱掉"
+    },
+    {
+      "key": "w808",
+      "word": "持って行きます",
+      "reading": "もっていきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "带去"
+    },
+    {
+      "key": "w809",
+      "word": "持って来ます",
+      "reading": "もってきます",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "带来"
+    },
+    {
+      "key": "w810",
+      "word": "心配します",
+      "reading": "しんぱいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "担心"
+    },
+    {
+      "key": "w811",
+      "word": "残業します",
+      "reading": "ざんぎょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "加班"
+    },
+    {
+      "key": "w812",
+      "word": "出張します",
+      "reading": "しゅっちょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "出差"
+    },
+    {
+      "key": "w813",
+      "word": "［薬を］飲みます",
+      "reading": "［くすりを］のみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "服用（药）"
+    },
+    {
+      "key": "w814",
+      "word": "［お風呂に］入ります",
+      "reading": "［おふろに］はいります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "洗（澡）"
+    },
+    {
+      "key": "w815",
+      "word": "大切な",
+      "reading": "たいせつな",
+      "partOfSpeech": "な形容词",
+      "meaning": "重要的；珍贵的"
+    },
+    {
+      "key": "w816",
+      "word": "大丈夫な",
+      "reading": "だいじょうぶな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不要紧的；没问题的"
+    },
+    {
+      "key": "w817",
+      "word": "危ない",
+      "reading": "あぶない",
+      "partOfSpeech": "い形容词",
+      "meaning": "危险的"
+    },
+    {
+      "key": "w820",
+      "word": "禁煙",
+      "reading": "きんえん",
+      "partOfSpeech": "名词",
+      "meaning": "禁烟"
+    },
+    {
+      "key": "w821",
+      "word": "健康保険証",
+      "reading": "けんこうほけんしょう",
+      "partOfSpeech": "名词",
+      "meaning": "健康保险证"
+    },
+    {
+      "key": "w822",
+      "word": "風邪",
+      "reading": "かぜ",
+      "partOfSpeech": "名词",
+      "meaning": "感冒"
+    },
+    {
+      "key": "w823",
+      "word": "熱",
+      "reading": "ねつ",
+      "partOfSpeech": "名词",
+      "meaning": "发烧；热度"
+    },
+    {
+      "key": "w824",
+      "word": "病気",
+      "reading": "びょうき",
+      "partOfSpeech": "名词",
+      "meaning": "疾病"
+    },
+    {
+      "key": "w825",
+      "word": "薬",
+      "reading": "くすり",
+      "partOfSpeech": "名词",
+      "meaning": "药"
+    },
+    {
+      "key": "w826",
+      "word": "お風呂",
+      "reading": "おふろ",
+      "partOfSpeech": "名词",
+      "meaning": "洗澡；浴室"
+    },
+    {
+      "key": "w827",
+      "word": "上着",
+      "reading": "うわぎ",
+      "partOfSpeech": "名词",
+      "meaning": "外套"
+    },
+    {
+      "key": "w828",
+      "word": "下着",
+      "reading": "したぎ",
+      "partOfSpeech": "名词",
+      "meaning": "内衣"
+    },
+    {
+      "key": "w830",
+      "word": "二、三日",
+      "reading": "にさんにち",
+      "partOfSpeech": "名词",
+      "meaning": "两三天"
+    },
+    {
+      "key": "w831",
+      "word": "二、三～",
+      "reading": "に、さん～",
+      "partOfSpeech": "名词",
+      "meaning": "两三个……"
+    },
+    {
+      "key": "w832",
+      "word": "～までに",
+      "reading": "～までに",
+      "partOfSpeech": "表达",
+      "meaning": "在……之前（期限）"
+    },
+    {
+      "key": "w833",
+      "word": "ですから",
+      "reading": "ですから",
+      "partOfSpeech": "表达",
+      "meaning": "所以"
+    },
+    {
+      "key": "w834",
+      "word": "どうしましたか",
+      "reading": "どうしましたか",
+      "partOfSpeech": "固定表达",
+      "meaning": "怎么了"
+    },
+    {
+      "key": "w835",
+      "word": "お腹が痛い",
+      "reading": "おなかがいたい",
+      "partOfSpeech": "い形容词",
+      "meaning": "肚子痛"
+    },
+    {
+      "key": "w83500",
+      "word": "頭が痛い",
+      "reading": "あたまがいたい",
+      "partOfSpeech": "い形容词",
+      "meaning": "头痛"
+    },
+    {
+      "key": "w836",
+      "word": "喉",
+      "reading": "のど",
+      "partOfSpeech": "名词",
+      "meaning": "喉咙"
+    },
+    {
+      "key": "w837",
+      "word": "お大事に",
+      "reading": "おだいじに",
+      "partOfSpeech": "固定表达",
+      "meaning": "请保重（对病人说）"
+    },
+    {
+      "key": "painful",
+      "word": "痛い",
+      "reading": "いたい",
+      "partOfSpeech": "い形容词",
+      "meaning": "痛的"
+    }
+  ]
+}

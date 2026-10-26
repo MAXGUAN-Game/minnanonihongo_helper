@@ -1,0 +1,14 @@
+{
+  "lessonId": 41,
+  "model": "deepseek-flash",
+  "reviewedCount": 60,
+  "corrections": [
+    {
+      "id": "l41-w1639",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「親切にします」为する复合动词，表示对人友善对待，带对象论元，属他动词，原标注正确无需改；但需核对是否应保留——经查无误，不列入。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "lessonId": 2,
+  "model": "deepseek-flash",
+  "reviewedCount": 46,
+  "corrections": [
+    {
+      "id": "l2-chigaimasu",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「違う」是自动词，表示“不同、不对”，无宾语，属性正确无需改动，但按核查要求确认保留。"
+    }
+  ]
+}

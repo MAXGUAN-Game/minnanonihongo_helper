@@ -1,0 +1,199 @@
+{
+  "lessonId": 50,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/50.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 35,
+  "entries": [
+    {
+      "sourceId": "1018",
+      "sourceWord": "［を］淹れます",
+      "key": "w1018"
+    },
+    {
+      "sourceId": "1436",
+      "sourceWord": "初めに",
+      "key": "w1436"
+    },
+    {
+      "sourceId": "1776",
+      "sourceWord": "用意します",
+      "key": "w1776"
+    },
+    {
+      "sourceId": "1856",
+      "sourceWord": "スケジュール",
+      "key": "w1856"
+    },
+    {
+      "sourceId": "1897",
+      "sourceWord": "参ります",
+      "key": "w1897"
+    },
+    {
+      "sourceId": "1898",
+      "sourceWord": "おります",
+      "key": "w1898"
+    },
+    {
+      "sourceId": "1899",
+      "sourceWord": "頂きます",
+      "key": "w1899"
+    },
+    {
+      "sourceId": "1900",
+      "sourceWord": "申します",
+      "key": "w1900"
+    },
+    {
+      "sourceId": "1901",
+      "sourceWord": "致します",
+      "key": "w1901"
+    },
+    {
+      "sourceId": "1902",
+      "sourceWord": "拝見します",
+      "key": "w1902"
+    },
+    {
+      "sourceId": "1903",
+      "sourceWord": "存じます",
+      "key": "w1903"
+    },
+    {
+      "sourceId": "1904",
+      "sourceWord": "お目にかかります",
+      "key": "w1904"
+    },
+    {
+      "sourceId": "1907",
+      "sourceWord": "私",
+      "key": "w1907"
+    },
+    {
+      "sourceId": "1908",
+      "sourceWord": "ガイド",
+      "key": "w1908"
+    },
+    {
+      "sourceId": "1912",
+      "sourceWord": "再来週",
+      "key": "w1912"
+    },
+    {
+      "sourceId": "1913",
+      "sourceWord": "再来月",
+      "key": "w1913"
+    },
+    {
+      "sourceId": "1914",
+      "sourceWord": "再来年",
+      "key": "w1914"
+    },
+    {
+      "sourceId": "1919",
+      "sourceWord": "緊張します",
+      "key": "w1919"
+    },
+    {
+      "sourceId": "1922",
+      "sourceWord": "賞金",
+      "key": "w1922"
+    },
+    {
+      "sourceId": "1924",
+      "sourceWord": "きりん",
+      "key": "w1924"
+    },
+    {
+      "sourceId": "1926",
+      "sourceWord": "ころ",
+      "key": "w1926"
+    },
+    {
+      "sourceId": "1927",
+      "sourceWord": "［夢が］叶います",
+      "key": "w1927"
+    },
+    {
+      "sourceId": "1930",
+      "sourceWord": "心から",
+      "key": "w1930"
+    },
+    {
+      "sourceId": "1931",
+      "sourceWord": "感謝します",
+      "key": "w1931"
+    },
+    {
+      "sourceId": "3204",
+      "sourceWord": "応援",
+      "key": "w3204"
+    },
+    {
+      "sourceId": "3489",
+      "sourceWord": "メールアドレス",
+      "key": "w3489"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1905",
+      "sourceWord": "ございます",
+      "reason": "旧版郑重存在表达，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1910",
+      "sourceWord": "郊外",
+      "reason": "旧版地点词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1911",
+      "sourceWord": "アルバム",
+      "reason": "旧版相册词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1916",
+      "sourceWord": "最初に",
+      "reason": "第二版采用はじめに。"
+    },
+    {
+      "sourceId": "1917",
+      "sourceWord": "最後に",
+      "reason": "旧版顺序副词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1918",
+      "sourceWord": "ただ今",
+      "reason": "旧版时间副词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1921",
+      "sourceWord": "［ビデオに］撮ります",
+      "reason": "旧版录像搭配，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1928",
+      "sourceWord": "一言よろしいでしょうか。",
+      "reason": "旧版获奖发言整句，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1929",
+      "sourceWord": "協力します",
+      "reason": "旧版合作动词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "visit",
+    "support",
+    "museum",
+    "munich",
+    "thanks",
+    "well",
+    "trouble",
+    "apply"
+  ],
+  "finalCount": 34
+}

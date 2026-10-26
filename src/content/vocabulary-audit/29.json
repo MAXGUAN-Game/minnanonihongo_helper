@@ -1,0 +1,232 @@
+{
+  "lessonId": 29,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/29.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 41,
+  "entries": [
+    {
+      "sourceId": "1169",
+      "sourceWord": "［ドアが］開きます",
+      "key": "w1169"
+    },
+    {
+      "sourceId": "1170",
+      "sourceWord": "［ドアが］閉まります",
+      "key": "w1170"
+    },
+    {
+      "sourceId": "1171",
+      "sourceWord": "［電気が］つきます",
+      "key": "w1171"
+    },
+    {
+      "sourceId": "1172",
+      "sourceWord": "［電気が］消えます",
+      "key": "w1172"
+    },
+    {
+      "sourceId": "1175",
+      "sourceWord": "［椅子が］壊れます",
+      "key": "w1175"
+    },
+    {
+      "sourceId": "1176",
+      "sourceWord": "［グラスが］割れます",
+      "key": "w1176"
+    },
+    {
+      "sourceId": "1177",
+      "sourceWord": "［枝が］折れます",
+      "key": "w1177"
+    },
+    {
+      "sourceId": "1178",
+      "sourceWord": "［紙が］破れます",
+      "key": "w1178"
+    },
+    {
+      "sourceId": "1179",
+      "sourceWord": "［服が］汚れます",
+      "key": "w1179"
+    },
+    {
+      "sourceId": "1180",
+      "sourceWord": "［が］付きます",
+      "key": "w1180"
+    },
+    {
+      "sourceId": "1181",
+      "sourceWord": "［が］外れます",
+      "key": "w1181"
+    },
+    {
+      "sourceId": "1182",
+      "sourceWord": "［が］止まります",
+      "key": "w1182"
+    },
+    {
+      "sourceId": "1183",
+      "sourceWord": "間違えます",
+      "key": "w1183"
+    },
+    {
+      "sourceId": "1184",
+      "sourceWord": "落とします",
+      "key": "w1184"
+    },
+    {
+      "sourceId": "1185",
+      "sourceWord": "［鍵が］掛かります",
+      "key": "w1185"
+    },
+    {
+      "sourceId": "1186",
+      "sourceWord": "お皿",
+      "key": "w1186"
+    },
+    {
+      "sourceId": "1187",
+      "sourceWord": "お茶碗",
+      "key": "w1187"
+    },
+    {
+      "sourceId": "1188",
+      "sourceWord": "コップ",
+      "key": "w1188"
+    },
+    {
+      "sourceId": "1189",
+      "sourceWord": "ガラス",
+      "key": "w1189"
+    },
+    {
+      "sourceId": "1190",
+      "sourceWord": "袋",
+      "key": "w1190"
+    },
+    {
+      "sourceId": "1192",
+      "sourceWord": "枝",
+      "key": "w1192"
+    },
+    {
+      "sourceId": "1193",
+      "sourceWord": "駅員",
+      "key": "w1193"
+    },
+    {
+      "sourceId": "1194",
+      "sourceWord": "この辺",
+      "key": "w1194"
+    },
+    {
+      "sourceId": "1195",
+      "sourceWord": "～辺",
+      "key": "w1195"
+    },
+    {
+      "sourceId": "1196",
+      "sourceWord": "このくらい",
+      "key": "w1196"
+    },
+    {
+      "sourceId": "1197",
+      "sourceWord": "お先にどうぞ。",
+      "key": "w1197"
+    },
+    {
+      "sourceId": "1198",
+      "sourceWord": "ああ、よかった。",
+      "key": "w1198"
+    },
+    {
+      "sourceId": "1199",
+      "sourceWord": "今の電車",
+      "key": "w1199"
+    },
+    {
+      "sourceId": "1200",
+      "sourceWord": "忘れ物",
+      "key": "w1200"
+    },
+    {
+      "sourceId": "1201",
+      "sourceWord": "～側",
+      "key": "w1201"
+    },
+    {
+      "sourceId": "1202",
+      "sourceWord": "ポケット",
+      "key": "w1202"
+    },
+    {
+      "sourceId": "1203",
+      "sourceWord": "覚えていません。",
+      "key": "w1203"
+    },
+    {
+      "sourceId": "1204",
+      "sourceWord": "網棚",
+      "key": "w1204"
+    },
+    {
+      "sourceId": "1205",
+      "sourceWord": "確か",
+      "key": "w1205"
+    },
+    {
+      "sourceId": "1214",
+      "sourceWord": "片づけます",
+      "key": "w1214"
+    },
+    {
+      "sourceId": "1240",
+      "sourceWord": "交番",
+      "key": "w1240"
+    },
+    {
+      "sourceId": "1534",
+      "sourceWord": "書類",
+      "key": "w1534"
+    },
+    {
+      "sourceId": "1605",
+      "sourceWord": "返事",
+      "key": "w1605"
+    },
+    {
+      "sourceId": "1638",
+      "sourceWord": "取り替えます",
+      "key": "w1638"
+    },
+    {
+      "sourceId": "3811",
+      "sourceWord": "拭きます",
+      "key": "w3811"
+    },
+    {
+      "sourceId": "941",
+      "sourceWord": "スピーチ",
+      "key": "w941"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "genji",
+    "shinjuku",
+    "earthquake",
+    "wall",
+    "needle",
+    "point",
+    "station-front",
+    "fall",
+    "west",
+    "direction",
+    "burn",
+    "reporter"
+  ],
+  "finalCount": 53
+}

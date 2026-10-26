@@ -1,0 +1,452 @@
+{
+  "l47-w1078": {
+    "romaji": "moemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物体燃烧，常用于火、垃圾、木材等。是「燃える」的礼貌形，强调自然燃烧的状态。",
+    "example": {
+      "jp": "暖炉で木が燃えています。",
+      "kana": "だんろで きが もえています。",
+      "romaji": "danro de ki ga moete imasu.",
+      "zh": "壁炉里木头在燃烧。"
+    }
+  },
+  "l47-w1290": {
+    "romaji": "kaze ga fukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示风刮起来，主语是「風」，用助词「が」。常用于天气预报或描述天气。",
+    "example": {
+      "jp": "今日は強い風が吹きます。",
+      "kana": "きょうは つよい かぜが ふきます。",
+      "romaji": "kyou wa tsuyoi kaze ga fukimasu.",
+      "zh": "今天会刮强风。"
+    }
+  },
+  "l47-w1518": {
+    "romaji": "nakunarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「亡くなる」的礼貌形，是「死ぬ」的委婉说法，用于表达某人去世，语气庄重。",
+    "example": {
+      "jp": "祖父は去年亡くなりました。",
+      "kana": "そふは きょねん なくなりました。",
+      "romaji": "sofu wa kyonen nakunarimashita.",
+      "zh": "祖父去年去世了。"
+    }
+  },
+  "l47-w1704": {
+    "romaji": "deeta",
+    "attributes": [],
+    "explanation": "指数据、资料，常用于计算机或研究领域。是外来语，口语和书面语均可用。",
+    "example": {
+      "jp": "このデータを分析してください。",
+      "kana": "この でーたを ぶんせきして ください。",
+      "romaji": "kono deeta o bunsekishite kudasai.",
+      "zh": "请分析这些数据。"
+    }
+  },
+  "l47-w1820": {
+    "romaji": "hito ga atsumarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人聚集起来，主语是「人」，用助词「が」。常用于描述人群集合的场面。",
+    "example": {
+      "jp": "駅前に人が集まっています。",
+      "kana": "えきまえに ひとが あつまっています。",
+      "romaji": "ekimae ni hito ga atsumatte imasu.",
+      "zh": "车站前聚集着人。"
+    }
+  },
+  "l47-w1821": {
+    "romaji": "wakaremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示分离、分别，可用于人与人告别，也可用于事物分开。常与助词「と」搭配表示对象。",
+    "example": {
+      "jp": "友達と駅で別れました。",
+      "kana": "ともだちと えきで わかれました。",
+      "romaji": "tomodachi to eki de wakaremashita.",
+      "zh": "在车站和朋友告别了。"
+    }
+  },
+  "l47-w1822": {
+    "romaji": "nagaikishimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「長生きする」的礼貌形，表示长寿、活得久。常用于祝福或描述寿命。",
+    "example": {
+      "jp": "祖母は九十歳まで長生きしました。",
+      "kana": "そぼは きゅうじゅっさいまで ながいきしました。",
+      "romaji": "sobo wa kyuujussai made nagaikishimashita.",
+      "zh": "祖母活到了九十岁。"
+    }
+  },
+  "l47-w1823": {
+    "romaji": "oto ga shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示听到声音，主语是「音」，用助词「が」。用于描述非人声的声响。",
+    "example": {
+      "jp": "外から変な音がします。",
+      "kana": "そとから へんな おとが します。",
+      "romaji": "soto kara henna oto ga shimasu.",
+      "zh": "外面传来奇怪的声音。"
+    }
+  },
+  "l47-w1824": {
+    "romaji": "koe ga shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示听到人声，主语是「声」，用助词「が」。特指人的说话声或歌声。",
+    "example": {
+      "jp": "隣の部屋から声がします。",
+      "kana": "となりの へやから こえが します。",
+      "romaji": "tonari no heya kara koe ga shimasu.",
+      "zh": "隔壁房间传来人声。"
+    }
+  },
+  "l47-w1825": {
+    "romaji": "aji ga shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示有某种味道，主语是「味」，用助词「が」。常与表示味道的词搭配，如「変な味」。",
+    "example": {
+      "jp": "このスープは変な味がします。",
+      "kana": "この すーぷは へんな あじが します。",
+      "romaji": "kono suupu wa henna aji ga shimasu.",
+      "zh": "这汤有奇怪的味道。"
+    }
+  },
+  "l47-w1826": {
+    "romaji": "nioi ga shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示闻到气味，主语是「匂い」，用助词「が」。常用于描述某种气味的存在。",
+    "example": {
+      "jp": "台所からいい匂いがします。",
+      "kana": "だいどころから いい においが します。",
+      "romaji": "daidokoro kara ii nioi ga shimasu.",
+      "zh": "厨房飘来好闻的气味。"
+    }
+  },
+  "l47-w1828": {
+    "romaji": "hidoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示程度严重或情况糟糕，可用于形容天气、事故、行为等。口语中也可表示过分、残酷。",
+    "example": {
+      "jp": "昨日の雨はひどかったです。",
+      "kana": "きのうの あめは ひどかったです。",
+      "romaji": "kinou no ame wa hidokatta desu.",
+      "zh": "昨天的雨很严重。"
+    }
+  },
+  "l47-w1829": {
+    "romaji": "kowai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示感到恐惧或可怕，常用于口语。可形容事物令人害怕，也可表示对某事担心。",
+    "example": {
+      "jp": "夜の森は怖いです。",
+      "kana": "よるのもりはこわいです。",
+      "romaji": "yoru no mori wa kowai desu.",
+      "zh": "夜晚的森林很可怕。"
+    }
+  },
+  "l47-w1832": {
+    "romaji": "jikken",
+    "attributes": [],
+    "explanation": "指科学实验，常与「する」搭配构成「実験する」。用于学术或教学场景。",
+    "example": {
+      "jp": "学校で実験をしました。",
+      "kana": "がっこうでじっけんをしました。",
+      "romaji": "gakkou de jikken o shimashita.",
+      "zh": "在学校做了实验。"
+    }
+  },
+  "l47-w1833": {
+    "romaji": "jinkou",
+    "attributes": [],
+    "explanation": "指某地区的人口数量，常用于统计或社会话题。可说「人口が多い／少ない」。",
+    "example": {
+      "jp": "この町の人口は少ないです。",
+      "kana": "このまちのじんこうはすくないです。",
+      "romaji": "kono machi no jinkou wa sukunai desu.",
+      "zh": "这个镇的人口很少。"
+    }
+  },
+  "l47-v7": {
+    "romaji": "nioi",
+    "attributes": [],
+    "explanation": "指气味、味道，中性词。常与「する」搭配说「においがする」。注意与「臭い（くさい）」区分。",
+    "example": {
+      "jp": "台所からいいにおいがします。",
+      "kana": "だいどころからいいにおいがします。",
+      "romaji": "daidokoro kara ii nioi ga shimasu.",
+      "zh": "厨房飘来好闻的气味。"
+    }
+  },
+  "l47-w1835": {
+    "romaji": "kagaku",
+    "attributes": [],
+    "explanation": "指科学，涵盖自然科学等领域。常用于学科名或「科学的」等复合词。",
+    "example": {
+      "jp": "科学の勉強は面白いです。",
+      "kana": "かがくのべんきょうはおもしろいです。",
+      "romaji": "kagaku no benkyou wa omoshiroi desu.",
+      "zh": "学习科学很有趣。"
+    }
+  },
+  "l47-w1836": {
+    "romaji": "igaku",
+    "attributes": [],
+    "explanation": "指医学，作为学科或领域名称。常用于大学专业或研究语境。",
+    "example": {
+      "jp": "兄は医学を勉強しています。",
+      "kana": "あにはいがくをべんきょうしています。",
+      "romaji": "ani wa igaku o benkyou shite imasu.",
+      "zh": "哥哥在学医学。"
+    }
+  },
+  "l47-w1837": {
+    "romaji": "bungaku",
+    "attributes": [],
+    "explanation": "指文学，包括小说、诗歌等。常用于学科名或「文学者」等词。",
+    "example": {
+      "jp": "大学で文学を学びました。",
+      "kana": "だいがくでぶんがくをまなびました。",
+      "romaji": "daigaku de bungaku o manabimashita.",
+      "zh": "在大学学了文学。"
+    }
+  },
+  "l47-w1838": {
+    "romaji": "patokaa",
+    "attributes": [],
+    "explanation": "指警车，口语常用。来自英语 patrol car，正式说法为「パトロールカー」。",
+    "example": {
+      "jp": "パトカーがサイレンを鳴らしています。",
+      "kana": "ぱとかーがさいれんをならしています。",
+      "romaji": "patokaa ga sairen o narashite imasu.",
+      "zh": "警车正在鸣笛。"
+    }
+  },
+  "l47-w1839": {
+    "romaji": "kyuukyuusha",
+    "attributes": [],
+    "explanation": "指救护车，用于紧急医疗运送。常与「呼ぶ」「来る」等动词搭配。",
+    "example": {
+      "jp": "すぐに救急車を呼んでください。",
+      "kana": "すぐにきゅうきゅうしゃをよんでください。",
+      "romaji": "sugu ni kyuukyuusha o yonde kudasai.",
+      "zh": "请马上叫救护车。"
+    }
+  },
+  "l47-w1840": {
+    "romaji": "sansei",
+    "attributes": [],
+    "explanation": "表示赞成、同意，常与「する」搭配说「賛成する」。反义词是「反対」。",
+    "example": {
+      "jp": "その計画に賛成です。",
+      "kana": "そのけいかくにさんせいです。",
+      "romaji": "sono keikaku ni sansei desu.",
+      "zh": "我赞成那个计划。"
+    }
+  },
+  "l47-w1841": {
+    "romaji": "hantai",
+    "attributes": [],
+    "explanation": "表示反对、相反，常与「する」搭配说「反対する」。反义词是「賛成」。",
+    "example": {
+      "jp": "父は私の意見に反対しました。",
+      "kana": "ちちはわたしのいけんにはんたいしました。",
+      "romaji": "chichi wa watashi no iken ni hantai shimashita.",
+      "zh": "父亲反对我的意见。"
+    }
+  },
+  "l47-w1842": {
+    "romaji": "dansei",
+    "attributes": [],
+    "explanation": "指男性，多用于正式或统计语境。反义词是「女性（じょせい）」。",
+    "example": {
+      "jp": "この会社は男性が多いです。",
+      "kana": "このかいしゃはだんせいがおおいです。",
+      "romaji": "kono kaisha wa dansei ga ooi desu.",
+      "zh": "这家公司男性很多。"
+    }
+  },
+  "l47-w1843": {
+    "romaji": "josei",
+    "attributes": [],
+    "explanation": "指成年女性，语体较正式，常用于新闻、统计或书面语；日常口语中更常说「女の人」。",
+    "example": {
+      "jp": "この会社は女性の社員が多いです。",
+      "kana": "このかいしゃはじょせいのしゃいんがおおいです。",
+      "romaji": "kono kaisha wa josei no shain ga ooi desu.",
+      "zh": "这家公司女员工很多。"
+    }
+  },
+  "l47-w1844": {
+    "romaji": "dōmo",
+    "attributes": [],
+    "explanation": "表示推测或委婉判断时意为“似乎、总觉得”，常与「～らしい」「～ようだ」等呼应；也可用于寒暄或表示感谢，需根据语境区分。",
+    "example": {
+      "jp": "どうも雨が降りそうですね。",
+      "kana": "どうもあめがふりそうですね。",
+      "romaji": "dōmo ame ga furisō desu ne.",
+      "zh": "总觉得好像要下雨了。"
+    }
+  },
+  "l47-w1845": {
+    "romaji": "ni yoru to",
+    "attributes": [],
+    "explanation": "用于引用消息来源，后接传闻内容，常与「～そうです」「～ということです」搭配；比「～の話では」更书面。",
+    "example": {
+      "jp": "天気予報によると、明日は晴れるそうです。",
+      "kana": "てんきよほうによると、あしたははれるそうです。",
+      "romaji": "tenki yohō ni yoru to, ashita wa hareru sō desu.",
+      "zh": "据天气预报说，明天是晴天。"
+    }
+  },
+  "l47-w1846": {
+    "romaji": "koibito",
+    "attributes": [],
+    "explanation": "指恋爱关系的对象，可用于男女；比「彼氏」「彼女」更正式、中性，不限于已婚或未婚。",
+    "example": {
+      "jp": "彼女は恋人と旅行に行きました。",
+      "kana": "かのじょはこいびととりょこうにいきました。",
+      "romaji": "kanojo wa koibito to ryokō ni ikimashita.",
+      "zh": "她和恋人一起去旅行了。"
+    }
+  },
+  "l47-w1847": {
+    "romaji": "kon'yaku shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示与某人订立婚约，常用「～と婚約する」；是正式说法，口语中也说「婚約する」。",
+    "example": {
+      "jp": "姉は来月、恋人と婚約します。",
+      "kana": "あねはらいげつ、こいびととこんやくします。",
+      "romaji": "ane wa raigetsu, koibito to kon'yaku shimasu.",
+      "zh": "姐姐下个月要和恋人订婚。"
+    }
+  },
+  "l47-w1848": {
+    "romaji": "aite",
+    "attributes": [],
+    "explanation": "指动作、关系或交涉中的另一方，也可指婚恋对象；常用「相手がいる」「相手を選ぶ」等搭配。",
+    "example": {
+      "jp": "試合の相手は強いチームです。",
+      "kana": "しあいのあいてはつよいチームです。",
+      "romaji": "shiai no aite wa tsuyoi chīmu desu.",
+      "zh": "比赛的对手是一支强队。"
+    }
+  },
+  "l47-w1849": {
+    "romaji": "shiriaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因某种契机与人相识，常用「～と知り合う」；强调建立认识关系，不是单方面知道。",
+    "example": {
+      "jp": "私は大学で妻と知り合いました。",
+      "kana": "わたしはだいがくでつまとしりあいました。",
+      "romaji": "watashi wa daigaku de tsuma to shiriaimashita.",
+      "zh": "我在大学认识了妻子。"
+    }
+  },
+  "l47-w1854": {
+    "romaji": "kibishii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "形容规则、要求、态度等严格不宽容，也可形容自然条件严峻；修饰名词时用「厳しい～」。",
+    "example": {
+      "jp": "この学校の規則はとても厳しいです。",
+      "kana": "このがっこうのきそくはとてもきびしいです。",
+      "romaji": "kono gakkō no kisoku wa totemo kibishii desu.",
+      "zh": "这所学校的规则非常严格。"
+    }
+  },
+  "l47-w938": {
+    "romaji": "daitōryō",
+    "attributes": [],
+    "explanation": "指共和制国家的总统，常用于新闻和政治语境；称呼时前可加国名或姓名。",
+    "example": {
+      "jp": "新しい大統領が選ばれました。",
+      "kana": "あたらしいだいとうりょうがえらばれました。",
+      "romaji": "atarashii daitōryō ga erabaremashita.",
+      "zh": "新总统被选出来了。"
+    }
+  },
+  "l47-makeup": {
+    "romaji": "keshō",
+    "attributes": [],
+    "explanation": "指用化妆品修饰容貌，常用「化粧をする」「化粧が濃い」等搭配；也可说「メイク」。",
+    "example": {
+      "jp": "出かける前に化粧をします。",
+      "kana": "でかけるまえにけしょうをします。",
+      "romaji": "dekakeru mae ni keshō o shimasu.",
+      "zh": "出门前化妆。"
+    }
+  },
+  "l47-care": {
+    "romaji": "sewa o shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示为某人提供照料、帮助，常用「～の世話をする」；也可用于照顾宠物、植物等。",
+    "example": {
+      "jp": "毎日、祖母の世話をします。",
+      "kana": "まいにち、そぼのせわをします。",
+      "romaji": "mainichi, sobo no sewa o shimasu.",
+      "zh": "每天照顾祖母。"
+    }
+  },
+  "l47-long-life": {
+    "romaji": "nagaiki",
+    "attributes": [],
+    "explanation": "指活得长久、长寿，常用「長生きする」「ご長生き」等；多用于祝愿或描述寿命长。",
+    "example": {
+      "jp": "祖父は九十歳まで長生きしました。",
+      "kana": "そふはきゅうじゅっさいまでながいきしました。",
+      "romaji": "sofu wa kyūjussai made nagaiki shimashita.",
+      "zh": "祖父活到了九十岁。"
+    }
+  },
+  "l47-reason": {
+    "romaji": "riyū",
+    "attributes": [],
+    "explanation": "表示做某事或某情况发生的原因、根据，常用于说明、解释或道歉的语境。可搭配「理由を説明する」「〜という理由で」，比口语的「わけ」更正式。",
+    "example": {
+      "jp": "遅刻した理由を教えてください。",
+      "kana": "ちこくしたりゆうをおしえてください。",
+      "romaji": "chikoku shita riyū o oshiete kudasai.",
+      "zh": "请告诉我迟到的理由。"
+    }
+  },
+  "l47-relation": {
+    "romaji": "kankei",
+    "attributes": [],
+    "explanation": "表示人、事物或事情之间的关联、联系，常用「〜と関係がある／ない」「関係を築く」等搭配。也可指男女或人际往来，语体中性，正式场合也常用。",
+    "example": {
+      "jp": "この事件と彼は関係がない。",
+      "kana": "このじけんとかれはかんけいがない。",
+      "romaji": "kono jiken to kare wa kankei ga nai.",
+      "zh": "他和这起事件没有关系。"
+    }
+  }
+}

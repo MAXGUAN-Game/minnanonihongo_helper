@@ -1,0 +1,331 @@
+{
+  "lessonId": 44,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/44.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源39条，排除4条旧版或跨课条目，合并同形同义项并补入第二来源，最终45条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/44.json。",
+    "薄い的厚薄与浓淡义项合并为同一词条；DVD使用标准字母表记并补齐平假名读音。"
+  ],
+  "words": [
+    {
+      "key": "w1375",
+      "word": "細い",
+      "reading": "ほそい",
+      "partOfSpeech": "い形容词",
+      "meaning": "细的"
+    },
+    {
+      "key": "w1376",
+      "word": "太い",
+      "reading": "ふとい",
+      "partOfSpeech": "い形容词",
+      "meaning": "粗的"
+    },
+    {
+      "key": "w1593",
+      "word": "危険な",
+      "reading": "きけんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "危险的"
+    },
+    {
+      "key": "w1676",
+      "word": "厚い",
+      "reading": "あつい",
+      "partOfSpeech": "い形容词",
+      "meaning": "厚的"
+    },
+    {
+      "key": "w1677",
+      "word": "薄い",
+      "reading": "うすい",
+      "partOfSpeech": "い形容词",
+      "meaning": "薄的；淡的；浅的"
+    },
+    {
+      "key": "w1740",
+      "word": "泣きます",
+      "reading": "なきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "哭"
+    },
+    {
+      "key": "w1741",
+      "word": "笑います",
+      "reading": "わらいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "笑"
+    },
+    {
+      "key": "w1742",
+      "word": "乾きます",
+      "reading": "かわきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "变干"
+    },
+    {
+      "key": "w1743",
+      "word": "濡れます",
+      "reading": "ぬれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "湿了"
+    },
+    {
+      "key": "w1744",
+      "word": "滑ります",
+      "reading": "すべります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "滑倒"
+    },
+    {
+      "key": "w1745",
+      "word": "［事故が］起きます",
+      "reading": "［じこが］おきます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "发生（事故）"
+    },
+    {
+      "key": "w1746",
+      "word": "調節します",
+      "reading": "ちょうせつします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "调节"
+    },
+    {
+      "key": "w1747",
+      "word": "安全な",
+      "reading": "あんぜんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "安全的"
+    },
+    {
+      "key": "w1750",
+      "word": "濃い",
+      "reading": "こい",
+      "partOfSpeech": "い形容词",
+      "meaning": "浓的；深的"
+    },
+    {
+      "key": "w1752",
+      "word": "空気",
+      "reading": "くうき",
+      "partOfSpeech": "名词",
+      "meaning": "空气"
+    },
+    {
+      "key": "w1753",
+      "word": "涙",
+      "reading": "なみだ",
+      "partOfSpeech": "名词",
+      "meaning": "眼泪"
+    },
+    {
+      "key": "w1754",
+      "word": "和食",
+      "reading": "わしょく",
+      "partOfSpeech": "名词",
+      "meaning": "日式菜肴"
+    },
+    {
+      "key": "w1755",
+      "word": "洋食",
+      "reading": "ようしょく",
+      "partOfSpeech": "名词",
+      "meaning": "西式菜肴"
+    },
+    {
+      "key": "w1756",
+      "word": "おかず",
+      "reading": "おかず",
+      "partOfSpeech": "名词",
+      "meaning": "菜；配饭的菜"
+    },
+    {
+      "key": "w1757",
+      "word": "量",
+      "reading": "りょう",
+      "partOfSpeech": "名词",
+      "meaning": "量"
+    },
+    {
+      "key": "w1758",
+      "word": "～倍",
+      "reading": "～ばい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……倍"
+    },
+    {
+      "key": "w1760",
+      "word": "シングル",
+      "reading": "しんぐる",
+      "partOfSpeech": "名词",
+      "meaning": "单人间"
+    },
+    {
+      "key": "w1761",
+      "word": "ツイン",
+      "reading": "ついん",
+      "partOfSpeech": "名词",
+      "meaning": "双床间"
+    },
+    {
+      "key": "w1763",
+      "word": "洗濯物",
+      "reading": "せんたくもの",
+      "partOfSpeech": "名词",
+      "meaning": "待洗或洗过的衣物"
+    },
+    {
+      "key": "w1765",
+      "word": "どうなさいますか",
+      "reading": "どうなさいますか",
+      "partOfSpeech": "固定表达",
+      "meaning": "您要怎么做（尊敬表达）"
+    },
+    {
+      "key": "w1766",
+      "word": "カット",
+      "reading": "かっと",
+      "partOfSpeech": "名词",
+      "meaning": "剪发"
+    },
+    {
+      "key": "w1767",
+      "word": "シャンプー",
+      "reading": "しゃんぷー",
+      "partOfSpeech": "名词",
+      "meaning": "洗发；洗发水"
+    },
+    {
+      "key": "w1768",
+      "word": "どういう風になさいますか",
+      "reading": "どういうふうになさいますか",
+      "partOfSpeech": "固定表达",
+      "meaning": "您想要什么样的"
+    },
+    {
+      "key": "w1769",
+      "word": "ショート",
+      "reading": "しょーと",
+      "partOfSpeech": "名词",
+      "meaning": "短发"
+    },
+    {
+      "key": "w1770",
+      "word": "～みたいにしてください",
+      "reading": "～みたいにしてください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请做成……那样"
+    },
+    {
+      "key": "w1771",
+      "word": "これでよろしいでしょうか",
+      "reading": "これでよろしいでしょうか",
+      "partOfSpeech": "固定表达",
+      "meaning": "这样可以吗（郑重表达）"
+    },
+    {
+      "key": "w1772",
+      "word": "どうもお疲れ様でした",
+      "reading": "どうもおつかれさまでした",
+      "partOfSpeech": "固定表达",
+      "meaning": "辛苦您了"
+    },
+    {
+      "key": "w2869",
+      "word": "DVD",
+      "reading": "でぃーぶいでぃー",
+      "partOfSpeech": "名词",
+      "meaning": "DVD光盘"
+    },
+    {
+      "key": "w3422",
+      "word": "眠ります",
+      "reading": "ねむります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "睡觉"
+    },
+    {
+      "key": "hiroshima",
+      "word": "ホテルひろしま",
+      "reading": "ほてるひろしま",
+      "partOfSpeech": "专有名词",
+      "meaning": "广岛酒店（教材酒店名）"
+    },
+    {
+      "key": "dislike",
+      "word": "嫌がります",
+      "reading": "いやがります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "表现出不愿意"
+    },
+    {
+      "key": "also",
+      "word": "また",
+      "reading": "また",
+      "partOfSpeech": "接续词",
+      "meaning": "此外"
+    },
+    {
+      "key": "well",
+      "word": "うまく",
+      "reading": "うまく",
+      "partOfSpeech": "副词",
+      "meaning": "顺利地；巧妙地"
+    },
+    {
+      "key": "order",
+      "word": "順序",
+      "reading": "じゅんじょ",
+      "partOfSpeech": "名词",
+      "meaning": "顺序"
+    },
+    {
+      "key": "relieved",
+      "word": "安心な",
+      "reading": "あんしんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "让人放心的"
+    },
+    {
+      "key": "expression",
+      "word": "表現",
+      "reading": "ひょうげん",
+      "partOfSpeech": "名词",
+      "meaning": "表达"
+    },
+    {
+      "key": "example",
+      "word": "例えば",
+      "reading": "たとえば",
+      "partOfSpeech": "副词",
+      "meaning": "例如"
+    },
+    {
+      "key": "separate",
+      "word": "別れます",
+      "reading": "わかれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "分别；分手"
+    },
+    {
+      "key": "these",
+      "word": "これら",
+      "reading": "これら",
+      "partOfSpeech": "代词",
+      "meaning": "这些"
+    },
+    {
+      "key": "unlucky",
+      "word": "縁起が悪い",
+      "reading": "えんぎがわるい",
+      "partOfSpeech": "表达",
+      "meaning": "不吉利"
+    }
+  ]
+}

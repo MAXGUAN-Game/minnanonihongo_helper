@@ -1,0 +1,193 @@
+{
+  "lessonId": 36,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/36.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 33,
+  "entries": [
+    {
+      "sourceId": "1060",
+      "sourceWord": "柔道",
+      "key": "w1060"
+    },
+    {
+      "sourceId": "1117",
+      "sourceWord": "ほとんど",
+      "key": "w1117"
+    },
+    {
+      "sourceId": "1129",
+      "sourceWord": "違います",
+      "key": "w1129"
+    },
+    {
+      "sourceId": "1433",
+      "sourceWord": "曲",
+      "key": "w1433"
+    },
+    {
+      "sourceId": "1446",
+      "sourceWord": "貯金します",
+      "key": "w1446"
+    },
+    {
+      "sourceId": "1449",
+      "sourceWord": "［9時を］過ぎます",
+      "key": "w1449"
+    },
+    {
+      "sourceId": "1450",
+      "sourceWord": "［習慣に］慣れます",
+      "key": "w1450"
+    },
+    {
+      "sourceId": "1457",
+      "sourceWord": "剣道",
+      "key": "w1457"
+    },
+    {
+      "sourceId": "1458",
+      "sourceWord": "毎週",
+      "key": "w1458"
+    },
+    {
+      "sourceId": "1459",
+      "sourceWord": "毎月",
+      "key": "w1459"
+    },
+    {
+      "sourceId": "1460",
+      "sourceWord": "毎年",
+      "key": "w1460"
+    },
+    {
+      "sourceId": "1461",
+      "sourceWord": "やっと",
+      "key": "w1461"
+    },
+    {
+      "sourceId": "1462",
+      "sourceWord": "かなり",
+      "key": "w1462"
+    },
+    {
+      "sourceId": "1463",
+      "sourceWord": "必ず",
+      "key": "w1463"
+    },
+    {
+      "sourceId": "1464",
+      "sourceWord": "絶対に",
+      "key": "w1464"
+    },
+    {
+      "sourceId": "1465",
+      "sourceWord": "上手に",
+      "key": "w1465"
+    },
+    {
+      "sourceId": "1466",
+      "sourceWord": "できるだけ",
+      "key": "w1466"
+    },
+    {
+      "sourceId": "1467",
+      "sourceWord": "この頃",
+      "key": "w1467"
+    },
+    {
+      "sourceId": "1470",
+      "sourceWord": "お客様",
+      "key": "w1470"
+    },
+    {
+      "sourceId": "1471",
+      "sourceWord": "特別な",
+      "key": "w1471"
+    },
+    {
+      "sourceId": "1472",
+      "sourceWord": "していらっしゃいます",
+      "key": "w1472"
+    },
+    {
+      "sourceId": "1473",
+      "sourceWord": "水泳",
+      "key": "w1473"
+    },
+    {
+      "sourceId": "1476",
+      "sourceWord": "チャレンジします",
+      "key": "w1476"
+    },
+    {
+      "sourceId": "1477",
+      "sourceWord": "気持ち",
+      "key": "w1477"
+    },
+    {
+      "sourceId": "1595",
+      "sourceWord": "宇宙",
+      "key": "w1595"
+    },
+    {
+      "sourceId": "1774",
+      "sourceWord": "［事故に］合います",
+      "key": "w1774"
+    },
+    {
+      "sourceId": "3257",
+      "sourceWord": "腐ります",
+      "key": "w3257"
+    },
+    {
+      "sourceId": "950",
+      "sourceWord": "ラッシュ",
+      "key": "w950"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1445",
+      "sourceWord": "打ちます",
+      "reason": "旧版打字动词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1453",
+      "sourceWord": "電子～",
+      "reason": "旧版设备前缀，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1454",
+      "sourceWord": "携帯～",
+      "reason": "旧版便携设备前缀，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1469",
+      "sourceWord": "そのほうが",
+      "reason": "旧版比较表达，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1475",
+      "sourceWord": "タンゴ",
+      "reason": "旧版舞蹈词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "using",
+    "chopin",
+    "vehicle",
+    "century",
+    "far",
+    "rare",
+    "train",
+    "steamship",
+    "many",
+    "transport",
+    "use",
+    "freely"
+  ],
+  "finalCount": 40
+}

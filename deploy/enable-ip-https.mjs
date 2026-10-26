@@ -67,6 +67,14 @@ export function patchCaddy(text) {
   if (typeof text !== 'string') throw new Error('Invalid Caddyfile.');
   const normalized = text.replace(/\r\n/g, '\n');
   if (normalized === ipCaddy) return text;
+  const sessionOriginal = originalCaddy.replace('\t# Explicit ordering prevents any route (including /api/health) bypassing login.', '\t# The application verifies persistent version-bound sessions; proxy and origin checks remain mandatory.')
+    .replace('\t\tbasic_auth {\n\t\t\t{$APP_AUTH_USER} {$APP_AUTH_HASH}\n\t\t}\n', '')
+    .replace('header_up -Authorization', 'header_up -Authorization\n\t\t\theader_up X-Nihongo-Client-IP {http.request.remote.host}');
+  const sessionIp = ipCaddy.replace('\t# Explicit ordering prevents any route (including /api/health) bypassing login.', '\t# The application verifies persistent version-bound sessions; proxy and origin checks remain mandatory.')
+    .replace('\t\tbasic_auth {\n\t\t\t{$APP_AUTH_USER} {$APP_AUTH_HASH}\n\t\t}\n', '')
+    .replace('header_up -Authorization', 'header_up -Authorization\n\t\t\theader_up X-Nihongo-Client-IP {http.request.remote.host}');
+  if (normalized === sessionIp) return text;
+  if (normalized === sessionOriginal) return sessionIp.replace(/\n/g, text.includes('\r\n') ? '\r\n' : '\n');
   if (normalized !== originalCaddy) throw new Error('Unknown Caddyfile; no automatic replacement.');
   return ipCaddy.replace(/\n/g, text.includes('\r\n') ? '\r\n' : '\n');
 }

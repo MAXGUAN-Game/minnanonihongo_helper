@@ -1,0 +1,191 @@
+{
+  "lessonId": 27,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/27.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 32,
+  "entries": [
+    {
+      "sourceId": "1089",
+      "sourceWord": "飼います",
+      "key": "w1089"
+    },
+    {
+      "sourceId": "1090",
+      "sourceWord": "建てます",
+      "key": "w1090"
+    },
+    {
+      "sourceId": "1091",
+      "sourceWord": "［道を］走ります",
+      "key": "w1091"
+    },
+    {
+      "sourceId": "1093",
+      "sourceWord": "［山が］見えます",
+      "key": "w1093"
+    },
+    {
+      "sourceId": "1094",
+      "sourceWord": "［音が］聞こえます",
+      "key": "w1094"
+    },
+    {
+      "sourceId": "1095",
+      "sourceWord": "［ビルが］できます",
+      "key": "w1095"
+    },
+    {
+      "sourceId": "1096",
+      "sourceWord": "［教室を］開きます",
+      "key": "w1096"
+    },
+    {
+      "sourceId": "1097",
+      "sourceWord": "ペット",
+      "key": "w1097"
+    },
+    {
+      "sourceId": "1098",
+      "sourceWord": "鳥",
+      "key": "w1098"
+    },
+    {
+      "sourceId": "1099",
+      "sourceWord": "声",
+      "key": "w1099"
+    },
+    {
+      "sourceId": "1100",
+      "sourceWord": "波",
+      "key": "w1100"
+    },
+    {
+      "sourceId": "1101",
+      "sourceWord": "花火",
+      "key": "w1101"
+    },
+    {
+      "sourceId": "1105",
+      "sourceWord": "道具",
+      "key": "w1105"
+    },
+    {
+      "sourceId": "1108",
+      "sourceWord": "クリーニング",
+      "key": "w1108"
+    },
+    {
+      "sourceId": "1109",
+      "sourceWord": "マンション",
+      "key": "w1109"
+    },
+    {
+      "sourceId": "1111",
+      "sourceWord": "～教室",
+      "key": "w1111"
+    },
+    {
+      "sourceId": "1112",
+      "sourceWord": "パーティールーム",
+      "key": "w1112"
+    },
+    {
+      "sourceId": "1113",
+      "sourceWord": "～後",
+      "key": "w1113"
+    },
+    {
+      "sourceId": "1114",
+      "sourceWord": "～しか",
+      "key": "w1114"
+    },
+    {
+      "sourceId": "1115",
+      "sourceWord": "他の",
+      "key": "w1115"
+    },
+    {
+      "sourceId": "1116",
+      "sourceWord": "はっきり",
+      "key": "w1116"
+    },
+    {
+      "sourceId": "1119",
+      "sourceWord": "本棚",
+      "key": "w1119"
+    },
+    {
+      "sourceId": "1121",
+      "sourceWord": "いつか",
+      "key": "w1121"
+    },
+    {
+      "sourceId": "1122",
+      "sourceWord": "家",
+      "key": "w1122"
+    },
+    {
+      "sourceId": "1123",
+      "sourceWord": "素晴らしい",
+      "key": "w1123"
+    },
+    {
+      "sourceId": "1296",
+      "sourceWord": "心配な",
+      "key": "w1296"
+    },
+    {
+      "sourceId": "1379",
+      "sourceWord": "家具",
+      "key": "w1379"
+    },
+    {
+      "sourceId": "1413",
+      "sourceWord": "～方",
+      "key": "w1413"
+    },
+    {
+      "sourceId": "3252",
+      "sourceWord": "キッチン",
+      "key": "w3252"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1103",
+      "sourceWord": "昼間",
+      "reason": "旧版时间词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1107",
+      "sourceWord": "通信販売",
+      "reason": "旧版购物词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1118",
+      "sourceWord": "日曜大工",
+      "reason": "旧版木工词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "doraemon",
+    "children",
+    "love",
+    "hero",
+    "shape",
+    "mysterious",
+    "pocket",
+    "example",
+    "attach",
+    "freely",
+    "sky",
+    "fly",
+    "past",
+    "self",
+    "future"
+  ],
+  "finalCount": 44
+}

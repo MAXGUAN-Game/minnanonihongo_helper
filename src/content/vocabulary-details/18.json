@@ -1,0 +1,350 @@
+{
+  "l18-w1280": {
+    "romaji": "intaanetto",
+    "attributes": [],
+    "explanation": "指互联网，日常常省略为「ネット」。常与「で」搭配表示通过互联网做某事，如「インターネットで調べる」。",
+    "example": {
+      "jp": "インターネットで音楽を聞きます。",
+      "kana": "いんたーねっとでおんがくをききます。",
+      "romaji": "intaanetto de ongaku o kikimasu.",
+      "zh": "通过互联网听音乐。"
+    }
+  },
+  "l18-w2430": {
+    "romaji": "piano",
+    "attributes": [],
+    "explanation": "指钢琴，常用搭配「ピアノを弾く」。注意与「ピアノを習う」等表达区分，弹奏用「弾く」。",
+    "example": {
+      "jp": "妹は毎日ピアノを弾きます。",
+      "kana": "いもうとはまいにちぴあのをひきます。",
+      "romaji": "imooto wa mainichi piano o hikimasu.",
+      "zh": "妹妹每天弹钢琴。"
+    }
+  },
+  "l18-w749": {
+    "romaji": "tokuni",
+    "attributes": [],
+    "explanation": "副词，表示在一般情况中特别指出某一点，相当于“尤其”。常与否定呼应表示“并不特别……”。",
+    "example": {
+      "jp": "特に日本料理が好きです。",
+      "kana": "とくににほんりょうりがすきです。",
+      "romaji": "tokuni nihon ryoori ga suki desu.",
+      "zh": "我特别喜欢日本菜。"
+    }
+  },
+  "l18-v1": {
+    "romaji": "dekimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「できる」的礼貌体，表示能力或可能性，常以「～ができます」形式接名词。也可表示某事物完成、建成。",
+    "example": {
+      "jp": "私は日本語が少しできます。",
+      "kana": "わたしはにほんごがすこしできます。",
+      "romaji": "watashi wa nihongo ga sukoshi dekimasu.",
+      "zh": "我会一点日语。"
+    }
+  },
+  "l18-v5": {
+    "romaji": "araimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示清洗物品，常用「～を洗う」。可用于洗衣服、餐具、脸等，但洗澡一般用「浴びる」。",
+    "example": {
+      "jp": "毎朝顔を洗います。",
+      "kana": "まいあさかおをあらいます。",
+      "romaji": "maiasa kao o araimasu.",
+      "zh": "每天早上洗脸。"
+    }
+  },
+  "l18-v2": {
+    "romaji": "hikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示弹奏弦乐器或键盘乐器，如钢琴、吉他。也可表示拉、拽（如「綱を引く」），但弹奏乐器时固定用「弾く」。",
+    "example": {
+      "jp": "彼はギターを弾きます。",
+      "kana": "かれはぎたーをひきます。",
+      "romaji": "kare wa gitaa o hikimasu.",
+      "zh": "他弹吉他。"
+    }
+  },
+  "l18-v3": {
+    "romaji": "utaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示唱歌，常用「歌を歌う」。也可不带宾语单独使用，如「歌うのが好きです」。",
+    "example": {
+      "jp": "みんなで歌を歌います。",
+      "kana": "みんなでうたをうたいます。",
+      "romaji": "minna de uta o utaimasu.",
+      "zh": "大家一起唱歌。"
+    }
+  },
+  "l18-v4": {
+    "romaji": "atsumemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示把东西收集起来，常用「～を集める」。可用于收集邮票、石头等，也可用于集合人。",
+    "example": {
+      "jp": "趣味は切手を集めることです。",
+      "kana": "しゅみはきってをあつめることです。",
+      "romaji": "shumi wa kitte o atsumeru koto desu.",
+      "zh": "爱好是收集邮票。"
+    }
+  },
+  "l18-w843": {
+    "romaji": "sutemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示把不要的东西扔掉，常用「～を捨てる」。注意与自动词「捨てられる」区分。",
+    "example": {
+      "jp": "ごみはここに捨ててください。",
+      "kana": "ごみはここにすててください。",
+      "romaji": "gomi wa koko ni sutete kudasai.",
+      "zh": "请把垃圾扔在这里。"
+    }
+  },
+  "l18-w844": {
+    "romaji": "kaemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示交换、兑换，常用「～を～に換える」。也可表示更换（如换衣服「着替える」不同）。",
+    "example": {
+      "jp": "駅でお金を換えます。",
+      "kana": "えきでおかねをかえます。",
+      "romaji": "eki de okane o kaemasu.",
+      "zh": "在车站换钱。"
+    }
+  },
+  "l18-w845": {
+    "romaji": "untenshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示驾驶车辆，常用「車を運転する」。也可用于操作机器，但日常多指开车。",
+    "example": {
+      "jp": "父は毎日車を運転します。",
+      "kana": "ちちはまいにちくるまをうんてんします。",
+      "romaji": "chichi wa mainichi kuruma o untenshimasu.",
+      "zh": "父亲每天开车。"
+    }
+  },
+  "l18-v6": {
+    "romaji": "yoyakushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示预约，常用「～を予約する」。可用于餐厅、酒店、座位等，是サ变动词。",
+    "example": {
+      "jp": "レストランを予約します。",
+      "kana": "れすとらんをよやくします。",
+      "romaji": "resutoran o yoyakushimasu.",
+      "zh": "预约餐厅。"
+    }
+  },
+  "l18-w849": {
+    "romaji": "mētoru",
+    "attributes": [],
+    "explanation": "接在数词后表示长度单位“米”，如“3メートル”。注意与表示“米（大米）”的「米（こめ）」区分。",
+    "example": {
+      "jp": "この部屋は5メートルです。",
+      "kana": "このへやはごめーとるです。",
+      "romaji": "kono heya wa go mētoru desu.",
+      "zh": "这个房间是5米。"
+    }
+  },
+  "l18-v8": {
+    "romaji": "genkin",
+    "attributes": [],
+    "explanation": "指实际流通的纸币和硬币，与信用卡、支票等相对。常用「現金で払う」表示用现金支付。",
+    "example": {
+      "jp": "現金で払います。",
+      "kana": "げんきんではらいます。",
+      "romaji": "genkin de haraimasu.",
+      "zh": "我用现金支付。"
+    }
+  },
+  "l18-v7": {
+    "romaji": "shumi",
+    "attributes": [],
+    "explanation": "指个人在闲暇时喜欢做的事情，常与「～が趣味です」搭配。注意与表示“兴趣、关心”的「興味（きょうみ）」区分。",
+    "example": {
+      "jp": "私の趣味は写真です。",
+      "kana": "わたしのしゅみはしゃしんです。",
+      "romaji": "watashi no shumi wa shashin desu.",
+      "zh": "我的爱好是摄影。"
+    }
+  },
+  "l18-v9": {
+    "romaji": "nikki",
+    "attributes": [],
+    "explanation": "指每天记录自己生活、感想等的日记，常与「日記をつける」搭配。",
+    "example": {
+      "jp": "毎日日本語で日記を書きます。",
+      "kana": "まいにちにほんごでにっきをかきます。",
+      "romaji": "mainichi nihongo de nikki o kakimasu.",
+      "zh": "我每天用日语写日记。"
+    }
+  },
+  "l18-w854": {
+    "romaji": "oinori",
+    "attributes": [],
+    "explanation": "「祈り」的礼貌说法，指向神佛祈祷，也用于一般祝愿。常与「お祈りする」搭配。",
+    "example": {
+      "jp": "ご成功をお祈りします。",
+      "kana": "ごせいこうをおいのりします。",
+      "romaji": "go seikō o oinori shimasu.",
+      "zh": "祝您成功。"
+    }
+  },
+  "l18-w855": {
+    "romaji": "kachō",
+    "attributes": [],
+    "explanation": "公司或组织中“课”的负责人，职位低于部长。称呼时可直接加在姓氏后，如「田中課長」。",
+    "example": {
+      "jp": "課長に報告してください。",
+      "kana": "かちょうにほうこくしてください。",
+      "romaji": "kachō ni hōkoku shite kudasai.",
+      "zh": "请向科长报告。"
+    }
+  },
+  "l18-w856": {
+    "romaji": "buchō",
+    "attributes": [],
+    "explanation": "公司或组织中“部”的负责人，职位高于课长。称呼时可直接加在姓氏后，如「鈴木部長」。",
+    "example": {
+      "jp": "部長は会議に出ています。",
+      "kana": "ぶちょうはかいぎにでています。",
+      "romaji": "buchō wa kaigi ni dete imasu.",
+      "zh": "部长正在出席会议。"
+    }
+  },
+  "l18-w857": {
+    "romaji": "shachō",
+    "attributes": [],
+    "explanation": "指公司的最高负责人，即总经理或社长。称呼时可直接加在姓氏后，如「山田社長」。",
+    "example": {
+      "jp": "社長はもう帰りました。",
+      "kana": "しゃちょうはもうかえりました。",
+      "romaji": "shachō wa mō kaerimashita.",
+      "zh": "总经理已经回去了。"
+    }
+  },
+  "l18-w858": {
+    "romaji": "dōbutsu",
+    "attributes": [],
+    "explanation": "泛指动物，与植物相对。常见搭配有「動物園」「動物を飼う」等。",
+    "example": {
+      "jp": "動物が好きですか。",
+      "kana": "どうぶつがすきですか。",
+      "romaji": "dōbutsu ga suki desu ka.",
+      "zh": "你喜欢动物吗？"
+    }
+  },
+  "l18-w859": {
+    "romaji": "uma",
+    "attributes": [],
+    "explanation": "指马这种动物，常用「馬に乗る」表示骑马。注意与表示“马肉”的「馬肉（ばにく）」等复合词读音不同。",
+    "example": {
+      "jp": "馬が草原を走っています。",
+      "kana": "うまがそうげんをはしっています。",
+      "romaji": "uma ga sōgen o hashitte imasu.",
+      "zh": "马正在草原上奔跑。"
+    }
+  },
+  "l18-w860": {
+    "romaji": "hē",
+    "attributes": [],
+    "explanation": "表示惊讶、佩服或轻微怀疑的感叹词，常用于听到意外消息时。语气较随意，也可说「へえ、そうですか」。",
+    "example": {
+      "jp": "へえ、それは知りませんでした。",
+      "kana": "へえ、それはしりませんでした。",
+      "romaji": "hē, sore wa shirimasen deshita.",
+      "zh": "哎呀，那我还真不知道。"
+    }
+  },
+  "l18-w861": {
+    "romaji": "sore wa omoshiroi desu ne",
+    "attributes": [],
+    "explanation": "用于对对方所说的事情表示感兴趣或觉得有趣，带有感叹和共鸣的语气。常用于日常会话中回应对方。",
+    "example": {
+      "jp": "「週末は山に登ります」「それはおもしろいですね」",
+      "kana": "「しゅうまつはやまにのぼります」「それはおもしろいですね」",
+      "romaji": "shūmatsu wa yama ni noborimasu. sore wa omoshiroi desu ne.",
+      "zh": "“周末我要去爬山。”“那真有意思啊。”"
+    }
+  },
+  "l18-w862": {
+    "romaji": "nakanaka",
+    "attributes": [],
+    "explanation": "副词，后接否定表达时表示“怎么也不容易……”“迟迟不能……”，强调事情难以实现。也可用于肯定句表示“相当”，但本课为否定搭配。",
+    "example": {
+      "jp": "バスがなかなか来ません。",
+      "kana": "ばすがなかなかきません。",
+      "romaji": "basu ga nakanaka kimasen.",
+      "zh": "公交车迟迟不来。"
+    }
+  },
+  "l18-w864": {
+    "romaji": "hontou desu ka",
+    "attributes": [],
+    "explanation": "固定表达，用于对听到的信息表示惊讶或确认，语气随语调变化。礼貌体，日常会话中常用。",
+    "example": {
+      "jp": "えっ、本当ですか。",
+      "kana": "えっ、ほんとうですか。",
+      "romaji": "e, hontou desu ka.",
+      "zh": "哎，真的吗？"
+    }
+  },
+  "l18-w865": {
+    "romaji": "zehi",
+    "attributes": [],
+    "explanation": "副词，表示强烈的愿望或请求，常与“～てください”“～たい”等搭配，用于邀请、建议或希望对方做某事。",
+    "example": {
+      "jp": "ぜひ遊びに来てください。",
+      "kana": "ぜひあそびにきてください。",
+      "romaji": "zehi asobi ni kite kudasai.",
+      "zh": "请一定要来玩。"
+    }
+  },
+  "l18-furusato": {
+    "romaji": "furusato",
+    "attributes": [],
+    "explanation": "专有名词，指歌曲《故乡》，是日本著名的童谣。一般名词“故郷”也读作“こきょう”，但歌曲名读“ふるさと”。",
+    "example": {
+      "jp": "「故郷」は有名な日本の歌です。",
+      "kana": "「ふるさと」はゆうめいなにほんのうたです。",
+      "romaji": "furusato wa yuumei na nihon no uta desu.",
+      "zh": "《故乡》是一首著名的日本歌曲。"
+    }
+  },
+  "l18-beatles": {
+    "romaji": "biitoruzu",
+    "attributes": [],
+    "explanation": "专有名词，指英国摇滚乐队披头士（The Beatles）。日语中常直接音译为“ビートルズ”，不加冠词。",
+    "example": {
+      "jp": "ビートルズの曲が好きです。",
+      "kana": "びーとるずのきょくがすきです。",
+      "romaji": "biitoruzu no kyoku ga suki desu.",
+      "zh": "我喜欢披头士的歌。"
+    }
+  },
+  "l18-akihabara": {
+    "romaji": "akihabara",
+    "attributes": [],
+    "explanation": "专有名词，指东京的秋叶原地区，以电器街和动漫文化闻名。作为地名，常与“で”“に”等助词搭配。",
+    "example": {
+      "jp": "秋葉原で買い物をしました。",
+      "kana": "あきはばらでかいものをしました。",
+      "romaji": "akihabara de kaimono o shimashita.",
+      "zh": "在秋叶原购物了。"
+    }
+  }
+}

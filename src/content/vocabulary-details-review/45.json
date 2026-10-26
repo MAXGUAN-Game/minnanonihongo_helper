@@ -1,0 +1,21 @@
+{
+  "lessonId": 45,
+  "model": "deepseek-flash",
+  "reviewedCount": 28,
+  "corrections": [
+    {
+      "id": "l45-w1791",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「楽しみにしています」是动词表达，核心谓语「しています」为自动词，需补自他属性。"
+    },
+    {
+      "id": "l45-w1792",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「以上です」含判断动词「です」，属动词表达，需补自动词属性。"
+    }
+  ]
+}

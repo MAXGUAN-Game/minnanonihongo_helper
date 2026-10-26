@@ -1,0 +1,624 @@
+{
+  "l21-w101": {
+    "romaji": "jidousha",
+    "attributes": [],
+    "explanation": "指汽车，是较正式或书面化的说法，日常口语中更常说「車」。常见搭配如「自動車を運転する」「自動車会社」。",
+    "example": {
+      "jp": "父は自動車で会社へ行きます。",
+      "kana": "ちちはじどうしゃでかいしゃへいきます。",
+      "romaji": "chichi wa jidousha de kaisha e ikimasu.",
+      "zh": "父亲开车去公司。"
+    }
+  },
+  "l21-w1031": {
+    "romaji": "ryuugakushimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示去外国留学，常与目的地或期间搭配，如「日本へ留学します」「一年間留学します」。是动词「留学する」的礼貌体。",
+    "example": {
+      "jp": "来年、日本へ留学します。",
+      "kana": "らいねん、にほんへりゅうがくします。",
+      "romaji": "rainen, nihon e ryuugakushimasu.",
+      "zh": "明年去日本留学。"
+    }
+  },
+  "l21-w1120": {
+    "romaji": "yume",
+    "attributes": [],
+    "explanation": "既指睡眠中做的梦，也指将来的理想或愿望。表示“梦想”时常用「夢を見る」「夢を叶える」等搭配。",
+    "example": {
+      "jp": "私の夢は先生になることです。",
+      "kana": "わたしのゆめはせんせいになることです。",
+      "romaji": "watashi no yume wa sensei ni naru koto desu.",
+      "zh": "我的梦想是当老师。"
+    }
+  },
+  "l21-w1307": {
+    "romaji": "tsuki",
+    "attributes": [],
+    "explanation": "指月亮，也指月份（如「一月」「二月」的「月」读つき时多指月亮）。常见搭配「月が出る」「月がきれいだ」。",
+    "example": {
+      "jp": "今夜は月がとてもきれいです。",
+      "kana": "こんやはつきがとてもきれいです。",
+      "romaji": "kon'ya wa tsuki ga totemo kirei desu.",
+      "zh": "今晚月亮非常漂亮。"
+    }
+  },
+  "l21-w1505": {
+    "romaji": "manga",
+    "attributes": [],
+    "explanation": "指漫画，常与「読む」「描く」搭配。口语中也可说「マンガ」，但正式书写多用汉字「漫画」。",
+    "example": {
+      "jp": "電車の中で漫画を読みます。",
+      "kana": "でんしゃのなかでまんがをよみます。",
+      "romaji": "densha no naka de manga o yomimasu.",
+      "zh": "在电车里看漫画。"
+    }
+  },
+  "l21-w1533": {
+    "romaji": "uso",
+    "attributes": [],
+    "explanation": "指谎言、假话。常用「嘘をつく」表示“说谎”，「嘘みたい」表示“像假的一样、难以置信”。",
+    "example": {
+      "jp": "彼はよく嘘をつきます。",
+      "kana": "かれはよくうそをつきます。",
+      "romaji": "kare wa yoku uso o tsukimasu.",
+      "zh": "他经常说谎。"
+    }
+  },
+  "l21-w1596": {
+    "romaji": "chikyuu",
+    "attributes": [],
+    "explanation": "指地球，是天文、环境等话题中的常用词。常见搭配「地球を守る」「地球上の生き物」。",
+    "example": {
+      "jp": "地球は太陽の周りを回っています。",
+      "kana": "ちきゅうはたいようのまわりをまわっています。",
+      "romaji": "chikyuu wa taiyou no mawari o mawatte imasu.",
+      "zh": "地球绕着太阳转。"
+    }
+  },
+  "l21-w1607": {
+    "romaji": "hontou",
+    "attributes": [],
+    "explanation": "表示“真的、事实”，可作名词也可作副词性用法。常用「本当ですか」确认对方的话，な形容词用法「本当の話」。",
+    "example": {
+      "jp": "それは本当の話ですか。",
+      "kana": "それはほんとうのはなしですか。",
+      "romaji": "sore wa hontou no hanashi desu ka.",
+      "zh": "那是真的吗？"
+    }
+  },
+  "l21-w1865": {
+    "romaji": "hisashiburi",
+    "attributes": [],
+    "explanation": "表示隔了很久再次做某事或见面，常用「久しぶりに〜する」「お久しぶりです」等。是名词性表达，也可作副词性使用。",
+    "example": {
+      "jp": "久しぶりに友達に会いました。",
+      "kana": "ひさしぶりにともだちにあいました。",
+      "romaji": "hisashiburi ni tomodachi ni aimashita.",
+      "zh": "久违地见到了朋友。"
+    }
+  },
+  "l21-w1920": {
+    "romaji": "housoushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示播放、广播（电视、电台节目等），常与「番組」「ニュース」等搭配。是「放送する」的礼貌体。",
+    "example": {
+      "jp": "この番組は毎週放送します。",
+      "kana": "このばんぐみはまいしゅうほうそうします。",
+      "romaji": "kono bangumi wa maishuu housoushimasu.",
+      "zh": "这个节目每周播出。"
+    }
+  },
+  "l21-w2480": {
+    "romaji": "anime",
+    "attributes": [],
+    "explanation": "指动画片，尤指日本动画。常与「見る」「好き」搭配，如「アニメを見る」「アニメが好きだ」。",
+    "example": {
+      "jp": "子供のころからアニメが好きです。",
+      "kana": "こどものころからあにめがすきです。",
+      "romaji": "kodomo no koro kara anime ga suki desu.",
+      "zh": "我从小就喜欢动画片。"
+    }
+  },
+  "l21-w3553": {
+    "romaji": "sugoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示“厉害的、惊人的”，口语中也可表示“非常、很”。也可用于负面语境表示“可怕的”。注意礼貌场合可用「すごいですね」。",
+    "example": {
+      "jp": "この映画はすごく面白いです。",
+      "kana": "このえいがはすごくおもしろいです。",
+      "romaji": "kono eiga wa sugoku omoshiroi desu.",
+      "zh": "这部电影非常有趣。"
+    }
+  },
+  "l21-w4617": {
+    "romaji": "tensai",
+    "attributes": [],
+    "explanation": "指与生俱来的卓越才能或拥有这种才能的人，常用于称赞某人在某领域天赋异禀。可单独使用，也可说「天才的な」。",
+    "example": {
+      "jp": "彼は数学の天才だ。",
+      "kana": "かれはすうがくのてんさいだ。",
+      "romaji": "kare wa suugaku no tensai da.",
+      "zh": "他是数学天才。"
+    }
+  },
+  "l21-w762": {
+    "romaji": "yagemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「やめます」表示辞去工作、退学或停止某种习惯，此处特指辞去公司职务。常与「会社を」搭配，强调主动放弃。",
+    "example": {
+      "jp": "彼は来月会社をやめます。",
+      "kana": "かれはらいげつかいしゃをやめます。",
+      "romaji": "kare wa raigetsu kaisha o yagemasu.",
+      "zh": "他下个月辞去公司工作。"
+    }
+  },
+  "l21-w909": {
+    "romaji": "bukka",
+    "attributes": [],
+    "explanation": "指商品和服务的总体价格水平，常用于讨论经济或生活成本。常见搭配如「物価が上がる／下がる」「物価が高い」。",
+    "example": {
+      "jp": "最近、物価が上がっています。",
+      "kana": "さいきん、ぶっかがあがっています。",
+      "romaji": "saikin, bukka ga agatte imasu.",
+      "zh": "最近物价在上涨。"
+    }
+  },
+  "l21-v1": {
+    "romaji": "omoimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示思考、认为或感觉，常用于表达个人意见或推测。接续时前可接「と」表示内容，也可单独使用「と思います」。",
+    "example": {
+      "jp": "明日は雨が降ると思います。",
+      "kana": "あしたはあめがふるとおもいます。",
+      "romaji": "ashita wa ame ga furu to omoimasu.",
+      "zh": "我想明天会下雨。"
+    }
+  },
+  "l21-v2": {
+    "romaji": "iimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示说话、告诉，常用于引用内容，前接「と」。也可用于表达意见或传闻，如「～と言います」。",
+    "example": {
+      "jp": "先生は「頑張れ」と言いました。",
+      "kana": "せんせいは「がんばれ」といいました。",
+      "romaji": "sensei wa ganbare to iimashita.",
+      "zh": "老师说了“加油”。"
+    }
+  },
+  "l21-v3": {
+    "romaji": "kachimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在比赛、竞争或战斗中获胜。常与「に」或「で」搭配，如「試合に勝つ」「戦争に勝つ」。",
+    "example": {
+      "jp": "私たちのチームが試合に勝ちました。",
+      "kana": "わたしたちのちーむがしあいにかちました。",
+      "romaji": "watashitachi no chiimu ga shiai ni kachimashita.",
+      "zh": "我们队赢了比赛。"
+    }
+  },
+  "l21-v4": {
+    "romaji": "makemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在比赛、竞争或战斗中失败、输掉。常与「に」搭配，如「試合に負ける」。也可表示屈服于诱惑等。",
+    "example": {
+      "jp": "昨日の試合で負けました。",
+      "kana": "きのうのしあいでまけました。",
+      "romaji": "kinou no shiai de makemashita.",
+      "zh": "昨天的比赛输了。"
+    }
+  },
+  "l21-w931": {
+    "romaji": "arimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示事件、活动等举行或发生，常与「お祭り」「会議」「イベント」等搭配。与表示存在的「ある」不同，此处强调活动的举办。",
+    "example": {
+      "jp": "来週、この町でお祭りがあります。",
+      "kana": "らいしゅう、このまちでおまつりがあります。",
+      "romaji": "raishuu, kono machi de omatsuri ga arimasu.",
+      "zh": "下周这个城镇有祭典。"
+    }
+  },
+  "l21-v5": {
+    "romaji": "yakunitachimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示某物或某事有用、有帮助。常以「～に役立つ」的形式出现，如「仕事に役立つ」「勉強に役立つ」。",
+    "example": {
+      "jp": "この辞書は勉強に役立ちます。",
+      "kana": "このじしょはべんきょうにやくにたちます。",
+      "romaji": "kono jisho wa benkyou ni yakunitachimasu.",
+      "zh": "这本词典对学习有帮助。"
+    }
+  },
+  "l21-w933": {
+    "romaji": "mudana",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示无益的、浪费的，常用于批评行为或花费没有效果。可修饰名词，如「無駄な時間」「無駄な努力」。",
+    "example": {
+      "jp": "そんなことは無駄な努力だ。",
+      "kana": "そんなことはむだなどりょくだ。",
+      "romaji": "sonna koto wa muda na doryoku da.",
+      "zh": "那样做是徒劳的努力。"
+    }
+  },
+  "l21-w934": {
+    "romaji": "fubenna",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示不方便、不便利，常用于描述交通、设施或生活条件。反义词是「便利な」。",
+    "example": {
+      "jp": "この町はバスが少なくて不便です。",
+      "kana": "このまちはばすがすくなくてふべんです。",
+      "romaji": "kono machi wa basu ga sukunakute fuben desu.",
+      "zh": "这个城镇公交车少，很不方便。"
+    }
+  },
+  "l21-w940": {
+    "romaji": "nyuusu",
+    "attributes": [],
+    "explanation": "指新闻、消息，可指电视、报纸等报道，也可指一般消息。常见搭配如「ニュースを見る」「ニュースを聞く」。",
+    "example": {
+      "jp": "毎朝、テレビでニュースを見ます。",
+      "kana": "まいあさ、てれびでにゅーすをみます。",
+      "romaji": "maiasa, terebi de nyuusu o mimasu.",
+      "zh": "每天早上看电视新闻。"
+    }
+  },
+  "l21-v8": {
+    "romaji": "shiai",
+    "attributes": [],
+    "explanation": "指体育竞技或正式对决的比赛，常与「試合をする」「試合に出る」搭配。比「競技」更口语，比「勝負」更强调有组织的赛事。",
+    "example": {
+      "jp": "明日はサッカーの試合があります。",
+      "kana": "あしたはさっかーのしあいがあります。",
+      "romaji": "ashita wa sakkaa no shiai ga arimasu.",
+      "zh": "明天有足球比赛。"
+    }
+  },
+  "l21-v7": {
+    "romaji": "iken",
+    "attributes": [],
+    "explanation": "表示对某事的看法或主张，常用「意見を言う」「意見が違う」。比「考え」更偏向公开陈述的判断，语体较正式。",
+    "example": {
+      "jp": "会議で自分の意見を言いました。",
+      "kana": "かいぎでじぶんのいけんをいいました。",
+      "romaji": "kaigi de jibun no iken o iimashita.",
+      "zh": "在会议上说了自己的意见。"
+    }
+  },
+  "l21-w945": {
+    "romaji": "ohanashi",
+    "attributes": [],
+    "explanation": "「話」的礼貌说法，可指谈话内容或故事，常用于「お話を聞く」「お話しする」。比「話」更客气，适合对长辈或客人使用。",
+    "example": {
+      "jp": "先生のお話はとても面白かったです。",
+      "kana": "せんせいのおはなしはとてもおもしろかったです。",
+      "romaji": "sensei no ohanashi wa totemo omoshirokatta desu.",
+      "zh": "老师讲的话非常有趣。"
+    }
+  },
+  "l21-w947": {
+    "romaji": "muda",
+    "attributes": [],
+    "explanation": "表示白费、徒劳，常用「無駄になる」「無駄な時間」。也可作名词表示浪费，如「お金の無駄」。注意不要与「無理」混淆。",
+    "example": {
+      "jp": "そんなことをしても無駄ですよ。",
+      "kana": "そんなことをしてもむだですよ。",
+      "romaji": "sonna koto o shite mo muda desu yo.",
+      "zh": "做那种事也是白费哦。"
+    }
+  },
+  "l21-w948": {
+    "romaji": "dezain",
+    "attributes": [],
+    "explanation": "指设计的外观、图案或构思，常用「デザインがいい」「デザインする」。外来语，可指服装、产品、网页等视觉设计。",
+    "example": {
+      "jp": "この椅子はデザインがとてもいいです。",
+      "kana": "このいすはでざいんがとてもいいです。",
+      "romaji": "kono isu wa dezain ga totemo ii desu.",
+      "zh": "这把椅子的设计非常好。"
+    }
+  },
+  "l21-w949": {
+    "romaji": "koutsuu",
+    "attributes": [],
+    "explanation": "指人或车辆的往来通行，常用「交通が便利」「交通事故」。比「移動」更侧重公共道路与运输系统。",
+    "example": {
+      "jp": "この町は交通が便利です。",
+      "kana": "このまちはこうつうがべんりです。",
+      "romaji": "kono machi wa koutsuu ga benri desu.",
+      "zh": "这个城市交通很方便。"
+    }
+  },
+  "l21-w951": {
+    "romaji": "saikin",
+    "attributes": [],
+    "explanation": "表示从不久前到现在的一段时间，常与过去时或持续状态搭配，如「最近忙しい」「最近会った」。比「このごろ」稍正式。",
+    "example": {
+      "jp": "最近、日本語の勉強が楽しくなりました。",
+      "kana": "さいきん、にほんごのべんきょうがたのしくなりました。",
+      "romaji": "saikin, nihongo no benkyou ga tanoshiku narimashita.",
+      "zh": "最近学日语变得开心了。"
+    }
+  },
+  "l21-v9": {
+    "romaji": "tabun",
+    "attributes": [],
+    "explanation": "表示推测，意为“大概、多半”，常与「でしょう」「と思います」呼应。语气比「きっと」不确定，比「もしかしたら」可能性高。",
+    "example": {
+      "jp": "彼は多分もう帰ったでしょう。",
+      "kana": "かれはたぶんもうかえったでしょう。",
+      "romaji": "kare wa tabun mou kaetta deshou.",
+      "zh": "他大概已经回去了吧。"
+    }
+  },
+  "l21-w953": {
+    "romaji": "kitto",
+    "attributes": [],
+    "explanation": "表示有把握的推测或强烈期待，意为“一定、肯定”，常与「でしょう」「に違いない」搭配。比「多分」语气更确信。",
+    "example": {
+      "jp": "明日はきっと晴れますよ。",
+      "kana": "あしたはきっとはれますよ。",
+      "romaji": "ashita wa kitto haremasu yo.",
+      "zh": "明天一定会放晴哦。"
+    }
+  },
+  "l21-w954": {
+    "romaji": "hontou ni",
+    "attributes": [],
+    "explanation": "表示程度高或确认事实，意为“真的、确实”，可用于感叹或强调，如「本当に嬉しい」「本当にそうですか」。口语中常简说「ほんとに」。",
+    "example": {
+      "jp": "この料理は本当に美味しいです。",
+      "kana": "このりょうりはほんとうにおいしいです。",
+      "romaji": "kono ryouri wa hontou ni oishii desu.",
+      "zh": "这道菜真的很好吃。"
+    }
+  },
+  "l21-v10": {
+    "romaji": "sonna ni",
+    "attributes": [],
+    "explanation": "表示程度“那么、那样地”，多用于否定或疑问句，如「そんなに高くない」「そんなに急がないで」。指代对方刚提到的程度。",
+    "example": {
+      "jp": "そんなに心配しなくても大丈夫です。",
+      "kana": "そんなにしんぱいしなくてもだいじょうぶです。",
+      "romaji": "sonna ni shinpai shinakute mo daijoubu desu.",
+      "zh": "不用那么担心也没关系。"
+    }
+  },
+  "l21-w956": {
+    "romaji": "~ni tsuite",
+    "attributes": [],
+    "explanation": "表示话题对象，意为“关于……”，后接思考、调查、谈论等动词，如「～について話す」「～について調べる」。比「～に関して」更口语常用。",
+    "example": {
+      "jp": "日本の文化についてレポートを書きます。",
+      "kana": "にほんのぶんかについてれぽーとをかきます。",
+      "romaji": "nihon no bunka ni tsuite repooto o kakimasu.",
+      "zh": "写关于日本文化的报告。"
+    }
+  },
+  "l21-w959": {
+    "romaji": "~ demo nomimasen ka",
+    "attributes": [],
+    "explanation": "用于委婉地提议一起喝点东西，语气礼貌且亲切。常以“～でも飲みませんか”的形式出现，其中“でも”表示举例，暗示“喝点……之类的怎么样”。",
+    "example": {
+      "jp": "疲れたね。コーヒーでも飲みませんか。",
+      "kana": "つかれたね。こーひーでものみませんか。",
+      "romaji": "tsukareta ne. koohii demo nomimasen ka.",
+      "zh": "累了吧。喝点咖啡怎么样？"
+    }
+  },
+  "l21-w961": {
+    "romaji": "mochiron",
+    "attributes": [],
+    "explanation": "副词，表示“当然、不用说”，用于肯定对方或强调理所当然。口语中常单独使用，也可后接“です”构成礼貌表达。",
+    "example": {
+      "jp": "もちろん、私も行きます。",
+      "kana": "もちろん、わたしもいきます。",
+      "romaji": "mochiron, watashi mo ikimasu.",
+      "zh": "当然，我也去。"
+    }
+  },
+  "l21-w988": {
+    "romaji": "[kuruma ga] ugokimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "自动词，表示车辆等移动、运转。主语用“が”标记，强调车辆自身运动或机器运行。",
+    "example": {
+      "jp": "車がゆっくり動きました。",
+      "kana": "くるまがゆっくりうごきました。",
+      "romaji": "kuruma ga yukkuri ugokimashita.",
+      "zh": "车缓缓地开动了。"
+    }
+  },
+  "l21-w991": {
+    "romaji": "ki o tsukemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定搭配“気をつける”的礼貌形式，意为“注意、小心”。常用“～に気をつけます”表示对某事物加以注意。",
+    "example": {
+      "jp": "車に気をつけます。",
+      "kana": "くるまにきをつけます。",
+      "romaji": "kuruma ni ki o tsukemasu.",
+      "zh": "注意车辆。"
+    }
+  },
+  "l21-broadcast": {
+    "romaji": "housou",
+    "attributes": [],
+    "explanation": "名词，表示“广播、播放”，可指电视或无线电节目。常与“する”结合构成“放送する”（播放）。",
+    "example": {
+      "jp": "この放送は人気があります。",
+      "kana": "このほうそうはにんきがあります。",
+      "romaji": "kono housou wa ninki ga arimasu.",
+      "zh": "这个广播节目很受欢迎。"
+    }
+  },
+  "l21-long-time": {
+    "romaji": "hisashiburi desu ne",
+    "attributes": [],
+    "explanation": "固定表达，用于久别重逢时打招呼，意为“好久不见”。常单独使用，句尾“ね”带有亲切的确认语气。",
+    "example": {
+      "jp": "山田さん、久しぶりですね。",
+      "kana": "やまださん、ひさしぶりですね。",
+      "romaji": "yamada san, hisashiburi desu ne.",
+      "zh": "山田先生，好久不见啊。"
+    }
+  },
+  "l21-must-go": {
+    "romaji": "mou kaeranai to...",
+    "attributes": [],
+    "explanation": "固定表达，用于表示必须回去，省略后文，语气委婉。常以“もう帰らないと…”的形式出现，暗示“得走了”。",
+    "example": {
+      "jp": "遅いから、もう帰らないと…。",
+      "kana": "おそいから、もうかえらないと…。",
+      "romaji": "osoi kara, mou kaeranai to...",
+      "zh": "已经很晚了，我得回去了……"
+    }
+  },
+  "l21-einstein": {
+    "romaji": "ainshutain",
+    "attributes": [],
+    "explanation": "专有名词，指著名物理学家爱因斯坦。在日语中直接音译，常用于提及科学或历史人物。",
+    "example": {
+      "jp": "アインシュタインは相対性理論で有名です。",
+      "kana": "あいんしゅたいんはそうたいせいりろんでゆうめいです。",
+      "romaji": "ainshutain wa soutaisei riron de yuumei desu.",
+      "zh": "爱因斯坦以相对论闻名。"
+    }
+  },
+  "l21-gagarin": {
+    "romaji": "gagaarin",
+    "attributes": [],
+    "explanation": "专有名词，指苏联宇航员加加林，世界上第一位进入太空的人。日语中直接音译。",
+    "example": {
+      "jp": "ガガーリンは初めて宇宙に行きました。",
+      "kana": "ががーりんははじめてうちゅうにいきました。",
+      "romaji": "gagaarin wa hajimete uchuu ni ikimashita.",
+      "zh": "加加林第一次进入了太空。"
+    }
+  },
+  "l21-galileo": {
+    "romaji": "garireo",
+    "attributes": [],
+    "explanation": "专有名词，指意大利科学家伽利略。日语中直接音译，常用于科学史话题。",
+    "example": {
+      "jp": "ガリレオは望遠鏡で星を観察しました。",
+      "kana": "がりれおはぼうえんきょうでほしをかんさつしました。",
+      "romaji": "garireo wa bouenkyou de hoshi o kansatsu shimashita.",
+      "zh": "伽利略用望远镜观察了星星。"
+    }
+  },
+  "l21-king": {
+    "romaji": "kingu bokushi",
+    "attributes": [],
+    "explanation": "专有名词，指美国民权运动领袖马丁·路德·金牧师。日语中“キング”是姓，“牧師”是职称。",
+    "example": {
+      "jp": "キング牧師は平和を訴えました。",
+      "kana": "きんぐぼくしはへいわをうったえました。",
+      "romaji": "kingu bokushi wa heiwa o uttaemashita.",
+      "zh": "金牧师呼吁和平。"
+    }
+  },
+  "l21-franklin": {
+    "romaji": "furankurin",
+    "attributes": [],
+    "explanation": "专有名词，指美国政治家、科学家本杰明·富兰克林。日语中直接音译，常用于历史或科学语境。",
+    "example": {
+      "jp": "フランクリンは雷の研究をしました。",
+      "kana": "ふらんくりんはかみなりのけんきゅうをしました。",
+      "romaji": "furankurin wa kaminari no kenkyuu o shimashita.",
+      "zh": "富兰克林研究了雷电。"
+    }
+  },
+  "l21-kaguya": {
+    "romaji": "kaguyahime",
+    "attributes": [],
+    "explanation": "日本最古老的故事《竹取物语》中的女主角，是专有名词。常与「竹から生まれる」等搭配，用于讲述民间故事或文化话题。",
+    "example": {
+      "jp": "かぐや姫は月へ帰りました。",
+      "kana": "かぐやひめはつきへかえりました。",
+      "romaji": "kaguyahime wa tsuki e kaerimashita.",
+      "zh": "辉夜姬回到了月亮上。"
+    }
+  },
+  "l21-tenjin": {
+    "romaji": "tenjinmatsuri",
+    "attributes": [],
+    "explanation": "大阪天满宫每年7月举行的著名祭典，是专有名词。谈论日本夏季祭典或关西文化时使用，常与「見に行く」等动词搭配。",
+    "example": {
+      "jp": "七月に天神祭を見に行きます。",
+      "kana": "しちがつにてんじんまつりをみにいきます。",
+      "romaji": "shichigatsu ni tenjinmatsuri o mi ni ikimasu.",
+      "zh": "七月去看天神祭。"
+    }
+  },
+  "l21-yoshino": {
+    "romaji": "yoshinoyama",
+    "attributes": [],
+    "explanation": "奈良县著名的赏樱胜地，是专有名词。常与「桜」搭配，用于介绍日本风景或旅游话题。",
+    "example": {
+      "jp": "春に吉野山で桜を見ました。",
+      "kana": "はるによしのやまでさくらをみました。",
+      "romaji": "haru ni yoshinoyama de sakura o mimashita.",
+      "zh": "春天在吉野山看了樱花。"
+    }
+  },
+  "l21-kangaroo": {
+    "romaji": "kangarū",
+    "attributes": [],
+    "explanation": "外来语名词，指澳大利亚的袋鼠。用片假名书写，谈论动物或澳大利亚时使用，注意长音「ルー」。",
+    "example": {
+      "jp": "オーストラリアでカンガルーを見ました。",
+      "kana": "おーすとらりあでかんがるーをみました。",
+      "romaji": "ōsutoraria de kangarū o mimashita.",
+      "zh": "在澳大利亚看到了袋鼠。"
+    }
+  },
+  "l21-hook": {
+    "romaji": "kyaputen fukku",
+    "attributes": [],
+    "explanation": "教材中的店名，源自《彼得潘》中的胡克船长，是专有名词。用片假名书写，中间用中黑点连接，指店名时可直接使用。",
+    "example": {
+      "jp": "キャプテン・フックで昼ご飯を食べました。",
+      "kana": "きゃぷてんふっくでひるごはんをたべました。",
+      "romaji": "kyaputen fukku de hirugohan o tabemashita.",
+      "zh": "在胡克船长（店）吃了午饭。"
+    }
+  },
+  "l21-yonen": {
+    "romaji": "yōnen",
+    "attributes": [],
+    "explanation": "教材中的专有名称，用片假名书写，注意长音「ヨー」。作为店名或品牌名直接使用，不加助词也可作修饰语。",
+    "example": {
+      "jp": "ヨーネンで靴を買いました。",
+      "kana": "よーねんでくつをかいました。",
+      "romaji": "yōnen de kutsu o kaimashita.",
+      "zh": "在Yonen买了鞋。"
+    }
+  }
+}

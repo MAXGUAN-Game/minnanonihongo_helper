@@ -1,0 +1,422 @@
+{
+  "lessonId": 38,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/38.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源38条，排除0条旧版或跨课条目，合并同形同义项并补入第二来源，最终58条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/38.json。",
+    "第二来源名词列表的指導与主来源指輪不同；本课采用指輪，保留其读音ゆびわ。大きな、小さな词性校正为连体词。"
+  ],
+  "words": [
+    {
+      "key": "w1053",
+      "word": "参加します",
+      "reading": "さんかします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "参加"
+    },
+    {
+      "key": "w1137",
+      "word": "習慣",
+      "reading": "しゅうかん",
+      "partOfSpeech": "名词",
+      "meaning": "习惯"
+    },
+    {
+      "key": "w1416",
+      "word": "村",
+      "reading": "むら",
+      "partOfSpeech": "名词",
+      "meaning": "村庄"
+    },
+    {
+      "key": "w1427",
+      "word": "方法",
+      "reading": "ほうほう",
+      "partOfSpeech": "名词",
+      "meaning": "方法"
+    },
+    {
+      "key": "w1455",
+      "word": "工場",
+      "reading": "こうじょう",
+      "partOfSpeech": "名词",
+      "meaning": "工厂"
+    },
+    {
+      "key": "w1456",
+      "word": "健康",
+      "reading": "けんこう",
+      "partOfSpeech": "名词",
+      "meaning": "健康"
+    },
+    {
+      "key": "w1516",
+      "word": "育てます",
+      "reading": "そだてます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "养育；培育"
+    },
+    {
+      "key": "w1517",
+      "word": "運びます",
+      "reading": "はこびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "搬运"
+    },
+    {
+      "key": "w1519",
+      "word": "入院します",
+      "reading": "にゅういんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "住院"
+    },
+    {
+      "key": "w1520",
+      "word": "退院します",
+      "reading": "たいいんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "出院"
+    },
+    {
+      "key": "w1521",
+      "word": "［電源を］入れます",
+      "reading": "［でんげんを］いれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "接通（电源）"
+    },
+    {
+      "key": "w1522",
+      "word": "［電源を］切ります",
+      "reading": "［でんげんを］きります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "切断（电源）"
+    },
+    {
+      "key": "w1523",
+      "word": "［鍵を］掛けます",
+      "reading": "［かぎを］かけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "上（锁）"
+    },
+    {
+      "key": "w1524",
+      "word": "気持ちがいい",
+      "reading": "きもちがいい",
+      "partOfSpeech": "い形容词",
+      "meaning": "感觉舒服"
+    },
+    {
+      "key": "w1525",
+      "word": "気持ちが悪い",
+      "reading": "きもちがわるい",
+      "partOfSpeech": "い形容词",
+      "meaning": "感觉不舒服"
+    },
+    {
+      "key": "w1526",
+      "word": "大きな",
+      "reading": "おおきな",
+      "partOfSpeech": "连体词",
+      "meaning": "大的"
+    },
+    {
+      "key": "w1527",
+      "word": "小さな",
+      "reading": "ちいさな",
+      "partOfSpeech": "连体词",
+      "meaning": "小的"
+    },
+    {
+      "key": "w1528",
+      "word": "赤ちゃん",
+      "reading": "あかちゃん",
+      "partOfSpeech": "名词",
+      "meaning": "婴儿"
+    },
+    {
+      "key": "w1529",
+      "word": "小学校",
+      "reading": "しょうがっこう",
+      "partOfSpeech": "名词",
+      "meaning": "小学"
+    },
+    {
+      "key": "w1530",
+      "word": "中学校",
+      "reading": "ちゅうがっこう",
+      "partOfSpeech": "名词",
+      "meaning": "初中"
+    },
+    {
+      "key": "w1531",
+      "word": "駅前",
+      "reading": "えきまえ",
+      "partOfSpeech": "名词",
+      "meaning": "车站前"
+    },
+    {
+      "key": "w1532",
+      "word": "海岸",
+      "reading": "かいがん",
+      "partOfSpeech": "名词",
+      "meaning": "海岸"
+    },
+    {
+      "key": "w1535",
+      "word": "電源",
+      "reading": "でんげん",
+      "partOfSpeech": "名词",
+      "meaning": "电源"
+    },
+    {
+      "key": "w1536",
+      "word": "～製",
+      "reading": "～せい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……制造"
+    },
+    {
+      "key": "w1537",
+      "word": "あ、いけない",
+      "reading": "あ、いけない",
+      "partOfSpeech": "固定表达",
+      "meaning": "啊，糟了"
+    },
+    {
+      "key": "w1538",
+      "word": "お先に失礼します",
+      "reading": "おさきにしつれいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "我先告辞了"
+    },
+    {
+      "key": "w1539",
+      "word": "回覧",
+      "reading": "かいらん",
+      "partOfSpeech": "名词",
+      "meaning": "传阅"
+    },
+    {
+      "key": "w1540",
+      "word": "研究室",
+      "reading": "けんきゅうしつ",
+      "partOfSpeech": "名词",
+      "meaning": "研究室"
+    },
+    {
+      "key": "w1541",
+      "word": "きちんと",
+      "reading": "きちんと",
+      "partOfSpeech": "副词",
+      "meaning": "整齐地；认真地"
+    },
+    {
+      "key": "w1542",
+      "word": "整理します",
+      "reading": "せいりします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "整理"
+    },
+    {
+      "key": "w1543",
+      "word": "～という本",
+      "reading": "～というほん",
+      "partOfSpeech": "表达",
+      "meaning": "名叫……的书"
+    },
+    {
+      "key": "w1544",
+      "word": "～冊",
+      "reading": "～さつ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……册"
+    },
+    {
+      "key": "w1545",
+      "word": "判子",
+      "reading": "はんこ",
+      "partOfSpeech": "名词",
+      "meaning": "印章"
+    },
+    {
+      "key": "w1546",
+      "word": "［判子を］押します",
+      "reading": "［はんこを］おします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "盖（章）"
+    },
+    {
+      "key": "w1657",
+      "word": "指輪",
+      "reading": "ゆびわ",
+      "partOfSpeech": "名词",
+      "meaning": "戒指"
+    },
+    {
+      "key": "w1666",
+      "word": "一昨年",
+      "reading": "おととし",
+      "partOfSpeech": "名词",
+      "meaning": "前年"
+    },
+    {
+      "key": "w2517",
+      "word": "嘘をつきます",
+      "reading": "うそをつきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "说谎"
+    },
+    {
+      "key": "w5646",
+      "word": "かな",
+      "reading": "かな",
+      "partOfSpeech": "名词",
+      "meaning": "假名"
+    },
+    {
+      "key": "called",
+      "word": "～という",
+      "reading": "～という",
+      "partOfSpeech": "表达",
+      "meaning": "叫作……的"
+    },
+    {
+      "key": "dome",
+      "word": "原爆ドーム",
+      "reading": "げんばくどーむ",
+      "partOfSpeech": "专有名词",
+      "meaning": "原爆圆顶馆"
+    },
+    {
+      "key": "izumo",
+      "word": "出雲大社",
+      "reading": "いずもたいしゃ",
+      "partOfSpeech": "专有名词",
+      "meaning": "出云大社"
+    },
+    {
+      "key": "chiangmai",
+      "word": "チェンマイ",
+      "reading": "ちぇんまい",
+      "partOfSpeech": "专有名词",
+      "meaning": "清迈"
+    },
+    {
+      "key": "twins",
+      "word": "双子",
+      "reading": "ふたご",
+      "partOfSpeech": "名词",
+      "meaning": "双胞胎"
+    },
+    {
+      "key": "sisters",
+      "word": "姉妹",
+      "reading": "しまい",
+      "partOfSpeech": "名词",
+      "meaning": "姐妹"
+    },
+    {
+      "key": "grade5",
+      "word": "五年生",
+      "reading": "ごねんせい",
+      "partOfSpeech": "名词",
+      "meaning": "五年级学生"
+    },
+    {
+      "key": "similar",
+      "word": "似ています",
+      "reading": "にています",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "相像"
+    },
+    {
+      "key": "personality",
+      "word": "性格",
+      "reading": "せいかく",
+      "partOfSpeech": "名词",
+      "meaning": "性格"
+    },
+    {
+      "key": "quiet",
+      "word": "おとなしい",
+      "reading": "おとなしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "文静的"
+    },
+    {
+      "key": "kind",
+      "word": "優しい",
+      "reading": "やさしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "温柔的"
+    },
+    {
+      "key": "care",
+      "word": "世話をします",
+      "reading": "せわをします",
+      "partOfSpeech": "动词表达",
+      "meaning": "照顾"
+    },
+    {
+      "key": "time",
+      "word": "時間がたちます",
+      "reading": "じかんがたちます",
+      "partOfSpeech": "动词表达",
+      "meaning": "时间流逝"
+    },
+    {
+      "key": "love",
+      "word": "大好きな",
+      "reading": "だいすきな",
+      "partOfSpeech": "な形容词",
+      "meaning": "非常喜欢的"
+    },
+    {
+      "key": "point",
+      "word": "点",
+      "reading": "てん",
+      "partOfSpeech": "名词",
+      "meaning": "点；方面"
+    },
+    {
+      "key": "strong-willed",
+      "word": "気が強い",
+      "reading": "きがつよい",
+      "partOfSpeech": "表达",
+      "meaning": "个性强；好强"
+    },
+    {
+      "key": "quarrel",
+      "word": "けんかします",
+      "reading": "けんかします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "争吵"
+    },
+    {
+      "key": "strange",
+      "word": "不思議な",
+      "reading": "ふしぎな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不可思议的"
+    },
+    {
+      "key": "age",
+      "word": "年齢",
+      "reading": "ねんれい",
+      "partOfSpeech": "名词",
+      "meaning": "年龄"
+    },
+    {
+      "key": "way",
+      "word": "しかた",
+      "reading": "しかた",
+      "partOfSpeech": "名词",
+      "meaning": "做法"
+    }
+  ]
+}

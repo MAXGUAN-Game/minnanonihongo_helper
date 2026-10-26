@@ -1,0 +1,655 @@
+{
+  "l35-w1104": {
+    "romaji": "mukashi",
+    "attributes": [],
+    "explanation": "指过去的时间，常与「今」对比，用于叙述往事或传说开头。可单独使用，也可构成「昔々」「昔の人」等表达。",
+    "example": {
+      "jp": "昔、この島に大きな港がありました。",
+      "kana": "むかし、このしまにおおきなみなとがありました。",
+      "romaji": "mukashi, kono shima ni ookina minato ga arimashita.",
+      "zh": "从前，这个岛上有一个大港口。"
+    }
+  },
+  "l35-w1291": {
+    "romaji": "naorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示疾病痊愈、身体恢复健康，主语是病或人。与「直ります」同音但汉字不同，此词专用于病情好转。",
+    "example": {
+      "jp": "風邪はもう治りましたか。",
+      "kana": "かぜはもうなおりましたか。",
+      "romaji": "kaze wa mou naorimashita ka.",
+      "zh": "感冒已经好了吗？"
+    }
+  },
+  "l35-w1292": {
+    "romaji": "naorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示故障、错误等被修好或纠正，主语是故障本身。与「治ります」同音，但用于机械、设备等非生命对象。",
+    "example": {
+      "jp": "パソコンの故障が直りました。",
+      "kana": "ぱそこんのこしょうがなおりました。",
+      "romaji": "pasokon no koshou ga naorimashita.",
+      "zh": "电脑的故障修好了。"
+    }
+  },
+  "l35-w1380": {
+    "romaji": "kii",
+    "attributes": [],
+    "explanation": "外来语，指钥匙或键盘上的键。语境中可指开门用的钥匙，也可指乐器、机械的按键。",
+    "example": {
+      "jp": "このキーでドアを開けます。",
+      "kana": "このきーでどあをあけます。",
+      "romaji": "kono kii de doa o akemasu.",
+      "zh": "用这把钥匙开门。"
+    }
+  },
+  "l35-w1404": {
+    "romaji": "sakimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示花开放，主语是花。常用于描述季节、植物状态，不能用于人为打开花朵。",
+    "example": {
+      "jp": "庭に桜の花が咲きました。",
+      "kana": "にわにさくらのはながさきました。",
+      "romaji": "niwa ni sakura no hana ga sakimashita.",
+      "zh": "院子里的樱花开了。"
+    }
+  },
+  "l35-w1405": {
+    "romaji": "kawarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示颜色、状态等自然发生变化，主语是变化的事物。强调变化结果，与他动词「変えます」相对。",
+    "example": {
+      "jp": "信号の色が青に変わりました。",
+      "kana": "しんごうのいろがあおにかわりました。",
+      "romaji": "shingou no iro ga ao ni kawarimashita.",
+      "zh": "信号灯的颜色变成绿色了。"
+    }
+  },
+  "l35-w1406": {
+    "romaji": "komarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因困难、麻烦而感到为难、困扰，主语是人。常用于表达需要帮助或不知所措的心情。",
+    "example": {
+      "jp": "道に迷って困りました。",
+      "kana": "みちにまよってこまりました。",
+      "romaji": "michi ni mayotte komarimashita.",
+      "zh": "迷路了，很为难。"
+    }
+  },
+  "l35-w1407": {
+    "romaji": "tsukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示加上、附上标记或符号，宾语是标记（如丸、点）。也用于「名前を付ける」等，但此处特指画圈。",
+    "example": {
+      "jp": "正しい答えに丸を付けます。",
+      "kana": "ただしいこたえにまるをつけます。",
+      "romaji": "tadashii kotae ni maru o tsukemasu.",
+      "zh": "在正确答案上画圈。"
+    }
+  },
+  "l35-w1411": {
+    "romaji": "tadashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示内容、答案等符合事实或规则，是正确的。可修饰名词，也可作谓语，否定为「正しくない」。",
+    "example": {
+      "jp": "この答えは正しいですか。",
+      "kana": "このこたえはただしいですか。",
+      "romaji": "kono kotae wa tadashii desu ka.",
+      "zh": "这个答案正确吗？"
+    }
+  },
+  "l35-w1414": {
+    "romaji": "mukou",
+    "attributes": [],
+    "explanation": "指对面、前方较远的一侧，常与「こちら」相对。可表示空间方向，也可指“对方那边”。",
+    "example": {
+      "jp": "向こうの島まで船で行きます。",
+      "kana": "むこうのしままでふねでいきます。",
+      "romaji": "mukou no shima made fune de ikimasu.",
+      "zh": "坐船去对面的岛屿。"
+    }
+  },
+  "l35-w1415": {
+    "romaji": "shima",
+    "attributes": [],
+    "explanation": "指被水环绕的陆地，可构成「島国」「半島」等词。常与「海」「港」等词搭配使用。",
+    "example": {
+      "jp": "あの島には港が一つしかありません。",
+      "kana": "あのしまにはみなとがひとつしかありません。",
+      "romaji": "ano shima ni wa minato ga hitotsu shika arimasen.",
+      "zh": "那个岛上只有一个港口。"
+    }
+  },
+  "l35-w1417": {
+    "romaji": "minato",
+    "attributes": [],
+    "explanation": "指船只停靠、装卸货物的港口，也指港口城市。常与「船」「島」等词关联，具有地理、交通语感。",
+    "example": {
+      "jp": "この港は昔から有名です。",
+      "kana": "このみなとはむかしからゆうめいです。",
+      "romaji": "kono minato wa mukashi kara yuumei desu.",
+      "zh": "这个港口从以前就很有名。"
+    }
+  },
+  "l35-w1418": {
+    "romaji": "kinjo",
+    "attributes": [],
+    "explanation": "指自己居住地附近一带，也指附近的邻居。常用「近所の人」「近所に住む」等搭配，比「近く」更强调生活圈和邻里关系。",
+    "example": {
+      "jp": "近所に大きな公園があります。",
+      "kana": "きんじょにおおきなこうえんがあります。",
+      "romaji": "kinjo ni ookina kouen ga arimasu.",
+      "zh": "附近有一个大公园。"
+    }
+  },
+  "l35-w1419": {
+    "romaji": "okujou",
+    "attributes": [],
+    "explanation": "指建筑物的屋顶平台，通常可以上去活动。常说「屋上に出る」「屋上で遊ぶ」，与仅指屋顶本身的「屋根」不同。",
+    "example": {
+      "jp": "屋上から町が見えます。",
+      "kana": "おくじょうからまちがみえます。",
+      "romaji": "okujou kara machi ga miemasu.",
+      "zh": "从屋顶平台能看到城镇。"
+    }
+  },
+  "l35-w1420": {
+    "romaji": "kaigai",
+    "attributes": [],
+    "explanation": "指国外、海外，常用于旅行、工作、留学等语境。常见搭配有「海外旅行」「海外赴任」，与「外国」相比更强调跨海出国的整体范围。",
+    "example": {
+      "jp": "来年、海外で働きたいです。",
+      "kana": "らいねん、かいがいではたらきたいです。",
+      "romaji": "rainen, kaigai de hatarakitai desu.",
+      "zh": "明年我想去海外工作。"
+    }
+  },
+  "l35-w1421": {
+    "romaji": "yamanobori",
+    "attributes": [],
+    "explanation": "指以登山为目的的户外活动，也可说「山登りに行く」。比「登山」更口语、轻松，适合日常会话。",
+    "example": {
+      "jp": "週末に山登りをします。",
+      "kana": "しゅうまつにやまのぼりをします。",
+      "romaji": "shuumatsu ni yamanobori o shimasu.",
+      "zh": "周末去登山。"
+    }
+  },
+  "l35-w1423": {
+    "romaji": "kikai",
+    "attributes": [],
+    "explanation": "指做某事的时机、机会，常与「ある」「ない」「逃す」「得る」等搭配。注意与表示机械的「機械」同音不同义。",
+    "example": {
+      "jp": "いい機会があれば、また話しましょう。",
+      "kana": "いいきかいがあれば、またはなしましょう。",
+      "romaji": "ii kikai ga areba, mata hanashimashou.",
+      "zh": "如果有好机会，我们再聊吧。"
+    }
+  },
+  "l35-w1424": {
+    "romaji": "kyoka",
+    "attributes": [],
+    "explanation": "指正式允许做某事，常用于规则、手续等语境。常见搭配「許可を取る」「許可が必要だ」，比「許す」更偏名词性、正式。",
+    "example": {
+      "jp": "写真を撮るには許可が必要です。",
+      "kana": "しゃしんをとるにはきょかがひつようです。",
+      "romaji": "shashin o toru ni wa kyoka ga hitsuyou desu.",
+      "zh": "拍照需要许可。"
+    }
+  },
+  "l35-w1425": {
+    "romaji": "maru",
+    "attributes": [],
+    "explanation": "指圆圈、圆形符号，常用于标记正确或圈选。也可构成「丸い」等词，但「丸」本身是名词，表示圆形或圈。",
+    "example": {
+      "jp": "正しい答えに丸をつけてください。",
+      "kana": "ただしいこたえにまるをつけてください。",
+      "romaji": "tadashii kotae ni maru o tsukete kudasai.",
+      "zh": "请在正确答案上画圈。"
+    }
+  },
+  "l35-w1428": {
+    "romaji": "setsubi",
+    "attributes": [],
+    "explanation": "指为某种目的设置的机器、装置等整套设备，常用于建筑、工厂、学校等。常见搭配「設備が整う」「設備を導入する」。",
+    "example": {
+      "jp": "この学校は設備が新しいです。",
+      "kana": "このがっこうはせつびがあたらしいです。",
+      "romaji": "kono gakkou wa setsubi ga atarashii desu.",
+      "zh": "这所学校的设备很新。"
+    }
+  },
+  "l35-w1429": {
+    "romaji": "kaaten",
+    "attributes": [],
+    "explanation": "指挂在窗户上遮光或遮挡视线的布帘。常用「カーテンを開ける／閉める」，外来语，日常口语常用。",
+    "example": {
+      "jp": "朝はカーテンを開けて空気を入れます。",
+      "kana": "あさはかーてんをあけてくうきをいれます。",
+      "romaji": "asa wa kaaten o akete kuuki o iremasu.",
+      "zh": "早上打开窗帘换换空气。"
+    }
+  },
+  "l35-w1430": {
+    "romaji": "himo",
+    "attributes": [],
+    "explanation": "指细长的绳、带子，用于系、绑或悬挂物品。常见搭配「ひもを結ぶ」「ひもで縛る」，比「ロープ」更细、更日常。",
+    "example": {
+      "jp": "靴のひもがほどけていますよ。",
+      "kana": "くつのひもがほどけていますよ。",
+      "romaji": "kutsu no himo ga hodokete imasu yo.",
+      "zh": "你的鞋带松了哦。"
+    }
+  },
+  "l35-w1432": {
+    "romaji": "ha",
+    "attributes": [],
+    "explanation": "指植物叶子，常读作「は」，如「木の葉」「葉が落ちる」。注意与表示牙齿的「歯」同音，需根据语境区分。",
+    "example": {
+      "jp": "秋になると木の葉が赤くなります。",
+      "kana": "あきになるときのはがあかくなります。",
+      "romaji": "aki ni naru to ki no ha ga akaku narimasu.",
+      "zh": "一到秋天，树叶就变红。"
+    }
+  },
+  "l35-w1435": {
+    "romaji": "motto",
+    "attributes": [],
+    "explanation": "表示程度比现在更高，相当于“更加、再……一些”。常用于比较或提出更高要求，如「もっと大きいの」「もっと勉強する」。",
+    "example": {
+      "jp": "この問題はもっと簡単です。",
+      "kana": "このもんだいはもっとかんたんです。",
+      "romaji": "kono mondai wa motto kantan desu.",
+      "zh": "这个问题更简单。"
+    }
+  },
+  "l35-w1437": {
+    "romaji": "kore de owarimashō",
+    "attributes": [],
+    "explanation": "固定表达，用于会议、课程或活动结束时，礼貌地提议就此结束。语气柔和，带有征求同意的意味，常用于主持或负责人。",
+    "example": {
+      "jp": "時間になりましたので、これで終わりましょう。",
+      "kana": "じかんになりましたので、これでおわりましょう。",
+      "romaji": "jikan ni narimashita node, kore de owarimashō.",
+      "zh": "时间到了，就到这里结束吧。"
+    }
+  },
+  "l35-w1438": {
+    "romaji": "sore nara",
+    "attributes": [],
+    "explanation": "接续词，基于对方刚说的内容提出建议或判断，相当于“既然那样的话”。口语常用，后项常接请求、提议或自己的决定。",
+    "example": {
+      "jp": "バスが満員ですか。それなら電車で行きましょう。",
+      "kana": "ばすがまんいんですか。それならでんしゃでいきましょう。",
+      "romaji": "basu ga man'in desu ka. sore nara densha de ikimashō.",
+      "zh": "巴士满员了吗？那样的话就坐电车去吧。"
+    }
+  },
+  "l35-w1439": {
+    "romaji": "yakō basu",
+    "attributes": [],
+    "explanation": "指在夜间行驶的长途巴士，常用于节省住宿费或时间。搭配动词“乗る”“予約する”。",
+    "example": {
+      "jp": "夜行バスで大阪へ行きます。",
+      "kana": "やこうばすでおおさかへいきます。",
+      "romaji": "yakō basu de Ōsaka e ikimasu.",
+      "zh": "坐夜间巴士去大阪。"
+    }
+  },
+  "l35-w1440": {
+    "romaji": "ryokōsha",
+    "attributes": [],
+    "explanation": "指办理旅行手续、安排行程的机构。常说“旅行社に申し込む”“旅行社を通す”。",
+    "example": {
+      "jp": "旅行社でツアーを申し込みました。",
+      "kana": "りょこうしゃでつあーをもうしこみました。",
+      "romaji": "ryokōsha de tsuā o mōshikomimashita.",
+      "zh": "在旅行社报了旅行团。"
+    }
+  },
+  "l35-w1441": {
+    "romaji": "kuwashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示内容细致、具体，或对某领域知识丰富。修饰名词时用“詳しい＋名詞”，熟悉某事物时用“～に詳しい”。",
+    "example": {
+      "jp": "彼は日本の歴史に詳しいです。",
+      "kana": "かれはにほんのれきしにくわしいです。",
+      "romaji": "kare wa Nihon no rekishi ni kuwashii desu.",
+      "zh": "他很熟悉日本历史。"
+    }
+  },
+  "l35-w1442": {
+    "romaji": "sukījō",
+    "attributes": [],
+    "explanation": "指设有滑雪道的场所，常与“行く”“滑る”搭配。注意“スキー”是外来语，整体读作“スキー場”。",
+    "example": {
+      "jp": "冬休みにスキー場へ行きました。",
+      "kana": "ふゆやすみにすきーじょうへいきました。",
+      "romaji": "fuyuyasumi ni sukījō e ikimashita.",
+      "zh": "寒假去了滑雪场。"
+    }
+  },
+  "l35-w1626": {
+    "romaji": "sā",
+    "attributes": [],
+    "explanation": "用于一时答不上来或不确定时，表示“这个嘛……”，也可用于催促或转换话题。语气体贴，不宜对上级频繁使用。",
+    "example": {
+      "jp": "「彼はどこですか。」「さあ、知りません。」",
+      "kana": "「かれはどこですか。」「さあ、しりません。」",
+      "romaji": "“kare wa doko desu ka.” “sā, shirimasen.”",
+      "zh": "“他在哪儿？”“这个嘛，我不知道。”"
+    }
+  },
+  "l35-w1683": {
+    "romaji": "rekishi",
+    "attributes": [],
+    "explanation": "指过去发生的事件或对过去的研究领域。常说“歴史がある”“歴史に残る”，也可指某物的来历。",
+    "example": {
+      "jp": "この町には長い歴史があります。",
+      "kana": "このまちにはながいれきしがあります。",
+      "romaji": "kono machi ni wa nagai rekishi ga arimasu.",
+      "zh": "这个城镇有悠久的历史。"
+    }
+  },
+  "l35-w1787": {
+    "romaji": "rebā",
+    "attributes": [],
+    "explanation": "指机器上用手操作的控制杆，如操纵杆、把手。外来语，注意与“lever”同源，常用于机械、游戏等语境。",
+    "example": {
+      "jp": "このレバーを引いてください。",
+      "kana": "このればーをひいてください。",
+      "romaji": "kono rebā o hiite kudasai.",
+      "zh": "请拉这个操作杆。"
+    }
+  },
+  "l35-w3415": {
+    "romaji": "nyūryoku",
+    "attributes": [],
+    "explanation": "指将数据、文字等输入计算机或设备。常与“する”构成“入力する”，搭配“データを入力する”。",
+    "example": {
+      "jp": "パソコンにデータを入力します。",
+      "kana": "ぱそこんにでーたをにゅうりょくします。",
+      "romaji": "pasokon ni dēta o nyūryoku shimasu.",
+      "zh": "把数据输入电脑。"
+    }
+  },
+  "l35-w3455": {
+    "romaji": "furigana",
+    "attributes": [],
+    "explanation": "指在汉字旁边标注的读音假名，帮助阅读。常说“ふりがなを振る”“ふりがな付き”。",
+    "example": {
+      "jp": "難しい漢字にふりがなを付けてください。",
+      "kana": "むずかしいかんじにふりがなをつけてください。",
+      "romaji": "muzukashii kanji ni furigana o tsukete kudasai.",
+      "zh": "请在难读的汉字上标注注音假名。"
+    }
+  },
+  "l35-w3747": {
+    "romaji": "suihanki",
+    "attributes": [],
+    "explanation": "指自动煮饭的电饭锅。常与“炊く”“スイッチを入れる”搭配。",
+    "example": {
+      "jp": "炊飯器でご飯を炊きます。",
+      "kana": "すいはんきでごはんをたきます。",
+      "romaji": "suihanki de gohan o takimasu.",
+      "zh": "用电饭锅煮饭。"
+    }
+  },
+  "l35-w4451": {
+    "romaji": "kurikkushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用鼠标点击屏幕上的按钮或链接，是计算机操作中的常用动词。常用于指示操作步骤，礼貌体形式。",
+    "example": {
+      "jp": "このボタンをクリックします。",
+      "kana": "このぼたんをくりっくします。",
+      "romaji": "kono botan o kurikkushimasu.",
+      "zh": "点击这个按钮。"
+    }
+  },
+  "l35-input": {
+    "romaji": "nyuuryokushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示将数据或文字输入到电脑等设备中，常用于计算机操作场景。可与“データ”“文字”等词搭配。",
+    "example": {
+      "jp": "ここに名前を入力します。",
+      "kana": "ここになまえをにゅうりょくします。",
+      "romaji": "koko ni namae o nyuuryokushimasu.",
+      "zh": "在这里输入名字。"
+    }
+  },
+  "l35-hakone": {
+    "romaji": "Hakone",
+    "attributes": [],
+    "explanation": "日本著名的温泉观光地，位于神奈川县。常作为旅游目的地出现在会话中。",
+    "example": {
+      "jp": "箱根へ行きたいです。",
+      "kana": "はこねへいきたいです。",
+      "romaji": "Hakone e ikitai desu.",
+      "zh": "我想去箱根。"
+    }
+  },
+  "l35-nikko": {
+    "romaji": "Nikkou",
+    "attributes": [],
+    "explanation": "位于栃木县的历史观光城市，以神社佛阁闻名。常作为旅游话题出现。",
+    "example": {
+      "jp": "日光は歴史が古いです。",
+      "kana": "にっこうはれきしがふるいです。",
+      "romaji": "Nikkou wa rekishi ga furui desu.",
+      "zh": "日光历史悠久。"
+    }
+  },
+  "l35-africa": {
+    "romaji": "Afurika",
+    "attributes": [],
+    "explanation": "指非洲大陆，作为地理专有名词使用。在讨论旅行、自然、文化等话题时出现。",
+    "example": {
+      "jp": "アフリカへ旅行します。",
+      "kana": "あふりかへりょこうします。",
+      "romaji": "Afurika e ryokoushimasu.",
+      "zh": "去非洲旅行。"
+    }
+  },
+  "l35-manga-museum": {
+    "romaji": "Mangamyuujiamu",
+    "attributes": [],
+    "explanation": "指漫画博物馆，常特指京都国际漫画博物馆。作为设施名称使用，可前加地名。",
+    "example": {
+      "jp": "マンガミュージアムで本を読みます。",
+      "kana": "まんがみゅーじあむでほんをよみます。",
+      "romaji": "Mangamyuujiamu de hon o yomimasu.",
+      "zh": "在漫画博物馆看书。"
+    }
+  },
+  "l35-school": {
+    "romaji": "Minna no Gakkou",
+    "attributes": [],
+    "explanation": "教材中虚构的日语学校名称，字面意为“大家的学校”。作为专有名词直接使用。",
+    "example": {
+      "jp": "みんなの学校で日本語を勉強します。",
+      "kana": "みんなのがっこうでにほんごをべんきょうします。",
+      "romaji": "Minna no Gakkou de nihongo o benkyoushimasu.",
+      "zh": "在大家的学校学习日语。"
+    }
+  },
+  "l35-daikoku": {
+    "romaji": "Daikokuzushi",
+    "attributes": [],
+    "explanation": "教材中虚构的寿司店名，可视为专有名词。用于点餐、预约等场景。",
+    "example": {
+      "jp": "大黒ずしで寿司を食べます。",
+      "kana": "だいこくずしですしをたべます。",
+      "romaji": "Daikokuzushi de sushi o tabemasu.",
+      "zh": "在大黑寿司吃寿司。"
+    }
+  },
+  "l35-imc": {
+    "romaji": "Aiemushii Pasokon Kyoushitsu",
+    "attributes": [],
+    "explanation": "教材中虚构的电脑教室名称，IMC为英文缩写。作为专有名词使用，可指地点。",
+    "example": {
+      "jp": "IMCパソコン教室で習います。",
+      "kana": "あいえむしーぱそこんきょうしつでならいます。",
+      "romaji": "Aiemushii Pasokon Kyoushitsu de naraimasu.",
+      "zh": "在IMC电脑教室学习。"
+    }
+  },
+  "l35-mothers-taste": {
+    "romaji": "Haha no Aji",
+    "attributes": [],
+    "explanation": "教材中虚构的餐厅名，意为“妈妈的味道”。作为专有名词使用，常指家常菜馆。",
+    "example": {
+      "jp": "母の味で昼ご飯を食べます。",
+      "kana": "ははのあじでひるごはんをたべます。",
+      "romaji": "Haha no Aji de hirugohan o tabemasu.",
+      "zh": "在“妈妈的味道”吃午饭。"
+    }
+  },
+  "l35-haru": {
+    "romaji": "Haru",
+    "attributes": [],
+    "explanation": "教材中的人名，用平假名书写。作为专有名词直接使用，指代特定人物。",
+    "example": {
+      "jp": "はるさんは学生です。",
+      "kana": "はるさんはがくせいです。",
+      "romaji": "Haru san wa gakusei desu.",
+      "zh": "小春是学生。"
+    }
+  },
+  "l35-sato": {
+    "romaji": "Satou Shika",
+    "attributes": [],
+    "explanation": "教材中虚构的牙科诊所名称，佐藤为姓氏。作为专有名词使用，指医疗机构。",
+    "example": {
+      "jp": "佐藤歯科へ行きます。",
+      "kana": "さとうしかへいきます。",
+      "romaji": "Satou Shika e ikimasu.",
+      "zh": "去佐藤牙科。"
+    }
+  },
+  "l35-cooking": {
+    "romaji": "mainichi kukkingu",
+    "attributes": [],
+    "explanation": "「毎日クッキング」是教材中出现的机构名称，由「毎日」和「クッキング」组合而成，作为专有名词使用，不表示一般的“每天做饭”动作。",
+    "example": {
+      "jp": "毎日クッキングで料理を習っています。",
+      "kana": "まいにちくっきんぐでりょうりをならっています。",
+      "romaji": "mainichi kukkingu de ryōri o naratte imasu.",
+      "zh": "我在每日烹饪学习做菜。"
+    }
+  },
+  "l35-kusatsu": {
+    "romaji": "Kusatsu",
+    "attributes": [],
+    "explanation": "「草津」是日本群马县著名的温泉地名，常与「温泉」搭配。作为专有名词，首字母通常大写，但日语中直接写汉字。",
+    "example": {
+      "jp": "草津へ温泉に入りに行きます。",
+      "kana": "くさつへおんせんにはいりにいきます。",
+      "romaji": "Kusatsu e onsen ni hairi ni ikimasu.",
+      "zh": "我要去草津泡温泉。"
+    }
+  },
+  "l35-shiga": {
+    "romaji": "Shiga Kōgen",
+    "attributes": [],
+    "explanation": "「志賀高原」是长野县的高原度假地，以滑雪和自然风光闻名。作为专有名词，读作「しがこうげん」，注意「高原」的浊音。",
+    "example": {
+      "jp": "冬に志賀高原でスキーをします。",
+      "kana": "ふゆにしがこうげんですきーをします。",
+      "romaji": "fuyu ni Shiga Kōgen de sukī o shimasu.",
+      "zh": "冬天在志贺高原滑雪。"
+    }
+  },
+  "l35-vermilion": {
+    "romaji": "shu",
+    "attributes": [],
+    "explanation": "「朱」指朱红色，常用于传统色彩、颜料或印章颜色。作为名词，可单独使用，也可构成「朱色」等复合词。",
+    "example": {
+      "jp": "この印鑑は朱で押してください。",
+      "kana": "このいんかんはしゅでおしてください。",
+      "romaji": "kono inkan wa shu de oshite kudasai.",
+      "zh": "这个印章请用朱红色盖。"
+    }
+  },
+  "l35-associate": {
+    "romaji": "majiwari masu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「交わる」表示人与人交往、事物相交或交叉。此义项多用于「人と人とが交わる」等，强调相互接触，语体稍正式。",
+    "example": {
+      "jp": "彼は地域の人々と交わっています。",
+      "kana": "かれはちいきのひとびととまじわっています。",
+      "romaji": "kare wa chiiki no hitobito to majiwatte imasu.",
+      "zh": "他和当地的人们有交往。"
+    }
+  },
+  "l35-proverb": {
+    "romaji": "kotowaza",
+    "attributes": [],
+    "explanation": "「ことわざ」指民间流传的谚语、俗语，常以「ことわざにもあるように」等句式引用。注意与「慣用句」（惯用语）区分。",
+    "example": {
+      "jp": "「急がば回れ」は有名なことわざです。",
+      "kana": "「いそがばまわれ」はゆうめいなことわざです。",
+      "romaji": "「isogaba maware」 wa yūmei na kotowaza desu.",
+      "zh": "“欲速则不达”是有名的谚语。"
+    }
+  },
+  "l35-relationship": {
+    "romaji": "kankei",
+    "attributes": [],
+    "explanation": "「関係」表示人与人、事物与事物之间的联系或关系。常用「〜との関係」「関係がある/ない」等搭配，也可作复合词词素。",
+    "example": {
+      "jp": "二人の関係はとても良好です。",
+      "kana": "ふたりのかんけいはとてもりょうこうです。",
+      "romaji": "futari no kankei wa totemo ryōkō desu.",
+      "zh": "两人的关系非常好。"
+    }
+  },
+  "l35-friendly": {
+    "romaji": "nakayoku shi masu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「仲良くします」是「仲良くする」的礼貌体，表示与某人友好相处、搞好关系。常与「〜と」搭配，强调主动维持和睦关系。",
+    "example": {
+      "jp": "これからもみんなと仲良くします。",
+      "kana": "これからもみんなとなかよくします。",
+      "romaji": "korekara mo minna to nakayoku shimasu.",
+      "zh": "今后我也会和大家友好相处。"
+    }
+  },
+  "l35-necessary": {
+    "romaji": "hitsuyō na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "「必要な」是な形容词「必要だ」的连体形，修饰名词表示“必要的……”。常用「〜に必要なもの」等搭配，注意后接名词时用「な」。",
+    "example": {
+      "jp": "留学には必要な書類を準備します。",
+      "kana": "りゅうがくにはひつようなしょるいをじゅんびします。",
+      "romaji": "ryūgaku ni wa hitsuyō na shorui o junbi shimasu.",
+      "zh": "准备留学所需的文件。"
+    }
+  }
+}

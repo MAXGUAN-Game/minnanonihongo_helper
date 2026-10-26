@@ -1,0 +1,28 @@
+{
+  "lessonId": 35,
+  "model": "deepseek-flash",
+  "reviewedCount": 57,
+  "corrections": [
+    {
+      "id": "l35-w4451",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "クリックします是サ变动词，意为“点击（某物）”，带宾语，属他动词，缺失属性需补齐。"
+    },
+    {
+      "id": "l35-input",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "入力します是サ变动词，意为“输入（数据）”，带宾语，属他动词，缺失属性需补齐。"
+    },
+    {
+      "id": "l35-friendly",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "仲良くします表示“友好相处”的状态行为，不带宾语，属自动词，原标他动词有误。"
+    }
+  ]
+}

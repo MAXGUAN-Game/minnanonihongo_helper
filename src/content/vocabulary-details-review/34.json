@@ -1,0 +1,21 @@
+{
+  "lessonId": 34,
+  "model": "deepseek-flash",
+  "reviewedCount": 51,
+  "corrections": [
+    {
+      "id": "l34-w1374",
+      "attributes": [
+        "自他两用"
+      ],
+      "reason": "質問する可带を表内容（他）也可单独表示提问行为（自），按词义应标自他两用。"
+    },
+    {
+      "id": "l34-w1399",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "お茶をたてる带を格宾语，为他动词，原标注正确无需改。"
+    }
+  ]
+}

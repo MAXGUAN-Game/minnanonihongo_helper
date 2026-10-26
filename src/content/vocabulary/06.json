@@ -1,0 +1,400 @@
+{
+  "lessonId": 6,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/6.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "交叉核对51条主来源候选：紅茶按第二版交叉表归入第12课；其余50条保留，另补5条教材专名，共55条。",
+    "烟草采用通常假名表记たばこ，括号内搭配移入释义；サッカ－规范为サッカー。牛乳与ミルク分别保留读音。",
+    "逐条对应和排除原因见vocabulary-audit/06.json。"
+  ],
+  "words": [
+    {
+      "key": "tabemasu",
+      "word": "食べます",
+      "reading": "たべます",
+      "partOfSpeech": "动词Ⅱ类",
+      "meaning": "吃"
+    },
+    {
+      "key": "nomimasu",
+      "word": "飲みます",
+      "reading": "のみます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "喝"
+    },
+    {
+      "key": "suimasu",
+      "word": "吸います",
+      "reading": "すいます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "吸；抽（烟）"
+    },
+    {
+      "key": "mimasu",
+      "word": "見ます",
+      "reading": "みます",
+      "partOfSpeech": "动词Ⅱ类",
+      "meaning": "看"
+    },
+    {
+      "key": "kikimasu",
+      "word": "聞きます",
+      "reading": "ききます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "听"
+    },
+    {
+      "key": "yomimasu",
+      "word": "読みます",
+      "reading": "よみます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "读；阅读"
+    },
+    {
+      "key": "kakimasu",
+      "word": "書きます",
+      "reading": "かきます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "写"
+    },
+    {
+      "key": "kaimasu",
+      "word": "買います",
+      "reading": "かいます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "买"
+    },
+    {
+      "key": "torimasu",
+      "word": "撮ります",
+      "reading": "とります",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "拍（照片）"
+    },
+    {
+      "key": "shimasu",
+      "word": "します",
+      "reading": "します",
+      "partOfSpeech": "动词Ⅲ类",
+      "meaning": "做；干"
+    },
+    {
+      "key": "aimasu",
+      "word": "会います",
+      "reading": "あいます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "见；见面"
+    },
+    {
+      "key": "pan",
+      "word": "パン",
+      "reading": "ぱん",
+      "partOfSpeech": "名词",
+      "meaning": "面包"
+    },
+    {
+      "key": "tamago",
+      "word": "卵",
+      "reading": "たまご",
+      "partOfSpeech": "名词",
+      "meaning": "鸡蛋"
+    },
+    {
+      "key": "niku",
+      "word": "肉",
+      "reading": "にく",
+      "partOfSpeech": "名词",
+      "meaning": "肉"
+    },
+    {
+      "key": "sakana",
+      "word": "魚",
+      "reading": "さかな",
+      "partOfSpeech": "名词",
+      "meaning": "鱼"
+    },
+    {
+      "key": "yasai",
+      "word": "野菜",
+      "reading": "やさい",
+      "partOfSpeech": "名词",
+      "meaning": "蔬菜"
+    },
+    {
+      "key": "kudamono",
+      "word": "果物",
+      "reading": "くだもの",
+      "partOfSpeech": "名词",
+      "meaning": "水果"
+    },
+    {
+      "key": "mizu",
+      "word": "水",
+      "reading": "みず",
+      "partOfSpeech": "名词",
+      "meaning": "水"
+    },
+    {
+      "key": "ocha",
+      "word": "お茶",
+      "reading": "おちゃ",
+      "partOfSpeech": "名词",
+      "meaning": "茶"
+    },
+    {
+      "key": "gyuunyuu",
+      "word": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "partOfSpeech": "名词",
+      "meaning": "牛奶"
+    },
+    {
+      "key": "miruku",
+      "word": "ミルク",
+      "reading": "みるく",
+      "partOfSpeech": "名词",
+      "meaning": "牛奶"
+    },
+    {
+      "key": "juusu",
+      "word": "ジュース",
+      "reading": "じゅーす",
+      "partOfSpeech": "名词",
+      "meaning": "果汁"
+    },
+    {
+      "key": "biiru",
+      "word": "ビール",
+      "reading": "びーる",
+      "partOfSpeech": "名词",
+      "meaning": "啤酒"
+    },
+    {
+      "key": "osake",
+      "word": "お酒",
+      "reading": "おさけ",
+      "partOfSpeech": "名词",
+      "meaning": "酒"
+    },
+    {
+      "key": "gohan",
+      "word": "ご飯",
+      "reading": "ごはん",
+      "partOfSpeech": "名词",
+      "meaning": "饭"
+    },
+    {
+      "key": "asagohan",
+      "word": "朝ご飯",
+      "reading": "あさごはん",
+      "partOfSpeech": "名词",
+      "meaning": "早饭"
+    },
+    {
+      "key": "hirugohan",
+      "word": "昼ご飯",
+      "reading": "ひるごはん",
+      "partOfSpeech": "名词",
+      "meaning": "午饭"
+    },
+    {
+      "key": "bangohan",
+      "word": "晩ご飯",
+      "reading": "ばんごはん",
+      "partOfSpeech": "名词",
+      "meaning": "晚饭"
+    },
+    {
+      "key": "tabako",
+      "word": "たばこ",
+      "reading": "たばこ",
+      "partOfSpeech": "名词",
+      "meaning": "香烟；烟草"
+    },
+    {
+      "key": "bideo",
+      "word": "ビデオ",
+      "reading": "びでお",
+      "partOfSpeech": "名词",
+      "meaning": "视频；录像"
+    },
+    {
+      "key": "tegami",
+      "word": "手紙",
+      "reading": "てがみ",
+      "partOfSpeech": "名词",
+      "meaning": "信"
+    },
+    {
+      "key": "repooto",
+      "word": "レポート",
+      "reading": "れぽーと",
+      "partOfSpeech": "名词",
+      "meaning": "报告"
+    },
+    {
+      "key": "shashin",
+      "word": "写真",
+      "reading": "しゃしん",
+      "partOfSpeech": "名词",
+      "meaning": "照片"
+    },
+    {
+      "key": "mise",
+      "word": "店",
+      "reading": "みせ",
+      "partOfSpeech": "名词",
+      "meaning": "店；商店"
+    },
+    {
+      "key": "niwa",
+      "word": "庭",
+      "reading": "にわ",
+      "partOfSpeech": "名词",
+      "meaning": "院子；庭院"
+    },
+    {
+      "key": "shukudai",
+      "word": "宿題",
+      "reading": "しゅくだい",
+      "partOfSpeech": "名词",
+      "meaning": "作业"
+    },
+    {
+      "key": "tenisu",
+      "word": "テニス",
+      "reading": "てにす",
+      "partOfSpeech": "名词",
+      "meaning": "网球"
+    },
+    {
+      "key": "sakkaa",
+      "word": "サッカー",
+      "reading": "さっかー",
+      "partOfSpeech": "名词",
+      "meaning": "足球"
+    },
+    {
+      "key": "ohanami",
+      "word": "お花見",
+      "reading": "おはなみ",
+      "partOfSpeech": "名词",
+      "meaning": "赏樱花"
+    },
+    {
+      "key": "nani",
+      "word": "何",
+      "reading": "なに",
+      "partOfSpeech": "疑问词",
+      "meaning": "什么（なに）"
+    },
+    {
+      "key": "isshoni",
+      "word": "一緒に",
+      "reading": "いっしょに",
+      "partOfSpeech": "副词",
+      "meaning": "一起"
+    },
+    {
+      "key": "chotto",
+      "word": "ちょっと",
+      "reading": "ちょっと",
+      "partOfSpeech": "副词",
+      "meaning": "稍微；一会儿"
+    },
+    {
+      "key": "itsumo",
+      "word": "いつも",
+      "reading": "いつも",
+      "partOfSpeech": "副词",
+      "meaning": "总是；经常"
+    },
+    {
+      "key": "tokidoki",
+      "word": "時々",
+      "reading": "ときどき",
+      "partOfSpeech": "副词",
+      "meaning": "有时；偶尔"
+    },
+    {
+      "key": "sorekara",
+      "word": "それから",
+      "reading": "それから",
+      "partOfSpeech": "接续词",
+      "meaning": "然后；还有"
+    },
+    {
+      "key": "ee",
+      "word": "ええ",
+      "reading": "ええ",
+      "partOfSpeech": "感叹词",
+      "meaning": "嗯；是的（较随意的肯定）"
+    },
+    {
+      "key": "iidesune",
+      "word": "いいですね",
+      "reading": "いいですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "好啊；真不错"
+    },
+    {
+      "key": "wakarimashita",
+      "word": "分かりました",
+      "reading": "わかりました",
+      "partOfSpeech": "固定表达",
+      "meaning": "明白了；知道了"
+    },
+    {
+      "key": "nandesuka",
+      "word": "何ですか",
+      "reading": "なんですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "什么事？；是什么？"
+    },
+    {
+      "key": "jamataashita",
+      "word": "じゃ、また明日",
+      "reading": "じゃ、またあした",
+      "partOfSpeech": "固定表达",
+      "meaning": "那么，明天见"
+    },
+    {
+      "key": "mekishiko",
+      "word": "メキシコ",
+      "reading": "めきしこ",
+      "partOfSpeech": "专有名词",
+      "meaning": "墨西哥"
+    },
+    {
+      "key": "osakadepaato",
+      "word": "大阪デパート",
+      "reading": "おおさかでぱーと",
+      "partOfSpeech": "专有名词",
+      "meaning": "大阪百货店（教材中的店名）"
+    },
+    {
+      "key": "tsuruya",
+      "word": "つるや",
+      "reading": "つるや",
+      "partOfSpeech": "专有名词",
+      "meaning": "鹤屋（教材中的店名）"
+    },
+    {
+      "key": "furansuya",
+      "word": "フランスや",
+      "reading": "ふらんすや",
+      "partOfSpeech": "专有名词",
+      "meaning": "法国屋（教材中的店名）"
+    },
+    {
+      "key": "mainichiya",
+      "word": "まいにちや",
+      "reading": "まいにちや",
+      "partOfSpeech": "专有名词",
+      "meaning": "每日屋（教材中的店名）"
+    }
+  ]
+}

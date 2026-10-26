@@ -1,3 +1,7 @@
+import { registerAuth } from './auth';
+import { registerVocabularyDetails } from './vocabulary-details';
+import { vocabularyForLesson, hasHistoricalVocabularyWord } from '../content/vocabulary';
+import { retireRecordingArchives } from './audio-retirement';
 import Fastify from 'fastify';
 import { randomUUID } from 'node:crypto';
 import { resolve } from 'node:path';
@@ -10,10 +14,13 @@ import { ApiError, attemptInputSchema, backupSchema, progressSchema, reviewInput
 import { Store } from './store';
 import { registerVoiceRoutes } from './voice';
 import { authorizeRequest, deploymentConfig, type Deployment } from './deployment';
-import { registerRecordingRoutes } from './recordings';
 import type { SpeakingAssessment } from '../shared/recordings';
+import { audioAssessmentSettingsPatchSchema } from '../shared/audio-assessment';
+import { registerPracticeRoutes, practicePool, questionFingerprints } from './ai-practice';
+import { registerKatakanaPractice } from './katakana-practice';
+import { courseProgress } from './course-progress';
 
-export type AppOptions = { dataDir?: string; deployment?: Deployment; aiFetch?: AIFetch; voiceFetch?: typeof fetch; speechStatus?: () => SpeechStatus | Promise<SpeechStatus> };
+export type AppOptions = { authVersion?: string; dataDir?: string; deployment?: Deployment; aiFetch?: AIFetch; audioFetch?: typeof fetch; voiceFetch?: typeof fetch; practiceRandom?: () => number; speechStatus?: () => SpeechStatus | Promise<SpeechStatus> };
 const intervals = [1, 3, 7, 14, 30];
 const afterDays = (days: number) => new Date(Date.now() + days * 86400000).toISOString();
 const now = () => new Date().toISOString();
@@ -28,16 +35,21 @@ function lessonFor(id: number): Lesson {
   if (!lesson) throw new ApiError(404, 'LESSON_NOT_FOUND', '没有找到这节课。');
   return lesson;
 }
-function hasItem(lesson: Lesson, id: string) { return [...lesson.grammar, ...lesson.listening, ...lesson.speaking, ...lesson.scenarios].some(item => item.id === id); }
+function hasItem(lesson: Lesson, id: string) { return hasHistoricalVocabularyWord(lesson.id, id) || [...lesson.grammar, ...lesson.listening, ...lesson.speaking, ...lesson.scenarios].some(item => item.id === id); }
 function validateProgress(progress: Omit<Progress, 'updatedAt'>) {
   const lesson = lessonFor(progress.lessonId);
-  const items = { understand: lesson.grammar, listen: lesson.listening, speak: lesson.speaking, conversation: lesson.scenarios }[progress.stage];
+  const items = { vocabulary: vocabularyForLesson(progress.lessonId).words, understand: lesson.grammar, listen: lesson.listening, speak: lesson.speaking, conversation: lesson.scenarios }[progress.stage];
   if (progress.cursor > items.length || (progress.itemId && !items.some(item => item.id === progress.itemId))) throw new ApiError(400, 'INVALID_PROGRESS', '学习位置与当前课程不一致。');
+  if (progress.manualProgress && (progress.stage === 'conversation' || ((progress.stage === 'vocabulary' || progress.stage === 'understand') && progress.manualProgress.baselineCount > items.length))) throw new ApiError(400, 'INVALID_PROGRESS', '手动进度的基线与当前模块不一致。');
 }
 function validateBackup(backup: Backup) {
   lessonFor(backup.settings.currentLessonId);
   const unique = (values: string[]) => { if (new Set(values).size !== values.length) throw new ApiError(400, 'INVALID_BACKUP', '备份含有重复记录，原数据没有更改。'); };
   unique(backup.progress.map(item => `${item.lessonId}:${item.stage}`));
+  if ('vocabularyMastery' in backup) {
+    unique(backup.vocabularyMastery.map(item => item.wordId));
+    for (const mark of backup.vocabularyMastery) if (!hasHistoricalVocabularyWord(mark.lessonId, mark.wordId)) throw new ApiError(400, 'INVALID_BACKUP', '单词掌握标记不属于这节课。');
+  }
   unique(backup.attempts.map(item => item.id)); unique(backup.reviews.map(item => item.id)); unique(backup.sessions.map(item => item.id));
   unique(backup.reviews.filter(item => item.sourceId).map(item => item.sourceId!));
   for (const progress of backup.progress) validateProgress(progress);
@@ -62,14 +74,35 @@ function validateBackup(backup: Backup) {
     const allowedFeedback = grammarChat ? scenario.targetGrammarIds : lesson.grammar.map(grammar => grammar.id);
     if (session.turns[0].text !== scenario.opening.jp || (grammarChat && session.turns[0].translation !== scenario.opening.zh) || session.feedback.some(item => item.grammarId && !allowedFeedback.includes(item.grammarId))) throw new ApiError(400, 'INVALID_BACKUP', '备份中的课程内容不一致。');
   }
-  const recordings = backup.version === 2 ? backup.recordings : [];
-  const assessments = backup.version === 2 ? backup.assessments : [];
+  const recordings = backup.version !== 1 ? backup.recordings : [];
+  const assessments = backup.version !== 1 ? backup.assessments : [];
+  const aiQuestions = backup.version >= 3 && 'aiQuestions' in backup ? backup.aiQuestions : [];
+  const aiAttempts = backup.version >= 3 && 'aiQuestions' in backup ? backup.aiAttempts : [];
+  const aiPositions = backup.version >= 3 && 'aiQuestions' in backup ? backup.aiPositions : [];
+  unique(aiQuestions.map(item => item.id)); unique(aiAttempts.map(item => item.id));
+  unique(aiQuestions.flatMap(item => item.fingerprints));
+  unique(aiPositions.map(item => `${item.lessonId}:${item.kind}`));
+  for (const question of aiQuestions) {
+    if (question.content.kind === 'vocabulary') {
+      const content = question.content;
+      // Keep historical wording/glosses: editorial corrections must not invalidate
+      // an existing answer. The stable word ID is the content association.
+      if (!hasHistoricalVocabularyWord(question.lessonId, content.wordId) || question.fingerprints.length) throw new ApiError(400, 'INVALID_BACKUP', '单词练习与课程词表不一致。');
+      continue;
+    }
+    const source = practicePool(question.lessonId).find(item => item.id === question.grammarSourceLessonId);
+    const grammar = source?.grammar.find(item => item.id === question.grammarId);
+    if (!grammar || question.grammarTitle !== grammar.title || JSON.stringify([...question.fingerprints].sort()) !== JSON.stringify(questionFingerprints(question.content).sort())) throw new ApiError(400, 'INVALID_BACKUP', 'AI题目的语法来源或去重记录不正确。');
+  }
+  for (const position of aiPositions) if (!aiQuestions.some(item => item.id === position.questionId && item.lessonId === position.lessonId && item.content.kind === position.kind)) throw new ApiError(400, 'INVALID_BACKUP', 'AI练习位置与题目不匹配。');
   unique(recordings.map(item => item.id)); unique(assessments.map(item => item.id));
   const invalid = () => { throw new ApiError(400, 'INVALID_BACKUP', '备份中的录音、评分与练习不匹配，原数据没有更改。'); };
   const matchesRecording = (id: string, lessonId: number, context: 'speak' | 'conversation', itemId: string) => recordings.some(record => record.id === id && record.lessonId === lessonId && record.context === context && record.itemId === itemId);
   for (const record of recordings) {
     const lesson = lessonFor(record.lessonId);
-    const validItem = record.context === 'speak' ? lesson.speaking.some(item => item.id === record.itemId) : backup.sessions.some(session => session.id === record.itemId && session.lessonId === record.lessonId);
+    const validItem = record.context === 'speak' ? lesson.speaking.some(item => item.id === record.itemId) : record.context === 'ai-speak'
+      ? aiQuestions.some(item => item.id === record.itemId && item.lessonId === record.lessonId && item.content.kind === 'speaking')
+      : backup.sessions.some(session => session.id === record.itemId && session.lessonId === record.lessonId);
     if (!validItem || Date.parse(record.expiresAt) - Date.parse(record.createdAt) !== 90 * 86400000) invalid();
   }
   for (const assessment of assessments) {
@@ -83,12 +116,21 @@ function validateBackup(backup: Backup) {
   for (const session of backup.sessions) for (const turn of session.turns) {
     if (turn.recordingId && (turn.role !== 'user' || !matchesRecording(turn.recordingId, session.lessonId, 'conversation', session.id))) invalid();
   }
+  for (const attempt of aiAttempts) {
+    const question = aiQuestions.find(item => item.id === attempt.questionId && item.lessonId === attempt.lessonId && item.content.kind === attempt.kind);
+    if (!question) invalid();
+    if (attempt.kind === 'speaking') {
+      if ((backup.version !== 4 && !recordings.some(item => item.id === attempt.recordingId && item.context === 'ai-speak' && item.itemId === attempt.questionId && item.lessonId === attempt.lessonId)) ||
+        attempt.result.corrections.some(item => !attempt.result.text.includes(item.original) || (item.grammarId && !practicePool(attempt.lessonId).some(lesson => lesson.grammar.some(grammar => grammar.id === item.grammarId))))) invalid();
+    } else if (question?.content.kind === 'dialogue' && (!/^[0-3]$/.test(attempt.answer) || attempt.correct !== (Number(attempt.answer) === question.content.answerIndex))) invalid();
+  }
 }
 export function buildApp(options: AppOptions = {}) {
   const deployment = options.deployment ?? deploymentConfig({});
   const app = Fastify({ logger: false, bodyLimit: 16 * 1024 * 1024 });
   const dataDir = resolve(options.dataDir ?? resolve(process.cwd(), 'data'));
   const store = new Store(dataDir);
+  retireRecordingArchives(store, dataDir);
   const aiFetch = options.aiFetch ?? fetch;
   const locks = new Map<string, Promise<void>>();
   async function serialized<T>(id: string, task: () => Promise<T> | T): Promise<T> {
@@ -111,6 +153,15 @@ export function buildApp(options: AppOptions = {}) {
     if (request.url.startsWith('/api/') || deployment.mode === 'web') reply.header('Cache-Control', 'no-store');
     authorizeRequest(request, deployment);
   });
+  registerAuth(app, store.db, deployment, options.authVersion);
+  app.addHook('onRequest', async request => {
+    if (/^\/api\/recordings(?:[/?]|$)/.test(request.url) || /^\/api\/speaking\/assess(?:-audio)?(?:[/?]|$)/.test(request.url)) throw new ApiError(410, 'RECORDINGS_RETIRED', '录音存档已停用，请刷新页面使用当前题录音评分。');
+  });
+  app.addHook('onResponse', async (request, reply) => {
+    if (process.env.NODE_ENV !== 'production' || !request.url.split('?')[0].endsWith('/assess-audio')) return;
+    const bytes = Buffer.isBuffer(request.body) ? request.body.length : 0;
+    console.info(JSON.stringify({ event: 'audio-assessment', bytes, audioMs: bytes > 44 ? Math.round((bytes - 44) / 32) : 0, elapsedMs: Math.round(reply.elapsedTime), status: reply.statusCode }));
+  });
   app.setErrorHandler((error, request, reply) => {
     if (error instanceof ApiError) return reply.code(error.status).send({ error: error.message, code: error.code });
     if (error instanceof z.ZodError || (error as { statusCode?: number }).statusCode === 400) return reply.code(400).send({ error: '提交的内容格式不正确，请检查后重试。', code: 'INVALID_INPUT' });
@@ -118,7 +169,10 @@ export function buildApp(options: AppOptions = {}) {
     return reply.code(500).send({ error: '服务暂时没有完成操作，请重试。', code: 'INTERNAL_ERROR' });
   });
   registerVoiceRoutes(app, store.db, dataDir, options.voiceFetch ?? fetch);
-  const recordings = registerRecordingRoutes(app, { store, dataDir, aiFetch, serialized });
+  registerVocabularyDetails(app, store, dataDir, aiFetch, options.voiceFetch ?? fetch);
+  app.addContentTypeParser('audio/wav', { parseAs: 'buffer', bodyLimit: 1100000 }, (_request, body, done) => done(null, body));
+  registerPracticeRoutes(app, { store, aiFetch, audioFetch: options.audioFetch ?? fetch, serialized, random: options.practiceRandom });
+  registerKatakanaPractice(app, store, aiFetch, serialized);
   app.get('/api/health', async () => deployment.mode === 'web' ? { ok: true, app: 'nihongo-small-steps' } : { ok: true, app: 'nihongo-small-steps', pid: process.pid, root: process.cwd() });
   app.get('/api/bootstrap', async (): Promise<Bootstrap> => {
     const progress = store.all<Progress>('progress');
@@ -131,6 +185,15 @@ export function buildApp(options: AppOptions = {}) {
     return { deployment: deployment.mode, ...(deployment.mode === 'web' ? { publicSite: { icpNumber: deployment.icpNumber || '' } } : {}), settings, progress, dueReviews: dueReviews(), activeSession: active.find(item => item.lessonId === settings.currentLessonId) ?? active[0] ?? null, totals: { sessions: allSessions.filter(item => item.status === 'complete').length, reviews: store.all('reviews').length, independent }, speech };
   });
   app.get('/api/lessons', async () => lessons);
+  app.get('/api/course-progress', async () => courseProgress(store));
+  app.get<{ Params: { id: string } }>('/api/lessons/:id/vocabulary', async request => store.vocabularyProgress(parse(z.coerce.number().int().min(1).max(50), request.params.id)));
+  app.patch('/api/lessons/:id/vocabulary/:wordId/mastery', async request => {
+    const { id: lessonId, wordId } = z.object({ id: z.coerce.number().int().min(1).max(50), wordId: z.string().min(1).max(160) }).parse(request.params);
+    const { mastered } = z.object({ mastered: z.boolean() }).strict().parse(request.body);
+    if (!vocabularyForLesson(lessonId).words.some(word => word.id === wordId)) throw new ApiError(404, 'VOCABULARY_NOT_FOUND', '本课没有这个单词。');
+    store.save('vocabulary_mastery', wordId, { wordId, lessonId, mastered, updatedAt: now() });
+    return store.vocabularyProgress(lessonId);
+  });
   app.get('/api/course', async () => course);
   app.get<{ Params: { id: string } }>('/api/lessons/:id', async request => lessonFor(parse(z.coerce.number().int().min(1).max(50), request.params.id)));
   app.get('/api/settings', async () => store.settings());
@@ -140,14 +203,24 @@ export function buildApp(options: AppOptions = {}) {
     store.db.transaction(() => { store.saveSettings({ ...store.settings(), ...patch }); if (apiKey !== undefined) store.setKey(apiKey); })();
     return store.settings();
   });
+  app.get('/api/speaking/audio-settings', async () => store.audioSettings());
+  app.patch('/api/speaking/audio-settings', async request => {
+    const { apiKey, ...patch } = parse(audioAssessmentSettingsPatchSchema, request.body);
+    store.db.transaction(() => {
+      store.saveAudioSettings({ ...store.audioSettings(), ...patch });
+      if (apiKey !== undefined) store.setAudioKey(apiKey);
+    })();
+    return store.audioSettings();
+  });
   app.post('/api/progress', async request => {
-    const input = parse(progressSchema.omit({ updatedAt: true }), request.body);
+    const input = parse(progressSchema.omit({ updatedAt: true, manualProgress: true }), request.body);
     validateProgress(input);
     const lesson = lessonFor(input.lessonId);
-    input.itemId ??= { understand: lesson.grammar, listen: lesson.listening, speak: lesson.speaking, conversation: lesson.scenarios }[input.stage][input.cursor]?.id;
+    input.itemId ??= { vocabulary: vocabularyForLesson(lesson.id).words, understand: lesson.grammar, listen: lesson.listening, speak: lesson.speaking, conversation: lesson.scenarios }[input.stage][input.cursor]?.id;
     const progress: Progress = { ...input, updatedAt: now() };
     const progressKey = `${progress.lessonId}:${progress.stage}`;
     const previous = store.get<Progress>('progress', progressKey);
+    if (previous?.manualProgress) progress.manualProgress = previous.manualProgress;
     const sameItem = previous && previous.stage === progress.stage && previous.itemId === progress.itemId && previous.cursor === progress.cursor;
     const ranks = { seen: 0, assisted: 1, independent: 2 };
     if (sameItem && ranks[previous.status] > ranks[progress.status]) progress.status = previous.status;
@@ -163,15 +236,14 @@ export function buildApp(options: AppOptions = {}) {
   app.post('/api/attempts', async request => {
     const input = parse(attemptInputSchema, request.body);
     if (!hasItem(lessonFor(input.lessonId), input.itemId)) throw new ApiError(400, 'INVALID_ITEM', '这个练习不属于当前课程。');
-    const record = input.recordingId ? recordings.validateLink(input.recordingId, input.lessonId, 'speak', input.itemId) : undefined;
+    if (input.recordingId) throw new ApiError(410, 'RECORDINGS_RETIRED', '录音存档已停用，请使用当前题录音评分。');
+    const assessment = input.assessmentId ? store.get<SpeakingAssessment>('assessments', input.assessmentId) : undefined;
     if (input.assessmentId) {
-      const assessment = store.get<SpeakingAssessment>('assessments', input.assessmentId);
       if (!assessment || assessment.lessonId !== input.lessonId || assessment.itemId !== input.itemId || assessment.recordingId !== input.recordingId || (input.answer !== undefined && assessment.text !== input.answer)) throw new ApiError(400, 'ASSESSMENT_MISMATCH', '这个评分不属于当前回答。');
     }
     const attempt: Attempt = { ...input, result: input.usedHint && input.result === 'good' ? 'hint' : input.result, id: randomUUID(), createdAt: now() };
     store.db.transaction(() => {
       store.save('attempts', attempt.id, attempt);
-      if (record && input.answer !== undefined) store.save('recordings', record.id, { ...record, confirmedText: input.answer });
     })();
     return attempt;
   });
@@ -225,7 +297,7 @@ export function buildApp(options: AppOptions = {}) {
         return session;
       }
       if (session.turns.some(turn => turn.id === input.clientTurnId)) throw new ApiError(409, 'IDEMPOTENCY_CONFLICT', '这次发送编号已经存在，请重新发送。');
-      if (input.recordingId) recordings.validateLink(input.recordingId, session.lessonId, 'conversation', session.id);
+      if (input.recordingId) throw new ApiError(410, 'RECORDINGS_RETIRED', '录音存档已停用，请使用当前题录音评分。');
       const grammarChat = isGrammarChat(session);
       const maxTurns = grammarChat ? GRAMMAR_CHAT_MAX_TURNS : 6;
       if (session.status === 'complete' || session.turnCount >= maxTurns) throw new ApiError(409, 'SESSION_COMPLETE', '这次练习已经结束，可以开始新的一轮。');
@@ -243,7 +315,6 @@ export function buildApp(options: AppOptions = {}) {
       const updated: Session = { ...session, turnCount, completedGoals, feedback, status: complete ? 'complete' : 'active', updatedAt: now(), turns: [...session.turns, { id: input.clientTurnId, role: 'user', text: input.text, source: 'user', createdAt: now(), ...(input.recordingId ? { recordingId: input.recordingId } : {}) }, { id: randomUUID(), role: 'assistant', text: result.replyJa, translation: result.replyZh, hint: result.hintZh, source: 'deepseek', createdAt: now() }] };
       store.db.transaction(() => {
         store.save('sessions', session.id, updated);
-        if (input.recordingId) { const record = recordings.validateLink(input.recordingId, session.lessonId, 'conversation', session.id); store.save('recordings', record.id, { ...record, confirmedText: input.text }); }
       })();
       return updated;
     });
@@ -253,14 +324,14 @@ export function buildApp(options: AppOptions = {}) {
     if (session.status === 'active') { session.status = 'complete'; session.updatedAt = now(); store.save('sessions', session.id, session); }
     return session;
   }));
-  app.get('/api/backup', async () => { recordings.cleanup(); return store.backup(); });
+  app.get('/api/backup', async () => { retireRecordingArchives(store, dataDir); return store.backup(); });
   app.post('/api/restore', async request => {
     const { backup } = parse(z.object({ backup: backupSchema }).strict(), request.body);
     validateBackup(backup);
     if (locks.size) throw new ApiError(409, 'STORE_BUSY', '请等当前对话发送完成，再恢复备份。');
-    recordings.cleanup();
+    retireRecordingArchives(store, dataDir);
     store.restore(backup);
-    recordings.cleanup();
+    retireRecordingArchives(store, dataDir);
     return { ok: true, settings: store.settings() };
   });
   return app;

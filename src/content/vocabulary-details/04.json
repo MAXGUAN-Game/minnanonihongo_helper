@@ -1,0 +1,685 @@
+{
+  "l4-v1": {
+    "romaji": "okimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示从睡眠状态中醒来并起身，常与表示时间的词搭配，如「毎朝六時に起きます」。注意与「起こします」（他动词，叫醒别人）区分。",
+    "example": {
+      "jp": "毎朝七時に起きます。",
+      "kana": "まいあさしちじにおきます。",
+      "romaji": "maiasa shichi ji ni okimasu.",
+      "zh": "每天早上七点起床。"
+    }
+  },
+  "l4-v2": {
+    "romaji": "nemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示进入睡眠状态，常用于就寝时间，如「十一時に寝ます」。不能用于表示“睡着”这一瞬间，那要用「眠ります」。",
+    "example": {
+      "jp": "夜十一時に寝ます。",
+      "kana": "よるじゅういちじにねます。",
+      "romaji": "yoru juuichi ji ni nemasu.",
+      "zh": "晚上十一点睡觉。"
+    }
+  },
+  "l4-v3": {
+    "romaji": "hatarakimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在工作场所劳动、工作，常与场所或时间搭配，如「銀行で働きます」。也可用于机器运转，但初学者多用于人的工作。",
+    "example": {
+      "jp": "父は銀行で働きます。",
+      "kana": "ちちはぎんこうではたらきます。",
+      "romaji": "chichi wa ginkou de hatarakimasu.",
+      "zh": "父亲在银行工作。"
+    }
+  },
+  "l4-v4": {
+    "romaji": "yasumimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示休息或请假，如「日曜日は休みます」「会社を休みます」。请假时常用「～を休みます」的形式。",
+    "example": {
+      "jp": "日曜日は休みます。",
+      "kana": "にちようびはやすみます。",
+      "romaji": "nichiyoubi wa yasumimasu.",
+      "zh": "星期天休息。"
+    }
+  },
+  "l4-v5": {
+    "romaji": "benkyoushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示学习，是「勉強する」的礼貌形，常与学习内容搭配，如「日本語を勉強します」。也可单独使用表示用功。",
+    "example": {
+      "jp": "毎日日本語を勉強します。",
+      "kana": "まいにちにほんごをべんきょうします。",
+      "romaji": "mainichi nihongo o benkyou shimasu.",
+      "zh": "每天学习日语。"
+    }
+  },
+  "l4-v6": {
+    "romaji": "owarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示某事结束，常与时间或活动搭配，如「授業は三時に終わります」。注意与他动词「終えます」区分，后者表示人为结束某事。",
+    "example": {
+      "jp": "授業は十二時に終わります。",
+      "kana": "じゅぎょうはじゅうにじにおわります。",
+      "romaji": "jugyou wa juuni ji ni owarimasu.",
+      "zh": "课在十二点结束。"
+    }
+  },
+  "l4-depaato": {
+    "romaji": "depaato",
+    "attributes": [],
+    "explanation": "指大型百货商店，常作为购物场所，如「デパートで買い物をします」。外来词，用片假名书写。",
+    "example": {
+      "jp": "デパートで買い物をします。",
+      "kana": "でぱーとでかいものをします。",
+      "romaji": "depaato de kaimono o shimasu.",
+      "zh": "在百货商店购物。"
+    }
+  },
+  "l4-ginkou": {
+    "romaji": "ginkou",
+    "attributes": [],
+    "explanation": "指银行，常与「で」搭配表示动作场所，如「銀行でお金を下ろします」。也可用于工作地点。",
+    "example": {
+      "jp": "銀行でお金を下ろします。",
+      "kana": "ぎんこうでおかねをおろします。",
+      "romaji": "ginkou de okane o oroshimasu.",
+      "zh": "在银行取钱。"
+    }
+  },
+  "l4-yuubinkyoku": {
+    "romaji": "yuubinkyoku",
+    "attributes": [],
+    "explanation": "指邮局，用于寄信、寄包裹等，如「郵便局で手紙を出します」。注意「郵便」读作「ゆうびん」。",
+    "example": {
+      "jp": "郵便局で手紙を出します。",
+      "kana": "ゆうびんきょくでてがみをだします。",
+      "romaji": "yuubinkyoku de tegami o dashimasu.",
+      "zh": "在邮局寄信。"
+    }
+  },
+  "l4-toshokan": {
+    "romaji": "toshokan",
+    "attributes": [],
+    "explanation": "指图书馆，常用于借书、学习等场景，如「図書館で本を借ります」。注意「図」的读音为「と」。",
+    "example": {
+      "jp": "図書館で本を借ります。",
+      "kana": "としょかんでほんをかります。",
+      "romaji": "toshokan de hon o karimasu.",
+      "zh": "在图书馆借书。"
+    }
+  },
+  "l4-bijutsukan": {
+    "romaji": "bijutsukan",
+    "attributes": [],
+    "explanation": "指美术馆，用于欣赏绘画、雕塑等艺术作品，如「美術館で絵を見ます」。注意「美術」的读音为「びじゅつ」。",
+    "example": {
+      "jp": "美術館で絵を見ます。",
+      "kana": "びじゅつかんでえをみます。",
+      "romaji": "bijutsukan de e o mimasu.",
+      "zh": "在美术馆看画。"
+    }
+  },
+  "l4-ima": {
+    "romaji": "ima",
+    "attributes": [],
+    "explanation": "表示现在、当前时刻，可作名词或副词使用，如「今何時ですか」「今、勉強しています」。常与进行时搭配。",
+    "example": {
+      "jp": "今、勉強しています。",
+      "kana": "いま、べんきょうしています。",
+      "romaji": "ima, benkyou shite imasu.",
+      "zh": "现在正在学习。"
+    }
+  },
+  "l4-ji": {
+    "romaji": "ji",
+    "attributes": [],
+    "explanation": "接在数字后表示钟点，如「三時」；不能单独表示时间长度，需与「半」「分」等搭配。",
+    "example": {
+      "jp": "会議は九時に始まります。",
+      "kana": "かいぎはくじにはじまります。",
+      "romaji": "kaigi wa ku ji ni hajimarimasu.",
+      "zh": "会议九点开始。"
+    }
+  },
+  "l4-fun": {
+    "romaji": "fun",
+    "attributes": [],
+    "explanation": "接在数字后表示分钟，注意「一分」「三分」「四分」等有促音便读法；常与「時」连用表示具体时刻。",
+    "example": {
+      "jp": "今、三時十分です。",
+      "kana": "いま、さんじじゅっぷんです。",
+      "romaji": "ima, san ji juppun desu.",
+      "zh": "现在是三点十分。"
+    }
+  },
+  "l4-v10": {
+    "romaji": "han",
+    "attributes": [],
+    "explanation": "表示一半，常接在「時」后表示“几点半”，如「三時半」；也可单独作名词表示“一半”。",
+    "example": {
+      "jp": "授業は八時半に終わります。",
+      "kana": "じゅぎょうははちじはんにおわります。",
+      "romaji": "jugyou wa hachi ji han ni owarimasu.",
+      "zh": "课在八点半结束。"
+    }
+  },
+  "l4-nanji": {
+    "romaji": "nanji",
+    "attributes": [],
+    "explanation": "询问具体钟点，读作「なんじ」；回答时用「～時」加数字。",
+    "example": {
+      "jp": "すみません、今何時ですか。",
+      "kana": "すみません、いまなんじですか。",
+      "romaji": "sumimasen, ima nanji desu ka.",
+      "zh": "不好意思，现在几点？"
+    }
+  },
+  "l4-nanpun": {
+    "romaji": "nanpun",
+    "attributes": [],
+    "explanation": "询问分钟数或时长，读作「なんぷん」；根据前接数字不同，有时也读「なんふん」。",
+    "example": {
+      "jp": "駅まで何分かかりますか。",
+      "kana": "えきまでなんぷんかかりますか。",
+      "romaji": "eki made nanpun kakarimasu ka.",
+      "zh": "到车站要几分钟？"
+    }
+  },
+  "l4-gozen": {
+    "romaji": "gozen",
+    "attributes": [],
+    "explanation": "表示上午、午前，常用于具体时间前，如「午前九時」；与「午後」相对。",
+    "example": {
+      "jp": "午前の会議は十時からです。",
+      "kana": "ごぜんのかいぎはじゅうじからです。",
+      "romaji": "gozen no kaigi wa juu ji kara desu.",
+      "zh": "上午的会议从十点开始。"
+    }
+  },
+  "l4-gogo": {
+    "romaji": "gogo",
+    "attributes": [],
+    "explanation": "表示下午、午后，常用于具体时间前，如「午後三時」；与「午前」相对。",
+    "example": {
+      "jp": "午後は図書館で勉強します。",
+      "kana": "ごごはとしょかんでべんきょうします。",
+      "romaji": "gogo wa toshokan de benkyou shimasu.",
+      "zh": "下午在图书馆学习。"
+    }
+  },
+  "l4-asa": {
+    "romaji": "asa",
+    "attributes": [],
+    "explanation": "指早晨、早上，通常从日出到上午左右；可单独使用，也可构成「朝ご飯」等复合词。",
+    "example": {
+      "jp": "朝はパンを食べます。",
+      "kana": "あさはぱんをたべます。",
+      "romaji": "asa wa pan o tabemasu.",
+      "zh": "早上吃面包。"
+    }
+  },
+  "l4-hiru": {
+    "romaji": "hiru",
+    "attributes": [],
+    "explanation": "指中午或白天，可表示午餐时间，也可与「夜」相对表示白天；具体含义依上下文而定。",
+    "example": {
+      "jp": "昼は友達と食堂で食べます。",
+      "kana": "ひるはともだちとしょくどうでたべます。",
+      "romaji": "hiru wa tomodachi to shokudou de tabemasu.",
+      "zh": "中午和朋友在食堂吃。"
+    }
+  },
+  "l4-ban": {
+    "romaji": "ban",
+    "attributes": [],
+    "explanation": "指晚上，多用于「晩ご飯」「今晩」等词；单独使用不如「夜」常见，但可表示傍晚到夜间。",
+    "example": {
+      "jp": "晩は家でゆっくり休みます。",
+      "kana": "ばんはいえでゆっくりやすみます。",
+      "romaji": "ban wa ie de yukkuri yasumimasu.",
+      "zh": "晚上在家好好休息。"
+    }
+  },
+  "l4-yoru": {
+    "romaji": "yoru",
+    "attributes": [],
+    "explanation": "指夜晚、晚上，时间范围比「晩」更广，可指天黑后到深夜；常与「朝」「昼」对比使用。",
+    "example": {
+      "jp": "夜は静かで勉強しやすいです。",
+      "kana": "よるはしずかでべんきょうしやすいです。",
+      "romaji": "yoru wa shizuka de benkyou shiyasui desu.",
+      "zh": "夜晚安静，容易学习。"
+    }
+  },
+  "l4-ototoi": {
+    "romaji": "ototoi",
+    "attributes": [],
+    "explanation": "指前天，即今天的前两天；时间基准是说话当天，常与「昨日」等时间词并列使用。",
+    "example": {
+      "jp": "おとといは雨でした。",
+      "kana": "おとといはあめでした。",
+      "romaji": "ototoi wa ame deshita.",
+      "zh": "前天是雨天。"
+    }
+  },
+  "l4-v8": {
+    "romaji": "kinou",
+    "attributes": [],
+    "explanation": "表示“昨天”，可作名词或副词使用。常与过去时态搭配，如「昨日行きました」。注意与「きのう」同音，但汉字写作「昨日」。",
+    "example": {
+      "jp": "昨日は雨でした。",
+      "kana": "きのうはあめでした。",
+      "romaji": "kinou wa ame deshita.",
+      "zh": "昨天是雨天。"
+    }
+  },
+  "l4-kyou": {
+    "romaji": "kyou",
+    "attributes": [],
+    "explanation": "表示“今天”，可作名词或副词使用。常用于现在时或未来时，如「今日は暑いです」。汉字写作「今日」，但读音特殊。",
+    "example": {
+      "jp": "今日はいい天気ですね。",
+      "kana": "きょうはいいてんきですね。",
+      "romaji": "kyou wa ii tenki desu ne.",
+      "zh": "今天天气真好啊。"
+    }
+  },
+  "l4-ashita": {
+    "romaji": "ashita",
+    "attributes": [],
+    "explanation": "表示“明天”，可作名词或副词使用。常与未来时态搭配，如「明日行きます」。汉字写作「明日」，但读音为「あした」。",
+    "example": {
+      "jp": "明日は学校へ行きます。",
+      "kana": "あしたはがっこうへいきます。",
+      "romaji": "ashita wa gakkou e ikimasu.",
+      "zh": "明天去学校。"
+    }
+  },
+  "l4-asatte": {
+    "romaji": "asatte",
+    "attributes": [],
+    "explanation": "表示“后天”，即明天的下一天。通常写作平假名「あさって」，可作名词或副词使用。",
+    "example": {
+      "jp": "あさっては休みです。",
+      "kana": "あさってはやすみです。",
+      "romaji": "asatte wa yasumi desu.",
+      "zh": "后天休息。"
+    }
+  },
+  "l4-kesa": {
+    "romaji": "kesa",
+    "attributes": [],
+    "explanation": "表示“今天早上”，可作名词或副词使用。汉字写作「今朝」，但读音为「けさ」。常用于描述当天早晨的事情。",
+    "example": {
+      "jp": "今朝は早く起きました。",
+      "kana": "けさははやくおきました。",
+      "romaji": "kesa wa hayaku okimashita.",
+      "zh": "今天早上起得很早。"
+    }
+  },
+  "l4-konban": {
+    "romaji": "konban",
+    "attributes": [],
+    "explanation": "表示“今晚”，可作名词或副词使用。汉字写作「今晩」，常用于晚间问候或计划，如「今晩は」是晚上好。",
+    "example": {
+      "jp": "今晩は映画を見ます。",
+      "kana": "こんばんはえいがをみます。",
+      "romaji": "konban wa eiga o mimasu.",
+      "zh": "今晚看电影。"
+    }
+  },
+  "l4-v9": {
+    "romaji": "getsuyoubi",
+    "attributes": [],
+    "explanation": "表示“星期一”，是星期几的说法之一。由「月」和「曜日」组成，常用于日程安排。",
+    "example": {
+      "jp": "月曜日に会議があります。",
+      "kana": "げつようびにかいぎがあります。",
+      "romaji": "getsuyoubi ni kaigi ga arimasu.",
+      "zh": "星期一有会议。"
+    }
+  },
+  "l4-kayoubi": {
+    "romaji": "kayoubi",
+    "attributes": [],
+    "explanation": "表示“星期二”，是星期几的说法之一。由「火」和「曜日」组成，注意「火」读作「か」。",
+    "example": {
+      "jp": "火曜日は図書館へ行きます。",
+      "kana": "かようびはとしょかんへいきます。",
+      "romaji": "kayoubi wa toshokan e ikimasu.",
+      "zh": "星期二去图书馆。"
+    }
+  },
+  "l4-suiyoubi": {
+    "romaji": "suiyoubi",
+    "attributes": [],
+    "explanation": "表示“星期三”，是星期几的说法之一。由「水」和「曜日」组成，常用于日常对话。",
+    "example": {
+      "jp": "水曜日は忙しいです。",
+      "kana": "すいようびはいそがしいです。",
+      "romaji": "suiyoubi wa isogashii desu.",
+      "zh": "星期三很忙。"
+    }
+  },
+  "l4-mokuyoubi": {
+    "romaji": "mokuyoubi",
+    "attributes": [],
+    "explanation": "表示“星期四”，是星期几的说法之一。由「木」和「曜日」组成，注意「木」读作「もく」。",
+    "example": {
+      "jp": "木曜日にテストがあります。",
+      "kana": "もくようびにテストがあります。",
+      "romaji": "mokuyoubi ni tesuto ga arimasu.",
+      "zh": "星期四有考试。"
+    }
+  },
+  "l4-kinyoubi": {
+    "romaji": "kinyoubi",
+    "attributes": [],
+    "explanation": "表示“星期五”，是星期几的说法之一。由「金」和「曜日」组成，常与周末计划关联。",
+    "example": {
+      "jp": "金曜日は友達と食事します。",
+      "kana": "きんようびはともだちとしょくじします。",
+      "romaji": "kinyoubi wa tomodachi to shokuji shimasu.",
+      "zh": "星期五和朋友吃饭。"
+    }
+  },
+  "l4-doyoubi": {
+    "romaji": "doyoubi",
+    "attributes": [],
+    "explanation": "表示“星期六”，是星期几的说法之一。由「土」和「曜日」组成，常指周末的开始。",
+    "example": {
+      "jp": "土曜日は買い物に行きます。",
+      "kana": "どようびはかいものにいきます。",
+      "romaji": "doyoubi wa kaimono ni ikimasu.",
+      "zh": "星期六去购物。"
+    }
+  },
+  "l4-nichiyoubi": {
+    "romaji": "nichiyoubi",
+    "attributes": [],
+    "explanation": "表示星期日，是名词。常与助词「に」搭配表示时间，如「日曜日に」。注意与「日曜」区别，后者更书面。",
+    "example": {
+      "jp": "日曜日に映画を見ます。",
+      "kana": "にちようびにえいがをみます。",
+      "romaji": "nichiyoubi ni eiga o mimasu.",
+      "zh": "星期天看电影。"
+    }
+  },
+  "l4-nanyoubi": {
+    "romaji": "nanyoubi",
+    "attributes": [],
+    "explanation": "用于询问星期几，是疑问表达。回答时用「～曜日です」。不能单独作主语，需搭配助词使用。",
+    "example": {
+      "jp": "今日は何曜日ですか。",
+      "kana": "きょうはなんようびですか。",
+      "romaji": "kyou wa nanyoubi desu ka.",
+      "zh": "今天星期几？"
+    }
+  },
+  "l4-v7": {
+    "romaji": "maiasa",
+    "attributes": [],
+    "explanation": "表示每天早上，是名词兼副词。可直接修饰动词，如「毎朝新聞を読む」。不能与「に」连用表示具体时间点。",
+    "example": {
+      "jp": "毎朝コーヒーを飲みます。",
+      "kana": "まいあさこーひーをのみます。",
+      "romaji": "maiasa koohii o nomimasu.",
+      "zh": "每天早上喝咖啡。"
+    }
+  },
+  "l4-maiban": {
+    "romaji": "maiban",
+    "attributes": [],
+    "explanation": "表示每天晚上，是名词兼副词。常与持续性动作搭配，如「毎晩勉強する」。与「毎夜」意思相近但更口语。",
+    "example": {
+      "jp": "毎晩テレビを見ます。",
+      "kana": "まいばんてれびをみます。",
+      "romaji": "maiban terebi o mimasu.",
+      "zh": "每天晚上看电视。"
+    }
+  },
+  "l4-mainichi": {
+    "romaji": "mainichi",
+    "attributes": [],
+    "explanation": "表示每天，是名词兼副词。可直接修饰动词，如「毎日運動する」。不能与「に」连用表示具体日期。",
+    "example": {
+      "jp": "毎日日本語を勉強します。",
+      "kana": "まいにちにほんごをべんきょうします。",
+      "romaji": "mainichi nihongo o benkyou shimasu.",
+      "zh": "每天学习日语。"
+    }
+  },
+  "l4-yasumi": {
+    "romaji": "yasumi",
+    "attributes": [],
+    "explanation": "表示休息、休假或休息日，是名词。常与「取る」搭配表示请假，如「休みを取る」。也可指学校或公司的假期。",
+    "example": {
+      "jp": "明日は休みです。",
+      "kana": "あしたはやすみです。",
+      "romaji": "ashita wa yasumi desu.",
+      "zh": "明天休息。"
+    }
+  },
+  "l4-hiruyasumi": {
+    "romaji": "hiruyasumi",
+    "attributes": [],
+    "explanation": "特指午休时间，是名词。常用于学校或职场，如「昼休みに散歩する」。不能泛指任何休息。",
+    "example": {
+      "jp": "昼休みに友達と話します。",
+      "kana": "ひるやすみにともだちとはなします。",
+      "romaji": "hiruyasumi ni tomodachi to hanashimasu.",
+      "zh": "午休时和朋友聊天。"
+    }
+  },
+  "l4-shiken": {
+    "romaji": "shiken",
+    "attributes": [],
+    "explanation": "表示考试，是名词。常与「受ける」搭配表示参加考试，如「試験を受ける」。与「テスト」相比更正式。",
+    "example": {
+      "jp": "来週試験があります。",
+      "kana": "らいしゅうしけんがあります。",
+      "romaji": "raishuu shiken ga arimasu.",
+      "zh": "下周有考试。"
+    }
+  },
+  "l4-kaigi": {
+    "romaji": "kaigi",
+    "attributes": [],
+    "explanation": "表示会议，是名词。常与「開く」「行う」搭配，如「会議を開く」。多指正式会议，与「ミーティング」类似但更正式。",
+    "example": {
+      "jp": "午後から会議です。",
+      "kana": "ごごからかいぎです。",
+      "romaji": "gogo kara kaigi desu.",
+      "zh": "下午开始开会。"
+    }
+  },
+  "l4-eiga": {
+    "romaji": "eiga",
+    "attributes": [],
+    "explanation": "表示电影，是名词。常与「見る」搭配，如「映画を見る」。也可说「映画館」指电影院。",
+    "example": {
+      "jp": "週末に映画を見ました。",
+      "kana": "しゅうまつにえいがをみました。",
+      "romaji": "shuumatsu ni eiga o mimashita.",
+      "zh": "周末看了电影。"
+    }
+  },
+  "l4-bangou": {
+    "romaji": "bangou",
+    "attributes": [],
+    "explanation": "表示号码，是名词。常用于电话号码、房间号等，如「電話番号」。可单独使用，也可构成复合词。",
+    "example": {
+      "jp": "あなたの番号を教えてください。",
+      "kana": "あなたのばんごうをおしえてください。",
+      "romaji": "anata no bangou o oshiete kudasai.",
+      "zh": "请告诉我你的号码。"
+    }
+  },
+  "l4-nanban": {
+    "romaji": "nanban",
+    "attributes": [],
+    "explanation": "用于询问号码或顺序，是疑问表达。常与「番号」搭配，如「何番ですか」。也可单独使用询问编号。",
+    "example": {
+      "jp": "教室は何番ですか。",
+      "kana": "きょうしつはなんばんですか。",
+      "romaji": "kyoushitsu wa nanban desu ka.",
+      "zh": "教室是几号？"
+    }
+  },
+  "l4-kara": {
+    "romaji": "kara",
+    "attributes": [],
+    "explanation": "助词，接在名词或时间词后，表示起点，可指时间、地点或顺序的“从……开始”。常与「まで」搭配使用，构成“从……到……”的框架。",
+    "example": {
+      "jp": "会議は九時からです。",
+      "kana": "かいぎはくじからです。",
+      "romaji": "kaigi wa kuji kara desu.",
+      "zh": "会议从九点开始。"
+    }
+  },
+  "l4-made": {
+    "romaji": "made",
+    "attributes": [],
+    "explanation": "助词，接在名词或时间词后，表示终点，可指时间、地点的“到……为止”。常与「から」呼应，表示范围。",
+    "example": {
+      "jp": "駅まで歩きます。",
+      "kana": "えきまであるきます。",
+      "romaji": "eki made arukimasu.",
+      "zh": "走到车站。"
+    }
+  },
+  "l4-to": {
+    "romaji": "to",
+    "attributes": [],
+    "explanation": "并列助词，连接两个名词，表示“和、与”，通常用于列举全部项目，不能用于选择疑问。",
+    "example": {
+      "jp": "パンと牛乳を買いました。",
+      "kana": "ぱんとぎゅうにゅうをかいました。",
+      "romaji": "pan to gyuunyuu o kaimashita.",
+      "zh": "买了面包和牛奶。"
+    }
+  },
+  "l4-taihendesune": {
+    "romaji": "taihen desu ne",
+    "attributes": [],
+    "explanation": "固定表达，用于对对方的辛苦、困难表示同情或感叹，相当于“真不容易啊”。常用于日常会话，语气亲切。",
+    "example": {
+      "jp": "毎日残業ですか。大変ですね。",
+      "kana": "まいにちざんぎょうですか。たいへんですね。",
+      "romaji": "mainichi zangyou desu ka. taihen desu ne.",
+      "zh": "每天都加班吗？真辛苦啊。"
+    }
+  },
+  "l4-sochira": {
+    "romaji": "sochira",
+    "attributes": [],
+    "explanation": "指示代词，礼貌地指代对方所在的方向、地点或所属机构，相当于“您那边”。比「そこ」更客气，常用于商务或正式场合。",
+    "example": {
+      "jp": "そちらの天気はどうですか。",
+      "kana": "そちらのてんきはどうですか。",
+      "romaji": "sochira no tenki wa dou desu ka.",
+      "zh": "您那边的天气怎么样？"
+    }
+  },
+  "l4-nyuuyooku": {
+    "romaji": "nyuuyooku",
+    "attributes": [],
+    "explanation": "专有名词，指美国城市纽约。日语中常直接音译，书写时多用片假名。",
+    "example": {
+      "jp": "ニューヨークへ行きたいです。",
+      "kana": "にゅーよーくへいきたいです。",
+      "romaji": "nyuuyooku e ikitai desu.",
+      "zh": "我想去纽约。"
+    }
+  },
+  "l4-pekin": {
+    "romaji": "pekin",
+    "attributes": [],
+    "explanation": "专有名词，指中国首都北京。日语中传统上读作「ペキン」，现代也常用「北京」汉字书写。",
+    "example": {
+      "jp": "北京は今寒いですか。",
+      "kana": "ぺきんはいまさむいですか。",
+      "romaji": "pekin wa ima samui desu ka.",
+      "zh": "北京现在冷吗？"
+    }
+  },
+  "l4-rosanzerusu": {
+    "romaji": "rosanzerusu",
+    "attributes": [],
+    "explanation": "专有名词，指美国城市洛杉矶。日语中常用片假名书写，注意「ロサンゼルス」的拼写。",
+    "example": {
+      "jp": "ロサンゼルスは映画の町です。",
+      "kana": "ろさんぜるすはえいがのまちです。",
+      "romaji": "rosanzerusu wa eiga no machi desu.",
+      "zh": "洛杉矶是电影之城。"
+    }
+  },
+  "l4-rondon": {
+    "romaji": "rondon",
+    "attributes": [],
+    "explanation": "专有名词，指英国首都伦敦。日语中常用片假名书写，注意促音和拨音。",
+    "example": {
+      "jp": "ロンドンで写真を撮りました。",
+      "kana": "ろんどんでしゃしんをとりました。",
+      "romaji": "rondon de shashin o torimashita.",
+      "zh": "在伦敦拍了照片。"
+    }
+  },
+  "l4-asuka": {
+    "romaji": "asuka",
+    "attributes": [],
+    "explanation": "专有名词，教材中用作机构名（如「あすか」银行或公司）。也可作为人名使用，书写时常用汉字「明日香」。",
+    "example": {
+      "jp": "あすかに電話します。",
+      "kana": "あすかにでんわします。",
+      "romaji": "asuka ni denwa shimasu.",
+      "zh": "给明日香打电话。"
+    }
+  },
+  "l4-appuruginkou": {
+    "romaji": "appuru ginkou",
+    "attributes": [],
+    "explanation": "专有名词，教材中的虚构银行名，由「アップル」（苹果）和「銀行」组成。用于练习机构名称的表达。",
+    "example": {
+      "jp": "アップル銀行は駅の前です。",
+      "kana": "あっぷるぎんこうはえきのまえです。",
+      "romaji": "appuru ginkou wa eki no mae desu.",
+      "zh": "苹果银行在车站前面。"
+    }
+  },
+  "l4-midoritoshokan": {
+    "romaji": "midori toshokan",
+    "attributes": [],
+    "explanation": "专有名词，教材中的虚构图书馆名，由「みどり」（绿色）和「図書館」组成。用于练习场所名称的表达。",
+    "example": {
+      "jp": "みどり図書館で本を借りました。",
+      "kana": "みどりとしょかんでほんをかりました。",
+      "romaji": "midori toshokan de hon o karimashita.",
+      "zh": "在绿图书馆借了书。"
+    }
+  },
+  "l4-yamatobijutsukan": {
+    "romaji": "Yamato Bijutsukan",
+    "attributes": [],
+    "explanation": "专有名词，指名为“大和”的美术馆，教材中作为参观或约见的场所出现。实际会话中前面常接助词「に」「で」「の」，如「やまと美術館に行く」。",
+    "example": {
+      "jp": "日曜日に友だちとやまと美術館へ行きます。",
+      "kana": "にちようびにともだちとやまとびじゅつかんへいきます。",
+      "romaji": "nichiyoubi ni tomodachi to Yamato Bijutsukan e ikimasu.",
+      "zh": "星期天和朋友去大和美术馆。"
+    }
+  }
+}

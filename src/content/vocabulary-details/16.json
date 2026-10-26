@@ -1,0 +1,704 @@
+{
+  "l16-w2575": {
+    "romaji": "oroshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「下ろす」的他动词形式，本课指从银行账户取钱，常用「お金を下ろす」。也可用于把东西拿下来，但取钱时固定搭配「お金を下ろす」。",
+    "example": {
+      "jp": "銀行でお金を下ろします。",
+      "kana": "ぎんこうでおかねをおろします。",
+      "romaji": "ginkou de okane o oroshimasu.",
+      "zh": "在银行取钱。"
+    }
+  },
+  "l16-w2971": {
+    "romaji": "hana",
+    "attributes": [],
+    "explanation": "表示身体部位“鼻子”。常用「鼻が高い」表示骄傲，「鼻をかむ」表示擤鼻涕。注意与「花（はな）」同音，需根据语境区分。",
+    "example": {
+      "jp": "風邪で鼻が詰まっています。",
+      "kana": "かぜではながつまっています。",
+      "romaji": "kaze de hana ga tsumatte imasu.",
+      "zh": "因为感冒鼻子不通气。"
+    }
+  },
+  "l16-w425": {
+    "romaji": "dore",
+    "attributes": [],
+    "explanation": "用于从三个以上事物中询问“哪一个”，相当于英语 which one。两个事物时用「どちら」。可单独使用，也可后接名词如「どれがいいですか」。",
+    "example": {
+      "jp": "この中でどれが一番好きですか。",
+      "kana": "このなかでどれがいちばんすきですか。",
+      "romaji": "kono naka de dore ga ichiban suki desu ka.",
+      "zh": "这里面你最喜欢哪一个？"
+    }
+  },
+  "l16-w5636": {
+    "romaji": "nomimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示喝的动作，本课特指喝酒，常用「お酒を飲む」。也可用于喝水、药等。注意「飲みます」是礼貌体，普通体为「飲む」。",
+    "example": {
+      "jp": "週末に友達とお酒を飲みます。",
+      "kana": "しゅうまつにともだちとおさけをのみます。",
+      "romaji": "shuumatsu ni tomodachi to osake o nomimasu.",
+      "zh": "周末和朋友喝酒。"
+    }
+  },
+  "l16-w644": {
+    "romaji": "sugoi desu ne",
+    "attributes": [],
+    "explanation": "感叹表达，表示对对方的技能、成就等感到钦佩或惊讶，相当于“真厉害啊”。「すごい」是形容词，加「ですね」表示向对方确认或共鸣。",
+    "example": {
+      "jp": "日本語が上手ですね。すごいですね。",
+      "kana": "にほんごがじょうずですね。すごいですね。",
+      "romaji": "nihongo ga jouzu desu ne. sugoi desu ne.",
+      "zh": "你日语真好。真厉害啊。"
+    }
+  },
+  "l16-w702": {
+    "romaji": "hajimemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示开始某事，常用「～を始める」。如「授業を始める」「仕事を始める」。自动词形式为「始まる」。",
+    "example": {
+      "jp": "来月から日本語の勉強を始めます。",
+      "kana": "らいげつからにほんごのべんきょうをはじめます。",
+      "romaji": "raigetsu kara nihongo no benkyou o hajimemasu.",
+      "zh": "从下个月开始学日语。"
+    }
+  },
+  "l16-w754": {
+    "romaji": "norimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示乘坐交通工具，常用「電車に乗る」「バスに乗る」，助词用「に」。下车用「降りる」。",
+    "example": {
+      "jp": "毎朝、電車に乗ります。",
+      "kana": "まいあさ、でんしゃにのります。",
+      "romaji": "maiasa, densha ni norimasu.",
+      "zh": "每天早上坐电车。"
+    }
+  },
+  "l16-w755": {
+    "romaji": "orimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示从交通工具上下来，常用「電車を降りる」，助词用「を」。也可用于从楼梯、车等下来。",
+    "example": {
+      "jp": "次の駅で電車を降ります。",
+      "kana": "つぎのえきででんしゃをおります。",
+      "romaji": "tsugi no eki de densha o orimasu.",
+      "zh": "在下一站下电车。"
+    }
+  },
+  "l16-v3": {
+    "romaji": "norikaemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示换乘交通工具，常用「～線に乗り換える」或「～で乗り換える」。如「新宿で乗り換える」。",
+    "example": {
+      "jp": "新宿で山手線に乗り換えます。",
+      "kana": "しんじゅくでやまのてせんにのりかえます。",
+      "romaji": "shinjuku de yamanotesen ni norikaemasu.",
+      "zh": "在新宿换乘山手线。"
+    }
+  },
+  "l16-w757": {
+    "romaji": "abimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示淋浴，常用「シャワーを浴びる」。也可用于「日光を浴びる」等。注意助词用「を」。",
+    "example": {
+      "jp": "朝、シャワーを浴びます。",
+      "kana": "あさ、しゃわーをあびます。",
+      "romaji": "asa, shawaa o abimasu.",
+      "zh": "早上淋浴。"
+    }
+  },
+  "l16-v5": {
+    "romaji": "iremasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示把某物放入某处，常用「～を～に入れる」。如「冷蔵庫に入れる」。自动词为「入る」。",
+    "example": {
+      "jp": "野菜を冷蔵庫に入れます。",
+      "kana": "やさいをれいぞうこにいれます。",
+      "romaji": "yasai o reizouko ni iremasu.",
+      "zh": "把蔬菜放进冰箱。"
+    }
+  },
+  "l16-v6": {
+    "romaji": "dashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "他动词，表示拿出、取出某物，常用「～を出す」。如「お金を出す」「手紙を出す」。自动词为「出る」。",
+    "example": {
+      "jp": "かばんから財布を出します。",
+      "kana": "かばんからさいふをだします。",
+      "romaji": "kaban kara saifu o dashimasu.",
+      "zh": "从包里拿出钱包。"
+    }
+  },
+  "l16-w760": {
+    "romaji": "daigaku ni hairimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示进入学校、组织等场所或团体，常与「大学」「会社」等搭配。注意与「入ります」的其他用法区分，此处强调入学。",
+    "example": {
+      "jp": "兄は去年大学に入りました。",
+      "kana": "あにはきょねんだいがくにはいりました。",
+      "romaji": "ani wa kyonen daigaku ni hairimashita.",
+      "zh": "哥哥去年上了大学。"
+    }
+  },
+  "l16-w761": {
+    "romaji": "daigaku o demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示从学校毕业，常与「大学」「高校」等搭配。助词用「を」，但动词本身是自动词，表示离开的场所。",
+    "example": {
+      "jp": "姉は来年大学を出ます。",
+      "kana": "あねはらいねんだいがくをでます。",
+      "romaji": "ane wa rainen daigaku o demasu.",
+      "zh": "姐姐明年大学毕业。"
+    }
+  },
+  "l16-v7": {
+    "romaji": "oshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用手推或按压，如推门、按按钮。也可用于抽象意义，如「押し進める」。注意与「引きます」（拉）相对。",
+    "example": {
+      "jp": "このボタンを押してください。",
+      "kana": "このぼたんをおしてください。",
+      "romaji": "kono botan o oshite kudasai.",
+      "zh": "请按这个按钮。"
+    }
+  },
+  "l16-w764": {
+    "romaji": "wakai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示年龄小、年轻，可用于人也可用于事物（如「若い会社」）。反义词是「年を取った」。",
+    "example": {
+      "jp": "彼はまだ若いです。",
+      "kana": "かれはまだわかいです。",
+      "romaji": "kare wa mada wakai desu.",
+      "zh": "他还年轻。"
+    }
+  },
+  "l16-v9": {
+    "romaji": "nagai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示长度或时间上的长，如「長い髪」「長い時間」。反义词是「短い」。",
+    "example": {
+      "jp": "この川はとても長いです。",
+      "kana": "このかわはとてもながいです。",
+      "romaji": "kono kawa wa totemo nagai desu.",
+      "zh": "这条河很长。"
+    }
+  },
+  "l16-v10": {
+    "romaji": "mijikai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示长度或时间上的短，如「短いスカート」「短い時間」。反义词是「長い」。",
+    "example": {
+      "jp": "夏休みは短いですね。",
+      "kana": "なつやすみはみじかいですね。",
+      "romaji": "natsuyasumi wa mijikai desu ne.",
+      "zh": "暑假很短啊。"
+    }
+  },
+  "l16-v8": {
+    "romaji": "akarui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示光线充足、明亮，也可形容性格开朗。反义词是「暗い」。",
+    "example": {
+      "jp": "この部屋は明るいです。",
+      "kana": "このへやはあかるいです。",
+      "romaji": "kono heya wa akarui desu.",
+      "zh": "这个房间很明亮。"
+    }
+  },
+  "l16-w768": {
+    "romaji": "kurai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示光线不足、昏暗，也可形容心情沉重或前景暗淡。反义词是「明るい」。",
+    "example": {
+      "jp": "外はもう暗いです。",
+      "kana": "そとはもうくらいです。",
+      "romaji": "soto wa mou kurai desu.",
+      "zh": "外面已经黑了。"
+    }
+  },
+  "l16-w769": {
+    "romaji": "se ga takai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示个子高，是描述人物外貌的常用表达。反义词是「背が低い」。",
+    "example": {
+      "jp": "あの人は背が高いです。",
+      "kana": "あのひとはせがたかいです。",
+      "romaji": "ano hito wa se ga takai desu.",
+      "zh": "那个人个子很高。"
+    }
+  },
+  "l16-w770": {
+    "romaji": "atama ga ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示头脑聪明、机灵，是固定搭配。注意「頭がいい」整体作为い形容词使用。",
+    "example": {
+      "jp": "彼女は頭がいいです。",
+      "kana": "かのじょはあたまがいいです。",
+      "romaji": "kanojo wa atama ga ii desu.",
+      "zh": "她很聪明。"
+    }
+  },
+  "l16-w771": {
+    "romaji": "karada",
+    "attributes": [],
+    "explanation": "指人或动物的身体，常用于「体が大きい」「体にいい」等搭配。",
+    "example": {
+      "jp": "毎日運動して体を鍛えます。",
+      "kana": "まいにちうんどうしてからだをきたえます。",
+      "romaji": "mainichi undou shite karada o kitaemasu.",
+      "zh": "每天运动锻炼身体。"
+    }
+  },
+  "l16-w772": {
+    "romaji": "atama",
+    "attributes": [],
+    "explanation": "指人或动物的头部，也常用于表示头脑、智力，如「頭がいい」「頭を使う」。",
+    "example": {
+      "jp": "頭が痛いです。",
+      "kana": "あたまがいたいです。",
+      "romaji": "atama ga itai desu.",
+      "zh": "头疼。"
+    }
+  },
+  "l16-w773": {
+    "romaji": "kami",
+    "attributes": [],
+    "explanation": "指人或动物头上的毛发，常用「髪を切る」「髪を洗う」等搭配；注意与「紙（かみ）」同音不同义。",
+    "example": {
+      "jp": "毎朝、髪をとかします。",
+      "kana": "まいあさ、かみをとかします。",
+      "romaji": "maiasa, kami o tokashimasu.",
+      "zh": "每天早上梳头发。"
+    }
+  },
+  "l16-w774": {
+    "romaji": "kao",
+    "attributes": [],
+    "explanation": "指人的脸部，常用「顔を洗う」「顔が広い」等表达；也可引申为面子、知名度。",
+    "example": {
+      "jp": "朝起きて顔を洗います。",
+      "kana": "あさおきてかおをあらいます。",
+      "romaji": "asa okite kao o araimasu.",
+      "zh": "早上起来洗脸。"
+    }
+  },
+  "l16-w775": {
+    "romaji": "me",
+    "attributes": [],
+    "explanation": "指眼睛，常用「目が大きい」「目を閉じる」等；也用于比喻眼光、判断力，如「目が高い」。",
+    "example": {
+      "jp": "彼女は目がきれいです。",
+      "kana": "かのじょはめがきれいです。",
+      "romaji": "kanojo wa me ga kirei desu.",
+      "zh": "她的眼睛很漂亮。"
+    }
+  },
+  "l16-w776": {
+    "romaji": "mimi",
+    "attributes": [],
+    "explanation": "指耳朵，常用「耳が痛い」「耳を澄ます」等；也可指听力或耳力。",
+    "example": {
+      "jp": "音楽を耳で聞きます。",
+      "kana": "おんがくをみみでききます。",
+      "romaji": "ongaku o mimi de kikimasu.",
+      "zh": "用耳朵听音乐。"
+    }
+  },
+  "l16-w777": {
+    "romaji": "kuchi",
+    "attributes": [],
+    "explanation": "指嘴，常用「口を開ける」「口が堅い」等；也可指说话方式或口味。",
+    "example": {
+      "jp": "口を大きく開けてください。",
+      "kana": "くちをおおきくあけてください。",
+      "romaji": "kuchi o ōkiku akete kudasai.",
+      "zh": "请把嘴张大。"
+    }
+  },
+  "l16-w778": {
+    "romaji": "ha",
+    "attributes": [],
+    "explanation": "指牙齿，常用「歯を磨く」「歯が痛い」等；注意与「葉（は）」同音不同义。",
+    "example": {
+      "jp": "寝る前に歯を磨きます。",
+      "kana": "ねるまえにはをみがきます。",
+      "romaji": "neru mae ni ha o migakimasu.",
+      "zh": "睡前刷牙。"
+    }
+  },
+  "l16-w779": {
+    "romaji": "onaka",
+    "attributes": [],
+    "explanation": "指腹部、肚子，常用「お腹が空く」「お腹が痛い」等；「お」为美化语，日常口语常用。",
+    "example": {
+      "jp": "お腹が空きました。",
+      "kana": "おなかがすきました。",
+      "romaji": "onaka ga sukimashita.",
+      "zh": "肚子饿了。"
+    }
+  },
+  "l16-w780": {
+    "romaji": "ashi",
+    "attributes": [],
+    "explanation": "指脚或腿，常用「足が速い」「足を運ぶ」等；注意与「脚（あし）」汉字分工不同，但口语常统一用「足」。",
+    "example": {
+      "jp": "彼は足が速いです。",
+      "kana": "かれはあしがはやいです。",
+      "romaji": "kare wa ashi ga hayai desu.",
+      "zh": "他跑得快。"
+    }
+  },
+  "l16-w781": {
+    "romaji": "sābisu",
+    "attributes": [],
+    "explanation": "指服务、招待，常用「サービスがいい」「サービスする」等；也可指商家优惠或免费赠送。",
+    "example": {
+      "jp": "この店はサービスがいいです。",
+      "kana": "このみせはさーびすがいいです。",
+      "romaji": "kono mise wa sābisu ga ii desu.",
+      "zh": "这家店服务很好。"
+    }
+  },
+  "l16-w782": {
+    "romaji": "jogingu",
+    "attributes": [],
+    "explanation": "指慢跑运动，常用「ジョギングする」「ジョギングに行く」等；外来语，口语中常直接加「する」作动词。",
+    "example": {
+      "jp": "毎朝ジョギングをします。",
+      "kana": "まいあさじょぎんぐをします。",
+      "romaji": "maiasa jogingu o shimasu.",
+      "zh": "每天早上慢跑。"
+    }
+  },
+  "l16-w783": {
+    "romaji": "shawā",
+    "attributes": [],
+    "explanation": "指淋浴或淋浴设备，常用「シャワーを浴びる」「シャワーを浴びてから寝る」等；注意搭配动词「浴びる」。",
+    "example": {
+      "jp": "運動の後でシャワーを浴びます。",
+      "kana": "うんどうのあとでしゃわーをあびます。",
+      "romaji": "undō no ato de shawā o abimasu.",
+      "zh": "运动后淋浴。"
+    }
+  },
+  "l16-w784": {
+    "romaji": "midori",
+    "attributes": [],
+    "explanation": "指绿色，常用「緑の多い町」「緑がきれい」等；也可指绿意、草木。",
+    "example": {
+      "jp": "この公園は緑が多いです。",
+      "kana": "このこうえんはみどりがおおいです。",
+      "romaji": "kono kōen wa midori ga ōi desu.",
+      "zh": "这个公园绿意盎然。"
+    }
+  },
+  "l16-w785": {
+    "romaji": "otera",
+    "attributes": [],
+    "explanation": "指佛教的寺院，常带「お」表示礼貌。与「神社」（神道）不同，参观时注意区分。",
+    "example": {
+      "jp": "京都には古いお寺がたくさんあります。",
+      "kana": "きょうとにはふるいおてらがたくさんあります。",
+      "romaji": "kyouto ni wa furui otera ga takusan arimasu.",
+      "zh": "京都有很多古老的寺院。"
+    }
+  },
+  "l16-w786": {
+    "romaji": "jinja",
+    "attributes": [],
+    "explanation": "指神道的神社，常与「お寺」对比。参拜时说「お参りします」，不说「お寺」的「拝観」。",
+    "example": {
+      "jp": "正月に神社へお参りに行きます。",
+      "kana": "しょうがつにじんじゃへおまいりにいきます。",
+      "romaji": "shougatsu ni jinja e omairi ni ikimasu.",
+      "zh": "正月去神社参拜。"
+    }
+  },
+  "l16-w788": {
+    "romaji": "-ban",
+    "attributes": [],
+    "explanation": "接在数字后表示顺序的「第……号」，如「一番」「三番」。也用于表示号码，如「電話番号」的「番」。",
+    "example": {
+      "jp": "私の席は三番です。",
+      "kana": "わたしのせきはさんばんです。",
+      "romaji": "watashi no seki wa sanban desu.",
+      "zh": "我的座位是3号。"
+    }
+  },
+  "l16-w789": {
+    "romaji": "douyatte",
+    "attributes": [],
+    "explanation": "询问方法或手段，相当于「どのようにして」。口语常用，后接动词。",
+    "example": {
+      "jp": "駅までどうやって行きますか。",
+      "kana": "えきまでどうやっていきますか。",
+      "romaji": "eki made douyatte ikimasu ka.",
+      "zh": "怎么去车站？"
+    }
+  },
+  "l16-w790": {
+    "romaji": "dono",
+    "attributes": [],
+    "explanation": "连体词，后必须接名词，表示从三个以上选项中询问「哪一个」。不能单独使用。",
+    "example": {
+      "jp": "どの電車に乗りますか。",
+      "kana": "どのでんしゃにのりますか。",
+      "romaji": "dono densha ni norimasu ka.",
+      "zh": "坐哪辆电车？"
+    }
+  },
+  "l16-w791": {
+    "romaji": "iie, madamada desu",
+    "attributes": [],
+    "explanation": "谦虚回应夸奖的固定说法，意为「不，还差得远」。比「いいえ」更委婉。",
+    "example": {
+      "jp": "日本語が上手ですね。いいえ、まだまだです。",
+      "kana": "にほんごがじょうずですね。いいえ、まだまだです。",
+      "romaji": "nihongo ga jouzu desu ne. iie, madamada desu.",
+      "zh": "你日语真好。哪里，还差得远呢。"
+    }
+  },
+  "l16-w792": {
+    "romaji": "ohikidashi desu ka",
+    "attributes": [],
+    "explanation": "银行职员询问顾客是否取款的礼貌表达。「お引き出し」是「引き出し」的敬语形式。",
+    "example": {
+      "jp": "お引き出しですか。はい、そうです。",
+      "kana": "おひきだしですか。はい、そうです。",
+      "romaji": "ohikidashi desu ka. hai, sou desu.",
+      "zh": "您要取款吗？是的。"
+    }
+  },
+  "l16-w793": {
+    "romaji": "mazu",
+    "attributes": [],
+    "explanation": "表示顺序的第一步「首先」，常用于说明步骤。后常与「次に」「それから」呼应。",
+    "example": {
+      "jp": "まず、カードを入れてください。",
+      "kana": "まず、かーどをいれてください。",
+      "romaji": "mazu, kaado o irete kudasai.",
+      "zh": "首先，请插入卡片。"
+    }
+  },
+  "l16-w794": {
+    "romaji": "kyasshukaado",
+    "attributes": [],
+    "explanation": "银行取款卡，外来语。注意与「クレジットカード」（信用卡）区分。",
+    "example": {
+      "jp": "キャッシュカードをなくしました。",
+      "kana": "きゃっしゅかーどをなくしました。",
+      "romaji": "kyasshukaado o nakushimashita.",
+      "zh": "我把银行卡弄丢了。"
+    }
+  },
+  "l16-w795": {
+    "romaji": "anshoubangou",
+    "attributes": [],
+    "explanation": "银行或设备使用的密码，通常为数字。也说「暗証コード」，但银行多用「暗証番号」。",
+    "example": {
+      "jp": "暗証番号を入力してください。",
+      "kana": "あんしょうばんごうをにゅうりょくしてください。",
+      "romaji": "anshoubangou o nyuuryoku shite kudasai.",
+      "zh": "请输入密码。"
+    }
+  },
+  "l16-w796": {
+    "romaji": "tsugini",
+    "attributes": [],
+    "explanation": "表示顺序的「接着、下一步」，用于说明步骤。常与「まず」搭配。",
+    "example": {
+      "jp": "次に、金額を押します。",
+      "kana": "つぎに、きんがくをおします。",
+      "romaji": "tsugini, kingaku o oshimasu.",
+      "zh": "接着，按金额。"
+    }
+  },
+  "l16-w797": {
+    "romaji": "kingaku",
+    "attributes": [],
+    "explanation": "指钱的数额，常用于银行、购物等场合。与「値段」（价格）不同，侧重数额本身。",
+    "example": {
+      "jp": "金額を確認してください。",
+      "kana": "きんがくをかくにんしてください。",
+      "romaji": "kingaku o kakunin shite kudasai.",
+      "zh": "请确认金额。"
+    }
+  },
+  "l16-w798": {
+    "romaji": "kakunin",
+    "attributes": [],
+    "explanation": "名词，表示“确认、核实”。常与「する」构成サ变动词「確認する」，用于核对信息、日程、事实等，语体中性，书面和口语均可用。",
+    "example": {
+      "jp": "出かける前に天気予報を確認します。",
+      "kana": "でかけるまえにてんきよほうをかくにんします。",
+      "romaji": "deka keru mae ni tenki yohou o kakunin shimasu.",
+      "zh": "出门前确认天气预报。"
+    }
+  },
+  "l16-w799": {
+    "romaji": "botan",
+    "attributes": [],
+    "explanation": "名词，指机器、设备上的“按钮”。常与「押す」搭配，如「ボタンを押す」。外来语，日常口语常用。",
+    "example": {
+      "jp": "エレベーターのボタンを押してください。",
+      "kana": "えれべーたーのぼたんをおしてください。",
+      "romaji": "erebeetaa no botan o oshite kudasai.",
+      "zh": "请按电梯按钮。"
+    }
+  },
+  "l16-w847": {
+    "romaji": "kengaku shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词Ⅲ（サ变），意为“参观学习”，多用于参观工厂、学校、设施等，带有了解、学习的语感。常与「工場を見学する」等搭配。",
+    "example": {
+      "jp": "明日、自動車工場を見学します。",
+      "kana": "あした、じどうしゃこうじょうをけんがくします。",
+      "romaji": "ashita, jidousha koujou o kengaku shimasu.",
+      "zh": "明天参观汽车工厂。"
+    }
+  },
+  "l16-w901": {
+    "romaji": "denwa shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅲ（サ变），意为“打电话”。常用「～に電話する」表示给某人打电话，也可说「電話をかける」。",
+    "example": {
+      "jp": "後で友達に電話します。",
+      "kana": "あとでともだちにでんわします。",
+      "romaji": "ato de tomodachi ni denwa shimasu.",
+      "zh": "待会儿给朋友打电话。"
+    }
+  },
+  "l16-height": {
+    "romaji": "se",
+    "attributes": [],
+    "explanation": "名词，指人的“身高、个子”。常用「背が高い／低い」描述个子高矮，也可说「背を比べる」。",
+    "example": {
+      "jp": "兄は背がとても高いです。",
+      "kana": "あにはせがとてもたかいです。",
+      "romaji": "ani wa se ga totemo takai desu.",
+      "zh": "哥哥个子很高。"
+    }
+  },
+  "l16-jr": {
+    "romaji": "jei aaru",
+    "attributes": [],
+    "explanation": "专有名词，指日本铁路集团（Japan Railways）。日常中常指JR线路或车站，如「JRで行く」「JRの駅」。",
+    "example": {
+      "jp": "JRで大阪まで行きます。",
+      "kana": "じぇいあーるでおおさかまでいきます。",
+      "romaji": "jei aaru de oosaka made ikimasu.",
+      "zh": "坐JR去大阪。"
+    }
+  },
+  "l16-snow-festival": {
+    "romaji": "yuki matsuri",
+    "attributes": [],
+    "explanation": "名词，指“冰雪节”，尤指札幌雪祭等冬季活动。由「雪」和「祭り」构成，常与「見に行く」等搭配。",
+    "example": {
+      "jp": "二月に札幌の雪まつりを見に行きます。",
+      "kana": "にがつにさっぽろのゆきまつりをみにいきます。",
+      "romaji": "nigatsu ni sapporo no yuki matsuri o mi ni ikimasu.",
+      "zh": "二月去札幌看冰雪节。"
+    }
+  },
+  "l16-umeda": {
+    "romaji": "Umeda",
+    "attributes": [],
+    "explanation": "专有名词，大阪市北区的地名、交通枢纽。常作为车站名使用，如「梅田駅」。",
+    "example": {
+      "jp": "梅田で友達と会います。",
+      "kana": "うめだでともだちとあいます。",
+      "romaji": "Umeda de tomodachi to aimasu.",
+      "zh": "在梅田和朋友见面。"
+    }
+  },
+  "l16-daigakumae": {
+    "romaji": "Daigakumae",
+    "attributes": [],
+    "explanation": "专有名词，车站名，意为“大学前”。日本多地有同名车站，常与线路名搭配使用。",
+    "example": {
+      "jp": "大学前で電車を降ります。",
+      "kana": "だいがくまえででんしゃをおります。",
+      "romaji": "Daigakumae de densha o orimasu.",
+      "zh": "在大学前站下电车。"
+    }
+  },
+  "l16-bandung": {
+    "romaji": "Bandun",
+    "attributes": [],
+    "explanation": "专有名词，印度尼西亚城市万隆。日语外来语地名，书写时常用片假名「バンドン」。",
+    "example": {
+      "jp": "バンドンはインドネシアの都市です。",
+      "kana": "ばんどんはインドネシアのとしです。",
+      "romaji": "Bandun wa Indonesia no toshi desu.",
+      "zh": "万隆是印度尼西亚的城市。"
+    }
+  },
+  "l16-franken": {
+    "romaji": "Furanken",
+    "attributes": [],
+    "explanation": "专有名词，德国地名弗兰肯（Franken）。日语外来语地名，用片假名书写。",
+    "example": {
+      "jp": "フランケンはドイツにあります。",
+      "kana": "ふらんけんはドイツにあります。",
+      "romaji": "Furanken wa Doitsu ni arimasu.",
+      "zh": "弗兰肯在德国。"
+    }
+  },
+  "l16-veracruz": {
+    "romaji": "Berakurusu",
+    "attributes": [],
+    "explanation": "专有名词，墨西哥城市韦拉克鲁斯（Veracruz）。日语外来语地名，用片假名书写。",
+    "example": {
+      "jp": "ベラクルスはメキシコの港町です。",
+      "kana": "べらくるすはメキシコのみなとまちです。",
+      "romaji": "Berakurusu wa Mekishiko no minatomachi desu.",
+      "zh": "韦拉克鲁斯是墨西哥的港口城市。"
+    }
+  }
+}

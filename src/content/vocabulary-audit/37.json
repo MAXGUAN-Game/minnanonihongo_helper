@@ -1,0 +1,276 @@
+{
+  "lessonId": 37,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/37.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 47,
+  "entries": [
+    {
+      "sourceId": "1274",
+      "sourceWord": "誰か",
+      "key": "w1274"
+    },
+    {
+      "sourceId": "1478",
+      "sourceWord": "褒めます",
+      "key": "w1478"
+    },
+    {
+      "sourceId": "1479",
+      "sourceWord": "叱ります",
+      "key": "w1479"
+    },
+    {
+      "sourceId": "1480",
+      "sourceWord": "誘います",
+      "key": "w1480"
+    },
+    {
+      "sourceId": "1482",
+      "sourceWord": "招待します",
+      "key": "w1482"
+    },
+    {
+      "sourceId": "1483",
+      "sourceWord": "頼みます",
+      "key": "w1483"
+    },
+    {
+      "sourceId": "1484",
+      "sourceWord": "注意します",
+      "key": "w1484"
+    },
+    {
+      "sourceId": "1485",
+      "sourceWord": "とります",
+      "key": "w1485"
+    },
+    {
+      "sourceId": "1486",
+      "sourceWord": "踏みます",
+      "key": "w1486"
+    },
+    {
+      "sourceId": "1487",
+      "sourceWord": "壊します",
+      "key": "w1487"
+    },
+    {
+      "sourceId": "1488",
+      "sourceWord": "汚します",
+      "key": "w1488"
+    },
+    {
+      "sourceId": "1489",
+      "sourceWord": "行います",
+      "key": "w1489"
+    },
+    {
+      "sourceId": "1490",
+      "sourceWord": "輸出します",
+      "key": "w1490"
+    },
+    {
+      "sourceId": "1491",
+      "sourceWord": "輸入します",
+      "key": "w1491"
+    },
+    {
+      "sourceId": "1492",
+      "sourceWord": "翻訳します",
+      "key": "w1492"
+    },
+    {
+      "sourceId": "1493",
+      "sourceWord": "発明します",
+      "key": "w1493"
+    },
+    {
+      "sourceId": "1494",
+      "sourceWord": "発見します",
+      "key": "w1494"
+    },
+    {
+      "sourceId": "1496",
+      "sourceWord": "米",
+      "key": "w1496"
+    },
+    {
+      "sourceId": "1497",
+      "sourceWord": "麦",
+      "key": "w1497"
+    },
+    {
+      "sourceId": "1498",
+      "sourceWord": "石油",
+      "key": "w1498"
+    },
+    {
+      "sourceId": "1499",
+      "sourceWord": "原料",
+      "key": "w1499"
+    },
+    {
+      "sourceId": "1500",
+      "sourceWord": "デート",
+      "key": "w1500"
+    },
+    {
+      "sourceId": "1501",
+      "sourceWord": "泥棒",
+      "key": "w1501"
+    },
+    {
+      "sourceId": "1502",
+      "sourceWord": "警官",
+      "key": "w1502"
+    },
+    {
+      "sourceId": "1506",
+      "sourceWord": "世界中",
+      "key": "w1506"
+    },
+    {
+      "sourceId": "1507",
+      "sourceWord": "～中",
+      "key": "w1507"
+    },
+    {
+      "sourceId": "1508",
+      "sourceWord": "～によって",
+      "key": "w1508"
+    },
+    {
+      "sourceId": "1509",
+      "sourceWord": "よかったですね。",
+      "key": "w1509"
+    },
+    {
+      "sourceId": "1549",
+      "sourceWord": "［うちが］焼けます",
+      "key": "w1549"
+    },
+    {
+      "sourceId": "1620",
+      "sourceWord": "キロ",
+      "key": "w1620"
+    },
+    {
+      "sourceId": "2636",
+      "sourceWord": "金色",
+      "key": "w2636"
+    },
+    {
+      "sourceId": "2801",
+      "sourceWord": "その後",
+      "key": "w2801"
+    },
+    {
+      "sourceId": "3191",
+      "sourceWord": "インスタントラーメン",
+      "key": "w3191"
+    },
+    {
+      "sourceId": "3198",
+      "sourceWord": "美しい",
+      "key": "w3198"
+    },
+    {
+      "sourceId": "3331",
+      "sourceWord": "世紀",
+      "key": "w3331"
+    },
+    {
+      "sourceId": "3335",
+      "sourceWord": "世界遺産",
+      "key": "w3335"
+    },
+    {
+      "sourceId": "3475",
+      "sourceWord": "本物",
+      "key": "w3475"
+    },
+    {
+      "sourceId": "5645",
+      "sourceWord": "金",
+      "key": "w5645"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1481",
+      "sourceWord": "起こします",
+      "reason": "旧版叫醒动词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1495",
+      "sourceWord": "設計します",
+      "reason": "旧版机场设计主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1503",
+      "sourceWord": "建築家",
+      "reason": "旧版建筑师词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1504",
+      "sourceWord": "科学者",
+      "reason": "旧版科学家词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1510",
+      "sourceWord": "埋め立てます",
+      "reason": "旧版机场建设主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1511",
+      "sourceWord": "技術",
+      "reason": "旧版机场建设主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1512",
+      "sourceWord": "土地",
+      "reason": "旧版机场建设主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1513",
+      "sourceWord": "騒音",
+      "reason": "旧版机场建设主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1515",
+      "sourceWord": "アクセス",
+      "reason": "旧版机场交通主题词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "everyone",
+    "language",
+    "one-of",
+    "olympics",
+    "world-cup",
+    "todaiji",
+    "buddha",
+    "edo",
+    "portugal",
+    "saudi",
+    "russia",
+    "toshogu",
+    "sleeping-cat",
+    "jingoro",
+    "splendid",
+    "sculpture",
+    "legend",
+    "sleep",
+    "carve",
+    "companion",
+    "however",
+    "after",
+    "hard",
+    "mouse",
+    "not-one"
+  ],
+  "finalCount": 63
+}

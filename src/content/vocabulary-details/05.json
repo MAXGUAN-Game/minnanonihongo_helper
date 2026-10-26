@@ -1,0 +1,681 @@
+{
+  "l5-v1": {
+    "romaji": "ikimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示从说话人所在位置或基准点前往别处，常与表示目的地的助词「に」或「へ」搭配。礼貌体形式，用于日常会话和正式场合。",
+    "example": {
+      "jp": "明日、学校に行きます。",
+      "kana": "あした、がっこうにいきます。",
+      "romaji": "ashita gakkou ni ikimasu",
+      "zh": "明天去学校。"
+    }
+  },
+  "l5-v2": {
+    "romaji": "kimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示朝着说话人所在位置或基准点移动，方向与「行きます」相反。常与助词「に」或「へ」搭配，礼貌体。",
+    "example": {
+      "jp": "友達がうちに来ます。",
+      "kana": "ともだちがうちにきます。",
+      "romaji": "tomodachi ga uchi ni kimasu",
+      "zh": "朋友来我家。"
+    }
+  },
+  "l5-v3": {
+    "romaji": "kaerimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示回到自己所属的场所（家、国家、公司等），强调“返回”而非单纯移动。常与助词「に」或「へ」搭配。",
+    "example": {
+      "jp": "毎日、六時に家へ帰ります。",
+      "kana": "まいにち、ろくじにいえへかえります。",
+      "romaji": "mainichi rokuji ni ie e kaerimasu",
+      "zh": "每天六点回家。"
+    }
+  },
+  "l5-gakkou": {
+    "romaji": "gakkou",
+    "attributes": [],
+    "explanation": "指进行教育的机构或场所，可泛指小学到大学。常与助词「に」「へ」搭配表示方向，与「で」搭配表示动作场所。",
+    "example": {
+      "jp": "学校の前に駅があります。",
+      "kana": "がっこうのまえにえきがあります。",
+      "romaji": "gakkou no mae ni eki ga arimasu",
+      "zh": "学校前面有车站。"
+    }
+  },
+  "l5-suupaa": {
+    "romaji": "suupaa",
+    "attributes": [],
+    "explanation": "指大型自选商店，主要销售食品和日用品。常与「で」搭配表示购物场所，口语中常用。",
+    "example": {
+      "jp": "スーパーで野菜を買います。",
+      "kana": "すーぱーでやさいをかいます。",
+      "romaji": "suupaa de yasai o kaimasu",
+      "zh": "在超市买蔬菜。"
+    }
+  },
+  "l5-eki": {
+    "romaji": "eki",
+    "attributes": [],
+    "explanation": "指铁路、地铁等交通工具停靠的车站。常与「で」搭配表示动作场所，与「に」搭配表示到达点。",
+    "example": {
+      "jp": "駅で友達を待ちます。",
+      "kana": "えきでともだちをまちます。",
+      "romaji": "eki de tomodachi o machimasu",
+      "zh": "在车站等朋友。"
+    }
+  },
+  "l5-v6": {
+    "romaji": "hikouki",
+    "attributes": [],
+    "explanation": "指航空器，用于长途旅行。常与助词「で」搭配表示交通手段，与「に」搭配表示乘坐或到达的对象。",
+    "example": {
+      "jp": "飛行機で北海道へ行きます。",
+      "kana": "ひこうきでほっかいどうへいきます。",
+      "romaji": "hikouki de hokkaidou e ikimasu",
+      "zh": "坐飞机去北海道。"
+    }
+  },
+  "l5-fune": {
+    "romaji": "fune",
+    "attributes": [],
+    "explanation": "指水上交通工具，可指小船或大型船舶。常与助词「で」搭配表示交通手段，与「に」搭配表示乘坐。",
+    "example": {
+      "jp": "船で島へ渡ります。",
+      "kana": "ふねでしまへわたります。",
+      "romaji": "fune de shima e watarimasu",
+      "zh": "坐船去岛上。"
+    }
+  },
+  "l5-v4": {
+    "romaji": "densha",
+    "attributes": [],
+    "explanation": "指以电力驱动的列车，包括通勤电车等。常与助词「で」搭配表示交通手段，与「に」搭配表示乘坐。",
+    "example": {
+      "jp": "電車で会社へ行きます。",
+      "kana": "でんしゃでかいしゃへいきます。",
+      "romaji": "densha de kaisha e ikimasu",
+      "zh": "坐电车去公司。"
+    }
+  },
+  "l5-v5": {
+    "romaji": "chikatetsu",
+    "attributes": [],
+    "explanation": "指在城市地下运行的地铁系统。常与助词「で」搭配表示交通手段，与「に」搭配表示乘坐。",
+    "example": {
+      "jp": "地下鉄で空港へ行きます。",
+      "kana": "ちかてつでくうこうへいきます。",
+      "romaji": "chikatetsu de kuukou e ikimasu",
+      "zh": "坐地铁去机场。"
+    }
+  },
+  "l5-shinkansen": {
+    "romaji": "shinkansen",
+    "attributes": [],
+    "explanation": "指日本的高速铁路系统，连接主要城市。常与助词「で」搭配表示交通手段，与「に」搭配表示乘坐。",
+    "example": {
+      "jp": "新幹線で大阪へ行きます。",
+      "kana": "しんかんせんでおおさかへいきます。",
+      "romaji": "shinkansen de oosaka e ikimasu",
+      "zh": "坐新干线去大阪。"
+    }
+  },
+  "l5-basu": {
+    "romaji": "basu",
+    "attributes": [],
+    "explanation": "指公共汽车或巴士，用于城市及城际交通。常与助词「で」搭配表示交通手段，与「に」搭配表示乘坐。",
+    "example": {
+      "jp": "バスで駅まで行きます。",
+      "kana": "ばすでえきまでいきます。",
+      "romaji": "basu de eki made ikimasu",
+      "zh": "坐公交车到车站。"
+    }
+  },
+  "l5-takushii": {
+    "romaji": "takushii",
+    "attributes": [],
+    "explanation": "指出租车，外来语，日常口语常用。常与「乗る」「降りる」搭配，如「タクシーに乗る」。",
+    "example": {
+      "jp": "駅までタクシーで行きます。",
+      "kana": "えきまでたくしーでいきます。",
+      "romaji": "eki made takushii de ikimasu.",
+      "zh": "坐出租车到车站。"
+    }
+  },
+  "l5-v7": {
+    "romaji": "jitensha",
+    "attributes": [],
+    "explanation": "指自行车，名词。常用「自転車に乗る」「自転車で行く」表示骑自行车或骑车去某地。",
+    "example": {
+      "jp": "毎日自転車で学校へ行きます。",
+      "kana": "まいにちじてんしゃでがっこうへいきます。",
+      "romaji": "mainichi jitensha de gakkou e ikimasu.",
+      "zh": "每天骑自行车去学校。"
+    }
+  },
+  "l5-aruite": {
+    "romaji": "aruite",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「歩く」的て形，表示步行这一方式。常以「歩いて行く」等形式出现，强调不借助交通工具。",
+    "example": {
+      "jp": "家から駅まで歩いて十分です。",
+      "kana": "いえからえきまであるいてじゅっぷんです。",
+      "romaji": "ie kara eki made aruite juppun desu.",
+      "zh": "从家走到车站要十分钟。"
+    }
+  },
+  "l5-hito": {
+    "romaji": "hito",
+    "attributes": [],
+    "explanation": "指人、人类，也可指某个人或他人。常用「あの人」「この人」指代特定的人。",
+    "example": {
+      "jp": "あの人は私の先生です。",
+      "kana": "あのひとはわたしのせんせいです。",
+      "romaji": "ano hito wa watashi no sensei desu.",
+      "zh": "那个人是我的老师。"
+    }
+  },
+  "l5-v8": {
+    "romaji": "tomodachi",
+    "attributes": [],
+    "explanation": "指朋友，可指亲密朋友或一般朋友。常用「友達と会う」「友達になる」等搭配。",
+    "example": {
+      "jp": "週末に友達と映画を見ます。",
+      "kana": "しゅうまつにともだちとえいがをみます。",
+      "romaji": "shuumatsu ni tomodachi to eiga o mimasu.",
+      "zh": "周末和朋友看电影。"
+    }
+  },
+  "l5-kare": {
+    "romaji": "kare",
+    "attributes": [],
+    "explanation": "指他，也可指男朋友。作为第三人称代词，指代男性；在口语中可特指男友。",
+    "example": {
+      "jp": "彼は私の兄です。",
+      "kana": "かれはわたしのあにです。",
+      "romaji": "kare wa watashi no ani desu.",
+      "zh": "他是我哥哥。"
+    }
+  },
+  "l5-kanojo": {
+    "romaji": "kanojo",
+    "attributes": [],
+    "explanation": "指她，也可指女朋友。作为第三人称代词，指代女性；在口语中可特指女友。",
+    "example": {
+      "jp": "彼女は日本語の先生です。",
+      "kana": "かのじょはにほんごのせんせいです。",
+      "romaji": "kanojo wa nihongo no sensei desu.",
+      "zh": "她是日语老师。"
+    }
+  },
+  "l5-kazoku": {
+    "romaji": "kazoku",
+    "attributes": [],
+    "explanation": "指家人、家属，也可指家庭。常用「家族と住む」「家族がいる」等表达。",
+    "example": {
+      "jp": "家族と一緒に旅行します。",
+      "kana": "かぞくといっしょにりょこうします。",
+      "romaji": "kazoku to issho ni ryokou shimasu.",
+      "zh": "和家人一起旅行。"
+    }
+  },
+  "l5-v9": {
+    "romaji": "hitoride",
+    "attributes": [],
+    "explanation": "表示独自、一个人做某事。常与动作动词搭配，如「一人で行く」「一人で食べる」。",
+    "example": {
+      "jp": "一人で図書館へ行きます。",
+      "kana": "ひとりでとしょかんへいきます。",
+      "romaji": "hitori de toshokan e ikimasu.",
+      "zh": "一个人去图书馆。"
+    }
+  },
+  "l5-senshuu": {
+    "romaji": "senshuu",
+    "attributes": [],
+    "explanation": "指上周，时间名词，可直接作状语。常与过去时搭配，如「先週行きました」。",
+    "example": {
+      "jp": "先週、京都へ行きました。",
+      "kana": "せんしゅう、きょうとへいきました。",
+      "romaji": "senshuu, kyouto e ikimashita.",
+      "zh": "上周去了京都。"
+    }
+  },
+  "l5-konshuu": {
+    "romaji": "konshuu",
+    "attributes": [],
+    "explanation": "指这周、本周，时间名词，可直接作状语。可搭配现在时或将来时，如「今週は忙しい」。",
+    "example": {
+      "jp": "今週はとても忙しいです。",
+      "kana": "こんしゅうはとてもいそがしいです。",
+      "romaji": "konshuu wa totemo isogashii desu.",
+      "zh": "这周非常忙。"
+    }
+  },
+  "l5-raishuu": {
+    "romaji": "raishuu",
+    "attributes": [],
+    "explanation": "指下周，时间名词，可直接作状语。常与将来时搭配，如「来週会いましょう」。",
+    "example": {
+      "jp": "来週、友達に会います。",
+      "kana": "らいしゅう、ともだちにあいます。",
+      "romaji": "raishuu, tomodachi ni aimasu.",
+      "zh": "下周见朋友。"
+    }
+  },
+  "l5-sengetsu": {
+    "romaji": "sengetsu",
+    "attributes": [],
+    "explanation": "指相对于说话时点的上一个月份，常用于叙述过去发生的事。可与「に」搭配表示时间点，如「先月に」但更常见不加助词直接使用。",
+    "example": {
+      "jp": "先月、友達と旅行しました。",
+      "kana": "せんげつ、ともだちとりょこうしました。",
+      "romaji": "sengetsu, tomodachi to ryokou shimashita.",
+      "zh": "上个月和朋友去旅行了。"
+    }
+  },
+  "l5-kongetsu": {
+    "romaji": "kongetsu",
+    "attributes": [],
+    "explanation": "指说话时所在的月份，常用于谈论本月内的计划或已发生的事。可直接修饰名词，如「今月の予定」。",
+    "example": {
+      "jp": "今月は忙しいです。",
+      "kana": "こんげつは いそがしいです。",
+      "romaji": "kongetsu wa isogashii desu.",
+      "zh": "这个月很忙。"
+    }
+  },
+  "l5-raigetsu": {
+    "romaji": "raigetsu",
+    "attributes": [],
+    "explanation": "指相对于说话时点的下一个月份，常用于谈论未来的计划。可与「に」搭配表示时间，如「来月に」但更常见不加助词。",
+    "example": {
+      "jp": "来月、日本へ行きます。",
+      "kana": "らいげつ、にほんへいきます。",
+      "romaji": "raigetsu, nihon e ikimasu.",
+      "zh": "下个月去日本。"
+    }
+  },
+  "l5-kyonen": {
+    "romaji": "kyonen",
+    "attributes": [],
+    "explanation": "指相对于说话时点的前一年，常用于叙述过去一整年的事情。可直接使用，也可加「に」表示时间点。",
+    "example": {
+      "jp": "去年、京都でお祭りを見ました。",
+      "kana": "きょねん、きょうとでおまつりをみました。",
+      "romaji": "kyonen, kyouto de omatsuri o mimashita.",
+      "zh": "去年在京都看了祭典。"
+    }
+  },
+  "l5-kotoshi": {
+    "romaji": "kotoshi",
+    "attributes": [],
+    "explanation": "指说话时所在的那一年，常用于谈论今年的状况或计划。可直接修饰名词，如「今年の夏」。",
+    "example": {
+      "jp": "今年は雪が多いですね。",
+      "kana": "ことしは ゆきが おおいですね。",
+      "romaji": "kotoshi wa yuki ga ooi desu ne.",
+      "zh": "今年雪很多啊。"
+    }
+  },
+  "l5-rainen": {
+    "romaji": "rainen",
+    "attributes": [],
+    "explanation": "指相对于说话时点的下一年，常用于谈论未来的打算。可直接使用，也可加「に」表示时间点。",
+    "example": {
+      "jp": "来年、大学に入ります。",
+      "kana": "らいねん、だいがくに はいります。",
+      "romaji": "rainen, daigaku ni hairimasu.",
+      "zh": "明年上大学。"
+    }
+  },
+  "l5-nen": {
+    "romaji": "-nen",
+    "attributes": [],
+    "explanation": "接在数字后表示年份或年数，如「三年」「2025年」。读法需注意年份的促音化等变化，但作为量词基本读「ねん」。",
+    "example": {
+      "jp": "私は三年日本語を勉強しています。",
+      "kana": "わたしは さんねん にほんごを べんきょうしています。",
+      "romaji": "watashi wa sannen nihongo o benkyou shite imasu.",
+      "zh": "我学了三年日语。"
+    }
+  },
+  "l5-nannen": {
+    "romaji": "nannen",
+    "attributes": [],
+    "explanation": "用于询问年份或年数，相当于中文的“哪一年”或“几年”。根据上下文可表示具体年份或持续时间。",
+    "example": {
+      "jp": "東京オリンピックは何年でしたか。",
+      "kana": "とうきょうおりんぴっくは なんねんでしたか。",
+      "romaji": "toukyou orinpikku wa nannen deshita ka.",
+      "zh": "东京奥运会是哪一年？"
+    }
+  },
+  "l5-gatsu": {
+    "romaji": "-gatsu",
+    "attributes": [],
+    "explanation": "接在数字后表示月份，如「一月」「十二月」。注意有些月份读音特殊，如「四月」读「しがつ」而非「よんがつ」。",
+    "example": {
+      "jp": "四月に花見をします。",
+      "kana": "しがつに はなみを します。",
+      "romaji": "shigatsu ni hanami o shimasu.",
+      "zh": "四月去赏花。"
+    }
+  },
+  "l5-nangatsu": {
+    "romaji": "nangatsu",
+    "attributes": [],
+    "explanation": "用于询问月份，相当于中文的“几月”。常与「に」搭配询问动作发生的时间。",
+    "example": {
+      "jp": "誕生日は何月ですか。",
+      "kana": "たんじょうびは なんがつですか。",
+      "romaji": "tanjoubi wa nangatsu desu ka.",
+      "zh": "生日是几月？"
+    }
+  },
+  "l5-nichi": {
+    "romaji": "-nichi",
+    "attributes": [],
+    "explanation": "接在数字后表示日期（几号）或天数（几天），如「一日」「二日」。但许多日期有特殊读法，如「一日」读「ついたち」，「二十日」读「はつか」。",
+    "example": {
+      "jp": "毎月十日に会議があります。",
+      "kana": "まいつき とおかに かいぎが あります。",
+      "romaji": "maitsuki tooka ni kaigi ga arimasu.",
+      "zh": "每月十号有会议。"
+    }
+  },
+  "l5-nannichi": {
+    "romaji": "nannichi",
+    "attributes": [],
+    "explanation": "用于询问日期或天数，相当于中文的“几号”或“几天”。根据上下文可表示具体日期或持续时间。",
+    "example": {
+      "jp": "今日は何日ですか。",
+      "kana": "きょうは なんにちですか。",
+      "romaji": "kyou wa nannichi desu ka.",
+      "zh": "今天几号？"
+    }
+  },
+  "l5-v10": {
+    "romaji": "itsu",
+    "attributes": [],
+    "explanation": "疑问代词，用于询问时间，相当于“什么时候”。可直接放在句首或句中，后面接助词或动词，如「いつ来ますか」。不能与表示具体时间的「に」连用。",
+    "example": {
+      "jp": "誕生日はいつですか。",
+      "kana": "たんじょうびはいつですか。",
+      "romaji": "tanjoubi wa itsu desu ka.",
+      "zh": "生日是什么时候？"
+    }
+  },
+  "l5-tanjoubi": {
+    "romaji": "tanjoubi",
+    "attributes": [],
+    "explanation": "名词，表示“生日”。常用「誕生日はいつですか」询问日期，或用「誕生日おめでとう」祝贺。注意「誕生日」的「日」读「び」，不读「ひ」。",
+    "example": {
+      "jp": "私の誕生日は5月3日です。",
+      "kana": "わたしのたんじょうびはごがつみっかです。",
+      "romaji": "watashi no tanjoubi wa gogatsu mikka desu.",
+      "zh": "我的生日是5月3日。"
+    }
+  },
+  "l5-date-1": {
+    "romaji": "tsuitachi",
+    "attributes": [],
+    "explanation": "表示每月1号，读作「ついたち」，是特殊读法。表示“一天”时读「いちにち」，需区分。常与月份搭配，如「5月1日」。",
+    "example": {
+      "jp": "4月1日に日本へ来ました。",
+      "kana": "しがつついたちににほんへきました。",
+      "romaji": "shigatsu tsuitachi ni nihon e kimashita.",
+      "zh": "4月1日来到了日本。"
+    }
+  },
+  "l5-date-2": {
+    "romaji": "futsuka",
+    "attributes": [],
+    "explanation": "表示每月2号，也表示“两天”。读作「ふつか」，是特殊读法。可单独使用或与月份搭配，如「2月2日」。",
+    "example": {
+      "jp": "2月2日は私の誕生日です。",
+      "kana": "にがつふつかはわたしのたんじょうびです。",
+      "romaji": "nigatsu futsuka wa watashi no tanjoubi desu.",
+      "zh": "2月2日是我的生日。"
+    }
+  },
+  "l5-date-3": {
+    "romaji": "mikka",
+    "attributes": [],
+    "explanation": "表示每月3号，也表示“三天”。读作「みっか」，是特殊读法。注意促音和清音的区别。",
+    "example": {
+      "jp": "3月3日はひな祭りです。",
+      "kana": "さんがつみっかはひなまつりです。",
+      "romaji": "sangatsu mikka wa hinamatsuri desu.",
+      "zh": "3月3日是女儿节。"
+    }
+  },
+  "l5-date-4": {
+    "romaji": "yokka",
+    "attributes": [],
+    "explanation": "表示每月4号，也表示“四天”。读作「よっか」，是特殊读法。注意与「よんにち」区分，后者不常用。",
+    "example": {
+      "jp": "4月4日は雨でした。",
+      "kana": "しがつよっかはあめでした。",
+      "romaji": "shigatsu yokka wa ame deshita.",
+      "zh": "4月4日下雨了。"
+    }
+  },
+  "l5-date-5": {
+    "romaji": "itsuka",
+    "attributes": [],
+    "explanation": "表示每月5号，也表示“五天”。读作「いつか」，是特殊读法。注意与疑问词「いつ」+「か」的「いつか」（某天）区分，但写法相同，需根据上下文判断。",
+    "example": {
+      "jp": "5月5日は子供の日です。",
+      "kana": "ごがついつかはこどものひです。",
+      "romaji": "gogatsu itsuka wa kodomo no hi desu.",
+      "zh": "5月5日是儿童节。"
+    }
+  },
+  "l5-date-6": {
+    "romaji": "muika",
+    "attributes": [],
+    "explanation": "表示每月6号，也表示“六天”。读作「むいか」，是特殊读法。注意「む」的发音。",
+    "example": {
+      "jp": "6月6日に試験があります。",
+      "kana": "ろくがつむいかにしけんがあります。",
+      "romaji": "rokugatsu muika ni shiken ga arimasu.",
+      "zh": "6月6日有考试。"
+    }
+  },
+  "l5-date-7": {
+    "romaji": "nanoka",
+    "attributes": [],
+    "explanation": "表示每月7号，也表示“七天”。读作「なのか」，是特殊读法。注意「なの」的发音。",
+    "example": {
+      "jp": "7月7日は七夕です。",
+      "kana": "しちがつなのかはたなばたです。",
+      "romaji": "shichigatsu nanoka wa tanabata desu.",
+      "zh": "7月7日是七夕。"
+    }
+  },
+  "l5-date-8": {
+    "romaji": "youka",
+    "attributes": [],
+    "explanation": "表示每月8号，也表示“八天”。读作「ようか」，是特殊读法。注意与「よっか」（4号）区分。",
+    "example": {
+      "jp": "8月8日は山の日です。",
+      "kana": "はちがつようかはやまのひです。",
+      "romaji": "hachigatsu youka wa yama no hi desu.",
+      "zh": "8月8日是山之日。"
+    }
+  },
+  "l5-date-9": {
+    "romaji": "kokonoka",
+    "attributes": [],
+    "explanation": "表示每月9号，也表示“九天”。读作「ここのか」，是特殊读法。注意「ここの」的发音。",
+    "example": {
+      "jp": "9月9日は重陽の節句です。",
+      "kana": "くがつここのかはちょうようのせっくです。",
+      "romaji": "kugatsu kokonoka wa chouyou no sekku desu.",
+      "zh": "9月9日是重阳节。"
+    }
+  },
+  "l5-date-10": {
+    "romaji": "tooka",
+    "attributes": [],
+    "explanation": "表示每月10号，也表示“十天”。读作「とおか」，是特殊读法。注意「とお」的长音。",
+    "example": {
+      "jp": "10月10日は体育の日です。",
+      "kana": "じゅうがつとおかはたいいくのひです。",
+      "romaji": "juugatsu tooka wa taiiku no hi desu.",
+      "zh": "10月10日是体育节。"
+    }
+  },
+  "l5-date-14": {
+    "romaji": "juuyokka",
+    "attributes": [],
+    "explanation": "表示日期“14号”或天数“14天”。读法特殊，注意不是“じゅうよんにち”。常用于日程安排或期间计算。",
+    "example": {
+      "jp": "試験は十四日にあります。",
+      "kana": "しけんはじゅうよっかにあります。",
+      "romaji": "shiken wa juuyokka ni arimasu.",
+      "zh": "考试在14号。"
+    }
+  },
+  "l5-date-20": {
+    "romaji": "hatsuka",
+    "attributes": [],
+    "explanation": "表示日期“20号”或天数“20天”。读法特殊，需单独记忆。可用于具体日期或期间。",
+    "example": {
+      "jp": "二十日に友だちと会います。",
+      "kana": "はつかとにともだちとあいます。",
+      "romaji": "hatsuka ni tomodachi to aimasu.",
+      "zh": "20号和朋友见面。"
+    }
+  },
+  "l5-date-24": {
+    "romaji": "nijuu yokka",
+    "attributes": [],
+    "explanation": "表示日期“24号”或天数“24天”。由“にじゅう”和“よっか”组合而成，注意“4”的读法。",
+    "example": {
+      "jp": "二十四日は休みです。",
+      "kana": "にじゅうよっかはやすみです。",
+      "romaji": "nijuu yokka wa yasumi desu.",
+      "zh": "24号休息。"
+    }
+  },
+  "l5-futsuu": {
+    "romaji": "futsuu",
+    "attributes": [],
+    "explanation": "在交通语境中指“普通列车”，即每站都停的电车或火车。也可表示“普通、一般”，但本课特指列车类别。",
+    "example": {
+      "jp": "普通電車に乗ってください。",
+      "kana": "ふつうでんしゃにのってください。",
+      "romaji": "futsuu densha ni notte kudasai.",
+      "zh": "请乘坐普通列车。"
+    }
+  },
+  "l5-kyuukou": {
+    "romaji": "kyuukou",
+    "attributes": [],
+    "explanation": "指“急行列车”，比普通列车停站少、速度较快，但比特急慢。常与“特急”对比使用。",
+    "example": {
+      "jp": "急行はこの駅に止まりますか。",
+      "kana": "きゅうこうはこのえきにとまりますか。",
+      "romaji": "kyuukou wa kono eki ni tomarimasu ka.",
+      "zh": "急行列车停这个站吗？"
+    }
+  },
+  "l5-tokkyuu": {
+    "romaji": "tokkyuu",
+    "attributes": [],
+    "explanation": "指“特急列车”，是停站最少、速度最快的列车种类，通常需要特急券。常用于长途出行。",
+    "example": {
+      "jp": "特急で大阪へ行きます。",
+      "kana": "とっきゅうでおおさかへいきます。",
+      "romaji": "tokkyuu de oosaka e ikimasu.",
+      "zh": "坐特急去大阪。"
+    }
+  },
+  "l5-tsugino": {
+    "romaji": "tsugi no",
+    "attributes": [],
+    "explanation": "连体表达，意为“下一个的”，后接名词。常用于指下一班车、下一个站等。不能单独使用。",
+    "example": {
+      "jp": "次の電車は何時ですか。",
+      "kana": "つぎのでんしゃはなんじですか。",
+      "romaji": "tsugi no densha wa nanji desu ka.",
+      "zh": "下一班电车是几点？"
+    }
+  },
+  "l5-bansen": {
+    "romaji": "-bansen",
+    "attributes": [],
+    "explanation": "接在数字后表示“几号站台”或“几号线”。如“3番線”即3号站台。常用于车站广播和指示。",
+    "example": {
+      "jp": "三番線から発車します。",
+      "kana": "さんばんせんからはっしゃします。",
+      "romaji": "sanbansen kara hassha shimasu.",
+      "zh": "从3号站台发车。"
+    }
+  },
+  "l5-douitashimashite": {
+    "romaji": "dou itashimashite",
+    "attributes": [],
+    "explanation": "固定表达，用于回应“谢谢”，意为“不客气”。语体中性偏礼貌，日常和正式场合均可使用。",
+    "example": {
+      "jp": "「ありがとう」「どういたしまして」",
+      "kana": "「ありがとう」「どういたしまして」",
+      "romaji": "arigatou / dou itashimashite",
+      "zh": "“谢谢”“不客气”"
+    }
+  },
+  "l5-soudesune": {
+    "romaji": "sou desu ne",
+    "attributes": [],
+    "explanation": "固定表达，用于表示同意对方的话（“是啊”）或思考时拖延（“我想想”）。语气随语境变化，需注意语调。",
+    "example": {
+      "jp": "「今日は寒いですね」「そうですね」",
+      "kana": "「きょうはさむいですね」「そうですね」",
+      "romaji": "kyou wa samui desu ne / sou desu ne",
+      "zh": "“今天真冷啊”“是啊”"
+    }
+  },
+  "l5-arigatougozaimashita": {
+    "romaji": "doumo arigatou gozaimashita",
+    "attributes": [],
+    "explanation": "固定表达，用于对已完成的帮助或事情表示感谢，比“ありがとうございます”更强调感谢已结束。常用于事后致谢。",
+    "example": {
+      "jp": "手伝ってくれて、どうもありがとうございました。",
+      "kana": "てつだってくれて、どうもありがとうございました。",
+      "romaji": "tetsudatte kurete, doumo arigatou gozaimashita.",
+      "zh": "谢谢你帮我。"
+    }
+  },
+  "l5-koushien": {
+    "romaji": "Koushien",
+    "attributes": [],
+    "explanation": "专有名词，指兵库县西宫市的甲子园球场，常作为日本高中棒球全国大赛的代称。也可指地名。",
+    "example": {
+      "jp": "甲子園で野球の試合を見ました。",
+      "kana": "こうしえんでやきゅうのしあいをみました。",
+      "romaji": "Koushien de yakyuu no shiai o mimashita.",
+      "zh": "在甲子园看了棒球比赛。"
+    }
+  },
+  "l5-oosakajou": {
+    "romaji": "oosakajou",
+    "attributes": [],
+    "explanation": "指大阪市的历史名城，也是著名观光景点。作为专有名词直接使用，常与「見学する」「行く」等动词搭配。",
+    "example": {
+      "jp": "大阪城はとても大きいです。",
+      "kana": "おおさかじょうはとてもおおきいです。",
+      "romaji": "oosakajou wa totemo ookii desu.",
+      "zh": "大阪城非常大。"
+    }
+  }
+}

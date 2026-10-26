@@ -1,0 +1,28 @@
+{
+  "lessonId": 39,
+  "model": "deepseek-flash",
+  "reviewedCount": 52,
+  "corrections": [
+    {
+      "id": "l39-w1547",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「質問に答える」以「質問」为对象，属他动词，原标注正确，无需修改。"
+    },
+    {
+      "id": "l39-w1581",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「伺う」表拜访时以地点/人为对象，属他动词，原标注正确，无需修改。"
+    },
+    {
+      "id": "l39-westernize",
+      "attributes": [
+        "自他两用"
+      ],
+      "reason": "「西洋化する」可作自动词（变得西洋化）也可作他动词（使…西洋化），自他两用正确，无需修改。"
+    }
+  ]
+}

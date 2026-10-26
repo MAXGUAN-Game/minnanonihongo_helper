@@ -1,0 +1,21 @@
+{
+  "lessonId": 16,
+  "model": "deepseek-flash",
+  "reviewedCount": 60,
+  "corrections": [
+    {
+      "id": "l16-w847",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「見学します」是サ变他动词，带宾语表示参观某物，需补他动词属性。"
+    },
+    {
+      "id": "l16-w901",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「電話します」是サ变自动词，通常以「～に電話する」表示对象，需补自动词属性。"
+    }
+  ]
+}

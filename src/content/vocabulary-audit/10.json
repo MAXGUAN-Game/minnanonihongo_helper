@@ -1,0 +1,272 @@
+{
+  "lessonId": 10,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/10.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 50,
+  "entries": [
+    {
+      "sourceId": "1925",
+      "sourceWord": "象",
+      "key": "w1925"
+    },
+    {
+      "sourceId": "2180",
+      "sourceWord": "コンビニ",
+      "key": "w2180"
+    },
+    {
+      "sourceId": "2282",
+      "sourceWord": "パンダ",
+      "key": "w2282"
+    },
+    {
+      "sourceId": "491",
+      "sourceWord": "います",
+      "key": "w491"
+    },
+    {
+      "sourceId": "492",
+      "sourceWord": "あります",
+      "key": "w492"
+    },
+    {
+      "sourceId": "493",
+      "sourceWord": "色々な",
+      "key": "w493"
+    },
+    {
+      "sourceId": "494",
+      "sourceWord": "男の人",
+      "key": "w494"
+    },
+    {
+      "sourceId": "495",
+      "sourceWord": "女の人",
+      "key": "w495"
+    },
+    {
+      "sourceId": "496",
+      "sourceWord": "男の子",
+      "key": "w496"
+    },
+    {
+      "sourceId": "497",
+      "sourceWord": "女の子",
+      "key": "w497"
+    },
+    {
+      "sourceId": "498",
+      "sourceWord": "犬",
+      "key": "w498"
+    },
+    {
+      "sourceId": "499",
+      "sourceWord": "猫",
+      "key": "w499"
+    },
+    {
+      "sourceId": "500",
+      "sourceWord": "木",
+      "key": "w500"
+    },
+    {
+      "sourceId": "501",
+      "sourceWord": "物",
+      "key": "w501"
+    },
+    {
+      "sourceId": "503",
+      "sourceWord": "電池",
+      "key": "w503"
+    },
+    {
+      "sourceId": "504",
+      "sourceWord": "箱",
+      "key": "w504"
+    },
+    {
+      "sourceId": "505",
+      "sourceWord": "スイッチ",
+      "key": "w505"
+    },
+    {
+      "sourceId": "506",
+      "sourceWord": "冷蔵庫",
+      "key": "w506"
+    },
+    {
+      "sourceId": "507",
+      "sourceWord": "テーブル",
+      "key": "w507"
+    },
+    {
+      "sourceId": "508",
+      "sourceWord": "ベッド",
+      "key": "w508"
+    },
+    {
+      "sourceId": "509",
+      "sourceWord": "棚",
+      "key": "w509"
+    },
+    {
+      "sourceId": "510",
+      "sourceWord": "ドア",
+      "key": "w510"
+    },
+    {
+      "sourceId": "511",
+      "sourceWord": "窓",
+      "key": "w511"
+    },
+    {
+      "sourceId": "512",
+      "sourceWord": "ポスト",
+      "key": "w512"
+    },
+    {
+      "sourceId": "513",
+      "sourceWord": "ビル",
+      "key": "w513"
+    },
+    {
+      "sourceId": "514",
+      "sourceWord": "公園",
+      "key": "w514"
+    },
+    {
+      "sourceId": "515",
+      "sourceWord": "喫茶店",
+      "key": "w515"
+    },
+    {
+      "sourceId": "516",
+      "sourceWord": "本屋",
+      "key": "w516"
+    },
+    {
+      "sourceId": "517",
+      "sourceWord": "～屋",
+      "key": "w517"
+    },
+    {
+      "sourceId": "518",
+      "sourceWord": "乗り場",
+      "key": "w518"
+    },
+    {
+      "sourceId": "519",
+      "sourceWord": "県",
+      "key": "w519"
+    },
+    {
+      "sourceId": "520",
+      "sourceWord": "上",
+      "key": "w520"
+    },
+    {
+      "sourceId": "521",
+      "sourceWord": "下",
+      "key": "w521"
+    },
+    {
+      "sourceId": "522",
+      "sourceWord": "前",
+      "key": "w522"
+    },
+    {
+      "sourceId": "523",
+      "sourceWord": "後ろ",
+      "key": "w523"
+    },
+    {
+      "sourceId": "524",
+      "sourceWord": "右",
+      "key": "w524"
+    },
+    {
+      "sourceId": "525",
+      "sourceWord": "左",
+      "key": "w525"
+    },
+    {
+      "sourceId": "526",
+      "sourceWord": "中",
+      "key": "w526"
+    },
+    {
+      "sourceId": "527",
+      "sourceWord": "外",
+      "key": "w527"
+    },
+    {
+      "sourceId": "528",
+      "sourceWord": "隣",
+      "key": "w528"
+    },
+    {
+      "sourceId": "529",
+      "sourceWord": "近く",
+      "key": "w529"
+    },
+    {
+      "sourceId": "530",
+      "sourceWord": "間",
+      "key": "w530"
+    },
+    {
+      "sourceId": "531",
+      "sourceWord": "など",
+      "key": "w531"
+    },
+    {
+      "sourceId": "534",
+      "sourceWord": "どうもすみません。",
+      "key": "w534"
+    },
+    {
+      "sourceId": "5651",
+      "sourceWord": "エーティーエム（ATM）",
+      "key": "w5651"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "502",
+      "sourceWord": "フィルム",
+      "reason": "旧版胶卷词，第二版交叉表不列。"
+    },
+    {
+      "sourceId": "533",
+      "sourceWord": "～段目",
+      "reason": "旧版货架定位表达，第二版对话采用一番下。"
+    },
+    {
+      "sourceId": "535",
+      "sourceWord": "チリソース",
+      "reason": "旧版对话商品，第二版改为ナンプラー。"
+    },
+    {
+      "sourceId": "536",
+      "sourceWord": "奥",
+      "reason": "旧版对话位置词，第二版本课不列。"
+    },
+    {
+      "sourceId": "537",
+      "sourceWord": "スパイス・コーナー",
+      "reason": "旧版对话货区名称，第二版采用コーナー。"
+    }
+  ],
+  "secondaryAdditions": [
+    "fish-sauce",
+    "corner",
+    "bottom",
+    "tokyo-disneyland",
+    "asia-store",
+    "ya"
+  ],
+  "finalCount": 51
+}

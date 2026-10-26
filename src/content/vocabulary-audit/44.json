@@ -1,0 +1,222 @@
+{
+  "lessonId": 44,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/44.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 39,
+  "entries": [
+    {
+      "sourceId": "1375",
+      "sourceWord": "細い",
+      "key": "w1375"
+    },
+    {
+      "sourceId": "1376",
+      "sourceWord": "太い",
+      "key": "w1376"
+    },
+    {
+      "sourceId": "1593",
+      "sourceWord": "危険な",
+      "key": "w1593"
+    },
+    {
+      "sourceId": "1676",
+      "sourceWord": "厚い",
+      "key": "w1676"
+    },
+    {
+      "sourceId": "1677",
+      "sourceWord": "薄い",
+      "key": "w1677"
+    },
+    {
+      "sourceId": "1740",
+      "sourceWord": "泣きます",
+      "key": "w1740"
+    },
+    {
+      "sourceId": "1741",
+      "sourceWord": "笑います",
+      "key": "w1741"
+    },
+    {
+      "sourceId": "1742",
+      "sourceWord": "乾きます",
+      "key": "w1742"
+    },
+    {
+      "sourceId": "1743",
+      "sourceWord": "濡れます",
+      "key": "w1743"
+    },
+    {
+      "sourceId": "1744",
+      "sourceWord": "滑ります",
+      "key": "w1744"
+    },
+    {
+      "sourceId": "1745",
+      "sourceWord": "［事故が］起きます",
+      "key": "w1745"
+    },
+    {
+      "sourceId": "1746",
+      "sourceWord": "調節します",
+      "key": "w1746"
+    },
+    {
+      "sourceId": "1747",
+      "sourceWord": "安全な",
+      "key": "w1747"
+    },
+    {
+      "sourceId": "1750",
+      "sourceWord": "濃い",
+      "key": "w1750"
+    },
+    {
+      "sourceId": "1751",
+      "sourceWord": "薄い",
+      "key": "w1677"
+    },
+    {
+      "sourceId": "1752",
+      "sourceWord": "空気",
+      "key": "w1752"
+    },
+    {
+      "sourceId": "1753",
+      "sourceWord": "涙",
+      "key": "w1753"
+    },
+    {
+      "sourceId": "1754",
+      "sourceWord": "和食",
+      "key": "w1754"
+    },
+    {
+      "sourceId": "1755",
+      "sourceWord": "洋食",
+      "key": "w1755"
+    },
+    {
+      "sourceId": "1756",
+      "sourceWord": "おかず",
+      "key": "w1756"
+    },
+    {
+      "sourceId": "1757",
+      "sourceWord": "量",
+      "key": "w1757"
+    },
+    {
+      "sourceId": "1758",
+      "sourceWord": "～倍",
+      "key": "w1758"
+    },
+    {
+      "sourceId": "1760",
+      "sourceWord": "シングル",
+      "key": "w1760"
+    },
+    {
+      "sourceId": "1761",
+      "sourceWord": "ツイン",
+      "key": "w1761"
+    },
+    {
+      "sourceId": "1763",
+      "sourceWord": "洗濯物",
+      "key": "w1763"
+    },
+    {
+      "sourceId": "1765",
+      "sourceWord": "どうなさいますか。",
+      "key": "w1765"
+    },
+    {
+      "sourceId": "1766",
+      "sourceWord": "カット",
+      "key": "w1766"
+    },
+    {
+      "sourceId": "1767",
+      "sourceWord": "シャンプー",
+      "key": "w1767"
+    },
+    {
+      "sourceId": "1768",
+      "sourceWord": "どういう風になさいますか。",
+      "key": "w1768"
+    },
+    {
+      "sourceId": "1769",
+      "sourceWord": "ショート",
+      "key": "w1769"
+    },
+    {
+      "sourceId": "1770",
+      "sourceWord": "みたいにしてください。",
+      "key": "w1770"
+    },
+    {
+      "sourceId": "1771",
+      "sourceWord": "これでよろしいでしょうか。",
+      "key": "w1771"
+    },
+    {
+      "sourceId": "1772",
+      "sourceWord": "どうもお疲れ様でした。",
+      "key": "w1772"
+    },
+    {
+      "sourceId": "2869",
+      "sourceWord": "DVD（ディーブイディー）",
+      "key": "w2869"
+    },
+    {
+      "sourceId": "3422",
+      "sourceWord": "眠ります",
+      "key": "w3422"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1748",
+      "sourceWord": "丁寧な",
+      "reason": "旧版礼貌程度词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1749",
+      "sourceWord": "細かい",
+      "reason": "旧版细节形容词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1762",
+      "sourceWord": "箪笥",
+      "reason": "旧版家具词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1764",
+      "sourceWord": "理由",
+      "reason": "第二版在第43课阅读词中列出。"
+    }
+  ],
+  "secondaryAdditions": [
+    "hiroshima",
+    "dislike",
+    "also",
+    "well",
+    "order",
+    "relieved",
+    "expression",
+    "example",
+    "separate",
+    "these",
+    "unlucky"
+  ],
+  "finalCount": 45
+}

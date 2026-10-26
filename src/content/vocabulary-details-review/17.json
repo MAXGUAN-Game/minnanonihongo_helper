@@ -1,0 +1,14 @@
+{
+  "lessonId": 17,
+  "model": "deepseek-flash",
+  "reviewedCount": 37,
+  "corrections": [
+    {
+      "id": "l17-w812",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「出張します」是する复合动词，表示主体出差，无宾语，属自动词，需补上自他属性。"
+    }
+  ]
+}

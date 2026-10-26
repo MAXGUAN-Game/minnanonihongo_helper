@@ -1,0 +1,208 @@
+{
+  "lessonId": 34,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/34.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 35,
+  "entries": [
+    {
+      "sourceId": "1273",
+      "sourceWord": "お客さん",
+      "key": "w1273"
+    },
+    {
+      "sourceId": "1366",
+      "sourceWord": "［歯を］磨きます",
+      "key": "w1366"
+    },
+    {
+      "sourceId": "1367",
+      "sourceWord": "［靴を］磨きます",
+      "key": "w1367"
+    },
+    {
+      "sourceId": "1368",
+      "sourceWord": "組み立てます",
+      "key": "w1368"
+    },
+    {
+      "sourceId": "1369",
+      "sourceWord": "折ります",
+      "key": "w1369"
+    },
+    {
+      "sourceId": "1370",
+      "sourceWord": "［に］気がつきます",
+      "key": "w1370"
+    },
+    {
+      "sourceId": "1371",
+      "sourceWord": "［醤油を］つけます",
+      "key": "w1371"
+    },
+    {
+      "sourceId": "1372",
+      "sourceWord": "［鍵が］見つかります",
+      "key": "w1372"
+    },
+    {
+      "sourceId": "1374",
+      "sourceWord": "質問します",
+      "key": "w1374"
+    },
+    {
+      "sourceId": "1378",
+      "sourceWord": "スポーツクラブ",
+      "key": "w1378"
+    },
+    {
+      "sourceId": "1382",
+      "sourceWord": "説明書",
+      "key": "w1382"
+    },
+    {
+      "sourceId": "1383",
+      "sourceWord": "図",
+      "key": "w1383"
+    },
+    {
+      "sourceId": "1384",
+      "sourceWord": "線",
+      "key": "w1384"
+    },
+    {
+      "sourceId": "1385",
+      "sourceWord": "矢印",
+      "key": "w1385"
+    },
+    {
+      "sourceId": "1386",
+      "sourceWord": "黒",
+      "key": "w1386"
+    },
+    {
+      "sourceId": "1387",
+      "sourceWord": "白",
+      "key": "w1387"
+    },
+    {
+      "sourceId": "1388",
+      "sourceWord": "赤",
+      "key": "w1388"
+    },
+    {
+      "sourceId": "1389",
+      "sourceWord": "青",
+      "key": "w1389"
+    },
+    {
+      "sourceId": "1390",
+      "sourceWord": "紺",
+      "key": "w1390"
+    },
+    {
+      "sourceId": "1391",
+      "sourceWord": "黄色",
+      "key": "w1391"
+    },
+    {
+      "sourceId": "1392",
+      "sourceWord": "茶色",
+      "key": "w1392"
+    },
+    {
+      "sourceId": "1393",
+      "sourceWord": "醤油",
+      "key": "w1393"
+    },
+    {
+      "sourceId": "1394",
+      "sourceWord": "ソ－ス",
+      "key": "w1394"
+    },
+    {
+      "sourceId": "1395",
+      "sourceWord": "～か～",
+      "key": "w1395"
+    },
+    {
+      "sourceId": "1396",
+      "sourceWord": "夕べ",
+      "key": "w1396"
+    },
+    {
+      "sourceId": "1397",
+      "sourceWord": "さっき",
+      "key": "w1397"
+    },
+    {
+      "sourceId": "1398",
+      "sourceWord": "茶道",
+      "key": "w1398"
+    },
+    {
+      "sourceId": "1399",
+      "sourceWord": "お茶をたてます",
+      "key": "w1399"
+    },
+    {
+      "sourceId": "1400",
+      "sourceWord": "先に",
+      "key": "w1400"
+    },
+    {
+      "sourceId": "1401",
+      "sourceWord": "載せます",
+      "key": "w1401"
+    },
+    {
+      "sourceId": "1402",
+      "sourceWord": "これでいいですか。",
+      "key": "w1402"
+    },
+    {
+      "sourceId": "1403",
+      "sourceWord": "苦い",
+      "key": "w1403"
+    },
+    {
+      "sourceId": "1827",
+      "sourceWord": "［傘を］さします",
+      "key": "w1827"
+    },
+    {
+      "sourceId": "2761",
+      "sourceWord": "城",
+      "key": "w2761"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1381",
+      "sourceWord": "シートベルト",
+      "reason": "旧版安全带词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "how",
+    "oyakodon",
+    "ingredients",
+    "servings",
+    "grams",
+    "pieces",
+    "onion",
+    "quarter",
+    "seasoning",
+    "appropriate-size",
+    "pot",
+    "fire",
+    "heat",
+    "cook",
+    "cooked",
+    "bowl",
+    "time-passes"
+  ],
+  "finalCount": 51
+}

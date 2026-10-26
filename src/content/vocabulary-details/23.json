@@ -1,0 +1,330 @@
+{
+  "l23-w1000": {
+    "romaji": "michi",
+    "attributes": [],
+    "explanation": "指供人行走的道路，也可引申为抽象的道路、途径。日常问路、描述路线时常用。",
+    "example": {
+      "jp": "この道をまっすぐ行ってください。",
+      "kana": "このみちをまっすぐいってください。",
+      "romaji": "kono michi o massugu itte kudasai.",
+      "zh": "请沿着这条路直走。"
+    }
+  },
+  "l23-v8": {
+    "romaji": "kōsaten",
+    "attributes": [],
+    "explanation": "指两条以上道路交叉的地方，尤指十字路口。常与「曲がる」「渡る」等动词搭配。",
+    "example": {
+      "jp": "次の交差点を右に曲がってください。",
+      "kana": "つぎのこうさてんをみぎにまがってください。",
+      "romaji": "tsugi no kōsaten o migi ni magatte kudasai.",
+      "zh": "请在下个十字路口右转。"
+    }
+  },
+  "l23-v9": {
+    "romaji": "shingō",
+    "attributes": [],
+    "explanation": "指交通信号灯，也泛指信号。常用「信号が青になる」「信号を渡る」等表达。",
+    "example": {
+      "jp": "信号が青になってから渡りましょう。",
+      "kana": "しんごうがあおになってからわたりましょう。",
+      "romaji": "shingō ga ao ni natte kara watarimashō.",
+      "zh": "等信号灯变绿后再过马路吧。"
+    }
+  },
+  "l23-w1003": {
+    "romaji": "kado",
+    "attributes": [],
+    "explanation": "指道路拐角或物体棱角。指路时常说「角を曲がる」，注意与「角（かく）」区分。",
+    "example": {
+      "jp": "あの角を左に曲がると駅です。",
+      "kana": "あのかどをひだりにまがるとえきです。",
+      "romaji": "ano kado o hidari ni magaru to eki desu.",
+      "zh": "在那个拐角左转就是车站。"
+    }
+  },
+  "l23-v10": {
+    "romaji": "hashi",
+    "attributes": [],
+    "explanation": "指架在水面或道路上供通行的桥。常用「橋を渡る」表示过桥。",
+    "example": {
+      "jp": "この橋を渡ると公園があります。",
+      "kana": "このはしをわたるとこうえんがあります。",
+      "romaji": "kono hashi o wataru to kōen ga arimasu.",
+      "zh": "过了这座桥有个公园。"
+    }
+  },
+  "l23-w1005": {
+    "romaji": "chūshajō",
+    "attributes": [],
+    "explanation": "指专门停放车辆的场所。常与「に車を止める」搭配使用。",
+    "example": {
+      "jp": "駐車場に車を止めました。",
+      "kana": "ちゅうしゃじょうにくるまをとめました。",
+      "romaji": "chūshajō ni kuruma o tomemashita.",
+      "zh": "把车停在了停车场。"
+    }
+  },
+  "l23-w1006": {
+    "romaji": "-me",
+    "attributes": [],
+    "explanation": "接在数词后表示顺序，相当于“第……”。如「一つ目」「二番目」「三回目」。",
+    "example": {
+      "jp": "駅の二つ目の角を曲がってください。",
+      "kana": "えきのふたつめのかどをまがってください。",
+      "romaji": "eki no futatsume no kado o magatte kudasai.",
+      "zh": "请在车站的第二个拐角转弯。"
+    }
+  },
+  "l23-w1009": {
+    "romaji": "tatemonó",
+    "attributes": [],
+    "explanation": "指房屋、大楼等建筑物。描述位置时常用「建物の前」「建物の中」等。",
+    "example": {
+      "jp": "あの白い建物が図書館です。",
+      "kana": "あのしろいたてものがとしょかんです。",
+      "romaji": "ano shiroi tatemonó ga toshokan desu.",
+      "zh": "那栋白色的建筑物是图书馆。"
+    }
+  },
+  "l23-w1084": {
+    "romaji": "oyu",
+    "attributes": [],
+    "explanation": "指热水，尤指用于洗澡、泡茶等的热水。常说「お湯を沸かす」「お湯に入る」。",
+    "example": {
+      "jp": "お湯を沸かしてコーヒーを飲みます。",
+      "kana": "おゆをわかしてこーひーをのみます。",
+      "romaji": "oyu o wakashite kōhī o nomimasu.",
+      "zh": "烧热水喝咖啡。"
+    }
+  },
+  "l23-w660": {
+    "romaji": "sabishii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示感到寂寞、孤单，也可形容地方冷清。主语可以是人，也可以是场所。",
+    "example": {
+      "jp": "一人で住むのは少し寂しいです。",
+      "kana": "ひとりですむのはすこしさびしいです。",
+      "romaji": "hitori de sumu no wa sukoshi sabishii desu.",
+      "zh": "一个人住有点寂寞。"
+    }
+  },
+  "l23-w694": {
+    "romaji": "magarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示转弯、拐弯，常与方向词「右へ」「左に」搭配。礼貌体为「曲がります」，普通体为「曲がる」。",
+    "example": {
+      "jp": "次の角を右へ曲がります。",
+      "kana": "つぎのかどをみぎへまがります。",
+      "romaji": "tsugi no kado o migi e magarimasu.",
+      "zh": "在下个拐角向右转。"
+    }
+  },
+  "l23-w891": {
+    "romaji": "nankaimo",
+    "attributes": [],
+    "explanation": "表示次数多，相当于“好几次”。常与过去时一起使用，强调反复发生。",
+    "example": {
+      "jp": "何回も同じ道を間違えました。",
+      "kana": "なんかいもおなじみちをまちがえました。",
+      "romaji": "nankaimo onaji michi o machigaemashita.",
+      "zh": "好几次走错了同一条路。"
+    }
+  },
+  "l23-w982": {
+    "romaji": "kikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「聞く」表示向人询问、打听，常与「先生に」「道を」等搭配；也可表示听声音，需根据上下文区分。",
+    "example": {
+      "jp": "分からないことを先生に聞きます。",
+      "kana": "わからないことをせんせいにききます。",
+      "romaji": "wakaranai koto o sensei ni kikimasu.",
+      "zh": "不懂的事情问老师。"
+    }
+  },
+  "l23-v2": {
+    "romaji": "mawashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「回す」表示使某物旋转或转动，如转动把手、旋钮等；与自动词「回る」相对，需带宾语。",
+    "example": {
+      "jp": "つまみを右に回します。",
+      "kana": "つまみをみぎにまわします。",
+      "romaji": "tsumami o migi ni mawashimasu.",
+      "zh": "把旋钮向右转。"
+    }
+  },
+  "l23-v3": {
+    "romaji": "hikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「引く」表示拉、拽某物，如拉门、拉绳子；也可用于拉手等。注意与「押す」（推）方向相反。",
+    "example": {
+      "jp": "ドアを引いて開けます。",
+      "kana": "どあをひいてあけます。",
+      "romaji": "doa o hiite akemasu.",
+      "zh": "拉开门。"
+    }
+  },
+  "l23-v4": {
+    "romaji": "kaemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「変える」表示改变某事物，如改变计划、改变颜色等；需带宾语，与自动词「変わる」相对。",
+    "example": {
+      "jp": "予定を変えます。",
+      "kana": "よていをかえます。",
+      "romaji": "yotei o kaemasu.",
+      "zh": "改变计划。"
+    }
+  },
+  "l23-v5": {
+    "romaji": "sawarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「触る」表示接触、触摸某物，常用「～に触る」；也可表示触碰（引起反应），需注意助词。",
+    "example": {
+      "jp": "このボタンに触らないでください。",
+      "kana": "このぼたんにさわらないでください。",
+      "romaji": "kono botan ni sawaranaide kudasai.",
+      "zh": "请不要碰这个按钮。"
+    }
+  },
+  "l23-w987": {
+    "romaji": "demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「出る」表示出来、出现，如找零出来、结果出来等；常与「お釣りが」等搭配，强调自动出现。",
+    "example": {
+      "jp": "お釣りがたくさん出ました。",
+      "kana": "おつりがたくさんでました。",
+      "romaji": "otsuri ga takusan demashita.",
+      "zh": "找了很多零钱。"
+    }
+  },
+  "l23-w989": {
+    "romaji": "arukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「歩く」表示步行、走路，常与「道を」等表示经过的场所搭配；强调用脚行走。",
+    "example": {
+      "jp": "駅まで道を歩きます。",
+      "kana": "えきまでみちをあるきます。",
+      "romaji": "eki made michi o arukimasu.",
+      "zh": "走路到车站。"
+    }
+  },
+  "l23-w990": {
+    "romaji": "watarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「渡る」表示渡过、通过（桥、马路等），常与「橋を」「道を」等搭配；强调从一侧到另一侧。",
+    "example": {
+      "jp": "この橋を渡ります。",
+      "kana": "このはしをわたります。",
+      "romaji": "kono hashi o watarimasu.",
+      "zh": "过这座桥。"
+    }
+  },
+  "l23-w995": {
+    "romaji": "saizu",
+    "attributes": [],
+    "explanation": "「サイズ」是外来语，表示尺寸、大小，常用于衣服、鞋子等；可说「サイズが合う」。",
+    "example": {
+      "jp": "この靴のサイズは大きすぎます。",
+      "kana": "このくつのさいずはおおきすぎます。",
+      "romaji": "kono kutsu no saizu wa ookisugimasu.",
+      "zh": "这双鞋的尺寸太大了。"
+    }
+  },
+  "l23-w996": {
+    "romaji": "oto",
+    "attributes": [],
+    "explanation": "「音」指声音，常指物体发出的响声；与「声」（人声）不同，需注意区分。",
+    "example": {
+      "jp": "変な音が聞こえます。",
+      "kana": "へんなおとがきこえます。",
+      "romaji": "hen na oto ga kikoemasu.",
+      "zh": "听到奇怪的声音。"
+    }
+  },
+  "l23-w999": {
+    "romaji": "koshou",
+    "attributes": [],
+    "explanation": "「故障」表示机器、设备等发生故障，常用「故障する」或「故障です」；多用于电器、机械。",
+    "example": {
+      "jp": "エアコンが故障しました。",
+      "kana": "えあこんがこしょうしました。",
+      "romaji": "eakon ga koshou shimashita.",
+      "zh": "空调坏了。"
+    }
+  },
+  "l23-shotoku": {
+    "romaji": "Shoutoku Taishi",
+    "attributes": [],
+    "explanation": "「聖徳太子」是日本飞鸟时代的政治家，制定十七条宪法；作为专有名词，常用于历史话题。",
+    "example": {
+      "jp": "聖徳太子は十七条の憲法を作りました。",
+      "kana": "しょうとくたいしはじゅうしちじょうのけんぽうをつくりました。",
+      "romaji": "Shoutoku Taishi wa juushichijou no kenpou o tsukurimashita.",
+      "zh": "圣德太子制定了十七条宪法。"
+    }
+  },
+  "l23-horyuji": {
+    "romaji": "Hōryūji",
+    "attributes": [],
+    "explanation": "奈良县著名的佛教寺院，也是日本最古老的木结构建筑群之一。作为专有名词通常直接使用汉字，口语中读作「ほうりゅうじ」，注意长音。",
+    "example": {
+      "jp": "法隆寺は奈良県にあります。",
+      "kana": "ほうりゅうじはならけんにあります。",
+      "romaji": "Hōryūji wa Nara-ken ni arimasu.",
+      "zh": "法隆寺在奈良县。"
+    }
+  },
+  "l23-genki-tea": {
+    "romaji": "Genkichа",
+    "attributes": [],
+    "explanation": "教材中出现的商品名，指一种名为“元气茶”的茶饮。作为专有名词按名称整体记忆，不拆开解释字面意思。",
+    "example": {
+      "jp": "この元気茶はとても人気があります。",
+      "kana": "このげんきちゃはとてもにんきがあります。",
+      "romaji": "kono genkichа wa totemo ninki ga arimasu.",
+      "zh": "这款元气茶非常受欢迎。"
+    }
+  },
+  "l23-honda-station": {
+    "romaji": "Honda-eki",
+    "attributes": [],
+    "explanation": "教材中的车站名，由姓氏「本田」加「駅」构成。专有名词，读作「ほんだえき」，注意「本」在此读ほん。",
+    "example": {
+      "jp": "本田駅で友だちを待っています。",
+      "kana": "ほんだえきでともだちをまっています。",
+      "romaji": "Honda-eki de tomodachi o matte imasu.",
+      "zh": "我正在本田站等朋友。"
+    }
+  },
+  "l23-library-stop": {
+    "romaji": "Toshokan-mae",
+    "attributes": [],
+    "explanation": "教材中的车站名，意为“图书馆前”，由「図書館」加「前」构成。作为站名整体使用，读作「としょかんまえ」。",
+    "example": {
+      "jp": "図書館前でバスを降ります。",
+      "kana": "としょかんまえでばすをります。",
+      "romaji": "Toshokan-mae de basu o orimasu.",
+      "zh": "在图书馆前下车。"
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "lessonId": 29,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/29.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源41条，排除0条旧版或跨课条目，合并同形同义项并补入第二来源，最终53条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/29.json。"
+  ],
+  "words": [
+    {
+      "key": "w1169",
+      "word": "［ドアが］開きます",
+      "reading": "［どあが］あきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "开着；打开（门，自发状态）"
+    },
+    {
+      "key": "w1170",
+      "word": "［ドアが］閉まります",
+      "reading": "［どあが］しまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "关上（门，自发状态）"
+    },
+    {
+      "key": "w1171",
+      "word": "［電気が］つきます",
+      "reading": "［でんきが］つきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "亮起（灯）"
+    },
+    {
+      "key": "w1172",
+      "word": "［電気が］消えます",
+      "reading": "［でんきが］きえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "熄灭（灯）"
+    },
+    {
+      "key": "w1175",
+      "word": "［椅子が］壊れます",
+      "reading": "［いすが］こわれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "坏掉（椅子）"
+    },
+    {
+      "key": "w1176",
+      "word": "［グラスが］割れます",
+      "reading": "［ぐらすが］われます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "破碎（玻璃杯）"
+    },
+    {
+      "key": "w1177",
+      "word": "［枝が］折れます",
+      "reading": "［えだが］おれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "折断（树枝）"
+    },
+    {
+      "key": "w1178",
+      "word": "［紙が］破れます",
+      "reading": "［かみが］やぶれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "撕破（纸）"
+    },
+    {
+      "key": "w1179",
+      "word": "［服が］汚れます",
+      "reading": "［ふくが］よごれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "变脏（衣服）"
+    },
+    {
+      "key": "w1180",
+      "word": "［ポケットが］付きます",
+      "reading": "［ぽけっとが］つきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "附着；带有（口袋）"
+    },
+    {
+      "key": "w1181",
+      "word": "［ボタンが］外れます",
+      "reading": "［ぼたんが］はずれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "脱落（纽扣）"
+    },
+    {
+      "key": "w1182",
+      "word": "［車が］止まります",
+      "reading": "［くるまが］とまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "停止（车）"
+    },
+    {
+      "key": "w1183",
+      "word": "間違えます",
+      "reading": "まちがえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "弄错"
+    },
+    {
+      "key": "w1184",
+      "word": "落とします",
+      "reading": "おとします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "掉落；遗失"
+    },
+    {
+      "key": "w1185",
+      "word": "［鍵が］掛かります",
+      "reading": "［かぎが］かかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "锁上（锁）"
+    },
+    {
+      "key": "w1186",
+      "word": "お皿",
+      "reading": "おさら",
+      "partOfSpeech": "名词",
+      "meaning": "盘子"
+    },
+    {
+      "key": "w1187",
+      "word": "お茶碗",
+      "reading": "おちゃわん",
+      "partOfSpeech": "名词",
+      "meaning": "饭碗"
+    },
+    {
+      "key": "w1188",
+      "word": "コップ",
+      "reading": "こっぷ",
+      "partOfSpeech": "名词",
+      "meaning": "杯子"
+    },
+    {
+      "key": "w1189",
+      "word": "ガラス",
+      "reading": "がらす",
+      "partOfSpeech": "名词",
+      "meaning": "玻璃"
+    },
+    {
+      "key": "w1190",
+      "word": "袋",
+      "reading": "ふくろ",
+      "partOfSpeech": "名词",
+      "meaning": "袋子"
+    },
+    {
+      "key": "w1192",
+      "word": "枝",
+      "reading": "えだ",
+      "partOfSpeech": "名词",
+      "meaning": "树枝"
+    },
+    {
+      "key": "w1193",
+      "word": "駅員",
+      "reading": "えきいん",
+      "partOfSpeech": "名词",
+      "meaning": "车站工作人员"
+    },
+    {
+      "key": "w1194",
+      "word": "この辺",
+      "reading": "このへん",
+      "partOfSpeech": "名词",
+      "meaning": "这一带"
+    },
+    {
+      "key": "w1195",
+      "word": "～辺",
+      "reading": "～へん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……附近"
+    },
+    {
+      "key": "w1196",
+      "word": "このくらい",
+      "reading": "このくらい",
+      "partOfSpeech": "名词",
+      "meaning": "这么大；这种程度"
+    },
+    {
+      "key": "w1197",
+      "word": "お先にどうぞ",
+      "reading": "おさきにどうぞ",
+      "partOfSpeech": "固定表达",
+      "meaning": "您先请"
+    },
+    {
+      "key": "w1198",
+      "word": "ああ、よかった",
+      "reading": "ああ、よかった",
+      "partOfSpeech": "固定表达",
+      "meaning": "啊，太好了"
+    },
+    {
+      "key": "w1199",
+      "word": "今の電車",
+      "reading": "いまのでんしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "刚才那班电车"
+    },
+    {
+      "key": "w1200",
+      "word": "忘れ物",
+      "reading": "わすれもの",
+      "partOfSpeech": "名词",
+      "meaning": "遗忘的物品"
+    },
+    {
+      "key": "w1201",
+      "word": "～側",
+      "reading": "～がわ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……侧"
+    },
+    {
+      "key": "w1202",
+      "word": "ポケット",
+      "reading": "ぽけっと",
+      "partOfSpeech": "名词",
+      "meaning": "口袋"
+    },
+    {
+      "key": "w1203",
+      "word": "覚えていません",
+      "reading": "おぼえていません",
+      "partOfSpeech": "固定表达",
+      "meaning": "不记得了"
+    },
+    {
+      "key": "w1204",
+      "word": "網棚",
+      "reading": "あみだな",
+      "partOfSpeech": "名词",
+      "meaning": "行李架"
+    },
+    {
+      "key": "w1205",
+      "word": "確か",
+      "reading": "たしか",
+      "partOfSpeech": "表达",
+      "meaning": "确实；大概记得"
+    },
+    {
+      "key": "w1214",
+      "word": "片づけます",
+      "reading": "かたづけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "收拾整理"
+    },
+    {
+      "key": "w1240",
+      "word": "交番",
+      "reading": "こうばん",
+      "partOfSpeech": "名词",
+      "meaning": "派出所"
+    },
+    {
+      "key": "w1534",
+      "word": "書類",
+      "reading": "しょるい",
+      "partOfSpeech": "名词",
+      "meaning": "文件"
+    },
+    {
+      "key": "w1605",
+      "word": "返事",
+      "reading": "へんじ",
+      "partOfSpeech": "名词",
+      "meaning": "答复"
+    },
+    {
+      "key": "w1638",
+      "word": "取り替えます",
+      "reading": "とりかえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "更换"
+    },
+    {
+      "key": "w3811",
+      "word": "拭きます",
+      "reading": "ふきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "擦拭"
+    },
+    {
+      "key": "w941",
+      "word": "スピーチ",
+      "reading": "すぴーち",
+      "partOfSpeech": "名词",
+      "meaning": "演讲"
+    },
+    {
+      "key": "genji",
+      "word": "源氏物語",
+      "reading": "げんじものがたり",
+      "partOfSpeech": "专有名词",
+      "meaning": "《源氏物语》"
+    },
+    {
+      "key": "shinjuku",
+      "word": "新宿",
+      "reading": "しんじゅく",
+      "partOfSpeech": "专有名词",
+      "meaning": "新宿"
+    },
+    {
+      "key": "earthquake",
+      "word": "地震",
+      "reading": "じしん",
+      "partOfSpeech": "名词",
+      "meaning": "地震"
+    },
+    {
+      "key": "wall",
+      "word": "壁",
+      "reading": "かべ",
+      "partOfSpeech": "名词",
+      "meaning": "墙壁"
+    },
+    {
+      "key": "needle",
+      "word": "針",
+      "reading": "はり",
+      "partOfSpeech": "名词",
+      "meaning": "针；指针"
+    },
+    {
+      "key": "point",
+      "word": "指します",
+      "reading": "さします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "指向"
+    },
+    {
+      "key": "station-front",
+      "word": "駅前",
+      "reading": "えきまえ",
+      "partOfSpeech": "名词",
+      "meaning": "车站前"
+    },
+    {
+      "key": "fall",
+      "word": "倒れます",
+      "reading": "たおれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "倒下"
+    },
+    {
+      "key": "west",
+      "word": "西",
+      "reading": "にし",
+      "partOfSpeech": "名词",
+      "meaning": "西方"
+    },
+    {
+      "key": "direction",
+      "word": "～の方",
+      "reading": "～のほう",
+      "partOfSpeech": "表达",
+      "meaning": "……方向"
+    },
+    {
+      "key": "burn",
+      "word": "燃えます",
+      "reading": "もえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "燃烧"
+    },
+    {
+      "key": "reporter",
+      "word": "レポーター",
+      "reading": "れぽーたー",
+      "partOfSpeech": "名词",
+      "meaning": "记者"
+    }
+  ]
+}

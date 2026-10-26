@@ -1,0 +1,14 @@
+{
+  "lessonId": 12,
+  "model": "deepseek-flash",
+  "reviewedCount": 56,
+  "corrections": [
+    {
+      "id": "l12-w646",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「疲れる」是自动词，表示主体自身疲劳，无宾语；「疲れました」为其礼貌形，须标自动词。"
+    }
+  ]
+}

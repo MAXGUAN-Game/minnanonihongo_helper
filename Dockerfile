@@ -21,6 +21,8 @@ COPY package.json package-lock.json ./
 RUN npm ci --include=dev --no-audit --no-fund
 COPY tsconfig.json vite.config.ts index.html ./
 COPY src ./src
+COPY public ./public
+COPY scripts/validate-vocabulary-details.ts ./scripts/validate-vocabulary-details.ts
 RUN npm run build
 
 FROM node:24-bookworm-slim AS runtime
@@ -40,6 +42,9 @@ COPY --from=app-build /app/node_modules ./node_modules
 COPY --from=app-build /app/src ./src
 COPY --from=app-build /app/dist ./dist
 COPY scripts/setup-speech-linux.mjs ./scripts/setup-speech-linux.mjs
+COPY scripts/check-speech.mjs ./scripts/check-speech.mjs
+COPY scripts/check-progress-integrity.mjs ./scripts/check-progress-integrity.mjs
+COPY scripts/check-release-auth.mjs ./scripts/check-release-auth.mjs
 RUN mkdir -p /app/data && chown node:node /app/data
 USER node
 CMD ["node", "--use-env-proxy", "--import", "tsx", "src/server/index.ts"]

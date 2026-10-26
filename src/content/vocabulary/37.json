@@ -1,0 +1,457 @@
+{
+  "lessonId": 37,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/37.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源47条，排除9条旧版或跨课条目，合并同形同义项并补入第二来源，最终63条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/37.json。",
+    "第二来源误写眠り姫；按出版方第二版阅读标题核对为眠り猫。核对资料：https://www.3anet.co.jp/np/secure/0-0001-03-240011/0-0001-03-240011-1.pdf"
+  ],
+  "words": [
+    {
+      "key": "w1274",
+      "word": "誰か",
+      "reading": "だれか",
+      "partOfSpeech": "名词",
+      "meaning": "某个人"
+    },
+    {
+      "key": "w1478",
+      "word": "褒めます",
+      "reading": "ほめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "表扬"
+    },
+    {
+      "key": "w1479",
+      "word": "叱ります",
+      "reading": "しかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "责骂"
+    },
+    {
+      "key": "w1480",
+      "word": "誘います",
+      "reading": "さそいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "邀请"
+    },
+    {
+      "key": "w1482",
+      "word": "招待します",
+      "reading": "しょうたいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "招待；邀请"
+    },
+    {
+      "key": "w1483",
+      "word": "頼みます",
+      "reading": "たのみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "请求"
+    },
+    {
+      "key": "w1484",
+      "word": "注意します",
+      "reading": "ちゅういします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "提醒；警告"
+    },
+    {
+      "key": "w1485",
+      "word": "とります",
+      "reading": "とります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "偷取"
+    },
+    {
+      "key": "w1486",
+      "word": "踏みます",
+      "reading": "ふみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "踩"
+    },
+    {
+      "key": "w1487",
+      "word": "壊します",
+      "reading": "こわします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "弄坏"
+    },
+    {
+      "key": "w1488",
+      "word": "汚します",
+      "reading": "よごします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "弄脏"
+    },
+    {
+      "key": "w1489",
+      "word": "行います",
+      "reading": "おこないます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "举行；实施"
+    },
+    {
+      "key": "w1490",
+      "word": "輸出します",
+      "reading": "ゆしゅつします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "出口"
+    },
+    {
+      "key": "w1491",
+      "word": "輸入します",
+      "reading": "ゆにゅうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "进口"
+    },
+    {
+      "key": "w1492",
+      "word": "翻訳します",
+      "reading": "ほんやくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "翻译"
+    },
+    {
+      "key": "w1493",
+      "word": "発明します",
+      "reading": "はつめいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "发明"
+    },
+    {
+      "key": "w1494",
+      "word": "発見します",
+      "reading": "はっけんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "发现"
+    },
+    {
+      "key": "w1496",
+      "word": "米",
+      "reading": "こめ",
+      "partOfSpeech": "名词",
+      "meaning": "大米"
+    },
+    {
+      "key": "w1497",
+      "word": "麦",
+      "reading": "むぎ",
+      "partOfSpeech": "名词",
+      "meaning": "麦子"
+    },
+    {
+      "key": "w1498",
+      "word": "石油",
+      "reading": "せきゆ",
+      "partOfSpeech": "名词",
+      "meaning": "石油"
+    },
+    {
+      "key": "w1499",
+      "word": "原料",
+      "reading": "げんりょう",
+      "partOfSpeech": "名词",
+      "meaning": "原料"
+    },
+    {
+      "key": "w1500",
+      "word": "デート",
+      "reading": "でーと",
+      "partOfSpeech": "名词",
+      "meaning": "约会"
+    },
+    {
+      "key": "w1501",
+      "word": "泥棒",
+      "reading": "どろぼう",
+      "partOfSpeech": "名词",
+      "meaning": "小偷"
+    },
+    {
+      "key": "w1502",
+      "word": "警官",
+      "reading": "けいかん",
+      "partOfSpeech": "名词",
+      "meaning": "警察"
+    },
+    {
+      "key": "w1506",
+      "word": "世界中",
+      "reading": "せかいじゅう",
+      "partOfSpeech": "名词",
+      "meaning": "全世界"
+    },
+    {
+      "key": "w1507",
+      "word": "～中",
+      "reading": "～じゅう",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "整个……"
+    },
+    {
+      "key": "w1508",
+      "word": "～によって",
+      "reading": "～によって",
+      "partOfSpeech": "表达",
+      "meaning": "由……（行为者）"
+    },
+    {
+      "key": "w1509",
+      "word": "よかったですね",
+      "reading": "よかったですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "太好了啊"
+    },
+    {
+      "key": "w1549",
+      "word": "［うちが］焼けます",
+      "reading": "［うちが］やけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "烧毁（房屋）"
+    },
+    {
+      "key": "w1620",
+      "word": "キロ",
+      "reading": "きろ",
+      "partOfSpeech": "名词",
+      "meaning": "千克；千米"
+    },
+    {
+      "key": "w2636",
+      "word": "金色",
+      "reading": "きんいろ",
+      "partOfSpeech": "名词",
+      "meaning": "金色"
+    },
+    {
+      "key": "w2801",
+      "word": "その後",
+      "reading": "そのご",
+      "partOfSpeech": "表达",
+      "meaning": "其后"
+    },
+    {
+      "key": "w3191",
+      "word": "インスタントラーメン",
+      "reading": "いんすたんとらーめん",
+      "partOfSpeech": "名词",
+      "meaning": "方便面"
+    },
+    {
+      "key": "w3198",
+      "word": "美しい",
+      "reading": "うつくしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "美丽的"
+    },
+    {
+      "key": "w3331",
+      "word": "世紀",
+      "reading": "せいき",
+      "partOfSpeech": "名词",
+      "meaning": "世纪"
+    },
+    {
+      "key": "w3335",
+      "word": "世界遺産",
+      "reading": "せかいいさん",
+      "partOfSpeech": "名词",
+      "meaning": "世界遗产"
+    },
+    {
+      "key": "w3475",
+      "word": "本物",
+      "reading": "ほんもの",
+      "partOfSpeech": "名词",
+      "meaning": "真品"
+    },
+    {
+      "key": "w5645",
+      "word": "金",
+      "reading": "きん",
+      "partOfSpeech": "名词",
+      "meaning": "黄金"
+    },
+    {
+      "key": "everyone",
+      "word": "皆様",
+      "reading": "みなさま",
+      "partOfSpeech": "名词",
+      "meaning": "各位（敬称）"
+    },
+    {
+      "key": "language",
+      "word": "何語",
+      "reading": "なにご",
+      "partOfSpeech": "疑问词",
+      "meaning": "什么语言"
+    },
+    {
+      "key": "one-of",
+      "word": "～の一つ",
+      "reading": "～のひとつ",
+      "partOfSpeech": "表达",
+      "meaning": "……之一"
+    },
+    {
+      "key": "olympics",
+      "word": "オリンピック",
+      "reading": "おりんぴっく",
+      "partOfSpeech": "专有名词",
+      "meaning": "奥林匹克运动会"
+    },
+    {
+      "key": "world-cup",
+      "word": "ワールドカップ",
+      "reading": "わーるどかっぷ",
+      "partOfSpeech": "专有名词",
+      "meaning": "世界杯"
+    },
+    {
+      "key": "todaiji",
+      "word": "東大寺",
+      "reading": "とうだいじ",
+      "partOfSpeech": "专有名词",
+      "meaning": "东大寺"
+    },
+    {
+      "key": "buddha",
+      "word": "大仏",
+      "reading": "だいぶつ",
+      "partOfSpeech": "名词",
+      "meaning": "大佛"
+    },
+    {
+      "key": "edo",
+      "word": "江戸時代",
+      "reading": "えどじだい",
+      "partOfSpeech": "专有名词",
+      "meaning": "江户时代"
+    },
+    {
+      "key": "portugal",
+      "word": "ポルトガル",
+      "reading": "ぽるとがる",
+      "partOfSpeech": "专有名词",
+      "meaning": "葡萄牙"
+    },
+    {
+      "key": "saudi",
+      "word": "サウジアラビア",
+      "reading": "さうじあらびあ",
+      "partOfSpeech": "专有名词",
+      "meaning": "沙特阿拉伯"
+    },
+    {
+      "key": "russia",
+      "word": "ロシア",
+      "reading": "ろしあ",
+      "partOfSpeech": "专有名词",
+      "meaning": "俄罗斯"
+    },
+    {
+      "key": "toshogu",
+      "word": "東照宮",
+      "reading": "とうしょうぐう",
+      "partOfSpeech": "专有名词",
+      "meaning": "东照宫"
+    },
+    {
+      "key": "sleeping-cat",
+      "word": "眠り猫",
+      "reading": "ねむりねこ",
+      "partOfSpeech": "专有名词",
+      "meaning": "眠猫（东照宫雕刻）"
+    },
+    {
+      "key": "jingoro",
+      "word": "左甚五郎",
+      "reading": "ひだりじんごろう",
+      "partOfSpeech": "专有名词",
+      "meaning": "左甚五郎（匠人）"
+    },
+    {
+      "key": "splendid",
+      "word": "豪華な",
+      "reading": "ごうかな",
+      "partOfSpeech": "な形容词",
+      "meaning": "豪华的"
+    },
+    {
+      "key": "sculpture",
+      "word": "彫刻",
+      "reading": "ちょうこく",
+      "partOfSpeech": "名词",
+      "meaning": "雕刻"
+    },
+    {
+      "key": "legend",
+      "word": "言い伝え",
+      "reading": "いいつたえ",
+      "partOfSpeech": "名词",
+      "meaning": "传说"
+    },
+    {
+      "key": "sleep",
+      "word": "眠ります",
+      "reading": "ねむります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "睡眠"
+    },
+    {
+      "key": "carve",
+      "word": "彫ります",
+      "reading": "ほります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "雕刻"
+    },
+    {
+      "key": "companion",
+      "word": "仲間",
+      "reading": "なかま",
+      "partOfSpeech": "名词",
+      "meaning": "伙伴"
+    },
+    {
+      "key": "however",
+      "word": "しかし",
+      "reading": "しかし",
+      "partOfSpeech": "接续词",
+      "meaning": "但是"
+    },
+    {
+      "key": "after",
+      "word": "そのあと",
+      "reading": "そのあと",
+      "partOfSpeech": "表达",
+      "meaning": "那之后"
+    },
+    {
+      "key": "hard",
+      "word": "一生懸命",
+      "reading": "いっしょうけんめい",
+      "partOfSpeech": "副词",
+      "meaning": "拼命地；努力地"
+    },
+    {
+      "key": "mouse",
+      "word": "ねずみ",
+      "reading": "ねずみ",
+      "partOfSpeech": "名词",
+      "meaning": "老鼠"
+    },
+    {
+      "key": "not-one",
+      "word": "一匹もいません",
+      "reading": "いっぴきもいません",
+      "partOfSpeech": "固定表达",
+      "meaning": "一只也没有"
+    }
+  ]
+}

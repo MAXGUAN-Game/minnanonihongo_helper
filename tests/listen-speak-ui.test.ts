@@ -25,7 +25,7 @@ createRoot(document.getElementById('root')).render(<Harness/>);`;
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'nihongo-speaking-ui-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{ name: 'speaking-test', resolveId(id) { if (id === '/__speaking.tsx') return id; }, load(id) { if (id === '/__speaking.tsx') return harness; } }] });
   await vite.listen(); const address = vite.httpServer!.address();
   if (!address || typeof address === 'string') throw new Error('No test port');
@@ -41,7 +41,11 @@ async function setup() {
   await context.route('**/*', async route => new URL(route.request().url()).origin !== origin ? route.abort() : route.fallback());
   const page = await context.newPage(); page.setDefaultTimeout(6000);
   await page.route('**/__speaking-test', route => route.fulfill({ contentType: 'text/html', body: '<html lang="zh-CN"><head><title>表达练习</title></head><body><div id="root"></div><script type="module" src="/__speaking.tsx"></script></body></html>' }));
-  return { page, context, open: () => page.goto(`${origin}/__speaking-test`) };
+  await page.route('**/api/speaking/audio-settings', route => route.fulfill({ json: { provider: 'qwen', model: 'qwen3.8-omni-flash', workspaceId: '', hasApiKey: false } }));
+  return { page, context, open: async () => {
+    await page.goto(`${origin}/__speaking-test`);
+    await page.getByRole('button', { name: '打字练习', exact: true }).click();
+  } };
 }
 function assessment(input: { clientAssessmentId: string; text: string }) {
   return { id: input.clientAssessmentId, lessonId: 14, itemId: task.id, text: input.text, createdAt: new Date().toISOString(), source: 'deepseek', kind: 'expression', taskScore: 45, grammarScore: 28, vocabularyScore: 19, totalScore: 92, summaryZh: '意思表达清楚了。', corrections: [], reference: task.answer };
@@ -58,7 +62,7 @@ describe('speaking and recording history UI', () => {
       await page.getByRole('button', { name: '确认并评分' }).click();
       const details = page.locator('.expression-result details');
       await details.locator('summary').click();
-      await details.getByRole('button', { name: `朗读：${task.answer.jp}` }).click();
+      await details.getByRole('button', { name: '播放', exact: true }).click();
       const source = () => page.evaluate(() => (window as unknown as { practiceAudioSource: string | null }).practiceAudioSource);
       expect(await source()).toEqual(expect.any(String));
       await details.locator('summary').click();

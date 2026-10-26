@@ -1,0 +1,261 @@
+{
+  "lessonId": 49,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/49.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源27条，排除7条旧版或跨课条目，合并同形同义项并补入第二来源，最终35条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/49.json。",
+    "第二来源IPS細胞按标准学术表记规范为iPS細胞。ご存じです作为尊敬固定表达，不作为普通名词。"
+  ],
+  "words": [
+    {
+      "key": "w1514",
+      "word": "利用します",
+      "reading": "りようします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "利用"
+    },
+    {
+      "key": "w1870",
+      "word": "［会社に］勤めます",
+      "reading": "［かいしゃに］つとめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "任职（公司）"
+    },
+    {
+      "key": "w1872",
+      "word": "［いすに］掛けます",
+      "reading": "［いすに］かけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "坐（椅子）"
+    },
+    {
+      "key": "w1873",
+      "word": "過ごします",
+      "reading": "すごします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "度过"
+    },
+    {
+      "key": "w1875",
+      "word": "いらっしゃいます",
+      "reading": "いらっしゃいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "去；来；在（尊敬语）"
+    },
+    {
+      "key": "w1876",
+      "word": "召し上がります",
+      "reading": "めしあがります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "吃；喝（尊敬语）"
+    },
+    {
+      "key": "w1877",
+      "word": "おっしゃいます",
+      "reading": "おっしゃいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "说（尊敬语）"
+    },
+    {
+      "key": "w1878",
+      "word": "なさいます",
+      "reading": "なさいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "做（尊敬语）"
+    },
+    {
+      "key": "w1879",
+      "word": "ご覧になります",
+      "reading": "ごらんになります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "看（尊敬语）"
+    },
+    {
+      "key": "w1880",
+      "word": "ご存じです",
+      "reading": "ごぞんじです",
+      "partOfSpeech": "固定表达",
+      "meaning": "知道（尊敬表达）"
+    },
+    {
+      "key": "w1881",
+      "word": "挨拶",
+      "reading": "あいさつ",
+      "partOfSpeech": "名词",
+      "meaning": "问候"
+    },
+    {
+      "key": "w1883",
+      "word": "旅館",
+      "reading": "りょかん",
+      "partOfSpeech": "名词",
+      "meaning": "日式旅馆"
+    },
+    {
+      "key": "w1885",
+      "word": "バス停",
+      "reading": "ばすてい",
+      "partOfSpeech": "名词",
+      "meaning": "公交车站"
+    },
+    {
+      "key": "w1887",
+      "word": "～様",
+      "reading": "～さま",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……先生／女士（敬称）"
+    },
+    {
+      "key": "w1889",
+      "word": "たまに",
+      "reading": "たまに",
+      "partOfSpeech": "副词",
+      "meaning": "偶尔"
+    },
+    {
+      "key": "w1892",
+      "word": "～年～組",
+      "reading": "～ねん～くみ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……年级……班"
+    },
+    {
+      "key": "w1894",
+      "word": "［熱を］出します",
+      "reading": "［ねつを］だします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "发（烧）"
+    },
+    {
+      "key": "w1895",
+      "word": "よろしくお伝えください",
+      "reading": "よろしくおつたえください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请代我问好"
+    },
+    {
+      "key": "w1896",
+      "word": "失礼いたします",
+      "reading": "しつれいいたします",
+      "partOfSpeech": "固定表达",
+      "meaning": "告辞了（谦让表达）"
+    },
+    {
+      "key": "w2544",
+      "word": "奥様",
+      "reading": "おくさま",
+      "partOfSpeech": "名词",
+      "meaning": "夫人（敬称）"
+    },
+    {
+      "key": "anyone",
+      "word": "どなたでも",
+      "reading": "どなたでも",
+      "partOfSpeech": "表达",
+      "meaning": "任何人（敬语）"
+    },
+    {
+      "key": "called",
+      "word": "～といいます",
+      "reading": "～といいます",
+      "partOfSpeech": "表达",
+      "meaning": "称为……"
+    },
+    {
+      "key": "school",
+      "word": "ひまわり小学校",
+      "reading": "ひまわりしょうがっこう",
+      "partOfSpeech": "专有名词",
+      "meaning": "向日葵小学（教材学校名）"
+    },
+    {
+      "key": "yamanaka",
+      "word": "山中伸弥",
+      "reading": "やまなかしんや",
+      "partOfSpeech": "专有名词",
+      "meaning": "山中伸弥"
+    },
+    {
+      "key": "nobel",
+      "word": "ノーベル賞",
+      "reading": "のーべるしょう",
+      "partOfSpeech": "专有名词",
+      "meaning": "诺贝尔奖"
+    },
+    {
+      "key": "career",
+      "word": "経歴",
+      "reading": "けいれき",
+      "partOfSpeech": "名词",
+      "meaning": "经历；履历"
+    },
+    {
+      "key": "medical",
+      "word": "医学部",
+      "reading": "いがくぶ",
+      "partOfSpeech": "名词",
+      "meaning": "医学部"
+    },
+    {
+      "key": "aim",
+      "word": "目指します",
+      "reading": "めざします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "以……为目标"
+    },
+    {
+      "key": "advance",
+      "word": "進みます",
+      "reading": "すすみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "前进；进入（领域）"
+    },
+    {
+      "key": "ips",
+      "word": "iPS細胞",
+      "reading": "あいぴーえすさいぼう",
+      "partOfSpeech": "名词",
+      "meaning": "诱导多能干细胞"
+    },
+    {
+      "key": "develop",
+      "word": "開発します",
+      "reading": "かいはつします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "开发"
+    },
+    {
+      "key": "mouse",
+      "word": "マウス",
+      "reading": "まうす",
+      "partOfSpeech": "名词",
+      "meaning": "小鼠（实验用）"
+    },
+    {
+      "key": "human",
+      "word": "ヒト",
+      "reading": "ひと",
+      "partOfSpeech": "名词",
+      "meaning": "人类（生物学称呼）"
+    },
+    {
+      "key": "award",
+      "word": "受賞します",
+      "reading": "じゅしょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "获奖"
+    },
+    {
+      "key": "lecture",
+      "word": "講演会",
+      "reading": "こうえんかい",
+      "partOfSpeech": "名词",
+      "meaning": "演讲会"
+    }
+  ]
+}

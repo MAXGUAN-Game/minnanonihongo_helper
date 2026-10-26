@@ -1,0 +1,391 @@
+{
+  "l46-w1257": {
+    "romaji": "nyuugakushimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「入学します」是「入学する」的礼貌体，表示进入学校学习，通常用于大学、高中等教育机构。搭配如「大学に入学する」。注意与「入社します」（进入公司）区分。",
+    "example": {
+      "jp": "来年、大学に入学します。",
+      "kana": "らいねん、だいがくににゅうがくします。",
+      "romaji": "rainen, daigaku ni nyuugakushimasu.",
+      "zh": "明年上大学。"
+    }
+  },
+  "l46-w1258": {
+    "romaji": "sotsugyoushimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「卒業します」是「卒業する」的礼貌体，表示从学校毕业。常用「学校を卒業する」。也可引申为“摆脱某种状态”，如「借金を卒業する」。",
+    "example": {
+      "jp": "来月、大学を卒業します。",
+      "kana": "らいげつ、だいがくをそつぎょうします。",
+      "romaji": "raigetsu, daigaku o sotsugyoushimasu.",
+      "zh": "下个月大学毕业。"
+    }
+  },
+  "l46-w1550": {
+    "romaji": "[pan ga] yakemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「焼けます」是「焼ける」的礼貌体，自动词，表示面包等烤好了。强调自然结果，不强调人为动作。常与「パンが」搭配。",
+    "example": {
+      "jp": "パンがおいしそうに焼けました。",
+      "kana": "ぱんがおいしそうにやけました。",
+      "romaji": "pan ga oishisou ni yakemashita.",
+      "zh": "面包烤得看起来很好吃。"
+    }
+  },
+  "l46-w1551": {
+    "romaji": "[niku ga] yakemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「焼けます」是「焼ける」的礼貌体，自动词，表示肉等烤熟了。强调烤制的状态完成，不涉及谁烤的。常与「肉が」搭配。",
+    "example": {
+      "jp": "肉がちょうどよく焼けました。",
+      "kana": "にくがちょうどよくやけました。",
+      "romaji": "niku ga choudo yoku yakemashita.",
+      "zh": "肉烤得恰到好处。"
+    }
+  },
+  "l46-w1668": {
+    "romaji": "moushiwake arimasen",
+    "attributes": [],
+    "explanation": "「申し訳ありません」是正式道歉用语，表示非常抱歉，语气比「すみません」更郑重。常用于商务或对上级。可简化为「申し訳ない」。",
+    "example": {
+      "jp": "ご迷惑をかけて申し訳ありません。",
+      "kana": "ごめいわくをかけてもうしわけありません。",
+      "romaji": "gomeiwaku o kakete moushiwake arimasen.",
+      "zh": "给您添麻烦了，非常抱歉。"
+    }
+  },
+  "l46-w1798": {
+    "romaji": "yakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「焼きます」是「焼く」的礼貌体，他动词，表示烤、烧某物。需要宾语，如「パンを焼く」「肉を焼く」。与自动词「焼ける」相对。",
+    "example": {
+      "jp": "毎朝、パンを焼きます。",
+      "kana": "まいあさ、ぱんをやきます。",
+      "romaji": "maiasa, pan o yakimasu.",
+      "zh": "每天早上烤面包。"
+    }
+  },
+  "l46-w1799": {
+    "romaji": "watashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「渡します」是「渡す」的礼貌体，他动词，表示递交、交给某人某物。常用「人に物を渡す」。注意与「あげます」相比更强调亲手交付。",
+    "example": {
+      "jp": "先生にレポートを渡します。",
+      "kana": "せんせいにれぽーとをわたします。",
+      "romaji": "sensei ni repooto o watashimasu.",
+      "zh": "把报告交给老师。"
+    }
+  },
+  "l46-w1800": {
+    "romaji": "kaette kimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「帰って来ます」是「帰ってくる」的礼貌体，表示回来、返回。强调回到说话人所在的地方。常用「家に帰って来る」。",
+    "example": {
+      "jp": "父は明日、家に帰って来ます。",
+      "kana": "ちちはあした、いえにかえってきます。",
+      "romaji": "chichi wa ashita, ie ni kaette kimasu.",
+      "zh": "父亲明天回家来。"
+    }
+  },
+  "l46-w1801": {
+    "romaji": "[basu ga] demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「出ます」是「出る」的礼貌体，自动词，表示巴士等出发、开出。常与「バスが」搭配，强调从某地出发。也可表示离开房间等。",
+    "example": {
+      "jp": "バスは八時に出ます。",
+      "kana": "ばすははちじにでます。",
+      "romaji": "basu wa hachiji ni demasu.",
+      "zh": "巴士八点出发。"
+    }
+  },
+  "l46-w1802": {
+    "romaji": "rusu",
+    "attributes": [],
+    "explanation": "「留守」是名词，表示不在家、外出。常用「留守にする」（不在家）或「留守番」（看家）。注意不是动词。",
+    "example": {
+      "jp": "母は留守です。",
+      "kana": "はははるすです。",
+      "romaji": "haha wa rusu desu.",
+      "zh": "母亲不在家。"
+    }
+  },
+  "l46-w1803": {
+    "romaji": "takuhaibin",
+    "attributes": [],
+    "explanation": "「宅配便」是名词，表示快递、送货上门服务。常与「で送る」搭配，如「宅配便で送る」。指服务或包裹本身。",
+    "example": {
+      "jp": "荷物を宅配便で送ります。",
+      "kana": "にもつをたくはいびんでおくります。",
+      "romaji": "nimotsu o takuhaibin de okurimasu.",
+      "zh": "用快递寄行李。"
+    }
+  },
+  "l46-w1804": {
+    "romaji": "gen'in",
+    "attributes": [],
+    "explanation": "「原因」是名词，表示原因、起因。常用「～の原因」或「原因を調べる」。与「理由」相比更客观，多用于事故、现象等。",
+    "example": {
+      "jp": "事故の原因を調べています。",
+      "kana": "じこのげんいんをしらべています。",
+      "romaji": "jiko no gen'in o shirabete imasu.",
+      "zh": "正在调查事故的原因。"
+    }
+  },
+  "l46-w1809": {
+    "romaji": "kochira",
+    "attributes": [],
+    "explanation": "礼貌地指代自己这一方或自己所在的地方，常用于电话、接待等场合。也可用于指代说话人身边的事物，比「ここ」更郑重。",
+    "example": {
+      "jp": "こちらは山田さんです。",
+      "kana": "こちらはやまださんです。",
+      "romaji": "kochira wa yamada san desu.",
+      "zh": "这位是山田先生。"
+    }
+  },
+  "l46-w1810": {
+    "romaji": "~ no tokoro",
+    "attributes": [],
+    "explanation": "表示某人所在的地方或某物的附近，比「～の場所」更口语化。常与人物名词搭配，如「田中さんの所」。",
+    "example": {
+      "jp": "田中さんの所にいます。",
+      "kana": "たなかさんのところにいます。",
+      "romaji": "tanaka san no tokoro ni imasu.",
+      "zh": "我在田中那里。"
+    }
+  },
+  "l46-w1811": {
+    "romaji": "choudo",
+    "attributes": [],
+    "explanation": "表示时间、数量、程度等正好合适，常与「いい」「同じ」等词搭配。也可表示“恰好那时”，用于叙述偶然巧合。",
+    "example": {
+      "jp": "ちょうど今、出かけるところです。",
+      "kana": "ちょうどいま、でかけるところです。",
+      "romaji": "choudo ima, dekakeru tokoro desu.",
+      "zh": "我正好现在要出门。"
+    }
+  },
+  "l46-w1812": {
+    "romaji": "tatta ima",
+    "attributes": [],
+    "explanation": "表示动作或状态发生在极短时间之前，强调“刚刚”。比「今」更强调时间之近，常用于口语。",
+    "example": {
+      "jp": "たった今、帰ってきました。",
+      "kana": "たったいま、かえってきました。",
+      "romaji": "tatta ima, kaette kimashita.",
+      "zh": "刚刚回来。"
+    }
+  },
+  "l46-w1813": {
+    "romaji": "ima ii desu ka",
+    "attributes": [],
+    "explanation": "用于询问对方现在是否有空、是否方便交谈，是电话或拜访时的礼貌表达。省略主语，直接使用。",
+    "example": {
+      "jp": "課長、今いいですか。",
+      "kana": "かちょう、いまいいですか。",
+      "romaji": "kachou, ima ii desu ka.",
+      "zh": "科长，现在方便吗？"
+    }
+  },
+  "l46-w1814": {
+    "romaji": "gasu saabisu sentaa",
+    "attributes": [],
+    "explanation": "指提供燃气相关服务的机构或窗口，如报修、咨询等。是复合名词，日常会话中常简称为「ガスセンター」。",
+    "example": {
+      "jp": "ガスサービスセンターに電話してください。",
+      "kana": "がすさーびすせんたーにでんわしてください。",
+      "romaji": "gasu saabisu sentaa ni denwa shite kudasai.",
+      "zh": "请给燃气服务中心打电话。"
+    }
+  },
+  "l46-w1815": {
+    "romaji": "gasu renji",
+    "attributes": [],
+    "explanation": "指使用燃气加热的灶具，是厨房设备。外来语复合词，日常也常说「コンロ」。",
+    "example": {
+      "jp": "ガスレンジが壊れました。",
+      "kana": "がすれんじがこわれました。",
+      "romaji": "gasu renji ga kowaremashita.",
+      "zh": "燃气灶坏了。"
+    }
+  },
+  "l46-w1816": {
+    "romaji": "guai",
+    "attributes": [],
+    "explanation": "表示身体或事物的状态、情况，常用于询问或描述好坏。如「体の具合」「機械の具合」。",
+    "example": {
+      "jp": "体の具合はどうですか。",
+      "kana": "からだのぐあいはどうですか。",
+      "romaji": "karada no guai wa dou desu ka.",
+      "zh": "身体状况怎么样？"
+    }
+  },
+  "l46-w1817": {
+    "romaji": "dochira sama deshou ka",
+    "attributes": [],
+    "explanation": "电话或接待中礼貌地询问对方身份，意为“请问您是哪位”。比「どなたですか」更郑重。",
+    "example": {
+      "jp": "失礼ですが、どちらさまでしょうか。",
+      "kana": "しつれいですが、どちらさまでしょうか。",
+      "romaji": "shitsurei desu ga, dochira sama deshou ka.",
+      "zh": "不好意思，请问您是哪位？"
+    }
+  },
+  "l46-w1818": {
+    "romaji": "mukaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示朝某方向前进或前往某地，常用于正式场合或通知。与「行く」意思相近但更郑重，强调方向性。",
+    "example": {
+      "jp": "すぐにそちらへ向かいます。",
+      "kana": "すぐにそちらへむかいます。",
+      "romaji": "sugu ni sochira e mukaimasu.",
+      "zh": "我马上过去您那边。"
+    }
+  },
+  "l46-w1819": {
+    "romaji": "omatase shimashita",
+    "attributes": [],
+    "explanation": "用于让对方等待后表示歉意和感谢的固定寒暄语，意为“让您久等了”。常用于服务行业或日常礼貌场合。",
+    "example": {
+      "jp": "お待たせしました。どうぞこちらへ。",
+      "kana": "おまたせしました。どうぞこちらへ。",
+      "romaji": "omatase shimashita. douzo kochira e.",
+      "zh": "让您久等了。请这边走。"
+    }
+  },
+  "l46-w1915": {
+    "romaji": "hantoshi",
+    "attributes": [],
+    "explanation": "表示六个月的时间长度，是「半年」的常用读法。可单独使用，也可接助词，如「半年かかる」。",
+    "example": {
+      "jp": "日本語を半年勉強しました。",
+      "kana": "にほんごをはんとしべんきょうしました。",
+      "romaji": "nihongo o hantoshi benkyou shimashita.",
+      "zh": "我学了半年日语。"
+    }
+  },
+  "l46-w3395": {
+    "romaji": "todokimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物品、邮件等被送到目的地，或声音、心意等传到对方处。常用「～が届く」的形式，强调送达的结果而非动作过程。",
+    "example": {
+      "jp": "荷物が明日届きます。",
+      "kana": "にもつがあしたとどきます。",
+      "romaji": "nimotsu ga ashita todokimasu.",
+      "zh": "包裹明天送到。"
+    }
+  },
+  "l46-lucky": {
+    "romaji": "tsuiteimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「つく」的て形+いる，表示运气好、走运的状态。常用于口语「ついてる」的礼貌形式，带有庆幸的语气。",
+    "example": {
+      "jp": "今日はついていますね。",
+      "kana": "きょうはついていますね。",
+      "romaji": "kyou wa tsuiteimasu ne.",
+      "zh": "今天真走运啊。"
+    }
+  },
+  "l46-floor": {
+    "romaji": "yuka",
+    "attributes": [],
+    "explanation": "指房间内铺设的地板表面，通常为木制。与表示楼层的「階（かい）」不同，注意区分。",
+    "example": {
+      "jp": "床に本を落としました。",
+      "kana": "ゆかにおとしたほんをおとしました。",
+      "romaji": "yuka ni hon o otoshimashita.",
+      "zh": "把书掉在地板上了。"
+    }
+  },
+  "l46-fall": {
+    "romaji": "korobimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人走路时摔倒、跌倒，也可用于物体翻倒。强调失去平衡而倒下，与「倒れる」相比更侧重行走中摔倒。",
+    "example": {
+      "jp": "雪の道で転びました。",
+      "kana": "ゆきのみちでころびました。",
+      "romaji": "yuki no michi de korobimashita.",
+      "zh": "在雪路上摔倒了。"
+    }
+  },
+  "l46-bell": {
+    "romaji": "beru",
+    "attributes": [],
+    "explanation": "指铃、门铃、电话铃等发出声音的装置。外来语，常与「鳴る」搭配使用。",
+    "example": {
+      "jp": "ベルが鳴っています。",
+      "kana": "べるがなっています。",
+      "romaji": "beru ga natteimasu.",
+      "zh": "铃在响。"
+    }
+  },
+  "l46-ring": {
+    "romaji": "narimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示铃、电话、钟等发出声响。主语为发声的物体，常用「～が鳴る」的形式。",
+    "example": {
+      "jp": "電話が鳴りました。",
+      "kana": "でんわがなりました。",
+      "romaji": "denwa ga narimashita.",
+      "zh": "电话响了。"
+    }
+  },
+  "l46-hastily": {
+    "romaji": "awatete",
+    "attributes": [],
+    "explanation": "「慌てる」的て形，表示慌忙、慌张地做某事。常修饰后续动作，带有匆忙、不冷静的语感。",
+    "example": {
+      "jp": "慌てて家を出ました。",
+      "kana": "あわてていえをでました。",
+      "romaji": "awatete ie o demashita.",
+      "zh": "慌忙地出了家门。"
+    }
+  },
+  "l46-in-order": {
+    "romaji": "junban ni",
+    "attributes": [],
+    "explanation": "表示按照顺序、依次进行。常修饰动词，强调不跳过顺序。",
+    "example": {
+      "jp": "順番に並んでください。",
+      "kana": "じゅんばんにならんでください。",
+      "romaji": "junban ni narande kudasai.",
+      "zh": "请按顺序排队。"
+    }
+  },
+  "l46-event": {
+    "romaji": "dekigoto",
+    "attributes": [],
+    "explanation": "指发生的事件、事情，多用于较具体或意外的事情。与「事件」相比，不限于犯罪等重大事件。",
+    "example": {
+      "jp": "昨日の出来事を話しました。",
+      "kana": "きのうのできごとをはなしました。",
+      "romaji": "kinou no dekigoto o hanashimashita.",
+      "zh": "说了昨天发生的事。"
+    }
+  }
+}

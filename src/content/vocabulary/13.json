@@ -1,0 +1,267 @@
+{
+  "lessonId": 13,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/13.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源36条，排除2条旧版或跨课条目，合并同形同义项并补入第二来源，最终36条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/13.json。"
+  ],
+  "words": [
+    {
+      "key": "w1007",
+      "word": "お正月",
+      "reading": "おしょうがつ",
+      "partOfSpeech": "名词",
+      "meaning": "新年；元旦"
+    },
+    {
+      "key": "w160",
+      "word": "～でございます",
+      "reading": "～でございます",
+      "partOfSpeech": "固定表达",
+      "meaning": "是……（です的郑重形式）"
+    },
+    {
+      "key": "w2558",
+      "word": "おなかがすきます",
+      "reading": "おなかがすきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "肚子饿"
+    },
+    {
+      "key": "w2944",
+      "word": "のどが渇きます",
+      "reading": "のどがかわきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "口渴"
+    },
+    {
+      "key": "w647",
+      "word": "遊びます",
+      "reading": "あそびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "玩；游玩"
+    },
+    {
+      "key": "w648",
+      "word": "泳ぎます",
+      "reading": "およぎます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "游泳"
+    },
+    {
+      "key": "w649",
+      "word": "迎えます",
+      "reading": "むかえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "迎接"
+    },
+    {
+      "key": "w650",
+      "word": "疲れます",
+      "reading": "つかれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "疲劳"
+    },
+    {
+      "key": "w654",
+      "word": "結婚します",
+      "reading": "けっこんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "结婚"
+    },
+    {
+      "key": "w655",
+      "word": "買い物します",
+      "reading": "かいものします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "购物"
+    },
+    {
+      "key": "w656",
+      "word": "食事します",
+      "reading": "しょくじします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "吃饭"
+    },
+    {
+      "key": "w657",
+      "word": "散歩します",
+      "reading": "さんぽします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "散步"
+    },
+    {
+      "key": "w658",
+      "word": "大変な",
+      "reading": "たいへんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "辛苦的；艰难的"
+    },
+    {
+      "key": "w659",
+      "word": "欲しい",
+      "reading": "ほしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "想要的"
+    },
+    {
+      "key": "w661",
+      "word": "広い",
+      "reading": "ひろい",
+      "partOfSpeech": "い形容词",
+      "meaning": "宽广的"
+    },
+    {
+      "key": "w662",
+      "word": "狭い",
+      "reading": "せまい",
+      "partOfSpeech": "い形容词",
+      "meaning": "狭窄的"
+    },
+    {
+      "key": "w664",
+      "word": "プール",
+      "reading": "ぷーる",
+      "partOfSpeech": "名词",
+      "meaning": "游泳池"
+    },
+    {
+      "key": "w665",
+      "word": "川",
+      "reading": "かわ",
+      "partOfSpeech": "名词",
+      "meaning": "河流"
+    },
+    {
+      "key": "w667",
+      "word": "美術",
+      "reading": "びじゅつ",
+      "partOfSpeech": "名词",
+      "meaning": "美术"
+    },
+    {
+      "key": "w668",
+      "word": "釣り",
+      "reading": "つり",
+      "partOfSpeech": "名词",
+      "meaning": "钓鱼"
+    },
+    {
+      "key": "w669",
+      "word": "スキー",
+      "reading": "すきー",
+      "partOfSpeech": "名词",
+      "meaning": "滑雪"
+    },
+    {
+      "key": "w672",
+      "word": "週末",
+      "reading": "しゅうまつ",
+      "partOfSpeech": "名词",
+      "meaning": "周末"
+    },
+    {
+      "key": "w673",
+      "word": "～ごろ",
+      "reading": "～ごろ",
+      "partOfSpeech": "表达",
+      "meaning": "……左右（时间点）"
+    },
+    {
+      "key": "w674",
+      "word": "何か",
+      "reading": "なにか",
+      "partOfSpeech": "名词",
+      "meaning": "什么东西"
+    },
+    {
+      "key": "w675",
+      "word": "どこか",
+      "reading": "どこか",
+      "partOfSpeech": "名词",
+      "meaning": "某个地方"
+    },
+    {
+      "key": "w676",
+      "word": "お腹がすきました",
+      "reading": "おなかがすきました",
+      "partOfSpeech": "固定表达",
+      "meaning": "肚子饿了"
+    },
+    {
+      "key": "w678",
+      "word": "喉が渇きました",
+      "reading": "のどがかわきました",
+      "partOfSpeech": "固定表达",
+      "meaning": "口渴了"
+    },
+    {
+      "key": "w679",
+      "word": "そうですね",
+      "reading": "そうですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "是啊"
+    },
+    {
+      "key": "w680",
+      "word": "そうしましょう",
+      "reading": "そうしましょう",
+      "partOfSpeech": "固定表达",
+      "meaning": "就这样做吧"
+    },
+    {
+      "key": "w681",
+      "word": "ご注文は？",
+      "reading": "ごちゅうもんは？",
+      "partOfSpeech": "固定表达",
+      "meaning": "请问点什么"
+    },
+    {
+      "key": "w682",
+      "word": "定食",
+      "reading": "ていしょく",
+      "partOfSpeech": "名词",
+      "meaning": "套餐"
+    },
+    {
+      "key": "w683",
+      "word": "牛丼",
+      "reading": "ぎゅうどん",
+      "partOfSpeech": "名词",
+      "meaning": "牛肉盖饭"
+    },
+    {
+      "key": "w684",
+      "word": "少々お待ちください",
+      "reading": "しょうしょうおまちください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请稍等"
+    },
+    {
+      "key": "w685",
+      "word": "別々に",
+      "reading": "べつべつに",
+      "partOfSpeech": "副词",
+      "meaning": "分开地；各自"
+    },
+    {
+      "key": "akikkusu",
+      "word": "アキックス",
+      "reading": "あきっくす",
+      "partOfSpeech": "专有名词",
+      "meaning": "Akikkusu（教材公司名）"
+    },
+    {
+      "key": "ohayo-tv",
+      "word": "おはようテレビ",
+      "reading": "おはようてれび",
+      "partOfSpeech": "专有名词",
+      "meaning": "早安电视台（教材机构名）"
+    }
+  ]
+}

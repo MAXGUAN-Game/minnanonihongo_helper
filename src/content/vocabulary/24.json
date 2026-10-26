@@ -1,0 +1,169 @@
+{
+  "lessonId": 24,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/24.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源21条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终22条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/24.json。"
+  ],
+  "words": [
+    {
+      "key": "w1011",
+      "word": "くれます",
+      "reading": "くれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "给我（或我方的人）"
+    },
+    {
+      "key": "w1012",
+      "word": "連れて行きます",
+      "reading": "つれていきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "带人去"
+    },
+    {
+      "key": "w1013",
+      "word": "連れて来ます",
+      "reading": "つれてきます",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "带人来"
+    },
+    {
+      "key": "w1014",
+      "word": "［人を］送ります",
+      "reading": "［ひとを］おくります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "送（人）"
+    },
+    {
+      "key": "w1015",
+      "word": "紹介します",
+      "reading": "しょうかいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "介绍"
+    },
+    {
+      "key": "w1016",
+      "word": "案内します",
+      "reading": "あんないします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "带路；引导"
+    },
+    {
+      "key": "w1017",
+      "word": "説明します",
+      "reading": "せつめいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "说明"
+    },
+    {
+      "key": "w1019",
+      "word": "おじいちゃん",
+      "reading": "おじいちゃん",
+      "partOfSpeech": "名词",
+      "meaning": "爷爷（亲昵称呼）"
+    },
+    {
+      "key": "w1020",
+      "word": "おばあちゃん",
+      "reading": "おばあちゃん",
+      "partOfSpeech": "名词",
+      "meaning": "奶奶（亲昵称呼）"
+    },
+    {
+      "key": "w1021",
+      "word": "準備",
+      "reading": "じゅんび",
+      "partOfSpeech": "名词",
+      "meaning": "准备"
+    },
+    {
+      "key": "w1023",
+      "word": "お菓子",
+      "reading": "おかし",
+      "partOfSpeech": "名词",
+      "meaning": "点心；零食"
+    },
+    {
+      "key": "w1024",
+      "word": "全部",
+      "reading": "ぜんぶ",
+      "partOfSpeech": "表达",
+      "meaning": "全部"
+    },
+    {
+      "key": "w1025",
+      "word": "自分で",
+      "reading": "じぶんで",
+      "partOfSpeech": "表达",
+      "meaning": "自己做"
+    },
+    {
+      "key": "w1026",
+      "word": "他に",
+      "reading": "ほかに",
+      "partOfSpeech": "表达",
+      "meaning": "另外"
+    },
+    {
+      "key": "w1166",
+      "word": "ホームステイ",
+      "reading": "ほーむすてい",
+      "partOfSpeech": "名词",
+      "meaning": "寄宿家庭"
+    },
+    {
+      "key": "w1933",
+      "word": "おじいさん",
+      "reading": "おじいさん",
+      "partOfSpeech": "名词",
+      "meaning": "爷爷；老先生"
+    },
+    {
+      "key": "w1934",
+      "word": "おばあさん",
+      "reading": "おばあさん",
+      "partOfSpeech": "名词",
+      "meaning": "奶奶；老太太"
+    },
+    {
+      "key": "w898",
+      "word": "［自転車を］直します",
+      "reading": "［じてんしゃを］なおします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "修理（自行车）"
+    },
+    {
+      "key": "w899",
+      "word": "［答えを］直します",
+      "reading": "［こたえを］なおします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "改正（答案）"
+    },
+    {
+      "key": "w992",
+      "word": "引っ越しします",
+      "reading": "ひっこしします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "搬家"
+    },
+    {
+      "key": "moving",
+      "word": "引っ越し",
+      "reading": "ひっこし",
+      "partOfSpeech": "名词",
+      "meaning": "搬家"
+    },
+    {
+      "key": "mothers-day",
+      "word": "母の日",
+      "reading": "ははのひ",
+      "partOfSpeech": "名词",
+      "meaning": "母亲节"
+    }
+  ]
+}

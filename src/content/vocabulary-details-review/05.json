@@ -1,0 +1,14 @@
+{
+  "lessonId": 5,
+  "model": "deepseek-flash",
+  "reviewedCount": 61,
+  "corrections": [
+    {
+      "id": "l5-aruite",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「歩く」为自动词，て形「歩いて」仍须标自动词属性。"
+    }
+  ]
+}

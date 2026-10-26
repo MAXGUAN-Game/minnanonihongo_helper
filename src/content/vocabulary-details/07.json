@@ -1,0 +1,526 @@
+{
+  "l7-w1008": {
+    "romaji": "gochisōsamadeshita",
+    "attributes": [],
+    "explanation": "饭后对款待表示感谢的固定寒暄语，常用于受邀用餐或别人请客后。也可单独使用表示“我吃好了”。",
+    "example": {
+      "jp": "ごちそうさまでした。とてもおいしかったです。",
+      "kana": "ごちそうさまでした。とてもおいしかったです。",
+      "romaji": "gochisōsamadeshita. totemo oishikatta desu.",
+      "zh": "谢谢款待。非常好吃。"
+    }
+  },
+  "l7-w3072": {
+    "romaji": "mēru",
+    "attributes": [],
+    "explanation": "指电子邮件，常与「送る」「届く」等动词搭配。口语中也可泛指邮件或信息。",
+    "example": {
+      "jp": "昨日、友達にメールを送りました。",
+      "kana": "きのう、ともだちにめーるをおくりました。",
+      "romaji": "kinō, tomodachi ni mēru o okurimashita.",
+      "zh": "昨天给朋友发了邮件。"
+    }
+  },
+  "l7-w3267": {
+    "romaji": "kētai",
+    "attributes": [],
+    "explanation": "「携帯電話」的略称，指手机。比「スマホ」稍旧，但日常仍常用。",
+    "example": {
+      "jp": "ケータイを家に忘れました。",
+      "kana": "けーたいをいえにわすれました。",
+      "romaji": "kētai o ie ni wasuremashita.",
+      "zh": "把手机忘在家里了。"
+    }
+  },
+  "l7-v3": {
+    "romaji": "kirimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用刀具等将物体切开或剪断，宾语用「を」。也可用于剪票、剪发等。",
+    "example": {
+      "jp": "包丁で野菜を切ります。",
+      "kana": "ほうちょうでやさいをきります。",
+      "romaji": "hōchō de yasai o kirimasu.",
+      "zh": "用菜刀切蔬菜。"
+    }
+  },
+  "l7-v4": {
+    "romaji": "okurimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示邮寄物品或发送信息，常与「手紙」「メール」「荷物」等搭配。",
+    "example": {
+      "jp": "母に手紙を送ります。",
+      "kana": "ははにてがみをおくります。",
+      "romaji": "haha ni tegami o okurimasu.",
+      "zh": "给母亲寄信。"
+    }
+  },
+  "l7-v5": {
+    "romaji": "agemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物给别人，接受者用「に」。注意不能用于自己接受东西。",
+    "example": {
+      "jp": "友達にプレゼントをあげます。",
+      "kana": "ともだちにぷれぜんとをあげます。",
+      "romaji": "tomodachi ni purezento o agemasu.",
+      "zh": "给朋友送礼物。"
+    }
+  },
+  "l7-v6": {
+    "romaji": "moraimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示从别人那里得到某物，给予者用「に」或「から」。与「あげます」方向相反。",
+    "example": {
+      "jp": "先生に本をもらいました。",
+      "kana": "せんせいにほんをもらいました。",
+      "romaji": "sensei ni hon o moraimashita.",
+      "zh": "从老师那里得到了一本书。"
+    }
+  },
+  "l7-v7": {
+    "romaji": "kashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把东西借给别人，借出者作主语，接受者用「に」。与「借ります」方向相反。",
+    "example": {
+      "jp": "友達に傘を貸します。",
+      "kana": "ともだちにかさをかします。",
+      "romaji": "tomodachi ni kasa o kashimasu.",
+      "zh": "把伞借给朋友。"
+    }
+  },
+  "l7-v8": {
+    "romaji": "karimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示从别人那里借入东西，借出者用「に」或「から」。与「貸します」方向相反。",
+    "example": {
+      "jp": "図書館で本を借ります。",
+      "kana": "としょかんでほんをかります。",
+      "romaji": "toshokan de hon o karimasu.",
+      "zh": "在图书馆借书。"
+    }
+  },
+  "l7-w338": {
+    "romaji": "oshiemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示教知识或告诉信息，内容用「を」，人用「に」。也可用于“告诉”某事实。",
+    "example": {
+      "jp": "先生が日本語を教えます。",
+      "kana": "せんせいがにほんごをおしえます。",
+      "romaji": "sensei ga nihongo o oshiemasu.",
+      "zh": "老师教日语。"
+    }
+  },
+  "l7-w339": {
+    "romaji": "naraimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示向某人学习技能或知识，老师用「に」或「から」，内容用「を」。",
+    "example": {
+      "jp": "ピアノを先生に習います。",
+      "kana": "ぴあのをせんせいにならいます。",
+      "romaji": "piano o sensei ni naraimasu.",
+      "zh": "跟老师学钢琴。"
+    }
+  },
+  "l7-w340": {
+    "romaji": "[denwa o] kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示打电话，固定搭配「電話をかけます」。对象用「に」。",
+    "example": {
+      "jp": "母に電話をかけます。",
+      "kana": "ははにでんわをかけます。",
+      "romaji": "haha ni denwa o kakemasu.",
+      "zh": "给母亲打电话。"
+    }
+  },
+  "l7-w341": {
+    "romaji": "te",
+    "attributes": [],
+    "explanation": "指人或动物的手，也用于比喻人手、人手不足等。常用搭配如「手を洗う」「手が空く」。",
+    "example": {
+      "jp": "手を洗ってから食べます。",
+      "kana": "てをあらってからたべます。",
+      "romaji": "te o aratte kara tabemasu.",
+      "zh": "洗手后再吃。"
+    }
+  },
+  "l7-v1": {
+    "romaji": "hashi",
+    "attributes": [],
+    "explanation": "指用餐时使用的筷子，通常成对使用。常用搭配「箸を使う」「箸で食べる」。",
+    "example": {
+      "jp": "箸でご飯を食べます。",
+      "kana": "はしでごはんをたべます。",
+      "romaji": "hashi de gohan o tabemasu.",
+      "zh": "用筷子吃饭。"
+    }
+  },
+  "l7-v2": {
+    "romaji": "supūn",
+    "attributes": [],
+    "explanation": "指西餐用的汤匙、勺子，比「さじ」更口语化。常用「スプーンで飲む」「スプーンを使う」。",
+    "example": {
+      "jp": "スプーンでスープを飲みます。",
+      "kana": "すぷーんですーぷをのみます。",
+      "romaji": "supūn de sūpu o nomimasu.",
+      "zh": "用汤匙喝汤。"
+    }
+  },
+  "l7-w344": {
+    "romaji": "naifu",
+    "attributes": [],
+    "explanation": "指餐刀或小刀，常用于切割食物。注意与「ナイフとフォーク」搭配使用。",
+    "example": {
+      "jp": "ナイフでパンを切ります。",
+      "kana": "ないふでぱんをきります。",
+      "romaji": "naifu de pan o kirimasu.",
+      "zh": "用刀切面包。"
+    }
+  },
+  "l7-w345": {
+    "romaji": "fōku",
+    "attributes": [],
+    "explanation": "指西餐用的叉子，常与刀、匙并列。常用「フォークで刺す」「フォークを使う」。",
+    "example": {
+      "jp": "フォークでサラダを食べます。",
+      "kana": "ふぉーくでさらだをたべます。",
+      "romaji": "fōku de sarada o tabemasu.",
+      "zh": "用叉子吃沙拉。"
+    }
+  },
+  "l7-w346": {
+    "romaji": "hasami",
+    "attributes": [],
+    "explanation": "指剪刀，通常为复数概念但日语中作单数名词使用。常用「はさみで切る」。",
+    "example": {
+      "jp": "はさみで紙を切ります。",
+      "kana": "はさみでかみをきります。",
+      "romaji": "hasami de kami o kirimasu.",
+      "zh": "用剪刀剪纸。"
+    }
+  },
+  "l7-w349": {
+    "romaji": "pasokon",
+    "attributes": [],
+    "explanation": "「パーソナルコンピューター」的缩略，指个人电脑。口语常用，可指台式或笔记本。",
+    "example": {
+      "jp": "パソコンでメールを書きます。",
+      "kana": "ぱそこんでめーるをかきます。",
+      "romaji": "pasokon de mēru o kakimasu.",
+      "zh": "用电脑写邮件。"
+    }
+  },
+  "l7-w350": {
+    "romaji": "panchi",
+    "attributes": [],
+    "explanation": "指打孔器，用于在纸上打孔。注意与表示“拳击”的「パンチ」同形不同义，需根据语境判断。",
+    "example": {
+      "jp": "パンチで紙に穴を開けます。",
+      "kana": "ぱんちでかみにあなをあけます。",
+      "romaji": "panchi de kami ni ana o akemasu.",
+      "zh": "用打孔器在纸上打孔。"
+    }
+  },
+  "l7-w351": {
+    "romaji": "hotchikisu",
+    "attributes": [],
+    "explanation": "指订书机，源自英语商标名。常用「ホッチキスで留める」。",
+    "example": {
+      "jp": "ホッチキスで紙を留めます。",
+      "kana": "ほっちきすでかみをとめます。",
+      "romaji": "hotchikisu de kami o tomemasu.",
+      "zh": "用订书机订纸。"
+    }
+  },
+  "l7-w352": {
+    "romaji": "serotēpu",
+    "attributes": [],
+    "explanation": "指透明胶带，源自商标名「セロハンテープ」的缩略。常用「セロテープで貼る」。",
+    "example": {
+      "jp": "セロテープで紙を貼ります。",
+      "kana": "せろてーぷでかみをはります。",
+      "romaji": "serotēpu de kami o harimasu.",
+      "zh": "用透明胶带贴纸。"
+    }
+  },
+  "l7-w353": {
+    "romaji": "keshigomu",
+    "attributes": [],
+    "explanation": "指橡皮擦，用于擦除铅笔字迹。常用「消しゴムで消す」。",
+    "example": {
+      "jp": "消しゴムで字を消します。",
+      "kana": "けしごむでじをけします。",
+      "romaji": "keshigomu de ji o keshimasu.",
+      "zh": "用橡皮擦掉字。"
+    }
+  },
+  "l7-w354": {
+    "romaji": "kami",
+    "attributes": [],
+    "explanation": "指纸张，也可指纸制品。常用「紙に書く」「紙を切る」。注意与「神（かみ）」同音不同义。",
+    "example": {
+      "jp": "紙に名前を書きます。",
+      "kana": "かみになまえをかきます。",
+      "romaji": "kami ni namae o kakimasu.",
+      "zh": "在纸上写名字。"
+    }
+  },
+  "l7-v9": {
+    "romaji": "hana",
+    "attributes": [],
+    "explanation": "指植物的花，也可指花店卖的花束。日常常与「花を買う」「花が咲く」等搭配，注意与「鼻（はな）」同音不同义。",
+    "example": {
+      "jp": "母に花をプレゼントしました。",
+      "kana": "ははにはなをぷれぜんとしました。",
+      "romaji": "haha ni hana o purezento shimashita.",
+      "zh": "我送给妈妈花了。"
+    }
+  },
+  "l7-w356": {
+    "romaji": "shatsu",
+    "attributes": [],
+    "explanation": "外来语，指衬衫，通常指有领有袖的上衣。常与「シャツを着る」「白いシャツ」等搭配，语体中性。",
+    "example": {
+      "jp": "この白いシャツは父のです。",
+      "kana": "このしろいしゃつはちちのです。",
+      "romaji": "kono shiroi shatsu wa chichi no desu.",
+      "zh": "这件白衬衫是我父亲的。"
+    }
+  },
+  "l7-w357": {
+    "romaji": "purezento",
+    "attributes": [],
+    "explanation": "外来语，指礼物，常用于生日、圣诞节等场合。常用「プレゼントをあげる／もらう」等搭配，比「贈り物」更口语。",
+    "example": {
+      "jp": "クリスマスに母からプレゼントをもらいました。",
+      "kana": "くりすますにははからぷれぜんとをもらいました。",
+      "romaji": "kurisumasu ni haha kara purezento o moraimashita.",
+      "zh": "圣诞节我从妈妈那里收到了礼物。"
+    }
+  },
+  "l7-w358": {
+    "romaji": "nimotsu",
+    "attributes": [],
+    "explanation": "指行李或包裹，旅行时常用。常与「荷物を持つ」「荷物を送る」等搭配，注意不能用于抽象负担。",
+    "example": {
+      "jp": "この荷物は重いですね。",
+      "kana": "このにもつはおもいですね。",
+      "romaji": "kono nimotsu wa omoi desu ne.",
+      "zh": "这件行李真重啊。"
+    }
+  },
+  "l7-w359": {
+    "romaji": "okane",
+    "attributes": [],
+    "explanation": "指钱，是「金（かね）」的礼貌说法。日常常用「お金を払う」「お金がない」等搭配，语体中性偏礼貌。",
+    "example": {
+      "jp": "切符を買うお金がありません。",
+      "kana": "きっぷをかうおかねがありません。",
+      "romaji": "kippu o kau okane ga arimasen.",
+      "zh": "我没有买票的钱。"
+    }
+  },
+  "l7-w360": {
+    "romaji": "kippu",
+    "attributes": [],
+    "explanation": "指车票、入场券等票证。常与「切符を買う」「切符を切る」等搭配，注意与「チケット」语感相近但更偏交通票。",
+    "example": {
+      "jp": "駅で切符を買いました。",
+      "kana": "えきできっぷをかいました。",
+      "romaji": "eki de kippu o kaimashita.",
+      "zh": "我在车站买了票。"
+    }
+  },
+  "l7-w361": {
+    "romaji": "kurisumasu",
+    "attributes": [],
+    "explanation": "外来语，指圣诞节。常与「クリスマスに」「クリスマスプレゼント」等搭配，日本习惯在12月24、25日庆祝。",
+    "example": {
+      "jp": "クリスマスに家族でケーキを食べます。",
+      "kana": "くりすますにかぞくでけーきをたべます。",
+      "romaji": "kurisumasu ni kazoku de kēki o tabemasu.",
+      "zh": "圣诞节我们一家人吃蛋糕。"
+    }
+  },
+  "l7-w362": {
+    "romaji": "chichi",
+    "attributes": [],
+    "explanation": "用于向别人提及自己的父亲，谦称。不能直接称呼自己的父亲；称呼时用「お父さん」。",
+    "example": {
+      "jp": "父は毎朝新聞を読みます。",
+      "kana": "ちちはまいあさしんぶんをよみます。",
+      "romaji": "chichi wa maiasa shinbun o yomimasu.",
+      "zh": "我父亲每天早上看报纸。"
+    }
+  },
+  "l7-w363": {
+    "romaji": "haha",
+    "attributes": [],
+    "explanation": "用于向别人提及自己的母亲，谦称。不能直接称呼自己的母亲；称呼时用「お母さん」。",
+    "example": {
+      "jp": "母は台所で料理をしています。",
+      "kana": "はははだいどころでりょうりをしています。",
+      "romaji": "haha wa daidokoro de ryōri o shite imasu.",
+      "zh": "我母亲正在厨房做饭。"
+    }
+  },
+  "l7-w364": {
+    "romaji": "otōsan",
+    "attributes": [],
+    "explanation": "用于称呼别人的父亲或直接称呼自己的父亲，带敬意。不能用于向别人提及自己的父亲（此时用「父」）。",
+    "example": {
+      "jp": "お父さんはお元気ですか。",
+      "kana": "おとうさんはおげんきですか。",
+      "romaji": "otōsan wa ogenki desu ka.",
+      "zh": "您父亲身体好吗？"
+    }
+  },
+  "l7-w365": {
+    "romaji": "okāsan",
+    "attributes": [],
+    "explanation": "用于称呼别人的母亲或直接称呼自己的母亲，带敬意。不能用于向别人提及自己的母亲（此时用「母」）。",
+    "example": {
+      "jp": "お母さんに花をあげました。",
+      "kana": "おかあさんにはなをあげました。",
+      "romaji": "okāsan ni hana o agemashita.",
+      "zh": "我送给妈妈花了。"
+    }
+  },
+  "l7-v10": {
+    "romaji": "mō",
+    "attributes": [],
+    "explanation": "副词，表示“已经”，常与过去时或完成状态搭配。也可表示“再、还”，但本课义为“已经”，注意根据语境判断。",
+    "example": {
+      "jp": "もう荷物を送りました。",
+      "kana": "もうにもつをおくりました。",
+      "romaji": "mō nimotsu o okurimashita.",
+      "zh": "我已经把行李寄出去了。"
+    }
+  },
+  "l7-w367": {
+    "romaji": "mada",
+    "attributes": [],
+    "explanation": "副词，表示动作或状态尚未发生或尚未完成，常与否定表达搭配使用。也可表示“仍然、还”的意思，强调状态的持续。",
+    "example": {
+      "jp": "まだ宿題をしていません。",
+      "kana": "まだしゅくだいをしていません。",
+      "romaji": "mada shukudai o shite imasen.",
+      "zh": "我还没做作业。"
+    }
+  },
+  "l7-w368": {
+    "romaji": "korekara",
+    "attributes": [],
+    "explanation": "表示从当前时间点开始，常用于宣布即将开始的动作或计划。口语和书面语均可使用。",
+    "example": {
+      "jp": "これから会議を始めます。",
+      "kana": "これからかいぎをはじめます。",
+      "romaji": "korekara kaigi o hajimemasu.",
+      "zh": "现在开始开会。"
+    }
+  },
+  "l7-w369": {
+    "romaji": "suteki desu ne",
+    "attributes": [],
+    "explanation": "用于称赞事物外观或性质，带有感叹语气。常用于看到漂亮、出色的事物时表达赞美。",
+    "example": {
+      "jp": "この絵、素敵ですね。",
+      "kana": "このえ、すてきですね。",
+      "romaji": "kono e, suteki desu ne.",
+      "zh": "这幅画真好看啊。"
+    }
+  },
+  "l7-w371": {
+    "romaji": "irasshai",
+    "attributes": [],
+    "explanation": "店主或店员迎接客人时的招呼语，语气亲切。也用于欢迎客人到家里来。",
+    "example": {
+      "jp": "いらっしゃい、どうぞ中へ。",
+      "kana": "いらっしゃい、どうぞなかへ。",
+      "romaji": "irasshai, dōzo naka e.",
+      "zh": "欢迎光临，请进。"
+    }
+  },
+  "l7-w372": {
+    "romaji": "dōzo oagari kudasai",
+    "attributes": [],
+    "explanation": "邀请客人进入室内的礼貌表达，常用于家庭或传统店铺。语气恭敬，适合对长辈或客人使用。",
+    "example": {
+      "jp": "どうぞお上がりください、お待ちしていました。",
+      "kana": "どうぞおあがりください、おまちしていました。",
+      "romaji": "dōzo oagari kudasai, omachi shite imashita.",
+      "zh": "请进，我们一直在等您。"
+    }
+  },
+  "l7-w373": {
+    "romaji": "shitsurei shimasu",
+    "attributes": [],
+    "explanation": "进入他人房间、打扰别人或离开时使用的礼貌用语，表示歉意或感谢。也可用于挂电话前。",
+    "example": {
+      "jp": "失礼します、田中さんはいらっしゃいますか。",
+      "kana": "しつれいします、たなかさんはいらっしゃいますか。",
+      "romaji": "shitsurei shimasu, tanaka san wa irasshaimasu ka.",
+      "zh": "打扰了，田中先生在吗？"
+    }
+  },
+  "l7-w374": {
+    "romaji": "~ wa ikaga desu ka",
+    "attributes": [],
+    "explanation": "用于礼貌地询问对方是否需要某物或提出建议，常接名词。语气委婉，适合接待或劝诱场合。",
+    "example": {
+      "jp": "お茶はいかがですか。",
+      "kana": "おちゃはいかがですか。",
+      "romaji": "ocha wa ikaga desu ka.",
+      "zh": "要不要来点茶？"
+    }
+  },
+  "l7-w375": {
+    "romaji": "itadakimasu",
+    "attributes": [],
+    "explanation": "用餐前说的寒暄语，表示对食物和提供者的感谢。也可用于接受他人给予物品时。",
+    "example": {
+      "jp": "いただきます、とてもおいしそうです。",
+      "kana": "いただきます、とてもおいしそうです。",
+      "romaji": "itadakimasu, totemo oishisō desu.",
+      "zh": "我开动了，看起来很好吃。"
+    }
+  },
+  "l7-w4855": {
+    "romaji": "nengajō",
+    "attributes": [],
+    "explanation": "指新年时寄送的贺卡，通常写有新年祝福。日本有在元旦前后寄送贺年卡的习俗。",
+    "example": {
+      "jp": "毎年年賀状を友達に送ります。",
+      "kana": "まいとしねんがじょうをともだちにおくります。",
+      "romaji": "maitoshi nengajō o tomodachi ni okurimasu.",
+      "zh": "每年都给朋友寄贺年卡。"
+    }
+  },
+  "l7-spain": {
+    "romaji": "supein",
+    "attributes": [],
+    "explanation": "国名，指欧洲的西班牙。日语中常用片假名表示，注意发音为“スペイン”。",
+    "example": {
+      "jp": "来年スペインへ旅行に行きます。",
+      "kana": "らいねんすぺいんへりょこうにいきます。",
+      "romaji": "rainen supein e ryokō ni ikimasu.",
+      "zh": "明年去西班牙旅行。"
+    }
+  }
+}

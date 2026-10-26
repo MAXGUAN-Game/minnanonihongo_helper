@@ -49,7 +49,7 @@ createRoot(document.getElementById('root')).render(<Harness/>);
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'language-master-recorder-test-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{
       name: 'isolated-recorder-test',
       resolveId(id) { if (id === '/__recorder-harness.tsx') return id; },
@@ -134,6 +134,20 @@ const capture = async (page: Page) => {
 const clip = async (page: Page) => JSON.parse(await page.getByLabel('Clip').textContent() || 'null') as { url: string; saved: boolean; recordingId?: string; durationMs: number } | null;
 
 describe('one microphone supports click, hold and keyboard recording', () => {
+  it.each([5, 10, 15, 30])('uploads all %i seconds as 16 kHz mono PCM without truncation', async seconds => {
+    let uploaded: Buffer | undefined;
+    const { page, context } = await pageFor({ save: async route => {
+      uploaded = route.request().postDataBuffer()!;
+      return route.fulfill({ json: { id: new URL(route.request().url()).searchParams.get('clientRecordingId'), durationMs: seconds * 1000 } });
+    } });
+    try {
+      await page.evaluate(value => { window.__captureMock.decodedDuration = value; }, seconds);
+      await capture(page);
+      await expect.poll(() => uploaded?.length).toBe(44 + seconds * 32000);
+      expect(uploaded!.readUInt32LE(24)).toBe(16000); expect(uploaded!.readUInt16LE(22)).toBe(1);
+      expect(uploaded!.readInt16LE(44)).not.toBe(0); expect(uploaded!.readInt16LE(uploaded!.length - 2)).not.toBe(0);
+    } finally { await context.close(); }
+  });
   it('keeps recording after a quick click and stops on the next click, with local replay controls', async () => {
     const { page, context } = await pageFor();
     try {
@@ -146,11 +160,11 @@ describe('one microphone supports click, hold and keyboard recording', () => {
       await expect.poll(() => page.getByLabel('Text').textContent()).toBe('日本語を練習します。');
       expect(await page.evaluate(() => window.__captureMock.starts)).toBe(1);
       expect(await page.evaluate(() => window.__captureMock.stops)).toBe(1);
-      await page.getByRole('button', { name: '听我的录音', exact: true }).click();
-      const controls = page.locator('.recording-preview').getByRole('region', { name: '音频控制' });
+      await page.locator('.recording-preview').getByRole('button', { name: '播放', exact: true }).click();
+      const controls = page.locator('.recording-preview').getByRole('group', { name: '音频控制' });
       await controls.getByRole('button', { name: '暂停', exact: true }).click();
       expect(await page.getByLabel('Playback').textContent()).toBe('paused');
-      await controls.getByRole('button', { name: '继续播放', exact: true }).click();
+      await controls.getByRole('button', { name: '播放', exact: true }).click();
       expect(await page.getByLabel('Playback').textContent()).toBe('playing');
     } finally { await context.close(); }
   });

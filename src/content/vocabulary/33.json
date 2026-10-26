@@ -1,0 +1,372 @@
+{
+  "lessonId": 33,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/33.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源46条，排除6条旧版或跨课条目，合并同形同义项并补入第二来源，最终51条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/33.json。"
+  ],
+  "words": [
+    {
+      "key": "w1039",
+      "word": "いくら～ても",
+      "reading": "いくら～ても",
+      "partOfSpeech": "副词",
+      "meaning": "无论怎么……也"
+    },
+    {
+      "key": "w1246",
+      "word": "～ほど",
+      "reading": "～ほど",
+      "partOfSpeech": "表达",
+      "meaning": "大约……"
+    },
+    {
+      "key": "w1253",
+      "word": "［仕事が］始まります",
+      "reading": "［しごとが］はじまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "开始（工作）"
+    },
+    {
+      "key": "w1259",
+      "word": "出席します",
+      "reading": "しゅっせきします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "出席"
+    },
+    {
+      "key": "w1286",
+      "word": "戻ります",
+      "reading": "もどります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "回来"
+    },
+    {
+      "key": "w1331",
+      "word": "逃げます",
+      "reading": "にげます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "逃跑"
+    },
+    {
+      "key": "w1332",
+      "word": "騒ぎます",
+      "reading": "さわぎます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "吵闹"
+    },
+    {
+      "key": "w1333",
+      "word": "諦めます",
+      "reading": "あきらめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "放弃"
+    },
+    {
+      "key": "w1334",
+      "word": "投げます",
+      "reading": "なげます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "投掷"
+    },
+    {
+      "key": "w1335",
+      "word": "守ります",
+      "reading": "まもります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "遵守；保护"
+    },
+    {
+      "key": "w1338",
+      "word": "伝えます",
+      "reading": "つたえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "转告"
+    },
+    {
+      "key": "w1339",
+      "word": "［車に］注意します",
+      "reading": "［くるまに］ちゅういします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "注意（车辆）"
+    },
+    {
+      "key": "w1340",
+      "word": "［席を］外します",
+      "reading": "［せきを］はずします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "离开（座位）"
+    },
+    {
+      "key": "w1341",
+      "word": "だめな",
+      "reading": "だめな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不行的；不允许的"
+    },
+    {
+      "key": "w1342",
+      "word": "席",
+      "reading": "せき",
+      "partOfSpeech": "名词",
+      "meaning": "座位"
+    },
+    {
+      "key": "w1344",
+      "word": "マーク",
+      "reading": "まーく",
+      "partOfSpeech": "名词",
+      "meaning": "标记"
+    },
+    {
+      "key": "w1345",
+      "word": "ボール",
+      "reading": "ぼーる",
+      "partOfSpeech": "名词",
+      "meaning": "球"
+    },
+    {
+      "key": "w1348",
+      "word": "規則",
+      "reading": "きそく",
+      "partOfSpeech": "名词",
+      "meaning": "规则"
+    },
+    {
+      "key": "w1349",
+      "word": "使用禁止",
+      "reading": "しようきんし",
+      "partOfSpeech": "名词",
+      "meaning": "禁止使用"
+    },
+    {
+      "key": "w1350",
+      "word": "立入禁止",
+      "reading": "たちいりきんし",
+      "partOfSpeech": "名词",
+      "meaning": "禁止入内"
+    },
+    {
+      "key": "w1351",
+      "word": "入口",
+      "reading": "いりぐち",
+      "partOfSpeech": "名词",
+      "meaning": "入口"
+    },
+    {
+      "key": "w1352",
+      "word": "出口",
+      "reading": "でぐち",
+      "partOfSpeech": "名词",
+      "meaning": "出口"
+    },
+    {
+      "key": "w1353",
+      "word": "非常口",
+      "reading": "ひじょうぐち",
+      "partOfSpeech": "名词",
+      "meaning": "紧急出口"
+    },
+    {
+      "key": "w1354",
+      "word": "無料",
+      "reading": "むりょう",
+      "partOfSpeech": "名词",
+      "meaning": "免费"
+    },
+    {
+      "key": "w1357",
+      "word": "使用中",
+      "reading": "しようちゅう",
+      "partOfSpeech": "名词",
+      "meaning": "使用中"
+    },
+    {
+      "key": "w1358",
+      "word": "～中",
+      "reading": "～ちゅう",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "正在……中"
+    },
+    {
+      "key": "w1359",
+      "word": "どういう～",
+      "reading": "どういう～",
+      "partOfSpeech": "表达",
+      "meaning": "什么样的"
+    },
+    {
+      "key": "w1360",
+      "word": "あと～",
+      "reading": "あと～",
+      "partOfSpeech": "表达",
+      "meaning": "还剩……"
+    },
+    {
+      "key": "w1361",
+      "word": "駐車違反",
+      "reading": "ちゅうしゃいはん",
+      "partOfSpeech": "名词",
+      "meaning": "违章停车"
+    },
+    {
+      "key": "w1364",
+      "word": "警察",
+      "reading": "けいさつ",
+      "partOfSpeech": "名词",
+      "meaning": "警察"
+    },
+    {
+      "key": "w1365",
+      "word": "罰金",
+      "reading": "ばっきん",
+      "partOfSpeech": "名词",
+      "meaning": "罚款"
+    },
+    {
+      "key": "w2727",
+      "word": "締め切り",
+      "reading": "しめきり",
+      "partOfSpeech": "名词",
+      "meaning": "截止日期"
+    },
+    {
+      "key": "w3079",
+      "word": "もう～ない",
+      "reading": "もう～ない",
+      "partOfSpeech": "副词",
+      "meaning": "已经不再……"
+    },
+    {
+      "key": "w3426",
+      "word": "飲み放題",
+      "reading": "のみほうだい",
+      "partOfSpeech": "名词",
+      "meaning": "畅饮"
+    },
+    {
+      "key": "w3514",
+      "word": "リサイクル",
+      "reading": "りさいくる",
+      "partOfSpeech": "名词",
+      "meaning": "回收利用"
+    },
+    {
+      "key": "w3537",
+      "word": "割引",
+      "reading": "わりびき",
+      "partOfSpeech": "名词",
+      "meaning": "折扣"
+    },
+    {
+      "key": "w5643",
+      "word": "徐行",
+      "reading": "じょこう",
+      "partOfSpeech": "名词",
+      "meaning": "慢行"
+    },
+    {
+      "key": "w5644",
+      "word": "募集中",
+      "reading": "ぼしゅうちゅう",
+      "partOfSpeech": "名词",
+      "meaning": "招募中"
+    },
+    {
+      "key": "w5649",
+      "word": "［電話が］あります",
+      "reading": "［でんわが］あります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "有（电话打来）"
+    },
+    {
+      "key": "w935",
+      "word": "同じ",
+      "reading": "おなじ",
+      "partOfSpeech": "连体词／な形容词",
+      "meaning": "相同的"
+    },
+    {
+      "key": "recycle",
+      "word": "リサイクルします",
+      "reading": "りさいくるします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "回收利用"
+    },
+    {
+      "key": "danger",
+      "word": "危険",
+      "reading": "きけん",
+      "partOfSpeech": "名词／な形容词",
+      "meaning": "危险"
+    },
+    {
+      "key": "earthquake",
+      "word": "地震",
+      "reading": "じしん",
+      "partOfSpeech": "名词",
+      "meaning": "地震"
+    },
+    {
+      "key": "occur",
+      "word": "起きます",
+      "reading": "おきます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "发生"
+    },
+    {
+      "key": "help-each-other",
+      "word": "助け合います",
+      "reading": "たすけあいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "互相帮助"
+    },
+    {
+      "key": "originally",
+      "word": "もともと",
+      "reading": "もともと",
+      "partOfSpeech": "副词",
+      "meaning": "原本"
+    },
+    {
+      "key": "sad",
+      "word": "悲しい",
+      "reading": "かなしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "悲伤的"
+    },
+    {
+      "key": "more",
+      "word": "もっと",
+      "reading": "もっと",
+      "partOfSpeech": "副词",
+      "meaning": "更加"
+    },
+    {
+      "key": "greeting",
+      "word": "あいさつ",
+      "reading": "あいさつ",
+      "partOfSpeech": "名词",
+      "meaning": "问候"
+    },
+    {
+      "key": "other-person",
+      "word": "相手",
+      "reading": "あいて",
+      "partOfSpeech": "名词",
+      "meaning": "对方"
+    },
+    {
+      "key": "feeling",
+      "word": "気持ち",
+      "reading": "きもち",
+      "partOfSpeech": "名词",
+      "meaning": "心情"
+    }
+  ]
+}

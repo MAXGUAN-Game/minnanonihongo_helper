@@ -1,0 +1,553 @@
+{
+  "l30-w1206": {
+    "romaji": "harimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物粘贴到某处，常与「紙」「写真」「壁」等搭配。注意与「つけます」（附着）区别，强调用胶水、胶带等粘住。",
+    "example": {
+      "jp": "切手を封筒に貼ります。",
+      "kana": "きってをふうとうにはります。",
+      "romaji": "kitte o fuutou ni harimasu.",
+      "zh": "把邮票贴在信封上。"
+    }
+  },
+  "l30-w1207": {
+    "romaji": "kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物悬挂起来，常与「絵」「カーテン」「看板」等搭配。也可用于「電話をかける」等固定搭配，但本课义为悬挂。",
+    "example": {
+      "jp": "壁に絵を掛けます。",
+      "kana": "かべにえをかけます。",
+      "romaji": "kabe ni e o kakemasu.",
+      "zh": "在墙上挂画。"
+    }
+  },
+  "l30-w1208": {
+    "romaji": "kazarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用装饰品点缀空间或物品，常与「花」「人形」「部屋」等搭配。强调增添美观，而非单纯放置。",
+    "example": {
+      "jp": "部屋に花を飾ります。",
+      "kana": "へやにはなをかざります。",
+      "romaji": "heya ni hana o kazarimasu.",
+      "zh": "在房间里装饰花。"
+    }
+  },
+  "l30-w1209": {
+    "romaji": "narabemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把物品按顺序排列整齐，常与「本」「椅子」「商品」等搭配。也可用于抽象事物的排列。",
+    "example": {
+      "jp": "本を棚に並べます。",
+      "kana": "ほんをたなにならべます。",
+      "romaji": "hon o tana ni narabemasu.",
+      "zh": "把书排列在架子上。"
+    }
+  },
+  "l30-w1210": {
+    "romaji": "uemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示栽种植物，常与「木」「花」「種」等搭配。强调把植物种入土中，使其生长。",
+    "example": {
+      "jp": "庭に木を植えます。",
+      "kana": "にわにきをうえます。",
+      "romaji": "niwa ni ki o uemasu.",
+      "zh": "在院子里种树。"
+    }
+  },
+  "l30-w1211": {
+    "romaji": "modoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物放回原处，常与「本」「道具」「場所」等搭配。是「戻る」的他动词形式，强调人为地使某物返回。",
+    "example": {
+      "jp": "本を棚に戻します。",
+      "kana": "ほんをたなにもどします。",
+      "romaji": "hon o tana ni modoshimasu.",
+      "zh": "把书放回架子上。"
+    }
+  },
+  "l30-w1212": {
+    "romaji": "matomemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把分散的东西集中整理到一起，或归纳总结意见、想法等。常与「荷物」「意見」「資料」等搭配。",
+    "example": {
+      "jp": "荷物を一つにまとめます。",
+      "kana": "にもつをひとつにまとめます。",
+      "romaji": "nimotsu o hitotsu ni matomemasu.",
+      "zh": "把行李归拢到一起。"
+    }
+  },
+  "l30-w1215": {
+    "romaji": "shimaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把东西收起来放到规定的地方，常与「本」「服」「道具」等搭配。也有「做完」的用法，但本课义为收起来。",
+    "example": {
+      "jp": "教科書をかばんにしまいます。",
+      "kana": "きょうかしょをかばんにしまいます。",
+      "romaji": "kyoukasho o kaban ni shimaimasu.",
+      "zh": "把教科书收进包里。"
+    }
+  },
+  "l30-w1216": {
+    "romaji": "kimemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示做出决定或确定某事，常与「日」「場所」「意見」等搭配。也可用于「心を決める」等固定表达。",
+    "example": {
+      "jp": "旅行の日を決めます。",
+      "kana": "りょこうのひをきめます。",
+      "romaji": "ryokou no hi o kimemasu.",
+      "zh": "决定旅行的日期。"
+    }
+  },
+  "l30-w1219": {
+    "romaji": "yoshuushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示事先学习将要学的内容，常与「授業」「教科書」等搭配。是サ变动词，注意与「復習」区分。",
+    "example": {
+      "jp": "明日の授業を予習します。",
+      "kana": "あしたのじゅぎょうをよしゅうします。",
+      "romaji": "ashita no jugyou o yoshuushimasu.",
+      "zh": "预习明天的课。"
+    }
+  },
+  "l30-w1220": {
+    "romaji": "fukushuushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示学习后再次巩固已学内容，常与「授業」「単語」等搭配。是サ变动词，注意与「予習」区分。",
+    "example": {
+      "jp": "毎日日本語を復習します。",
+      "kana": "まいにちにほんごをふくしゅうします。",
+      "romaji": "mainichi nihongo o fukushuushimasu.",
+      "zh": "每天复习日语。"
+    }
+  },
+  "l30-w1221": {
+    "romaji": "sonomama ni shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示让某物保持原来的状态不变，常与「窓」「本」「部屋」等搭配。强调不加以改动或移动。",
+    "example": {
+      "jp": "窓はそのままにしてください。",
+      "kana": "まどはそのままにしてください。",
+      "romaji": "mado wa sonomama ni shite kudasai.",
+      "zh": "请让窗户保持原样。"
+    }
+  },
+  "l30-w1223": {
+    "romaji": "jugyō",
+    "attributes": [],
+    "explanation": "指学校或培训课程中的一节课或上课行为，常与「受ける」「行う」搭配。比「講義」更通用，可用于中小学及大学。",
+    "example": {
+      "jp": "明日の授業は九時に始まります。",
+      "kana": "あしたのじゅぎょうはくじにはじまります。",
+      "romaji": "ashita no jugyō wa ku ji ni hajimarimasu.",
+      "zh": "明天的课九点开始。"
+    }
+  },
+  "l30-w1224": {
+    "romaji": "kōgi",
+    "attributes": [],
+    "explanation": "多指大学等高等教育中的讲课、讲座，侧重教师讲授的形式。常与「受ける」「聞く」搭配，比「授業」更正式。",
+    "example": {
+      "jp": "午後の講義は三時までです。",
+      "kana": "ごごのこうぎはさんじまでです。",
+      "romaji": "gogo no kōgi wa san ji made desu.",
+      "zh": "下午的讲座到三点。"
+    }
+  },
+  "l30-w1225": {
+    "romaji": "mītingu",
+    "attributes": [],
+    "explanation": "外来语，指为商量事情而开的会议，常用于公司、社团等场合。比「会議」口语一些，可搭配「開く」「参加する」。",
+    "example": {
+      "jp": "来週のミーティングは水曜日です。",
+      "kana": "らいしゅうのみーてぃんぐはすいようびです。",
+      "romaji": "raishū no mītingu wa suiyōbi desu.",
+      "zh": "下周的会议是星期三。"
+    }
+  },
+  "l30-v5": {
+    "romaji": "yotei",
+    "attributes": [],
+    "explanation": "表示事先定好的计划或预定，常以「予定です」「予定がある」等形式使用。也可接动词连体形表示“预计做……”。",
+    "example": {
+      "jp": "週末は友達と会う予定です。",
+      "kana": "しゅうまつはともだちとあうよていです。",
+      "romaji": "shūmatsu wa tomodachi to au yotei desu.",
+      "zh": "周末计划和朋友见面。"
+    }
+  },
+  "l30-w1227": {
+    "romaji": "oshirase",
+    "attributes": [],
+    "explanation": "「知らせ」的礼貌说法，指通知、公告，常用于学校、公司或公共场合的告示。标题中常见「お知らせ」。",
+    "example": {
+      "jp": "掲示板にお知らせが貼ってあります。",
+      "kana": "けいじばんにおしらせがはってあります。",
+      "romaji": "keijiban ni oshirase ga hatte arimasu.",
+      "zh": "布告栏上贴着通知。"
+    }
+  },
+  "l30-w1229": {
+    "romaji": "karendā",
+    "attributes": [],
+    "explanation": "外来语，指日历，可指挂历、台历或日程表。常与「見る」「めくる」等搭配。",
+    "example": {
+      "jp": "壁に新しいカレンダーを掛けました。",
+      "kana": "かべにあたらしいかれんだーをかけました。",
+      "romaji": "kabe ni atarashii karendā o kakemashita.",
+      "zh": "在墙上挂了一本新日历。"
+    }
+  },
+  "l30-w1230": {
+    "romaji": "posutā",
+    "attributes": [],
+    "explanation": "外来语，指海报、宣传画，常用于活动通知或广告。可搭配「貼る」「はがす」。",
+    "example": {
+      "jp": "駅にコンサートのポスターが貼ってあります。",
+      "kana": "えきにこんさーとのぽすたーがはってあります。",
+      "romaji": "eki ni konsāto no posutā ga hatte arimasu.",
+      "zh": "车站里贴着音乐会的海报。"
+    }
+  },
+  "l30-w1231": {
+    "romaji": "gomibako",
+    "attributes": [],
+    "explanation": "由「ごみ」和「箱」组成的复合名词，指垃圾箱。常与「捨てる」搭配，注意「ごみ」不写汉字时更常见。",
+    "example": {
+      "jp": "紙くずはごみ箱に捨ててください。",
+      "kana": "かみくずはごみばこにすててください。",
+      "romaji": "kamikuzu wa gomibako ni sutete kudasai.",
+      "zh": "请把废纸扔进垃圾箱。"
+    }
+  },
+  "l30-w1232": {
+    "romaji": "ningyō",
+    "attributes": [],
+    "explanation": "指人偶、玩偶，包括传统日本人形和玩具娃娃。常与「飾る」「作る」搭配。",
+    "example": {
+      "jp": "机の上にかわいい人形が飾ってあります。",
+      "kana": "つくえのうえにかわいいにんぎょうがかざってあります。",
+      "romaji": "tsukue no ue ni kawaii ningyō ga kazatte arimasu.",
+      "zh": "桌子上装饰着可爱的玩偶。"
+    }
+  },
+  "l30-w1233": {
+    "romaji": "kabin",
+    "attributes": [],
+    "explanation": "指插花用的花瓶，常与「花を生ける」「飾る」搭配。注意与「花びん」同义，但「花瓶」更常用。",
+    "example": {
+      "jp": "花瓶に白い花を生けました。",
+      "kana": "かびんにしろいはなをいけました。",
+      "romaji": "kabin ni shiroi hana o ikemashita.",
+      "zh": "在花瓶里插了白花。"
+    }
+  },
+  "l30-w1234": {
+    "romaji": "kagami",
+    "attributes": [],
+    "explanation": "指镜子，常与「見る」「映る」搭配。也可用于比喻，如「鏡のような湖面」。",
+    "example": {
+      "jp": "鏡を見て髪を直しました。",
+      "kana": "かがみをみてかみをなおしました。",
+      "romaji": "kagami o mite kami o naoshimashita.",
+      "zh": "照镜子整理了头发。"
+    }
+  },
+  "l30-w1235": {
+    "romaji": "hikidashi",
+    "attributes": [],
+    "explanation": "指抽屉，常与「開ける」「閉める」「しまう」搭配。由动词「引き出す」的名词形而来。",
+    "example": {
+      "jp": "はさみは引き出しの中にあります。",
+      "kana": "はさみはひきだしのなかにあります。",
+      "romaji": "hasami wa hikidashi no naka ni arimasu.",
+      "zh": "剪刀在抽屉里。"
+    }
+  },
+  "l30-w1236": {
+    "romaji": "genkan",
+    "attributes": [],
+    "explanation": "指住宅的玄关、门厅，是进屋脱鞋、接待来客的地方。常与「靴を脱ぐ」「上がる」等搭配，注意不是指大门本身。",
+    "example": {
+      "jp": "玄関で靴を脱いでください。",
+      "kana": "げんかんでくつをぬいでください。",
+      "romaji": "genkan de kutsu o nuide kudasai.",
+      "zh": "请在玄关脱鞋。"
+    }
+  },
+  "l30-w1237": {
+    "romaji": "rōka",
+    "attributes": [],
+    "explanation": "指建筑物内部的走廊、过道，连接各个房间。常与「廊下を歩く」「廊下に立つ」等搭配，语体中性。",
+    "example": {
+      "jp": "廊下を静かに歩いてください。",
+      "kana": "ろうかをしずかにあるいてください。",
+      "romaji": "rōka o shizuka ni aruite kudasai.",
+      "zh": "请安静地走过走廊。"
+    }
+  },
+  "l30-v4": {
+    "romaji": "kabe",
+    "attributes": [],
+    "explanation": "指墙壁，也可比喻障碍。常与「壁に掛ける」「壁を塗る」等搭配，注意与「塀」（围墙）区分。",
+    "example": {
+      "jp": "壁に地図が掛けてあります。",
+      "kana": "かべにちずがかけてあります。",
+      "romaji": "kabe ni chizu ga kakete arimasu.",
+      "zh": "墙上挂着地图。"
+    }
+  },
+  "l30-w1239": {
+    "romaji": "ike",
+    "attributes": [],
+    "explanation": "指人工或自然形成的池塘，常出现在庭院、公园中。与「湖」（みずうみ）相比规模较小。",
+    "example": {
+      "jp": "公園の池に魚がいます。",
+      "kana": "こうえんのいけにさかながいます。",
+      "romaji": "kōen no ike ni sakana ga imasu.",
+      "zh": "公园的池塘里有鱼。"
+    }
+  },
+  "l30-w1241": {
+    "romaji": "moto no tokoro",
+    "attributes": [],
+    "explanation": "指原来所在的地方、原处，常用于「元の所に戻す」等，表示把东西放回原位。",
+    "example": {
+      "jp": "使った本は元の所に戻してください。",
+      "kana": "つかったほんはもとのところにもどしてください。",
+      "romaji": "tsukatta hon wa moto no tokoro ni modoshite kudasai.",
+      "zh": "用过的书请放回原处。"
+    }
+  },
+  "l30-w1242": {
+    "romaji": "mawari",
+    "attributes": [],
+    "explanation": "指周围、四周，常与「周りを見る」「周りの人」等搭配，表示附近或周围的人。",
+    "example": {
+      "jp": "家の周りに木がたくさんあります。",
+      "kana": "いえのまわりにきがたくさんあります。",
+      "romaji": "ie no mawari ni ki ga takusan arimasu.",
+      "zh": "房子周围有很多树。"
+    }
+  },
+  "l30-w1243": {
+    "romaji": "mannaka",
+    "attributes": [],
+    "explanation": "指正中央、正中间，强调位置居中。常与「真ん中に置く」「真ん中に立つ」等搭配。",
+    "example": {
+      "jp": "テーブルの真ん中に花を置きました。",
+      "kana": "てーぶるのまんなかにはなをおきました。",
+      "romaji": "tēburu no mannaka ni hana o okimashita.",
+      "zh": "把花放在了桌子正中央。"
+    }
+  },
+  "l30-w1244": {
+    "romaji": "sumi",
+    "attributes": [],
+    "explanation": "指角落、边角，常与「部屋の隅」「隅に置く」等搭配，表示房间或物体的内侧角落。",
+    "example": {
+      "jp": "部屋の隅に椅子があります。",
+      "kana": "へやのすみにいすがあります。",
+      "romaji": "heya no sumi ni isu ga arimasu.",
+      "zh": "房间的角落里有椅子。"
+    }
+  },
+  "l30-w1245": {
+    "romaji": "mada",
+    "attributes": [],
+    "explanation": "副词，表示“还、仍然”，常与否定或肯定搭配，如「まだ～ない」「まだ～ている」。注意与「もう」相对。",
+    "example": {
+      "jp": "宿題はまだ終わっていません。",
+      "kana": "しゅくだいはまだおわっていません。",
+      "romaji": "shukudai wa mada owatte imasen.",
+      "zh": "作业还没有做完。"
+    }
+  },
+  "l30-w1247": {
+    "romaji": "yoteihyō",
+    "attributes": [],
+    "explanation": "指日程表、计划表，用于列出预定事项。常与「予定表を見る」「予定表に書く」等搭配。",
+    "example": {
+      "jp": "会議の予定表を壁に貼りました。",
+      "kana": "かいぎのよていひょうをかべにはりました。",
+      "romaji": "kaigi no yoteihyō o kabe ni harimashita.",
+      "zh": "把会议的日程表贴在了墙上。"
+    }
+  },
+  "l30-w1474": {
+    "romaji": "~toka, ~toka",
+    "attributes": [],
+    "explanation": "并列助词，列举若干事例，暗示还有其他类似事物。口语常用，比「や」更随意，可接名词或动词。",
+    "example": {
+      "jp": "休みの日は本を読むとか、散歩するとかします。",
+      "kana": "やすみのひはほんをよむとか、さんぽするとかします。",
+      "romaji": "yasumi no hi wa hon o yomu toka, sanpo suru toka shimasu.",
+      "zh": "休息日看看书、散散步什么的。"
+    }
+  },
+  "l30-w3221": {
+    "romaji": "gaidobukku",
+    "attributes": [],
+    "explanation": "指旅行指南、导游手册，常与「ガイドブックを見る」「ガイドブックで調べる」等搭配。",
+    "example": {
+      "jp": "旅行の前にガイドブックを買いました。",
+      "kana": "りょこうのまえにがいどぶっくをかいました。",
+      "romaji": "ryokō no mae ni gaidobukku o kaimashita.",
+      "zh": "旅行前买了旅行指南。"
+    }
+  },
+  "l30-w3442": {
+    "romaji": "hijōji",
+    "attributes": [],
+    "explanation": "指地震、火灾等紧急事态，常用于防灾语境。常与「～の備え」「～に備える」等搭配，语气正式。",
+    "example": {
+      "jp": "非常時のために水を用意しておく。",
+      "kana": "ひじょうじのためにみずをよういしておく。",
+      "romaji": "hijōji no tame ni mizu o yōi shite oku.",
+      "zh": "为了紧急情况事先准备好水。"
+    }
+  },
+  "l30-w3516": {
+    "romaji": "ryukku",
+    "attributes": [],
+    "explanation": "指双肩背的背包，日常口语常用。常与「リュックを背負う」「リュックに入れる」搭配，比「バックパック」更口语。",
+    "example": {
+      "jp": "リュックに教科書を入れた。",
+      "kana": "りゅっくにきょうかしょをいれた。",
+      "romaji": "ryukku ni kyōkasho o ireta.",
+      "zh": "把教科书放进了背包里。"
+    }
+  },
+  "l30-w5640": {
+    "romaji": "kaichūdentō",
+    "attributes": [],
+    "explanation": "指便携式手电筒，防灾用品常见。常与「懐中電灯を点ける」「～で照らす」搭配，正式名词。",
+    "example": {
+      "jp": "暗いので懐中電灯をつけた。",
+      "kana": "くらいのでかいちゅうでんとうをつけた。",
+      "romaji": "kurai node kaichūdentō o tsuketa.",
+      "zh": "因为很暗，所以打开了手电筒。"
+    }
+  },
+  "l30-emergency-bag": {
+    "romaji": "hijōbukuro",
+    "attributes": [],
+    "explanation": "指预先备好、紧急时携带的应急包，常与「非常袋を用意する」搭配。属于防灾用语，日常较少使用。",
+    "example": {
+      "jp": "玄関に非常袋を置いてある。",
+      "kana": "げんかんにひじょうぶくろをおいてある。",
+      "romaji": "genkan ni hijōbukuro o oite aru.",
+      "zh": "玄关放着应急包。"
+    }
+  },
+  "l30-round": {
+    "romaji": "marui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示形状圆，也可形容声音圆润或性格温和。常与「丸い形」「丸い顔」搭配，反义词是「四角い」。",
+    "example": {
+      "jp": "月が丸くて明るい。",
+      "kana": "つきがまるくてあかるい。",
+      "romaji": "tsuki ga marukute akarui.",
+      "zh": "月亮又圆又亮。"
+    }
+  },
+  "l30-certain": {
+    "romaji": "aru",
+    "attributes": [],
+    "explanation": "连体词，表示不确定的“某个”，用于说话人知道但不必明说的对象。常接名词，如「ある日」「ある人」，不用于疑问句。",
+    "example": {
+      "jp": "ある日、夢を見た。",
+      "kana": "あるひ、ゆめをみた。",
+      "romaji": "aru hi, yume o mita.",
+      "zh": "有一天，我做了一个梦。"
+    }
+  },
+  "l30-dream": {
+    "romaji": "yume o mimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "固定搭配「夢を見る」的礼貌体，表示做梦。不能说「夢をする」，常与「いい夢」「変な夢」等搭配。",
+    "example": {
+      "jp": "昨夜、怖い夢を見ました。",
+      "kana": "ゆうべ、こわいゆめをみました。",
+      "romaji": "yūbe, kowai yume o mimashita.",
+      "zh": "昨晚做了个可怕的梦。"
+    }
+  },
+  "l30-happy": {
+    "romaji": "ureshii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示因好事而高兴，多用于第一人称感受；问对方时常用「嬉しい？」。与「楽しい」不同，侧重瞬间的喜悦。",
+    "example": {
+      "jp": "合格してとても嬉しいです。",
+      "kana": "ごうかくしてとてもうれしいです。",
+      "romaji": "gōkaku shite totemo ureshii desu.",
+      "zh": "合格了非常高兴。"
+    }
+  },
+  "l30-unpleasant": {
+    "romaji": "iyana",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示讨厌、不愉快或不愿意，修饰名词时加「な」。常与「嫌な気持ち」「嫌な予感」搭配，口语中也可单独说「嫌だ」。",
+    "example": {
+      "jp": "嫌な予感がする。",
+      "kana": "いやなよかんがする。",
+      "romaji": "iya na yokan ga suru.",
+      "zh": "有种不祥的预感。"
+    }
+  },
+  "l30-then": {
+    "romaji": "suruto",
+    "attributes": [],
+    "explanation": "接续词，表示前项动作之后紧接着发生意外结果，相当于“于是、这时”。常用于叙述过去的事，后项多为过去式。",
+    "example": {
+      "jp": "ボタンを押した。すると、ドアが開いた。",
+      "kana": "ぼたんをおした。すると、どあがひらいた。",
+      "romaji": "botan o oshita. suruto, doa ga hiraita.",
+      "zh": "按了按钮。于是，门开了。"
+    }
+  },
+  "l30-wake": {
+    "romaji": "me ga samemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定表达「目が覚める」的礼貌体，表示睡醒或醒悟。主语用「が」，不能说「目を覚ます」时是他动词用法。",
+    "example": {
+      "jp": "朝六時に目が覚めました。",
+      "kana": "あさろくじにめがさめました。",
+      "romaji": "asa roku ji ni me ga samemashita.",
+      "zh": "早上六点醒了。"
+    }
+  }
+}

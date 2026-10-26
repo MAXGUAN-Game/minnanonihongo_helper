@@ -1,0 +1,259 @@
+{
+  "lessonId": 30,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/30.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 47,
+  "entries": [
+    {
+      "sourceId": "1206",
+      "sourceWord": "貼ります",
+      "key": "w1206"
+    },
+    {
+      "sourceId": "1207",
+      "sourceWord": "掛けます",
+      "key": "w1207"
+    },
+    {
+      "sourceId": "1208",
+      "sourceWord": "飾ります",
+      "key": "w1208"
+    },
+    {
+      "sourceId": "1209",
+      "sourceWord": "並べます",
+      "key": "w1209"
+    },
+    {
+      "sourceId": "1210",
+      "sourceWord": "植えます",
+      "key": "w1210"
+    },
+    {
+      "sourceId": "1211",
+      "sourceWord": "戻します",
+      "key": "w1211"
+    },
+    {
+      "sourceId": "1212",
+      "sourceWord": "まとめます",
+      "key": "w1212"
+    },
+    {
+      "sourceId": "1213",
+      "sourceWord": "まとめます",
+      "key": "w1212"
+    },
+    {
+      "sourceId": "1215",
+      "sourceWord": "しまいます",
+      "key": "w1215"
+    },
+    {
+      "sourceId": "1216",
+      "sourceWord": "決めます",
+      "key": "w1216"
+    },
+    {
+      "sourceId": "1219",
+      "sourceWord": "予習します",
+      "key": "w1219"
+    },
+    {
+      "sourceId": "1220",
+      "sourceWord": "復習します",
+      "key": "w1220"
+    },
+    {
+      "sourceId": "1221",
+      "sourceWord": "そのままにします",
+      "key": "w1221"
+    },
+    {
+      "sourceId": "1223",
+      "sourceWord": "授業",
+      "key": "w1223"
+    },
+    {
+      "sourceId": "1224",
+      "sourceWord": "講義",
+      "key": "w1224"
+    },
+    {
+      "sourceId": "1225",
+      "sourceWord": "ミーティング",
+      "key": "w1225"
+    },
+    {
+      "sourceId": "1226",
+      "sourceWord": "予定",
+      "key": "w1226"
+    },
+    {
+      "sourceId": "1227",
+      "sourceWord": "お知らせ",
+      "key": "w1227"
+    },
+    {
+      "sourceId": "1229",
+      "sourceWord": "カレンダー",
+      "key": "w1229"
+    },
+    {
+      "sourceId": "1230",
+      "sourceWord": "ポスター",
+      "key": "w1230"
+    },
+    {
+      "sourceId": "1231",
+      "sourceWord": "ごみ箱",
+      "key": "w1231"
+    },
+    {
+      "sourceId": "1232",
+      "sourceWord": "人形",
+      "key": "w1232"
+    },
+    {
+      "sourceId": "1233",
+      "sourceWord": "花瓶",
+      "key": "w1233"
+    },
+    {
+      "sourceId": "1234",
+      "sourceWord": "鏡",
+      "key": "w1234"
+    },
+    {
+      "sourceId": "1235",
+      "sourceWord": "引き出し",
+      "key": "w1235"
+    },
+    {
+      "sourceId": "1236",
+      "sourceWord": "玄関",
+      "key": "w1236"
+    },
+    {
+      "sourceId": "1237",
+      "sourceWord": "廊下",
+      "key": "w1237"
+    },
+    {
+      "sourceId": "1238",
+      "sourceWord": "壁",
+      "key": "w1238"
+    },
+    {
+      "sourceId": "1239",
+      "sourceWord": "池",
+      "key": "w1239"
+    },
+    {
+      "sourceId": "1241",
+      "sourceWord": "元の所",
+      "key": "w1241"
+    },
+    {
+      "sourceId": "1242",
+      "sourceWord": "周り",
+      "key": "w1242"
+    },
+    {
+      "sourceId": "1243",
+      "sourceWord": "真ん中",
+      "key": "w1243"
+    },
+    {
+      "sourceId": "1244",
+      "sourceWord": "隅",
+      "key": "w1244"
+    },
+    {
+      "sourceId": "1245",
+      "sourceWord": "まだ",
+      "key": "w1245"
+    },
+    {
+      "sourceId": "1247",
+      "sourceWord": "予定表",
+      "key": "w1247"
+    },
+    {
+      "sourceId": "1474",
+      "sourceWord": "～とか、～とか",
+      "key": "w1474"
+    },
+    {
+      "sourceId": "3221",
+      "sourceWord": "ガイドブック",
+      "key": "w3221"
+    },
+    {
+      "sourceId": "3442",
+      "sourceWord": "非常時",
+      "key": "w3442"
+    },
+    {
+      "sourceId": "3516",
+      "sourceWord": "リュック",
+      "key": "w3516"
+    },
+    {
+      "sourceId": "5640",
+      "sourceWord": "懐中電灯",
+      "key": "w5640"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1228",
+      "sourceWord": "案内書",
+      "reason": "第二版以ガイドブック作为词表表记。"
+    },
+    {
+      "sourceId": "1248",
+      "sourceWord": "ご苦労さま。",
+      "reason": "旧版旅行规划对话表达，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1249",
+      "sourceWord": "希望",
+      "reason": "旧版旅行规划对话词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1250",
+      "sourceWord": "何かご希望がありますか。",
+      "reason": "旧版旅行规划对话整句，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1251",
+      "sourceWord": "ミュージカル",
+      "reason": "旧版旅行规划对话词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1252",
+      "sourceWord": "それはいいですね。",
+      "reason": "旧版旅行规划对话表达，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "2779",
+      "sourceWord": "生活します",
+      "reason": "主来源补充生活动词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "emergency-bag",
+    "round",
+    "certain",
+    "dream",
+    "happy",
+    "unpleasant",
+    "then",
+    "wake"
+  ],
+  "finalCount": 47
+}

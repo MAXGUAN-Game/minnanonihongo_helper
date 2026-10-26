@@ -1,0 +1,393 @@
+{
+  "lessonId": 28,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/28.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源47条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终54条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/28.json。"
+  ],
+  "words": [
+    {
+      "key": "w1102",
+      "word": "景色",
+      "reading": "けしき",
+      "partOfSpeech": "名词",
+      "meaning": "风景"
+    },
+    {
+      "key": "w1110",
+      "word": "台所",
+      "reading": "だいどころ",
+      "partOfSpeech": "名词",
+      "meaning": "厨房"
+    },
+    {
+      "key": "w1124",
+      "word": "［パンが］売れます",
+      "reading": "［ぱんが］うれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "畅销；卖得出去（面包）"
+    },
+    {
+      "key": "w1125",
+      "word": "踊ります",
+      "reading": "おどります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "跳舞"
+    },
+    {
+      "key": "w1126",
+      "word": "噛みます",
+      "reading": "かみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "咀嚼；咬"
+    },
+    {
+      "key": "w1128",
+      "word": "選びます",
+      "reading": "えらびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "选择"
+    },
+    {
+      "key": "w1130",
+      "word": "［会社に］通います",
+      "reading": "［かいしゃに］かよいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "定期往返（公司）"
+    },
+    {
+      "key": "w1131",
+      "word": "メモします",
+      "reading": "めもします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "做笔记"
+    },
+    {
+      "key": "w1132",
+      "word": "まじめな",
+      "reading": "まじめな",
+      "partOfSpeech": "な形容词",
+      "meaning": "认真的；诚实的"
+    },
+    {
+      "key": "w1133",
+      "word": "熱心な",
+      "reading": "ねっしんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "热心的"
+    },
+    {
+      "key": "w1135",
+      "word": "偉い",
+      "reading": "えらい",
+      "partOfSpeech": "い形容词",
+      "meaning": "伟大的；了不起的"
+    },
+    {
+      "key": "w1136",
+      "word": "ちょうどいい",
+      "reading": "ちょうどいい",
+      "partOfSpeech": "い形容词",
+      "meaning": "恰好的"
+    },
+    {
+      "key": "w1138",
+      "word": "経験",
+      "reading": "けいけん",
+      "partOfSpeech": "名词",
+      "meaning": "经验"
+    },
+    {
+      "key": "w1139",
+      "word": "力",
+      "reading": "ちから",
+      "partOfSpeech": "名词",
+      "meaning": "力量"
+    },
+    {
+      "key": "w1140",
+      "word": "人気",
+      "reading": "にんき",
+      "partOfSpeech": "名词",
+      "meaning": "人气"
+    },
+    {
+      "key": "w1141",
+      "word": "形",
+      "reading": "かたち",
+      "partOfSpeech": "名词",
+      "meaning": "形状"
+    },
+    {
+      "key": "w1142",
+      "word": "色",
+      "reading": "いろ",
+      "partOfSpeech": "名词",
+      "meaning": "颜色"
+    },
+    {
+      "key": "w1143",
+      "word": "味",
+      "reading": "あじ",
+      "partOfSpeech": "名词",
+      "meaning": "味道"
+    },
+    {
+      "key": "w1144",
+      "word": "ガム",
+      "reading": "がむ",
+      "partOfSpeech": "名词",
+      "meaning": "口香糖"
+    },
+    {
+      "key": "w1145",
+      "word": "品物",
+      "reading": "しなもの",
+      "partOfSpeech": "名词",
+      "meaning": "物品；商品"
+    },
+    {
+      "key": "w1146",
+      "word": "値段",
+      "reading": "ねだん",
+      "partOfSpeech": "名词",
+      "meaning": "价格"
+    },
+    {
+      "key": "w1147",
+      "word": "給料",
+      "reading": "きゅうりょう",
+      "partOfSpeech": "名词",
+      "meaning": "工资"
+    },
+    {
+      "key": "w1148",
+      "word": "ボーナス",
+      "reading": "ぼーなす",
+      "partOfSpeech": "名词",
+      "meaning": "奖金"
+    },
+    {
+      "key": "w1149",
+      "word": "番組",
+      "reading": "ばんぐみ",
+      "partOfSpeech": "名词",
+      "meaning": "节目"
+    },
+    {
+      "key": "w1150",
+      "word": "ドラマ",
+      "reading": "どらま",
+      "partOfSpeech": "名词",
+      "meaning": "电视剧"
+    },
+    {
+      "key": "w1151",
+      "word": "小説",
+      "reading": "しょうせつ",
+      "partOfSpeech": "名词",
+      "meaning": "小说"
+    },
+    {
+      "key": "w1152",
+      "word": "小説家",
+      "reading": "しょうせつか",
+      "partOfSpeech": "名词",
+      "meaning": "小说家"
+    },
+    {
+      "key": "w1153",
+      "word": "歌手",
+      "reading": "かしゅ",
+      "partOfSpeech": "名词",
+      "meaning": "歌手"
+    },
+    {
+      "key": "w1155",
+      "word": "息子",
+      "reading": "むすこ",
+      "partOfSpeech": "名词",
+      "meaning": "自己的儿子"
+    },
+    {
+      "key": "w1156",
+      "word": "息子さん",
+      "reading": "むすこさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的儿子"
+    },
+    {
+      "key": "w1157",
+      "word": "娘",
+      "reading": "むすめ",
+      "partOfSpeech": "名词",
+      "meaning": "自己的女儿"
+    },
+    {
+      "key": "w1158",
+      "word": "娘さん",
+      "reading": "むすめさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的女儿"
+    },
+    {
+      "key": "w1159",
+      "word": "自分",
+      "reading": "じぶん",
+      "partOfSpeech": "名词",
+      "meaning": "自己"
+    },
+    {
+      "key": "w1160",
+      "word": "将来",
+      "reading": "しょうらい",
+      "partOfSpeech": "名词",
+      "meaning": "将来"
+    },
+    {
+      "key": "w1161",
+      "word": "しばらく",
+      "reading": "しばらく",
+      "partOfSpeech": "副词",
+      "meaning": "一会儿；一段时间"
+    },
+    {
+      "key": "w1162",
+      "word": "大抵",
+      "reading": "たいてい",
+      "partOfSpeech": "副词",
+      "meaning": "通常；大多"
+    },
+    {
+      "key": "w1163",
+      "word": "それに",
+      "reading": "それに",
+      "partOfSpeech": "表达",
+      "meaning": "而且"
+    },
+    {
+      "key": "w1164",
+      "word": "それで",
+      "reading": "それで",
+      "partOfSpeech": "表达",
+      "meaning": "因此"
+    },
+    {
+      "key": "w1165",
+      "word": "ちょっとお願いがあるんですが",
+      "reading": "ちょっとおねがいがあるんですが",
+      "partOfSpeech": "固定表达",
+      "meaning": "有件事想请您帮忙"
+    },
+    {
+      "key": "w1167",
+      "word": "会話",
+      "reading": "かいわ",
+      "partOfSpeech": "名词",
+      "meaning": "会话"
+    },
+    {
+      "key": "w1347",
+      "word": "～機",
+      "reading": "～き",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……机器"
+    },
+    {
+      "key": "w2428",
+      "word": "ゲーム",
+      "reading": "げーむ",
+      "partOfSpeech": "名词",
+      "meaning": "游戏"
+    },
+    {
+      "key": "w2999",
+      "word": "美容院",
+      "reading": "びよういん",
+      "partOfSpeech": "名词",
+      "meaning": "美容院"
+    },
+    {
+      "key": "w889",
+      "word": "実は",
+      "reading": "じつは",
+      "partOfSpeech": "表达",
+      "meaning": "其实"
+    },
+    {
+      "key": "w976",
+      "word": "うーん",
+      "reading": "うーん",
+      "partOfSpeech": "固定表达",
+      "meaning": "嗯……（思考时）"
+    },
+    {
+      "key": "professional",
+      "word": "～家",
+      "reading": "～か",
+      "partOfSpeech": "接尾词",
+      "meaning": "从事……的专家"
+    },
+    {
+      "key": "notice",
+      "word": "お知らせ",
+      "reading": "おしらせ",
+      "partOfSpeech": "名词",
+      "meaning": "通知"
+    },
+    {
+      "key": "participate",
+      "word": "参加します",
+      "reading": "さんかします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "参加"
+    },
+    {
+      "key": "date",
+      "word": "日にち",
+      "reading": "ひにち",
+      "partOfSpeech": "名词",
+      "meaning": "日期"
+    },
+    {
+      "key": "saturday",
+      "word": "土",
+      "reading": "ど",
+      "partOfSpeech": "名词",
+      "meaning": "星期六（简称）"
+    },
+    {
+      "key": "gym",
+      "word": "体育館",
+      "reading": "たいいくかん",
+      "partOfSpeech": "名词",
+      "meaning": "体育馆"
+    },
+    {
+      "key": "free",
+      "word": "無料",
+      "reading": "むりょう",
+      "partOfSpeech": "名词",
+      "meaning": "免费"
+    },
+    {
+      "key": "invite",
+      "word": "誘います",
+      "reading": "さそいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "邀请"
+    },
+    {
+      "key": "event",
+      "word": "イベント",
+      "reading": "いべんと",
+      "partOfSpeech": "名词",
+      "meaning": "活动"
+    }
+  ]
+}

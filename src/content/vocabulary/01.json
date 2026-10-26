@@ -1,0 +1,414 @@
+{
+  "lessonId": 1,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/1.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "交叉核对完成：主来源33条候选，保留32条对应（同义表记可合并），排除1条；另补第二来源专名或固定表达，最终57条。",
+    "教材公司、机构和人物名称按专名收录。读音采用平假名，专名日文保留原表记。",
+    "词形变体归并后保留旧词ID。详细对应、第二来源补项和排除原因见本课vocabulary-audit文件。"
+  ],
+  "words": [
+    {
+      "key": "watashi",
+      "word": "私",
+      "reading": "わたし",
+      "partOfSpeech": "代名词",
+      "meaning": "我"
+    },
+    {
+      "key": "anata",
+      "word": "あなた",
+      "reading": "あなた",
+      "partOfSpeech": "代名词",
+      "meaning": "你（通常用姓名或职称称呼对方更自然）"
+    },
+    {
+      "key": "anohito",
+      "word": "あの人",
+      "reading": "あのひと",
+      "partOfSpeech": "名词短语",
+      "meaning": "那个人"
+    },
+    {
+      "key": "anokata",
+      "word": "あの方",
+      "reading": "あのかた",
+      "partOfSpeech": "名词短语（敬语）",
+      "meaning": "那位"
+    },
+    {
+      "key": "sensei",
+      "word": "先生",
+      "reading": "せんせい",
+      "partOfSpeech": "名词／称谓",
+      "meaning": "老师；对医生等专业人士的尊称"
+    },
+    {
+      "key": "kyoushi",
+      "word": "教師",
+      "reading": "きょうし",
+      "partOfSpeech": "名词",
+      "meaning": "教师（职业名称，用于介绍自己的职业）"
+    },
+    {
+      "key": "gakusei",
+      "word": "学生",
+      "reading": "がくせい",
+      "partOfSpeech": "名词",
+      "meaning": "学生"
+    },
+    {
+      "key": "kaishain",
+      "word": "会社員",
+      "reading": "かいしゃいん",
+      "partOfSpeech": "名词",
+      "meaning": "公司职员"
+    },
+    {
+      "key": "shain",
+      "word": "社員",
+      "reading": "しゃいん",
+      "partOfSpeech": "名词",
+      "meaning": "某公司的员工（常与公司名称连用）"
+    },
+    {
+      "key": "ginkouin",
+      "word": "銀行員",
+      "reading": "ぎんこういん",
+      "partOfSpeech": "名词",
+      "meaning": "银行职员"
+    },
+    {
+      "key": "isha",
+      "word": "医者",
+      "reading": "いしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "医生"
+    },
+    {
+      "key": "kenkyuusha",
+      "word": "研究者",
+      "reading": "けんきゅうしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "研究人员"
+    },
+    {
+      "key": "daigaku",
+      "word": "大学",
+      "reading": "だいがく",
+      "partOfSpeech": "名词",
+      "meaning": "大学"
+    },
+    {
+      "key": "byouin",
+      "word": "病院",
+      "reading": "びょういん",
+      "partOfSpeech": "名词",
+      "meaning": "医院"
+    },
+    {
+      "key": "dare",
+      "word": "だれ",
+      "reading": "だれ",
+      "partOfSpeech": "疑问代名词",
+      "meaning": "谁"
+    },
+    {
+      "key": "donata",
+      "word": "どなた",
+      "reading": "どなた",
+      "partOfSpeech": "疑问代名词（敬语）",
+      "meaning": "哪位"
+    },
+    {
+      "key": "san",
+      "word": "～さん",
+      "reading": "～さん",
+      "partOfSpeech": "接尾词／称谓",
+      "meaning": "先生、女士等敬称（接姓名后）"
+    },
+    {
+      "key": "chan",
+      "word": "～ちゃん",
+      "reading": "～ちゃん",
+      "partOfSpeech": "接尾词／爱称",
+      "meaning": "用于儿童等的亲昵称呼"
+    },
+    {
+      "key": "jin",
+      "word": "～人",
+      "reading": "～じん",
+      "partOfSpeech": "接尾词",
+      "meaning": "某国人"
+    },
+    {
+      "key": "sai",
+      "word": "～歳",
+      "reading": "～さい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "岁"
+    },
+    {
+      "key": "nansai",
+      "word": "何歳",
+      "reading": "なんさい",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几岁"
+    },
+    {
+      "key": "oikutsu",
+      "word": "おいくつ",
+      "reading": "おいくつ",
+      "partOfSpeech": "疑问表达（敬语）",
+      "meaning": "几岁（礼貌说法）"
+    },
+    {
+      "key": "hai",
+      "word": "はい",
+      "reading": "はい",
+      "partOfSpeech": "感叹词／应答",
+      "meaning": "是；好的"
+    },
+    {
+      "key": "iie",
+      "word": "いいえ",
+      "reading": "いいえ",
+      "partOfSpeech": "感叹词／应答",
+      "meaning": "不；不是"
+    },
+    {
+      "key": "shitsureidesuga",
+      "word": "失礼ですが",
+      "reading": "しつれいですが",
+      "partOfSpeech": "固定表达",
+      "meaning": "冒昧问一下；不好意思"
+    },
+    {
+      "key": "onamaewa",
+      "word": "お名前は？",
+      "reading": "おなまえは",
+      "partOfSpeech": "固定表达",
+      "meaning": "您贵姓？（询问姓名）"
+    },
+    {
+      "key": "hajimemashite",
+      "word": "初めまして",
+      "reading": "はじめまして",
+      "partOfSpeech": "固定表达",
+      "meaning": "初次见面"
+    },
+    {
+      "key": "yoroshiku",
+      "word": "どうぞよろしくお願いします",
+      "reading": "どうぞよろしくおねがいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "请多关照（也可说「どうぞよろしく」「よろしくお願いします」）"
+    },
+    {
+      "key": "kochirawasan",
+      "word": "こちらは～さんです",
+      "reading": "こちらは～さんです",
+      "partOfSpeech": "固定表达",
+      "meaning": "这位是……（介绍他人）"
+    },
+    {
+      "key": "karakimashita",
+      "word": "～から来ました",
+      "reading": "～からきました",
+      "partOfSpeech": "固定表达",
+      "meaning": "来自……"
+    },
+    {
+      "key": "nihon",
+      "word": "日本",
+      "reading": "にほん",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "日本"
+    },
+    {
+      "key": "amerika",
+      "word": "アメリカ",
+      "reading": "あめりか",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "美国"
+    },
+    {
+      "key": "igirisu",
+      "word": "イギリス",
+      "reading": "いぎりす",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "英国"
+    },
+    {
+      "key": "indo",
+      "word": "インド",
+      "reading": "いんど",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "印度"
+    },
+    {
+      "key": "indoneshia",
+      "word": "インドネシア",
+      "reading": "いんどねしあ",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "印度尼西亚"
+    },
+    {
+      "key": "kankoku",
+      "word": "韓国",
+      "reading": "かんこく",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "韩国"
+    },
+    {
+      "key": "tai",
+      "word": "タイ",
+      "reading": "たい",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "泰国"
+    },
+    {
+      "key": "chuugoku",
+      "word": "中国",
+      "reading": "ちゅうごく",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "中国"
+    },
+    {
+      "key": "doitsu",
+      "word": "ドイツ",
+      "reading": "どいつ",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "德国"
+    },
+    {
+      "key": "burajiru",
+      "word": "ブラジル",
+      "reading": "ぶらじる",
+      "partOfSpeech": "名词（国名）",
+      "meaning": "巴西"
+    },
+    {
+      "key": "imc",
+      "word": "IMC",
+      "reading": "あいえむしー",
+      "meaning": "IMC（教材中的公司名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "powerdenki",
+      "word": "パワー電気",
+      "reading": "ぱわーでんき",
+      "meaning": "Power电气（教材中的公司名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "burajirueaa",
+      "word": "ブラジルエアー",
+      "reading": "ぶらじるえあー",
+      "meaning": "巴西航空（教材中的公司名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "akc",
+      "word": "AKC",
+      "reading": "えーけーしー",
+      "meaning": "AKC（教材中的公司名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "sakuradiagaku",
+      "word": "さくら大学",
+      "reading": "さくらだいがく",
+      "meaning": "樱花大学（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "fujidaigaku",
+      "word": "富士大学",
+      "reading": "ふじだいがく",
+      "meaning": "富士大学（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "koubebyouin",
+      "word": "神戸病院",
+      "reading": "こうべびょういん",
+      "meaning": "神户医院（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "miraa",
+      "word": "ミラー",
+      "reading": "みらー",
+      "meaning": "米勒（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "yamada",
+      "word": "山田",
+      "reading": "やまだ",
+      "meaning": "山田（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "watto",
+      "word": "ワット",
+      "reading": "わっと",
+      "meaning": "瓦特（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "tawapon",
+      "word": "タワポン",
+      "reading": "たわぽん",
+      "meaning": "达瓦蓬（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "shumitto",
+      "word": "シュミット",
+      "reading": "しゅみっと",
+      "meaning": "施密特（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "guputa",
+      "word": "グプタ",
+      "reading": "ぐぷた",
+      "meaning": "古普塔（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "ii",
+      "word": "イー",
+      "reading": "いー",
+      "meaning": "李（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "wan",
+      "word": "ワン",
+      "reading": "わん",
+      "meaning": "王（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "karina",
+      "word": "カリナ",
+      "reading": "かりな",
+      "meaning": "卡丽娜（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "santosu",
+      "word": "サントス",
+      "reading": "さんとす",
+      "meaning": "桑托斯（教材中的人物名）",
+      "partOfSpeech": "专有名词"
+    }
+  ]
+}

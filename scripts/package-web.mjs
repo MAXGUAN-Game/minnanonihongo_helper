@@ -1,5 +1,6 @@
 // Source-only deployment archive. No databases, keys, models or Windows modules.
-import { lstat, mkdir, readdir, rename } from 'node:fs/promises';
+import { copyFile, lstat, mkdir, readFile, readdir, rename, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
@@ -8,11 +9,14 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const rootFiles = [
   'Dockerfile', '.dockerignore', 'compose.yaml', 'compose.shared.yaml',
   'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'index.html',
-  'README.md', 'deployment-guide.html',
+  'README.md', 'AGENTS.md', 'deployment-guide.html',
   'deploy/Caddyfile', 'deploy/Caddyfile.shared', 'deploy/nginx-site.conf.example',
   'deploy/.env.example', 'deploy/configure.mjs', 'deploy/install-docker-ubuntu.sh',
   'deploy/import-offline-images.sh', 'deploy/fix-healthcheck.mjs', 'deploy/enable-ip-https.mjs', 'deploy/update-release.sh',
   'scripts/package-web.mjs', 'scripts/package-offline.mjs', 'scripts/setup-speech-linux.mjs',
+  'scripts/check-speech.mjs', 'scripts/check-progress-integrity.mjs', 'scripts/check-release-auth.mjs', 'scripts/validate-vocabulary-details.ts',
+  'scripts/generate-vocabulary-details.ts', 'scripts/generate-vocabulary-audio.ts', 'scripts/review-vocabulary-attributes.ts',
+  'deploy/migrate-session-auth.mjs', 'deploy/update-session-release.sh',
   'scripts/refresh-textbook-audio.mjs',
 ];
 const sourceExtensions = new Set(['.ts', '.tsx', '.css', '.svg', '.png', '.webp', '.woff2', '.json', '.md']);
@@ -44,6 +48,18 @@ export async function collectPackageFiles(base = root) {
   const files = [...rootFiles];
   for (const name of files) await safeFile(base, name);
   await collectDirectory(base, 'src', sourceExtensions, files);
+  await collectDirectory(base, 'public', sourceExtensions, files);
+  const audioDirectory = path.join(base, 'public/vocabulary-audio');
+  let audioManifest;
+  try { audioManifest = JSON.parse(await readFile(path.join(audioDirectory, 'manifest.json'), 'utf8')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+  if (audioManifest) for (const asset of Object.values(audioManifest)) {
+    if (!/^[a-f0-9]{64}\.wav$/.test(asset.file) || !/^[a-f0-9]{64}$/.test(asset.sha256)) throw new Error('Invalid vocabulary audio manifest.');
+    const name = 'public/vocabulary-audio/' + asset.file;
+    await safeFile(base, name);
+    const bytes = await readFile(path.join(base, name));
+    if (createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Vocabulary audio checksum mismatch.');
+    files.push(name);
+  }
   await collectDirectory(base, 'docs', new Set(['.md']), files);
   return [...new Set(files)].sort();
 }
@@ -63,12 +79,21 @@ async function makeTar(files, output) {
 async function main() {
   const files = await collectPackageFiles();
   if (process.argv.includes('--list')) { console.log(files.join('\n')); return; }
+  const { version } = JSON.parse(await readFile(path.join(root, 'package.json'), 'utf8'));
+  if (!/^\d+\.\d+\.\d+$/.test(version)) throw new Error('Expected a stable release version.');
   await mkdir(path.join(root, 'releases'), { recursive: true });
   const temporary = path.join(root, 'releases', `nihongo-web-${process.pid}-${Date.now()}.tar.gz`);
   const output = path.join(root, 'releases', 'nihongo-web.tar.gz');
   await makeTar(files, temporary);
   await rename(temporary, output);
+  const versioned = path.join(root, 'releases', `nihongo-web-v${version}.tar.gz`);
+  await copyFile(output, versioned);
+  const checksum = createHash('sha256').update(await readFile(output)).digest('hex');
+  for (const archive of [output, versioned]) {
+    await writeFile(archive + '.sha256', `${checksum}  ${path.basename(archive)}\n`);
+  }
   console.log(`已打包 ${files.length} 个应用文件：${output}`);
+  console.log(`版本存档：${versioned}\nSHA256: ${checksum}`);
   console.log('不含学习记录、API 密钥、.env、语音模型或 node_modules。');
   console.log('学习记录请从应用导出；语音模型单独上传。');
 }

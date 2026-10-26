@@ -1,0 +1,254 @@
+{
+  "lessonId": 50,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/50.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源35条，排除9条旧版或跨课条目，合并同形同义项并补入第二来源，最终34条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/50.json。",
+    "主来源把お目にかかります解释为地点，已校正为拜见；存じます由存ずる变来，按动词Ⅲ标记。"
+  ],
+  "words": [
+    {
+      "key": "w1018",
+      "word": "［コーヒーを］いれます",
+      "reading": "［こーひーを］いれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "冲泡（咖啡）"
+    },
+    {
+      "key": "w1436",
+      "word": "初めに",
+      "reading": "はじめに",
+      "partOfSpeech": "副词",
+      "meaning": "首先"
+    },
+    {
+      "key": "w1776",
+      "word": "用意します",
+      "reading": "よういします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "准备"
+    },
+    {
+      "key": "w1856",
+      "word": "スケジュール",
+      "reading": "すけじゅーる",
+      "partOfSpeech": "名词",
+      "meaning": "日程"
+    },
+    {
+      "key": "w1897",
+      "word": "参ります",
+      "reading": "まいります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "去；来（谦让语）"
+    },
+    {
+      "key": "w1898",
+      "word": "おります",
+      "reading": "おります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "在（谦让语）"
+    },
+    {
+      "key": "w1899",
+      "word": "頂きます",
+      "reading": "いただきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "吃；喝；领受（谦让语）"
+    },
+    {
+      "key": "w1900",
+      "word": "申します",
+      "reading": "もうします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "说；叫作（谦让语）"
+    },
+    {
+      "key": "w1901",
+      "word": "致します",
+      "reading": "いたします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "做（谦让语）"
+    },
+    {
+      "key": "w1902",
+      "word": "拝見します",
+      "reading": "はいけんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "看（谦让语）"
+    },
+    {
+      "key": "w1903",
+      "word": "存じます",
+      "reading": "ぞんじます",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "知道（谦让语）"
+    },
+    {
+      "key": "w1904",
+      "word": "お目にかかります",
+      "reading": "おめにかかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拜见（谦让语）"
+    },
+    {
+      "key": "w1907",
+      "word": "私",
+      "reading": "わたくし",
+      "partOfSpeech": "名词",
+      "meaning": "我（郑重说法）"
+    },
+    {
+      "key": "w1908",
+      "word": "ガイド",
+      "reading": "がいど",
+      "partOfSpeech": "名词",
+      "meaning": "导游"
+    },
+    {
+      "key": "w1912",
+      "word": "再来週",
+      "reading": "さらいしゅう",
+      "partOfSpeech": "名词",
+      "meaning": "下下周"
+    },
+    {
+      "key": "w1913",
+      "word": "再来月",
+      "reading": "さらいげつ",
+      "partOfSpeech": "名词",
+      "meaning": "下下个月"
+    },
+    {
+      "key": "w1914",
+      "word": "再来年",
+      "reading": "さらいねん",
+      "partOfSpeech": "名词",
+      "meaning": "后年"
+    },
+    {
+      "key": "w1919",
+      "word": "緊張します",
+      "reading": "きんちょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "紧张"
+    },
+    {
+      "key": "w1922",
+      "word": "賞金",
+      "reading": "しょうきん",
+      "partOfSpeech": "名词",
+      "meaning": "奖金"
+    },
+    {
+      "key": "w1924",
+      "word": "きりん",
+      "reading": "きりん",
+      "partOfSpeech": "名词",
+      "meaning": "长颈鹿"
+    },
+    {
+      "key": "w1926",
+      "word": "ころ",
+      "reading": "ころ",
+      "partOfSpeech": "表达",
+      "meaning": "……时候"
+    },
+    {
+      "key": "w1927",
+      "word": "［夢が］叶います",
+      "reading": "［ゆめが］かないます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "实现（梦想）"
+    },
+    {
+      "key": "w1930",
+      "word": "心から",
+      "reading": "こころから",
+      "partOfSpeech": "表达",
+      "meaning": "衷心地"
+    },
+    {
+      "key": "w1931",
+      "word": "感謝します",
+      "reading": "かんしゃします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "感谢"
+    },
+    {
+      "key": "w3204",
+      "word": "応援",
+      "reading": "おうえん",
+      "partOfSpeech": "名词",
+      "meaning": "声援"
+    },
+    {
+      "key": "w3489",
+      "word": "メールアドレス",
+      "reading": "めーるあどれす",
+      "partOfSpeech": "名词",
+      "meaning": "电子邮箱地址"
+    },
+    {
+      "key": "visit",
+      "word": "伺います",
+      "reading": "うかがいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拜访；请教（谦让语）"
+    },
+    {
+      "key": "support",
+      "word": "応援します",
+      "reading": "おうえんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "支持；声援"
+    },
+    {
+      "key": "museum",
+      "word": "江戸東京博物館",
+      "reading": "えどとうきょうはくぶつかん",
+      "partOfSpeech": "专有名词",
+      "meaning": "江户东京博物馆"
+    },
+    {
+      "key": "munich",
+      "word": "ミュンヘン",
+      "reading": "みゅんへん",
+      "partOfSpeech": "专有名词",
+      "meaning": "慕尼黑"
+    },
+    {
+      "key": "thanks",
+      "word": "お礼",
+      "reading": "おれい",
+      "partOfSpeech": "名词",
+      "meaning": "道谢；谢礼"
+    },
+    {
+      "key": "well",
+      "word": "お元気でいらっしゃいますか",
+      "reading": "おげんきでいらっしゃいますか",
+      "partOfSpeech": "固定表达",
+      "meaning": "您身体好吗（尊敬表达）"
+    },
+    {
+      "key": "trouble",
+      "word": "迷惑をかけます",
+      "reading": "めいわくをかけます",
+      "partOfSpeech": "动词表达",
+      "meaning": "给人添麻烦"
+    },
+    {
+      "key": "apply",
+      "word": "生かします",
+      "reading": "いかします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "发挥；运用"
+    }
+  ]
+}

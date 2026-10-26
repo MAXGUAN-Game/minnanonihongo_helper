@@ -9,5 +9,8 @@
 !index.html
 !src/
 !src/**
+!public/
+!public/**
 !scripts/
 !scripts/setup-speech-linux.mjs
+!scripts/check-speech.mjs

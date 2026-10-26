@@ -1,0 +1,251 @@
+{
+  "lessonId": 39,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/39.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 45,
+  "entries": [
+    {
+      "sourceId": "1422",
+      "sourceWord": "ハイキング",
+      "key": "w1422"
+    },
+    {
+      "sourceId": "1426",
+      "sourceWord": "操作",
+      "key": "w1426"
+    },
+    {
+      "sourceId": "1447",
+      "sourceWord": "太ります",
+      "key": "w1447"
+    },
+    {
+      "sourceId": "1448",
+      "sourceWord": "痩せます",
+      "key": "w1448"
+    },
+    {
+      "sourceId": "1451",
+      "sourceWord": "硬い",
+      "key": "w1451"
+    },
+    {
+      "sourceId": "1452",
+      "sourceWord": "軟らかい",
+      "key": "w1452"
+    },
+    {
+      "sourceId": "1547",
+      "sourceWord": "［質問に］答えます",
+      "key": "w1547"
+    },
+    {
+      "sourceId": "1548",
+      "sourceWord": "［ビルが］倒れます",
+      "key": "w1548"
+    },
+    {
+      "sourceId": "1552",
+      "sourceWord": "［道を］通ります",
+      "key": "w1552"
+    },
+    {
+      "sourceId": "1553",
+      "sourceWord": "死にます",
+      "key": "w1553"
+    },
+    {
+      "sourceId": "1554",
+      "sourceWord": "びっくりします",
+      "key": "w1554"
+    },
+    {
+      "sourceId": "1555",
+      "sourceWord": "がっかりします",
+      "key": "w1555"
+    },
+    {
+      "sourceId": "1556",
+      "sourceWord": "安心します",
+      "key": "w1556"
+    },
+    {
+      "sourceId": "1559",
+      "sourceWord": "喧嘩します",
+      "key": "w1559"
+    },
+    {
+      "sourceId": "1560",
+      "sourceWord": "離婚します",
+      "key": "w1560"
+    },
+    {
+      "sourceId": "1561",
+      "sourceWord": "複雑な",
+      "key": "w1561"
+    },
+    {
+      "sourceId": "1562",
+      "sourceWord": "邪魔な",
+      "key": "w1562"
+    },
+    {
+      "sourceId": "1563",
+      "sourceWord": "汚い",
+      "key": "w1563"
+    },
+    {
+      "sourceId": "1564",
+      "sourceWord": "嬉しい",
+      "key": "w1564"
+    },
+    {
+      "sourceId": "1565",
+      "sourceWord": "悲しい",
+      "key": "w1565"
+    },
+    {
+      "sourceId": "1566",
+      "sourceWord": "恥ずかしい",
+      "key": "w1566"
+    },
+    {
+      "sourceId": "1567",
+      "sourceWord": "地震",
+      "key": "w1567"
+    },
+    {
+      "sourceId": "1568",
+      "sourceWord": "台風",
+      "key": "w1568"
+    },
+    {
+      "sourceId": "1569",
+      "sourceWord": "火事",
+      "key": "w1569"
+    },
+    {
+      "sourceId": "1570",
+      "sourceWord": "事故",
+      "key": "w1570"
+    },
+    {
+      "sourceId": "1571",
+      "sourceWord": "お見合い",
+      "key": "w1571"
+    },
+    {
+      "sourceId": "1572",
+      "sourceWord": "電話代",
+      "key": "w1572"
+    },
+    {
+      "sourceId": "1573",
+      "sourceWord": "～代",
+      "key": "w1573"
+    },
+    {
+      "sourceId": "1574",
+      "sourceWord": "フロント",
+      "key": "w1574"
+    },
+    {
+      "sourceId": "1575",
+      "sourceWord": "～号室",
+      "key": "w1575"
+    },
+    {
+      "sourceId": "1577",
+      "sourceWord": "タオル",
+      "key": "w1577"
+    },
+    {
+      "sourceId": "1578",
+      "sourceWord": "石鹸",
+      "key": "w1578"
+    },
+    {
+      "sourceId": "1579",
+      "sourceWord": "大勢",
+      "key": "w1579"
+    },
+    {
+      "sourceId": "1580",
+      "sourceWord": "お疲れさまでした。",
+      "key": "w1580"
+    },
+    {
+      "sourceId": "1581",
+      "sourceWord": "伺います",
+      "key": "w1581"
+    },
+    {
+      "sourceId": "1582",
+      "sourceWord": "途中で",
+      "key": "w1582"
+    },
+    {
+      "sourceId": "1583",
+      "sourceWord": "トラック",
+      "key": "w1583"
+    },
+    {
+      "sourceId": "1584",
+      "sourceWord": "ぶつかります",
+      "key": "w1584"
+    },
+    {
+      "sourceId": "1884",
+      "sourceWord": "会場",
+      "key": "w1884"
+    },
+    {
+      "sourceId": "3236",
+      "sourceWord": "雷",
+      "key": "w3236"
+    },
+    {
+      "sourceId": "3375",
+      "sourceWord": "津波",
+      "key": "w3375"
+    },
+    {
+      "sourceId": "937",
+      "sourceWord": "首相",
+      "key": "w937"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1557",
+      "sourceWord": "遅刻します",
+      "reason": "旧版迟到词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1558",
+      "sourceWord": "早退します",
+      "reason": "旧版早退词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1576",
+      "sourceWord": "汗",
+      "reason": "旧版出汗场景词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "shop",
+    "adult",
+    "however",
+    "also",
+    "western-clothes",
+    "westernize",
+    "suit",
+    "now",
+    "coming-of-age",
+    "traditional"
+  ],
+  "finalCount": 52
+}

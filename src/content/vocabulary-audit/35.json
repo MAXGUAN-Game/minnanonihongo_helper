@@ -1,0 +1,226 @@
+{
+  "lessonId": 35,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/35.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 38,
+  "entries": [
+    {
+      "sourceId": "1104",
+      "sourceWord": "昔",
+      "key": "w1104"
+    },
+    {
+      "sourceId": "1291",
+      "sourceWord": "［病気が］治ります",
+      "key": "w1291"
+    },
+    {
+      "sourceId": "1292",
+      "sourceWord": "［故障が］直ります",
+      "key": "w1292"
+    },
+    {
+      "sourceId": "1380",
+      "sourceWord": "キー",
+      "key": "w1380"
+    },
+    {
+      "sourceId": "1404",
+      "sourceWord": "［花が］咲きます",
+      "key": "w1404"
+    },
+    {
+      "sourceId": "1405",
+      "sourceWord": "［色が］変わります",
+      "key": "w1405"
+    },
+    {
+      "sourceId": "1406",
+      "sourceWord": "困ります",
+      "key": "w1406"
+    },
+    {
+      "sourceId": "1407",
+      "sourceWord": "［丸を］付けます",
+      "key": "w1407"
+    },
+    {
+      "sourceId": "1411",
+      "sourceWord": "正しい",
+      "key": "w1411"
+    },
+    {
+      "sourceId": "1414",
+      "sourceWord": "向こう",
+      "key": "w1414"
+    },
+    {
+      "sourceId": "1415",
+      "sourceWord": "島",
+      "key": "w1415"
+    },
+    {
+      "sourceId": "1417",
+      "sourceWord": "港",
+      "key": "w1417"
+    },
+    {
+      "sourceId": "1418",
+      "sourceWord": "近所",
+      "key": "w1418"
+    },
+    {
+      "sourceId": "1419",
+      "sourceWord": "屋上",
+      "key": "w1419"
+    },
+    {
+      "sourceId": "1420",
+      "sourceWord": "海外",
+      "key": "w1420"
+    },
+    {
+      "sourceId": "1421",
+      "sourceWord": "山登り",
+      "key": "w1421"
+    },
+    {
+      "sourceId": "1423",
+      "sourceWord": "機会",
+      "key": "w1423"
+    },
+    {
+      "sourceId": "1424",
+      "sourceWord": "許可",
+      "key": "w1424"
+    },
+    {
+      "sourceId": "1425",
+      "sourceWord": "丸",
+      "key": "w1425"
+    },
+    {
+      "sourceId": "1428",
+      "sourceWord": "設備",
+      "key": "w1428"
+    },
+    {
+      "sourceId": "1429",
+      "sourceWord": "カーテン",
+      "key": "w1429"
+    },
+    {
+      "sourceId": "1430",
+      "sourceWord": "ひも",
+      "key": "w1430"
+    },
+    {
+      "sourceId": "1432",
+      "sourceWord": "葉",
+      "key": "w1432"
+    },
+    {
+      "sourceId": "1435",
+      "sourceWord": "もっと",
+      "key": "w1435"
+    },
+    {
+      "sourceId": "1437",
+      "sourceWord": "これで終わりましょう。",
+      "key": "w1437"
+    },
+    {
+      "sourceId": "1438",
+      "sourceWord": "それなら",
+      "key": "w1438"
+    },
+    {
+      "sourceId": "1439",
+      "sourceWord": "夜行バス",
+      "key": "w1439"
+    },
+    {
+      "sourceId": "1440",
+      "sourceWord": "旅行社",
+      "key": "w1440"
+    },
+    {
+      "sourceId": "1441",
+      "sourceWord": "詳しい",
+      "key": "w1441"
+    },
+    {
+      "sourceId": "1442",
+      "sourceWord": "スキ－場",
+      "key": "w1442"
+    },
+    {
+      "sourceId": "1626",
+      "sourceWord": "さあ",
+      "key": "w1626"
+    },
+    {
+      "sourceId": "1683",
+      "sourceWord": "歴史",
+      "key": "w1683"
+    },
+    {
+      "sourceId": "1787",
+      "sourceWord": "レバー",
+      "key": "w1787"
+    },
+    {
+      "sourceId": "3415",
+      "sourceWord": "入力",
+      "key": "w3415"
+    },
+    {
+      "sourceId": "3455",
+      "sourceWord": "ふりがな",
+      "key": "w3455"
+    },
+    {
+      "sourceId": "3747",
+      "sourceWord": "炊飯器",
+      "key": "w3747"
+    },
+    {
+      "sourceId": "4451",
+      "sourceWord": "クリックします",
+      "key": "w4451"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1409",
+      "sourceWord": "かかります［電話が］",
+      "reason": "旧版电话义项，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "input",
+    "hakone",
+    "nikko",
+    "africa",
+    "manga-museum",
+    "school",
+    "daikoku",
+    "imc",
+    "mothers-taste",
+    "haru",
+    "sato",
+    "cooking",
+    "kusatsu",
+    "shiga",
+    "vermilion",
+    "associate",
+    "proverb",
+    "relationship",
+    "friendly",
+    "necessary"
+  ],
+  "finalCount": 57
+}

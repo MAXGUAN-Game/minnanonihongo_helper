@@ -1,0 +1,21 @@
+{
+  "lessonId": 43,
+  "model": "deepseek-flash",
+  "reviewedCount": 25,
+  "corrections": [
+    {
+      "id": "l43-apologize",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "謝る的道歉义通常不带宾语，是自动词。"
+    },
+    {
+      "id": "l43-get-acquainted",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "知り合う表示相互结识，不带宾语，是自动词。"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "lessonId": 42,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/42.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源44条，排除6条旧版或跨课条目，合并同形同义项并补入第二来源，最终54条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/42.json。"
+  ],
+  "words": [
+    {
+      "key": "w1431",
+      "word": "ふた",
+      "reading": "ふた",
+      "partOfSpeech": "名词",
+      "meaning": "盖子"
+    },
+    {
+      "key": "w1434",
+      "word": "楽しみ",
+      "reading": "たのしみ",
+      "partOfSpeech": "名词",
+      "meaning": "乐趣；期待"
+    },
+    {
+      "key": "w1585",
+      "word": "並びます",
+      "reading": "ならびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "排队"
+    },
+    {
+      "key": "w1672",
+      "word": "包みます",
+      "reading": "つつみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "包裹"
+    },
+    {
+      "key": "w1673",
+      "word": "沸かします",
+      "reading": "わかします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "烧开"
+    },
+    {
+      "key": "w1674",
+      "word": "混ぜます",
+      "reading": "まぜます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "混合"
+    },
+    {
+      "key": "w1675",
+      "word": "計算します",
+      "reading": "けいさんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "计算"
+    },
+    {
+      "key": "w1678",
+      "word": "弁護士",
+      "reading": "べんごし",
+      "partOfSpeech": "名词",
+      "meaning": "律师"
+    },
+    {
+      "key": "w1679",
+      "word": "音楽家",
+      "reading": "おんがくか",
+      "partOfSpeech": "名词",
+      "meaning": "音乐家"
+    },
+    {
+      "key": "w1680",
+      "word": "子どもたち",
+      "reading": "こどもたち",
+      "partOfSpeech": "名词",
+      "meaning": "孩子们"
+    },
+    {
+      "key": "w1682",
+      "word": "教育",
+      "reading": "きょういく",
+      "partOfSpeech": "名词",
+      "meaning": "教育"
+    },
+    {
+      "key": "w1684",
+      "word": "文化",
+      "reading": "ぶんか",
+      "partOfSpeech": "名词",
+      "meaning": "文化"
+    },
+    {
+      "key": "w1685",
+      "word": "社会",
+      "reading": "しゃかい",
+      "partOfSpeech": "名词",
+      "meaning": "社会"
+    },
+    {
+      "key": "w1686",
+      "word": "法律",
+      "reading": "ほうりつ",
+      "partOfSpeech": "名词",
+      "meaning": "法律"
+    },
+    {
+      "key": "w1687",
+      "word": "戦争",
+      "reading": "せんそう",
+      "partOfSpeech": "名词",
+      "meaning": "战争"
+    },
+    {
+      "key": "w1688",
+      "word": "平和",
+      "reading": "へいわ",
+      "partOfSpeech": "名词",
+      "meaning": "和平"
+    },
+    {
+      "key": "w1689",
+      "word": "目的",
+      "reading": "もくてき",
+      "partOfSpeech": "名词",
+      "meaning": "目的"
+    },
+    {
+      "key": "w1691",
+      "word": "論文",
+      "reading": "ろんぶん",
+      "partOfSpeech": "名词",
+      "meaning": "论文"
+    },
+    {
+      "key": "w1693",
+      "word": "ミキサー",
+      "reading": "みきさー",
+      "partOfSpeech": "名词",
+      "meaning": "搅拌机"
+    },
+    {
+      "key": "w1694",
+      "word": "やかん",
+      "reading": "やかん",
+      "partOfSpeech": "名词",
+      "meaning": "水壶"
+    },
+    {
+      "key": "w1695",
+      "word": "栓抜き",
+      "reading": "せんぬき",
+      "partOfSpeech": "名词",
+      "meaning": "开瓶器"
+    },
+    {
+      "key": "w1696",
+      "word": "缶切り",
+      "reading": "かんきり",
+      "partOfSpeech": "名词",
+      "meaning": "开罐器"
+    },
+    {
+      "key": "w1697",
+      "word": "缶詰",
+      "reading": "かんづめ",
+      "partOfSpeech": "名词",
+      "meaning": "罐头"
+    },
+    {
+      "key": "w1698",
+      "word": "風呂敷",
+      "reading": "ふろしき",
+      "partOfSpeech": "名词",
+      "meaning": "包袱布"
+    },
+    {
+      "key": "w1699",
+      "word": "そろばん",
+      "reading": "そろばん",
+      "partOfSpeech": "名词",
+      "meaning": "算盘"
+    },
+    {
+      "key": "w1700",
+      "word": "体温計",
+      "reading": "たいおんけい",
+      "partOfSpeech": "名词",
+      "meaning": "体温计"
+    },
+    {
+      "key": "w1701",
+      "word": "材料",
+      "reading": "ざいりょう",
+      "partOfSpeech": "名词",
+      "meaning": "材料"
+    },
+    {
+      "key": "w1706",
+      "word": "ある～",
+      "reading": "ある～",
+      "partOfSpeech": "表达",
+      "meaning": "某个……"
+    },
+    {
+      "key": "w1707",
+      "word": "一生懸命",
+      "reading": "いっしょうけんめい",
+      "partOfSpeech": "副词",
+      "meaning": "努力地"
+    },
+    {
+      "key": "w1708",
+      "word": "なぜ",
+      "reading": "なぜ",
+      "partOfSpeech": "名词",
+      "meaning": "为什么"
+    },
+    {
+      "key": "w1709",
+      "word": "ローン",
+      "reading": "ろーん",
+      "partOfSpeech": "名词",
+      "meaning": "贷款"
+    },
+    {
+      "key": "w1720",
+      "word": "丈夫な",
+      "reading": "じょうぶな",
+      "partOfSpeech": "な形容词",
+      "meaning": "结实的"
+    },
+    {
+      "key": "w1759",
+      "word": "半分",
+      "reading": "はんぶん",
+      "partOfSpeech": "名词",
+      "meaning": "一半"
+    },
+    {
+      "key": "w1923",
+      "word": "自然",
+      "reading": "しぜん",
+      "partOfSpeech": "名词",
+      "meaning": "自然"
+    },
+    {
+      "key": "w5648",
+      "word": "のし袋",
+      "reading": "のしぶくろ",
+      "partOfSpeech": "名词",
+      "meaning": "礼金袋"
+    },
+    {
+      "key": "w5650",
+      "word": "［ボーナスが］出ます",
+      "reading": "［ぼーなすが］でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "发放（奖金）"
+    },
+    {
+      "key": "w939",
+      "word": "政治",
+      "reading": "せいじ",
+      "partOfSpeech": "名词",
+      "meaning": "政治"
+    },
+    {
+      "key": "w981",
+      "word": "アパート",
+      "reading": "あぱーと",
+      "partOfSpeech": "名词",
+      "meaning": "公寓"
+    },
+    {
+      "key": "how-much",
+      "word": "どのくらい",
+      "reading": "どのくらい",
+      "partOfSpeech": "疑问词",
+      "meaning": "多少；多久"
+    },
+    {
+      "key": "un",
+      "word": "国連",
+      "reading": "こくれん",
+      "partOfSpeech": "专有名词",
+      "meaning": "联合国"
+    },
+    {
+      "key": "elise",
+      "word": "エリーゼのために",
+      "reading": "えりーぜのために",
+      "partOfSpeech": "专有名词",
+      "meaning": "《致爱丽丝》（乐曲名）"
+    },
+    {
+      "key": "beethoven",
+      "word": "ベートーベン",
+      "reading": "べーとーべん",
+      "partOfSpeech": "专有名词",
+      "meaning": "贝多芬"
+    },
+    {
+      "key": "kids-news",
+      "word": "こどもニュース",
+      "reading": "こどもにゅーす",
+      "partOfSpeech": "专有名词",
+      "meaning": "儿童新闻（教材节目名）"
+    },
+    {
+      "key": "chicken-ramen",
+      "word": "チキンラーメン",
+      "reading": "ちきんらーめん",
+      "partOfSpeech": "专有名词",
+      "meaning": "鸡汤拉面（方便面商品名）"
+    },
+    {
+      "key": "ando",
+      "word": "安藤百福",
+      "reading": "あんどうももふく",
+      "partOfSpeech": "专有名词",
+      "meaning": "安藤百福"
+    },
+    {
+      "key": "cup-noodles",
+      "word": "カップめん",
+      "reading": "かっぷめん",
+      "partOfSpeech": "名词",
+      "meaning": "杯装方便面"
+    },
+    {
+      "key": "world-first",
+      "word": "世界初",
+      "reading": "せかいはつ",
+      "partOfSpeech": "名词",
+      "meaning": "世界首创"
+    },
+    {
+      "key": "by",
+      "word": "～によって",
+      "reading": "～によって",
+      "partOfSpeech": "表达",
+      "meaning": "由……（行为者）"
+    },
+    {
+      "key": "bowl",
+      "word": "どんぶり",
+      "reading": "どんぶり",
+      "partOfSpeech": "名词",
+      "meaning": "大碗"
+    },
+    {
+      "key": "noodles",
+      "word": "めん",
+      "reading": "めん",
+      "partOfSpeech": "名词",
+      "meaning": "面条"
+    },
+    {
+      "key": "spread",
+      "word": "広めます",
+      "reading": "ひろめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "推广"
+    },
+    {
+      "key": "market-research",
+      "word": "市場調査",
+      "reading": "しじょうちょうさ",
+      "partOfSpeech": "名词",
+      "meaning": "市场调查"
+    },
+    {
+      "key": "break",
+      "word": "割ります",
+      "reading": "わります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "掰开；打破"
+    },
+    {
+      "key": "pour",
+      "word": "注ぎます",
+      "reading": "そそぎます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "倒入；注入"
+    }
+  ]
+}

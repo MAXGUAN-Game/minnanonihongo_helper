@@ -1,0 +1,145 @@
+{
+  "lessonId": 20,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/20.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 26,
+  "entries": [
+    {
+      "sourceId": "44",
+      "sourceWord": "～君",
+      "key": "w44"
+    },
+    {
+      "sourceId": "677",
+      "sourceWord": "お腹がいっぱいです。",
+      "key": "w677"
+    },
+    {
+      "sourceId": "896",
+      "sourceWord": "［パスポートが］要ります",
+      "key": "w896"
+    },
+    {
+      "sourceId": "897",
+      "sourceWord": "調べます",
+      "key": "w897"
+    },
+    {
+      "sourceId": "900",
+      "sourceWord": "修理します",
+      "key": "w900"
+    },
+    {
+      "sourceId": "902",
+      "sourceWord": "僕",
+      "key": "w902"
+    },
+    {
+      "sourceId": "903",
+      "sourceWord": "君",
+      "key": "w903"
+    },
+    {
+      "sourceId": "905",
+      "sourceWord": "うん",
+      "key": "w905"
+    },
+    {
+      "sourceId": "906",
+      "sourceWord": "ううん",
+      "key": "w906"
+    },
+    {
+      "sourceId": "908",
+      "sourceWord": "言葉",
+      "key": "w908"
+    },
+    {
+      "sourceId": "910",
+      "sourceWord": "着物",
+      "key": "w910"
+    },
+    {
+      "sourceId": "911",
+      "sourceWord": "ビザ",
+      "key": "w911"
+    },
+    {
+      "sourceId": "912",
+      "sourceWord": "初め",
+      "key": "w912"
+    },
+    {
+      "sourceId": "913",
+      "sourceWord": "終わり",
+      "key": "w913"
+    },
+    {
+      "sourceId": "914",
+      "sourceWord": "こっち",
+      "key": "w914"
+    },
+    {
+      "sourceId": "915",
+      "sourceWord": "そっち",
+      "key": "w915"
+    },
+    {
+      "sourceId": "916",
+      "sourceWord": "あっち",
+      "key": "w916"
+    },
+    {
+      "sourceId": "917",
+      "sourceWord": "どっち",
+      "key": "w917"
+    },
+    {
+      "sourceId": "919",
+      "sourceWord": "みんなで",
+      "key": "w919"
+    },
+    {
+      "sourceId": "920",
+      "sourceWord": "～けど",
+      "key": "w920"
+    },
+    {
+      "sourceId": "924",
+      "sourceWord": "よかったら",
+      "key": "w924"
+    },
+    {
+      "sourceId": "925",
+      "sourceWord": "色々",
+      "key": "w925"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "907",
+      "sourceWord": "サラリーマン",
+      "reason": "旧版公司职员词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "921",
+      "sourceWord": "国へ帰るの？",
+      "reason": "旧版回国会话整句，第二版采用新的会话。"
+    },
+    {
+      "sourceId": "922",
+      "sourceWord": "どうするの？",
+      "reason": "旧版会话整句，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "923",
+      "sourceWord": "どうしようかな。",
+      "reason": "旧版会话整句，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [],
+  "finalCount": 22
+}

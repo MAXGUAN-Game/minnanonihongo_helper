@@ -1,0 +1,190 @@
+{
+  "lessonId": 43,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/43.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源27条，排除8条旧版或跨课条目，合并同形同义项并补入第二来源，最终25条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/43.json。"
+  ],
+  "words": [
+    {
+      "key": "w1134",
+      "word": "優しい",
+      "reading": "やさしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "温柔的；善良的"
+    },
+    {
+      "key": "w1410",
+      "word": "楽な",
+      "reading": "らくな",
+      "partOfSpeech": "な形容词",
+      "meaning": "轻松的"
+    },
+    {
+      "key": "w1712",
+      "word": "［輸出が］増えます",
+      "reading": "［ゆしゅつが］ふえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "增加（出口）"
+    },
+    {
+      "key": "w1713",
+      "word": "［輸出が］減ります",
+      "reading": "［ゆしゅつが］へります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "减少（出口）"
+    },
+    {
+      "key": "w1714",
+      "word": "［値段が］上がります",
+      "reading": "［ねだんが］あがります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "上涨（价格）"
+    },
+    {
+      "key": "w1715",
+      "word": "［値段が］下がります",
+      "reading": "［ねだんが］さがります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "下降（价格）"
+    },
+    {
+      "key": "w1716",
+      "word": "［紐が］切れます",
+      "reading": "［ひもが］きれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "断开（绳子）"
+    },
+    {
+      "key": "w1717",
+      "word": "［ボタンが］取れます",
+      "reading": "［ぼたんが］とれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "脱落（纽扣）"
+    },
+    {
+      "key": "w1718",
+      "word": "［荷物が］落ちます",
+      "reading": "［にもつが］おちます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "落下（行李）"
+    },
+    {
+      "key": "w1719",
+      "word": "［ガソリンが］なくなります",
+      "reading": "［がそりんが］なくなります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "用完（汽油）"
+    },
+    {
+      "key": "w1722",
+      "word": "幸せな",
+      "reading": "しあわせな",
+      "partOfSpeech": "な形容词",
+      "meaning": "幸福的"
+    },
+    {
+      "key": "w1723",
+      "word": "うまい",
+      "reading": "うまい",
+      "partOfSpeech": "い形容词",
+      "meaning": "好吃的；擅长的"
+    },
+    {
+      "key": "w1724",
+      "word": "まずい",
+      "reading": "まずい",
+      "partOfSpeech": "い形容词",
+      "meaning": "难吃的"
+    },
+    {
+      "key": "w1725",
+      "word": "つまらない",
+      "reading": "つまらない",
+      "partOfSpeech": "い形容词",
+      "meaning": "无聊的"
+    },
+    {
+      "key": "w1726",
+      "word": "ガソリン",
+      "reading": "がそりん",
+      "partOfSpeech": "名词",
+      "meaning": "汽油"
+    },
+    {
+      "key": "w1727",
+      "word": "火",
+      "reading": "ひ",
+      "partOfSpeech": "名词",
+      "meaning": "火"
+    },
+    {
+      "key": "w1731",
+      "word": "今にも",
+      "reading": "いまにも",
+      "partOfSpeech": "副词",
+      "meaning": "马上就要"
+    },
+    {
+      "key": "w1732",
+      "word": "わあ",
+      "reading": "わあ",
+      "partOfSpeech": "固定表达",
+      "meaning": "哇"
+    },
+    {
+      "key": "w4848",
+      "word": "変な",
+      "reading": "へんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "奇怪的"
+    },
+    {
+      "key": "brochure",
+      "word": "パンフレット",
+      "reading": "ぱんふれっと",
+      "partOfSpeech": "名词",
+      "meaning": "宣传册"
+    },
+    {
+      "key": "rose",
+      "word": "ばら",
+      "reading": "ばら",
+      "partOfSpeech": "名词",
+      "meaning": "玫瑰"
+    },
+    {
+      "key": "drive",
+      "word": "ドライブ",
+      "reading": "どらいぶ",
+      "partOfSpeech": "名词",
+      "meaning": "兜风"
+    },
+    {
+      "key": "reason",
+      "word": "理由",
+      "reading": "りゆう",
+      "partOfSpeech": "名词",
+      "meaning": "理由"
+    },
+    {
+      "key": "apologize",
+      "word": "謝ります",
+      "reading": "あやまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "道歉"
+    },
+    {
+      "key": "get-acquainted",
+      "word": "知り合います",
+      "reading": "しりあいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "结识"
+    }
+  ]
+}

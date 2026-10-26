@@ -1,0 +1,737 @@
+{
+  "l37-w1274": {
+    "romaji": "dareka",
+    "attributes": [],
+    "explanation": "表示不确定的某个人，常用于陈述句中，相当于“有人”。不能用于疑问句询问具体是谁。",
+    "example": {
+      "jp": "誰かがドアをノックしています。",
+      "kana": "だれかがどあをのっくしています。",
+      "romaji": "dareka ga doa o nokku shite imasu.",
+      "zh": "有人在敲门。"
+    }
+  },
+  "l37-w1478": {
+    "romaji": "homemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指表扬、称赞某人的行为或优点，常用于上级对下级或长辈对晚辈。对象用「を」表示。",
+    "example": {
+      "jp": "先生は生徒を褒めました。",
+      "kana": "せんせいはせいとをほめました。",
+      "romaji": "sensei wa seito o homemashita.",
+      "zh": "老师表扬了学生。"
+    }
+  },
+  "l37-w1479": {
+    "romaji": "shikarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指严厉批评、责骂，通常用于长辈对晚辈或上级对下级。语气较强，对象用「を」表示。",
+    "example": {
+      "jp": "母は弟を叱りました。",
+      "kana": "はははおとうとをしかりました。",
+      "romaji": "haha wa otōto o shikarimashita.",
+      "zh": "妈妈责骂了弟弟。"
+    }
+  },
+  "l37-w1480": {
+    "romaji": "sasoimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指邀请某人参加活动或一起做某事，常用「人を誘う」或「人を～に誘う」。语气较随意，可用于朋友之间。",
+    "example": {
+      "jp": "友達を映画に誘いました。",
+      "kana": "ともだちをえいがにさそいました。",
+      "romaji": "tomodachi o eiga ni sasoimashita.",
+      "zh": "邀请朋友去看电影。"
+    }
+  },
+  "l37-w1482": {
+    "romaji": "shōtai shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指正式邀请或招待客人参加聚会、宴会等，比「誘う」更正式。常用「人を～に招待する」。",
+    "example": {
+      "jp": "結婚式に友達を招待しました。",
+      "kana": "けっこんしきにともだちをしょうたいしました。",
+      "romaji": "kekkonshiki ni tomodachi o shōtai shimashita.",
+      "zh": "邀请朋友参加了婚礼。"
+    }
+  },
+  "l37-w1483": {
+    "romaji": "tanomimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指请求某人做某事，常用「人に～を頼む」或「人に～を頼む」。语气较客气，可用于各种场合。",
+    "example": {
+      "jp": "友達に引っ越しの手伝いを頼みました。",
+      "kana": "ともだちにひっこしのてつだいをたのみました。",
+      "romaji": "tomodachi ni hikkoshi no tetsudai o tanomimashita.",
+      "zh": "请朋友帮忙搬家。"
+    }
+  },
+  "l37-w1484": {
+    "romaji": "chūi shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指提醒或警告某人注意某事，常用「人に注意する」。也可表示“注意、小心”某事物。",
+    "example": {
+      "jp": "先生は学生に遅刻を注意しました。",
+      "kana": "せんせいはがくせいにちこくをちゅういしました。",
+      "romaji": "sensei wa gakusei ni chikoku o chūi shimashita.",
+      "zh": "老师提醒学生不要迟到。"
+    }
+  },
+  "l37-w1485": {
+    "romaji": "torimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "本义为“拿、取”，在此语境下特指“偷取、盗取”，常用「物をとる」。需根据上下文判断。",
+    "example": {
+      "jp": "泥棒がお金をとりました。",
+      "kana": "どろぼうがおかねをとりました。",
+      "romaji": "dorobō ga okane o torimashita.",
+      "zh": "小偷偷了钱。"
+    }
+  },
+  "l37-w1486": {
+    "romaji": "fumimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指用脚踩踏某物，常用「物を踏む」。也可用于抽象意义如“踩到地雷”等。",
+    "example": {
+      "jp": "電車で人の足を踏みました。",
+      "kana": "でんしゃでひとのあしをふみました。",
+      "romaji": "densha de hito no ashi o fumimashita.",
+      "zh": "在电车上踩到了别人的脚。"
+    }
+  },
+  "l37-w1487": {
+    "romaji": "kowashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指弄坏、损坏某物，强调人为造成破坏。对象用「を」表示。",
+    "example": {
+      "jp": "弟がおもちゃを壊しました。",
+      "kana": "おとうとがおもちゃをこわしました。",
+      "romaji": "otōto ga omocha o kowashimashita.",
+      "zh": "弟弟弄坏了玩具。"
+    }
+  },
+  "l37-w1488": {
+    "romaji": "yogoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指弄脏某物，对象用「を」表示。可用于衣物、房间等具体物品。",
+    "example": {
+      "jp": "子どもが服を汚しました。",
+      "kana": "こどもがふくをよごしました。",
+      "romaji": "kodomo ga fuku o yogoshimashita.",
+      "zh": "孩子弄脏了衣服。"
+    }
+  },
+  "l37-w1489": {
+    "romaji": "okonaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指举行、实施某项活动或仪式，较正式。常用「会議を行う」「式を行う」等。",
+    "example": {
+      "jp": "来月、試験を行います。",
+      "kana": "らいげつ、しけんをおこないます。",
+      "romaji": "raigetsu, shiken o okonaimasu.",
+      "zh": "下个月举行考试。"
+    }
+  },
+  "l37-w1490": {
+    "romaji": "yushutsu shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示将商品、资源等出口到国外，常用于经济、贸易语境。搭配「～を輸出する」，与「輸入します」相对。",
+    "example": {
+      "jp": "日本は車をたくさん輸出しています。",
+      "kana": "にほんはくるまをたくさんゆしゅつしています。",
+      "romaji": "nihon wa kuruma o takusan yushutsu shite imasu.",
+      "zh": "日本出口很多汽车。"
+    }
+  },
+  "l37-w1491": {
+    "romaji": "yunyu shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示从国外进口商品、资源等，常用于贸易话题。搭配「～を輸入する」，与「輸出します」相对。",
+    "example": {
+      "jp": "この国は石油を輸入しています。",
+      "kana": "このくにはせきゆをゆにゅうしています。",
+      "romaji": "kono kuni wa sekiyu o yunyu shite imasu.",
+      "zh": "这个国家进口石油。"
+    }
+  },
+  "l37-w1492": {
+    "romaji": "honyaku shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示将一种语言翻译成另一种语言，常用「AをBに翻訳する」。注意与「通訳」（口译）区分。",
+    "example": {
+      "jp": "この小説を中国語に翻訳しました。",
+      "kana": "このしょうせつをちゅうごくごにほんやくしました。",
+      "romaji": "kono shosetsu o chugokugo ni honyaku shimashita.",
+      "zh": "把这部小说翻译成了中文。"
+    }
+  },
+  "l37-w1493": {
+    "romaji": "hatsumei shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示创造出前所未有的东西，如机器、方法等。搭配「～を発明する」，强调创造行为。",
+    "example": {
+      "jp": "エジソンは電球を発明しました。",
+      "kana": "えじそんはでんきゅうをはつめいしました。",
+      "romaji": "ejison wa denkyu o hatsumei shimashita.",
+      "zh": "爱迪生发明了电灯泡。"
+    }
+  },
+  "l37-w1494": {
+    "romaji": "hakken shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示发现原本存在但未被知道的事物。搭配「～を発見する」，与「発明します」不同，不强调创造。",
+    "example": {
+      "jp": "新しい星を発見しました。",
+      "kana": "あたらしいほしをはっけんしました。",
+      "romaji": "atarashii hoshi o hakken shimashita.",
+      "zh": "发现了一颗新的星星。"
+    }
+  },
+  "l37-w1496": {
+    "romaji": "kome",
+    "attributes": [],
+    "explanation": "指稻米去壳后的谷物，是日本主食。可构成「米作り」「米不足」等复合词。",
+    "example": {
+      "jp": "日本人は米をよく食べます。",
+      "kana": "にほんじんはこめをよくたべます。",
+      "romaji": "nihonjin wa kome o yoku tabemasu.",
+      "zh": "日本人经常吃大米。"
+    }
+  },
+  "l37-w1497": {
+    "romaji": "mugi",
+    "attributes": [],
+    "explanation": "泛指麦类作物，如小麦、大麦等。可构成「麦茶」「麦畑」等词。",
+    "example": {
+      "jp": "畑で麦を作っています。",
+      "kana": "はたけでむぎをつくっています。",
+      "romaji": "hatake de mugi o tsukutte imasu.",
+      "zh": "在田里种麦子。"
+    }
+  },
+  "l37-w1498": {
+    "romaji": "sekiyu",
+    "attributes": [],
+    "explanation": "指天然原油及其产品，是重要能源。常与「輸入」「輸出」「価格」等搭配。",
+    "example": {
+      "jp": "石油の値段が上がっています。",
+      "kana": "せきゆのねだんがあがっています。",
+      "romaji": "sekiyu no nedan ga agatte imasu.",
+      "zh": "石油价格在上涨。"
+    }
+  },
+  "l37-w1499": {
+    "romaji": "genryo",
+    "attributes": [],
+    "explanation": "指用于加工成产品的原始材料，如石油、矿石等。常搭配「原料になる」「原料を輸入する」。",
+    "example": {
+      "jp": "石油はプラスチックの原料です。",
+      "kana": "せきゆはぷらすちっくのげんりょうです。",
+      "romaji": "sekiyu wa purasuchikku no genryo desu.",
+      "zh": "石油是塑料的原料。"
+    }
+  },
+  "l37-w1500": {
+    "romaji": "deto",
+    "attributes": [],
+    "explanation": "指与恋人等约定见面、约会，也可指约会本身。常搭配「デートする」「デートに行く」。",
+    "example": {
+      "jp": "週末に彼女とデートします。",
+      "kana": "しゅうまつにかのじょとでーとします。",
+      "romaji": "shumatsu ni kanojo to deto shimasu.",
+      "zh": "周末和女朋友约会。"
+    }
+  },
+  "l37-w1501": {
+    "romaji": "dorobo",
+    "attributes": [],
+    "explanation": "指偷窃他人财物的人，口语常用。可搭配「泥棒に入られる」「泥棒を捕まえる」。",
+    "example": {
+      "jp": "泥棒が家に入りました。",
+      "kana": "どろぼうがいえにはいりました。",
+      "romaji": "dorobo ga ie ni hairimashita.",
+      "zh": "小偷进了家。"
+    }
+  },
+  "l37-w1502": {
+    "romaji": "keikan",
+    "attributes": [],
+    "explanation": "指警察官，较正式的说法，常用于新闻或书面语。口语中常说「お巡りさん」。",
+    "example": {
+      "jp": "警官が道を案内してくれました。",
+      "kana": "けいかんがみちをあんないしてくれました。",
+      "romaji": "keikan ga michi o annai shite kuremashita.",
+      "zh": "警察给我指了路。"
+    }
+  },
+  "l37-w1506": {
+    "romaji": "sekaijuu",
+    "attributes": [],
+    "explanation": "表示整个地球范围，常用于强调规模之大或普遍性。可作主语或状语，如「世界中で」「世界中の」。",
+    "example": {
+      "jp": "世界中の人がこの歌を知っている。",
+      "kana": "せかいじゅうのひとがこのうたをしっている。",
+      "romaji": "sekaijuu no hito ga kono uta o shitte iru.",
+      "zh": "全世界的人都知道这首歌。"
+    }
+  },
+  "l37-w1507": {
+    "romaji": "juu",
+    "attributes": [],
+    "explanation": "接在名词后表示整个范围，如「家中」「一年中」。读作「じゅう」，与表示“正在”的「～中（ちゅう）」不同。",
+    "example": {
+      "jp": "一日中雨が降っていた。",
+      "kana": "いちにちじゅうあめがふっていた。",
+      "romaji": "ichinichijuu ame ga futte ita.",
+      "zh": "下了一整天的雨。"
+    }
+  },
+  "l37-w1508": {
+    "romaji": "ni yotte",
+    "attributes": [],
+    "explanation": "表示动作的主体或原因，常用于被动句，相当于“由……”。也可表示手段、根据，语体较正式。",
+    "example": {
+      "jp": "この絵はピカソによって描かれた。",
+      "kana": "このえはぴかそによってえがかれた。",
+      "romaji": "kono e wa pikaso ni yotte egakareta.",
+      "zh": "这幅画是由毕加索画的。"
+    }
+  },
+  "l37-w1509": {
+    "romaji": "yokatta desu ne",
+    "attributes": [],
+    "explanation": "用于听到好消息时表示欣慰或祝贺，相当于“太好了”。语气亲切，常与「ね」连用。",
+    "example": {
+      "jp": "試験に合格した？よかったですね。",
+      "kana": "しけんにごうかくした？よかったですね。",
+      "romaji": "shiken ni goukaku shita? yokatta desu ne.",
+      "zh": "考试合格了？太好了啊。"
+    }
+  },
+  "l37-w1549": {
+    "romaji": "yakemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示房屋等被烧毁，是自动词，强调受灾对象本身的变化。他动词为「焼く」。",
+    "example": {
+      "jp": "火事でうちが焼けました。",
+      "kana": "かじでうちがやけました。",
+      "romaji": "kaji de uchi ga yakemashita.",
+      "zh": "房子因火灾烧毁了。"
+    }
+  },
+  "l37-w1620": {
+    "romaji": "kiro",
+    "attributes": [],
+    "explanation": "可表示重量单位“千克”，也可表示距离单位“千米”。口语中常用，需根据上下文判断。",
+    "example": {
+      "jp": "駅まで2キロ歩いた。",
+      "kana": "えきまでにきろあるいた。",
+      "romaji": "eki made ni kiro aruita.",
+      "zh": "走到车站走了两公里。"
+    }
+  },
+  "l37-w2636": {
+    "romaji": "kin'iro",
+    "attributes": [],
+    "explanation": "表示像金子一样的颜色，常用于形容头发、物体等。可作名词或な形容词修饰名词。",
+    "example": {
+      "jp": "彼女は金色の髪をしている。",
+      "kana": "かのじょはきんいろのかみをしている。",
+      "romaji": "kanojo wa kin'iro no kami o shite iru.",
+      "zh": "她有一头金色的头发。"
+    }
+  },
+  "l37-w2801": {
+    "romaji": "sono go",
+    "attributes": [],
+    "explanation": "表示“在那之后”，用于叙述时间顺序，较书面或正式。口语中常说「それから」「あとで」。",
+    "example": {
+      "jp": "その後、彼とは会っていない。",
+      "kana": "そのご、かれとはあっていない。",
+      "romaji": "sono go, kare to wa atte inai.",
+      "zh": "那之后，就没再见过他。"
+    }
+  },
+  "l37-w3191": {
+    "romaji": "insutanto raamen",
+    "attributes": [],
+    "explanation": "指用热水冲泡即可食用的速食面，外来语。口语中常简称为「インスタント」。",
+    "example": {
+      "jp": "忙しい時はインスタントラーメンを食べます。",
+      "kana": "いそがしいときはいんすたんとらーめんをたべます。",
+      "romaji": "isogashii toki wa insutanto raamen o tabemasu.",
+      "zh": "忙的时候吃方便面。"
+    }
+  },
+  "l37-w3198": {
+    "romaji": "utsukushii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示视觉上的美丽，也可用于自然、艺术等。比「きれい」更文雅，常用于正式或文学表达。",
+    "example": {
+      "jp": "この山の景色は美しい。",
+      "kana": "このやまのけしきはうつくしい。",
+      "romaji": "kono yama no keshiki wa utsukushii.",
+      "zh": "这座山的景色很美。"
+    }
+  },
+  "l37-w3331": {
+    "romaji": "seiki",
+    "attributes": [],
+    "explanation": "表示一百年的时间单位，常用于历史、年代叙述。如「21世紀」「世紀の大発見」。",
+    "example": {
+      "jp": "21世紀は環境の時代だ。",
+      "kana": "にじゅういっせいきはかんきょうのじだいだ。",
+      "romaji": "nijuuisseiki wa kankyou no jidai da.",
+      "zh": "21世纪是环境的时代。"
+    }
+  },
+  "l37-w3335": {
+    "romaji": "sekai isan",
+    "attributes": [],
+    "explanation": "指被联合国教科文组织列入名录的具有突出价值的文化遗产或自然遗产。常与「登録する」搭配。",
+    "example": {
+      "jp": "富士山は世界遺産に登録されている。",
+      "kana": "ふじさんはせかいいさんにとうろくされている。",
+      "romaji": "fujisan wa sekai isan ni touroku sarete iru.",
+      "zh": "富士山被列为世界遗产。"
+    }
+  },
+  "l37-w3475": {
+    "romaji": "honmono",
+    "attributes": [],
+    "explanation": "指真正的物品或真品，与“偽物（にせもの）”相对。常用于强调真实性，如“本物の金”表示纯金。",
+    "example": {
+      "jp": "この指輪は本物のダイヤモンドだ。",
+      "kana": "このゆびわはほんもののだいやもんどだ。",
+      "romaji": "kono yubiwa wa honmono no daiyamondo da.",
+      "zh": "这枚戒指是真钻石。"
+    }
+  },
+  "l37-w5645": {
+    "romaji": "kin",
+    "attributes": [],
+    "explanation": "指黄金这种金属，常用于表示材质或颜色。与“お金（かね）”不同，后者泛指钱。",
+    "example": {
+      "jp": "金の延べ棒が金庫にしまってある。",
+      "kana": "きんののべぼうがきんこにしまってある。",
+      "romaji": "kin no nobebō ga kinko ni shimatte aru.",
+      "zh": "金条存放在保险柜里。"
+    }
+  },
+  "l37-everyone": {
+    "romaji": "minasama",
+    "attributes": [],
+    "explanation": "“皆さん”的郑重敬称，用于正式场合或对多数人表示尊敬，如演讲、广播等。",
+    "example": {
+      "jp": "皆様、本日はお集まりいただきありがとうございます。",
+      "kana": "みなさま、ほんじつはおあつまりいただきありがとうございます。",
+      "romaji": "minasama, honjitsu wa oatsumari itadaki arigatō gozaimasu.",
+      "zh": "各位，感谢您今天光临。"
+    }
+  },
+  "l37-language": {
+    "romaji": "nanigo",
+    "attributes": [],
+    "explanation": "询问语言种类时使用，相当于“什么语言”。常与“話す”“分かる”等动词搭配。",
+    "example": {
+      "jp": "この言葉は何語ですか。",
+      "kana": "このことばはなにごですか。",
+      "romaji": "kono kotoba wa nanigo desu ka.",
+      "zh": "这个词是什么语言？"
+    }
+  },
+  "l37-one-of": {
+    "romaji": "~ no hitotsu",
+    "attributes": [],
+    "explanation": "表示“……之一”，用于从多个事物中列举一个。常与“の”连接名词。",
+    "example": {
+      "jp": "東京は日本の都市の一つです。",
+      "kana": "とうきょうはにほんのとしのひとつです。",
+      "romaji": "Tōkyō wa Nihon no toshi no hitotsu desu.",
+      "zh": "东京是日本的城市之一。"
+    }
+  },
+  "l37-olympics": {
+    "romaji": "orinpikku",
+    "attributes": [],
+    "explanation": "指国际奥林匹克运动会，四年举办一次。日语中常简称为“五輪（ごりん）”。",
+    "example": {
+      "jp": "オリンピックは四年に一度開かれます。",
+      "kana": "おりんぴっくはよねんにいちどひらかれます。",
+      "romaji": "orinpikku wa yonen ni ichido hirakaremasu.",
+      "zh": "奥运会每四年举办一次。"
+    }
+  },
+  "l37-world-cup": {
+    "romaji": "wārudo kappu",
+    "attributes": [],
+    "explanation": "通常指国际足联世界杯，也用于其他运动的世界杯赛事。",
+    "example": {
+      "jp": "ワールドカップの決勝戦を見ました。",
+      "kana": "わーるどかっぷのけっしょうせんをみました。",
+      "romaji": "wārudo kappu no kesshōsen o mimashita.",
+      "zh": "我看了世界杯决赛。"
+    }
+  },
+  "l37-todaiji": {
+    "romaji": "Tōdaiji",
+    "attributes": [],
+    "explanation": "位于日本奈良的著名佛教寺院，以奈良大佛闻名。",
+    "example": {
+      "jp": "奈良の東大寺は世界遺産です。",
+      "kana": "ならのとうだいじはせかいいさんです。",
+      "romaji": "Nara no Tōdaiji wa sekai isan desu.",
+      "zh": "奈良的东大寺是世界遗产。"
+    }
+  },
+  "l37-buddha": {
+    "romaji": "daibutsu",
+    "attributes": [],
+    "explanation": "指巨大的佛像，特指日本奈良东大寺和镰仓高德院的大佛。",
+    "example": {
+      "jp": "東大寺の大仏はとても大きいです。",
+      "kana": "とうだいじのだいぶつはとてもおおきいです。",
+      "romaji": "Tōdaiji no daibutsu wa totemo ōkii desu.",
+      "zh": "东大寺的大佛非常大。"
+    }
+  },
+  "l37-edo": {
+    "romaji": "Edo jidai",
+    "attributes": [],
+    "explanation": "日本历史时代之一，从1603年到1868年，由德川幕府统治。",
+    "example": {
+      "jp": "江戸時代には鎖国政策が取られました。",
+      "kana": "えどじだいにはさこくせいさくがとられました。",
+      "romaji": "Edo jidai ni wa sakoku seisaku ga toraremashita.",
+      "zh": "江户时代采取了锁国政策。"
+    }
+  },
+  "l37-portugal": {
+    "romaji": "Porutogaru",
+    "attributes": [],
+    "explanation": "欧洲西南部的国家，日语中常写作“ポルトガル”。",
+    "example": {
+      "jp": "ポルトガルはヨーロッパの西にあります。",
+      "kana": "ぽるとがるはよーろっぱのにしにあります。",
+      "romaji": "Porutogaru wa Yōroppa no nishi ni arimasu.",
+      "zh": "葡萄牙位于欧洲西部。"
+    }
+  },
+  "l37-saudi": {
+    "romaji": "Sauji Arabia",
+    "attributes": [],
+    "explanation": "西亚的阿拉伯半岛国家，正式名称为沙特阿拉伯王国。",
+    "example": {
+      "jp": "サウジアラビアは石油の産出が多いです。",
+      "kana": "さうじあらびあはせきゆのさんしゅつがおおいです。",
+      "romaji": "Sauji Arabia wa sekiyu no sanshutsu ga ōi desu.",
+      "zh": "沙特阿拉伯石油产量很大。"
+    }
+  },
+  "l37-russia": {
+    "romaji": "Roshia",
+    "attributes": [],
+    "explanation": "指俄罗斯联邦，是国名专有名词。日语中常用片假名书写，正式场合也可用汉字“露西亜”，但日常几乎不用。",
+    "example": {
+      "jp": "ロシアはとても広い国です。",
+      "kana": "ろしあはとてもひろいくにです。",
+      "romaji": "Roshia wa totemo hiroi kuni desu.",
+      "zh": "俄罗斯是一个非常大的国家。"
+    }
+  },
+  "l37-toshogu": {
+    "romaji": "Tōshōgū",
+    "attributes": [],
+    "explanation": "指祭祀德川家康的神社，最著名的是栃木县日光市的日光东照宫。作为专有名词，常与“日光”搭配使用。",
+    "example": {
+      "jp": "日光の東照宮は世界遺産です。",
+      "kana": "にっこうのとうしょうぐうはせかいいさんです。",
+      "romaji": "Nikkō no Tōshōgū wa sekai isan desu.",
+      "zh": "日光的东照宫是世界遗产。"
+    }
+  },
+  "l37-sleeping-cat": {
+    "romaji": "Nemuri Neko",
+    "attributes": [],
+    "explanation": "特指日光东照宫回廊上的著名雕刻“眠猫”，作者传为左甚五郎。作为专有名词，常与“東照宮”一起提及。",
+    "example": {
+      "jp": "東照宮の眠り猫はとても有名です。",
+      "kana": "とうしょうぐうのねむりねこはとてもゆうめいです。",
+      "romaji": "Tōshōgū no Nemuri Neko wa totemo yūmei desu.",
+      "zh": "东照宫的眠猫非常有名。"
+    }
+  },
+  "l37-jingoro": {
+    "romaji": "Hidari Jingorō",
+    "attributes": [],
+    "explanation": "日本江户时代传说中的名匠，相传雕刻了日光东照宫的眠猫等作品。作为专有名词，常与“彫刻”等词搭配。",
+    "example": {
+      "jp": "左甚五郎は眠り猫を彫ったと言われています。",
+      "kana": "ひだりじんごろうはねむりねこをほったといわれています。",
+      "romaji": "Hidari Jingorō wa Nemuri Neko o hotta to iwarete imasu.",
+      "zh": "据说左甚五郎雕刻了眠猫。"
+    }
+  },
+  "l37-splendid": {
+    "romaji": "gōka na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示豪华、华丽、气派，常用于形容建筑、装饰、宴会等。修饰名词时加“な”，如“豪華な建物”。",
+    "example": {
+      "jp": "豪華な建物がたくさんあります。",
+      "kana": "ごうかなたてものがたくさんあります。",
+      "romaji": "Gōka na tatemono ga takusan arimasu.",
+      "zh": "有很多豪华的建筑。"
+    }
+  },
+  "l37-sculpture": {
+    "romaji": "chōkoku",
+    "attributes": [],
+    "explanation": "指雕刻作品或雕刻艺术，常与“彫る”搭配。作为名词，可接“の”修饰其他名词，如“彫刻の作品”。",
+    "example": {
+      "jp": "この彫刻はとても細かいです。",
+      "kana": "このちょうこくはとてもこまかいです。",
+      "romaji": "Kono chōkoku wa totemo komakai desu.",
+      "zh": "这个雕刻非常精细。"
+    }
+  },
+  "l37-legend": {
+    "romaji": "iitsutae",
+    "attributes": [],
+    "explanation": "指口头流传下来的传说、故事，常与“～によると”搭配表示“根据传说”。比“伝説”更强调口头传承。",
+    "example": {
+      "jp": "言い伝えによると、この猫は夜に動くそうです。",
+      "kana": "いいつたえによると、このねこはよるにうごくそうです。",
+      "romaji": "Iitsutae ni yoru to, kono neko wa yoru ni ugoku sō desu.",
+      "zh": "据传说，这只猫晚上会动。"
+    }
+  },
+  "l37-sleep": {
+    "romaji": "nemurimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示“睡觉、入睡”，是“眠る”的礼貌体。比“寝ます”更书面或强调睡眠状态，常用于描述动物或安静地睡。",
+    "example": {
+      "jp": "猫が気持ちよさそうに眠ります。",
+      "kana": "ねこがきもちよさそうにねむります。",
+      "romaji": "Neko ga kimochiyosasō ni nemurimasu.",
+      "zh": "猫看起来很舒服地睡着。"
+    }
+  },
+  "l37-carve": {
+    "romaji": "horimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“雕刻”，是“彫る”的礼貌体。常与“彫刻”“木”等搭配，如“木を彫ります”。",
+    "example": {
+      "jp": "職人が木を彫ります。",
+      "kana": "しょくにんがきをほります。",
+      "romaji": "Shokunin ga ki o horimasu.",
+      "zh": "工匠雕刻木头。"
+    }
+  },
+  "l37-companion": {
+    "romaji": "nakama",
+    "attributes": [],
+    "explanation": "指一起行动或共享某种关系的伙伴、同伴，常用于朋友、同事或团体成员之间。可接“の”修饰名词。",
+    "example": {
+      "jp": "仲間と一緒に旅行に行きます。",
+      "kana": "なかまといっしょにりょこうにいきます。",
+      "romaji": "Nakama to issho ni ryokō ni ikimasu.",
+      "zh": "和伙伴一起去旅行。"
+    }
+  },
+  "l37-however": {
+    "romaji": "shikashi",
+    "attributes": [],
+    "explanation": "表示转折的接续词，意为“但是、然而”，语气较正式，常用于书面语或演讲。口语中更常用“でも”。",
+    "example": {
+      "jp": "雨が降りました。しかし、試合は続きました。",
+      "kana": "あめがふりました。しかし、しあいはつづきました。",
+      "romaji": "Ame ga furimashita. Shikashi, shiai wa tsuzukimashita.",
+      "zh": "下雨了。但是比赛继续了。"
+    }
+  },
+  "l37-after": {
+    "romaji": "sono ato",
+    "attributes": [],
+    "explanation": "表示“那之后、后来”，用于叙述时间顺序，指代前文提到的事件之后。常置于句首或句中。",
+    "example": {
+      "jp": "そのあと、私たちは家に帰りました。",
+      "kana": "そのあと、わたしたちはいえにかえりました。",
+      "romaji": "Sono ato, watashitachi wa ie ni kaerimashita.",
+      "zh": "那之后，我们回家了。"
+    }
+  },
+  "l37-hard": {
+    "romaji": "isshoukenmei",
+    "attributes": [],
+    "explanation": "表示全力以赴、拼命努力的样子，常修饰动词，如「一生懸命働く」「一生懸命勉強する」。也可作な形容词用「一生懸命な人」，语气积极，多用于口语和书面。",
+    "example": {
+      "jp": "彼は毎日一生懸命日本語を勉強しています。",
+      "kana": "かれはまいにちいっしょうけんめいにほんごをべんきょうしています。",
+      "romaji": "kare wa mainichi isshoukenmei nihongo o benkyou shite imasu.",
+      "zh": "他每天拼命地学习日语。"
+    }
+  },
+  "l37-mouse": {
+    "romaji": "nezumi",
+    "attributes": [],
+    "explanation": "指老鼠这种小动物，日常口语常用假名「ねずみ」书写，汉字可写「鼠」。常与「一匹」「捕まえる」等搭配，也可用于比喻小而机灵的人。",
+    "example": {
+      "jp": "台所にねずみが出ました。",
+      "kana": "だいどころにねずみがでました。",
+      "romaji": "daidokoro ni nezumi ga demashita.",
+      "zh": "厨房里出现了老鼠。"
+    }
+  },
+  "l37-not-one": {
+    "romaji": "ippiki mo imasen",
+    "attributes": [],
+    "explanation": "「一匹もいません」是数量词加「も」加否定，表示连一只也没有，强调数量为零。用于动物、鱼、虫等以「匹」计数的事物，礼貌体否定「いません」。",
+    "example": {
+      "jp": "この池には魚が一匹もいません。",
+      "kana": "このいけにはさかながいっぴきもいません。",
+      "romaji": "kono ike ni wa sakana ga ippiki mo imasen.",
+      "zh": "这个池塘里一条鱼也没有。"
+    }
+  }
+}

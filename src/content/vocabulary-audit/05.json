@@ -1,0 +1,298 @@
+{
+  "lessonId": 5,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/5.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 55,
+  "entries": [
+    {
+      "sourceId": "221",
+      "sourceWord": "行きます",
+      "key": "ikimasu"
+    },
+    {
+      "sourceId": "222",
+      "sourceWord": "来ます",
+      "key": "kimasu"
+    },
+    {
+      "sourceId": "223",
+      "sourceWord": "帰ります",
+      "key": "kaerimasu"
+    },
+    {
+      "sourceId": "224",
+      "sourceWord": "学校",
+      "key": "gakkou"
+    },
+    {
+      "sourceId": "225",
+      "sourceWord": "スーパー",
+      "key": "suupaa"
+    },
+    {
+      "sourceId": "226",
+      "sourceWord": "駅",
+      "key": "eki"
+    },
+    {
+      "sourceId": "227",
+      "sourceWord": "飛行機",
+      "key": "hikouki"
+    },
+    {
+      "sourceId": "228",
+      "sourceWord": "船",
+      "key": "fune"
+    },
+    {
+      "sourceId": "229",
+      "sourceWord": "電車",
+      "key": "densha"
+    },
+    {
+      "sourceId": "230",
+      "sourceWord": "地下鉄",
+      "key": "chikatetsu"
+    },
+    {
+      "sourceId": "231",
+      "sourceWord": "新幹線",
+      "key": "shinkansen"
+    },
+    {
+      "sourceId": "232",
+      "sourceWord": "バス",
+      "key": "basu"
+    },
+    {
+      "sourceId": "233",
+      "sourceWord": "タクシー",
+      "key": "takushii"
+    },
+    {
+      "sourceId": "234",
+      "sourceWord": "自転車",
+      "key": "jitensha"
+    },
+    {
+      "sourceId": "235",
+      "sourceWord": "歩いて",
+      "key": "aruite"
+    },
+    {
+      "sourceId": "236",
+      "sourceWord": "人",
+      "key": "hito"
+    },
+    {
+      "sourceId": "237",
+      "sourceWord": "友達",
+      "key": "tomodachi"
+    },
+    {
+      "sourceId": "238",
+      "sourceWord": "彼",
+      "key": "kare"
+    },
+    {
+      "sourceId": "239",
+      "sourceWord": "彼女",
+      "key": "kanojo"
+    },
+    {
+      "sourceId": "2393",
+      "sourceWord": "何月",
+      "key": "nangatsu"
+    },
+    {
+      "sourceId": "240",
+      "sourceWord": "家族",
+      "key": "kazoku"
+    },
+    {
+      "sourceId": "241",
+      "sourceWord": "一人で",
+      "key": "hitoride"
+    },
+    {
+      "sourceId": "242",
+      "sourceWord": "先週",
+      "key": "senshuu"
+    },
+    {
+      "sourceId": "243",
+      "sourceWord": "今週",
+      "key": "konshuu"
+    },
+    {
+      "sourceId": "244",
+      "sourceWord": "来週",
+      "key": "raishuu"
+    },
+    {
+      "sourceId": "245",
+      "sourceWord": "先月",
+      "key": "sengetsu"
+    },
+    {
+      "sourceId": "246",
+      "sourceWord": "今月",
+      "key": "kongetsu"
+    },
+    {
+      "sourceId": "247",
+      "sourceWord": "来月",
+      "key": "raigetsu"
+    },
+    {
+      "sourceId": "248",
+      "sourceWord": "去年",
+      "key": "kyonen"
+    },
+    {
+      "sourceId": "249",
+      "sourceWord": "今年",
+      "key": "kotoshi"
+    },
+    {
+      "sourceId": "250",
+      "sourceWord": "来年",
+      "key": "rainen"
+    },
+    {
+      "sourceId": "251",
+      "sourceWord": "～月",
+      "key": "gatsu"
+    },
+    {
+      "sourceId": "253",
+      "sourceWord": "一日",
+      "key": "date-1"
+    },
+    {
+      "sourceId": "254",
+      "sourceWord": "二日",
+      "key": "date-2"
+    },
+    {
+      "sourceId": "255",
+      "sourceWord": "三日",
+      "key": "date-3"
+    },
+    {
+      "sourceId": "256",
+      "sourceWord": "四日",
+      "key": "date-4"
+    },
+    {
+      "sourceId": "257",
+      "sourceWord": "五日",
+      "key": "date-5"
+    },
+    {
+      "sourceId": "258",
+      "sourceWord": "六日",
+      "key": "date-6"
+    },
+    {
+      "sourceId": "259",
+      "sourceWord": "七日",
+      "key": "date-7"
+    },
+    {
+      "sourceId": "260",
+      "sourceWord": "八日",
+      "key": "date-8"
+    },
+    {
+      "sourceId": "261",
+      "sourceWord": "九日",
+      "key": "date-9"
+    },
+    {
+      "sourceId": "262",
+      "sourceWord": "十日",
+      "key": "date-10"
+    },
+    {
+      "sourceId": "263",
+      "sourceWord": "十四日",
+      "key": "date-14"
+    },
+    {
+      "sourceId": "264",
+      "sourceWord": "二十日",
+      "key": "date-20"
+    },
+    {
+      "sourceId": "265",
+      "sourceWord": "二十四日",
+      "key": "date-24"
+    },
+    {
+      "sourceId": "266",
+      "sourceWord": "日",
+      "key": "nichi"
+    },
+    {
+      "sourceId": "267",
+      "sourceWord": "何日",
+      "key": "nannichi"
+    },
+    {
+      "sourceId": "268",
+      "sourceWord": "いつ",
+      "key": "itsu"
+    },
+    {
+      "sourceId": "269",
+      "sourceWord": "誕生日",
+      "key": "tanjoubi"
+    },
+    {
+      "sourceId": "270",
+      "sourceWord": "普通",
+      "key": "futsuu"
+    },
+    {
+      "sourceId": "271",
+      "sourceWord": "急行",
+      "key": "kyuukou"
+    },
+    {
+      "sourceId": "272",
+      "sourceWord": "特急",
+      "key": "tokkyuu"
+    },
+    {
+      "sourceId": "273",
+      "sourceWord": "次の",
+      "key": "tsugino"
+    },
+    {
+      "sourceId": "274",
+      "sourceWord": "どういたしまして。",
+      "key": "douitashimashite"
+    },
+    {
+      "sourceId": "275",
+      "sourceWord": "～番線",
+      "key": "bansen"
+    }
+  ],
+  "secondaryAdditions": [
+    "nen",
+    "nannen",
+    "soudesune",
+    "arigatougozaimashita",
+    "koushien",
+    "oosakajou"
+  ],
+  "merged": [],
+  "excluded": [],
+  "finalCount": 61,
+  "reviewedOn": "2026-10-24"
+}

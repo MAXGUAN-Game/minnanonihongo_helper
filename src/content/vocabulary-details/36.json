@@ -1,0 +1,468 @@
+{
+  "l36-w1060": {
+    "romaji": "juudou",
+    "attributes": [],
+    "explanation": "指日本的传统武术柔道，作为名词使用。常见搭配有「柔道をする」「柔道の選手」。注意与「柔術」区分。",
+    "example": {
+      "jp": "兄は毎週柔道を練習しています。",
+      "kana": "あにはまいしゅうじゅうどうをれんしゅうしています。",
+      "romaji": "ani wa maishuu juudou o renshuu shite imasu.",
+      "zh": "哥哥每周练习柔道。"
+    }
+  },
+  "l36-w1117": {
+    "romaji": "hotondo",
+    "attributes": [],
+    "explanation": "副词，表示程度很高，意为“几乎”。后接肯定时表示“大部分”；后接否定时表示“几乎不”。注意与「たいてい」语感不同。",
+    "example": {
+      "jp": "宿題はほとんど終わりました。",
+      "kana": "しゅくだいはほとんどおわりました。",
+      "romaji": "shukudai wa hotondo owarimashita.",
+      "zh": "作业几乎做完了。"
+    }
+  },
+  "l36-w1129": {
+    "romaji": "chigaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「違う」的礼貌形，表示“不同、不一样”。常用于否定对方的说法或指出差异。注意不能用于表示“错误”的「間違う」。",
+    "example": {
+      "jp": "私の意見はあなたと違います。",
+      "kana": "わたしのいけんはあなたとちがいます。",
+      "romaji": "watashi no iken wa anata to chigaimasu.",
+      "zh": "我的意见和你不同。"
+    }
+  },
+  "l36-w1433": {
+    "romaji": "kyoku",
+    "attributes": [],
+    "explanation": "名词，指音乐中的“曲子、乐曲”。常用搭配「曲を聴く」「曲を作る」。也写作「曲」。",
+    "example": {
+      "jp": "この曲はとても有名です。",
+      "kana": "このきょくはとてもゆうめいです。",
+      "romaji": "kono kyoku wa totemo yuumei desu.",
+      "zh": "这首曲子很有名。"
+    }
+  },
+  "l36-w1446": {
+    "romaji": "chokinshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词「貯金する」的礼貌形，意为“存钱”。他动词用法，常与「お金を」搭配。注意与「預金する」（存款到银行）略有区别。",
+    "example": {
+      "jp": "毎月少しずつ貯金します。",
+      "kana": "まいつきすこしずつちょきんします。",
+      "romaji": "maitsuki sukoshizutsu chokinshimasu.",
+      "zh": "每个月一点点存钱。"
+    }
+  },
+  "l36-w1449": {
+    "romaji": "sugimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「過ぎる」的礼貌形，表示时间或程度“超过、过了”。常与时间点或数量搭配，如「9時を過ぎます」。也可表示“过度”。",
+    "example": {
+      "jp": "会議は9時を過ぎます。",
+      "kana": "かいぎはくじをすぎます。",
+      "romaji": "kaigi wa kuji o sugimasu.",
+      "zh": "会议超过九点。"
+    }
+  },
+  "l36-w1450": {
+    "romaji": "naremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「慣れる」的礼貌形，表示“习惯、适应”。常与「～に」搭配，如「習慣に慣れます」。注意与「慣らす」（使习惯）自他区别。",
+    "example": {
+      "jp": "新しい習慣に慣れます。",
+      "kana": "あたらしいしゅうかんになれます。",
+      "romaji": "atarashii shuukan ni naremasu.",
+      "zh": "习惯新的习惯。"
+    }
+  },
+  "l36-w1457": {
+    "romaji": "kendou",
+    "attributes": [],
+    "explanation": "名词，指日本传统武术“剑道”。常用搭配「剣道をする」「剣道の試合」。注意与「剣術」区分。",
+    "example": {
+      "jp": "週末に剣道の練習があります。",
+      "kana": "しゅうまつにけんどうのれんしゅうがあります。",
+      "romaji": "shuumatsu ni kendou no renshuu ga arimasu.",
+      "zh": "周末有剑道练习。"
+    }
+  },
+  "l36-w1458": {
+    "romaji": "maishuu",
+    "attributes": [],
+    "explanation": "名词，表示“每周”。常作为时间状语使用，如「毎週～します」。类似还有「毎日」「毎月」。",
+    "example": {
+      "jp": "毎週映画を見ます。",
+      "kana": "まいしゅうえいがをみます。",
+      "romaji": "maishuu eiga o mimasu.",
+      "zh": "每周看电影。"
+    }
+  },
+  "l36-w1459": {
+    "romaji": "maitsuki",
+    "attributes": [],
+    "explanation": "名词，表示“每月”。作为时间状语使用，如「毎月～します」。注意读音是「まいつき」，不是「まいげつ」。",
+    "example": {
+      "jp": "毎月本を買います。",
+      "kana": "まいつきほんをかいます。",
+      "romaji": "maitsuki hon o kaimasu.",
+      "zh": "每月买书。"
+    }
+  },
+  "l36-w1460": {
+    "romaji": "maitoshi",
+    "attributes": [],
+    "explanation": "名词，表示“每年”。作为时间状语使用，如「毎年～します」。也有「まいねん」的读法，但「まいとし」更常用。",
+    "example": {
+      "jp": "毎年旅行に行きます。",
+      "kana": "まいとしりょこうにいきます。",
+      "romaji": "maitoshi ryokou ni ikimasu.",
+      "zh": "每年去旅行。"
+    }
+  },
+  "l36-w1461": {
+    "romaji": "yatto",
+    "attributes": [],
+    "explanation": "副词，表示经过努力或长时间后“终于、好不容易”。常与「～ました」等完成形搭配。语气带有感慨。",
+    "example": {
+      "jp": "やっと宿題が終わりました。",
+      "kana": "やっとしゅくだいがおわりました。",
+      "romaji": "yatto shukudai ga owarimashita.",
+      "zh": "终于做完作业了。"
+    }
+  },
+  "l36-w1462": {
+    "romaji": "kanari",
+    "attributes": [],
+    "explanation": "表示程度相当高，常用于口语和书面语。可修饰形容词、动词，语气比「とても」稍正式，但不如「非常に」生硬。",
+    "example": {
+      "jp": "今日はかなり寒いですね。",
+      "kana": "きょうはかなりさむいですね。",
+      "romaji": "kyou wa kanari samui desu ne.",
+      "zh": "今天相当冷啊。"
+    }
+  },
+  "l36-w1463": {
+    "romaji": "kanarazu",
+    "attributes": [],
+    "explanation": "表示必然、一定，常用于规律、承诺或强烈推测。与「絶対に」相比更侧重客观必然性，书面语中也常见。",
+    "example": {
+      "jp": "明日は必ず来てください。",
+      "kana": "あしたはかならずきてください。",
+      "romaji": "ashita wa kanarazu kite kudasai.",
+      "zh": "明天请一定要来。"
+    }
+  },
+  "l36-w1464": {
+    "romaji": "zettai ni",
+    "attributes": [],
+    "explanation": "表示绝对、无论如何，语气强烈，常用于个人意志或禁止。口语中可单独说「絶対」加强语气。",
+    "example": {
+      "jp": "絶対に忘れないでください。",
+      "kana": "ぜったいにわすれないでください。",
+      "romaji": "zettai ni wasurenai de kudasai.",
+      "zh": "请绝对不要忘记。"
+    }
+  },
+  "l36-w1465": {
+    "romaji": "jouzu ni",
+    "attributes": [],
+    "explanation": "「上手だ」的副词形，表示做某事很熟练、巧妙。常修饰动词，如「上手に歌う」「上手に使う」。",
+    "example": {
+      "jp": "彼は日本語を上手に話します。",
+      "kana": "かれはにほんごをじょうずにはなします。",
+      "romaji": "kare wa nihongo o jouzu ni hanashimasu.",
+      "zh": "他日语说得很好。"
+    }
+  },
+  "l36-w1466": {
+    "romaji": "dekiru dake",
+    "attributes": [],
+    "explanation": "表示尽可能、尽量，后接动词或形容词。常用于请求或建议，语气较委婉。",
+    "example": {
+      "jp": "できるだけ早く来てください。",
+      "kana": "できるだけはやくきてください。",
+      "romaji": "dekiru dake hayaku kite kudasai.",
+      "zh": "请尽可能早点来。"
+    }
+  },
+  "l36-w1467": {
+    "romaji": "kono goro",
+    "attributes": [],
+    "explanation": "指最近一段时间，常用于叙述近况。与「最近」意思相近，但「この頃」更口语化，多用于日常会话。",
+    "example": {
+      "jp": "この頃、忙しいですか。",
+      "kana": "このごろ、いそがしいですか。",
+      "romaji": "kono goro, isogashii desu ka.",
+      "zh": "最近忙吗？"
+    }
+  },
+  "l36-w1470": {
+    "romaji": "okyakusama",
+    "attributes": [],
+    "explanation": "「客」的尊敬语，用于称呼顾客或客人，常见于服务业。不能用于称呼自己一方的人。",
+    "example": {
+      "jp": "お客様、こちらへどうぞ。",
+      "kana": "おきゃくさま、こちらへどうぞ。",
+      "romaji": "okyakusama, kochira e douzo.",
+      "zh": "客人，请这边走。"
+    }
+  },
+  "l36-w1471": {
+    "romaji": "tokubetsuna",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示特别的、特殊的，修饰名词时加「な」。常用于强调与一般不同或格外重要的事物。",
+    "example": {
+      "jp": "今日は特別な日です。",
+      "kana": "きょうはとくべつなひです。",
+      "romaji": "kyou wa tokubetsu na hi desu.",
+      "zh": "今天是特别的日子。"
+    }
+  },
+  "l36-w1472": {
+    "romaji": "shite irasshaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「している」的尊敬语，用于描述对方正在做的动作。主语为尊长或客人时使用，不能用于自己。",
+    "example": {
+      "jp": "先生は今、何をしていらっしゃいますか。",
+      "kana": "せんせいはいます、なにをしていらっしゃいますか。",
+      "romaji": "sensei wa ima, nani o shite irasshaimasu ka.",
+      "zh": "老师现在在做什么？"
+    }
+  },
+  "l36-w1473": {
+    "romaji": "suiei",
+    "attributes": [],
+    "explanation": "指游泳这项运动或技能，常与「する」搭配构成「水泳をする」。比「泳ぐ」更正式，多用于体育语境。",
+    "example": {
+      "jp": "毎週水泳をしています。",
+      "kana": "まいしゅうすいえいをしています。",
+      "romaji": "maishuu suiei o shite imasu.",
+      "zh": "我每周都游泳。"
+    }
+  },
+  "l36-w1476": {
+    "romaji": "charenji shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示挑战新事物或困难，常与「～にチャレンジする」搭配。外来语动词，口语中常用。",
+    "example": {
+      "jp": "新しいスポーツにチャレンジします。",
+      "kana": "あたらしいすぽーつにちゃれんじします。",
+      "romaji": "atarashii supootsu ni charenji shimasu.",
+      "zh": "我要挑战一项新运动。"
+    }
+  },
+  "l36-w1477": {
+    "romaji": "kimochi",
+    "attributes": [],
+    "explanation": "指心情、感觉或心意，常用于表达情感状态。可搭配「気持ちがいい」「気持ちを伝える」等。",
+    "example": {
+      "jp": "今の気持ちを話してください。",
+      "kana": "いまのきもちをはなしてください。",
+      "romaji": "ima no kimochi o hanashite kudasai.",
+      "zh": "请说说你现在的心情。"
+    }
+  },
+  "l36-w1595": {
+    "romaji": "uchuu",
+    "attributes": [],
+    "explanation": "指地球大气层以外的广阔空间及一切天体的总称。常用于科学、科幻语境，也可比喻视野或规模宏大。",
+    "example": {
+      "jp": "宇宙にはまだ知らないことがたくさんある。",
+      "kana": "うちゅうにはまだしらないことがたくさんある。",
+      "romaji": "uchuu ni wa mada shiranai koto ga takusan aru.",
+      "zh": "宇宙中还有很多未知的事物。"
+    }
+  },
+  "l36-w1774": {
+    "romaji": "jiko ni aimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示遭遇事故、灾害等不好的事件，常用「事故に遭う」的形式。不能用于主动引发事故，注意与「事故を起こす」区分。",
+    "example": {
+      "jp": "兄は去年交通事故に遭った。",
+      "kana": "あにはきょねんこうつうじこにあった。",
+      "romaji": "ani wa kyonen koutsuu jiko ni atta.",
+      "zh": "哥哥去年遭遇了交通事故。"
+    }
+  },
+  "l36-w3257": {
+    "romaji": "kusarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "指食物、木材等有机物因细菌作用而变质、腐烂。也可用于比喻思想或组织腐败堕落。",
+    "example": {
+      "jp": "暑いので果物がすぐ腐ります。",
+      "kana": "あついのでくだものがすぐくさります。",
+      "romaji": "atsui node kudamono ga sugu kusarimasu.",
+      "zh": "因为天热，水果很快就会腐烂。"
+    }
+  },
+  "l36-w950": {
+    "romaji": "rasshu",
+    "attributes": [],
+    "explanation": "指上下班、上下学等交通拥挤的高峰时段，常以「ラッシュアワー」或单独「ラッシュ」使用。",
+    "example": {
+      "jp": "朝のラッシュは電車がとても混む。",
+      "kana": "あさのらっしゅはでんしゃがとてもこむ。",
+      "romaji": "asa no rasshu wa densha ga totemo komu.",
+      "zh": "早高峰时电车非常拥挤。"
+    }
+  },
+  "l36-using": {
+    "romaji": "tsukatte irassharu n desu ne",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「使っているんですね」的尊敬说法，用「いらっしゃる」表示对方的状态。用于礼貌地确认对方正在使用某物，语气恭敬。",
+    "example": {
+      "jp": "このパソコン、使っていらっしゃるんですね。",
+      "kana": "このぱそこん、つかっていらっしゃるんですね。",
+      "romaji": "kono pasokon, tsukatte irassharu n desu ne.",
+      "zh": "这台电脑，原来您正在使用啊。"
+    }
+  },
+  "l36-chopin": {
+    "romaji": "Shopan",
+    "attributes": [],
+    "explanation": "波兰作曲家、钢琴家肖邦的名字，日语中常用来指代其音乐作品。专有名词，首字母大写。",
+    "example": {
+      "jp": "ショパンのピアノ曲が好きです。",
+      "kana": "しょぱんのぴあのきょくがすきです。",
+      "romaji": "Shopan no piano kyoku ga suki desu.",
+      "zh": "我喜欢肖邦的钢琴曲。"
+    }
+  },
+  "l36-vehicle": {
+    "romaji": "norimono",
+    "attributes": [],
+    "explanation": "泛指人乘坐的交通工具，如电车、汽车、船、飞机等。比「乗り物」更具体时可用「交通機関」。",
+    "example": {
+      "jp": "子どもは乗り物に乗るのが大好きだ。",
+      "kana": "こどもはのりものにのるのがだいすきだ。",
+      "romaji": "kodomo wa norimono ni noru no ga daisuki da.",
+      "zh": "孩子非常喜欢乘坐交通工具。"
+    }
+  },
+  "l36-century": {
+    "romaji": "seiki",
+    "attributes": [],
+    "explanation": "接在数词后表示世纪，如「20世紀」「21世紀」。注意与表示时代的「時代」区分。",
+    "example": {
+      "jp": "この建物は19世紀に建てられた。",
+      "kana": "このたてものはじゅうきゅうせいきにたてられた。",
+      "romaji": "kono tatemono wa juukyuu seiki ni taterareta.",
+      "zh": "这座建筑建于19世纪。"
+    }
+  },
+  "l36-far": {
+    "romaji": "tooku",
+    "attributes": [],
+    "explanation": "表示距离远的地方或远远地，可作名词或副词使用。常用「遠くから」「遠くに」等搭配。",
+    "example": {
+      "jp": "遠くに富士山が見える。",
+      "kana": "とおくにふじさんがみえる。",
+      "romaji": "tooku ni Fujisan ga mieru.",
+      "zh": "远处能看到富士山。"
+    }
+  },
+  "l36-rare": {
+    "romaji": "mezurashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示不常见、稀奇，带有正面评价或惊讶的语气。可用于事物、现象，也可用于人少见的行为。",
+    "example": {
+      "jp": "こんな珍しい花は初めて見ました。",
+      "kana": "こんなめずらしいはなははじめてみました。",
+      "romaji": "konna mezurashii hana wa hajimete mimashita.",
+      "zh": "这么少见的花我还是第一次看到。"
+    }
+  },
+  "l36-train": {
+    "romaji": "kisha",
+    "attributes": [],
+    "explanation": "指蒸汽机车或旧式火车，现代日语中日常多称「電車」或「列車」。文学作品中常保留「汽車」的说法。",
+    "example": {
+      "jp": "昔の汽車は石炭で走っていた。",
+      "kana": "むかしのきしゃはせきたんでほしっていた。",
+      "romaji": "mukashi no kisha wa sekitan de hashitte ita.",
+      "zh": "以前的火车靠煤炭行驶。"
+    }
+  },
+  "l36-steamship": {
+    "romaji": "kisen",
+    "attributes": [],
+    "explanation": "指以蒸汽机为动力的船，现多泛指轮船。与「汽船」相对的现代说法是「船」或「フェリー」等。",
+    "example": {
+      "jp": "港に古い汽船が停まっている。",
+      "kana": "みなとにふるいきせんがとまっている。",
+      "romaji": "minato ni furui kisen ga tomatte iru.",
+      "zh": "港口停着一艘旧轮船。"
+    }
+  },
+  "l36-many": {
+    "romaji": "oozei no",
+    "attributes": [],
+    "explanation": "“大勢”表示人数很多，常以“大勢の＋人/学生”等修饰名词，也可单独作主语或状语。不能用于物品数量多，物品多用“たくさんの”。",
+    "example": {
+      "jp": "公園に大勢の子供がいます。",
+      "kana": "こうえんにおおぜいのこどもがいます。",
+      "romaji": "kouen ni oozei no kodomo ga imasu.",
+      "zh": "公园里有很多孩子。"
+    }
+  },
+  "l36-transport": {
+    "romaji": "hakobimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把物品从一处搬到另一处，强调用手或工具运送；宾语用“を”。与“運びます”对应的自动词是“運ばれます”，注意区分。",
+    "example": {
+      "jp": "机を二階へ運びます。",
+      "kana": "つくえをにかいへはこびます。",
+      "romaji": "tsukue o nikai e hakobimasu.",
+      "zh": "把桌子搬到二楼。"
+    }
+  },
+  "l36-use": {
+    "romaji": "riyou shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示有目的地使用设施、服务或交通工具，比“使います”更正式，常与“電車/図書館/インターネット”等搭配，宾语用“を”。",
+    "example": {
+      "jp": "毎日電車を利用します。",
+      "kana": "まいにちでんしゃをりようします。",
+      "romaji": "mainichi densha o riyou shimasu.",
+      "zh": "每天乘坐电车。"
+    }
+  },
+  "l36-freely": {
+    "romaji": "jiyuu ni",
+    "attributes": [],
+    "explanation": "な形容词“自由だ”加“に”构成的副词，表示不受限制地做某事，常修饰动作动词。语体较中性，可用于行动、发言、使用等场合。",
+    "example": {
+      "jp": "図書館の本は自由に読めます。",
+      "kana": "としょかんのほんはじゆうによめます。",
+      "romaji": "toshokan no hon wa jiyuu ni yomemasu.",
+      "zh": "图书馆的书可以自由阅读。"
+    }
+  }
+}

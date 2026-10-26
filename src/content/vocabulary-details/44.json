@@ -1,0 +1,535 @@
+{
+  "l44-w1375": {
+    "romaji": "hosoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体直径小、线条细，或人的身材纤细。常用于描述笔、线、道路、声音等，与「太い」相对。",
+    "example": {
+      "jp": "このペンは細いです。",
+      "kana": "このぺんはほそいです。",
+      "romaji": "kono pen wa hosoi desu.",
+      "zh": "这支笔很细。"
+    }
+  },
+  "l44-w1376": {
+    "romaji": "futoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体直径大、粗壮，或线条粗。常用于描述树干、柱子、笔迹、声音等，与「細い」相对。",
+    "example": {
+      "jp": "太い木の枝が折れました。",
+      "kana": "ふといきのえだがおれました。",
+      "romaji": "futoi ki no eda ga oremashita.",
+      "zh": "粗的树枝断了。"
+    }
+  },
+  "l44-w1593": {
+    "romaji": "kiken na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示可能带来伤害或损失的状态，常用于提醒注意安全。修饰名词时加「な」，否定形为「危険ではない」。",
+    "example": {
+      "jp": "ここは危険な場所です。",
+      "kana": "ここはきけんなばしょです。",
+      "romaji": "koko wa kiken na basho desu.",
+      "zh": "这里是危险的地方。"
+    }
+  },
+  "l44-w1676": {
+    "romaji": "atsui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体上下两面距离大，或厚度大。常用于书、板、衣服等，与「薄い」相对。",
+    "example": {
+      "jp": "厚い本を読むのは大変です。",
+      "kana": "あついほんをよむのはたいへんです。",
+      "romaji": "atsui hon o yomu no wa taihen desu.",
+      "zh": "读厚书很辛苦。"
+    }
+  },
+  "l44-w1677": {
+    "romaji": "usui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示厚度小，也可表示颜色浅、味道淡或密度低。常用于纸、布、汤、颜色等，与「厚い」「濃い」相对。",
+    "example": {
+      "jp": "薄い紙に書いてください。",
+      "kana": "うすいかみにかいてください。",
+      "romaji": "usui kami ni kaite kudasai.",
+      "zh": "请写在薄纸上。"
+    }
+  },
+  "l44-w1740": {
+    "romaji": "nakimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因悲伤、疼痛或感动而流泪出声。主语为哭泣的人，常用「人が泣く」的形式。",
+    "example": {
+      "jp": "赤ちゃんが大きな声で泣きます。",
+      "kana": "あかちゃんがおおきなこえでなきます。",
+      "romaji": "akachan ga ookina koe de nakimasu.",
+      "zh": "婴儿大声哭。"
+    }
+  },
+  "l44-w1741": {
+    "romaji": "waraimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因高兴、有趣而发出笑声。主语为人，常与「声を出して」等搭配。",
+    "example": {
+      "jp": "みんなで楽しく笑います。",
+      "kana": "みんなでたのしくわらいます。",
+      "romaji": "minna de tanoshiku waraimasu.",
+      "zh": "大家一起开心地笑。"
+    }
+  },
+  "l44-w1742": {
+    "romaji": "kawakimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示水分消失、物体变干。常用于衣物、地面、皮肤等，强调自然干燥的过程。",
+    "example": {
+      "jp": "洗濯物が早く乾きます。",
+      "kana": "せんたくものがはやくかわきます。",
+      "romaji": "sentakumono ga hayaku kawakimasu.",
+      "zh": "洗的衣服干得很快。"
+    }
+  },
+  "l44-w1743": {
+    "romaji": "nuremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物体沾上水等液体而变湿。常用于衣物、地面、身体等，与「乾く」相对。",
+    "example": {
+      "jp": "雨で服が濡れました。",
+      "kana": "あめでふくがぬれました。",
+      "romaji": "ame de fuku ga nuremashita.",
+      "zh": "衣服被雨淋湿了。"
+    }
+  },
+  "l44-w1744": {
+    "romaji": "suberimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在光滑表面上失去平衡而滑动或摔倒。常用于地面、冰面等，也可比喻事物不顺利。",
+    "example": {
+      "jp": "雪の道で滑りました。",
+      "kana": "ゆきのみちですべりました。",
+      "romaji": "yuki no michi de suberimashita.",
+      "zh": "在雪路上滑倒了。"
+    }
+  },
+  "l44-w1745": {
+    "romaji": "okimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示事件、事故等发生。主语为发生的事，常用「事故が起きる」「問題が起きる」等搭配。",
+    "example": {
+      "jp": "交差点で事故が起きました。",
+      "kana": "こうさてんでじこがおきました。",
+      "romaji": "kousaten de jiko ga okimashita.",
+      "zh": "在十字路口发生了事故。"
+    }
+  },
+  "l44-w1746": {
+    "romaji": "chousetsu shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示调整、调节温度、音量、速度等使其合适。常与「温度」「音量」「エアコン」等搭配。",
+    "example": {
+      "jp": "エアコンの温度を調節します。",
+      "kana": "えあこんのおんどをちょうせつします。",
+      "romaji": "eakon no ondo o chousetsu shimasu.",
+      "zh": "调节空调的温度。"
+    }
+  },
+  "l44-w1747": {
+    "romaji": "anzen na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示没有危险、不会受害的状态，常用于描述场所、物品或行为的安全性。修饰名词时加「な」，如「安全な場所」。",
+    "example": {
+      "jp": "このホテルは安全な場所にあります。",
+      "kana": "このほてるはあんぜんなばしょにあります。",
+      "romaji": "kono hoteru wa anzen na basho ni arimasu.",
+      "zh": "这家酒店位于安全的地方。"
+    }
+  },
+  "l44-w1750": {
+    "romaji": "koi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示液体浓度高或颜色深，也可形容味道、气味强烈。与「薄い」相对，常用于咖啡、汤、颜色等。",
+    "example": {
+      "jp": "このコーヒーは濃いですね。",
+      "kana": "このこーひーはこいですね。",
+      "romaji": "kono kōhī wa koi desu ne.",
+      "zh": "这咖啡很浓啊。"
+    }
+  },
+  "l44-w1752": {
+    "romaji": "kūki",
+    "attributes": [],
+    "explanation": "指地球周围的气体或某个空间的气氛。常与「きれいな」「悪い」等搭配，也可用于比喻氛围。",
+    "example": {
+      "jp": "山の空気はとてもきれいです。",
+      "kana": "やまのくうきはとてもきれいです。",
+      "romaji": "yama no kūki wa totemo kirei desu.",
+      "zh": "山里的空气非常清新。"
+    }
+  },
+  "l44-w1753": {
+    "romaji": "namida",
+    "attributes": [],
+    "explanation": "指哭泣时流出的泪水，也用于比喻感动或悲伤。常用「涙が出る」「涙を流す」等搭配。",
+    "example": {
+      "jp": "映画を見て涙が出ました。",
+      "kana": "えいがをみてなみだがでました。",
+      "romaji": "eiga o mite namida ga demashita.",
+      "zh": "看了电影，我流泪了。"
+    }
+  },
+  "l44-w1754": {
+    "romaji": "washoku",
+    "attributes": [],
+    "explanation": "指日本传统风格的料理，如寿司、天妇罗等。常与「洋食」对比使用，强调日本饮食文化。",
+    "example": {
+      "jp": "旅行中は和食を食べたいです。",
+      "kana": "りょこうちゅうはわしょくをたべたいです。",
+      "romaji": "ryokōchū wa washoku o tabetai desu.",
+      "zh": "旅行中我想吃日式料理。"
+    }
+  },
+  "l44-w1755": {
+    "romaji": "yōshoku",
+    "attributes": [],
+    "explanation": "指受西方影响的料理，如汉堡、咖喱饭等。与「和食」相对，常用于餐饮分类。",
+    "example": {
+      "jp": "子どもは洋食が好きです。",
+      "kana": "こどもはようしょくがすきです。",
+      "romaji": "kodomo wa yōshoku ga suki desu.",
+      "zh": "孩子喜欢西式料理。"
+    }
+  },
+  "l44-w1756": {
+    "romaji": "okazu",
+    "attributes": [],
+    "explanation": "指搭配米饭等主食吃的菜肴，通常味道较咸。也可泛指副食，与「ご飯」相对。",
+    "example": {
+      "jp": "おかずは何にしますか。",
+      "kana": "おかずはなんにしますか。",
+      "romaji": "okazu wa nan ni shimasu ka.",
+      "zh": "配菜要选什么？"
+    }
+  },
+  "l44-w1757": {
+    "romaji": "ryō",
+    "attributes": [],
+    "explanation": "表示数量、分量，常用于食物、材料等。可组成「量が多い」「量を減らす」等搭配。",
+    "example": {
+      "jp": "この店は料理の量が多いです。",
+      "kana": "このみせはりょうりのりょうがおおいです。",
+      "romaji": "kono mise wa ryōri no ryō ga ōi desu.",
+      "zh": "这家店菜量很大。"
+    }
+  },
+  "l44-w1758": {
+    "romaji": "-bai",
+    "attributes": [],
+    "explanation": "接在数词后表示倍数，如「2倍」「3倍」。常用于比较大小、数量、程度等。",
+    "example": {
+      "jp": "今年の売上は去年の2倍です。",
+      "kana": "ことしのうりあげはきょねんのにばいです。",
+      "romaji": "kotoshi no uriake wa kyonen no nibai desu.",
+      "zh": "今年的销售额是去年的两倍。"
+    }
+  },
+  "l44-w1760": {
+    "romaji": "shinguru",
+    "attributes": [],
+    "explanation": "指酒店等只有一张床的单人房间，也指单人用的东西。常与「ツイン」对比使用。",
+    "example": {
+      "jp": "シングルの部屋を予約しました。",
+      "kana": "しんぐるのへやをよやくしました。",
+      "romaji": "shinguru no heya o yoyaku shimashita.",
+      "zh": "我预订了单人间。"
+    }
+  },
+  "l44-w1761": {
+    "romaji": "tsuin",
+    "attributes": [],
+    "explanation": "指酒店等有两张床的双床间，适合两人入住。与「シングル」相对，常与「ルーム」搭配。",
+    "example": {
+      "jp": "ツインの部屋は空いていますか。",
+      "kana": "ついんのへやはあいていますか。",
+      "romaji": "tsuin no heya wa aite imasu ka.",
+      "zh": "双床间有空房吗？"
+    }
+  },
+  "l44-w1763": {
+    "romaji": "sentakumono",
+    "attributes": [],
+    "explanation": "指需要洗的脏衣物或刚洗好的衣物，具体含义由语境决定。常与「洗濯する」「干す」等搭配。",
+    "example": {
+      "jp": "洗濯物をベランダに干しました。",
+      "kana": "せんたくものをべらんだにほしました。",
+      "romaji": "sentakumono o beranda ni hoshimashita.",
+      "zh": "我把洗好的衣服晾在阳台上了。"
+    }
+  },
+  "l44-w1765": {
+    "romaji": "dō nasaimasuka",
+    "attributes": [],
+    "explanation": "「どうなさいますか」是「どうしますか」的尊敬语，用于礼貌地询问对方打算怎么做，常见于服务行业对顾客的询问。",
+    "example": {
+      "jp": "お客様、どうなさいますか。",
+      "kana": "おきゃくさま、どうなさいますか。",
+      "romaji": "okyakusama, dō nasaimasuka.",
+      "zh": "客人，您要怎么做？"
+    }
+  },
+  "l44-w1766": {
+    "romaji": "katto",
+    "attributes": [],
+    "explanation": "「カット」是外来语，在理发店指剪发，也可用于其他切割义，但本课特指剪头发。",
+    "example": {
+      "jp": "カットをお願いします。",
+      "kana": "かっとをおねがいします。",
+      "romaji": "katto o onegaishimasu.",
+      "zh": "请帮我剪发。"
+    }
+  },
+  "l44-w1767": {
+    "romaji": "shanpū",
+    "attributes": [],
+    "explanation": "「シャンプー」可指洗发动作或洗发水，在理发店语境中常指洗发服务。",
+    "example": {
+      "jp": "シャンプーもお願いします。",
+      "kana": "しゃんぷーもおねがいします。",
+      "romaji": "shanpū mo onegaishimasu.",
+      "zh": "也请帮我洗一下头。"
+    }
+  },
+  "l44-w1768": {
+    "romaji": "dō iu fū ni nasaimasuka",
+    "attributes": [],
+    "explanation": "「どういう風になさいますか」是「どういう風にしますか」的尊敬语，用于询问对方希望做成什么样式，常用于理发店等场合。",
+    "example": {
+      "jp": "髪型はどういう風になさいますか。",
+      "kana": "かみがたはどういうふうになさいますか。",
+      "romaji": "kamigata wa dō iu fū ni nasaimasuka.",
+      "zh": "您想要什么样的发型？"
+    }
+  },
+  "l44-w1769": {
+    "romaji": "shōto",
+    "attributes": [],
+    "explanation": "「ショート」是外来语，指短发，常用于发型描述，与「ロング」相对。",
+    "example": {
+      "jp": "ショートにしてください。",
+      "kana": "しょーとにしてください。",
+      "romaji": "shōto ni shite kudasai.",
+      "zh": "请剪成短发。"
+    }
+  },
+  "l44-w1770": {
+    "romaji": "~ mitai ni shite kudasai",
+    "attributes": [],
+    "explanation": "「～みたいにしてください」表示“请做成像……那样”，用于提出样式要求，前接名词或动词普通形。",
+    "example": {
+      "jp": "この写真みたいにしてください。",
+      "kana": "このしゃしんみたいにしてください。",
+      "romaji": "kono shashin mitai ni shite kudasai.",
+      "zh": "请做成这张照片那样。"
+    }
+  },
+  "l44-w1771": {
+    "romaji": "kore de yoroshii deshō ka",
+    "attributes": [],
+    "explanation": "「これでよろしいでしょうか」是「これでいいですか」的郑重表达，用于确认是否可行，常见于服务行业。",
+    "example": {
+      "jp": "長さはこれでよろしいでしょうか。",
+      "kana": "ながさはこれでよろしいでしょうか。",
+      "romaji": "nagasa wa kore de yoroshii deshō ka.",
+      "zh": "长度这样可以吗？"
+    }
+  },
+  "l44-w1772": {
+    "romaji": "dōmo otsukaresama deshita",
+    "attributes": [],
+    "explanation": "「どうもお疲れ様でした」用于对对方的辛苦表示慰问和感谢，常用于工作结束或服务结束后。",
+    "example": {
+      "jp": "どうもお疲れ様でした。また来てください。",
+      "kana": "どうもおつかれさまでした。またきてください。",
+      "romaji": "dōmo otsukaresama deshita. mata kite kudasai.",
+      "zh": "辛苦您了。请再来。"
+    }
+  },
+  "l44-w2869": {
+    "romaji": "dī bui dī",
+    "attributes": [],
+    "explanation": "「DVD」是英语缩写，指数字多功能光盘，常用于影视存储。",
+    "example": {
+      "jp": "このDVDを借りたいです。",
+      "kana": "このでぃーぶいでぃーをかりたいです。",
+      "romaji": "kono dī bui dī o karitai desu.",
+      "zh": "我想借这张DVD。"
+    }
+  },
+  "l44-w3422": {
+    "romaji": "nemurimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「眠ります」是动词「眠る」的礼貌形，表示睡觉、入睡，比「寝ます」更书面或正式。",
+    "example": {
+      "jp": "毎晩十一時に眠ります。",
+      "kana": "まいばんじゅういちじにねむります。",
+      "romaji": "maiban jūichi ji ni nemurimasu.",
+      "zh": "每晚十一点睡觉。"
+    }
+  },
+  "l44-hiroshima": {
+    "romaji": "hoteru hiroshima",
+    "attributes": [],
+    "explanation": "「ホテルひろしま」是教材中出现的酒店名称，为专有名词，实际使用时需注意语境。",
+    "example": {
+      "jp": "ホテルひろしまに泊まります。",
+      "kana": "ほてるひろしまにとまります。",
+      "romaji": "hoteru hiroshima ni tomarimasu.",
+      "zh": "住在广岛酒店。"
+    }
+  },
+  "l44-dislike": {
+    "romaji": "iyagarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「嫌がります」是动词「嫌がる」的礼貌形，表示表现出不愿意、讨厌的样子，常用于描述他人的态度。",
+    "example": {
+      "jp": "子供は野菜を嫌がります。",
+      "kana": "こどもはやさいをいやがります。",
+      "romaji": "kodomo wa yasai o iyagarimasu.",
+      "zh": "孩子讨厌蔬菜。"
+    }
+  },
+  "l44-also": {
+    "romaji": "mata",
+    "attributes": [],
+    "explanation": "作接续词表示“此外、而且”，用于补充同类信息或另起话题；口语和书面语均常用，注意与表示“再次”的副词「また」区分。",
+    "example": {
+      "jp": "また、明日も来てください。",
+      "kana": "また、あしたもきてください。",
+      "romaji": "mata, ashita mo kite kudasai.",
+      "zh": "此外，明天也请来。"
+    }
+  },
+  "l44-well": {
+    "romaji": "umaku",
+    "attributes": [],
+    "explanation": "副词，表示事情进展顺利或技巧高明，常与「いく」「できる」「話す」等动词搭配；口语中也可说「うまいこと」。",
+    "example": {
+      "jp": "彼は日本語をうまく話します。",
+      "kana": "かれはにほんごをうまくはなします。",
+      "romaji": "kare wa nihongo o umaku hanashimasu.",
+      "zh": "他日语说得很好。"
+    }
+  },
+  "l44-order": {
+    "romaji": "junjo",
+    "attributes": [],
+    "explanation": "名词，指事物排列或进行的先后次序，常用于「順序を守る」「順序が逆」等搭配；比「順番」更偏书面、整体性。",
+    "example": {
+      "jp": "この作業は順序が大切です。",
+      "kana": "このさぎょうはじゅんじょがたいせつです。",
+      "romaji": "kono sagyō wa junjo ga taisetsu desu.",
+      "zh": "这项工作顺序很重要。"
+    }
+  },
+  "l44-relieved": {
+    "romaji": "anshin na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "な形容词，表示令人安心、放心的状态，多修饰事物或氛围；注意与表示主体感到安心的「安心する」区分。",
+    "example": {
+      "jp": "先生の説明は安心な内容でした。",
+      "kana": "せんせいのせつめいはあんしんなないようでした。",
+      "romaji": "sensei no setsumei wa anshin na naiyō deshita.",
+      "zh": "老师的说明是让人放心的内容。"
+    }
+  },
+  "l44-expression": {
+    "romaji": "hyōgen",
+    "attributes": [],
+    "explanation": "名词，指用语言、文字或动作把想法感情表达出来，也指表达方式；常与「豊かな」「独特の」等修饰语搭配。",
+    "example": {
+      "jp": "この表現は少し難しいです。",
+      "kana": "このひょうげんはすこしむずかしいです。",
+      "romaji": "kono hyōgen wa sukoshi muzukashii desu.",
+      "zh": "这个表达有点难。"
+    }
+  },
+  "l44-example": {
+    "romaji": "tatoeba",
+    "attributes": [],
+    "explanation": "副词，用于举出具体例子，相当于中文“例如”；常置于句首，后接名词或小句，书面口语皆可。",
+    "example": {
+      "jp": "例えば、この言葉はどう使いますか。",
+      "kana": "たとえば、このことばはどうつかいますか。",
+      "romaji": "tatoeba, kono kotoba wa dō tsukaimasu ka.",
+      "zh": "例如，这个词怎么用？"
+    }
+  },
+  "l44-separate": {
+    "romaji": "wakaremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "自动词，表示人分别、分手或离开某地，常与「と」搭配表示对象；也可用于抽象事物分离，如「道が別れる」。",
+    "example": {
+      "jp": "駅で友達と別れます。",
+      "kana": "えきでともだちとわかれます。",
+      "romaji": "eki de tomodachi to wakaremasu.",
+      "zh": "在车站和朋友分别。"
+    }
+  },
+  "l44-these": {
+    "romaji": "korera",
+    "attributes": [],
+    "explanation": "代词，指代离说话人较近的多个事物，是「これ」的复数形式，较正式；口语中有时用「これら」指人但需谨慎。",
+    "example": {
+      "jp": "これらは全部私の本です。",
+      "kana": "これらはぜんぶわたしのほんです。",
+      "romaji": "korera wa zenbu watashi no hon desu.",
+      "zh": "这些都是我的书。"
+    }
+  },
+  "l44-unlucky": {
+    "romaji": "engi ga warui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "固定表达，意为“不吉利、兆头不好”，多用于数字、日期、行为等；反义为「縁起がいい」，口语中常说「縁起でもない」。",
+    "example": {
+      "jp": "縁起が悪いから、その話はやめましょう。",
+      "kana": "えんぎがわるいから、そのはなしはやめましょう。",
+      "romaji": "engi ga warui kara, sono hanashi wa yamemashō.",
+      "zh": "因为不吉利，别说那个话题了。"
+    }
+  }
+}

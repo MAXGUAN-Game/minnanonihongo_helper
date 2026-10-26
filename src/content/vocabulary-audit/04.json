@@ -1,0 +1,306 @@
+{
+  "lessonId": 4,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/4.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 56,
+  "entries": [
+    {
+      "sourceId": "165",
+      "sourceWord": "起きます",
+      "key": "okimasu"
+    },
+    {
+      "sourceId": "166",
+      "sourceWord": "寝ます",
+      "key": "nemasu"
+    },
+    {
+      "sourceId": "167",
+      "sourceWord": "働きます",
+      "key": "hatarakimasu"
+    },
+    {
+      "sourceId": "168",
+      "sourceWord": "休みます",
+      "key": "yasumimasu"
+    },
+    {
+      "sourceId": "169",
+      "sourceWord": "勉強します",
+      "key": "benkyoushimasu"
+    },
+    {
+      "sourceId": "170",
+      "sourceWord": "終わります",
+      "key": "owarimasu"
+    },
+    {
+      "sourceId": "171",
+      "sourceWord": "デパート",
+      "key": "depaato"
+    },
+    {
+      "sourceId": "172",
+      "sourceWord": "銀行",
+      "key": "ginkou"
+    },
+    {
+      "sourceId": "173",
+      "sourceWord": "郵便局",
+      "key": "yuubinkyoku"
+    },
+    {
+      "sourceId": "174",
+      "sourceWord": "図書館",
+      "key": "toshokan"
+    },
+    {
+      "sourceId": "175",
+      "sourceWord": "美術館",
+      "key": "bijutsukan"
+    },
+    {
+      "sourceId": "176",
+      "sourceWord": "今",
+      "key": "ima"
+    },
+    {
+      "sourceId": "177",
+      "sourceWord": "～時",
+      "key": "ji"
+    },
+    {
+      "sourceId": "178",
+      "sourceWord": "～分",
+      "key": "fun"
+    },
+    {
+      "sourceId": "180",
+      "sourceWord": "何時",
+      "key": "nanji"
+    },
+    {
+      "sourceId": "181",
+      "sourceWord": "何分",
+      "key": "nanpun"
+    },
+    {
+      "sourceId": "182",
+      "sourceWord": "午前",
+      "key": "gozen"
+    },
+    {
+      "sourceId": "183",
+      "sourceWord": "午後",
+      "key": "gogo"
+    },
+    {
+      "sourceId": "184",
+      "sourceWord": "朝",
+      "key": "asa"
+    },
+    {
+      "sourceId": "185",
+      "sourceWord": "昼",
+      "key": "hiru"
+    },
+    {
+      "sourceId": "186",
+      "sourceWord": "晩",
+      "key": "ban"
+    },
+    {
+      "sourceId": "187",
+      "sourceWord": "夜",
+      "key": "yoru"
+    },
+    {
+      "sourceId": "188",
+      "sourceWord": "一昨日",
+      "key": "ototoi"
+    },
+    {
+      "sourceId": "189",
+      "sourceWord": "昨日",
+      "key": "kinou"
+    },
+    {
+      "sourceId": "190",
+      "sourceWord": "今日",
+      "key": "kyou"
+    },
+    {
+      "sourceId": "191",
+      "sourceWord": "明日",
+      "key": "ashita"
+    },
+    {
+      "sourceId": "192",
+      "sourceWord": "明後日",
+      "key": "asatte"
+    },
+    {
+      "sourceId": "193",
+      "sourceWord": "今朝",
+      "key": "kesa"
+    },
+    {
+      "sourceId": "194",
+      "sourceWord": "今晩",
+      "key": "konban"
+    },
+    {
+      "sourceId": "195",
+      "sourceWord": "休み",
+      "key": "yasumi"
+    },
+    {
+      "sourceId": "196",
+      "sourceWord": "昼休み",
+      "key": "hiruyasumi"
+    },
+    {
+      "sourceId": "197",
+      "sourceWord": "毎朝",
+      "key": "maiasa"
+    },
+    {
+      "sourceId": "198",
+      "sourceWord": "毎晩",
+      "key": "maiban"
+    },
+    {
+      "sourceId": "199",
+      "sourceWord": "毎日",
+      "key": "mainichi"
+    },
+    {
+      "sourceId": "200",
+      "sourceWord": "月曜日",
+      "key": "getsuyoubi"
+    },
+    {
+      "sourceId": "201",
+      "sourceWord": "火曜日",
+      "key": "kayoubi"
+    },
+    {
+      "sourceId": "202",
+      "sourceWord": "水曜日",
+      "key": "suiyoubi"
+    },
+    {
+      "sourceId": "203",
+      "sourceWord": "木曜日",
+      "key": "mokuyoubi"
+    },
+    {
+      "sourceId": "204",
+      "sourceWord": "金曜日",
+      "key": "kinyoubi"
+    },
+    {
+      "sourceId": "205",
+      "sourceWord": "土曜日",
+      "key": "doyoubi"
+    },
+    {
+      "sourceId": "206",
+      "sourceWord": "日曜日",
+      "key": "nichiyoubi"
+    },
+    {
+      "sourceId": "207",
+      "sourceWord": "何曜日",
+      "key": "nanyoubi"
+    },
+    {
+      "sourceId": "208",
+      "sourceWord": "番号",
+      "key": "bangou"
+    },
+    {
+      "sourceId": "209",
+      "sourceWord": "何番",
+      "key": "nanban"
+    },
+    {
+      "sourceId": "210",
+      "sourceWord": "～から",
+      "key": "kara"
+    },
+    {
+      "sourceId": "211",
+      "sourceWord": "～まで",
+      "key": "made"
+    },
+    {
+      "sourceId": "212",
+      "sourceWord": "～と～",
+      "key": "to"
+    },
+    {
+      "sourceId": "213",
+      "sourceWord": "そちら",
+      "key": "sochira"
+    },
+    {
+      "sourceId": "214",
+      "sourceWord": "大変ですね。",
+      "key": "taihendesune"
+    },
+    {
+      "sourceId": "2464",
+      "sourceWord": "半",
+      "key": "han"
+    },
+    {
+      "sourceId": "309",
+      "sourceWord": "映画",
+      "key": "eiga"
+    },
+    {
+      "sourceId": "670",
+      "sourceWord": "会議",
+      "key": "kaigi"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "216",
+      "sourceWord": "104",
+      "reason": "旧版电话查询场景，第二版交叉表不列。"
+    },
+    {
+      "sourceId": "218",
+      "sourceWord": "お問合せの番号",
+      "reason": "旧版电话查询场景，第二版交叉表不列。"
+    },
+    {
+      "sourceId": "219",
+      "sourceWord": "どうもありがとうございました。",
+      "reason": "第二版交叉表列在第5课；完整感谢表达在第5课提供。"
+    },
+    {
+      "sourceId": "220",
+      "sourceWord": "ありがとうございました。",
+      "reason": "第二版交叉表列在第5课；完整感谢表达在第5课提供。"
+    }
+  ],
+  "secondaryAdditions": [
+    "shiken",
+    "nyuuyooku",
+    "pekin",
+    "rosanzerusu",
+    "rondon",
+    "asuka",
+    "appuruginkou",
+    "midoritoshokan",
+    "yamatobijutsukan"
+  ],
+  "finalCount": 61,
+  "reviewedAt": "2026-10-24"
+}

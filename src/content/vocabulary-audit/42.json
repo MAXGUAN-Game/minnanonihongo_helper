@@ -1,0 +1,252 @@
+{
+  "lessonId": 42,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/42.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 44,
+  "entries": [
+    {
+      "sourceId": "1431",
+      "sourceWord": "ふた",
+      "key": "w1431"
+    },
+    {
+      "sourceId": "1434",
+      "sourceWord": "楽しみ",
+      "key": "w1434"
+    },
+    {
+      "sourceId": "1585",
+      "sourceWord": "並びます",
+      "key": "w1585"
+    },
+    {
+      "sourceId": "1672",
+      "sourceWord": "包みます",
+      "key": "w1672"
+    },
+    {
+      "sourceId": "1673",
+      "sourceWord": "沸かします",
+      "key": "w1673"
+    },
+    {
+      "sourceId": "1674",
+      "sourceWord": "混ぜます",
+      "key": "w1674"
+    },
+    {
+      "sourceId": "1675",
+      "sourceWord": "計算します",
+      "key": "w1675"
+    },
+    {
+      "sourceId": "1678",
+      "sourceWord": "弁護士",
+      "key": "w1678"
+    },
+    {
+      "sourceId": "1679",
+      "sourceWord": "音楽家",
+      "key": "w1679"
+    },
+    {
+      "sourceId": "1680",
+      "sourceWord": "子どもたち",
+      "key": "w1680"
+    },
+    {
+      "sourceId": "1682",
+      "sourceWord": "教育",
+      "key": "w1682"
+    },
+    {
+      "sourceId": "1684",
+      "sourceWord": "文化",
+      "key": "w1684"
+    },
+    {
+      "sourceId": "1685",
+      "sourceWord": "社会",
+      "key": "w1685"
+    },
+    {
+      "sourceId": "1686",
+      "sourceWord": "法律",
+      "key": "w1686"
+    },
+    {
+      "sourceId": "1687",
+      "sourceWord": "戦争",
+      "key": "w1687"
+    },
+    {
+      "sourceId": "1688",
+      "sourceWord": "平和",
+      "key": "w1688"
+    },
+    {
+      "sourceId": "1689",
+      "sourceWord": "目的",
+      "key": "w1689"
+    },
+    {
+      "sourceId": "1691",
+      "sourceWord": "論文",
+      "key": "w1691"
+    },
+    {
+      "sourceId": "1693",
+      "sourceWord": "ミキサー",
+      "key": "w1693"
+    },
+    {
+      "sourceId": "1694",
+      "sourceWord": "やかん",
+      "key": "w1694"
+    },
+    {
+      "sourceId": "1695",
+      "sourceWord": "栓抜き",
+      "key": "w1695"
+    },
+    {
+      "sourceId": "1696",
+      "sourceWord": "缶切り",
+      "key": "w1696"
+    },
+    {
+      "sourceId": "1697",
+      "sourceWord": "缶詰",
+      "key": "w1697"
+    },
+    {
+      "sourceId": "1698",
+      "sourceWord": "風呂敷",
+      "key": "w1698"
+    },
+    {
+      "sourceId": "1699",
+      "sourceWord": "そろばん",
+      "key": "w1699"
+    },
+    {
+      "sourceId": "1700",
+      "sourceWord": "体温計",
+      "key": "w1700"
+    },
+    {
+      "sourceId": "1701",
+      "sourceWord": "材料",
+      "key": "w1701"
+    },
+    {
+      "sourceId": "1706",
+      "sourceWord": "ある～",
+      "key": "w1706"
+    },
+    {
+      "sourceId": "1707",
+      "sourceWord": "一生懸命",
+      "key": "w1707"
+    },
+    {
+      "sourceId": "1708",
+      "sourceWord": "なぜ",
+      "key": "w1708"
+    },
+    {
+      "sourceId": "1709",
+      "sourceWord": "ローン",
+      "key": "w1709"
+    },
+    {
+      "sourceId": "1720",
+      "sourceWord": "丈夫な",
+      "key": "w1720"
+    },
+    {
+      "sourceId": "1759",
+      "sourceWord": "半分",
+      "key": "w1759"
+    },
+    {
+      "sourceId": "1923",
+      "sourceWord": "自然",
+      "key": "w1923"
+    },
+    {
+      "sourceId": "5648",
+      "sourceWord": "のし袋",
+      "key": "w5648"
+    },
+    {
+      "sourceId": "5650",
+      "sourceWord": "［ボーナスが］出ます",
+      "key": "w5650"
+    },
+    {
+      "sourceId": "939",
+      "sourceWord": "政治",
+      "key": "w939"
+    },
+    {
+      "sourceId": "981",
+      "sourceWord": "アパート",
+      "key": "w981"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1690",
+      "sourceWord": "安全",
+      "reason": "旧版安全词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1692",
+      "sourceWord": "関係",
+      "reason": "旧版关系词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1702",
+      "sourceWord": "石",
+      "reason": "旧版石材词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1703",
+      "sourceWord": "ピラミッド",
+      "reason": "旧版建筑主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1710",
+      "sourceWord": "セット",
+      "reason": "旧版套装购物词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1711",
+      "sourceWord": "あと",
+      "reason": "旧版购物余额用词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "how-much",
+    "un",
+    "elise",
+    "beethoven",
+    "kids-news",
+    "chicken-ramen",
+    "ando",
+    "cup-noodles",
+    "world-first",
+    "by",
+    "bowl",
+    "noodles",
+    "spread",
+    "market-research",
+    "break",
+    "pour"
+  ],
+  "finalCount": 54
+}

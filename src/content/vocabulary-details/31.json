@@ -1,0 +1,462 @@
+{
+  "l31-w1054": {
+    "romaji": "moushikomimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示正式地申请、报名参加某项活动或手续，常与「～に」搭配，如「試験に申し込みます」。语体较正式，日常口语也可用。",
+    "example": {
+      "jp": "来月の日本語能力試験に申し込みます。",
+      "kana": "らいげつのにほんごのうりょくしけんにもうしこみます。",
+      "romaji": "raigetsu no nihongo nouryoku shiken ni moushikomimasu.",
+      "zh": "我报名下个月的日语能力考试。"
+    }
+  },
+  "l31-w1092": {
+    "romaji": "torimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「休みを取ります」是固定搭配，表示请假、休假。不能单独用「休みます」代替此义，需用「休みを取る」。",
+    "example": {
+      "jp": "来週、三日間休みを取ります。",
+      "kana": "らいしゅう、みっかかんやすみをとります。",
+      "romaji": "raishuu, mikkakan yasumi o torimasu.",
+      "zh": "下周我请三天假。"
+    }
+  },
+  "l31-w1222": {
+    "romaji": "okosan",
+    "attributes": [],
+    "explanation": "「お子さん」是敬语，用于称呼别人的孩子，不能用于自己的孩子。自己的孩说「うちの子」或「子ども」。",
+    "example": {
+      "jp": "お子さんは何歳ですか。",
+      "kana": "おこさんはなんさいですか。",
+      "romaji": "okosan wa nansai desu ka.",
+      "zh": "您的孩子几岁了？"
+    }
+  },
+  "l31-w1254": {
+    "romaji": "tsuzukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示继续做某事，常以「～を続けます」的形式使用，如「勉強を続けます」。也可用于持续状态。",
+    "example": {
+      "jp": "毎日、日本語の勉強を続けます。",
+      "kana": "まいにち、にほんごのべんきょうをつづけます。",
+      "romaji": "mainichi, nihongo no benkyou o tsuzukemasu.",
+      "zh": "我每天继续学习日语。"
+    }
+  },
+  "l31-w1255": {
+    "romaji": "mitsukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示找到、发现某物或某人，强调寻找的结果。与「探します」（寻找）不同，是已经找到。",
+    "example": {
+      "jp": "駅の近くでいい喫茶店を見つけました。",
+      "kana": "えきのちかくでいいきっさてんをみつけました。",
+      "romaji": "eki no chikaku de ii kissaten o mitsukemashita.",
+      "zh": "我在车站附近找到了一家不错的咖啡馆。"
+    }
+  },
+  "l31-w1256": {
+    "romaji": "ukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「試験を受けます」表示参加考试、应试。不能与「試験に申し込みます」（报名考试）混淆。",
+    "example": {
+      "jp": "来月、JLPTの試験を受けます。",
+      "kana": "らいげつ、ジェーエルピーティーのしけんをうけます。",
+      "romaji": "raigetsu, jieerupii tii no shiken o ukemasu.",
+      "zh": "下个月我要参加JLPT考试。"
+    }
+  },
+  "l31-w1260": {
+    "romaji": "kyuukeishimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示短暂休息，常用于会议、工作、课程等中途的休息。可单独使用，也可说「休憩を取ります」。",
+    "example": {
+      "jp": "会議の途中で十分間休憩します。",
+      "kana": "かいぎのとちゅうでじゅっぷんかんきゅうけいします。",
+      "romaji": "kaigi no tochuu de juppunkan kyuukeishimasu.",
+      "zh": "会议中途休息十分钟。"
+    }
+  },
+  "l31-w1261": {
+    "romaji": "renkyuu",
+    "attributes": [],
+    "explanation": "指连续多天的假期，如周末加节假日形成的连休。常与「～がある」「～になる」等搭配。",
+    "example": {
+      "jp": "来週は三連休があります。",
+      "kana": "らいしゅうはさんれんきゅうがあります。",
+      "romaji": "raishuu wa sanrenkyuu ga arimasu.",
+      "zh": "下周有三连休。"
+    }
+  },
+  "l31-w1262": {
+    "romaji": "sakubun",
+    "attributes": [],
+    "explanation": "指作文、写作练习，多用于学校作业或语言学习。常与「書きます」「書く」搭配。",
+    "example": {
+      "jp": "日本語で作文を書きました。",
+      "kana": "にほんごでさくぶんをかきました。",
+      "romaji": "nihongo de sakubun o kakimashita.",
+      "zh": "我用日语写了作文。"
+    }
+  },
+  "l31-w1263": {
+    "romaji": "tenrankai",
+    "attributes": [],
+    "explanation": "指展览会、美术展等，展示作品或物品供人参观。常与「開きます」「行きます」等搭配。",
+    "example": {
+      "jp": "週末、美術館の展覧会に行きます。",
+      "kana": "しゅうまつ、びじゅつかんのてんらんかいにいきます。",
+      "romaji": "shuumatsu, bijutsukan no tenrankai ni ikimasu.",
+      "zh": "周末我去美术馆的展览会。"
+    }
+  },
+  "l31-w1264": {
+    "romaji": "kekkonshiki",
+    "attributes": [],
+    "explanation": "指结婚典礼、婚礼仪式。常与「挙げます」「出席します」等搭配。",
+    "example": {
+      "jp": "友だちの結婚式に出席します。",
+      "kana": "ともだちのけっこんしきにしゅっせきします。",
+      "romaji": "tomodachi no kekkonshiki ni shusseki shimasu.",
+      "zh": "我参加朋友的婚礼。"
+    }
+  },
+  "l31-w1265": {
+    "romaji": "osoushiki",
+    "attributes": [],
+    "explanation": "指葬礼，带「お」为礼貌说法。常与「出ます」「参列します」等搭配。",
+    "example": {
+      "jp": "昨日、お葬式に出ました。",
+      "kana": "きのう、おそうしきにでました。",
+      "romaji": "kinou, osoushiki ni demashita.",
+      "zh": "昨天我参加了葬礼。"
+    }
+  },
+  "l31-w1266": {
+    "romaji": "shiki",
+    "attributes": [],
+    "explanation": "指仪式、典礼，常用于「結婚式」「卒業式」等复合词中，单独使用较少。注意与表示方式、样式的「式」区分。",
+    "example": {
+      "jp": "結婚式は教会で行われます。",
+      "kana": "けっこんしきはきょうかいでおこなわれます。",
+      "romaji": "kekkonshiki wa kyōkai de okonawaremasu.",
+      "zh": "婚礼在教堂举行。"
+    }
+  },
+  "l31-w1267": {
+    "romaji": "honsha",
+    "attributes": [],
+    "explanation": "指公司的主要办公地点，即总公司，与「支店」相对。常用于商务场合，如「本社に連絡する」。",
+    "example": {
+      "jp": "本社は東京にあります。",
+      "kana": "ほんしゃはとうきょうにあります。",
+      "romaji": "honsha wa Tōkyō ni arimasu.",
+      "zh": "总公司在东京。"
+    }
+  },
+  "l31-w1268": {
+    "romaji": "shiten",
+    "attributes": [],
+    "explanation": "指企业设在总部以外的营业网点，规模通常小于本社。常见搭配如「支店を開く」「支店長」。",
+    "example": {
+      "jp": "大阪支店で働いています。",
+      "kana": "おおさかしてんではたらいています。",
+      "romaji": "Ōsaka shiten de hataraite imasu.",
+      "zh": "在大阪分公司工作。"
+    }
+  },
+  "l31-w1269": {
+    "romaji": "kyōkai",
+    "attributes": [],
+    "explanation": "指基督教等宗教进行礼拜、集会的场所，即教堂。注意与「協会」（协会）同音不同义。",
+    "example": {
+      "jp": "日曜日に教会へ行きます。",
+      "kana": "にちようびにきょうかいへいきます。",
+      "romaji": "nichiyōbi ni kyōkai e ikimasu.",
+      "zh": "星期天去教堂。"
+    }
+  },
+  "l31-w1270": {
+    "romaji": "daigakuin",
+    "attributes": [],
+    "explanation": "指大学本科毕业后的教育机构，即研究生院。常见搭配如「大学院に進む」「大学院生」。",
+    "example": {
+      "jp": "来年、大学院に進学します。",
+      "kana": "らいねん、だいがくいんにしんがくします。",
+      "romaji": "rainen, daigakuin ni shingaku shimasu.",
+      "zh": "明年上研究生院。"
+    }
+  },
+  "l31-w1271": {
+    "romaji": "dōbutsuen",
+    "attributes": [],
+    "explanation": "指饲养并展示动物的场所，即动物园。常与「パンダ」「遠足」等词搭配。",
+    "example": {
+      "jp": "子供と動物園へ行きました。",
+      "kana": "こどもとどうぶつえんへいきました。",
+      "romaji": "kodomo to dōbutsuen e ikimashita.",
+      "zh": "和孩子去了动物园。"
+    }
+  },
+  "l31-w1272": {
+    "romaji": "onsen",
+    "attributes": [],
+    "explanation": "指天然涌出的热水，多用于温泉浴场、旅馆等。常见搭配如「温泉に入る」「温泉旅行」。",
+    "example": {
+      "jp": "週末に温泉に入りたいです。",
+      "kana": "しゅうまつにおんせんにはいりたいです。",
+      "romaji": "shūmatsu ni onsen ni hairitai desu.",
+      "zh": "周末想泡温泉。"
+    }
+  },
+  "l31-w1275": {
+    "romaji": "~ no hō",
+    "attributes": [],
+    "explanation": "接在名词后表示方向或大致方位，也可用于比较句中表示「……方面更……」。语气较委婉。",
+    "example": {
+      "jp": "駅の方へ歩いてください。",
+      "kana": "えきのほうへあるいてください。",
+      "romaji": "eki no hō e aruite kudasai.",
+      "zh": "请往车站方向走。"
+    }
+  },
+  "l31-w1276": {
+    "romaji": "zutto",
+    "attributes": [],
+    "explanation": "表示动作或状态持续不断，相当于「一直」；也可表示程度相差很大，如「ずっと大きい」。",
+    "example": {
+      "jp": "朝からずっと雨が降っています。",
+      "kana": "あさからずっとあめがふっています。",
+      "romaji": "asa kara zutto ame ga futte imasu.",
+      "zh": "从早上开始一直在下雨。"
+    }
+  },
+  "l31-w1277": {
+    "romaji": "nokorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示某物或某人留在原处、未被移动或未被消除，常与「～に」搭配。注意与他动词「残す」区分。",
+    "example": {
+      "jp": "教室にまだ学生が残っています。",
+      "kana": "きょうしつにまだがくせいがのこっています。",
+      "romaji": "kyōshitsu ni mada gakusei ga nokotte imasu.",
+      "zh": "教室里还有学生留着。"
+    }
+  },
+  "l31-w1278": {
+    "romaji": "tsuki ni",
+    "attributes": [],
+    "explanation": "表示频率，意为「每个月」。常与次数词搭配，如「月に一度」「月に二回」。",
+    "example": {
+      "jp": "月に一度、映画を見ます。",
+      "kana": "つきにいちど、えいがをみます。",
+      "romaji": "tsuki ni ichido, eiga o mimasu.",
+      "zh": "每个月看一次电影。"
+    }
+  },
+  "l31-w1616": {
+    "romaji": "~ gō",
+    "attributes": [],
+    "explanation": "接在数字后，表示列车、台风等的编号或序号，如「1号」「台風10号」。也可用于杂志等期号。",
+    "example": {
+      "jp": "台風5号が接近しています。",
+      "kana": "たいふうごごうがせっきんしています。",
+      "romaji": "taifū gogō ga sekkin shite imasu.",
+      "zh": "5号台风正在接近。"
+    }
+  },
+  "l31-w1831": {
+    "romaji": "happyou",
+    "attributes": [],
+    "explanation": "指在众人面前公开宣布结果、研究或意见，也可指发布作品。常与「する」构成「発表する」，搭配如「結果を発表する」「研究を発表する」。",
+    "example": {
+      "jp": "会議で新しい計画を発表します。",
+      "kana": "かいぎで あたらしい けいかくを はっぴょうします。",
+      "romaji": "kaigi de atarashii keikaku o happyou shimasu.",
+      "zh": "在会议上发表新计划。"
+    }
+  },
+  "l31-w3223": {
+    "romaji": "kaeri",
+    "attributes": [],
+    "explanation": "表示返回的路程或归途，常用「帰りに」表示“在回去的路上”。与「行き」相对，注意不要与动词「帰る」混淆。",
+    "example": {
+      "jp": "帰りにスーパーで牛乳を買います。",
+      "kana": "かえりに すーぱーで ぎゅうにゅうを かいます。",
+      "romaji": "kaeri ni suupaa de gyuunyuu o kaimasu.",
+      "zh": "回去的路上在超市买牛奶。"
+    }
+  },
+  "l31-w3413": {
+    "romaji": "nyuugakushiken",
+    "attributes": [],
+    "explanation": "指为进入学校而参加的考试，通常特指大学入学考试。口语中可略称「入試」，正式场合用全称。",
+    "example": {
+      "jp": "来月、大学の入学試験を受けます。",
+      "kana": "らいげつ、だいがくの にゅうがくしけんを うけます。",
+      "romaji": "raigetsu, daigaku no nyuugakushiken o ukemasu.",
+      "zh": "下个月参加大学入学考试。"
+    }
+  },
+  "l31-bali": {
+    "romaji": "Bari",
+    "attributes": [],
+    "explanation": "印度尼西亚的岛屿，著名旅游地。日语中直接音译，常与「島」连用为「バリ島」。",
+    "example": {
+      "jp": "去年、家族とバリへ旅行に行きました。",
+      "kana": "きょねん、かぞくと ばりへ りょこうに いきました。",
+      "romaji": "kyonen, kazoku to Bari e ryokou ni ikimashita.",
+      "zh": "去年和家人去巴厘岛旅行了。"
+    }
+  },
+  "l31-picasso": {
+    "romaji": "Pikaso",
+    "attributes": [],
+    "explanation": "西班牙画家巴勃罗·毕加索的日语名，用片假名书写。谈论艺术作品或画家时常出现。",
+    "example": {
+      "jp": "この絵はピカソが描いたものです。",
+      "kana": "この えは ぴかそが かいた ものです。",
+      "romaji": "kono e wa Pikaso ga kaita mono desu.",
+      "zh": "这幅画是毕加索画的。"
+    }
+  },
+  "l31-nozomi": {
+    "romaji": "Nozomi",
+    "attributes": [],
+    "explanation": "东海道·山阳新干线的列车名，指最快、停站最少的列车。与「ひかり」「こだま」相对，购票时需注意。",
+    "example": {
+      "jp": "東京から新大阪まで、のぞみで行きます。",
+      "kana": "とうきょうから しんおおさかまで、のぞみで いきます。",
+      "romaji": "Toukyou kara Shin'oosaka made, Nozomi de ikimasu.",
+      "zh": "从东京坐希望号到新大阪。"
+    }
+  },
+  "l31-shinkobe": {
+    "romaji": "Shin-Koube",
+    "attributes": [],
+    "explanation": "新干线车站名，位于神户市。注意读音「こうべ」不是「こべ」，书写时「新」与「神戸」之间常用连字符。",
+    "example": {
+      "jp": "新幹線は新神戸に止まります。",
+      "kana": "しんかんせんは しんこうべに とまります。",
+      "romaji": "shinkansen wa Shin-Koube ni tomarimasu.",
+      "zh": "新干线停靠新神户。"
+    }
+  },
+  "l31-village": {
+    "romaji": "mura",
+    "attributes": [],
+    "explanation": "指比町更小的乡村聚落，常与「町」「市」对比。可构成「村人」「村長」等复合词。",
+    "example": {
+      "jp": "祖母は小さな村に住んでいます。",
+      "kana": "そぼは ちいさな むらに すんでいます。",
+      "romaji": "sobo wa chiisana mura ni sunde imasu.",
+      "zh": "祖母住在一个小村庄里。"
+    }
+  },
+  "l31-graduate": {
+    "romaji": "sotsugyou shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示完成学业毕业，常与「大学を卒業する」搭配，助词用「を」。也可用于比喻“从某状态毕业”。",
+    "example": {
+      "jp": "兄は今年大学を卒業します。",
+      "kana": "あには ことし だいがくを そつぎょうします。",
+      "romaji": "ani wa kotoshi daigaku o sotsugyou shimasu.",
+      "zh": "哥哥今年大学毕业。"
+    }
+  },
+  "l31-cinema": {
+    "romaji": "eigakan",
+    "attributes": [],
+    "explanation": "指放映电影的场所，常用「映画館で映画を見る」。与「映画」区分，后者指电影作品。",
+    "example": {
+      "jp": "駅の近くに新しい映画館があります。",
+      "kana": "えきの ちかくに あたらしい えいがかんが あります。",
+      "romaji": "eki no chikaku ni atarashii eigakan ga arimasu.",
+      "zh": "车站附近有一家新电影院。"
+    }
+  },
+  "l31-dislike": {
+    "romaji": "iyana",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示对人或事物感到不快、讨厌，修饰名词时加「な」。口语中可单独说「嫌！」表示拒绝，语气较强。",
+    "example": {
+      "jp": "私は嫌なことははっきり言います。",
+      "kana": "わたしは いやな ことは はっきり いいます。",
+      "romaji": "watashi wa iyana koto wa hakkiri iimasu.",
+      "zh": "讨厌的事我会明确说出来。"
+    }
+  },
+  "l31-sky": {
+    "romaji": "sora",
+    "attributes": [],
+    "explanation": "指头顶上方的天空，常与「青い」「広い」搭配。与「天気」不同，不表示天气状况。",
+    "example": {
+      "jp": "今日は空がとても青いです。",
+      "kana": "きょうは そらが とても あおいです。",
+      "romaji": "kyou wa sora ga totemo aoi desu.",
+      "zh": "今天天空非常蓝。"
+    }
+  },
+  "l31-close": {
+    "romaji": "tojimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把打开的东西合上、关闭，如书、伞、眼睛、门等；与「開けます」相对。比「閉めます」更常用于书本、伞等可折叠之物。",
+    "example": {
+      "jp": "本を閉じてください。",
+      "kana": "ほんをとじてください。",
+      "romaji": "hon o tojite kudasai.",
+      "zh": "请把书合上。"
+    }
+  },
+  "l31-city": {
+    "romaji": "tokai",
+    "attributes": [],
+    "explanation": "指人口密集、商业发达的大城市，语感偏书面，常与「田舎（いなか）」对比。日常口语中也说「都会の人」。",
+    "example": {
+      "jp": "都会の生活は便利ですが、忙しいです。",
+      "kana": "とかいのせいかつはべんりですが、いそがしいです。",
+      "romaji": "tokai no seikatsu wa benri desu ga, isogashii desu.",
+      "zh": "都市生活很方便，但很忙碌。"
+    }
+  },
+  "l31-children": {
+    "romaji": "kodomotachi",
+    "attributes": [],
+    "explanation": "「子ども」加复数后缀「たち」构成，指一群孩子；比单说「子ども」更强调群体。注意「たち」一般只接人。",
+    "example": {
+      "jp": "公園で子どもたちが遊んでいます。",
+      "kana": "こうえんでこどもたちがあそんでいます。",
+      "romaji": "kouen de kodomotachi ga asonde imasu.",
+      "zh": "孩子们正在公园里玩。"
+    }
+  },
+  "l31-freely": {
+    "romaji": "jiyuu ni",
+    "attributes": [],
+    "explanation": "「自由」加助词「に」构成的副词用法，表示不受限制地做某事，常修饰动词，如「自由に使う」「自由に話す」。",
+    "example": {
+      "jp": "この部屋は自由に使ってください。",
+      "kana": "このへやはじゆうにつかってください。",
+      "romaji": "kono heya wa jiyuu ni tsukatte kudasai.",
+      "zh": "这个房间请自由使用。"
+    }
+  }
+}

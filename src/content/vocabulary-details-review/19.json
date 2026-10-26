@@ -1,0 +1,21 @@
+{
+  "lessonId": 19,
+  "model": "deepseek-flash",
+  "reviewedCount": 29,
+  "corrections": [
+    {
+      "id": "l19-w870",
+      "attributes": [
+        "自他两用"
+      ],
+      "reason": "「練習する」可作他动词（練習問題を練習する）也可作自动词（ピアノを練習する中的を表对象，但「練習する」本身有自他两用用法），需按词典标自他两用。"
+    },
+    {
+      "id": "l19-w875",
+      "attributes": [
+        "い形容词"
+      ],
+      "reason": "「調子がいい」是い形容词性表达，属性正确无需改；但若原attributes已含い形容词则保留。"
+    }
+  ]
+}

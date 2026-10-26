@@ -1,3 +1,4 @@
+import { translate } from './i18n';
 import { useId, useRef, type ReactNode } from 'react';
 import { Mic, Play, RotateCcw } from 'lucide-react';
 import { Button } from './ui';
@@ -36,15 +37,14 @@ export function RecordingControls({ recorder, speech, disabled = false, onStart,
       onKeyDown={event => { if (event.code === 'Space' || event.code === 'Enter') { event.preventDefault(); if (!event.repeat) beginPress(event.code); } }}
       onKeyUp={event => { if (event.code === 'Space' || event.code === 'Enter') { event.preventDefault(); endPress(event.code); } }} onBlur={() => cancelPress()}
       onClick={event => { if (event.detail === 0 && !press.current) { if (recording) recorder.stop(); else start(); } }}
-      aria-pressed={recording} aria-describedby={instructionId} aria-label={recording ? '结束录音' : '开始录音：点击或按住说话'}><Mic size={centered ? 36 : 27}/></button>
-      <div><strong role="status">{recorder.status === 'recording' ? '正在录音……' : processing ? '正在识别日语……' : recorder.status === 'asking' ? '请允许麦克风' : centered ? '现在，试着说一句。' : '点击或按住说话'}</strong>
-        <p id={instructionId}>点击录音，再点结束 · 也可按住说话<br/>空格或回车键 · 最长 30 秒</p></div>
+      aria-pressed={recording} aria-describedby={instructionId} aria-label={recording ? translate('结束录音') : translate('开始录音：点击或按住说话')}><Mic size={centered ? 36 : 27}/></button>
+      <div><strong role="status">{recorder.status === 'recording' ? translate('正在录音……') : processing ? translate('正在识别日语……') : recorder.status === 'asking' ? translate('请允许麦克风') : centered ? translate('现在，试着说一句。') : translate('点击或按住说话')}</strong>
+        <p id={instructionId}>{translate("点击录音，再点结束 · 也可按住说话")}<br/>{translate("空格或回车键 · 最长 30 秒")}</p></div>
     </div>
     {hint && <div className="recording-hint">{hint}</div>}
-    {recorder.clip && <div className="recording-preview"><div className="row-actions"><Button secondary data-audio-source={previewSourceId} onClick={() => speech.playUrl(recorder.clip!.url, '我的录音', previewSourceId)}><Play size={18}/>听我的录音</Button><span className="tiny-note">{(recorder.clip.durationMs / 1000).toFixed(1)} 秒 · {recorder.saving ? '正在保存' : recorder.clip.saved ? '已保存 · 保留 90 天' : '暂存在本页'}</span></div>
-      <AudioControls speech={speech} sourceId={previewSourceId}/>
-      {recorder.saveError && <div role="alert"><p>{recorder.saveError}</p><Button secondary disabled={recorder.saving} onClick={() => void recorder.retrySave()}><RotateCcw size={16}/>重试保存录音</Button></div>}
-      {recorder.transcribeError && <div role="alert"><p>{recorder.transcribeError}</p><Button secondary disabled={processing} onClick={() => void recorder.retryTranscribe()}><RotateCcw size={16}/>重新识别</Button></div>}
+    {recorder.clip && <div className="recording-preview"><AudioControls speech={speech} sourceId={previewSourceId} onPlay={() => speech.playUrl(recorder.clip!.url, translate('我的录音'), previewSourceId)}/>
+      {recorder.saveError && <div role="alert"><p>{recorder.saveError}</p><Button secondary disabled={recorder.saving} onClick={() => void recorder.retrySave()}><RotateCcw size={16}/>{translate("重试保存录音")}</Button></div>}
+      {recorder.transcribeError && <div role="alert"><p>{recorder.transcribeError}</p><Button secondary disabled={processing} onClick={() => void recorder.retryTranscribe()}><RotateCcw size={16}/>{translate("重新识别")}</Button></div>}
     </div>}
   </div>;
 }

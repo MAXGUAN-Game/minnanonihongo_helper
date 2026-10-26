@@ -1,0 +1,295 @@
+{
+  "lessonId": 31,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/31.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源28条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终40条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/31.json。"
+  ],
+  "words": [
+    {
+      "key": "w1054",
+      "word": "申し込みます",
+      "reading": "もうしこみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "申请；报名"
+    },
+    {
+      "key": "w1092",
+      "word": "［休みを］取ります",
+      "reading": "［やすみを］とります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "请（假）"
+    },
+    {
+      "key": "w1222",
+      "word": "お子さん",
+      "reading": "おこさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的孩子"
+    },
+    {
+      "key": "w1254",
+      "word": "続けます",
+      "reading": "つづけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "继续"
+    },
+    {
+      "key": "w1255",
+      "word": "見つけます",
+      "reading": "みつけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "找到"
+    },
+    {
+      "key": "w1256",
+      "word": "［試験を］受けます",
+      "reading": "［しけんを］うけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "参加（考试）"
+    },
+    {
+      "key": "w1260",
+      "word": "休憩します",
+      "reading": "きゅうけいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "休息"
+    },
+    {
+      "key": "w1261",
+      "word": "連休",
+      "reading": "れんきゅう",
+      "partOfSpeech": "名词",
+      "meaning": "连休"
+    },
+    {
+      "key": "w1262",
+      "word": "作文",
+      "reading": "さくぶん",
+      "partOfSpeech": "名词",
+      "meaning": "作文"
+    },
+    {
+      "key": "w1263",
+      "word": "展覧会",
+      "reading": "てんらんかい",
+      "partOfSpeech": "名词",
+      "meaning": "展览会"
+    },
+    {
+      "key": "w1264",
+      "word": "結婚式",
+      "reading": "けっこんしき",
+      "partOfSpeech": "名词",
+      "meaning": "婚礼"
+    },
+    {
+      "key": "w1265",
+      "word": "お葬式",
+      "reading": "おそうしき",
+      "partOfSpeech": "名词",
+      "meaning": "葬礼"
+    },
+    {
+      "key": "w1266",
+      "word": "式",
+      "reading": "しき",
+      "partOfSpeech": "名词",
+      "meaning": "仪式"
+    },
+    {
+      "key": "w1267",
+      "word": "本社",
+      "reading": "ほんしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "总公司"
+    },
+    {
+      "key": "w1268",
+      "word": "支店",
+      "reading": "してん",
+      "partOfSpeech": "名词",
+      "meaning": "分公司"
+    },
+    {
+      "key": "w1269",
+      "word": "教会",
+      "reading": "きょうかい",
+      "partOfSpeech": "名词",
+      "meaning": "教堂"
+    },
+    {
+      "key": "w1270",
+      "word": "大学院",
+      "reading": "だいがくいん",
+      "partOfSpeech": "名词",
+      "meaning": "研究生院"
+    },
+    {
+      "key": "w1271",
+      "word": "動物園",
+      "reading": "どうぶつえん",
+      "partOfSpeech": "名词",
+      "meaning": "动物园"
+    },
+    {
+      "key": "w1272",
+      "word": "温泉",
+      "reading": "おんせん",
+      "partOfSpeech": "名词",
+      "meaning": "温泉"
+    },
+    {
+      "key": "w1275",
+      "word": "～の方",
+      "reading": "～のほう",
+      "partOfSpeech": "表达",
+      "meaning": "……方向"
+    },
+    {
+      "key": "w1276",
+      "word": "ずっと",
+      "reading": "ずっと",
+      "partOfSpeech": "副词",
+      "meaning": "一直"
+    },
+    {
+      "key": "w1277",
+      "word": "残ります",
+      "reading": "のこります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "留下；剩下"
+    },
+    {
+      "key": "w1278",
+      "word": "月に",
+      "reading": "つきに",
+      "partOfSpeech": "表达",
+      "meaning": "每月"
+    },
+    {
+      "key": "w1616",
+      "word": "～号",
+      "reading": "～ごう",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……号（列车、台风等）"
+    },
+    {
+      "key": "w1831",
+      "word": "発表",
+      "reading": "はっぴょう",
+      "partOfSpeech": "名词",
+      "meaning": "发表；报告"
+    },
+    {
+      "key": "w3223",
+      "word": "帰り",
+      "reading": "かえり",
+      "partOfSpeech": "名词",
+      "meaning": "回程"
+    },
+    {
+      "key": "w3413",
+      "word": "入学試験",
+      "reading": "にゅうがくしけん",
+      "partOfSpeech": "名词",
+      "meaning": "入学考试"
+    },
+    {
+      "key": "bali",
+      "word": "バリ",
+      "reading": "ばり",
+      "partOfSpeech": "专有名词",
+      "meaning": "巴厘岛"
+    },
+    {
+      "key": "picasso",
+      "word": "ピカソ",
+      "reading": "ぴかそ",
+      "partOfSpeech": "专有名词",
+      "meaning": "毕加索"
+    },
+    {
+      "key": "nozomi",
+      "word": "のぞみ",
+      "reading": "のぞみ",
+      "partOfSpeech": "专有名词",
+      "meaning": "希望号列车"
+    },
+    {
+      "key": "shinkobe",
+      "word": "新神戸",
+      "reading": "しんこうべ",
+      "partOfSpeech": "专有名词",
+      "meaning": "新神户"
+    },
+    {
+      "key": "village",
+      "word": "村",
+      "reading": "むら",
+      "partOfSpeech": "名词",
+      "meaning": "村庄"
+    },
+    {
+      "key": "graduate",
+      "word": "卒業します",
+      "reading": "そつぎょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "毕业"
+    },
+    {
+      "key": "cinema",
+      "word": "映画館",
+      "reading": "えいがかん",
+      "partOfSpeech": "名词",
+      "meaning": "电影院"
+    },
+    {
+      "key": "dislike",
+      "word": "嫌な",
+      "reading": "いやな",
+      "partOfSpeech": "な形容词",
+      "meaning": "讨厌的"
+    },
+    {
+      "key": "sky",
+      "word": "空",
+      "reading": "そら",
+      "partOfSpeech": "名词",
+      "meaning": "天空"
+    },
+    {
+      "key": "close",
+      "word": "閉じます",
+      "reading": "とじます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "关闭；合上"
+    },
+    {
+      "key": "city",
+      "word": "都会",
+      "reading": "とかい",
+      "partOfSpeech": "名词",
+      "meaning": "都市"
+    },
+    {
+      "key": "children",
+      "word": "子どもたち",
+      "reading": "こどもたち",
+      "partOfSpeech": "名词",
+      "meaning": "孩子们"
+    },
+    {
+      "key": "freely",
+      "word": "自由に",
+      "reading": "じゆうに",
+      "partOfSpeech": "副词",
+      "meaning": "自由地"
+    }
+  ]
+}

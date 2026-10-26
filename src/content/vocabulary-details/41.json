@@ -1,0 +1,688 @@
+{
+  "l41-w1154": {
+    "romaji": "kanrinin",
+    "attributes": [],
+    "explanation": "指公寓、大楼等设施的管理员，负责日常维护和事务。常与「～の管理人」搭配，表示某处的管理员。",
+    "example": {
+      "jp": "このアパートの管理人はとても親切です。",
+      "kana": "このアパートのかんりにんはとてもしんせつです。",
+      "romaji": "kono apaato no kanrinin wa totemo shinsetsu desu.",
+      "zh": "这栋公寓的管理员非常亲切。"
+    }
+  },
+  "l41-w1336": {
+    "romaji": "agemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把位置、程度、价格等向上移动或提高。可用于具体动作（如举手）或抽象事物（如提高成绩）。",
+    "example": {
+      "jp": "手を上げて質問してください。",
+      "kana": "てをあげてしつもんしてください。",
+      "romaji": "te o agete shitsumon shite kudasai.",
+      "zh": "请举手提问。"
+    }
+  },
+  "l41-w1337": {
+    "romaji": "sagemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把位置、程度、价格等向下移动或降低。与「上げます」相对，可用于具体或抽象事物。",
+    "example": {
+      "jp": "エアコンの温度を下げます。",
+      "kana": "エアコンのおんどをさげます。",
+      "romaji": "eakon no ondo o sagemasu.",
+      "zh": "调低空调的温度。"
+    }
+  },
+  "l41-w1412": {
+    "romaji": "mezurashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示某事物很少见、不常发生，带有新奇或珍贵的语感。常用于评价物品、现象或行为。",
+    "example": {
+      "jp": "こんな珍しい花は初めて見ました。",
+      "kana": "こんなめずらしいはなははじめてみました。",
+      "romaji": "konna mezurashii hana wa hajimete mimashita.",
+      "zh": "这么少见的花我还是第一次看到。"
+    }
+  },
+  "l41-w1468": {
+    "romaji": "zutsu",
+    "attributes": [],
+    "explanation": "接在数量词后，表示平均分配或等量重复，相当于“每……”“各……”。常与表示分配的动作动词搭配。",
+    "example": {
+      "jp": "一人ずつ順番に発表してください。",
+      "kana": "ひとりずつじゅんばんにはっぴょうしてください。",
+      "romaji": "hitori zutsu junban ni happyou shite kudasai.",
+      "zh": "请每人依次发表。"
+    }
+  },
+  "l41-w1634": {
+    "romaji": "itadakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「もらう」的谦让语，用于从地位高的人或长辈处领受物品。也可用于用餐前说「いただきます」，表示“我开动了”。",
+    "example": {
+      "jp": "先生から本をいただきました。",
+      "kana": "せんせいからほんをいただきました。",
+      "romaji": "sensei kara hon o itadakimashita.",
+      "zh": "我从老师那里领受了一本书。"
+    }
+  },
+  "l41-w1635": {
+    "romaji": "kudasaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「くれる」的尊敬语，表示地位高的人或长辈给予自己（或己方）某物。主语是给予者，常用「～がくださいます」的形式。",
+    "example": {
+      "jp": "部長がお土産をくださいます。",
+      "kana": "ぶちょうがおみやげをくださいます。",
+      "romaji": "buchou ga omiyage o kudasaimasu.",
+      "zh": "部长要送我土特产。"
+    }
+  },
+  "l41-w1636": {
+    "romaji": "yarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「あげる」的较随便说法，用于给晚辈、动植物或地位低于自己的人东西。也可用于给植物浇水等固定搭配。",
+    "example": {
+      "jp": "毎朝、花に水をやります。",
+      "kana": "まいあさ、はなにみずをやります。",
+      "romaji": "maiasa, hana ni mizu o yarimasu.",
+      "zh": "每天早上给花浇水。"
+    }
+  },
+  "l41-w1639": {
+    "romaji": "shinsetsu ni shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示以亲切、友善的态度对待某人。常与「～に親切にする」搭配，对象用助词「に」表示。",
+    "example": {
+      "jp": "お年寄りには親切にしましょう。",
+      "kana": "おとしよりにはしんせつにしましょう。",
+      "romaji": "otoshori ni wa shinsetsu ni shimashou.",
+      "zh": "对老年人要友善一些吧。"
+    }
+  },
+  "l41-w1640": {
+    "romaji": "kawaii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示人或物可爱、讨人喜欢，可用于小孩、宠物、服饰等。口语中也可表示“小巧玲珑的”。",
+    "example": {
+      "jp": "この子犬はとてもかわいいですね。",
+      "kana": "このこいぬはとてもかわいいですね。",
+      "romaji": "kono koinu wa totemo kawaii desu ne.",
+      "zh": "这只小狗真可爱啊。"
+    }
+  },
+  "l41-w1641": {
+    "romaji": "oiwai",
+    "attributes": [],
+    "explanation": "表示祝贺的行为或贺礼，常用于生日、结婚、入学等场合。可构成「お祝いを言う」「お祝いを贈る」等搭配。",
+    "example": {
+      "jp": "誕生日のお祝いに花を贈りました。",
+      "kana": "たんじょうびのおいわいにはなをおくりました。",
+      "romaji": "tanjoubi no oiwai ni hana o okurimashita.",
+      "zh": "作为生日贺礼送了花。"
+    }
+  },
+  "l41-w1642": {
+    "romaji": "otoshidama",
+    "attributes": [],
+    "explanation": "特指新年时长辈给小孩的压岁钱，是日本新年的传统习俗。常说「お年玉をもらう」「お年玉をあげる」。",
+    "example": {
+      "jp": "子供はお年玉をもらって喜んでいます。",
+      "kana": "こどもはおとしだまをもらってよろこんでいます。",
+      "romaji": "kodomo wa otoshidama o moratte yorokonde imasu.",
+      "zh": "孩子收到压岁钱很高兴。"
+    }
+  },
+  "l41-w1643": {
+    "romaji": "omimai",
+    "attributes": [],
+    "explanation": "指探望病人或遭遇不幸的人，也指带去慰问的礼物。常用「お見舞いに行く」「お見舞いを贈る」等搭配，语体礼貌。",
+    "example": {
+      "jp": "友達が入院したので、お見舞いに行きます。",
+      "kana": "ともだちがにゅういんしたので、おみまいにいきます。",
+      "romaji": "tomodachi ga nyuuin shita node, omimai ni ikimasu.",
+      "zh": "朋友住院了，所以我去探望。"
+    }
+  },
+  "l41-w1644": {
+    "romaji": "kyoumi",
+    "attributes": [],
+    "explanation": "表示对某事物感到关心或好奇，常用「～に興味がある」「興味を持つ」等搭配。注意助词用「に」，不是「が」。",
+    "example": {
+      "jp": "私は日本の文化に興味があります。",
+      "kana": "わたしはにほんのぶんかにきょうみがあります。",
+      "romaji": "watashi wa nihon no bunka ni kyoumi ga arimasu.",
+      "zh": "我对日本文化感兴趣。"
+    }
+  },
+  "l41-w1645": {
+    "romaji": "jouhou",
+    "attributes": [],
+    "explanation": "指消息、情报或资料，多用于客观、书面或正式场合。常见搭配有「情報を集める」「情報を得る」「情報が入る」。",
+    "example": {
+      "jp": "インターネットで情報を集めます。",
+      "kana": "いんたーねっとでじょうほうをあつめます。",
+      "romaji": "intaanetto de jouhou o atsumemasu.",
+      "zh": "在网上收集信息。"
+    }
+  },
+  "l41-w1646": {
+    "romaji": "bunpou",
+    "attributes": [],
+    "explanation": "指语言的组织规则，常用于语言学习语境。可说「文法を覚える」「文法が正しい」等，注意与「文脈」区分。",
+    "example": {
+      "jp": "この文法は少し難しいです。",
+      "kana": "このぶんぽうはすこしむずかしいです。",
+      "romaji": "kono bunpou wa sukoshi muzukashii desu.",
+      "zh": "这个语法有点难。"
+    }
+  },
+  "l41-v3": {
+    "romaji": "hatsuon",
+    "attributes": [],
+    "explanation": "指语音的发出方式或发音本身，常用「発音がいい」「発音を直す」「発音を練習する」等搭配。",
+    "example": {
+      "jp": "彼女は英語の発音がとてもきれいです。",
+      "kana": "かのじょはえいごのはつおんがとてもきれいです。",
+      "romaji": "kanojo wa eigo no hatsuon ga totemo kirei desu.",
+      "zh": "她的英语发音非常漂亮。"
+    }
+  },
+  "l41-w1648": {
+    "romaji": "saru",
+    "attributes": [],
+    "explanation": "指猴子这种动物，常出现在动物园或动物故事中。注意「猿」与「さる」读音相同，汉字写法固定。",
+    "example": {
+      "jp": "動物園で猿が木に登っています。",
+      "kana": "どうぶつえんでさるがきにのぼっています。",
+      "romaji": "doubutsuen de saru ga ki ni nobotte imasu.",
+      "zh": "动物园里猴子正在爬树。"
+    }
+  },
+  "l41-w1649": {
+    "romaji": "esa",
+    "attributes": [],
+    "explanation": "指给动物吃的食物，常用于饲养或动物园场景。可说「餌をやる」「餌をあげる」，注意不是给人吃的饭。",
+    "example": {
+      "jp": "猿に餌をあげないでください。",
+      "kana": "さるにえさをあげないでください。",
+      "romaji": "saru ni esa o agenaide kudasai.",
+      "zh": "请不要给猴子喂食。"
+    }
+  },
+  "l41-w1650": {
+    "romaji": "omocha",
+    "attributes": [],
+    "explanation": "指儿童玩耍用的玩具，常用「おもちゃで遊ぶ」「おもちゃを買う」等搭配。语体较口语、亲切。",
+    "example": {
+      "jp": "子供はおもちゃで遊ぶのが好きです。",
+      "kana": "こどもはおもちゃであそぶのがすきです。",
+      "romaji": "kodomo wa omocha de asobu no ga suki desu.",
+      "zh": "孩子喜欢玩玩具。"
+    }
+  },
+  "l41-w1651": {
+    "romaji": "ehon",
+    "attributes": [],
+    "explanation": "指以图画为主、文字较少的儿童书，常用于亲子阅读场景。可说「絵本を読む」「絵本を開く」。",
+    "example": {
+      "jp": "寝る前に子供に絵本を読みます。",
+      "kana": "ねるまえにこどもにえほんをよみます。",
+      "romaji": "neru mae ni kodomo ni ehon o yomimasu.",
+      "zh": "睡前给孩子读图画书。"
+    }
+  },
+  "l41-w1652": {
+    "romaji": "ehagaki",
+    "attributes": [],
+    "explanation": "指一面印有风景或图画、另一面可写地址的明信片，常用于旅行问候。可说「絵はがきを送る」「絵はがきを買う」。",
+    "example": {
+      "jp": "旅行先から友達に絵はがきを送りました。",
+      "kana": "りょこうさきからともだちにえはがきをおくりました。",
+      "romaji": "ryokousaki kara tomodachi ni ehagaki o okurimashita.",
+      "zh": "从旅行地给朋友寄了风景明信片。"
+    }
+  },
+  "l41-w1653": {
+    "romaji": "doraibaa",
+    "attributes": [],
+    "explanation": "指拧螺丝用的工具，即螺丝刀；也可指司机，但本课取工具义。可说「ドライバーで回す」「ドライバーを使う」。",
+    "example": {
+      "jp": "このねじはドライバーで回してください。",
+      "kana": "このねじはどらいばーでまわしてください。",
+      "romaji": "kono neji wa doraibaa de mawashite kudasai.",
+      "zh": "这个螺丝请用螺丝刀拧。"
+    }
+  },
+  "l41-w1654": {
+    "romaji": "hankachi",
+    "attributes": [],
+    "explanation": "指随身携带的小块布制手帕，常用于擦手或擦汗。可说「ハンカチで拭く」「ハンカチをポケットに入れる」。",
+    "example": {
+      "jp": "手を洗った後、ハンカチで拭きます。",
+      "kana": "てをあらったあと、はんかちでふきます。",
+      "romaji": "te o aratta ato, hankachi de fukimasu.",
+      "zh": "洗完手后用手帕擦。"
+    }
+  },
+  "l41-w1655": {
+    "romaji": "kutsushita",
+    "attributes": [],
+    "explanation": "指穿在脚上的袜子，通常成双使用。日常口语中常说「靴下を履く」，注意动词用「履く」而非「穿く」。",
+    "example": {
+      "jp": "寒いから靴下を履いてください。",
+      "kana": "さむいからくつしたをはいてください。",
+      "romaji": "samui kara kutsushita o haite kudasai.",
+      "zh": "因为冷，请穿上袜子。"
+    }
+  },
+  "l41-w1656": {
+    "romaji": "tebukuro",
+    "attributes": [],
+    "explanation": "指手套，通常成对使用。搭配动词「する」或「はめる」，如「手袋をする」。",
+    "example": {
+      "jp": "冬は手袋をして出かけます。",
+      "kana": "ふゆはてぶくろをしてでかけます。",
+      "romaji": "fuyu wa tebukuro o shite dekakemasu.",
+      "zh": "冬天戴手套出门。"
+    }
+  },
+  "l41-w1659": {
+    "romaji": "sofu",
+    "attributes": [],
+    "explanation": "指自己的祖父，用于向他人提及自己家人时。称呼别人的祖父时用「おじいさん」。",
+    "example": {
+      "jp": "祖父は毎朝散歩します。",
+      "kana": "そふはまいあささんぽします。",
+      "romaji": "sofu wa maiasa sanpo shimasu.",
+      "zh": "我祖父每天早上散步。"
+    }
+  },
+  "l41-w1660": {
+    "romaji": "sobo",
+    "attributes": [],
+    "explanation": "指自己的祖母，用于对外人谈及自己家人时。称呼对方的祖母时用「おばあさん」。",
+    "example": {
+      "jp": "祖母は料理が上手です。",
+      "kana": "そぼはりょうりがじょうずです。",
+      "romaji": "sobo wa ryōri ga jōzu desu.",
+      "zh": "我祖母很会做菜。"
+    }
+  },
+  "l41-w1661": {
+    "romaji": "mago",
+    "attributes": [],
+    "explanation": "指孙子或孙女，不分性别。可说「孫がいる」表示有孙辈。",
+    "example": {
+      "jp": "孫と公園で遊びました。",
+      "kana": "まごとこうえんであそびました。",
+      "romaji": "mago to kōen de asobimashita.",
+      "zh": "和孙子在公园玩了。"
+    }
+  },
+  "l41-w1662": {
+    "romaji": "oji",
+    "attributes": [],
+    "explanation": "指自己的叔伯或舅父，用于向他人介绍自己家人。称呼别人的叔父时用「おじさん」。",
+    "example": {
+      "jp": "叔父は東京に住んでいます。",
+      "kana": "おじはとうきょうにすんでいます。",
+      "romaji": "oji wa Tōkyō ni sunde imasu.",
+      "zh": "我叔叔住在东京。"
+    }
+  },
+  "l41-w1663": {
+    "romaji": "ojisan",
+    "attributes": [],
+    "explanation": "指别人的叔伯舅父，或作为对中年男性的亲切称呼。直接称呼对方时也可用。",
+    "example": {
+      "jp": "叔父さんに手紙を書きました。",
+      "kana": "おじさんにてがみをかきました。",
+      "romaji": "ojisan ni tegami o kakimashita.",
+      "zh": "给叔叔写了信。"
+    }
+  },
+  "l41-w1664": {
+    "romaji": "oba",
+    "attributes": [],
+    "explanation": "指自己的姑母或姨母，用于对外人谈及自己家人时。称呼别人的姑母时用「おばさん」。",
+    "example": {
+      "jp": "叔母は看護師です。",
+      "kana": "おばはかんごしです。",
+      "romaji": "oba wa kangoshi desu.",
+      "zh": "我姑姑是护士。"
+    }
+  },
+  "l41-w1665": {
+    "romaji": "obasan",
+    "attributes": [],
+    "explanation": "指别人的姑母姨母，或作为对中年女性的亲切称呼。直接称呼时也可用。",
+    "example": {
+      "jp": "叔母さんはとても優しいです。",
+      "kana": "おばさんはとてもやさしいです。",
+      "romaji": "obasan wa totemo yasashii desu.",
+      "zh": "阿姨非常温柔。"
+    }
+  },
+  "l41-w1681": {
+    "romaji": "futari",
+    "attributes": [],
+    "explanation": "表示两个人的数量，用于人。可单独使用，也可后接「で」表示“两个人一起”。",
+    "example": {
+      "jp": "二人で映画を見に行きます。",
+      "kana": "ふたりでえいがをみにいきます。",
+      "romaji": "futari de eiga o mi ni ikimasu.",
+      "zh": "两个人一起去看电影。"
+    }
+  },
+  "l41-w1728": {
+    "romaji": "danbō",
+    "attributes": [],
+    "explanation": "指暖气设备或暖气功能，常与「つける」「消す」搭配。与「冷房」相对。",
+    "example": {
+      "jp": "寒いので暖房をつけましょう。",
+      "kana": "さむいのでだんぼうをつけましょう。",
+      "romaji": "samui node danbō o tsukemashō.",
+      "zh": "因为冷，开暖气吧。"
+    }
+  },
+  "l41-w1729": {
+    "romaji": "reibō",
+    "attributes": [],
+    "explanation": "指冷气设备或冷气功能，常与「つける」「消す」搭配。与「暖房」相对。",
+    "example": {
+      "jp": "暑いから冷房を入れてください。",
+      "kana": "あついかられいぼうをいれてください。",
+      "romaji": "atsui kara reibō o irete kudasai.",
+      "zh": "因为热，请开冷气。"
+    }
+  },
+  "l41-w1909": {
+    "romaji": "otaku",
+    "attributes": [],
+    "explanation": "「お宅」是礼貌地指称对方家或家庭的词，常用于正式场合或初次见面时。也可直接称呼对方（如「お宅の息子さん」），但需注意语气，避免显得生硬。",
+    "example": {
+      "jp": "お宅はどちらですか。",
+      "kana": "おたくはどちらですか。",
+      "romaji": "otaku wa dochira desu ka.",
+      "zh": "您家在哪里？"
+    }
+  },
+  "l41-w3214": {
+    "romaji": "ondo",
+    "attributes": [],
+    "explanation": "「温度」指物体的冷热程度，常用于天气、烹饪、科学等语境。日常中可搭配「温度が高い／低い」「温度を測る」等。",
+    "example": {
+      "jp": "今日は温度が高いですね。",
+      "kana": "きょうはおんどがたかいですね。",
+      "romaji": "kyou wa ondo ga takai desu ne.",
+      "zh": "今天温度很高啊。"
+    }
+  },
+  "l41-w3502": {
+    "romaji": "youchien",
+    "attributes": [],
+    "explanation": "「幼稚園」指日本教育体系中接收3至6岁儿童的教育机构，相当于中国的幼儿园。常与「通う」「入る」等动词搭配。",
+    "example": {
+      "jp": "娘は毎日幼稚園に通っています。",
+      "kana": "むすめはまいにちようちえんにかよっています。",
+      "romaji": "musume wa mainichi youchien ni kayotte imasu.",
+      "zh": "女儿每天去上幼儿园。"
+    }
+  },
+  "l41-w4376": {
+    "romaji": "hitokoto",
+    "attributes": [],
+    "explanation": "「一言」指简短的一句话，常用于请求对方简单说几句或表达感谢、道歉等。可搭配「一言言う」「一言添える」「一言お願いします」等。",
+    "example": {
+      "jp": "最後に一言お願いします。",
+      "kana": "さいごにひとことおねがいします。",
+      "romaji": "saigo ni hitokoto onegai shimasu.",
+      "zh": "请最后说一句话。"
+    }
+  },
+  "l41-w5653": {
+    "romaji": "omagosan",
+    "attributes": [],
+    "explanation": "「お孫さん」是敬称，指对方的孙子或孙女，不能用于自己的孙辈。自己的孙辈应说「孫」。",
+    "example": {
+      "jp": "お孫さんはおいくつですか。",
+      "kana": "おまごさんはおいくつですか。",
+      "romaji": "omagosan wa oikutsu desu ka.",
+      "zh": "您孙子多大了？"
+    }
+  },
+  "l41-w918": {
+    "romaji": "konoaida",
+    "attributes": [],
+    "explanation": "「この間」指说话前不久的某个时间，意为“前几天、上次”，常用于口语。比「先日」更随意，可搭配过去时态。",
+    "example": {
+      "jp": "この間はありがとうございました。",
+      "kana": "このあいだはありがとうございました。",
+      "romaji": "konoaida wa arigatou gozaimashita.",
+      "zh": "前些天谢谢您了。"
+    }
+  },
+  "l41-san": {
+    "romaji": "san",
+    "attributes": [],
+    "explanation": "「～さん」接在职业、店铺名等后面，表示对该职业或店铺的亲切称呼，如「本屋さん」「魚屋さん」。也可接在人名后表示尊敬，但此处侧重职业等称呼。",
+    "example": {
+      "jp": "あの本屋さんで辞書を買いました。",
+      "kana": "あのほんやさんでじしょをかいました。",
+      "romaji": "ano hon'ya san de jisho o kaimashita.",
+      "zh": "在那家书店买了词典。"
+    }
+  },
+  "l41-happy": {
+    "romaji": "douzo oshiawase ni",
+    "attributes": [],
+    "explanation": "「どうぞお幸せに」是祝福新婚夫妇或即将开始新生活的人幸福的固定表达，常用于婚礼贺词或告别时。",
+    "example": {
+      "jp": "ご結婚おめでとうございます。どうぞお幸せに。",
+      "kana": "ごけっこんおめでとうございます。どうぞおしあわせに。",
+      "romaji": "gokekkon omedetou gozaimasu. douzo oshiawase ni.",
+      "zh": "恭喜结婚。祝你们幸福。"
+    }
+  },
+  "l41-urashima": {
+    "romaji": "Urashima Tarou",
+    "attributes": [],
+    "explanation": "「浦島太郎」是日本民间故事中的人物，因救助海龟而受邀前往龙宫，回来后发现世间已过百年。常作为“时光飞逝”的典故。",
+    "example": {
+      "jp": "浦島太郎は海亀を助けました。",
+      "kana": "うらしまたろうはうみがめをたすけました。",
+      "romaji": "Urashima Tarou wa umigame o tasukemashita.",
+      "zh": "浦岛太郎救了海龟。"
+    }
+  },
+  "l41-folk-tale": {
+    "romaji": "mukashibanashi",
+    "attributes": [],
+    "explanation": "「昔話」指从古代流传下来的民间故事，如「桃太郎」「かぐや姫」等。常与「語る」「聞く」等动词搭配。",
+    "example": {
+      "jp": "祖母はよく昔話をしてくれました。",
+      "kana": "そぼはよくむかしばなしをしてくれました。",
+      "romaji": "sobo wa yoku mukashibanashi o shite kuremashita.",
+      "zh": "祖母经常给我讲民间故事。"
+    }
+  },
+  "l41-certain": {
+    "romaji": "aru",
+    "attributes": [],
+    "explanation": "「ある～」是连体词，表示“某个（不特定的）……”，常用于故事开头，如「ある日」「ある村」。不能用于指代说话双方已知的具体事物。",
+    "example": {
+      "jp": "ある村に一人の男が住んでいました。",
+      "kana": "あるむらにひとりのおとこがすんでいました。",
+      "romaji": "aru mura ni hitori no otoko ga sunde imashita.",
+      "zh": "某个村子里住着一个男子。"
+    }
+  },
+  "l41-man": {
+    "romaji": "otoko",
+    "attributes": [],
+    "explanation": "「男」指男性、男子，可用于泛指或指特定男性。与「女」相对，口语中可加「の」构成「男の子」「男の人」等。",
+    "example": {
+      "jp": "あの男は誰ですか。",
+      "kana": "あのおとこはだれですか。",
+      "romaji": "ano otoko wa dare desu ka.",
+      "zh": "那个男人是谁？"
+    }
+  },
+  "l41-children": {
+    "romaji": "kodomotachi",
+    "attributes": [],
+    "explanation": "「子どもたち」是「子ども」的复数形式，指多个孩子，常用于口语和书面语中表示群体。",
+    "example": {
+      "jp": "公園で子どもたちが遊んでいます。",
+      "kana": "こうえんでこどもたちがあそんでいます。",
+      "romaji": "kōen de kodomotachi ga asonde imasu.",
+      "zh": "孩子们在公园里玩。"
+    }
+  },
+  "l41-bully": {
+    "romaji": "ijimemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「いじめます」表示欺负、虐待，通常指以强凌弱的行为，对象多为人。",
+    "example": {
+      "jp": "弱い者をいじめてはいけません。",
+      "kana": "よわいものをいじめてはいけません。",
+      "romaji": "yowai mono o ijimete wa ikemasen.",
+      "zh": "不可以欺负弱者。"
+    }
+  },
+  "l41-turtle": {
+    "romaji": "kame",
+    "attributes": [],
+    "explanation": "「かめ」指乌龟，包括海龟和陆龟，常出现在童话故事中。",
+    "example": {
+      "jp": "池に大きなかめがいます。",
+      "kana": "いけにおおきなかめがいます。",
+      "romaji": "ike ni ōkina kame ga imasu.",
+      "zh": "池塘里有一只大乌龟。"
+    }
+  },
+  "l41-help": {
+    "romaji": "tasukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「助けます」表示救助、帮助，常用于危急或困难时伸出援手。",
+    "example": {
+      "jp": "溺れている人を助けました。",
+      "kana": "おぼれているひとをたすけました。",
+      "romaji": "oborete iru hito o tasukemashita.",
+      "zh": "救助了溺水的人。"
+    }
+  },
+  "l41-kind": {
+    "romaji": "yasashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「優しい」表示善良、温柔，形容人的性格或态度，也可表示体贴。",
+    "example": {
+      "jp": "彼女はとても優しい人です。",
+      "kana": "かのじょはとてもやさしいひとです。",
+      "romaji": "kanojo wa totemo yasashii hito desu.",
+      "zh": "她是个非常善良的人。"
+    }
+  },
+  "l41-princess": {
+    "romaji": "ohimesama",
+    "attributes": [],
+    "explanation": "「お姫様」是对公主的敬称，常用于童话或正式场合，带有尊敬语气。",
+    "example": {
+      "jp": "お姫様が城から出てきました。",
+      "kana": "おひめさまがしろからでてきました。",
+      "romaji": "ohimesama ga shiro kara dete kimashita.",
+      "zh": "公主从城堡里出来了。"
+    }
+  },
+  "l41-live": {
+    "romaji": "kurashimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「暮らします」表示生活、度日，强调日常生活的方式或状态，常与表示生活场所或方式的词搭配。",
+    "example": {
+      "jp": "田舎で静かに暮らしています。",
+      "kana": "いなかでしずかにくらしています。",
+      "romaji": "inaka de shizuka ni kurashite imasu.",
+      "zh": "在乡下安静地生活着。"
+    }
+  },
+  "l41-land": {
+    "romaji": "riku",
+    "attributes": [],
+    "explanation": "「陸」指陆地，与海、空相对，常用于地理或交通语境。",
+    "example": {
+      "jp": "陸に上がって休みましょう。",
+      "kana": "りくにあがってやすみましょう。",
+      "romaji": "riku ni agatte yasumimashō.",
+      "zh": "上陆地休息吧。"
+    }
+  },
+  "l41-then": {
+    "romaji": "suruto",
+    "attributes": [],
+    "explanation": "「すると」是接续词，表示接着发生某事，常用于叙述中，相当于“于是”。",
+    "example": {
+      "jp": "ドアを開けました。すると、猫が飛び出しました。",
+      "kana": "どあをあけました。すると、ねこがとびだしました。",
+      "romaji": "doa o akemashita. suruto, neko ga tobidashimashita.",
+      "zh": "打开了门。于是，猫跳了出来。"
+    }
+  },
+  "l41-smoke": {
+    "romaji": "kemuri",
+    "attributes": [],
+    "explanation": "「煙」指燃烧产生的烟，常用于描述火灾或吸烟等场景。",
+    "example": {
+      "jp": "煙が空に昇っていきます。",
+      "kana": "けむりがそらにのぼっていきます。",
+      "romaji": "kemuri ga sora ni nobotte ikimasu.",
+      "zh": "烟升向天空。"
+    }
+  },
+  "l41-white": {
+    "romaji": "masshirona",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "「真っ白な」是な形容词，表示纯白色、雪白，强调颜色非常白。",
+    "example": {
+      "jp": "真っ白な雪が降っています。",
+      "kana": "まっしろなゆきがふっています。",
+      "romaji": "masshirona yuki ga futte imasu.",
+      "zh": "正下着雪白的雪。"
+    }
+  },
+  "l41-contents": {
+    "romaji": "nakami",
+    "attributes": [],
+    "explanation": "「中身」指容器或事物的内部东西、内容，常用于具体物品或抽象内容。",
+    "example": {
+      "jp": "箱の中身は何ですか。",
+      "kana": "はこのなかみはなんですか。",
+      "romaji": "hako no nakami wa nan desu ka.",
+      "zh": "箱子里面的东西是什么？"
+    }
+  }
+}

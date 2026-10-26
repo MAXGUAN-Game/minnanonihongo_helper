@@ -1,0 +1,211 @@
+{
+  "lessonId": 23,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/23.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源28条，排除5条旧版或跨课条目，合并同形同义项并补入第二来源，最终28条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/23.json。"
+  ],
+  "words": [
+    {
+      "key": "w1000",
+      "word": "道",
+      "reading": "みち",
+      "partOfSpeech": "名词",
+      "meaning": "道路"
+    },
+    {
+      "key": "w1001",
+      "word": "交差点",
+      "reading": "こうさてん",
+      "partOfSpeech": "名词",
+      "meaning": "十字路口"
+    },
+    {
+      "key": "w1002",
+      "word": "信号",
+      "reading": "しんごう",
+      "partOfSpeech": "名词",
+      "meaning": "信号灯"
+    },
+    {
+      "key": "w1003",
+      "word": "角",
+      "reading": "かど",
+      "partOfSpeech": "名词",
+      "meaning": "拐角"
+    },
+    {
+      "key": "w1004",
+      "word": "橋",
+      "reading": "はし",
+      "partOfSpeech": "名词",
+      "meaning": "桥"
+    },
+    {
+      "key": "w1005",
+      "word": "駐車場",
+      "reading": "ちゅうしゃじょう",
+      "partOfSpeech": "名词",
+      "meaning": "停车场"
+    },
+    {
+      "key": "w1006",
+      "word": "～目",
+      "reading": "～め",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "第……个"
+    },
+    {
+      "key": "w1009",
+      "word": "建物",
+      "reading": "たてもの",
+      "partOfSpeech": "名词",
+      "meaning": "建筑物"
+    },
+    {
+      "key": "w1084",
+      "word": "お湯",
+      "reading": "おゆ",
+      "partOfSpeech": "名词",
+      "meaning": "热水"
+    },
+    {
+      "key": "w660",
+      "word": "寂しい",
+      "reading": "さびしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "寂寞的"
+    },
+    {
+      "key": "w694",
+      "word": "［右へ］曲がります",
+      "reading": "［みぎへ］まがります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "转弯（向右）"
+    },
+    {
+      "key": "w891",
+      "word": "何回も",
+      "reading": "なんかいも",
+      "partOfSpeech": "副词",
+      "meaning": "好几次"
+    },
+    {
+      "key": "w982",
+      "word": "［先生に］聞きます",
+      "reading": "［せんせいに］ききます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "问（老师）"
+    },
+    {
+      "key": "w983",
+      "word": "回します",
+      "reading": "まわします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "转动"
+    },
+    {
+      "key": "w984",
+      "word": "引きます",
+      "reading": "ひきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拉"
+    },
+    {
+      "key": "w985",
+      "word": "変えます",
+      "reading": "かえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "改变"
+    },
+    {
+      "key": "w986",
+      "word": "触ります",
+      "reading": "さわります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "触碰"
+    },
+    {
+      "key": "w987",
+      "word": "［お釣りが］出ます",
+      "reading": "［おつりが］でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出来（找零）"
+    },
+    {
+      "key": "w989",
+      "word": "［道を］歩きます",
+      "reading": "［みちを］あるきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "走（路）"
+    },
+    {
+      "key": "w990",
+      "word": "［橋を］渡ります",
+      "reading": "［はしを］わたります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "过（桥）"
+    },
+    {
+      "key": "w995",
+      "word": "サイズ",
+      "reading": "さいず",
+      "partOfSpeech": "名词",
+      "meaning": "尺寸"
+    },
+    {
+      "key": "w996",
+      "word": "音",
+      "reading": "おと",
+      "partOfSpeech": "名词",
+      "meaning": "声音"
+    },
+    {
+      "key": "w999",
+      "word": "故障",
+      "reading": "こしょう",
+      "partOfSpeech": "名词",
+      "meaning": "故障"
+    },
+    {
+      "key": "shotoku",
+      "word": "聖徳太子",
+      "reading": "しょうとくたいし",
+      "partOfSpeech": "专有名词",
+      "meaning": "圣德太子"
+    },
+    {
+      "key": "horyuji",
+      "word": "法隆寺",
+      "reading": "ほうりゅうじ",
+      "partOfSpeech": "专有名词",
+      "meaning": "法隆寺"
+    },
+    {
+      "key": "genki-tea",
+      "word": "元気茶",
+      "reading": "げんきちゃ",
+      "partOfSpeech": "专有名词",
+      "meaning": "元气茶（教材商品名）"
+    },
+    {
+      "key": "honda-station",
+      "word": "本田駅",
+      "reading": "ほんだえき",
+      "partOfSpeech": "专有名词",
+      "meaning": "本田站（教材站名）"
+    },
+    {
+      "key": "library-stop",
+      "word": "図書館前",
+      "reading": "としょかんまえ",
+      "partOfSpeech": "专有名词",
+      "meaning": "图书馆前（教材车站名）"
+    }
+  ]
+}

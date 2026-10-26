@@ -1,0 +1,421 @@
+{
+  "lessonId": 32,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/32.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源49条，排除2条旧版或跨课条目，合并同形同义项并补入第二来源，最终58条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/32.json。"
+  ],
+  "words": [
+    {
+      "key": "w1173",
+      "word": "［道が］込みます",
+      "reading": "［みちが］こみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拥挤（道路）"
+    },
+    {
+      "key": "w1174",
+      "word": "［道が］すきます",
+      "reading": "［みちが］すきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "空下来；不拥挤（道路）"
+    },
+    {
+      "key": "w1281",
+      "word": "運動します",
+      "reading": "うんどうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "运动"
+    },
+    {
+      "key": "w1282",
+      "word": "成功します",
+      "reading": "せいこうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "成功"
+    },
+    {
+      "key": "w1283",
+      "word": "失敗します",
+      "reading": "しっぱいします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "失败"
+    },
+    {
+      "key": "w1285",
+      "word": "合格します",
+      "reading": "ごうかくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "合格；考上"
+    },
+    {
+      "key": "w1287",
+      "word": "［雨が］やみます",
+      "reading": "［あめが］やみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "停（雨）"
+    },
+    {
+      "key": "w1288",
+      "word": "晴れます",
+      "reading": "はれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "放晴"
+    },
+    {
+      "key": "w1289",
+      "word": "曇ります",
+      "reading": "くもります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "变阴"
+    },
+    {
+      "key": "w1293",
+      "word": "［熱が］続きます",
+      "reading": "［ねつが］つづきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "持续（发烧）"
+    },
+    {
+      "key": "w1294",
+      "word": "［風邪を］ひきます",
+      "reading": "［かぜを］ひきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "患（感冒）"
+    },
+    {
+      "key": "w1295",
+      "word": "冷やします",
+      "reading": "ひやします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "冷却"
+    },
+    {
+      "key": "w1297",
+      "word": "十分な",
+      "reading": "じゅうぶんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "充足的"
+    },
+    {
+      "key": "w1298",
+      "word": "可笑しい",
+      "reading": "おかしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "奇怪的"
+    },
+    {
+      "key": "w1299",
+      "word": "うるさい",
+      "reading": "うるさい",
+      "partOfSpeech": "い形容词",
+      "meaning": "吵闹的"
+    },
+    {
+      "key": "w1300",
+      "word": "やけど",
+      "reading": "やけど",
+      "partOfSpeech": "名词",
+      "meaning": "烫伤"
+    },
+    {
+      "key": "w1301",
+      "word": "怪我",
+      "reading": "けが",
+      "partOfSpeech": "名词",
+      "meaning": "受伤"
+    },
+    {
+      "key": "w1302",
+      "word": "咳",
+      "reading": "せき",
+      "partOfSpeech": "名词",
+      "meaning": "咳嗽"
+    },
+    {
+      "key": "w1303",
+      "word": "インフルエンザ",
+      "reading": "いんふるえんざ",
+      "partOfSpeech": "名词",
+      "meaning": "流感"
+    },
+    {
+      "key": "w1304",
+      "word": "空",
+      "reading": "そら",
+      "partOfSpeech": "名词",
+      "meaning": "天空"
+    },
+    {
+      "key": "w1305",
+      "word": "太陽",
+      "reading": "たいよう",
+      "partOfSpeech": "名词",
+      "meaning": "太阳"
+    },
+    {
+      "key": "w1306",
+      "word": "星",
+      "reading": "ほし",
+      "partOfSpeech": "名词",
+      "meaning": "星星"
+    },
+    {
+      "key": "w1308",
+      "word": "風",
+      "reading": "かぜ",
+      "partOfSpeech": "名词",
+      "meaning": "风"
+    },
+    {
+      "key": "w1309",
+      "word": "北",
+      "reading": "きた",
+      "partOfSpeech": "名词",
+      "meaning": "北方"
+    },
+    {
+      "key": "w1310",
+      "word": "南",
+      "reading": "みなみ",
+      "partOfSpeech": "名词",
+      "meaning": "南方"
+    },
+    {
+      "key": "w1311",
+      "word": "西",
+      "reading": "にし",
+      "partOfSpeech": "名词",
+      "meaning": "西方"
+    },
+    {
+      "key": "w1312",
+      "word": "東",
+      "reading": "ひがし",
+      "partOfSpeech": "名词",
+      "meaning": "东方"
+    },
+    {
+      "key": "w1313",
+      "word": "水道",
+      "reading": "すいどう",
+      "partOfSpeech": "名词",
+      "meaning": "自来水"
+    },
+    {
+      "key": "w1314",
+      "word": "エンジン",
+      "reading": "えんじん",
+      "partOfSpeech": "名词",
+      "meaning": "发动机"
+    },
+    {
+      "key": "w1316",
+      "word": "今夜",
+      "reading": "こんや",
+      "partOfSpeech": "名词",
+      "meaning": "今晚"
+    },
+    {
+      "key": "w1317",
+      "word": "夕方",
+      "reading": "ゆうがた",
+      "partOfSpeech": "名词",
+      "meaning": "傍晚"
+    },
+    {
+      "key": "w1318",
+      "word": "まえ",
+      "reading": "まえ",
+      "partOfSpeech": "名词",
+      "meaning": "以前"
+    },
+    {
+      "key": "w1319",
+      "word": "遅く",
+      "reading": "おそく",
+      "partOfSpeech": "副词",
+      "meaning": "很晚"
+    },
+    {
+      "key": "w1320",
+      "word": "こんなに",
+      "reading": "こんなに",
+      "partOfSpeech": "副词",
+      "meaning": "这么"
+    },
+    {
+      "key": "w1321",
+      "word": "そんなに",
+      "reading": "そんなに",
+      "partOfSpeech": "表达",
+      "meaning": "那么（近对方）"
+    },
+    {
+      "key": "w1322",
+      "word": "あんなに",
+      "reading": "あんなに",
+      "partOfSpeech": "副词",
+      "meaning": "那么（远处）"
+    },
+    {
+      "key": "w1324",
+      "word": "それはいけませんね",
+      "reading": "それはいけませんね",
+      "partOfSpeech": "固定表达",
+      "meaning": "那可不行啊"
+    },
+    {
+      "key": "w1325",
+      "word": "元気",
+      "reading": "げんき",
+      "partOfSpeech": "名词",
+      "meaning": "精神；活力"
+    },
+    {
+      "key": "w1326",
+      "word": "胃",
+      "reading": "い",
+      "partOfSpeech": "名词",
+      "meaning": "胃"
+    },
+    {
+      "key": "w1327",
+      "word": "働きすぎ",
+      "reading": "はたらきすぎ",
+      "partOfSpeech": "名词",
+      "meaning": "工作过度"
+    },
+    {
+      "key": "w1328",
+      "word": "ストレス",
+      "reading": "すとれす",
+      "partOfSpeech": "名词",
+      "meaning": "压力"
+    },
+    {
+      "key": "w1329",
+      "word": "無理をします",
+      "reading": "むりをします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "勉强自己"
+    },
+    {
+      "key": "w1444",
+      "word": "［試合に］出ます",
+      "reading": "［しあいに］でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "参加（比赛）"
+    },
+    {
+      "key": "w3363",
+      "word": "チーム",
+      "reading": "ちーむ",
+      "partOfSpeech": "名词",
+      "meaning": "队伍"
+    },
+    {
+      "key": "w5641",
+      "word": "［パーティーに］出ます",
+      "reading": "［ぱーてぃーに］でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "参加（聚会）"
+    },
+    {
+      "key": "w829",
+      "word": "先生",
+      "reading": "せんせい",
+      "partOfSpeech": "名词",
+      "meaning": "医生（尊称）"
+    },
+    {
+      "key": "w850",
+      "word": "国際～",
+      "reading": "こくさい～",
+      "partOfSpeech": "名词",
+      "meaning": "国际……"
+    },
+    {
+      "key": "europe",
+      "word": "ヨーロッパ",
+      "reading": "よーろっぱ",
+      "partOfSpeech": "专有名词",
+      "meaning": "欧洲"
+    },
+    {
+      "key": "horoscope",
+      "word": "星占い",
+      "reading": "ほしうらない",
+      "partOfSpeech": "名词",
+      "meaning": "星座占卜"
+    },
+    {
+      "key": "taurus",
+      "word": "牡牛座",
+      "reading": "おうしざ",
+      "partOfSpeech": "专有名词",
+      "meaning": "金牛座"
+    },
+    {
+      "key": "trouble",
+      "word": "困ります",
+      "reading": "こまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "感到困扰"
+    },
+    {
+      "key": "lottery",
+      "word": "宝くじ",
+      "reading": "たからくじ",
+      "partOfSpeech": "名词",
+      "meaning": "彩票"
+    },
+    {
+      "key": "win",
+      "word": "当たります",
+      "reading": "あたります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "中奖；猜中"
+    },
+    {
+      "key": "health",
+      "word": "健康",
+      "reading": "けんこう",
+      "partOfSpeech": "名词",
+      "meaning": "健康"
+    },
+    {
+      "key": "romance",
+      "word": "恋愛",
+      "reading": "れんあい",
+      "partOfSpeech": "名词",
+      "meaning": "恋爱"
+    },
+    {
+      "key": "lover",
+      "word": "恋人",
+      "reading": "こいびと",
+      "partOfSpeech": "名词",
+      "meaning": "恋人"
+    },
+    {
+      "key": "lucky-item",
+      "word": "ラッキーアイテム",
+      "reading": "らっきーあいてむ",
+      "partOfSpeech": "名词",
+      "meaning": "幸运物品"
+    },
+    {
+      "key": "stone",
+      "word": "石",
+      "reading": "いし",
+      "partOfSpeech": "名词",
+      "meaning": "石头"
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "l28-w1102": {
+    "romaji": "keshiki",
+    "attributes": [],
+    "explanation": "指自然或城市的景观、风景，常与「いい」「美しい」搭配。比「風景」更常用于日常口语，也可指从某处看到的景象。",
+    "example": {
+      "jp": "この山の景色はとてもきれいです。",
+      "kana": "このやまのけしきはとてもきれいです。",
+      "romaji": "kono yama no keshiki wa totemo kirei desu.",
+      "zh": "这座山的景色非常漂亮。"
+    }
+  },
+  "l28-w1110": {
+    "romaji": "daidokoro",
+    "attributes": [],
+    "explanation": "指家里做饭的厨房，日常口语常用。比「キッチン」更偏传统和家庭感，常与「台所で料理する」等搭配。",
+    "example": {
+      "jp": "母は台所で料理をしています。",
+      "kana": "はははだいどころでりょうりをしています。",
+      "romaji": "haha wa daidokoro de ryōri o shite imasu.",
+      "zh": "妈妈正在厨房做饭。"
+    }
+  },
+  "l28-w1124": {
+    "romaji": "uremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示商品有销路、卖得出去，主语是商品。常与「よく」「たくさん」搭配，强调销售状况而非人为卖出。",
+    "example": {
+      "jp": "この店のパンはよく売れます。",
+      "kana": "このみせのぱんはよくうれます。",
+      "romaji": "kono mise no pan wa yoku uremasu.",
+      "zh": "这家店的面包很畅销。"
+    }
+  },
+  "l28-w1125": {
+    "romaji": "odorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示跳舞这一动作，可单独使用或与「ダンスを」搭配。常与「楽しく」「一緒に」等副词一起使用。",
+    "example": {
+      "jp": "みんなで楽しく踊りました。",
+      "kana": "みんなでたのしくおどりました。",
+      "romaji": "minna de tanoshiku odorimashita.",
+      "zh": "大家一起愉快地跳舞了。"
+    }
+  },
+  "l28-w1126": {
+    "romaji": "kamimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指用牙齿咀嚼食物或咬住东西，宾语用「を」表示。也可用于被狗咬等场合，注意与「かじる」（啃）区别。",
+    "example": {
+      "jp": "よく噛んで食べてください。",
+      "kana": "よくかんでたべてください。",
+      "romaji": "yoku kande tabete kudasai.",
+      "zh": "请好好咀嚼后再吃。"
+    }
+  },
+  "l28-w1128": {
+    "romaji": "erabimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "从多个选项中挑选出合适的一个，宾语用「を」表示。常与「中から」「どちらか」等搭配，也可用于选择人。",
+    "example": {
+      "jp": "好きな色を選んでください。",
+      "kana": "すきないろをえらんでください。",
+      "romaji": "suki na iro o erande kudasai.",
+      "zh": "请选择喜欢的颜色。"
+    }
+  },
+  "l28-w1130": {
+    "romaji": "kayoimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示定期往返于某地（如公司、学校），目的地用「に」表示。强调反复往来，不是单次前往。",
+    "example": {
+      "jp": "毎日電車で会社に通っています。",
+      "kana": "まいにちでんしゃでかいしゃにかよっています。",
+      "romaji": "mainichi densha de kaisha ni kayotte imasu.",
+      "zh": "每天坐电车往返公司。"
+    }
+  },
+  "l28-w1131": {
+    "romaji": "memoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "把听到或看到的内容记下来，宾语用「を」表示。是「メモをします」的复合动词形式，常用于听课、开会等场景。",
+    "example": {
+      "jp": "先生の話をメモします。",
+      "kana": "せんせいのはなしをめもします。",
+      "romaji": "sensei no hanashi o memoshimasu.",
+      "zh": "把老师的话记下来。"
+    }
+  },
+  "l28-w1132": {
+    "romaji": "majimena",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容人认真、踏实、诚实，多用于评价性格或态度。修饰名词时加「な」，否定为「まじめじゃない」。",
+    "example": {
+      "jp": "彼はとてもまじめな学生です。",
+      "kana": "かれはとてもまじめながくせいです。",
+      "romaji": "kare wa totemo majimena gakusei desu.",
+      "zh": "他是个非常认真的学生。"
+    }
+  },
+  "l28-w1133": {
+    "romaji": "nesshinna",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示对某事充满热情、专心投入，常与「に」搭配说明对象。可修饰人或态度，如「熱心な先生」。",
+    "example": {
+      "jp": "彼女は仕事に熱心な人です。",
+      "kana": "かのじょはしごとにねっしんなひとです。",
+      "romaji": "kanojo wa shigoto ni nesshinna hito desu.",
+      "zh": "她是个对工作很热心的人。"
+    }
+  },
+  "l28-w1135": {
+    "romaji": "erai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示伟大、了不起，常用于称赞人的行为或成就。口语中也可表示“辛苦”“受罪”，需根据语境判断。",
+    "example": {
+      "jp": "一人で全部やったなんて偉いですね。",
+      "kana": "ひとりでぜんぶやったなんてえらいですね。",
+      "romaji": "hitori de zenbu yatta nante erai desu ne.",
+      "zh": "一个人全做完了，真了不起啊。"
+    }
+  },
+  "l28-w1136": {
+    "romaji": "chōdo ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示大小、时间、程度等正合适，相当于“刚刚好”。常单独作谓语或修饰名词，否定为「ちょうどよくない」。",
+    "example": {
+      "jp": "このシャツはサイズがちょうどいいです。",
+      "kana": "このしゃつはさいずがちょうどいいです。",
+      "romaji": "kono shatsu wa saizu ga chōdo ii desu.",
+      "zh": "这件衬衫尺寸刚刚好。"
+    }
+  },
+  "l28-w1138": {
+    "romaji": "keiken",
+    "attributes": [],
+    "explanation": "表示通过实际经历获得的知识或技能，常与「経験がある／経験を積む」搭配；也可作动词「経験する」，但名词用法更常见。",
+    "example": {
+      "jp": "私は海外で働いた経験があります。",
+      "kana": "わたしはかいがいではたらいたけいけんがあります。",
+      "romaji": "watashi wa kaigai de hataraita keiken ga arimasu.",
+      "zh": "我有在海外工作的经验。"
+    }
+  },
+  "l28-w1139": {
+    "romaji": "chikara",
+    "attributes": [],
+    "explanation": "指物理上的力气或抽象的能力、实力，如「力がある」「力を合わせる」；也可表示精力或影响力。",
+    "example": {
+      "jp": "彼は力が強いので、重い物も持てます。",
+      "kana": "かれはちからがつよいので、おもいものももてます。",
+      "romaji": "kare wa chikara ga tsuyoi node, omoi mono mo motemasu.",
+      "zh": "他力气大，所以重东西也能拿。"
+    }
+  },
+  "l28-w1140": {
+    "romaji": "ninki",
+    "attributes": [],
+    "explanation": "表示受欢迎、有人气的状态，常用「人気がある」「人気が高い」；な形容词化时说「人気な」，但名词用法更普遍。",
+    "example": {
+      "jp": "この歌手は若い人に人気があります。",
+      "kana": "このかしゅはわかいひとににんきがあります。",
+      "romaji": "kono kashu wa wakai hito ni ninki ga arimasu.",
+      "zh": "这位歌手在年轻人中很受欢迎。"
+    }
+  },
+  "l28-w1141": {
+    "romaji": "katachi",
+    "attributes": [],
+    "explanation": "指物体的外形、轮廓，也可指事物的形式或状态；常与「形がいい／形を変える」等搭配。",
+    "example": {
+      "jp": "この石はハートの形をしています。",
+      "kana": "このいしははーとのかたちをしています。",
+      "romaji": "kono ishi wa haato no katachi o shite imasu.",
+      "zh": "这块石头呈心形。"
+    }
+  },
+  "l28-w1142": {
+    "romaji": "iro",
+    "attributes": [],
+    "explanation": "指颜色，也可指肤色、脸色或事物的特色；常用「色がいい／色を変える」等表达。",
+    "example": {
+      "jp": "空の色が夕方になると赤くなります。",
+      "kana": "そらのいろがゆうがたになるとあかくなります。",
+      "romaji": "sora no iro ga yuugata ni naru to akaku narimasu.",
+      "zh": "天空的颜色到了傍晚会变红。"
+    }
+  },
+  "l28-w1143": {
+    "romaji": "aji",
+    "attributes": [],
+    "explanation": "指食物或饮料的味道，也可引申为趣味、滋味；常与「味がする／味を見る」等搭配。",
+    "example": {
+      "jp": "このスープは少し塩の味がします。",
+      "kana": "このすーぷはすこししおのあじがします。",
+      "romaji": "kono suupu wa sukoshi shio no aji ga shimasu.",
+      "zh": "这汤有点盐味。"
+    }
+  },
+  "l28-w1144": {
+    "romaji": "gamu",
+    "attributes": [],
+    "explanation": "口香糖的外来语，通常指可咀嚼的糖果；常说「ガムを噛む」，注意不是吞下去。",
+    "example": {
+      "jp": "彼はいつもガムを噛んでいます。",
+      "kana": "かれはいつもがむをかんでいます。",
+      "romaji": "kare wa itsumo gamu o kande imasu.",
+      "zh": "他总是在嚼口香糖。"
+    }
+  },
+  "l28-w1145": {
+    "romaji": "shinamono",
+    "attributes": [],
+    "explanation": "指具体的物品或商品，比「品」更口语化；常用于购物、买卖场景，如「品物がいい」。",
+    "example": {
+      "jp": "この店の品物は安くて質がいいです。",
+      "kana": "このみせのしなものはやすくてしつがいいです。",
+      "romaji": "kono mise no shinamono wa yasukute shitsu ga ii desu.",
+      "zh": "这家店的东西又便宜质量又好。"
+    }
+  },
+  "l28-w1146": {
+    "romaji": "nedan",
+    "attributes": [],
+    "explanation": "指商品的价格、价钱，常与「値段が高い／安い」「値段を見る」等搭配；比「価格」更口语。",
+    "example": {
+      "jp": "この靴は値段が高すぎて買えません。",
+      "kana": "このくつはねだんがたかすぎてかえません。",
+      "romaji": "kono kutsu wa nedan ga takasugite kaemasen.",
+      "zh": "这双鞋价格太贵买不起。"
+    }
+  },
+  "l28-w1147": {
+    "romaji": "kyuuryou",
+    "attributes": [],
+    "explanation": "指定期支付的工资、薪水，通常按月发放；常说「給料をもらう／給料が上がる」。",
+    "example": {
+      "jp": "来月から給料が少し上がります。",
+      "kana": "らいげつからきゅうりょうがすこしあがります。",
+      "romaji": "raigetsu kara kyuuryou ga sukoshi agarimasu.",
+      "zh": "下个月起工资会稍微上涨。"
+    }
+  },
+  "l28-w1148": {
+    "romaji": "boonasu",
+    "attributes": [],
+    "explanation": "指奖金，尤指企业额外支付的临时报酬；常与「ボーナスが出る／もらう」搭配。",
+    "example": {
+      "jp": "今年の夏はボーナスがたくさん出ました。",
+      "kana": "ことしのなつはぼーなすがたくさんでました。",
+      "romaji": "kotoshi no natsu wa boonasu ga takusan demashita.",
+      "zh": "今年夏天发了很多奖金。"
+    }
+  },
+  "l28-w1149": {
+    "romaji": "bangumi",
+    "attributes": [],
+    "explanation": "指电视或广播的节目，常与「番組を見る／放送する」搭配；也可指节目的编排内容。",
+    "example": {
+      "jp": "毎週楽しみにしているテレビ番組があります。",
+      "kana": "まいしゅうたのしみにしているてれびばんぐみがあります。",
+      "romaji": "maishuu tanoshimi ni shite iru terebi bangumi ga arimasu.",
+      "zh": "我每周都有期待收看的电视节目。"
+    }
+  },
+  "l28-w1150": {
+    "romaji": "dorama",
+    "attributes": [],
+    "explanation": "指电视剧，尤指日本或外国的连续剧，日常口语常用。外来语，不用于指电影。",
+    "example": {
+      "jp": "毎晩ドラマを見ます。",
+      "kana": "まいばんどらまをみます。",
+      "romaji": "maiban dorama o mimasu.",
+      "zh": "每天晚上看电视剧。"
+    }
+  },
+  "l28-w1151": {
+    "romaji": "shousetsu",
+    "attributes": [],
+    "explanation": "指小说这种文学体裁，可搭配「読む」「書く」。与「物語」相比更侧重虚构的散文作品。",
+    "example": {
+      "jp": "この小説はとても面白いです。",
+      "kana": "このしょうせつはとてもおもしろいです。",
+      "romaji": "kono shousetsu wa totemo omoshiroi desu.",
+      "zh": "这本小说非常有趣。"
+    }
+  },
+  "l28-w1152": {
+    "romaji": "shousetsuka",
+    "attributes": [],
+    "explanation": "指以写小说为职业的人，后缀「家」表示从事该职业者。不能用来指业余写小说的人。",
+    "example": {
+      "jp": "彼は有名な小説家です。",
+      "kana": "かれはゆうめいなしょうせつかです。",
+      "romaji": "kare wa yuumei na shousetsuka desu.",
+      "zh": "他是有名的小说家。"
+    }
+  },
+  "l28-w1153": {
+    "romaji": "kashu",
+    "attributes": [],
+    "explanation": "指以唱歌为职业的人，可指流行、演歌等各类歌手。与「歌う人」相比更正式、职业化。",
+    "example": {
+      "jp": "彼女は人気の歌手です。",
+      "kana": "かのじょはにんきのかしゅです。",
+      "romaji": "kanojo wa ninki no kashu desu.",
+      "zh": "她是很受欢迎的歌手。"
+    }
+  },
+  "l28-w1155": {
+    "romaji": "musuko",
+    "attributes": [],
+    "explanation": "指说话人自己的儿子，用于向他人介绍或谈论自家孩子。不能直接用来称呼对方的儿子。",
+    "example": {
+      "jp": "息子は大学生です。",
+      "kana": "むすこはだいがくせいです。",
+      "romaji": "musuko wa daigakusei desu.",
+      "zh": "我儿子是大学生。"
+    }
+  },
+  "l28-w1156": {
+    "romaji": "musukosan",
+    "attributes": [],
+    "explanation": "指对方或第三者的儿子，带尊敬语「さん」。用于礼貌地询问或谈论别人的儿子。",
+    "example": {
+      "jp": "息子さんはお元気ですか。",
+      "kana": "むすこさんはおげんきですか。",
+      "romaji": "musukosan wa ogenki desu ka.",
+      "zh": "您儿子还好吗？"
+    }
+  },
+  "l28-w1157": {
+    "romaji": "musume",
+    "attributes": [],
+    "explanation": "指说话人自己的女儿，用于向他人介绍或谈论自家孩子。不能直接称呼对方的女儿。",
+    "example": {
+      "jp": "娘は高校生です。",
+      "kana": "むすめはこうこうせいです。",
+      "romaji": "musume wa koukousei desu.",
+      "zh": "我女儿是高中生。"
+    }
+  },
+  "l28-w1158": {
+    "romaji": "musumesan",
+    "attributes": [],
+    "explanation": "指对方或第三者的女儿，带尊敬语「さん」。用于礼貌地询问或谈论别人的女儿。",
+    "example": {
+      "jp": "娘さんはいくつですか。",
+      "kana": "むすめさんはいくつですか。",
+      "romaji": "musumesan wa ikutsu desu ka.",
+      "zh": "您女儿多大了？"
+    }
+  },
+  "l28-w1159": {
+    "romaji": "jibun",
+    "attributes": [],
+    "explanation": "指说话人自身，常用于强调自己的立场或反思。也可用于指代动作主体自身，如「自分の部屋」。",
+    "example": {
+      "jp": "自分で作った料理です。",
+      "kana": "じぶんでつくったりょうりです。",
+      "romaji": "jibun de tsukutta ryouri desu.",
+      "zh": "这是我自己做的菜。"
+    }
+  },
+  "l28-w1160": {
+    "romaji": "shourai",
+    "attributes": [],
+    "explanation": "指从现在往后的将来，常与「夢」「希望」等搭配。比「未来」更口语化，多用于个人规划。",
+    "example": {
+      "jp": "将来は先生になりたいです。",
+      "kana": "しょうらいはせんせいになりたいです。",
+      "romaji": "shourai wa sensei ni naritai desu.",
+      "zh": "将来想当老师。"
+    }
+  },
+  "l28-w1161": {
+    "romaji": "shibaraku",
+    "attributes": [],
+    "explanation": "表示较短的一段时间，可译为“一会儿”“暂时”。常用于「しばらくお待ちください」等客套表达。",
+    "example": {
+      "jp": "しばらくここで待ってください。",
+      "kana": "しばらくここでまってください。",
+      "romaji": "shibaraku koko de matte kudasai.",
+      "zh": "请在这里等一会儿。"
+    }
+  },
+  "l28-w1162": {
+    "romaji": "taitei",
+    "attributes": [],
+    "explanation": "表示“大多情况下”“通常”，用于描述习惯或一般倾向。也可表示“大部分”，但需根据上下文判断。",
+    "example": {
+      "jp": "大抵の学生はバスで通学します。",
+      "kana": "たいていのがくせいはばすでつうがくします。",
+      "romaji": "taitei no gakusei wa basu de tsuugaku shimasu.",
+      "zh": "大多数学生坐公交车上学。"
+    }
+  },
+  "l28-w1163": {
+    "romaji": "soreni",
+    "attributes": [],
+    "explanation": "接续词，用于追加信息，表示“而且、再加上”。语气较随意，常用于口语和书面语中列举理由或优点。",
+    "example": {
+      "jp": "この店は安いです。それに、料理もおいしいです。",
+      "kana": "このみせはやすいです。それに、りょうりもおいしいです。",
+      "romaji": "kono mise wa yasui desu. soreni, ryōri mo oishii desu.",
+      "zh": "这家店很便宜。而且，菜也很好吃。"
+    }
+  },
+  "l28-w1164": {
+    "romaji": "sorede",
+    "attributes": [],
+    "explanation": "接续词，表示前项是后项的原因或理由，意为“因此、所以”。常用于口语，语气比“ですから”更随意。",
+    "example": {
+      "jp": "道が込んでいました。それで、遅れました。",
+      "kana": "みちがこんでいました。それで、おくれました。",
+      "romaji": "michi ga konde imashita. sorede, okuremashita.",
+      "zh": "路上很堵。因此，我迟到了。"
+    }
+  },
+  "l28-w1165": {
+    "romaji": "chotto onegai ga arun desu ga",
+    "attributes": [],
+    "explanation": "固定表达，用于礼貌地提出请求或搭话，意为“有件事想请您帮忙”。句尾的“が”使语气更委婉。",
+    "example": {
+      "jp": "すみません、ちょっとお願いがあるんですが。",
+      "kana": "すみません、ちょっとおねがいがあるんですが。",
+      "romaji": "sumimasen, chotto onegai ga arun desu ga.",
+      "zh": "不好意思，有件事想请您帮忙。"
+    }
+  },
+  "l28-w1167": {
+    "romaji": "kaiwa",
+    "attributes": [],
+    "explanation": "名词，指两人或多人之间的对话、交谈，也指外语学习中的会话练习。常与“する”搭配构成“会話する”。",
+    "example": {
+      "jp": "毎日、日本語で会話の練習をします。",
+      "kana": "まいにち、にほんごでかいわのれんしゅうをします。",
+      "romaji": "mainichi, nihongo de kaiwa no renshū o shimasu.",
+      "zh": "每天用日语做会话练习。"
+    }
+  },
+  "l28-w1347": {
+    "romaji": "-ki",
+    "attributes": [],
+    "explanation": "接尾词，接在名词后表示某种机器或设备，如“洗濯機”“掃除機”。也可作为量词用于飞机等。",
+    "example": {
+      "jp": "この工場には新しい機械がたくさんあります。",
+      "kana": "このこうじょうにはあたらしいきかいがたくさんあります。",
+      "romaji": "kono kōjō ni wa atarashii kikai ga takusan arimasu.",
+      "zh": "这个工厂里有很多新机器。"
+    }
+  },
+  "l28-w2428": {
+    "romaji": "gēmu",
+    "attributes": [],
+    "explanation": "名词，指游戏，尤指电子游戏或比赛。常与“する”搭配表示玩游戏。",
+    "example": {
+      "jp": "週末は友達とゲームをします。",
+      "kana": "しゅうまつはともだちとげーむをします。",
+      "romaji": "shūmatsu wa tomodachi to gēmu o shimasu.",
+      "zh": "周末和朋友玩游戏。"
+    }
+  },
+  "l28-w2999": {
+    "romaji": "biyōin",
+    "attributes": [],
+    "explanation": "名词，指美容院，提供理发、美发、美容等服务。注意与“病院（びょういん）”发音相近，容易混淆。",
+    "example": {
+      "jp": "明日、美容院で髪を切ります。",
+      "kana": "あした、びよういんでかみをきります。",
+      "romaji": "ashita, biyōin de kami o kirimasu.",
+      "zh": "明天在美容院剪头发。"
+    }
+  },
+  "l28-w889": {
+    "romaji": "jitsu wa",
+    "attributes": [],
+    "explanation": "表达，用于坦白或引出真实情况，意为“其实、说实话”。常用于句首，带有郑重或略带歉意的语气。",
+    "example": {
+      "jp": "実は、来週引っ越すんです。",
+      "kana": "じつは、らいしゅうひっこすんです。",
+      "romaji": "jitsu wa, raishū hikkosun desu.",
+      "zh": "其实，我下周要搬家。"
+    }
+  },
+  "l28-w976": {
+    "romaji": "ūn",
+    "attributes": [],
+    "explanation": "固定表达，表示思考或犹豫时的沉吟，相当于中文的“嗯……”。常用于口语中，说话人正在斟酌如何回答。",
+    "example": {
+      "jp": "うーん、それは難しい質問ですね。",
+      "kana": "うーん、それはむずかしいしつもんですね。",
+      "romaji": "ūn, sore wa muzukashii shitsumon desu ne.",
+      "zh": "嗯……那是个很难的问题啊。"
+    }
+  },
+  "l28-professional": {
+    "romaji": "-ka",
+    "attributes": [],
+    "explanation": "接尾词，接在名词后表示从事该领域的专家或具有某种特性的人，如“政治家”“作家”“専門家”。",
+    "example": {
+      "jp": "彼は有名な政治家です。",
+      "kana": "かれはゆうめいなせいじかです。",
+      "romaji": "kare wa yūmei na seijika desu.",
+      "zh": "他是有名的政治家。"
+    }
+  },
+  "l28-notice": {
+    "romaji": "oshirase",
+    "attributes": [],
+    "explanation": "名词，指通知、公告，用于告知事项。常出现在学校、公司或公共场合的告示中。",
+    "example": {
+      "jp": "掲示板にお知らせを貼りました。",
+      "kana": "けいじばんにおしらせをはりました。",
+      "romaji": "keijiban ni oshirase o harimashita.",
+      "zh": "在公告栏上贴了通知。"
+    }
+  },
+  "l28-participate": {
+    "romaji": "sankashimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅲ（サ变动词），意为“参加”，常与“に”搭配表示参加活动、比赛等。礼貌体形式为“参加します”。",
+    "example": {
+      "jp": "来月のマラソン大会に参加します。",
+      "kana": "らいげつのまらそんたいかいにさんかします。",
+      "romaji": "raigetsu no marason taikai ni sankashimasu.",
+      "zh": "我要参加下个月的马拉松大会。"
+    }
+  },
+  "l28-date": {
+    "romaji": "hinichi",
+    "attributes": [],
+    "explanation": "指具体的日期或日子，常用于日程安排。比「日付」更口语化，可表示“哪一天”或“日子”。",
+    "example": {
+      "jp": "会議の日にちを決めましょう。",
+      "kana": "かいぎのひにちをきめましょう。",
+      "romaji": "kaigi no hinichi o kimemashou.",
+      "zh": "我们来决定会议的日期吧。"
+    }
+  },
+  "l28-saturday": {
+    "romaji": "do",
+    "attributes": [],
+    "explanation": "「土曜日」的简称，用于口语或日程表。单独说「土」时需结合上下文，避免与“土”的其他意思混淆。",
+    "example": {
+      "jp": "土は予定がありません。",
+      "kana": "どはよていがありません。",
+      "romaji": "do wa yotei ga arimasen.",
+      "zh": "星期六没有安排。"
+    }
+  },
+  "l28-gym": {
+    "romaji": "taiikukan",
+    "attributes": [],
+    "explanation": "指室内进行体育活动的场馆，如学校体育馆或公共体育设施。常与「で」搭配表示动作场所。",
+    "example": {
+      "jp": "体育館でバスケをします。",
+      "kana": "たいいくかんでばすけをします。",
+      "romaji": "taiikukan de basuke o shimasu.",
+      "zh": "在体育馆打篮球。"
+    }
+  },
+  "l28-free": {
+    "romaji": "muryou",
+    "attributes": [],
+    "explanation": "表示不收费、免费，常用于活动、服务或商品。可作名词或な形容词修饰名词，如「無料のイベント」。",
+    "example": {
+      "jp": "このイベントは無料です。",
+      "kana": "このいべんとはむりょうです。",
+      "romaji": "kono ibento wa muryou desu.",
+      "zh": "这个活动是免费的。"
+    }
+  },
+  "l28-invite": {
+    "romaji": "sasoimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示邀请某人参加活动或去某处，对象用「を」或「に」表示。常用于朋友、同事之间，语气较随意。",
+    "example": {
+      "jp": "友達を映画に誘います。",
+      "kana": "ともだちをえいがにさそいます。",
+      "romaji": "tomodachi o eiga ni sasoimasu.",
+      "zh": "邀请朋友去看电影。"
+    }
+  },
+  "l28-event": {
+    "romaji": "ibento",
+    "attributes": [],
+    "explanation": "外来语，指有计划的活动、事件或集会，如文化活动、促销活动等。常与「開催する」「参加する」搭配。",
+    "example": {
+      "jp": "週末にイベントがあります。",
+      "kana": "しゅうまつにいべんとがあります。",
+      "romaji": "shuumatsu ni ibento ga arimasu.",
+      "zh": "周末有活动。"
+    }
+  }
+}

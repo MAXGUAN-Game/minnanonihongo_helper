@@ -1,0 +1,324 @@
+{
+  "lessonId": 27,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/27.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源32条，排除3条旧版或跨课条目，合并同形同义项并补入第二来源，最终44条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/27.json。",
+    "补入第二来源阅读短文中的14个词和ドラえもん专名；方为人的尊称，不是第14课的方法接尾词。"
+  ],
+  "words": [
+    {
+      "key": "w1089",
+      "word": "飼います",
+      "reading": "かいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "饲养"
+    },
+    {
+      "key": "w1090",
+      "word": "建てます",
+      "reading": "たてます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "建造"
+    },
+    {
+      "key": "w1091",
+      "word": "［道を］走ります",
+      "reading": "［みちを］はしります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "跑；行驶（沿路）"
+    },
+    {
+      "key": "w1093",
+      "word": "［山が］見えます",
+      "reading": "［やまが］みえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "看得见（山）"
+    },
+    {
+      "key": "w1094",
+      "word": "［音が］聞こえます",
+      "reading": "［おとが］きこえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "听得见（声音）"
+    },
+    {
+      "key": "w1095",
+      "word": "［ビルが］できます",
+      "reading": "［びるが］できます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "建成（大楼）"
+    },
+    {
+      "key": "w1096",
+      "word": "［教室を］開きます",
+      "reading": "［きょうしつを］ひらきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "开办（教室）"
+    },
+    {
+      "key": "w1097",
+      "word": "ペット",
+      "reading": "ぺっと",
+      "partOfSpeech": "名词",
+      "meaning": "宠物"
+    },
+    {
+      "key": "w1098",
+      "word": "鳥",
+      "reading": "とり",
+      "partOfSpeech": "名词",
+      "meaning": "鸟"
+    },
+    {
+      "key": "w1099",
+      "word": "声",
+      "reading": "こえ",
+      "partOfSpeech": "名词",
+      "meaning": "嗓音"
+    },
+    {
+      "key": "w1100",
+      "word": "波",
+      "reading": "なみ",
+      "partOfSpeech": "名词",
+      "meaning": "波浪"
+    },
+    {
+      "key": "w1101",
+      "word": "花火",
+      "reading": "はなび",
+      "partOfSpeech": "名词",
+      "meaning": "烟花"
+    },
+    {
+      "key": "w1105",
+      "word": "道具",
+      "reading": "どうぐ",
+      "partOfSpeech": "名词",
+      "meaning": "工具"
+    },
+    {
+      "key": "w1108",
+      "word": "クリーニング",
+      "reading": "くりーにんぐ",
+      "partOfSpeech": "名词",
+      "meaning": "干洗"
+    },
+    {
+      "key": "w1109",
+      "word": "マンション",
+      "reading": "まんしょん",
+      "partOfSpeech": "名词",
+      "meaning": "公寓"
+    },
+    {
+      "key": "w1111",
+      "word": "～教室",
+      "reading": "～きょうしつ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……教室"
+    },
+    {
+      "key": "w1112",
+      "word": "パーティールーム",
+      "reading": "ぱーてぃーるーむ",
+      "partOfSpeech": "名词",
+      "meaning": "宴会室"
+    },
+    {
+      "key": "w1113",
+      "word": "～後",
+      "reading": "～ご",
+      "partOfSpeech": "表达",
+      "meaning": "……之后"
+    },
+    {
+      "key": "w1114",
+      "word": "～しか",
+      "reading": "～しか",
+      "partOfSpeech": "表达",
+      "meaning": "只……（后接否定）"
+    },
+    {
+      "key": "w1115",
+      "word": "他の",
+      "reading": "ほかの",
+      "partOfSpeech": "表达",
+      "meaning": "其他的"
+    },
+    {
+      "key": "w1116",
+      "word": "はっきり",
+      "reading": "はっきり",
+      "partOfSpeech": "副词",
+      "meaning": "清楚地"
+    },
+    {
+      "key": "w1119",
+      "word": "本棚",
+      "reading": "ほんだな",
+      "partOfSpeech": "名词",
+      "meaning": "书架"
+    },
+    {
+      "key": "w1121",
+      "word": "いつか",
+      "reading": "いつか",
+      "partOfSpeech": "副词",
+      "meaning": "有一天"
+    },
+    {
+      "key": "w1122",
+      "word": "家",
+      "reading": "いえ",
+      "partOfSpeech": "名词",
+      "meaning": "房屋；家"
+    },
+    {
+      "key": "w1123",
+      "word": "素晴らしい",
+      "reading": "すばらしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "极好的"
+    },
+    {
+      "key": "w1296",
+      "word": "心配な",
+      "reading": "しんぱいな",
+      "partOfSpeech": "な形容词",
+      "meaning": "担心的"
+    },
+    {
+      "key": "w1379",
+      "word": "家具",
+      "reading": "かぐ",
+      "partOfSpeech": "名词",
+      "meaning": "家具"
+    },
+    {
+      "key": "w1413",
+      "word": "方",
+      "reading": "かた",
+      "partOfSpeech": "名词",
+      "meaning": "位（人的礼貌称呼）"
+    },
+    {
+      "key": "w3252",
+      "word": "キッチン",
+      "reading": "きっちん",
+      "partOfSpeech": "名词",
+      "meaning": "厨房"
+    },
+    {
+      "key": "doraemon",
+      "word": "ドラえもん",
+      "reading": "どらえもん",
+      "partOfSpeech": "专有名词",
+      "meaning": "哆啦A梦"
+    },
+    {
+      "key": "children",
+      "word": "子どもたち",
+      "reading": "こどもたち",
+      "partOfSpeech": "名词",
+      "meaning": "孩子们"
+    },
+    {
+      "key": "love",
+      "word": "大好きな",
+      "reading": "だいすきな",
+      "partOfSpeech": "な形容词",
+      "meaning": "非常喜欢的"
+    },
+    {
+      "key": "hero",
+      "word": "主人公",
+      "reading": "しゅじんこう",
+      "partOfSpeech": "名词",
+      "meaning": "主人公"
+    },
+    {
+      "key": "shape",
+      "word": "形",
+      "reading": "かたち",
+      "partOfSpeech": "名词",
+      "meaning": "形状"
+    },
+    {
+      "key": "mysterious",
+      "word": "不思議な",
+      "reading": "ふしぎな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不可思议的"
+    },
+    {
+      "key": "pocket",
+      "word": "ポケット",
+      "reading": "ぽけっと",
+      "partOfSpeech": "名词",
+      "meaning": "口袋"
+    },
+    {
+      "key": "example",
+      "word": "例えば",
+      "reading": "たとえば",
+      "partOfSpeech": "副词",
+      "meaning": "例如"
+    },
+    {
+      "key": "attach",
+      "word": "付けます",
+      "reading": "つけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "安装；附上"
+    },
+    {
+      "key": "freely",
+      "word": "自由に",
+      "reading": "じゆうに",
+      "partOfSpeech": "副词",
+      "meaning": "自由地"
+    },
+    {
+      "key": "sky",
+      "word": "空",
+      "reading": "そら",
+      "partOfSpeech": "名词",
+      "meaning": "天空"
+    },
+    {
+      "key": "fly",
+      "word": "飛びます",
+      "reading": "とびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "飞"
+    },
+    {
+      "key": "past",
+      "word": "昔",
+      "reading": "むかし",
+      "partOfSpeech": "名词",
+      "meaning": "从前"
+    },
+    {
+      "key": "self",
+      "word": "自分",
+      "reading": "じぶん",
+      "partOfSpeech": "名词",
+      "meaning": "自己"
+    },
+    {
+      "key": "future",
+      "word": "将来",
+      "reading": "しょうらい",
+      "partOfSpeech": "名词",
+      "meaning": "将来"
+    }
+  ]
+}

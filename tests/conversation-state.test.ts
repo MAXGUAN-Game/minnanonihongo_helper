@@ -39,7 +39,7 @@ createRoot(document.getElementById('root')).render(<Harness/>);
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'language-master-conversation-test-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{
     name: 'isolated-conversation-test', resolveId(id) { if (id === '/__conversation-harness.tsx') return id; },
     load(id) { if (id === '/__conversation-harness.tsx') return harness; },

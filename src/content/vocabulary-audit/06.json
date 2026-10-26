@@ -1,0 +1,277 @@
+{
+  "lessonId": 6,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/6.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 51,
+  "entries": [
+    {
+      "sourceId": "150",
+      "sourceWord": "煙草",
+      "key": "tabako"
+    },
+    {
+      "sourceId": "276",
+      "sourceWord": "食べます",
+      "key": "tabemasu"
+    },
+    {
+      "sourceId": "277",
+      "sourceWord": "飲みます",
+      "key": "nomimasu"
+    },
+    {
+      "sourceId": "278",
+      "sourceWord": "［煙草を］吸います",
+      "key": "suimasu"
+    },
+    {
+      "sourceId": "279",
+      "sourceWord": "見ます",
+      "key": "mimasu"
+    },
+    {
+      "sourceId": "280",
+      "sourceWord": "聞きます",
+      "key": "kikimasu"
+    },
+    {
+      "sourceId": "281",
+      "sourceWord": "読みます",
+      "key": "yomimasu"
+    },
+    {
+      "sourceId": "282",
+      "sourceWord": "書きます",
+      "key": "kakimasu"
+    },
+    {
+      "sourceId": "283",
+      "sourceWord": "買います",
+      "key": "kaimasu"
+    },
+    {
+      "sourceId": "284",
+      "sourceWord": "［写真を］撮ります",
+      "key": "torimasu"
+    },
+    {
+      "sourceId": "285",
+      "sourceWord": "します",
+      "key": "shimasu"
+    },
+    {
+      "sourceId": "286",
+      "sourceWord": "［友達に］会います",
+      "key": "aimasu"
+    },
+    {
+      "sourceId": "287",
+      "sourceWord": "ご飯",
+      "key": "gohan"
+    },
+    {
+      "sourceId": "288",
+      "sourceWord": "朝ご飯",
+      "key": "asagohan"
+    },
+    {
+      "sourceId": "289",
+      "sourceWord": "昼ご飯",
+      "key": "hirugohan"
+    },
+    {
+      "sourceId": "290",
+      "sourceWord": "晩ご飯",
+      "key": "bangohan"
+    },
+    {
+      "sourceId": "291",
+      "sourceWord": "パン",
+      "key": "pan"
+    },
+    {
+      "sourceId": "292",
+      "sourceWord": "卵",
+      "key": "tamago"
+    },
+    {
+      "sourceId": "293",
+      "sourceWord": "肉",
+      "key": "niku"
+    },
+    {
+      "sourceId": "297",
+      "sourceWord": "魚",
+      "key": "sakana"
+    },
+    {
+      "sourceId": "298",
+      "sourceWord": "野菜",
+      "key": "yasai"
+    },
+    {
+      "sourceId": "299",
+      "sourceWord": "果物",
+      "key": "kudamono"
+    },
+    {
+      "sourceId": "300",
+      "sourceWord": "水",
+      "key": "mizu"
+    },
+    {
+      "sourceId": "301",
+      "sourceWord": "お茶",
+      "key": "ocha"
+    },
+    {
+      "sourceId": "303",
+      "sourceWord": "牛乳",
+      "key": "gyuunyuu"
+    },
+    {
+      "sourceId": "304",
+      "sourceWord": "ミルク",
+      "key": "miruku"
+    },
+    {
+      "sourceId": "305",
+      "sourceWord": "ジュース",
+      "key": "juusu"
+    },
+    {
+      "sourceId": "306",
+      "sourceWord": "ビール",
+      "key": "biiru"
+    },
+    {
+      "sourceId": "307",
+      "sourceWord": "お酒",
+      "key": "osake"
+    },
+    {
+      "sourceId": "308",
+      "sourceWord": "ビデオ",
+      "key": "bideo"
+    },
+    {
+      "sourceId": "311",
+      "sourceWord": "手紙",
+      "key": "tegami"
+    },
+    {
+      "sourceId": "312",
+      "sourceWord": "レポート",
+      "key": "repooto"
+    },
+    {
+      "sourceId": "313",
+      "sourceWord": "写真",
+      "key": "shashin"
+    },
+    {
+      "sourceId": "314",
+      "sourceWord": "店",
+      "key": "mise"
+    },
+    {
+      "sourceId": "316",
+      "sourceWord": "庭",
+      "key": "niwa"
+    },
+    {
+      "sourceId": "317",
+      "sourceWord": "宿題",
+      "key": "shukudai"
+    },
+    {
+      "sourceId": "318",
+      "sourceWord": "テニス",
+      "key": "tenisu"
+    },
+    {
+      "sourceId": "319",
+      "sourceWord": "サッカ－",
+      "key": "sakkaa"
+    },
+    {
+      "sourceId": "320",
+      "sourceWord": "お花見",
+      "key": "ohanami"
+    },
+    {
+      "sourceId": "321",
+      "sourceWord": "何",
+      "key": "nani"
+    },
+    {
+      "sourceId": "322",
+      "sourceWord": "一緒に",
+      "key": "isshoni"
+    },
+    {
+      "sourceId": "323",
+      "sourceWord": "ちょっと",
+      "key": "chotto"
+    },
+    {
+      "sourceId": "324",
+      "sourceWord": "いつも",
+      "key": "itsumo"
+    },
+    {
+      "sourceId": "325",
+      "sourceWord": "時々",
+      "key": "tokidoki"
+    },
+    {
+      "sourceId": "326",
+      "sourceWord": "それから",
+      "key": "sorekara"
+    },
+    {
+      "sourceId": "327",
+      "sourceWord": "ええ",
+      "key": "ee"
+    },
+    {
+      "sourceId": "328",
+      "sourceWord": "いいですね。",
+      "key": "iidesune"
+    },
+    {
+      "sourceId": "329",
+      "sourceWord": "分かりました。",
+      "key": "wakarimashita"
+    },
+    {
+      "sourceId": "330",
+      "sourceWord": "何ですか。",
+      "key": "nandesuka"
+    },
+    {
+      "sourceId": "331",
+      "sourceWord": "じゃ、また明日。",
+      "key": "jamataashita"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "302",
+      "sourceWord": "紅茶",
+      "reason": "第二版交叉词表将紅茶列在第12课，第6课不重复作为新词。"
+    }
+  ],
+  "secondaryAdditions": [
+    "mekishiko",
+    "osakadepaato",
+    "tsuruya",
+    "furansuya",
+    "mainichiya"
+  ],
+  "finalCount": 55,
+  "reviewedAt": "2026-10-24"
+}

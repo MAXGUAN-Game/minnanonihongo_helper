@@ -1,0 +1,415 @@
+{
+  "lessonId": 35,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/35.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源38条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终57条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/35.json。",
+    "第二来源误写株；按出版方第二版阅读标题核对为朱（しゅ）。核对资料：https://www.3anet.co.jp/np/secure/0-0001-03-240011/0-0001-03-240011-1.pdf"
+  ],
+  "words": [
+    {
+      "key": "w1104",
+      "word": "昔",
+      "reading": "むかし",
+      "partOfSpeech": "名词",
+      "meaning": "从前"
+    },
+    {
+      "key": "w1291",
+      "word": "［病気が］治ります",
+      "reading": "［びょうきが］なおります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "康复（病）"
+    },
+    {
+      "key": "w1292",
+      "word": "［故障が］直ります",
+      "reading": "［こしょうが］なおります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "修好（故障）"
+    },
+    {
+      "key": "w1380",
+      "word": "キー",
+      "reading": "きー",
+      "partOfSpeech": "名词",
+      "meaning": "键；钥匙"
+    },
+    {
+      "key": "w1404",
+      "word": "［花が］咲きます",
+      "reading": "［はなが］さきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "开（花）"
+    },
+    {
+      "key": "w1405",
+      "word": "［色が］変わります",
+      "reading": "［いろが］かわります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "变化（颜色）"
+    },
+    {
+      "key": "w1406",
+      "word": "困ります",
+      "reading": "こまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "为难"
+    },
+    {
+      "key": "w1407",
+      "word": "［丸を］付けます",
+      "reading": "［まるを］つけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "画上（圆圈）"
+    },
+    {
+      "key": "w1411",
+      "word": "正しい",
+      "reading": "ただしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "正确的"
+    },
+    {
+      "key": "w1414",
+      "word": "向こう",
+      "reading": "むこう",
+      "partOfSpeech": "名词",
+      "meaning": "对面"
+    },
+    {
+      "key": "w1415",
+      "word": "島",
+      "reading": "しま",
+      "partOfSpeech": "名词",
+      "meaning": "岛屿"
+    },
+    {
+      "key": "w1417",
+      "word": "港",
+      "reading": "みなと",
+      "partOfSpeech": "名词",
+      "meaning": "港口"
+    },
+    {
+      "key": "w1418",
+      "word": "近所",
+      "reading": "きんじょ",
+      "partOfSpeech": "名词",
+      "meaning": "附近；邻里"
+    },
+    {
+      "key": "w1419",
+      "word": "屋上",
+      "reading": "おくじょう",
+      "partOfSpeech": "名词",
+      "meaning": "屋顶平台"
+    },
+    {
+      "key": "w1420",
+      "word": "海外",
+      "reading": "かいがい",
+      "partOfSpeech": "名词",
+      "meaning": "海外"
+    },
+    {
+      "key": "w1421",
+      "word": "山登り",
+      "reading": "やまのぼり",
+      "partOfSpeech": "名词",
+      "meaning": "登山"
+    },
+    {
+      "key": "w1423",
+      "word": "機会",
+      "reading": "きかい",
+      "partOfSpeech": "名词",
+      "meaning": "机会"
+    },
+    {
+      "key": "w1424",
+      "word": "許可",
+      "reading": "きょか",
+      "partOfSpeech": "名词",
+      "meaning": "许可"
+    },
+    {
+      "key": "w1425",
+      "word": "丸",
+      "reading": "まる",
+      "partOfSpeech": "名词",
+      "meaning": "圆圈"
+    },
+    {
+      "key": "w1428",
+      "word": "設備",
+      "reading": "せつび",
+      "partOfSpeech": "名词",
+      "meaning": "设备"
+    },
+    {
+      "key": "w1429",
+      "word": "カーテン",
+      "reading": "かーてん",
+      "partOfSpeech": "名词",
+      "meaning": "窗帘"
+    },
+    {
+      "key": "w1430",
+      "word": "ひも",
+      "reading": "ひも",
+      "partOfSpeech": "名词",
+      "meaning": "绳子"
+    },
+    {
+      "key": "w1432",
+      "word": "葉",
+      "reading": "は",
+      "partOfSpeech": "名词",
+      "meaning": "叶子"
+    },
+    {
+      "key": "w1435",
+      "word": "もっと",
+      "reading": "もっと",
+      "partOfSpeech": "副词",
+      "meaning": "更加"
+    },
+    {
+      "key": "w1437",
+      "word": "これで終わりましょう",
+      "reading": "これでおわりましょう",
+      "partOfSpeech": "固定表达",
+      "meaning": "就到这里结束吧"
+    },
+    {
+      "key": "w1438",
+      "word": "それなら",
+      "reading": "それなら",
+      "partOfSpeech": "表达",
+      "meaning": "如果那样的话"
+    },
+    {
+      "key": "w1439",
+      "word": "夜行バス",
+      "reading": "やこうばす",
+      "partOfSpeech": "名词",
+      "meaning": "夜间巴士"
+    },
+    {
+      "key": "w1440",
+      "word": "旅行社",
+      "reading": "りょこうしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "旅行社"
+    },
+    {
+      "key": "w1441",
+      "word": "詳しい",
+      "reading": "くわしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "详细的；熟悉的"
+    },
+    {
+      "key": "w1442",
+      "word": "スキー場",
+      "reading": "すきーじょう",
+      "partOfSpeech": "名词",
+      "meaning": "滑雪场"
+    },
+    {
+      "key": "w1626",
+      "word": "さあ",
+      "reading": "さあ",
+      "partOfSpeech": "表达",
+      "meaning": "这个嘛"
+    },
+    {
+      "key": "w1683",
+      "word": "歴史",
+      "reading": "れきし",
+      "partOfSpeech": "名词",
+      "meaning": "历史"
+    },
+    {
+      "key": "w1787",
+      "word": "レバー",
+      "reading": "ればー",
+      "partOfSpeech": "名词",
+      "meaning": "操作杆"
+    },
+    {
+      "key": "w3415",
+      "word": "入力",
+      "reading": "にゅうりょく",
+      "partOfSpeech": "名词",
+      "meaning": "输入"
+    },
+    {
+      "key": "w3455",
+      "word": "ふりがな",
+      "reading": "ふりがな",
+      "partOfSpeech": "名词",
+      "meaning": "注音假名"
+    },
+    {
+      "key": "w3747",
+      "word": "炊飯器",
+      "reading": "すいはんき",
+      "partOfSpeech": "名词",
+      "meaning": "电饭锅"
+    },
+    {
+      "key": "w4451",
+      "word": "クリックします",
+      "reading": "くりっくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "点击"
+    },
+    {
+      "key": "input",
+      "word": "入力します",
+      "reading": "にゅうりょくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "输入"
+    },
+    {
+      "key": "hakone",
+      "word": "箱根",
+      "reading": "はこね",
+      "partOfSpeech": "专有名词",
+      "meaning": "箱根"
+    },
+    {
+      "key": "nikko",
+      "word": "日光",
+      "reading": "にっこう",
+      "partOfSpeech": "专有名词",
+      "meaning": "日光"
+    },
+    {
+      "key": "africa",
+      "word": "アフリカ",
+      "reading": "あふりか",
+      "partOfSpeech": "专有名词",
+      "meaning": "非洲"
+    },
+    {
+      "key": "manga-museum",
+      "word": "マンガミュージアム",
+      "reading": "まんがみゅーじあむ",
+      "partOfSpeech": "名词",
+      "meaning": "漫画博物馆"
+    },
+    {
+      "key": "school",
+      "word": "みんなの学校",
+      "reading": "みんなのがっこう",
+      "partOfSpeech": "专有名词",
+      "meaning": "大家的学校（教材机构名）"
+    },
+    {
+      "key": "daikoku",
+      "word": "大黒ずし",
+      "reading": "だいこくずし",
+      "partOfSpeech": "专有名词",
+      "meaning": "大黑寿司（教材店名）"
+    },
+    {
+      "key": "imc",
+      "word": "IMCパソコン教室",
+      "reading": "あいえむしーぱそこんきょうしつ",
+      "partOfSpeech": "专有名词",
+      "meaning": "IMC电脑教室（教材机构名）"
+    },
+    {
+      "key": "mothers-taste",
+      "word": "母の味",
+      "reading": "ははのあじ",
+      "partOfSpeech": "专有名词",
+      "meaning": "妈妈的味道（教材店名）"
+    },
+    {
+      "key": "haru",
+      "word": "はる",
+      "reading": "はる",
+      "partOfSpeech": "专有名词",
+      "meaning": "Haru（教材专名）"
+    },
+    {
+      "key": "sato",
+      "word": "佐藤歯科",
+      "reading": "さとうしか",
+      "partOfSpeech": "专有名词",
+      "meaning": "佐藤牙科（教材机构名）"
+    },
+    {
+      "key": "cooking",
+      "word": "毎日クッキング",
+      "reading": "まいにちくっきんぐ",
+      "partOfSpeech": "专有名词",
+      "meaning": "每日烹饪（教材机构名）"
+    },
+    {
+      "key": "kusatsu",
+      "word": "草津",
+      "reading": "くさつ",
+      "partOfSpeech": "专有名词",
+      "meaning": "草津"
+    },
+    {
+      "key": "shiga",
+      "word": "志賀高原",
+      "reading": "しがこうげん",
+      "partOfSpeech": "专有名词",
+      "meaning": "志贺高原"
+    },
+    {
+      "key": "vermilion",
+      "word": "朱",
+      "reading": "しゅ",
+      "partOfSpeech": "名词",
+      "meaning": "朱红色"
+    },
+    {
+      "key": "associate",
+      "word": "交わります",
+      "reading": "まじわります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "交往；相交"
+    },
+    {
+      "key": "proverb",
+      "word": "ことわざ",
+      "reading": "ことわざ",
+      "partOfSpeech": "名词",
+      "meaning": "谚语"
+    },
+    {
+      "key": "relationship",
+      "word": "関係",
+      "reading": "かんけい",
+      "partOfSpeech": "名词",
+      "meaning": "关系"
+    },
+    {
+      "key": "friendly",
+      "word": "仲良くします",
+      "reading": "なかよくします",
+      "partOfSpeech": "动词表达",
+      "meaning": "友好相处"
+    },
+    {
+      "key": "necessary",
+      "word": "必要な",
+      "reading": "ひつような",
+      "partOfSpeech": "な形容词",
+      "meaning": "必要的"
+    }
+  ]
+}

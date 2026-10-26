@@ -1,0 +1,19 @@
+{
+  "lessonId": 21,
+  "model": "deepseek-flash",
+  "reviewedCount": 54,
+  "corrections": [
+    {
+      "id": "l21-w947",
+      "attributes": [],
+      "reason": "「無駄」在此为名词（浪费），词性非な形容词，不应标な形容词属性。"
+    },
+    {
+      "id": "l21-w991",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「気をつける」为惯用表达，整体表示“注意、小心”，不带宾语，属自动词。"
+    }
+  ]
+}

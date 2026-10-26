@@ -1,0 +1,512 @@
+{
+  "l27-w1089": {
+    "romaji": "kaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示饲养动物或宠物，常用「～を飼います」的形式。不能用于植物，植物用「育てます」。",
+    "example": {
+      "jp": "私は猫を飼っています。",
+      "kana": "わたしはねこをかっています。",
+      "romaji": "watashi wa neko o katte imasu.",
+      "zh": "我养着一只猫。"
+    }
+  },
+  "l27-w1090": {
+    "romaji": "tatemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示建造建筑物，如房子、大楼等。常用「～を建てます」的形式。",
+    "example": {
+      "jp": "あの会社は新しいビルを建てました。",
+      "kana": "あのかいしゃはあたらしいびるをたてました。",
+      "romaji": "ano kaisha wa atarashii biru o tatemashita.",
+      "zh": "那家公司建了一座新大楼。"
+    }
+  },
+  "l27-w1091": {
+    "romaji": "hashirimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人或交通工具在路上跑、行驶。道路用助词「を」表示经过的场所。",
+    "example": {
+      "jp": "車が道を走っています。",
+      "kana": "くるまがみちをはしっています。",
+      "romaji": "kuruma ga michi o hashitte imasu.",
+      "zh": "车正在路上行驶。"
+    }
+  },
+  "l27-w1093": {
+    "romaji": "miemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示某物自然地进入视野，看得见。与「見ます」不同，强调自然可见，不用助词「を」。",
+    "example": {
+      "jp": "窓から山が見えます。",
+      "kana": "まどからやまがみえます。",
+      "romaji": "mado kara yama ga miemasu.",
+      "zh": "从窗户能看见山。"
+    }
+  },
+  "l27-w1094": {
+    "romaji": "kikoemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示声音自然地传入耳朵，听得见。与「聞きます」不同，强调自然听到，不用助词「を」。",
+    "example": {
+      "jp": "外から音が聞こえます。",
+      "kana": "そとからおとがきこえます。",
+      "romaji": "soto kara oto ga kikoemasu.",
+      "zh": "从外面能听见声音。"
+    }
+  },
+  "l27-w1095": {
+    "romaji": "dekimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示建筑物等建成、完成。常用「～ができます」的形式。",
+    "example": {
+      "jp": "駅の前に新しいビルができました。",
+      "kana": "えきのまえにあたらしいびるができました。",
+      "romaji": "eki no mae ni atarashii biru ga dekimashita.",
+      "zh": "车站前建成了新大楼。"
+    }
+  },
+  "l27-w1096": {
+    "romaji": "hirakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示开办、开设教室、店铺等。常用「～を開きます」的形式。",
+    "example": {
+      "jp": "来月、新しい教室を開きます。",
+      "kana": "らいげつ、あたらしいきょうしつをひらきます。",
+      "romaji": "raigetsu, atarashii kyoushitsu o hirakimasu.",
+      "zh": "下个月开办新教室。"
+    }
+  },
+  "l27-w1097": {
+    "romaji": "petto",
+    "attributes": [],
+    "explanation": "指宠物，常与「飼います」搭配使用。",
+    "example": {
+      "jp": "ペットを飼うのは楽しいです。",
+      "kana": "ぺっとをかうのはたのしいです。",
+      "romaji": "petto o kau no wa tanoshii desu.",
+      "zh": "养宠物很开心。"
+    }
+  },
+  "l27-w1098": {
+    "romaji": "tori",
+    "attributes": [],
+    "explanation": "指鸟类，可泛指鸟。常与「飼います」搭配表示养鸟。",
+    "example": {
+      "jp": "庭に鳥がいます。",
+      "kana": "にわにとりがいます。",
+      "romaji": "niwa ni tori ga imasu.",
+      "zh": "院子里有鸟。"
+    }
+  },
+  "l27-w1099": {
+    "romaji": "koe",
+    "attributes": [],
+    "explanation": "指人或动物发出的声音、嗓音。常与「聞こえます」搭配。",
+    "example": {
+      "jp": "彼女の声が聞こえます。",
+      "kana": "かのじょのこえがきこえます。",
+      "romaji": "kanojo no koe ga kikoemasu.",
+      "zh": "能听见她的声音。"
+    }
+  },
+  "l27-w1100": {
+    "romaji": "nami",
+    "attributes": [],
+    "explanation": "指水面上起伏的波浪。常与「見えます」搭配。",
+    "example": {
+      "jp": "海の波が見えます。",
+      "kana": "うみのなみがみえます。",
+      "romaji": "umi no nami ga miemasu.",
+      "zh": "能看见海浪。"
+    }
+  },
+  "l27-w1101": {
+    "romaji": "hanabi",
+    "attributes": [],
+    "explanation": "指烟花、焰火。常与「見えます」搭配表示看得见烟花。",
+    "example": {
+      "jp": "夜空に花火が見えます。",
+      "kana": "よぞらにはなびがみえます。",
+      "romaji": "yozora ni hanabi ga miemasu.",
+      "zh": "夜空中能看见烟花。"
+    }
+  },
+  "l27-w1105": {
+    "romaji": "dougu",
+    "attributes": [],
+    "explanation": "指为完成某项工作或活动所使用的工具、器具，常与「使う」「揃える」等搭配。比「ツール」更具体，多指实物。",
+    "example": {
+      "jp": "料理の道具を揃えました。",
+      "kana": "りょうりのどうぐをそろえました。",
+      "romaji": "ryouri no dougu o soroemashita.",
+      "zh": "我备齐了烹饪工具。"
+    }
+  },
+  "l27-w1108": {
+    "romaji": "kuriiningu",
+    "attributes": [],
+    "explanation": "指用溶剂干洗衣物，也指干洗店。日常常与「出す」「受け取る」搭配，如「クリーニングに出す」。",
+    "example": {
+      "jp": "このスーツはクリーニングに出してください。",
+      "kana": "このすーつはくりーにんぐにだしてください。",
+      "romaji": "kono suutsu wa kuriiningu ni dashite kudasai.",
+      "zh": "这套西装请送去干洗。"
+    }
+  },
+  "l27-w1109": {
+    "romaji": "manshon",
+    "attributes": [],
+    "explanation": "指钢筋水泥结构的较高级公寓楼，通常比「アパート」规模大、设备好。租房或买房时常用。",
+    "example": {
+      "jp": "駅の近くのマンションに住んでいます。",
+      "kana": "えきのちかくのまんしょんにすんでいます。",
+      "romaji": "eki no chikaku no manshon ni sunde imasu.",
+      "zh": "我住在车站附近的公寓里。"
+    }
+  },
+  "l27-w1111": {
+    "romaji": "kyoushitsu",
+    "attributes": [],
+    "explanation": "接在学科或活动名后，表示进行该学习或活动的教室，如「料理教室」「日本語教室」。也可单独作名词使用。",
+    "example": {
+      "jp": "週に一度、料理教室に通っています。",
+      "kana": "しゅうにいちど、りょうりきょうしつにかよっています。",
+      "romaji": "shuu ni ichido, ryouri kyoushitsu ni kayotte imasu.",
+      "zh": "我每周去一次烹饪教室。"
+    }
+  },
+  "l27-w1112": {
+    "romaji": "paatii ruumu",
+    "attributes": [],
+    "explanation": "指公寓或公共设施内供聚会、宴会使用的房间，常需预约。与「パーティー会場」相比更强调楼内专用房间。",
+    "example": {
+      "jp": "パーティールームを予約しました。",
+      "kana": "ぱーてぃーるーむをよやくしました。",
+      "romaji": "paatii ruumu o yoyaku shimashita.",
+      "zh": "我预约了宴会室。"
+    }
+  },
+  "l27-w1113": {
+    "romaji": "go",
+    "attributes": [],
+    "explanation": "接在时间名词后表示“……之后”，如「食事の後」「三時後」。比「あと」更书面、正式，常见于通知和说明。",
+    "example": {
+      "jp": "会議の後で資料を配ります。",
+      "kana": "かいぎのごでしりょうをくばります。",
+      "romaji": "kaigi no go de shiryou o kubarimasu.",
+      "zh": "会议结束后分发资料。"
+    }
+  },
+  "l27-w1114": {
+    "romaji": "shika",
+    "attributes": [],
+    "explanation": "接在名词或数量词后，与否定表达呼应，表示“只有……”“仅……”。不能与肯定谓语搭配，需注意与「だけ」的区别。",
+    "example": {
+      "jp": "冷蔵庫に卵しかありません。",
+      "kana": "れいぞうこにたまごしかありません。",
+      "romaji": "reizouko ni tamago shika arimasen.",
+      "zh": "冰箱里只有鸡蛋。"
+    }
+  },
+  "l27-w1115": {
+    "romaji": "hoka no",
+    "attributes": [],
+    "explanation": "「ほか」的连体形，表示“其他的……”，后接名词。常用于列举或排除，如「他の人」「他の店」。",
+    "example": {
+      "jp": "他の店も見てから決めます。",
+      "kana": "ほかのみせもみてからきめます。",
+      "romaji": "hoka no mise mo mite kara kimemasu.",
+      "zh": "我看了其他店之后再决定。"
+    }
+  },
+  "l27-w1116": {
+    "romaji": "hakkiri",
+    "attributes": [],
+    "explanation": "表示说话、态度或知觉清楚明确，常与「言う」「見える」「する」搭配。也可用于「はっきりしない」表示不明确。",
+    "example": {
+      "jp": "もっとはっきり言ってください。",
+      "kana": "もっとはっきりいってください。",
+      "romaji": "motto hakkiri itte kudasai.",
+      "zh": "请说得更清楚一些。"
+    }
+  },
+  "l27-w1119": {
+    "romaji": "hondana",
+    "attributes": [],
+    "explanation": "指放书的架子，常与「本を並べる」「本棚から取る」等搭配。家庭和图书馆中都常用。",
+    "example": {
+      "jp": "本棚に辞書を並べました。",
+      "kana": "ほんだなにじしょをならべました。",
+      "romaji": "hondana ni jisho o narabemashita.",
+      "zh": "我把词典排列在书架上了。"
+    }
+  },
+  "l27-w1121": {
+    "romaji": "itsuka",
+    "attributes": [],
+    "explanation": "表示不确定的将来某一天，常与愿望或计划搭配，如「いつか行きたい」。也可用于过去，表示“曾经有一天”。",
+    "example": {
+      "jp": "いつか日本に住みたいです。",
+      "kana": "いつかにほんにすみたいです。",
+      "romaji": "itsuka nihon ni sumitai desu.",
+      "zh": "我希望有一天能住在日本。"
+    }
+  },
+  "l27-w1122": {
+    "romaji": "ie",
+    "attributes": [],
+    "explanation": "指房屋或家，与「うち」相比更强调建筑物本身或客观的“家”。说“我家”时常用「家（いえ）」，但口语中也常用「うち」。",
+    "example": {
+      "jp": "家の前に大きな木があります。",
+      "kana": "いえのまえにおおきなきがあります。",
+      "romaji": "ie no mae ni ookina ki ga arimasu.",
+      "zh": "房子前面有一棵大树。"
+    }
+  },
+  "l27-w1123": {
+    "romaji": "subarashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示程度很高的赞美，常用于人、事物、景色、作品等，语气比「いい」「すごい」更正式、更书面。",
+    "example": {
+      "jp": "この景色は本当に素晴らしいですね。",
+      "kana": "このけしきはほんとうにすばらしいですね。",
+      "romaji": "kono keshiki wa hontō ni subarashii desu ne.",
+      "zh": "这景色真棒啊。"
+    }
+  },
+  "l27-w1296": {
+    "romaji": "shinpai na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示对某人或某事感到不安、挂念，常用「心配な＋名词」或「心配になる」等形式。",
+    "example": {
+      "jp": "母は私のことが心配なようです。",
+      "kana": "はははわたしのことがしんぱいなようです。",
+      "romaji": "haha wa watashi no koto ga shinpai na yō desu.",
+      "zh": "母亲似乎很担心我。"
+    }
+  },
+  "l27-w1379": {
+    "romaji": "kagu",
+    "attributes": [],
+    "explanation": "指桌子、椅子、柜子等家庭或办公室用的器具，常与「置く」「買う」「運ぶ」等动词搭配。",
+    "example": {
+      "jp": "新しい部屋に家具を置きました。",
+      "kana": "あたらしいへやにかぐをおきました。",
+      "romaji": "atarashii heya ni kagu o okimashita.",
+      "zh": "在新房间里放了家具。"
+    }
+  },
+  "l27-w1413": {
+    "romaji": "kata",
+    "attributes": [],
+    "explanation": "作为对人的礼貌称呼，常接在姓名或表示身份的词后，如「田中さん方」「先生方」；也可单独用「方」表示“位、人”。",
+    "example": {
+      "jp": "あちらの方はどなたですか。",
+      "kana": "あちらのかたはどなたですか。",
+      "romaji": "achira no kata wa donata desu ka.",
+      "zh": "那位是谁？"
+    }
+  },
+  "l27-w3252": {
+    "romaji": "kitchin",
+    "attributes": [],
+    "explanation": "外来语，指烹饪用的厨房，常与「台所」同义，但「キッチン」更偏现代、西式风格。",
+    "example": {
+      "jp": "この家のキッチンは広いです。",
+      "kana": "このいえのきっちんはひろいです。",
+      "romaji": "kono ie no kitchin wa hiroi desu.",
+      "zh": "这房子的厨房很宽敞。"
+    }
+  },
+  "l27-doraemon": {
+    "romaji": "Doraemon",
+    "attributes": [],
+    "explanation": "日本著名动漫角色名，专有名词，常作为作品名或角色名使用，首字母常大写。",
+    "example": {
+      "jp": "子どもたちはドラえもんが大好きです。",
+      "kana": "こどもたちはどらえもんがだいすきです。",
+      "romaji": "kodomotachi wa Doraemon ga daisuki desu.",
+      "zh": "孩子们非常喜欢哆啦A梦。"
+    }
+  },
+  "l27-children": {
+    "romaji": "kodomotachi",
+    "attributes": [],
+    "explanation": "「子ども」加表示复数的「たち」，指多个孩子，语气亲切自然，常用于日常会话和文章中。",
+    "example": {
+      "jp": "公園で子どもたちが遊んでいます。",
+      "kana": "こうえんでこどもたちがあそんでいます。",
+      "romaji": "kōen de kodomotachi ga asonde imasu.",
+      "zh": "孩子们在公园里玩。"
+    }
+  },
+  "l27-love": {
+    "romaji": "daisuki na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示非常喜欢某人或某物，程度高于「好き」，常以「～が大好きだ」或「大好きな＋名词」的形式使用。",
+    "example": {
+      "jp": "私はこの歌が大好きな友達と一緒に歌いました。",
+      "kana": "わたしはこのうたがだいすきなともだちといっしょにうたいました。",
+      "romaji": "watashi wa kono uta ga daisuki na tomodachi to issho ni utaimashita.",
+      "zh": "我和非常喜欢这首歌的朋友一起唱了。"
+    }
+  },
+  "l27-hero": {
+    "romaji": "shujinkō",
+    "attributes": [],
+    "explanation": "指故事、电影、小说等作品中的中心人物，也可比喻某事件中的主要人物。",
+    "example": {
+      "jp": "この小説の主人公は若い女性です。",
+      "kana": "このしょうせつのしゅじんこうはわかいじょせいです。",
+      "romaji": "kono shōsetsu no shujinkō wa wakai josei desu.",
+      "zh": "这部小说的主人公是一位年轻女性。"
+    }
+  },
+  "l27-shape": {
+    "romaji": "katachi",
+    "attributes": [],
+    "explanation": "指物体的外形、轮廓，也可用于抽象事物的形式、样子，常与「～の形をしている」搭配。",
+    "example": {
+      "jp": "この石は面白い形をしていますね。",
+      "kana": "このいしはおもしろいかたちをしていますね。",
+      "romaji": "kono ishi wa omoshiroi katachi o shite imasu ne.",
+      "zh": "这块石头形状很有趣啊。"
+    }
+  },
+  "l27-mysterious": {
+    "romaji": "fushigi na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示难以理解、神秘奇妙的感觉，常用于自然现象、梦境、故事等，带有不可思议的语感。",
+    "example": {
+      "jp": "森の中で不思議な音が聞こえました。",
+      "kana": "もりのなかでふしぎなおとがきこえました。",
+      "romaji": "mori no naka de fushigi na oto ga kikoemashita.",
+      "zh": "森林里传来了奇怪的声音。"
+    }
+  },
+  "l27-pocket": {
+    "romaji": "poketto",
+    "attributes": [],
+    "explanation": "外来语，指衣服上的口袋，也可指小型的袋状容器，常与「に入れる」「から出す」搭配。",
+    "example": {
+      "jp": "ポケットに鍵を入れました。",
+      "kana": "ぽけっとにかぎをいれました。",
+      "romaji": "poketto ni kagi o iremashita.",
+      "zh": "把钥匙放进了口袋里。"
+    }
+  },
+  "l27-example": {
+    "romaji": "tatoeba",
+    "attributes": [],
+    "explanation": "用于举例，常置于句首，后接具体例子。口语和书面语均常用，比「たとえば」更正式的说法是「例えば」。",
+    "example": {
+      "jp": "例えば、りんごが好きです。",
+      "kana": "たとえば、りんごがすきです。",
+      "romaji": "tatoeba, ringo ga suki desu.",
+      "zh": "例如，我喜欢苹果。"
+    }
+  },
+  "l27-attach": {
+    "romaji": "tsukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示将某物安装、附着到另一物上，或附加、添加。常与「に」搭配表示附着点。",
+    "example": {
+      "jp": "壁に絵を付けます。",
+      "kana": "かべにえをつけます。",
+      "romaji": "kabe ni e o tsukemasu.",
+      "zh": "把画贴在墙上。"
+    }
+  },
+  "l27-freely": {
+    "romaji": "jiyuu ni",
+    "attributes": [],
+    "explanation": "形容动词「自由だ」的连用形，作副词表示不受限制地做某事。常修饰动词，如「自由に使う」。",
+    "example": {
+      "jp": "自由に使ってください。",
+      "kana": "じゆうにつかってください。",
+      "romaji": "jiyuu ni tsukatte kudasai.",
+      "zh": "请自由使用。"
+    }
+  },
+  "l27-sky": {
+    "romaji": "sora",
+    "attributes": [],
+    "explanation": "指天空，也可指天气。常用「空が青い」「空を飛ぶ」等搭配。",
+    "example": {
+      "jp": "空が青いです。",
+      "kana": "そらがあおいです。",
+      "romaji": "sora ga aoi desu.",
+      "zh": "天空是蓝色的。"
+    }
+  },
+  "l27-fly": {
+    "romaji": "tobimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示鸟、飞机等在空中飞行，或物体飞散。常与「を」搭配表示飞越的场所，如「空を飛ぶ」。",
+    "example": {
+      "jp": "鳥が空を飛びます。",
+      "kana": "とりがそらをとびます。",
+      "romaji": "tori ga sora o tobimasu.",
+      "zh": "鸟在天空飞。"
+    }
+  },
+  "l27-past": {
+    "romaji": "mukashi",
+    "attributes": [],
+    "explanation": "指过去、从前，常与「昔々」等搭配用于讲故事。也可表示「很久以前」。",
+    "example": {
+      "jp": "昔、ここに寺がありました。",
+      "kana": "むかし、ここにてらがありました。",
+      "romaji": "mukashi, koko ni tera ga arimashita.",
+      "zh": "从前，这里有一座寺庙。"
+    }
+  },
+  "l27-self": {
+    "romaji": "jibun",
+    "attributes": [],
+    "explanation": "指自己、自身，可用于第一人称或泛指。常与「で」搭配表示「自己（做）」，如「自分でする」。",
+    "example": {
+      "jp": "自分で作ります。",
+      "kana": "じぶんでつくります。",
+      "romaji": "jibun de tsukurimasu.",
+      "zh": "自己做。"
+    }
+  },
+  "l27-future": {
+    "romaji": "shourai",
+    "attributes": [],
+    "explanation": "指将来、未来，多用于个人前途或长远规划。比「未来」更侧重个人未来。",
+    "example": {
+      "jp": "将来、先生になりたいです。",
+      "kana": "しょうらい、せんせいになりたいです。",
+      "romaji": "shourai, sensei ni naritai desu.",
+      "zh": "将来想成为老师。"
+    }
+  }
+}

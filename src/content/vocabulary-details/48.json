@@ -1,0 +1,282 @@
+{
+  "l48-w1705": {
+    "romaji": "fairu",
+    "attributes": [],
+    "explanation": "指电脑中的文件或文件夹，也指纸质文件。日常多用于电子文档，常与「開く」「保存する」等搭配。",
+    "example": {
+      "jp": "このファイルを開いてください。",
+      "kana": "このふぁいるをひらいてください。",
+      "romaji": "kono fairu o hiraite kudasai.",
+      "zh": "请打开这个文件。"
+    }
+  },
+  "l48-w1850": {
+    "romaji": "oroshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示将物体从高处移到低处或放下，如「荷物を下ろす」。也可用于「車から下ろす」（让人下车）等。",
+    "example": {
+      "jp": "重い荷物を床に下ろします。",
+      "kana": "おもいにもつをゆかにおろします。",
+      "romaji": "omoi nimotsu o yuka ni oroshimasu.",
+      "zh": "把重行李放到地板上。"
+    }
+  },
+  "l48-w1851": {
+    "romaji": "todokemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把物品送到目的地或交给对方，常与「荷物」「手紙」等搭配。也可用于「届けを出す」（提交申报）。",
+    "example": {
+      "jp": "この荷物を事務所に届けます。",
+      "kana": "このにもつをじむしょにとどけます。",
+      "romaji": "kono nimotsu o jimusho ni todokemasu.",
+      "zh": "把这个行李送到办公室。"
+    }
+  },
+  "l48-w1852": {
+    "romaji": "sewa o shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示照顾人或动物，常与「～の世話をする」搭配。也可用于「お世話になります」等客套话。",
+    "example": {
+      "jp": "毎日、犬の世話をします。",
+      "kana": "まいにち、いぬのせわをします。",
+      "romaji": "mainichi, inu no sewa o shimasu.",
+      "zh": "每天照顾狗。"
+    }
+  },
+  "l48-w1853": {
+    "romaji": "iyana",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示不喜欢、讨厌的感觉，常用于口语。可修饰名词，如「嫌な天気」「嫌な予感」。",
+    "example": {
+      "jp": "嫌な天気ですね。",
+      "kana": "いやなてんきですね。",
+      "romaji": "iyana tenki desu ne.",
+      "zh": "天气真讨厌啊。"
+    }
+  },
+  "l48-w1855": {
+    "romaji": "juku",
+    "attributes": [],
+    "explanation": "指课外补习班，多用于升学辅导。常与「塾に通う」「塾に行く」等搭配。",
+    "example": {
+      "jp": "週に三回、塾に通っています。",
+      "kana": "しゅうにさんかい、じゅくにかよっています。",
+      "romaji": "shū ni sankai, juku ni kayotte imasu.",
+      "zh": "每周去三次补习班。"
+    }
+  },
+  "l48-w1857": {
+    "romaji": "seito",
+    "attributes": [],
+    "explanation": "指在学校或补习班等接受指导的学生，多用于中小学。与「学生」相比，更强调在教师指导下的学习者。",
+    "example": {
+      "jp": "この塾には百人の生徒がいます。",
+      "kana": "このじゅくにはひゃくにんのせいとがいます。",
+      "romaji": "kono juku ni wa hyakunin no seito ga imasu.",
+      "zh": "这个补习班有一百名学生。"
+    }
+  },
+  "l48-w1861": {
+    "romaji": "jiyū ni",
+    "attributes": [],
+    "explanation": "副词形式，表示不受限制地、自由地做某事。常修饰动词，如「自由に使う」「自由に話す」。",
+    "example": {
+      "jp": "この部屋は自由に使ってください。",
+      "kana": "このへやはじゆうにつかってください。",
+      "romaji": "kono heya wa jiyū ni tsukatte kudasai.",
+      "zh": "这个房间请自由使用。"
+    }
+  },
+  "l48-w1862": {
+    "romaji": "~kan",
+    "attributes": [],
+    "explanation": "接在时间名词后，表示某段时间的范围，如「三時間」「一週間」。也可接在「この」「その」等后面。",
+    "example": {
+      "jp": "会議は二時間かかりました。",
+      "kana": "かいぎはにじかんかかりました。",
+      "romaji": "kaigi wa nijikan kakarimashita.",
+      "zh": "会议花了两个小时。"
+    }
+  },
+  "l48-w1863": {
+    "romaji": "ii koto desu ne",
+    "attributes": [],
+    "explanation": "用于对对方所说的好事表示赞同或羡慕，意为“是件好事啊”。语气亲切，常用于日常会话。",
+    "example": {
+      "jp": "「来月、旅行に行きます」「いいことですね」",
+      "kana": "「らいげつ、りょこうにいきます」「いいことですね」",
+      "romaji": "raigetsu, ryokō ni ikimasu. ii koto desu ne.",
+      "zh": "“下个月去旅行。”“是件好事啊。”"
+    }
+  },
+  "l48-w1864": {
+    "romaji": "oisogashii desu ka",
+    "attributes": [],
+    "explanation": "礼貌地询问对方是否忙碌，使用敬语「お忙しい」。常用于打电话或拜访前确认对方时间。",
+    "example": {
+      "jp": "今、お忙しいですか。",
+      "kana": "いま、おいそがしいですか。",
+      "romaji": "ima, oisogashii desu ka.",
+      "zh": "您现在忙吗？"
+    }
+  },
+  "l48-w1866": {
+    "romaji": "eigyō",
+    "attributes": [],
+    "explanation": "指企业等的营业活动或销售业务，也指营业部门。常与「営業時間」「営業部」等搭配。",
+    "example": {
+      "jp": "この店の営業時間は九時から八時までです。",
+      "kana": "このみせのえいぎょうじかんはくじからはちじまでです。",
+      "romaji": "kono mise no eigyō jikan wa kuji kara hachiji made desu.",
+      "zh": "这家店的营业时间是九点到八点。"
+    }
+  },
+  "l48-w1867": {
+    "romaji": "sore made ni",
+    "attributes": [],
+    "explanation": "表示“到那个时间点之前”的期限，后接在期限前要完成的动作。常用于计划、安排等语境，强调截止时间。",
+    "example": {
+      "jp": "会議は3時からです。それまでに資料を準備してください。",
+      "kana": "かいぎはさんじからです。それまでにしりょうをじゅんびしてください。",
+      "romaji": "kaigi wa sanji kara desu. sore made ni shiryou o junbi shite kudasai.",
+      "zh": "会议从3点开始。请在那之前准备好资料。"
+    }
+  },
+  "l48-w1868": {
+    "romaji": "kamaimasen",
+    "attributes": [],
+    "explanation": "礼貌地表示“不介意、没关系”，常用于答应请求或表示许可。比“いいですよ”更正式一些。",
+    "example": {
+      "jp": "窓を開けても構いませんか。",
+      "kana": "まどをあけてもかまいませんか。",
+      "romaji": "mado o akete mo kamaimasen ka.",
+      "zh": "可以开窗吗？"
+    }
+  },
+  "l48-w1869": {
+    "romaji": "tanoshimimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示享受、以……为乐，常与“旅行”“パーティー”等名词搭配。也可用于“楽しみにしています”表示期待。",
+    "example": {
+      "jp": "週末は家族と旅行を楽しみます。",
+      "kana": "しゅうまつはかぞくとりょこうをたのしみます。",
+      "romaji": "shuumatsu wa kazoku to ryokou o tanoshimimasu.",
+      "zh": "周末和家人享受旅行。"
+    }
+  },
+  "l48-w3527": {
+    "romaji": "rokuon",
+    "attributes": [],
+    "explanation": "指用设备记录声音的行为或结果，常与“する”构成动词“録音する”。可用于课堂、会议、音乐等场景。",
+    "example": {
+      "jp": "授業の録音を聞いて復習します。",
+      "kana": "じゅぎょうのろくおんをきいてふくしゅうします。",
+      "romaji": "jugyou no rokuon o kiite fukushuu shimasu.",
+      "zh": "听课堂录音来复习。"
+    }
+  },
+  "l48-unload": {
+    "romaji": "oroshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示让乘客下车，或把货物从车上卸下。常用于交通场景，如“タクシーを降ろす”是让出租车停下让人下车。",
+    "example": {
+      "jp": "次の交差点で降ろしてください。",
+      "kana": "つぎのこうさてんでおろしてください。",
+      "romaji": "tsugi no kousaten de oroshite kudasai.",
+      "zh": "请在下个十字路口让我下车。"
+    }
+  },
+  "l48-record": {
+    "romaji": "rokuon shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "“録音する”的礼貌形式，表示录音这一动作。可接“声”“音楽”“会議”等宾语。",
+    "example": {
+      "jp": "インタビューの声を録音します。",
+      "kana": "インタビューのこえをろくおんします。",
+      "romaji": "intabyuu no koe o rokuon shimasu.",
+      "zh": "录下采访的声音。"
+    }
+  },
+  "l48-parent": {
+    "romaji": "oya",
+    "attributes": [],
+    "explanation": "指父母或家长，可单用或组成“親子”“親元”等词。在家庭、学校语境中常指监护人。",
+    "example": {
+      "jp": "親と相談して決めます。",
+      "kana": "おやとそうだんしてきめます。",
+      "romaji": "oya to soudan shite kimemasu.",
+      "zh": "和父母商量后决定。"
+    }
+  },
+  "l48-elementary": {
+    "romaji": "shougakusei",
+    "attributes": [],
+    "explanation": "指小学阶段的学生，通常为6至12岁。常用于学校、教育相关话题。",
+    "example": {
+      "jp": "弟は小学生です。",
+      "kana": "おとうとはしょうがくせいです。",
+      "romaji": "otouto wa shougakusei desu.",
+      "zh": "弟弟是小学生。"
+    }
+  },
+  "l48-percent": {
+    "romaji": "paasento",
+    "attributes": [],
+    "explanation": "表示百分比，接在数字后使用，如“50パーセント”。口语中也可省略“パーセント”说“50パー”。",
+    "example": {
+      "jp": "このクラスの60パーセントが賛成しました。",
+      "kana": "このクラスのろくじゅっぱーせんとがさんせいしました。",
+      "romaji": "kono kurasu no rokujuppaasento ga sansei shimashita.",
+      "zh": "这个班有60%的人赞成。"
+    }
+  },
+  "l48-next": {
+    "romaji": "sono tsugi",
+    "attributes": [],
+    "explanation": "表示在某个顺序或时间点之后紧接着的“下一个”，常用于列举或说明步骤。",
+    "example": {
+      "jp": "まず受付を済ませ、その次に会場へ入ります。",
+      "kana": "まずうけつけをすませ、そのつぎにかいじょうへはいります。",
+      "romaji": "mazu uketsuke o sumase, sono tsugi ni kaijou e hairimasu.",
+      "zh": "先办完接待手续，接下来进入会场。"
+    }
+  },
+  "l48-calligraphy": {
+    "romaji": "shuuji",
+    "attributes": [],
+    "explanation": "指练习写毛笔字或硬笔字，尤指学校中的书法课程。与“書道”相近，但“習字”更强调练习行为。",
+    "example": {
+      "jp": "習字の時間に筆で字を書きます。",
+      "kana": "しゅうじのじかんにふででじをかきます。",
+      "romaji": "shuuji no jikan ni fude de ji o kakimasu.",
+      "zh": "书法课上用毛笔写字。"
+    }
+  },
+  "l48-normal": {
+    "romaji": "futsuu no",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示“普通的、一般的”，修饰名词时用“普通の”。常用于与特殊、高级相对比的语境。",
+    "example": {
+      "jp": "普通の電車より急行のほうが速いです。",
+      "kana": "ふつうのでんしゃよりきゅうこうのほうがはやいです。",
+      "romaji": "futsuu no densha yori kyuukou no hou ga hayai desu.",
+      "zh": "快车比普通电车快。"
+    }
+  }
+}

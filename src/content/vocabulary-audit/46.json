@@ -1,0 +1,169 @@
+{
+  "lessonId": 46,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/46.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 29,
+  "entries": [
+    {
+      "sourceId": "1257",
+      "sourceWord": "［に］入学します",
+      "key": "w1257"
+    },
+    {
+      "sourceId": "1258",
+      "sourceWord": "［を］卒業します",
+      "key": "w1258"
+    },
+    {
+      "sourceId": "1550",
+      "sourceWord": "［パンが］焼けます",
+      "key": "w1550"
+    },
+    {
+      "sourceId": "1551",
+      "sourceWord": "［肉が］焼けます",
+      "key": "w1551"
+    },
+    {
+      "sourceId": "1668",
+      "sourceWord": "申し訳ありません。",
+      "key": "w1668"
+    },
+    {
+      "sourceId": "1798",
+      "sourceWord": "焼きます",
+      "key": "w1798"
+    },
+    {
+      "sourceId": "1799",
+      "sourceWord": "渡します",
+      "key": "w1799"
+    },
+    {
+      "sourceId": "1800",
+      "sourceWord": "帰って来ます",
+      "key": "w1800"
+    },
+    {
+      "sourceId": "1801",
+      "sourceWord": "［バスが］出ます",
+      "key": "w1801"
+    },
+    {
+      "sourceId": "1802",
+      "sourceWord": "留守",
+      "key": "w1802"
+    },
+    {
+      "sourceId": "1803",
+      "sourceWord": "宅配便",
+      "key": "w1803"
+    },
+    {
+      "sourceId": "1804",
+      "sourceWord": "原因",
+      "key": "w1804"
+    },
+    {
+      "sourceId": "1809",
+      "sourceWord": "こちら",
+      "key": "w1809"
+    },
+    {
+      "sourceId": "1810",
+      "sourceWord": "～の所",
+      "key": "w1810"
+    },
+    {
+      "sourceId": "1811",
+      "sourceWord": "ちょうど",
+      "key": "w1811"
+    },
+    {
+      "sourceId": "1812",
+      "sourceWord": "たった今",
+      "key": "w1812"
+    },
+    {
+      "sourceId": "1813",
+      "sourceWord": "今いいでしょうか。",
+      "key": "w1813"
+    },
+    {
+      "sourceId": "1814",
+      "sourceWord": "ガスサービスセンター",
+      "key": "w1814"
+    },
+    {
+      "sourceId": "1815",
+      "sourceWord": "ガスレンジ",
+      "key": "w1815"
+    },
+    {
+      "sourceId": "1816",
+      "sourceWord": "具合",
+      "key": "w1816"
+    },
+    {
+      "sourceId": "1817",
+      "sourceWord": "どちらさまでしょうか。",
+      "key": "w1817"
+    },
+    {
+      "sourceId": "1818",
+      "sourceWord": "向かいます",
+      "key": "w1818"
+    },
+    {
+      "sourceId": "1819",
+      "sourceWord": "お待たせしました。",
+      "key": "w1819"
+    },
+    {
+      "sourceId": "1915",
+      "sourceWord": "半年",
+      "key": "w1915"
+    },
+    {
+      "sourceId": "3395",
+      "sourceWord": "届きます",
+      "key": "w3395"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1805",
+      "sourceWord": "注射",
+      "reason": "旧版医疗主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1806",
+      "sourceWord": "食欲",
+      "reason": "旧版医疗主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1807",
+      "sourceWord": "パンフレット",
+      "reason": "第二版已在第43课列出。"
+    },
+    {
+      "sourceId": "1808",
+      "sourceWord": "ステレオ",
+      "reason": "旧版音响设备词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "lucky",
+    "floor",
+    "fall",
+    "bell",
+    "ring",
+    "hastily",
+    "in-order",
+    "event"
+  ],
+  "finalCount": 33
+}

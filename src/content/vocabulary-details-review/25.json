@@ -1,0 +1,14 @@
+{
+  "lessonId": 25,
+  "model": "deepseek-flash",
+  "reviewedCount": 18,
+  "corrections": [
+    {
+      "id": "l25-w1032",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「年を取る」是固定表达，表示年龄增长这一自发变化，整体为自动词，不能因「を」误判为他动词。"
+    }
+  ]
+}

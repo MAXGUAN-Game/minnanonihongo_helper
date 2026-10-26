@@ -1,0 +1,257 @@
+{
+  "lessonId": 33,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/33.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 46,
+  "entries": [
+    {
+      "sourceId": "1039",
+      "sourceWord": "いくら～ても",
+      "key": "w1039"
+    },
+    {
+      "sourceId": "1246",
+      "sourceWord": "～ほど",
+      "key": "w1246"
+    },
+    {
+      "sourceId": "1253",
+      "sourceWord": "［仕事が］始まります",
+      "key": "w1253"
+    },
+    {
+      "sourceId": "1259",
+      "sourceWord": "［に］出席します",
+      "key": "w1259"
+    },
+    {
+      "sourceId": "1286",
+      "sourceWord": "戻ります",
+      "key": "w1286"
+    },
+    {
+      "sourceId": "1331",
+      "sourceWord": "逃げます",
+      "key": "w1331"
+    },
+    {
+      "sourceId": "1332",
+      "sourceWord": "騒ぎます",
+      "key": "w1332"
+    },
+    {
+      "sourceId": "1333",
+      "sourceWord": "諦めます",
+      "key": "w1333"
+    },
+    {
+      "sourceId": "1334",
+      "sourceWord": "投げます",
+      "key": "w1334"
+    },
+    {
+      "sourceId": "1335",
+      "sourceWord": "守ります",
+      "key": "w1335"
+    },
+    {
+      "sourceId": "1338",
+      "sourceWord": "伝えます",
+      "key": "w1338"
+    },
+    {
+      "sourceId": "1339",
+      "sourceWord": "［車に］注意します",
+      "key": "w1339"
+    },
+    {
+      "sourceId": "1340",
+      "sourceWord": "［席を］外します",
+      "key": "w1340"
+    },
+    {
+      "sourceId": "1341",
+      "sourceWord": "だめな",
+      "key": "w1341"
+    },
+    {
+      "sourceId": "1342",
+      "sourceWord": "席",
+      "key": "w1342"
+    },
+    {
+      "sourceId": "1344",
+      "sourceWord": "マーク",
+      "key": "w1344"
+    },
+    {
+      "sourceId": "1345",
+      "sourceWord": "ボール",
+      "key": "w1345"
+    },
+    {
+      "sourceId": "1348",
+      "sourceWord": "規則",
+      "key": "w1348"
+    },
+    {
+      "sourceId": "1349",
+      "sourceWord": "使用禁止",
+      "key": "w1349"
+    },
+    {
+      "sourceId": "1350",
+      "sourceWord": "立入禁止",
+      "key": "w1350"
+    },
+    {
+      "sourceId": "1351",
+      "sourceWord": "入口",
+      "key": "w1351"
+    },
+    {
+      "sourceId": "1352",
+      "sourceWord": "出口",
+      "key": "w1352"
+    },
+    {
+      "sourceId": "1353",
+      "sourceWord": "非常口",
+      "key": "w1353"
+    },
+    {
+      "sourceId": "1354",
+      "sourceWord": "無料",
+      "key": "w1354"
+    },
+    {
+      "sourceId": "1357",
+      "sourceWord": "使用中",
+      "key": "w1357"
+    },
+    {
+      "sourceId": "1358",
+      "sourceWord": "～中",
+      "key": "w1358"
+    },
+    {
+      "sourceId": "1359",
+      "sourceWord": "どういう～",
+      "key": "w1359"
+    },
+    {
+      "sourceId": "1360",
+      "sourceWord": "あと～",
+      "key": "w1360"
+    },
+    {
+      "sourceId": "1361",
+      "sourceWord": "駐車違反",
+      "key": "w1361"
+    },
+    {
+      "sourceId": "1364",
+      "sourceWord": "警察",
+      "key": "w1364"
+    },
+    {
+      "sourceId": "1365",
+      "sourceWord": "罰金",
+      "key": "w1365"
+    },
+    {
+      "sourceId": "2727",
+      "sourceWord": "締め切り",
+      "key": "w2727"
+    },
+    {
+      "sourceId": "3079",
+      "sourceWord": "もう～ない",
+      "key": "w3079"
+    },
+    {
+      "sourceId": "3426",
+      "sourceWord": "飲み放題",
+      "key": "w3426"
+    },
+    {
+      "sourceId": "3514",
+      "sourceWord": "リサイクル",
+      "key": "w3514"
+    },
+    {
+      "sourceId": "3537",
+      "sourceWord": "割引",
+      "key": "w3537"
+    },
+    {
+      "sourceId": "5643",
+      "sourceWord": "徐行",
+      "key": "w5643"
+    },
+    {
+      "sourceId": "5644",
+      "sourceWord": "募集中",
+      "key": "w5644"
+    },
+    {
+      "sourceId": "5649",
+      "sourceWord": "［電話が］あります",
+      "key": "w5649"
+    },
+    {
+      "sourceId": "935",
+      "sourceWord": "同じ",
+      "key": "w935"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1343",
+      "sourceWord": "ファイト",
+      "reason": "旧版体育口号，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1346",
+      "sourceWord": "洗濯機",
+      "reason": "旧版器具词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1355",
+      "sourceWord": "本日休業",
+      "reason": "旧版标示，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1356",
+      "sourceWord": "営業中",
+      "reason": "旧版标示，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1362",
+      "sourceWord": "そりゃあ",
+      "reason": "旧版会话应答，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1363",
+      "sourceWord": "～以内",
+      "reason": "旧版罚款期限表达，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "recycle",
+    "danger",
+    "earthquake",
+    "occur",
+    "help-each-other",
+    "originally",
+    "sad",
+    "more",
+    "greeting",
+    "other-person",
+    "feeling"
+  ],
+  "finalCount": 51
+}

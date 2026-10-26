@@ -1,0 +1,410 @@
+{
+  "l50-w1018": {
+    "romaji": "iremasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「いれます」是「いれる」的礼貌体，表示把某物放入容器或冲泡饮品。搭配「コーヒーをいれます」时特指冲泡咖啡，也可用于泡茶。注意与「入れる」同源，但此处为固定搭配。",
+    "example": {
+      "jp": "毎朝コーヒーをいれます。",
+      "kana": "まいあさこーひーをいれます。",
+      "romaji": "maiasa koohii o iremasu.",
+      "zh": "每天早上泡咖啡。"
+    }
+  },
+  "l50-w1436": {
+    "romaji": "hajime ni",
+    "attributes": [],
+    "explanation": "「初めに」是副词性短语，用于叙述顺序时表示“首先、起初”，常用于说明步骤或开场。与「最初に」意思相近，但更书面一些。",
+    "example": {
+      "jp": "初めに自己紹介をします。",
+      "kana": "はじめにじこしょうかいをします。",
+      "romaji": "hajime ni jikoshoukai o shimasu.",
+      "zh": "首先做自我介绍。"
+    }
+  },
+  "l50-w1776": {
+    "romaji": "youi shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「用意します」是「用意する」的礼貌体，表示事先准备好所需物品或条件。常与「を」搭配，如「資料を用意します」。与「準備します」近义，但「用意」更侧重具体物品的准备。",
+    "example": {
+      "jp": "会議の資料を用意します。",
+      "kana": "かいぎのしりょうをよういします。",
+      "romaji": "kaigi no shiryou o youi shimasu.",
+      "zh": "准备会议资料。"
+    }
+  },
+  "l50-w1856": {
+    "romaji": "sukejuuru",
+    "attributes": [],
+    "explanation": "「スケジュール」是名词，指日程安排或时间表，常用于工作、旅行等场合。可搭配「を立てる」「を組む」表示制定日程。注意与「予定」区别：前者更整体性，后者更具体事项。",
+    "example": {
+      "jp": "来週のスケジュールを確認します。",
+      "kana": "らいしゅうのすけじゅーるをかくにんします。",
+      "romaji": "raishuu no sukejuuru o kakunin shimasu.",
+      "zh": "确认下周的日程。"
+    }
+  },
+  "l50-w1897": {
+    "romaji": "mairimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「参ります」是「行く」「来る」的谦让语，用于说话人自己或己方，向对方表示谦逊。不能用于尊长或对方的行为。常出现在商务或正式场合。",
+    "example": {
+      "jp": "明日、御社に参ります。",
+      "kana": "あした、おんしゃにまいります。",
+      "romaji": "ashita, onsha ni mairimasu.",
+      "zh": "明天我去贵公司拜访。"
+    }
+  },
+  "l50-w1898": {
+    "romaji": "orimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「おります」是「いる」的谦让语，表示说话人自己或己方“在、待着”。用于向对方谦逊地说明自己的所在或状态，如「東京におります」。",
+    "example": {
+      "jp": "父は今、家におります。",
+      "kana": "ちちはいま、いえにおります。",
+      "romaji": "chichi wa ima, ie ni orimasu.",
+      "zh": "父亲现在在家。"
+    }
+  },
+  "l50-w1899": {
+    "romaji": "itadakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「頂きます」是「食べる」「飲む」「もらう」的谦让语，用于说话人自己或己方接受物品或进食。也可单独用于饭前说「いただきます」表示开动。注意不能用于对方的行为。",
+    "example": {
+      "jp": "お茶を頂きます。",
+      "kana": "おちゃをいただきます。",
+      "romaji": "ocha o itadakimasu.",
+      "zh": "我喝茶。"
+    }
+  },
+  "l50-w1900": {
+    "romaji": "moushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「申します」是「言う」的谦让语，用于说话人自己或己方，表示“说、叫作”。常用于自我介绍「～と申します」。不能用于尊长或对方。",
+    "example": {
+      "jp": "田中と申します。",
+      "kana": "たなかともうします。",
+      "romaji": "tanaka to moushimasu.",
+      "zh": "我叫田中。"
+    }
+  },
+  "l50-w1901": {
+    "romaji": "itashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「致します」是「する」的谦让语，用于说话人自己或己方的行为，表示谦逊地“做”。常接在动作名词后，如「案内致します」。不能用于对方的行为。",
+    "example": {
+      "jp": "私がご案内致します。",
+      "kana": "わたしがごあんないいたします。",
+      "romaji": "watashi ga goannai itashimasu.",
+      "zh": "我来为您带路。"
+    }
+  },
+  "l50-w1902": {
+    "romaji": "haiken shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「拝見します」是「見る」的谦让语，用于说话人自己或己方看某物，表示谦逊。常用于看资料、作品等，如「お手紙を拝見しました」。不能用于对方看的行为。",
+    "example": {
+      "jp": "お写真を拝見します。",
+      "kana": "おしゃしんをはいけんします。",
+      "romaji": "oshashin o haiken shimasu.",
+      "zh": "我拜看您的照片。"
+    }
+  },
+  "l50-w1903": {
+    "romaji": "zonjimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「存じます」是「知る」「思う」的谦让语，用于说话人自己或己方表示“知道、认为”。常以「～と存じます」形式表达谦逊的想法。不能用于对方知道。",
+    "example": {
+      "jp": "その件は存じます。",
+      "kana": "そのけんはぞんじます。",
+      "romaji": "sono ken wa zonjimasu.",
+      "zh": "那件事我知道。"
+    }
+  },
+  "l50-w1904": {
+    "romaji": "ome ni kakarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「お目にかかります」是「会う」的谦让语，用于说话人自己或己方“拜见、见到”对方，表示谦逊。常用于正式场合或书信。不能用于对方见自己。",
+    "example": {
+      "jp": "いつかお目にかかります。",
+      "kana": "いつかおめにかかります。",
+      "romaji": "itsuka ome ni kakarimasu.",
+      "zh": "改天拜见您。"
+    }
+  },
+  "l50-w1907": {
+    "romaji": "watakushi",
+    "attributes": [],
+    "explanation": "「私」的郑重说法，用于正式场合或对上级、客户等表示谦恭。日常口语中多用「わたし」或「ぼく」。",
+    "example": {
+      "jp": "私が担当いたします。",
+      "kana": "わたくしがたんとういたします。",
+      "romaji": "watakushi ga tantou itashimasu.",
+      "zh": "由我来负责。"
+    }
+  },
+  "l50-w1908": {
+    "romaji": "gaido",
+    "attributes": [],
+    "explanation": "指带领游客参观、讲解的导游人员，也可指旅游指南书。常与「ツアーガイド」「観光ガイド」搭配。",
+    "example": {
+      "jp": "ガイドが町を案内してくれました。",
+      "kana": "がいどがまちをあんないしてくれました。",
+      "romaji": "gaido ga machi o annai shite kuremashita.",
+      "zh": "导游带我们游览了城镇。"
+    }
+  },
+  "l50-w1912": {
+    "romaji": "saraishuu",
+    "attributes": [],
+    "explanation": "表示以本周为基准的下一周之后的那一周，即下下周。常用于安排日程，比「再来週」更正式。",
+    "example": {
+      "jp": "再来週に会議があります。",
+      "kana": "さらいしゅうにかいぎがあります。",
+      "romaji": "saraishuu ni kaigi ga arimasu.",
+      "zh": "下下周有会议。"
+    }
+  },
+  "l50-w1913": {
+    "romaji": "saraigetsu",
+    "attributes": [],
+    "explanation": "表示下个月之后的那一个月，即下下个月。用于较远未来的计划，口语中也可说「さらいげつ」。",
+    "example": {
+      "jp": "再来月に引っ越す予定です。",
+      "kana": "さらいげつにひっこすよていです。",
+      "romaji": "saraigetsu ni hikkosu yotei desu.",
+      "zh": "计划下下个月搬家。"
+    }
+  },
+  "l50-w1914": {
+    "romaji": "sarainen",
+    "attributes": [],
+    "explanation": "表示明年之后的那一年，即后年。常用于长期计划或展望。",
+    "example": {
+      "jp": "再来年に大学を卒業します。",
+      "kana": "さらいねんにだいがくをそつぎょうします。",
+      "romaji": "sarainen ni daigaku o sotsugyou shimasu.",
+      "zh": "后年大学毕业。"
+    }
+  },
+  "l50-w1919": {
+    "romaji": "kinchou shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因面对重要场合或人物而感到紧张、兴奋。常用「緊張して～」的形式描述状态。",
+    "example": {
+      "jp": "面接の前はいつも緊張します。",
+      "kana": "めんせつのまえはいつもきんちょうします。",
+      "romaji": "mensetsu no mae wa itsumo kinchou shimasu.",
+      "zh": "面试前我总是很紧张。"
+    }
+  },
+  "l50-w1922": {
+    "romaji": "shoukin",
+    "attributes": [],
+    "explanation": "指作为奖励或报酬支付的金钱，如比赛奖金、悬赏金等。与「賞与」不同，多指一次性奖励。",
+    "example": {
+      "jp": "彼はコンテストで賞金をもらいました。",
+      "kana": "かれはこんてすとでしょうきんをもらいました。",
+      "romaji": "kare wa kontesuto de shoukin o moraimashita.",
+      "zh": "他在比赛中获得了奖金。"
+    }
+  },
+  "l50-w1924": {
+    "romaji": "kirin",
+    "attributes": [],
+    "explanation": "指一种有长脖子的非洲食草动物，汉语称“长颈鹿”。日语中常用来比喻脖子长的人。",
+    "example": {
+      "jp": "動物園できりんを見ました。",
+      "kana": "どうぶつえんでりんをみました。",
+      "romaji": "doubutsuen de kirin o mimashita.",
+      "zh": "在动物园看到了长颈鹿。"
+    }
+  },
+  "l50-w1926": {
+    "romaji": "koro",
+    "attributes": [],
+    "explanation": "表示大致的时间点或时期，常接在「～の」「～た」等之后，如「子供のころ」「学生のころ」。与「とき」相比更口语化且时间范围较模糊。",
+    "example": {
+      "jp": "子供のころ、よく川で遊びました。",
+      "kana": "こどものころ、よくかわであそびました。",
+      "romaji": "kodomo no koro, yoku kawa de asobimashita.",
+      "zh": "小时候经常在河里玩。"
+    }
+  },
+  "l50-w1927": {
+    "romaji": "[yume ga] kanaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示梦想、愿望等经过努力后得以实现。主语通常是「夢」「願い」等，用「が」标记。",
+    "example": {
+      "jp": "長年の夢がついに叶いました。",
+      "kana": "ながねんのゆめがついかにないました。",
+      "romaji": "naganen no yume ga tsui ni kanaimashita.",
+      "zh": "多年的梦想终于实现了。"
+    }
+  },
+  "l50-w1930": {
+    "romaji": "kokoro kara",
+    "attributes": [],
+    "explanation": "表示发自内心的、真诚的，常与「感謝します」「ありがとう」等搭配，语气较正式。",
+    "example": {
+      "jp": "心から感謝いたします。",
+      "kana": "こころからかんしゃいたします。",
+      "romaji": "kokoro kara kansha itashimasu.",
+      "zh": "衷心感谢。"
+    }
+  },
+  "l50-w1931": {
+    "romaji": "kansha shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示对受到的恩惠、帮助等表示感谢，常用于正式场合或书面语。可搭配「心から」「深く」等副词。",
+    "example": {
+      "jp": "皆さんの支援に感謝します。",
+      "kana": "みなさんのしえんにかんしゃします。",
+      "romaji": "minasan no shien ni kansha shimasu.",
+      "zh": "感谢大家的支持。"
+    }
+  },
+  "l50-w3204": {
+    "romaji": "ouen",
+    "attributes": [],
+    "explanation": "名词，指为他人加油、声援或支持。常用于体育比赛、考试等场合，也可用于一般性的支持。",
+    "example": {
+      "jp": "友達の試合を応援に行きます。",
+      "kana": "ともだちのしあいをおうえんにいきます。",
+      "romaji": "tomodachi no shiai o ouen ni ikimasu.",
+      "zh": "我去为朋友的比赛加油。"
+    }
+  },
+  "l50-w3489": {
+    "romaji": "meeru adoresu",
+    "attributes": [],
+    "explanation": "名词，指电子邮件地址。日常会话和书面语中均常用，常与「教える」「送る」等动词搭配。",
+    "example": {
+      "jp": "メールアドレスを教えてください。",
+      "kana": "めーるあどれすをおしえてください。",
+      "romaji": "meeru adoresu o oshiete kudasai.",
+      "zh": "请告诉我你的电子邮箱地址。"
+    }
+  },
+  "l50-visit": {
+    "romaji": "ukagaimasu",
+    "attributes": [
+      "自他两用"
+    ],
+    "explanation": "动词「伺う」的礼貌形，是「行く」「来る」「聞く」的谦让语。用于拜访长辈、上级或询问对方意见时，显得恭敬。",
+    "example": {
+      "jp": "明日、お宅に伺います。",
+      "kana": "あした、おたくにうかがいます。",
+      "romaji": "ashita, otaku ni ukagaimasu.",
+      "zh": "明天我去您家拜访。"
+    }
+  },
+  "l50-support": {
+    "romaji": "ouen shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词「応援する」的礼貌形，表示支持、声援某人或某活动。常与「を」搭配，如「チームを応援します」。",
+    "example": {
+      "jp": "私はいつも地元のチームを応援します。",
+      "kana": "わたしはいつもじもとのちーむをおうえんします。",
+      "romaji": "watashi wa itsumo jimoto no chiimu o ouen shimasu.",
+      "zh": "我总是支持当地的球队。"
+    }
+  },
+  "l50-museum": {
+    "romaji": "Edo Tōkyō Hakubutsukan",
+    "attributes": [],
+    "explanation": "专有名词，指位于东京的江户东京博物馆，展示江户时代至现代东京的历史文化。",
+    "example": {
+      "jp": "江戸東京博物館で歴史を学びました。",
+      "kana": "えどとうきょうはくぶつかんでれきしをまなびました。",
+      "romaji": "Edo Tōkyō Hakubutsukan de rekishi o manabimashita.",
+      "zh": "我在江户东京博物馆学习了历史。"
+    }
+  },
+  "l50-munich": {
+    "romaji": "Myunhen",
+    "attributes": [],
+    "explanation": "专有名词，德国南部城市慕尼黑。日语中常用片假名表示外国地名。",
+    "example": {
+      "jp": "ミュンヘンはビールで有名です。",
+      "kana": "みゅんへんはびーるでゆうめいです。",
+      "romaji": "Myunhen wa biiru de yuumei desu.",
+      "zh": "慕尼黑以啤酒闻名。"
+    }
+  },
+  "l50-thanks": {
+    "romaji": "orei",
+    "attributes": [],
+    "explanation": "名词，表示道谢或谢礼。常用「お礼を言う」「お礼をする」等搭配，也可指赠送的谢礼。",
+    "example": {
+      "jp": "先生にお礼の手紙を書きました。",
+      "kana": "せんせいにおれいのてがみをかきました。",
+      "romaji": "sensei ni orei no tegami o kakimashita.",
+      "zh": "我给老师写了感谢信。"
+    }
+  },
+  "l50-well": {
+    "romaji": "o-genki de irasshaimasu ka",
+    "attributes": [],
+    "explanation": "固定表达，是「元気ですか」的尊敬语，用于问候长辈或上级的身体状况。",
+    "example": {
+      "jp": "先生、お元気でいらっしゃいますか。",
+      "kana": "せんせい、おげんきでいらっしゃいますか。",
+      "romaji": "sensei, o-genki de irasshaimasu ka.",
+      "zh": "老师，您身体好吗？"
+    }
+  },
+  "l50-trouble": {
+    "romaji": "meiwaku o kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词表达，意为给人添麻烦。常用「人に迷惑をかける」的形式，表示给他人带来困扰。",
+    "example": {
+      "jp": "人に迷惑をかけないようにしましょう。",
+      "kana": "ひとにめいわくをかけないようにしましょう。",
+      "romaji": "hito ni meiwaku o kakenai you ni shimashou.",
+      "zh": "注意不要给别人添麻烦。"
+    }
+  },
+  "l50-apply": {
+    "romaji": "ikashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词「生かす」的礼貌形，表示发挥、有效利用某事物。常与「経験」「能力」等词搭配。",
+    "example": {
+      "jp": "学んだ知識を仕事に生かします。",
+      "kana": "まなんだちしきをしごとにいかします。",
+      "romaji": "mananda chishiki o shigoto ni ikashimasu.",
+      "zh": "把学到的知识运用到工作中。"
+    }
+  }
+}

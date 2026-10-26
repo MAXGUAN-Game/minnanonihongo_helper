@@ -20,6 +20,8 @@ services:
       APP_PUBLIC_ORIGIN: "https://${APP_DOMAIN:?Run node deploy/configure.mjs --shared first}"
       APP_PROXY_TOKEN: "${APP_PROXY_TOKEN:?Run node deploy/configure.mjs --shared first}"
       ICP_NUMBER: "${ICP_NUMBER:-}"
+      APP_AUTH_USER: "${APP_AUTH_USER:?Configure website login first}"
+      APP_AUTH_HASH: "${APP_AUTH_HASH:?Configure website login first}"
       WHISPER_BINARY: /opt/whisper/bin/whisper-cli
       WHISPER_THREADS: "2"
     volumes:

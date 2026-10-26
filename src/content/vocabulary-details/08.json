@@ -1,0 +1,730 @@
+{
+  "l8-w315": {
+    "romaji": "resutoran",
+    "attributes": [],
+    "explanation": "指西式餐厅、餐馆，是外来语名词。可搭配「レストランで食べる」「有名なレストラン」，注意不要与「食堂」混用。",
+    "example": {
+      "jp": "駅の近くに新しいレストランがあります。",
+      "kana": "えきのちかくにあたらしいれすとらんがあります。",
+      "romaji": "eki no chikaku ni atarashii resutoran ga arimasu.",
+      "zh": "车站附近有一家新餐厅。"
+    }
+  },
+  "l8-w378": {
+    "romaji": "hansamu na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容男性相貌英俊，来自英语handsome。修饰名词时加「な」，如「ハンサムな人」；一般不用来形容女性。",
+    "example": {
+      "jp": "あの人はとてもハンサムな人です。",
+      "kana": "あのひとはとてもはんさむなひとです。",
+      "romaji": "ano hito wa totemo hansamu na hito desu.",
+      "zh": "那个人是非常英俊的人。"
+    }
+  },
+  "l8-w379": {
+    "romaji": "kirei na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "既可表示“漂亮、好看”，也可表示“干净、整洁”，需根据上下文判断。修饰名词用「きれいな」，否定为「きれいじゃない」。",
+    "example": {
+      "jp": "この部屋はとてもきれいな部屋ですね。",
+      "kana": "このへやはとてもきれいなへやですね。",
+      "romaji": "kono heya wa totemo kirei na heya desu ne.",
+      "zh": "这个房间真是很干净漂亮的房间啊。"
+    }
+  },
+  "l8-w380": {
+    "romaji": "shizuka na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示环境安静、不吵闹，也可形容人性格文静。修饰名词用「静かな」，如「静かな公園」。",
+    "example": {
+      "jp": "夜の図書館は静かな場所です。",
+      "kana": "よるのとしょかんはしずかなばしょです。",
+      "romaji": "yoru no toshokan wa shizuka na basho desu.",
+      "zh": "夜晚的图书馆是个安静的地方。"
+    }
+  },
+  "l8-w381": {
+    "romaji": "nigiyaka na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容人多、声音多而充满活力的“热闹”，常与街道、节日、市场等搭配。修饰名词用「にぎやかな」。",
+    "example": {
+      "jp": "この商店街はいつもにぎやかな所です。",
+      "kana": "このしょうてんがいはいつもにぎやかなところです。",
+      "romaji": "kono shoutengai wa itsumo nigiyaka na tokoro desu.",
+      "zh": "这条商店街总是很热闹的地方。"
+    }
+  },
+  "l8-w382": {
+    "romaji": "yuumei na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示“有名的、著名的”，修饰名词用「有名な」，如「有名な店」。常用「～で有名だ」表示因某事物而闻名。",
+    "example": {
+      "jp": "京都はお寺で有名な町です。",
+      "kana": "きょうとはおてらでゆうめいなまちです。",
+      "romaji": "Kyouto wa otera de yuumei na machi desu.",
+      "zh": "京都是因寺庙而闻名的城市。"
+    }
+  },
+  "l8-w383": {
+    "romaji": "shinsetsu na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容待人温和、乐于助人，多用于评价人的态度。修饰名词用「親切な」，如「親切な店員」。",
+    "example": {
+      "jp": "あの店の店員はとても親切な人です。",
+      "kana": "あのみせのてんいんはとてもしんせつなひとです。",
+      "romaji": "ano mise no ten'in wa totemo shinsetsu na hito desu.",
+      "zh": "那家店的店员是非常亲切的人。"
+    }
+  },
+  "l8-w384": {
+    "romaji": "genki na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示身体健康、有精神，也可形容人活泼有活力。问候时常用「お元気ですか」，修饰名词用「元気な」。",
+    "example": {
+      "jp": "祖父は八十歳ですが、まだ元気な人です。",
+      "kana": "そふははちじゅっさいですが、まだげんきなひとです。",
+      "romaji": "sofu wa hachijussai desu ga, mada genki na hito desu.",
+      "zh": "祖父虽然八十岁了，但还是个精神矍铄的人。"
+    }
+  },
+  "l8-w385": {
+    "romaji": "hima na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示有空闲时间、不忙，常用于询问或说明是否有空。修饰名词用「暇な」，如「暇なとき」。",
+    "example": {
+      "jp": "今日は暇な日なので、買い物に行きます。",
+      "kana": "きょうはひまなひなので、かいものにいきます。",
+      "romaji": "kyou wa hima na hi nanode, kaimono ni ikimasu.",
+      "zh": "今天是有空的日子，所以去买东西。"
+    }
+  },
+  "l8-w386": {
+    "romaji": "benri na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示方便、便利，多用于工具、交通、地点等。修饰名词用「便利な」，如「便利な道具」。",
+    "example": {
+      "jp": "このアプリはとても便利な道具です。",
+      "kana": "このあぷりはとてもべんりなどうぐです。",
+      "romaji": "kono apuri wa totemo benri na dougu desu.",
+      "zh": "这个应用是非常方便的工具。"
+    }
+  },
+  "l8-w387": {
+    "romaji": "suteki na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示极好、漂亮、有魅力，带有赞赏语气，可用于物品、景色、人。修饰名词用「素敵な」。",
+    "example": {
+      "jp": "海で素敵な写真を撮りました。",
+      "kana": "うみですてきなしゃしんをとりました。",
+      "romaji": "umi de suteki na shashin o torimashita.",
+      "zh": "在海边拍了漂亮的照片。"
+    }
+  },
+  "l8-w388": {
+    "romaji": "ookii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示尺寸、规模大，是い形容词，修饰名词直接接名词，如「大きい犬」。否定为「大きくない」。",
+    "example": {
+      "jp": "公園に大きい木が一本あります。",
+      "kana": "こうえんにおおきいきがいつぽんあります。",
+      "romaji": "kouen ni ookii ki ga ippon arimasu.",
+      "zh": "公园里有一棵大树。"
+    }
+  },
+  "l8-w389": {
+    "romaji": "chiisai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体或空间在尺寸上小，也可形容年龄小或数量少。修饰名词时直接接名词，否定为「小さくない」。",
+    "example": {
+      "jp": "この箱は小さいです。",
+      "kana": "このはこはちいさいです。",
+      "romaji": "kono hako wa chiisai desu.",
+      "zh": "这个箱子很小。"
+    }
+  },
+  "l8-w390": {
+    "romaji": "atarashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物品、信息或事物是新近出现或未使用过的，也可指新鲜。修饰名词直接连接，过去式为「新しかった」。",
+    "example": {
+      "jp": "新しい靴を買いました。",
+      "kana": "あたらしいくつをかいました。",
+      "romaji": "atarashii kutsu o kaimashita.",
+      "zh": "买了新鞋。"
+    }
+  },
+  "l8-w391": {
+    "romaji": "furui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物品、建筑、事物等存在时间长、陈旧，不用于人的年龄。修饰名词直接连接，否定为「古くない」。",
+    "example": {
+      "jp": "この建物はとても古いです。",
+      "kana": "このたてものはとてもふるいです。",
+      "romaji": "kono tatemono wa totemo furui desu.",
+      "zh": "这栋建筑非常旧。"
+    }
+  },
+  "l8-w392": {
+    "romaji": "ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示好、合适、可以，日常口语常用。否定为「よくない」，过去式为「よかった」，修饰名词用「いい＋名词」。",
+    "example": {
+      "jp": "天気がいいですね。",
+      "kana": "てんきがいいですね。",
+      "romaji": "tenki ga ii desu ne.",
+      "zh": "天气真好啊。"
+    }
+  },
+  "l8-w393": {
+    "romaji": "yoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "与「いい」意思相同，但更正式、书面，常用于问候、告示或郑重表达。否定为「よくない」，过去式为「よかった」。",
+    "example": {
+      "jp": "よい週末をお過ごしください。",
+      "kana": "よいしゅうまつをおすごしください。",
+      "romaji": "yoi shūmatsu o osugoshi kudasai.",
+      "zh": "请度过一个美好的周末。"
+    }
+  },
+  "l8-w394": {
+    "romaji": "warui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示质量差、状态坏、行为不好或情况不利。也可用于道歉或表示身体不适。修饰名词直接连接。",
+    "example": {
+      "jp": "今日は天気が悪いです。",
+      "kana": "きょうはてんきがわるいです。",
+      "romaji": "kyō wa tenki ga warui desu.",
+      "zh": "今天天气不好。"
+    }
+  },
+  "l8-v1": {
+    "romaji": "atsui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "专指天气或气候炎热，不能用于物体温度。与「熱い」同音但汉字不同，注意区分。",
+    "example": {
+      "jp": "夏はとても暑いです。",
+      "kana": "なつはとてもあついです。",
+      "romaji": "natsu wa totemo atsui desu.",
+      "zh": "夏天非常热。"
+    }
+  },
+  "l8-v2": {
+    "romaji": "samui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "专指天气或环境寒冷，不用于物体冰凉。修饰名词直接连接，否定为「寒くない」。",
+    "example": {
+      "jp": "冬の朝は寒いです。",
+      "kana": "ふゆのあさはさむいです。",
+      "romaji": "fuyu no asa wa samui desu.",
+      "zh": "冬天的早晨很冷。"
+    }
+  },
+  "l8-w397": {
+    "romaji": "atsui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "指物体温度高、烫或热，也可形容身体发热、感情热烈。与表示天气的「暑い」同音不同字。",
+    "example": {
+      "jp": "このスープは熱いです。",
+      "kana": "このすーぷはあついです。",
+      "romaji": "kono sūpu wa atsui desu.",
+      "zh": "这汤很烫。"
+    }
+  },
+  "l8-w398": {
+    "romaji": "tsumetai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体温度低、冰凉，也可形容人态度冷淡。与表示天气寒冷的「寒い」用法不同。",
+    "example": {
+      "jp": "冷たい水を飲みます。",
+      "kana": "つめたいみずをのみます。",
+      "romaji": "tsumetai mizu o nomimasu.",
+      "zh": "喝冷水。"
+    }
+  },
+  "l8-w399": {
+    "romaji": "muzukashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示事情复杂、难以理解或做到，也可形容人难以相处。修饰名词直接连接，否定为「難しくない」。",
+    "example": {
+      "jp": "この問題は難しいです。",
+      "kana": "このもんだいはむずかしいです。",
+      "romaji": "kono mondai wa muzukashii desu.",
+      "zh": "这个问题很难。"
+    }
+  },
+  "l8-w400": {
+    "romaji": "yasashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示容易、简单，与「難しい」相对。与表示温柔、和善的「優しい」同音，需根据语境区分。",
+    "example": {
+      "jp": "このテストは易しいです。",
+      "kana": "このてすとはやさしいです。",
+      "romaji": "kono tesuto wa yasashii desu.",
+      "zh": "这个考试很简单。"
+    }
+  },
+  "l8-v3": {
+    "romaji": "takai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示价格昂贵或高度、海拔高。修饰名词时用「高い＋名詞」，否定为「高くない」，过去式为「高かった」。注意与「たかい」同音词「高い」表示“高的”时语境不同。",
+    "example": {
+      "jp": "このかばんは高いです。",
+      "kana": "このかばんはたかいです。",
+      "romaji": "kono kaban wa takai desu.",
+      "zh": "这个包很贵。"
+    }
+  },
+  "l8-v4": {
+    "romaji": "yasui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示价格便宜、低廉。常用于评价商品或服务，口语中也可说「安いね」表示感叹。否定形为「安くない」，过去式为「安かった」。",
+    "example": {
+      "jp": "この店の野菜は安いです。",
+      "kana": "このみせのやさいはやすいです。",
+      "romaji": "kono mise no yasai wa yasui desu.",
+      "zh": "这家店的蔬菜很便宜。"
+    }
+  },
+  "l8-w404": {
+    "romaji": "hikui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示高度低、位置低或声音低。可形容建筑物、山、桌子等物理高度，也可形容声音或温度。修饰名词用「低い＋名詞」。",
+    "example": {
+      "jp": "あの山は低いですね。",
+      "kana": "あのやまはひくいですね。",
+      "romaji": "ano yama wa hikui desu ne.",
+      "zh": "那座山很低啊。"
+    }
+  },
+  "l8-w405": {
+    "romaji": "omoshiroi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示有趣、有意思，常用于形容电影、书、话题或人。否定形为「おもしろくない」，过去式为「おもしろかった」。注意与「楽しい」区别：前者侧重内容有趣，后者侧重心情愉快。",
+    "example": {
+      "jp": "この映画はとてもおもしろいです。",
+      "kana": "このえいがはとてもおもしろいです。",
+      "romaji": "kono eiga wa totemo omoshiroi desu.",
+      "zh": "这部电影非常有趣。"
+    }
+  },
+  "l8-v5": {
+    "romaji": "oishii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示食物味道好、美味。常用于评价饭菜、饮料等，口语中也可用于感叹。否定形为「おいしくない」，过去式为「おいしかった」。",
+    "example": {
+      "jp": "このケーキはおいしいです。",
+      "kana": "このけーきはおいしいです。",
+      "romaji": "kono kēki wa oishii desu.",
+      "zh": "这个蛋糕很好吃。"
+    }
+  },
+  "l8-v9": {
+    "romaji": "isogashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示忙碌、事务繁多。可形容人工作或生活状态，也可形容时期、日子。否定形为「忙しくない」，过去式为「忙しかった」。",
+    "example": {
+      "jp": "最近、仕事が忙しいです。",
+      "kana": "さいきん、しごとがいそがしいです。",
+      "romaji": "saikin, shigoto ga isogashii desu.",
+      "zh": "最近工作很忙。"
+    }
+  },
+  "l8-w408": {
+    "romaji": "tanoshii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示愉快、快乐，强调心情上的愉悦。常用于形容活动、旅行、聚会等体验。否定形为「楽しくない」，过去式为「楽しかった」。",
+    "example": {
+      "jp": "友達と話すのは楽しいです。",
+      "kana": "ともだちとはなすのはたのしいです。",
+      "romaji": "tomodachi to hanasu no wa tanoshii desu.",
+      "zh": "和朋友聊天很开心。"
+    }
+  },
+  "l8-w409": {
+    "romaji": "shiroi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示白色。可形容物体颜色、雪、云等。修饰名词时用「白い＋名詞」，否定形为「白くない」。注意与「しろ」（白）名词形式区别。",
+    "example": {
+      "jp": "白い雪が降っています。",
+      "kana": "しろいゆきがふっています。",
+      "romaji": "shiroi yuki ga futte imasu.",
+      "zh": "正在下白雪。"
+    }
+  },
+  "l8-w410": {
+    "romaji": "kuroi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示黑色。可形容物体颜色、头发、衣服等。修饰名词时用「黒い＋名詞」，否定形为「黒くない」。",
+    "example": {
+      "jp": "黒いかばんを買いました。",
+      "kana": "くろいかばんをかいました。",
+      "romaji": "kuroi kaban o kaimashita.",
+      "zh": "买了黑色的包。"
+    }
+  },
+  "l8-w411": {
+    "romaji": "akai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示红色。可形容物体颜色、苹果、衣服等。修饰名词时用「赤い＋名詞」，否定形为「赤くない」。",
+    "example": {
+      "jp": "赤いりんごが好きです。",
+      "kana": "あかいりんごがすきです。",
+      "romaji": "akai ringo ga suki desu.",
+      "zh": "喜欢红苹果。"
+    }
+  },
+  "l8-w412": {
+    "romaji": "aoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示蓝色或青色。可形容天空、海、信号灯等。修饰名词时用「青い＋名詞」，否定形为「青くない」。",
+    "example": {
+      "jp": "空が青いです。",
+      "kana": "そらがあおいです。",
+      "romaji": "sora ga aoi desu.",
+      "zh": "天空是蓝色的。"
+    }
+  },
+  "l8-w413": {
+    "romaji": "sakura",
+    "attributes": [],
+    "explanation": "指樱花或樱树，是日本春季代表性的花。常与「花見」搭配，也可用于人名或地名。作为名词，修饰其他名词时用「桜の＋名詞」。",
+    "example": {
+      "jp": "春に桜が咲きます。",
+      "kana": "はるにさくらがさきます。",
+      "romaji": "haru ni sakura ga sakimasu.",
+      "zh": "春天樱花盛开。"
+    }
+  },
+  "l8-w414": {
+    "romaji": "yama",
+    "attributes": [],
+    "explanation": "指自然界的山，常与「登る」「高い」等搭配。也可用于比喻堆积如山的事物，如「山のような宿題」。",
+    "example": {
+      "jp": "あの山はとても高いです。",
+      "kana": "あのやまはとてもたかいです。",
+      "romaji": "ano yama wa totemo takai desu.",
+      "zh": "那座山非常高。"
+    }
+  },
+  "l8-w415": {
+    "romaji": "machi",
+    "attributes": [],
+    "explanation": "指城镇、街道，比「都市」规模小，比「村」大。常与「歩く」「住む」等搭配，如「町を歩く」。",
+    "example": {
+      "jp": "この町は静かで住みやすいです。",
+      "kana": "このまちはしずかですみやすいです。",
+      "romaji": "kono machi wa shizuka de sumiyasui desu.",
+      "zh": "这个城镇安静宜居。"
+    }
+  },
+  "l8-w416": {
+    "romaji": "tabemono",
+    "attributes": [],
+    "explanation": "泛指食物，比「料理」更日常。常与「好き」「買う」等搭配，如「好きな食べ物」。",
+    "example": {
+      "jp": "日本の食べ物はおいしいです。",
+      "kana": "にほんのたべものはおいしいです。",
+      "romaji": "nihon no tabemono wa oishii desu.",
+      "zh": "日本的食物很好吃。"
+    }
+  },
+  "l8-w418": {
+    "romaji": "tokoro",
+    "attributes": [],
+    "explanation": "指地点、场所，也可抽象指“地方、部分”。常与「行く」「住む」等搭配，如「行った所」。",
+    "example": {
+      "jp": "ここは静かな所ですね。",
+      "kana": "ここはしずかなところですね。",
+      "romaji": "koko wa shizuka na tokoro desu ne.",
+      "zh": "这里是个安静的地方啊。"
+    }
+  },
+  "l8-w419": {
+    "romaji": "ryō",
+    "attributes": [],
+    "explanation": "指学生或公司职员住的宿舍，常与「住む」「入る」等搭配，如「寮に入る」。",
+    "example": {
+      "jp": "私は大学の寮に住んでいます。",
+      "kana": "わたしはだいがくのりょうにすんでいます。",
+      "romaji": "watashi wa daigaku no ryō ni sunde imasu.",
+      "zh": "我住在大学宿舍。"
+    }
+  },
+  "l8-w421": {
+    "romaji": "seikatsu",
+    "attributes": [],
+    "explanation": "指日常生活，常与「する」「送る」等搭配，如「生活を送る」。也可指经济生活。",
+    "example": {
+      "jp": "毎日の生活は忙しいです。",
+      "kana": "まいにちのせいかつはいそがしいです。",
+      "romaji": "mainichi no seikatsu wa isogashii desu.",
+      "zh": "每天的生活很忙。"
+    }
+  },
+  "l8-w422": {
+    "romaji": "(o)shigoto",
+    "attributes": [],
+    "explanation": "指工作、职业，礼貌说法常加「お」。常与「する」「行く」等搭配，如「仕事に行く」。",
+    "example": {
+      "jp": "父は仕事で忙しいです。",
+      "kana": "ちちはしごとでいそがしいです。",
+      "romaji": "chichi wa shigoto de isogashii desu.",
+      "zh": "父亲因工作很忙。"
+    }
+  },
+  "l8-v10": {
+    "romaji": "dō",
+    "attributes": [],
+    "explanation": "询问状态或方法，常与「ですか」连用，如「天気はどうですか」。也可用于提议，如「コーヒーはどうですか」。",
+    "example": {
+      "jp": "日本の生活はどうですか。",
+      "kana": "にほんのせいかつはどうですか。",
+      "romaji": "nihon no seikatsu wa dō desu ka.",
+      "zh": "日本的生活怎么样？"
+    }
+  },
+  "l8-w424": {
+    "romaji": "donna",
+    "attributes": [],
+    "explanation": "连体词，后接名词询问性质或种类，如「どんな人」。不能单独使用，需修饰名词。",
+    "example": {
+      "jp": "どんな食べ物が好きですか。",
+      "kana": "どんなたべものがすきですか。",
+      "romaji": "donna tabemono ga suki desu ka.",
+      "zh": "你喜欢什么样的食物？"
+    }
+  },
+  "l8-w426": {
+    "romaji": "totemo",
+    "attributes": [],
+    "explanation": "表示程度很高，相当于“非常”，常用于肯定句。口语中也可说「とてもじゃない」表示“根本不”。",
+    "example": {
+      "jp": "この町はとてもきれいです。",
+      "kana": "このまちはとてもきれいです。",
+      "romaji": "kono machi wa totemo kirei desu.",
+      "zh": "这个城镇非常漂亮。"
+    }
+  },
+  "l8-w427": {
+    "romaji": "amari",
+    "attributes": [],
+    "explanation": "后接否定，表示程度不高，相当于“不太”。肯定句中一般不用，否定呼应「ない」。",
+    "example": {
+      "jp": "この山はあまり高くないです。",
+      "kana": "このやまはあまりたかくないです。",
+      "romaji": "kono yama wa amari takakunai desu.",
+      "zh": "这座山不太高。"
+    }
+  },
+  "l8-w428": {
+    "romaji": "soshite",
+    "attributes": [],
+    "explanation": "连接句子，表示并列或递进，相当于“而且、然后”。用于补充说明或按顺序叙述。",
+    "example": {
+      "jp": "この町は静かです。そして、とてもきれいです。",
+      "kana": "このまちはしずかです。そして、とてもきれいです。",
+      "romaji": "kono machi wa shizuka desu. soshite, totemo kirei desu.",
+      "zh": "这个城镇很安静，而且非常漂亮。"
+    }
+  },
+  "l8-w429": {
+    "romaji": "~ ga ~",
+    "attributes": [],
+    "explanation": "接续助词「が」用于连接两个分句，表示转折关系，相当于汉语的“但是”。语气比「けれども」稍正式，口语和书面语均可用。",
+    "example": {
+      "jp": "この店は安いですが、おいしくないです。",
+      "kana": "このみせはやすいですが、おいしくないです。",
+      "romaji": "kono mise wa yasui desu ga, oishiku nai desu.",
+      "zh": "这家店便宜，但是不好吃。"
+    }
+  },
+  "l8-w430": {
+    "romaji": "o genki desu ka",
+    "attributes": [],
+    "explanation": "「お元気ですか」是询问对方身体状况或精神状态的固定问候语，相当于“你好吗？”。「お」是美化语，常用于关心对方。",
+    "example": {
+      "jp": "田中さん、お元気ですか。",
+      "kana": "たなかさん、おげんきですか。",
+      "romaji": "tanaka san, o genki desu ka.",
+      "zh": "田中先生，你好吗？"
+    }
+  },
+  "l8-w431": {
+    "romaji": "sou desu ne",
+    "attributes": [],
+    "explanation": "表示赞同对方意见或稍作思考时的应答语，相当于“是啊”“让我想想”。语调不同可表达同意或犹豫。",
+    "example": {
+      "jp": "明日は雨だそうですね。そうですね。",
+      "kana": "あしたはあめだそうですね。そうですね。",
+      "romaji": "ashita wa ame da sou desu ne. sou desu ne.",
+      "zh": "听说明天要下雨啊。是啊。"
+    }
+  },
+  "l8-w433": {
+    "romaji": "mou ippai ikaga desu ka",
+    "attributes": [],
+    "explanation": "劝对方再喝一杯时的礼貌表达，「いかがですか」是「どうですか」的郑重说法。常用于招待客人。",
+    "example": {
+      "jp": "お茶、もう一杯いかがですか。",
+      "kana": "おちゃ、もういっぱいいかがですか。",
+      "romaji": "ocha, mou ippai ikaga desu ka.",
+      "zh": "再来一杯茶怎么样？"
+    }
+  },
+  "l8-w434": {
+    "romaji": "iie, kekkou desu",
+    "attributes": [],
+    "explanation": "礼貌地拒绝对方劝诱时的固定表达，「結構です」在此表示“不用了，够了”。语气委婉，不失礼。",
+    "example": {
+      "jp": "コーヒーはいかがですか。いいえ、結構です。",
+      "kana": "こーひーはいかがですか。いいえ、けっこうです。",
+      "romaji": "koohii wa ikaga desu ka. iie, kekkou desu.",
+      "zh": "来杯咖啡怎么样？不用了，谢谢。"
+    }
+  },
+  "l8-w435": {
+    "romaji": "mou ~ desu (ne)",
+    "attributes": [],
+    "explanation": "「もう」表示“已经”，后接名词或形容词等，用于叙述已达到某种状态，句末常加「ね」寻求认同。",
+    "example": {
+      "jp": "もう夜の十時ですね。",
+      "kana": "もよるのじゅうじですね。",
+      "romaji": "mou yoru no juu ji desu ne.",
+      "zh": "已经晚上十点了啊。"
+    }
+  },
+  "l8-w436": {
+    "romaji": "sorosoro shitsurei shimasu",
+    "attributes": [],
+    "explanation": "告辞时的惯用句，「そろそろ」表示“差不多该……了”，「失礼します」是礼貌的告别语。用于离开对方处所时。",
+    "example": {
+      "jp": "遅くなりましたから、そろそろ失礼します。",
+      "kana": "おそくなりましたから、そろそろしつれいします。",
+      "romaji": "osoku narimashita kara, sorosoro shitsurei shimasu.",
+      "zh": "时间不早了，我差不多该告辞了。"
+    }
+  },
+  "l8-w437": {
+    "romaji": "mata irasshatte kudasai",
+    "attributes": [],
+    "explanation": "送客时请对方再次来访的礼貌表达，「いらっしゃる」是「来る」的尊敬语，「～てください」表示请求。",
+    "example": {
+      "jp": "どうぞ、またいらっしゃってください。",
+      "kana": "どうぞ、またいらっしゃってください。",
+      "romaji": "douzo, mata irasshatte kudasai.",
+      "zh": "请再来。"
+    }
+  },
+  "l8-fuji": {
+    "romaji": "Fuji san",
+    "attributes": [],
+    "explanation": "日本最高峰，著名火山，位于山梨县和静冈县交界。读作「ふじさん」，注意「さん」不是敬称，而是山名的一部分。",
+    "example": {
+      "jp": "富士山は日本で一番高い山です。",
+      "kana": "ふじさんはにほんでいちばんたかいやまです。",
+      "romaji": "fuji san wa nihon de ichiban takai yama desu.",
+      "zh": "富士山是日本最高的山。"
+    }
+  },
+  "l8-nara-park": {
+    "romaji": "Nara kouen",
+    "attributes": [],
+    "explanation": "位于奈良市中心的著名公园，以鹿群和东大寺等古迹闻名。读作「ならこうえん」。",
+    "example": {
+      "jp": "奈良公園で鹿に会いました。",
+      "kana": "ならこうえんでしかにあいました。",
+      "romaji": "nara kouen de shika ni aimashita.",
+      "zh": "在奈良公园遇见了鹿。"
+    }
+  },
+  "l8-kinkakuji": {
+    "romaji": "Kinkakuji",
+    "attributes": [],
+    "explanation": "京都著名寺院，正式名称为鹿苑寺，因金箔装饰的舍利殿而通称金阁寺。读作「きんかくじ」。",
+    "example": {
+      "jp": "金閣寺は金色でとてもきれいです。",
+      "kana": "きんかくじはきんいろでとてもきれいです。",
+      "romaji": "kinkakuji wa kin iro de totemo kirei desu.",
+      "zh": "金阁寺是金色的，非常漂亮。"
+    }
+  },
+  "l8-seven-samurai": {
+    "romaji": "Shichinin no samurai",
+    "attributes": [],
+    "explanation": "黑泽明导演的经典电影，日语原名「七人の侍」，读作「しちにんのさむらい」。",
+    "example": {
+      "jp": "「七人の侍」は黒澤明の映画です。",
+      "kana": "「しちにんのさむらい」はくろさわあきらのえいがです。",
+      "romaji": "shichinin no samurai wa kurosawa akira no eiga desu.",
+      "zh": "《七武士》是黑泽明的电影。"
+    }
+  }
+}

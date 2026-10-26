@@ -1,0 +1,207 @@
+{
+  "lessonId": 17,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/17.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 38,
+  "entries": [
+    {
+      "sourceId": "598",
+      "sourceWord": "それから",
+      "key": "w598"
+    },
+    {
+      "sourceId": "800",
+      "sourceWord": "覚えます",
+      "key": "w800"
+    },
+    {
+      "sourceId": "801",
+      "sourceWord": "忘れます",
+      "key": "w801"
+    },
+    {
+      "sourceId": "802",
+      "sourceWord": "なくします",
+      "key": "w802"
+    },
+    {
+      "sourceId": "804",
+      "sourceWord": "払います",
+      "key": "w804"
+    },
+    {
+      "sourceId": "805",
+      "sourceWord": "返します",
+      "key": "w805"
+    },
+    {
+      "sourceId": "806",
+      "sourceWord": "出かけます",
+      "key": "w806"
+    },
+    {
+      "sourceId": "807",
+      "sourceWord": "脱ぎます",
+      "key": "w807"
+    },
+    {
+      "sourceId": "808",
+      "sourceWord": "持って行きます",
+      "key": "w808"
+    },
+    {
+      "sourceId": "809",
+      "sourceWord": "持って来ます",
+      "key": "w809"
+    },
+    {
+      "sourceId": "810",
+      "sourceWord": "心配します",
+      "key": "w810"
+    },
+    {
+      "sourceId": "811",
+      "sourceWord": "残業します",
+      "key": "w811"
+    },
+    {
+      "sourceId": "812",
+      "sourceWord": "出張します",
+      "key": "w812"
+    },
+    {
+      "sourceId": "813",
+      "sourceWord": "［薬を］飲みます",
+      "key": "w813"
+    },
+    {
+      "sourceId": "814",
+      "sourceWord": "［お風呂に］入ります",
+      "key": "w814"
+    },
+    {
+      "sourceId": "815",
+      "sourceWord": "大切な",
+      "key": "w815"
+    },
+    {
+      "sourceId": "816",
+      "sourceWord": "大丈夫な",
+      "key": "w816"
+    },
+    {
+      "sourceId": "817",
+      "sourceWord": "危ない",
+      "key": "w817"
+    },
+    {
+      "sourceId": "820",
+      "sourceWord": "禁煙",
+      "key": "w820"
+    },
+    {
+      "sourceId": "821",
+      "sourceWord": "健康保険証",
+      "key": "w821"
+    },
+    {
+      "sourceId": "822",
+      "sourceWord": "風邪",
+      "key": "w822"
+    },
+    {
+      "sourceId": "823",
+      "sourceWord": "熱",
+      "key": "w823"
+    },
+    {
+      "sourceId": "824",
+      "sourceWord": "病気",
+      "key": "w824"
+    },
+    {
+      "sourceId": "825",
+      "sourceWord": "薬",
+      "key": "w825"
+    },
+    {
+      "sourceId": "826",
+      "sourceWord": "お風呂",
+      "key": "w826"
+    },
+    {
+      "sourceId": "827",
+      "sourceWord": "上着",
+      "key": "w827"
+    },
+    {
+      "sourceId": "828",
+      "sourceWord": "下着",
+      "key": "w828"
+    },
+    {
+      "sourceId": "830",
+      "sourceWord": "二、三日",
+      "key": "w830"
+    },
+    {
+      "sourceId": "831",
+      "sourceWord": "ニ、三～",
+      "key": "w831"
+    },
+    {
+      "sourceId": "832",
+      "sourceWord": "～までに",
+      "key": "w832"
+    },
+    {
+      "sourceId": "833",
+      "sourceWord": "ですから",
+      "key": "w833"
+    },
+    {
+      "sourceId": "834",
+      "sourceWord": "どうしましたか。",
+      "key": "w834"
+    },
+    {
+      "sourceId": "835",
+      "sourceWord": "お腹が痛い",
+      "key": "w835"
+    },
+    {
+      "sourceId": "83500",
+      "sourceWord": "頭が痛い",
+      "key": "w83500"
+    },
+    {
+      "sourceId": "836",
+      "sourceWord": "喉",
+      "key": "w836"
+    },
+    {
+      "sourceId": "837",
+      "sourceWord": "お大事に。",
+      "key": "w837"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "803",
+      "sourceWord": "［を］出します",
+      "reason": "旧版提交报告用法，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "819",
+      "sourceWord": "答え",
+      "reason": "第二版答案一词已在第14课收录。"
+    }
+  ],
+  "secondaryAdditions": [
+    "painful"
+  ],
+  "finalCount": 37
+}

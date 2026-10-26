@@ -1,0 +1,372 @@
+{
+  "lessonId": 10,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/10.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源50条，排除5条旧版或跨课条目，合并同形同义项并补入第二来源，最终51条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/10.json。"
+  ],
+  "words": [
+    {
+      "key": "w1925",
+      "word": "象",
+      "reading": "ぞう",
+      "partOfSpeech": "名词",
+      "meaning": "大象"
+    },
+    {
+      "key": "w2180",
+      "word": "コンビニ",
+      "reading": "こんびに",
+      "partOfSpeech": "名词",
+      "meaning": "便利店"
+    },
+    {
+      "key": "w2282",
+      "word": "パンダ",
+      "reading": "ぱんだ",
+      "partOfSpeech": "名词",
+      "meaning": "熊猫"
+    },
+    {
+      "key": "w491",
+      "word": "います",
+      "reading": "います",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "有；在（人或动物）"
+    },
+    {
+      "key": "w492",
+      "word": "あります",
+      "reading": "あります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "有；在（无生命事物）"
+    },
+    {
+      "key": "w493",
+      "word": "色々な",
+      "reading": "いろいろな",
+      "partOfSpeech": "な形容词",
+      "meaning": "各种各样的"
+    },
+    {
+      "key": "w494",
+      "word": "男の人",
+      "reading": "おとこのひと",
+      "partOfSpeech": "名词",
+      "meaning": "男人"
+    },
+    {
+      "key": "w495",
+      "word": "女の人",
+      "reading": "おんなのひと",
+      "partOfSpeech": "名词",
+      "meaning": "女人"
+    },
+    {
+      "key": "w496",
+      "word": "男の子",
+      "reading": "おとこのこ",
+      "partOfSpeech": "名词",
+      "meaning": "男孩"
+    },
+    {
+      "key": "w497",
+      "word": "女の子",
+      "reading": "おんなのこ",
+      "partOfSpeech": "名词",
+      "meaning": "女孩"
+    },
+    {
+      "key": "w498",
+      "word": "犬",
+      "reading": "いぬ",
+      "partOfSpeech": "名词",
+      "meaning": "狗"
+    },
+    {
+      "key": "w499",
+      "word": "猫",
+      "reading": "ねこ",
+      "partOfSpeech": "名词",
+      "meaning": "猫"
+    },
+    {
+      "key": "w500",
+      "word": "木",
+      "reading": "き",
+      "partOfSpeech": "名词",
+      "meaning": "树"
+    },
+    {
+      "key": "w501",
+      "word": "物",
+      "reading": "もの",
+      "partOfSpeech": "名词",
+      "meaning": "东西"
+    },
+    {
+      "key": "w503",
+      "word": "電池",
+      "reading": "でんち",
+      "partOfSpeech": "名词",
+      "meaning": "电池"
+    },
+    {
+      "key": "w504",
+      "word": "箱",
+      "reading": "はこ",
+      "partOfSpeech": "名词",
+      "meaning": "箱子"
+    },
+    {
+      "key": "w505",
+      "word": "スイッチ",
+      "reading": "すいっち",
+      "partOfSpeech": "名词",
+      "meaning": "开关"
+    },
+    {
+      "key": "w506",
+      "word": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "partOfSpeech": "名词",
+      "meaning": "冰箱"
+    },
+    {
+      "key": "w507",
+      "word": "テーブル",
+      "reading": "てーぶる",
+      "partOfSpeech": "名词",
+      "meaning": "桌子"
+    },
+    {
+      "key": "w508",
+      "word": "ベッド",
+      "reading": "べっど",
+      "partOfSpeech": "名词",
+      "meaning": "床"
+    },
+    {
+      "key": "w509",
+      "word": "棚",
+      "reading": "たな",
+      "partOfSpeech": "名词",
+      "meaning": "架子"
+    },
+    {
+      "key": "w510",
+      "word": "ドア",
+      "reading": "どあ",
+      "partOfSpeech": "名词",
+      "meaning": "门"
+    },
+    {
+      "key": "w511",
+      "word": "窓",
+      "reading": "まど",
+      "partOfSpeech": "名词",
+      "meaning": "窗户"
+    },
+    {
+      "key": "w512",
+      "word": "ポスト",
+      "reading": "ぽすと",
+      "partOfSpeech": "名词",
+      "meaning": "邮筒"
+    },
+    {
+      "key": "w513",
+      "word": "ビル",
+      "reading": "びる",
+      "partOfSpeech": "名词",
+      "meaning": "大楼"
+    },
+    {
+      "key": "w514",
+      "word": "公園",
+      "reading": "こうえん",
+      "partOfSpeech": "名词",
+      "meaning": "公园"
+    },
+    {
+      "key": "w515",
+      "word": "喫茶店",
+      "reading": "きっさてん",
+      "partOfSpeech": "名词",
+      "meaning": "咖啡馆"
+    },
+    {
+      "key": "w516",
+      "word": "本屋",
+      "reading": "ほんや",
+      "partOfSpeech": "名词",
+      "meaning": "书店"
+    },
+    {
+      "key": "w517",
+      "word": "～屋",
+      "reading": "～や",
+      "partOfSpeech": "表达",
+      "meaning": "……店"
+    },
+    {
+      "key": "w518",
+      "word": "乗り場",
+      "reading": "のりば",
+      "partOfSpeech": "名词",
+      "meaning": "乘车处"
+    },
+    {
+      "key": "w519",
+      "word": "県",
+      "reading": "けん",
+      "partOfSpeech": "名词",
+      "meaning": "县"
+    },
+    {
+      "key": "w520",
+      "word": "上",
+      "reading": "うえ",
+      "partOfSpeech": "名词",
+      "meaning": "上面"
+    },
+    {
+      "key": "w521",
+      "word": "下",
+      "reading": "した",
+      "partOfSpeech": "名词",
+      "meaning": "下面"
+    },
+    {
+      "key": "w522",
+      "word": "前",
+      "reading": "まえ",
+      "partOfSpeech": "名词",
+      "meaning": "前面"
+    },
+    {
+      "key": "w523",
+      "word": "後ろ",
+      "reading": "うしろ",
+      "partOfSpeech": "名词",
+      "meaning": "后面"
+    },
+    {
+      "key": "w524",
+      "word": "右",
+      "reading": "みぎ",
+      "partOfSpeech": "名词",
+      "meaning": "右边"
+    },
+    {
+      "key": "w525",
+      "word": "左",
+      "reading": "ひだり",
+      "partOfSpeech": "名词",
+      "meaning": "左边"
+    },
+    {
+      "key": "w526",
+      "word": "中",
+      "reading": "なか",
+      "partOfSpeech": "名词",
+      "meaning": "里面"
+    },
+    {
+      "key": "w527",
+      "word": "外",
+      "reading": "そと",
+      "partOfSpeech": "名词",
+      "meaning": "外面"
+    },
+    {
+      "key": "w528",
+      "word": "隣",
+      "reading": "となり",
+      "partOfSpeech": "名词",
+      "meaning": "旁边"
+    },
+    {
+      "key": "w529",
+      "word": "近く",
+      "reading": "ちかく",
+      "partOfSpeech": "表达",
+      "meaning": "附近"
+    },
+    {
+      "key": "w530",
+      "word": "間",
+      "reading": "あいだ",
+      "partOfSpeech": "名词",
+      "meaning": "中间；之间"
+    },
+    {
+      "key": "w531",
+      "word": "など",
+      "reading": "など",
+      "partOfSpeech": "表达",
+      "meaning": "等等"
+    },
+    {
+      "key": "w534",
+      "word": "どうもすみません",
+      "reading": "どうもすみません",
+      "partOfSpeech": "固定表达",
+      "meaning": "真不好意思；多谢您费心"
+    },
+    {
+      "key": "w5651",
+      "word": "ATM",
+      "reading": "えーてぃーえむ",
+      "partOfSpeech": "名词",
+      "meaning": "自动取款机"
+    },
+    {
+      "key": "fish-sauce",
+      "word": "ナンプラー",
+      "reading": "なんぷらー",
+      "partOfSpeech": "名词",
+      "meaning": "鱼露"
+    },
+    {
+      "key": "corner",
+      "word": "コーナー",
+      "reading": "こーなー",
+      "partOfSpeech": "名词",
+      "meaning": "专区；角落"
+    },
+    {
+      "key": "bottom",
+      "word": "一番下",
+      "reading": "いちばんした",
+      "partOfSpeech": "名词",
+      "meaning": "最下面"
+    },
+    {
+      "key": "tokyo-disneyland",
+      "word": "東京ディズニーランド",
+      "reading": "とうきょうでぃずにーらんど",
+      "partOfSpeech": "专有名词",
+      "meaning": "东京迪士尼乐园"
+    },
+    {
+      "key": "asia-store",
+      "word": "アジアストア",
+      "reading": "あじあすとあ",
+      "partOfSpeech": "专有名词",
+      "meaning": "亚洲商店（教材店名）"
+    },
+    {
+      "key": "ya",
+      "word": "～や～",
+      "reading": "～や～",
+      "partOfSpeech": "助词",
+      "meaning": "……和……等（列举部分例子）"
+    }
+  ]
+}

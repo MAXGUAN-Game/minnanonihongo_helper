@@ -1,0 +1,212 @@
+{
+  "l25-v7": {
+    "romaji": "imi",
+    "attributes": [],
+    "explanation": "名词，表示语言、行为或事物的含义、意思。常与「ある」「ない」搭配，如「意味がある」。也可用于询问词语或动作的意义。",
+    "example": {
+      "jp": "この言葉の意味が分かりません。",
+      "kana": "このことばのいみがわかりません。",
+      "romaji": "kono kotoba no imi ga wakarimasen.",
+      "zh": "我不明白这个词的意思。"
+    }
+  },
+  "l25-v1": {
+    "romaji": "kangaemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词Ⅱ（一段动词），表示思考、考虑。常与「～について」「～を」搭配，如「将来について考える」。也可表示“认为”，后接「と」。",
+    "example": {
+      "jp": "将来のことを考えます。",
+      "kana": "しょうらいのことをかんがえます。",
+      "romaji": "shōrai no koto o kangaemasu.",
+      "zh": "考虑将来的事情。"
+    }
+  },
+  "l25-w1030": {
+    "romaji": "tsukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅰ（五段动词），表示到达某地。常与助词「に」搭配，如「駅に着く」。注意与「着る（穿）」不同。",
+    "example": {
+      "jp": "駅に着いたら電話してください。",
+      "kana": "えきについたらでんわしてください。",
+      "romaji": "eki ni tsuitara denwa shite kudasai.",
+      "zh": "到了车站请打电话。"
+    }
+  },
+  "l25-w1032": {
+    "romaji": "torimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅰ（五段动词），「年を取る」是固定搭配，表示年龄增长、上年纪。不能直译为“拿年龄”。",
+    "example": {
+      "jp": "祖父は年を取りましたが、元気です。",
+      "kana": "そふはとしをとりましたが、げんきです。",
+      "romaji": "sofu wa toshi o torimashita ga, genki desu.",
+      "zh": "祖父年纪大了，但很健康。"
+    }
+  },
+  "l25-v5": {
+    "romaji": "inaka",
+    "attributes": [],
+    "explanation": "名词，指乡下、农村，也可指故乡。与「都会（とかい）」相对。常与「の」连接，如「田舎の生活」。",
+    "example": {
+      "jp": "夏休みに田舎へ帰ります。",
+      "kana": "なつやすみにいなかへかえります。",
+      "romaji": "natsuyasumi ni inaka e kaerimasu.",
+      "zh": "暑假回乡下。"
+    }
+  },
+  "l25-w1036": {
+    "romaji": "chansu",
+    "attributes": [],
+    "explanation": "名词，表示机会、时机。常与「を逃す」「を生かす」等搭配，如「チャンスを逃す」。外来语，语体较中性。",
+    "example": {
+      "jp": "これはいいチャンスです。",
+      "kana": "これはいいちゃんすです。",
+      "romaji": "kore wa ii chansu desu.",
+      "zh": "这是个好机会。"
+    }
+  },
+  "l25-w1037": {
+    "romaji": "oku",
+    "attributes": [],
+    "explanation": "名词，数字单位，一亿。常与数词搭配，如「一億」「三億」。也可用于金额、人口等。",
+    "example": {
+      "jp": "この会社は一億円の利益を出しました。",
+      "kana": "このかいしゃはいちおくえんのりえきをだしました。",
+      "romaji": "kono kaisha wa ichioku en no rieki o dashimashita.",
+      "zh": "这家公司赚了一亿日元的利润。"
+    }
+  },
+  "l25-v8": {
+    "romaji": "moshi",
+    "attributes": [],
+    "explanation": "副词，表示假设“如果”。常与「～たら」「～ば」等条件句呼应，如「もし雨なら」。不能单独使用，需搭配条件表达。",
+    "example": {
+      "jp": "もし時間があったら、映画を見に行きましょう。",
+      "kana": "もじかんがあったら、えいがをみにいきましょう。",
+      "romaji": "moshi jikan ga attara, eiga o mi ni ikimashō.",
+      "zh": "如果有时间，我们去看电影吧。"
+    }
+  },
+  "l25-w1040": {
+    "romaji": "tenkin",
+    "attributes": [],
+    "explanation": "名词，指因工作调动而更换工作地点，通常由公司安排。常与「する」搭配构成「転勤する」。",
+    "example": {
+      "jp": "来月、大阪へ転勤します。",
+      "kana": "らいげつ、おおさかへてんきんします。",
+      "romaji": "raigetsu, ōsaka e tenkin shimasu.",
+      "zh": "下个月调职去大阪。"
+    }
+  },
+  "l25-w1041": {
+    "romaji": "koto",
+    "attributes": [],
+    "explanation": "形式名词，表示事情、事实。常以「～こと」的形式将动词短语名词化，如「日本語を勉強すること」。也可表示经验、决定等。",
+    "example": {
+      "jp": "日本語を勉強することが好きです。",
+      "kana": "にほんごをべんきょうすることがすきです。",
+      "romaji": "nihongo o benkyō suru koto ga suki desu.",
+      "zh": "我喜欢学习日语。"
+    }
+  },
+  "l25-w1043": {
+    "romaji": "iroiro osewa ni narimashita",
+    "attributes": [],
+    "explanation": "固定寒暄表达，用于感谢对方长期以来的各种照顾，常用于分别、调职或年末等场合。较正式、礼貌。",
+    "example": {
+      "jp": "田中さん、長い間色々お世話になりました。",
+      "kana": "たなかさん、ながいあいだいろいろおせわになりました。",
+      "romaji": "tanaka san, nagai aida iroiro osewa ni narimashita.",
+      "zh": "田中先生，长期以来承蒙您多方照顾。"
+    }
+  },
+  "l25-w1044": {
+    "romaji": "ganbarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅰ（五段动词），表示努力、加油。常用于鼓励自己或他人，也可表示坚持做某事。礼貌体「頑張ります」。",
+    "example": {
+      "jp": "試験まで頑張ります。",
+      "kana": "しけんまでがんばります。",
+      "romaji": "shiken made ganbarimasu.",
+      "zh": "我会努力到考试。"
+    }
+  },
+  "l25-w1045": {
+    "romaji": "dōzo ogenki de",
+    "attributes": [],
+    "explanation": "用于分别或长期不见时的寒暄，祝愿对方健康平安。语气礼貌而亲切，常用于书信结尾或临别时。",
+    "example": {
+      "jp": "遠くへ行っても、どうぞお元気で。",
+      "kana": "とおくへいっても、どうぞおげんきで。",
+      "romaji": "tōku e itte mo, dōzo ogenki de.",
+      "zh": "即使去了远方，也请多保重。"
+    }
+  },
+  "l25-w485": {
+    "romaji": "moshi moshi",
+    "attributes": [],
+    "explanation": "打电话时确认对方是否在听的招呼语，相当于中文的“喂”。只用于电话，不用于面对面叫人。",
+    "example": {
+      "jp": "もしもし、田中さんのお宅ですか。",
+      "kana": "もしもし、たなかさんのおたくですか。",
+      "romaji": "moshi moshi, tanaka san no otaku desu ka.",
+      "zh": "喂，是田中先生家吗？"
+    }
+  },
+  "l25-w928": {
+    "romaji": "tarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示数量、金额或程度足够，常与「お金が」「時間が」等搭配。否定形「足りません」表示不够。",
+    "example": {
+      "jp": "お金は足りますか。",
+      "kana": "おかねはたりますか。",
+      "romaji": "okane wa tarimasu ka.",
+      "zh": "钱够吗？"
+    }
+  },
+  "l25-free-time": {
+    "romaji": "hima",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示有空闲时间或无事可做，可作名词也可作な形容词。注意「暇」常带“闲得无聊”的语感，与「忙しい」相对。",
+    "example": {
+      "jp": "明日は暇だから、映画を見に行こう。",
+      "kana": "あしたはひまだから、えいがをみにいこう。",
+      "romaji": "ashita wa hima da kara, eiga o mi ni ikō.",
+      "zh": "明天有空，去看电影吧。"
+    }
+  },
+  "l25-support": {
+    "romaji": "osewa ni narimasu",
+    "attributes": [],
+    "explanation": "对给予自己帮助或照顾的人表示感谢的固定寒暄，常用于商务场合或初次见面。也用于邮件开头。",
+    "example": {
+      "jp": "いつもお世話になります。",
+      "kana": "いつもおせわになります。",
+      "romaji": "itsumo osewa ni narimasu.",
+      "zh": "一直承蒙您照顾。"
+    }
+  },
+  "l25-vietnam": {
+    "romaji": "betonamu",
+    "attributes": [],
+    "explanation": "国名“越南”，日语中作为外来语用片假名书写。注意发音为「ベトナム」，不是英语式读音。",
+    "example": {
+      "jp": "来月、ベトナムへ旅行に行きます。",
+      "kana": "らいげつ、べとなむへりょこうにいきます。",
+      "romaji": "raigetsu, betonamu e ryokō ni ikimasu.",
+      "zh": "下个月去越南旅行。"
+    }
+  }
+}

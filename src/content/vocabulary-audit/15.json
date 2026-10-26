@@ -1,0 +1,154 @@
+{
+  "lessonId": 15,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/15.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 27,
+  "entries": [
+    {
+      "sourceId": "2883",
+      "sourceWord": "電子辞書",
+      "key": "w2883"
+    },
+    {
+      "sourceId": "41",
+      "sourceWord": "皆さん",
+      "key": "w41"
+    },
+    {
+      "sourceId": "663",
+      "sourceWord": "市役所",
+      "key": "w663"
+    },
+    {
+      "sourceId": "666",
+      "sourceWord": "経済",
+      "key": "w666"
+    },
+    {
+      "sourceId": "730",
+      "sourceWord": "置きます",
+      "key": "w730"
+    },
+    {
+      "sourceId": "731",
+      "sourceWord": "作ります",
+      "key": "w731"
+    },
+    {
+      "sourceId": "732",
+      "sourceWord": "売ります",
+      "key": "w732"
+    },
+    {
+      "sourceId": "733",
+      "sourceWord": "知ります",
+      "key": "w733"
+    },
+    {
+      "sourceId": "734",
+      "sourceWord": "住みます",
+      "key": "w734"
+    },
+    {
+      "sourceId": "735",
+      "sourceWord": "研究します",
+      "key": "w735"
+    },
+    {
+      "sourceId": "736",
+      "sourceWord": "知っています",
+      "key": "w736"
+    },
+    {
+      "sourceId": "737",
+      "sourceWord": "住んでいます",
+      "key": "w737"
+    },
+    {
+      "sourceId": "738",
+      "sourceWord": "資料",
+      "key": "w738"
+    },
+    {
+      "sourceId": "739",
+      "sourceWord": "カタログ",
+      "key": "w739"
+    },
+    {
+      "sourceId": "740",
+      "sourceWord": "時刻表",
+      "key": "w740"
+    },
+    {
+      "sourceId": "741",
+      "sourceWord": "服",
+      "key": "w741"
+    },
+    {
+      "sourceId": "742",
+      "sourceWord": "製品",
+      "key": "w742"
+    },
+    {
+      "sourceId": "743",
+      "sourceWord": "ソフト",
+      "key": "w743"
+    },
+    {
+      "sourceId": "745",
+      "sourceWord": "歯医者",
+      "key": "w745"
+    },
+    {
+      "sourceId": "748",
+      "sourceWord": "独身",
+      "key": "w748"
+    },
+    {
+      "sourceId": "750",
+      "sourceWord": "思い出します",
+      "key": "w750"
+    },
+    {
+      "sourceId": "752",
+      "sourceWord": "いらっしゃいます",
+      "key": "w752"
+    },
+    {
+      "sourceId": "753",
+      "sourceWord": "高校",
+      "key": "w753"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "744",
+      "sourceWord": "専門",
+      "reason": "旧版职业介绍词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "746",
+      "sourceWord": "床屋",
+      "reason": "旧版服务场所词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "747",
+      "sourceWord": "プレイガイド",
+      "reason": "旧版售票场所词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "751",
+      "sourceWord": "ご家族",
+      "reason": "旧版人物介绍词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "build",
+    "nihonbashi",
+    "interview"
+  ],
+  "finalCount": 26
+}

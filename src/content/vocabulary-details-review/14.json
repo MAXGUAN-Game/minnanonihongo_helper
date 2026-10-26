@@ -1,0 +1,14 @@
+{
+  "lessonId": 14,
+  "model": "deepseek-flash",
+  "reviewedCount": 47,
+  "corrections": [
+    {
+      "id": "l14-w699",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「話します」意为“说话”，通常以「話を話す」等带宾语用法为主，按词义判为他动词，不宜标自他两用。"
+    }
+  ]
+}

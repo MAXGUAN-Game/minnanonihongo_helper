@@ -1,0 +1,622 @@
+{
+  "l39-w1422": {
+    "romaji": "haikingu",
+    "attributes": [],
+    "explanation": "指在自然环境中进行的徒步旅行或远足，通常当天往返，比登山轻松。常与「する」搭配构成动词「ハイキングする」。",
+    "example": {
+      "jp": "週末に友達とハイキングに行きます。",
+      "kana": "しゅうまつにともだちとはいきんぐにいきます。",
+      "romaji": "shūmatsu ni tomodachi to haikingu ni ikimasu.",
+      "zh": "周末和朋友去徒步旅行。"
+    }
+  },
+  "l39-w1426": {
+    "romaji": "sōsa",
+    "attributes": [],
+    "explanation": "指对机器、设备等进行操作或操控。常与「する」搭配构成「操作する」。注意与「動作」（动作）区分。",
+    "example": {
+      "jp": "この機械の操作は簡単です。",
+      "kana": "このきかいのそうさはかんたんです。",
+      "romaji": "kono kikai no sōsa wa kantan desu.",
+      "zh": "这台机器的操作很简单。"
+    }
+  },
+  "l39-w1447": {
+    "romaji": "futorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示体重增加、变胖，常用于人。是「太る」的礼貌形，强调状态变化。反义词是「痩せます」。",
+    "example": {
+      "jp": "最近少し太りました。",
+      "kana": "さいきんすこしふとりました。",
+      "romaji": "saikin sukoshi futorimashita.",
+      "zh": "最近稍微胖了一点。"
+    }
+  },
+  "l39-w1448": {
+    "romaji": "yasemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示体重减轻、变瘦，常用于人。是「痩せる」的礼貌形，强调状态变化。反义词是「太ります」。",
+    "example": {
+      "jp": "病気で痩せました。",
+      "kana": "びょうきでやせました。",
+      "romaji": "byōki de yasemashita.",
+      "zh": "因为生病瘦了。"
+    }
+  },
+  "l39-w1451": {
+    "romaji": "katai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体坚硬、不易变形，也可形容食物硬、难嚼。反义词是「軟らかい」。",
+    "example": {
+      "jp": "このパンは硬くて食べにくいです。",
+      "kana": "このぱんはかたくてたべにくいです。",
+      "romaji": "kono pan wa katakute tabenikui desu.",
+      "zh": "这个面包很硬，不好吃。"
+    }
+  },
+  "l39-w1452": {
+    "romaji": "yawarakai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示物体柔软、易变形，也可形容食物软、易嚼。反义词是「硬い」。",
+    "example": {
+      "jp": "このベッドは軟らかくて気持ちがいいです。",
+      "kana": "このべっどはやわらかくてきもちがいいです。",
+      "romaji": "kono beddo wa yawarakakute kimochi ga ii desu.",
+      "zh": "这张床很软，很舒服。"
+    }
+  },
+  "l39-w1547": {
+    "romaji": "kotagemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示对问题、要求等给予回答或回应。常用「質問に答える」的形式。",
+    "example": {
+      "jp": "先生の質問にすぐ答えました。",
+      "kana": "せんせいのしつもんにすぐこたえました。",
+      "romaji": "sensei no shitsumon ni sugu kotaemashita.",
+      "zh": "马上回答了老师的问题。"
+    }
+  },
+  "l39-w1548": {
+    "romaji": "taoremashita",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示建筑物、树木等倒塌、倒下。是「倒れる」的礼貌形，强调自然或意外倒下。",
+    "example": {
+      "jp": "地震でビルが倒れました。",
+      "kana": "じしんでびるがたおれました。",
+      "romaji": "jishin de biru ga taoremashita.",
+      "zh": "大楼因地震倒塌了。"
+    }
+  },
+  "l39-w1552": {
+    "romaji": "tōrimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示经过某条道路或某个地点。常用「道を通る」的形式，强调移动路径。",
+    "example": {
+      "jp": "毎日この道を通ります。",
+      "kana": "まいにちこのみちをとおります。",
+      "romaji": "mainichi kono michi o tōrimasu.",
+      "zh": "每天经过这条路。"
+    }
+  },
+  "l39-w1553": {
+    "romaji": "shinimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人或生物死亡。是「死ぬ」的礼貌形，语气直接，需注意使用场合。",
+    "example": {
+      "jp": "飼っていた金魚が死にました。",
+      "kana": "かっていたきんぎょがしにました。",
+      "romaji": "katteita kingyo ga shinimashita.",
+      "zh": "养的金鱼死了。"
+    }
+  },
+  "l39-w1554": {
+    "romaji": "bikkurishimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因意外或突然的事情而感到吃惊。常与「びっくりする」搭配，口语中常用。",
+    "example": {
+      "jp": "大きな音にびっくりしました。",
+      "kana": "おおきなおとにびっくりしました。",
+      "romaji": "ōkina oto ni bikkurishimashita.",
+      "zh": "被巨大的声音吓了一跳。"
+    }
+  },
+  "l39-w1555": {
+    "romaji": "gakkari shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因期待落空或事情不如意而感到失望、沮丧。常与「がっかりする」搭配。",
+    "example": {
+      "jp": "試験に落ちてがっかりしました。",
+      "kana": "しけんにおちてがっかりしました。",
+      "romaji": "shiken ni ochite gakkari shimashita.",
+      "zh": "考试没通过，很失望。"
+    }
+  },
+  "l39-w1556": {
+    "romaji": "anshin shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因担心的事情解决或确认安全而感到放心。常用「～て安心しました」表达得知好消息后的安心感。",
+    "example": {
+      "jp": "無事だと聞いて安心しました。",
+      "kana": "ぶじだときいてあんしんしました。",
+      "romaji": "buji da to kiite anshin shimashita.",
+      "zh": "听说平安无事，我就放心了。"
+    }
+  },
+  "l39-w1559": {
+    "romaji": "kenka shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示与人发生口角或争吵，常与「と」搭配表示争吵对象。也可用于表示关系破裂。",
+    "example": {
+      "jp": "昨日、友達と喧嘩しました。",
+      "kana": "きのう、ともだちとけんかしました。",
+      "romaji": "kinou, tomodachi to kenka shimashita.",
+      "zh": "昨天和朋友吵架了。"
+    }
+  },
+  "l39-w1560": {
+    "romaji": "rikon shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示夫妻解除婚姻关系，主语通常是夫妻一方或双方。常用「と離婚する」表示与某人离婚。",
+    "example": {
+      "jp": "彼らは去年離婚しました。",
+      "kana": "かれらはきょねんりこんしました。",
+      "romaji": "karera wa kyonen rikon shimashita.",
+      "zh": "他们去年离婚了。"
+    }
+  },
+  "l39-w1561": {
+    "romaji": "fukuzatsu na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容事物结构或情况错综复杂、不易理解。可修饰名词，也可作谓语「複雑だ」。",
+    "example": {
+      "jp": "この問題はとても複雑です。",
+      "kana": "このもんだいはとてもふくざつです。",
+      "romaji": "kono mondai wa totemo fukuzatsu desu.",
+      "zh": "这个问题非常复杂。"
+    }
+  },
+  "l39-w1562": {
+    "romaji": "jama na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示妨碍、打扰或碍事。常用「邪魔をする」表示打扰，也可直接修饰名词。",
+    "example": {
+      "jp": "ここに荷物を置くと邪魔になります。",
+      "kana": "ここににもつをおくとじゃまになります。",
+      "romaji": "koko ni nimotsu o oku to jama ni narimasu.",
+      "zh": "把行李放在这里会碍事。"
+    }
+  },
+  "l39-w1563": {
+    "romaji": "kitanai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示不干净、脏，也可表示行为卑鄙、不光明。修饰名词时直接加名词。",
+    "example": {
+      "jp": "部屋が汚いので掃除します。",
+      "kana": "へやがきたないのでそうじします。",
+      "romaji": "heya ga kitanai node souji shimasu.",
+      "zh": "房间很脏，所以打扫一下。"
+    }
+  },
+  "l39-v1": {
+    "romaji": "ureshii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示因好事而感到高兴、喜悦，通常用于第一人称的感受。询问对方时常用「嬉しいですか」。",
+    "example": {
+      "jp": "合格して本当に嬉しいです。",
+      "kana": "ごうかくしてほんとうにうれしいです。",
+      "romaji": "goukaku shite hontou ni ureshii desu.",
+      "zh": "合格了，真的很高兴。"
+    }
+  },
+  "l39-w1565": {
+    "romaji": "kanashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示因失去或不幸而感到悲伤、难过。可修饰名词，也可作谓语。",
+    "example": {
+      "jp": "彼の話を聞いて悲しくなりました。",
+      "kana": "かれのはなしをきいてかなしくなりました。",
+      "romaji": "kare no hanashi o kiite kanashiku narimashita.",
+      "zh": "听了他的话，变得悲伤起来。"
+    }
+  },
+  "l39-w1566": {
+    "romaji": "hazukashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示因害羞或难为情而感到不好意思，也可表示丢脸。常用于第一人称感受。",
+    "example": {
+      "jp": "みんなの前で歌うのは恥ずかしいです。",
+      "kana": "みんなのまえでうたうのははずかしいです。",
+      "romaji": "minna no mae de utau no wa hazukashii desu.",
+      "zh": "在大家面前唱歌很难为情。"
+    }
+  },
+  "l39-w1567": {
+    "romaji": "jishin",
+    "attributes": [],
+    "explanation": "指地壳震动引起的地震现象。常与「起きる」「ある」搭配，也可说「地震が来る」。",
+    "example": {
+      "jp": "昨夜、大きな地震がありました。",
+      "kana": "ゆうべ、おおきなじしんがありました。",
+      "romaji": "yuube, ookina jishin ga arimashita.",
+      "zh": "昨晚发生了大地震。"
+    }
+  },
+  "l39-w1568": {
+    "romaji": "taifuu",
+    "attributes": [],
+    "explanation": "指西北太平洋上形成的热带气旋。常与「来る」「上陸する」搭配。",
+    "example": {
+      "jp": "台風で電車が止まりました。",
+      "kana": "たいふうででんしゃがとまりました。",
+      "romaji": "taifuu de densha ga tomarimashita.",
+      "zh": "因为台风，电车停运了。"
+    }
+  },
+  "l39-w1569": {
+    "romaji": "kaji",
+    "attributes": [],
+    "explanation": "指火灾，常与「出る」「起きる」搭配。注意与「家事（家务）」同音但不同义。",
+    "example": {
+      "jp": "近所で火事があったそうです。",
+      "kana": "きんじょでかじがあったそうです。",
+      "romaji": "kinjo de kaji ga atta sou desu.",
+      "zh": "听说附近发生了火灾。"
+    }
+  },
+  "l39-w1570": {
+    "romaji": "jiko",
+    "attributes": [],
+    "explanation": "指交通事故、工伤等意外事件，常与「起こす」「遭う」搭配。语体中性，新闻和日常会话均可用。",
+    "example": {
+      "jp": "駅の近くで事故がありました。",
+      "kana": "えきのちかくでじこがありました。",
+      "romaji": "eki no chikaku de jiko ga arimashita.",
+      "zh": "车站附近发生了事故。"
+    }
+  },
+  "l39-w1571": {
+    "romaji": "omiai",
+    "attributes": [],
+    "explanation": "指以结婚为前提、由介绍人安排的初次见面，是日本传统相亲形式。常说「お見合いをする」。",
+    "example": {
+      "jp": "週末にお見合いをします。",
+      "kana": "しゅうまつにおみあいをします。",
+      "romaji": "shūmatsu ni omiai o shimasu.",
+      "zh": "周末要去相亲。"
+    }
+  },
+  "l39-w1572": {
+    "romaji": "denwadai",
+    "attributes": [],
+    "explanation": "指电话使用产生的费用，包括固定电话和手机话费。由「電話」加表示费用的「代」构成。",
+    "example": {
+      "jp": "今月の電話代が高いです。",
+      "kana": "こんげつのでんわだいがたかいです。",
+      "romaji": "kongetsu no denwadai ga takai desu.",
+      "zh": "这个月的电话费很贵。"
+    }
+  },
+  "l39-w1573": {
+    "romaji": "dai",
+    "attributes": [],
+    "explanation": "接在名词后表示该项目的费用，如「電話代」「電気代」「送料代」。不能单独使用，需与名词结合。",
+    "example": {
+      "jp": "電気代を払いました。",
+      "kana": "でんきだいをはらいました。",
+      "romaji": "denkidai o haraimashita.",
+      "zh": "付了电费。"
+    }
+  },
+  "l39-w1574": {
+    "romaji": "furonto",
+    "attributes": [],
+    "explanation": "指酒店、宾馆的前台接待处，负责入住、退房等事务。外来语，日常会话中直接使用。",
+    "example": {
+      "jp": "フロントで鍵を受け取ります。",
+      "kana": "ふろんとでかぎをうけとります。",
+      "romaji": "furonto de kagi o uketorimasu.",
+      "zh": "在前台领取钥匙。"
+    }
+  },
+  "l39-w1575": {
+    "romaji": "gōshitsu",
+    "attributes": [],
+    "explanation": "接在数字后表示房间号，如「305号室」。多用于酒店、公寓、医院等建筑内的房间标识。",
+    "example": {
+      "jp": "私の部屋は202号室です。",
+      "kana": "わたしのへやはにせんにじゅうにごうしつです。",
+      "romaji": "watashi no heya wa nisen nijūni gōshitsu desu.",
+      "zh": "我的房间是202号室。"
+    }
+  },
+  "l39-w1577": {
+    "romaji": "taoru",
+    "attributes": [],
+    "explanation": "指毛巾，常用于酒店、浴室等场景。外来语，可说「タオルで拭く」「タオルを掛ける」。",
+    "example": {
+      "jp": "タオルで手を拭いてください。",
+      "kana": "たおるでてをふいてください。",
+      "romaji": "taoru de te o fuite kudasai.",
+      "zh": "请用毛巾擦手。"
+    }
+  },
+  "l39-w1578": {
+    "romaji": "sekken",
+    "attributes": [],
+    "explanation": "指肥皂、香皂，用于洗手、洗澡等。常说「石鹸で手を洗う」。",
+    "example": {
+      "jp": "石鹸で手を洗います。",
+      "kana": "せっけんでてをあらいます。",
+      "romaji": "sekken de te o araimasu.",
+      "zh": "用肥皂洗手。"
+    }
+  },
+  "l39-w1579": {
+    "romaji": "ōzei",
+    "attributes": [],
+    "explanation": "表示人数很多，主要用于人。可直接作名词或副词，如「大勢の人がいる」「大勢で行く」。",
+    "example": {
+      "jp": "公園に大勢の人がいます。",
+      "kana": "こうえんにおおぜいのひとがいます。",
+      "romaji": "kōen ni ōzei no hito ga imasu.",
+      "zh": "公园里有很多人。"
+    }
+  },
+  "l39-w1580": {
+    "romaji": "otsukaresama deshita",
+    "attributes": [],
+    "explanation": "对他人辛苦工作表示慰问和感谢的固定寒暄语，常用于工作结束或分别时。对上级也可使用。",
+    "example": {
+      "jp": "今日もお疲れさまでした。",
+      "kana": "きょうもおつかれさまでした。",
+      "romaji": "kyō mo otsukaresama deshita.",
+      "zh": "今天也辛苦了。"
+    }
+  },
+  "l39-w1581": {
+    "romaji": "ukagaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「行く」「来る」「聞く」的谦让语，用于拜访或询问，表示对对方的尊敬。常与「お宅に伺う」「お話を伺う」搭配。",
+    "example": {
+      "jp": "明日、お宅に伺います。",
+      "kana": "あした、おたくにうかがいます。",
+      "romaji": "ashita, otaku ni ukagaimasu.",
+      "zh": "明天去您家拜访。"
+    }
+  },
+  "l39-w1582": {
+    "romaji": "tochū de",
+    "attributes": [],
+    "explanation": "表示在去某地的途中，后接发生的事。常与移动动词搭配，如「途中で事故に遭う」。",
+    "example": {
+      "jp": "学校へ行く途中で友達に会いました。",
+      "kana": "がっこうへいくとちゅうでともだちにあいました。",
+      "romaji": "gakkō e iku tochū de tomodachi ni aimashita.",
+      "zh": "去学校的途中遇到了朋友。"
+    }
+  },
+  "l39-w1583": {
+    "romaji": "torakku",
+    "attributes": [],
+    "explanation": "指用于运输货物的大型卡车，是外来语。日常口语中常直接使用，与「トラックを運転する」等搭配。",
+    "example": {
+      "jp": "トラックが道路を走っています。",
+      "kana": "とらっくがどうろをはしっています。",
+      "romaji": "torakku ga douro o hashitte imasu.",
+      "zh": "卡车正在马路上行驶。"
+    }
+  },
+  "l39-w1584": {
+    "romaji": "butsukarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物体之间相撞，常与助词「に」搭配，如「車にぶつかる」。也可用于抽象事物冲突。",
+    "example": {
+      "jp": "ボールが窓にぶつかりました。",
+      "kana": "ぼーるがまどにぶつかりました。",
+      "romaji": "booru ga mado ni butsukarimashita.",
+      "zh": "球撞到窗户上了。"
+    }
+  },
+  "l39-w1884": {
+    "romaji": "kaijou",
+    "attributes": [],
+    "explanation": "指举行集会、活动等的场所，如「会場に集まる」。正式场合常用，与「会議室」等区分。",
+    "example": {
+      "jp": "会場は駅の近くです。",
+      "kana": "かいじょうはえきのちかくです。",
+      "romaji": "kaijou wa eki no chikaku desu.",
+      "zh": "会场在车站附近。"
+    }
+  },
+  "l39-w3236": {
+    "romaji": "kaminari",
+    "attributes": [],
+    "explanation": "指自然现象中的雷，常与「鳴る」「落ちる」搭配。口语中也可比喻突然发怒。",
+    "example": {
+      "jp": "雷が鳴っています。",
+      "kana": "かみなりがなっています。",
+      "romaji": "kaminari ga natte imasu.",
+      "zh": "雷声隆隆。"
+    }
+  },
+  "l39-w3375": {
+    "romaji": "tsunami",
+    "attributes": [],
+    "explanation": "指因海底地震等引发的巨大海浪，常与「起こる」「襲う」搭配。是日语中特有的气象术语。",
+    "example": {
+      "jp": "津波が町を襲いました。",
+      "kana": "つなみがまちをおそいました。",
+      "romaji": "tsunami ga machi o osoimashita.",
+      "zh": "海啸袭击了城镇。"
+    }
+  },
+  "l39-w937": {
+    "romaji": "shushou",
+    "attributes": [],
+    "explanation": "指内阁总理大臣，即首相。新闻中常见，正式场合使用。",
+    "example": {
+      "jp": "首相が会見を行いました。",
+      "kana": "しゅしょうがかいけんをおこないました。",
+      "romaji": "shushou ga kaiken o okonaimashita.",
+      "zh": "首相举行了记者会。"
+    }
+  },
+  "l39-shop": {
+    "romaji": "ya",
+    "attributes": [],
+    "explanation": "接在名词后表示店铺或从事该行业的人，如「本屋」「花屋」。构词能力强，需与词干结合使用。",
+    "example": {
+      "jp": "あの店はパン屋です。",
+      "kana": "あのみせはぱんやです。",
+      "romaji": "ano mise wa pan'ya desu.",
+      "zh": "那家店是面包店。"
+    }
+  },
+  "l39-adult": {
+    "romaji": "otona",
+    "attributes": [],
+    "explanation": "指成年人，与「子供」相对。可表示成熟、有大人样，如「大人になる」。",
+    "example": {
+      "jp": "大人は入場料が必要です。",
+      "kana": "おとなはにゅうじょうりょうがひつようです。",
+      "romaji": "otona wa nyuujouryou ga hitsuyou desu.",
+      "zh": "成年人需要入场费。"
+    }
+  },
+  "l39-however": {
+    "romaji": "shikashi",
+    "attributes": [],
+    "explanation": "表示转折的接续词，用于句首，语气较正式。与「でも」意思相近但更书面。",
+    "example": {
+      "jp": "雨が降りました。しかし、試合は続きました。",
+      "kana": "あめがふりました。しかし、しあいはつづきました。",
+      "romaji": "ame ga furimashita. shikashi, shiai wa tsuzukimashita.",
+      "zh": "下雨了。但是比赛继续了。"
+    }
+  },
+  "l39-also": {
+    "romaji": "mata",
+    "attributes": [],
+    "explanation": "表示补充说明或并列，意为“此外、并且”。也用于口语中表示“又、再”。",
+    "example": {
+      "jp": "彼は医者です。また、作家でもあります。",
+      "kana": "かれはいしゃです。また、さっかでもあります。",
+      "romaji": "kare wa isha desu. mata, sakka de mo arimasu.",
+      "zh": "他是医生。此外，也是作家。"
+    }
+  },
+  "l39-western-clothes": {
+    "romaji": "youfuku",
+    "attributes": [],
+    "explanation": "指西式服装，与「和服」相对。现代日语中泛指日常穿着的西式衣服。",
+    "example": {
+      "jp": "洋服をクリーニングに出しました。",
+      "kana": "ようふくをくりーにんぐにだしました。",
+      "romaji": "youfuku o kuriiningu ni dashimashita.",
+      "zh": "把西服送去干洗了。"
+    }
+  },
+  "l39-westernize": {
+    "romaji": "seiyoukashimasu",
+    "attributes": [
+      "自他两用"
+    ],
+    "explanation": "表示使某事物变得西洋化，或某事物自行西洋化。可作他动词（如「文化を西洋化する」）或自动词（如「生活が西洋化する」）。",
+    "example": {
+      "jp": "日本の生活は西洋化しました。",
+      "kana": "にほんのせいかつはせいようかしました。",
+      "romaji": "nihon no seikatsu wa seiyoukashimashita.",
+      "zh": "日本的生活西洋化了。"
+    }
+  },
+  "l39-suit": {
+    "romaji": "aimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示衣物、颜色、发型等适合某人，或事物之间相互协调。常用「～に合う」的搭配，主语为适合的对象。",
+    "example": {
+      "jp": "この色はあなたによく合いますね。",
+      "kana": "このいろはあなたによくあいますね。",
+      "romaji": "kono iro wa anata ni yoku aimasu ne.",
+      "zh": "这个颜色很适合你呢。"
+    }
+  },
+  "l39-now": {
+    "romaji": "ima de wa",
+    "attributes": [],
+    "explanation": "表示与过去对比，强调现在的情况已经不同。常用于叙述变化，后接现在的事实。",
+    "example": {
+      "jp": "今では誰でもスマホを使っています。",
+      "kana": "いまではだれでもすまほをつかっています。",
+      "romaji": "ima de wa dare demo sumaho o tsukatte imasu.",
+      "zh": "如今人人都用智能手机。"
+    }
+  },
+  "l39-coming-of-age": {
+    "romaji": "seijinshiki",
+    "attributes": [],
+    "explanation": "指日本每年1月为迎来20岁（现为18岁）的年轻人举办的成人仪式，多在自治体或学校举行。",
+    "example": {
+      "jp": "成人式で友達と写真を撮りました。",
+      "kana": "せいじんしきでともだちとしゃしんをとりました。",
+      "romaji": "seijinshiki de tomodachi to shashin o torimashita.",
+      "zh": "在成人礼上和朋友们拍了照片。"
+    }
+  },
+  "l39-traditional": {
+    "romaji": "dentōteki na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "形容事物具有长期传承下来的样式或文化特征。修饰名词时用「伝統的な～」，也可作谓语「～は伝統的だ」。",
+    "example": {
+      "jp": "京都には伝統的な建物がたくさんあります。",
+      "kana": "きょうとにはでんとうてきなたてものがたくさんあります。",
+      "romaji": "Kyōto ni wa dentōteki na tatemono ga takusan arimasu.",
+      "zh": "京都有很多传统的建筑。"
+    }
+  }
+}

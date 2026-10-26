@@ -1,0 +1,292 @@
+{
+  "lessonId": 9,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/9.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 55,
+  "entries": [
+    {
+      "sourceId": "376",
+      "sourceWord": "旅行",
+      "key": "w376"
+    },
+    {
+      "sourceId": "438",
+      "sourceWord": "分かります",
+      "key": "w438"
+    },
+    {
+      "sourceId": "439",
+      "sourceWord": "あります",
+      "key": "w439"
+    },
+    {
+      "sourceId": "440",
+      "sourceWord": "好きな",
+      "key": "w440"
+    },
+    {
+      "sourceId": "441",
+      "sourceWord": "嫌いな",
+      "key": "w441"
+    },
+    {
+      "sourceId": "442",
+      "sourceWord": "上手な",
+      "key": "w442"
+    },
+    {
+      "sourceId": "443",
+      "sourceWord": "下手な",
+      "key": "w443"
+    },
+    {
+      "sourceId": "444",
+      "sourceWord": "料理",
+      "key": "w444"
+    },
+    {
+      "sourceId": "445",
+      "sourceWord": "飲み物",
+      "key": "w445"
+    },
+    {
+      "sourceId": "446",
+      "sourceWord": "スポ－ツ",
+      "key": "w446"
+    },
+    {
+      "sourceId": "447",
+      "sourceWord": "野球",
+      "key": "w447"
+    },
+    {
+      "sourceId": "448",
+      "sourceWord": "ダンス",
+      "key": "w448"
+    },
+    {
+      "sourceId": "449",
+      "sourceWord": "音楽",
+      "key": "w449"
+    },
+    {
+      "sourceId": "450",
+      "sourceWord": "歌",
+      "key": "w450"
+    },
+    {
+      "sourceId": "451",
+      "sourceWord": "クラシック",
+      "key": "w451"
+    },
+    {
+      "sourceId": "452",
+      "sourceWord": "ジャズ",
+      "key": "w452"
+    },
+    {
+      "sourceId": "453",
+      "sourceWord": "コンサート",
+      "key": "w453"
+    },
+    {
+      "sourceId": "454",
+      "sourceWord": "カラオケ",
+      "key": "w454"
+    },
+    {
+      "sourceId": "455",
+      "sourceWord": "歌舞伎",
+      "key": "w455"
+    },
+    {
+      "sourceId": "456",
+      "sourceWord": "絵",
+      "key": "w456"
+    },
+    {
+      "sourceId": "457",
+      "sourceWord": "字",
+      "key": "w457"
+    },
+    {
+      "sourceId": "458",
+      "sourceWord": "漢字",
+      "key": "w458"
+    },
+    {
+      "sourceId": "459",
+      "sourceWord": "ひらがな",
+      "key": "w459"
+    },
+    {
+      "sourceId": "460",
+      "sourceWord": "かたかな",
+      "key": "w460"
+    },
+    {
+      "sourceId": "461",
+      "sourceWord": "ローマ字",
+      "key": "w461"
+    },
+    {
+      "sourceId": "462",
+      "sourceWord": "細かいお金",
+      "key": "w462"
+    },
+    {
+      "sourceId": "463",
+      "sourceWord": "チケット",
+      "key": "w463"
+    },
+    {
+      "sourceId": "464",
+      "sourceWord": "時間",
+      "key": "w464"
+    },
+    {
+      "sourceId": "465",
+      "sourceWord": "用事",
+      "key": "w465"
+    },
+    {
+      "sourceId": "466",
+      "sourceWord": "約束",
+      "key": "w466"
+    },
+    {
+      "sourceId": "467",
+      "sourceWord": "ご主人",
+      "key": "w467"
+    },
+    {
+      "sourceId": "468",
+      "sourceWord": "主人",
+      "key": "w468"
+    },
+    {
+      "sourceId": "469",
+      "sourceWord": "夫",
+      "key": "w469"
+    },
+    {
+      "sourceId": "470",
+      "sourceWord": "奥さん",
+      "key": "w470"
+    },
+    {
+      "sourceId": "471",
+      "sourceWord": "妻",
+      "key": "w471"
+    },
+    {
+      "sourceId": "472",
+      "sourceWord": "家内",
+      "key": "w472"
+    },
+    {
+      "sourceId": "473",
+      "sourceWord": "子ども",
+      "key": "w473"
+    },
+    {
+      "sourceId": "474",
+      "sourceWord": "よく",
+      "key": "w474"
+    },
+    {
+      "sourceId": "475",
+      "sourceWord": "だいたい",
+      "key": "w475"
+    },
+    {
+      "sourceId": "476",
+      "sourceWord": "たくさん",
+      "key": "w476"
+    },
+    {
+      "sourceId": "477",
+      "sourceWord": "少し",
+      "key": "w477"
+    },
+    {
+      "sourceId": "478",
+      "sourceWord": "全然",
+      "key": "w478"
+    },
+    {
+      "sourceId": "479",
+      "sourceWord": "早く",
+      "key": "w479"
+    },
+    {
+      "sourceId": "480",
+      "sourceWord": "速く",
+      "key": "w480"
+    },
+    {
+      "sourceId": "481",
+      "sourceWord": "～から",
+      "key": "w481"
+    },
+    {
+      "sourceId": "482",
+      "sourceWord": "どうして",
+      "key": "w482"
+    },
+    {
+      "sourceId": "483",
+      "sourceWord": "残念ですね｡",
+      "key": "w483"
+    },
+    {
+      "sourceId": "484",
+      "sourceWord": "すみません。",
+      "key": "w484"
+    },
+    {
+      "sourceId": "486",
+      "sourceWord": "ああ",
+      "key": "w486"
+    },
+    {
+      "sourceId": "487",
+      "sourceWord": "一緒にいかがですか。",
+      "key": "w487"
+    },
+    {
+      "sourceId": "488",
+      "sourceWord": "～はちょっと……。",
+      "key": "w488"
+    },
+    {
+      "sourceId": "489",
+      "sourceWord": "だめですか。",
+      "key": "w489"
+    },
+    {
+      "sourceId": "490",
+      "sourceWord": "また今度お願いします。",
+      "key": "w490"
+    },
+    {
+      "sourceId": "720",
+      "sourceWord": "いいですよ。",
+      "key": "w720"
+    },
+    {
+      "sourceId": "943",
+      "sourceWord": "アルバイト",
+      "key": "w943"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "lend-please",
+    "unfortunately"
+  ],
+  "finalCount": 57
+}

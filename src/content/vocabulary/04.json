@@ -1,0 +1,442 @@
+{
+  "lessonId": 4,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/4.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "交叉核对完成：主来源56条候选，保留52条对应（同义表记可合并），排除4条；另补第二来源专名或固定表达，最终61条。",
+    "教材公司、机构和人物名称按专名收录。读音采用平假名，专名日文保留原表记。",
+    "词形变体归并后保留旧词ID。详细对应、第二来源补项和排除原因见本课vocabulary-audit文件。"
+  ],
+  "words": [
+    {
+      "key": "okimasu",
+      "word": "起きます",
+      "reading": "おきます",
+      "partOfSpeech": "动词Ⅱ类",
+      "meaning": "起床"
+    },
+    {
+      "key": "nemasu",
+      "word": "寝ます",
+      "reading": "ねます",
+      "partOfSpeech": "动词Ⅱ类",
+      "meaning": "睡觉；就寝"
+    },
+    {
+      "key": "hatarakimasu",
+      "word": "働きます",
+      "reading": "はたらきます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "工作"
+    },
+    {
+      "key": "yasumimasu",
+      "word": "休みます",
+      "reading": "やすみます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "休息；请假"
+    },
+    {
+      "key": "benkyoushimasu",
+      "word": "勉強します",
+      "reading": "べんきょうします",
+      "partOfSpeech": "动词Ⅲ类",
+      "meaning": "学习"
+    },
+    {
+      "key": "owarimasu",
+      "word": "終わります",
+      "reading": "おわります",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "结束"
+    },
+    {
+      "key": "depaato",
+      "word": "デパート",
+      "reading": "でぱーと",
+      "partOfSpeech": "名词",
+      "meaning": "百货商店"
+    },
+    {
+      "key": "ginkou",
+      "word": "銀行",
+      "reading": "ぎんこう",
+      "partOfSpeech": "名词",
+      "meaning": "银行"
+    },
+    {
+      "key": "yuubinkyoku",
+      "word": "郵便局",
+      "reading": "ゆうびんきょく",
+      "partOfSpeech": "名词",
+      "meaning": "邮局"
+    },
+    {
+      "key": "toshokan",
+      "word": "図書館",
+      "reading": "としょかん",
+      "partOfSpeech": "名词",
+      "meaning": "图书馆"
+    },
+    {
+      "key": "bijutsukan",
+      "word": "美術館",
+      "reading": "びじゅつかん",
+      "partOfSpeech": "名词",
+      "meaning": "美术馆"
+    },
+    {
+      "key": "ima",
+      "word": "今",
+      "reading": "いま",
+      "partOfSpeech": "名词／副词",
+      "meaning": "现在"
+    },
+    {
+      "key": "ji",
+      "word": "～時",
+      "reading": "～じ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……点"
+    },
+    {
+      "key": "fun",
+      "word": "～分",
+      "reading": "～ふん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……分"
+    },
+    {
+      "key": "han",
+      "word": "半",
+      "reading": "はん",
+      "partOfSpeech": "名词／接尾词",
+      "meaning": "半；半小时"
+    },
+    {
+      "key": "nanji",
+      "word": "何時",
+      "reading": "なんじ",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几点"
+    },
+    {
+      "key": "nanpun",
+      "word": "何分",
+      "reading": "なんぷん",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几分；多少分钟"
+    },
+    {
+      "key": "gozen",
+      "word": "午前",
+      "reading": "ごぜん",
+      "partOfSpeech": "名词",
+      "meaning": "上午；午前"
+    },
+    {
+      "key": "gogo",
+      "word": "午後",
+      "reading": "ごご",
+      "partOfSpeech": "名词",
+      "meaning": "下午；午后"
+    },
+    {
+      "key": "asa",
+      "word": "朝",
+      "reading": "あさ",
+      "partOfSpeech": "名词",
+      "meaning": "早晨；早上"
+    },
+    {
+      "key": "hiru",
+      "word": "昼",
+      "reading": "ひる",
+      "partOfSpeech": "名词",
+      "meaning": "中午；白天"
+    },
+    {
+      "key": "ban",
+      "word": "晩",
+      "reading": "ばん",
+      "partOfSpeech": "名词",
+      "meaning": "晚上"
+    },
+    {
+      "key": "yoru",
+      "word": "夜",
+      "reading": "よる",
+      "partOfSpeech": "名词",
+      "meaning": "夜晚；晚上"
+    },
+    {
+      "key": "ototoi",
+      "word": "おととい",
+      "reading": "おととい",
+      "partOfSpeech": "名词／副词",
+      "meaning": "前天"
+    },
+    {
+      "key": "kinou",
+      "word": "昨日",
+      "reading": "きのう",
+      "partOfSpeech": "名词／副词",
+      "meaning": "昨天"
+    },
+    {
+      "key": "kyou",
+      "word": "今日",
+      "reading": "きょう",
+      "partOfSpeech": "名词／副词",
+      "meaning": "今天"
+    },
+    {
+      "key": "ashita",
+      "word": "明日",
+      "reading": "あした",
+      "partOfSpeech": "名词／副词",
+      "meaning": "明天"
+    },
+    {
+      "key": "asatte",
+      "word": "あさって",
+      "reading": "あさって",
+      "partOfSpeech": "名词／副词",
+      "meaning": "后天"
+    },
+    {
+      "key": "kesa",
+      "word": "今朝",
+      "reading": "けさ",
+      "partOfSpeech": "名词／副词",
+      "meaning": "今天早上"
+    },
+    {
+      "key": "konban",
+      "word": "今晩",
+      "reading": "こんばん",
+      "partOfSpeech": "名词／副词",
+      "meaning": "今晚"
+    },
+    {
+      "key": "getsuyoubi",
+      "word": "月曜日",
+      "reading": "げつようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期一"
+    },
+    {
+      "key": "kayoubi",
+      "word": "火曜日",
+      "reading": "かようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期二"
+    },
+    {
+      "key": "suiyoubi",
+      "word": "水曜日",
+      "reading": "すいようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期三"
+    },
+    {
+      "key": "mokuyoubi",
+      "word": "木曜日",
+      "reading": "もくようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期四"
+    },
+    {
+      "key": "kinyoubi",
+      "word": "金曜日",
+      "reading": "きんようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期五"
+    },
+    {
+      "key": "doyoubi",
+      "word": "土曜日",
+      "reading": "どようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期六"
+    },
+    {
+      "key": "nichiyoubi",
+      "word": "日曜日",
+      "reading": "にちようび",
+      "partOfSpeech": "名词",
+      "meaning": "星期日"
+    },
+    {
+      "key": "nanyoubi",
+      "word": "何曜日",
+      "reading": "なんようび",
+      "partOfSpeech": "疑问表达",
+      "meaning": "星期几"
+    },
+    {
+      "key": "maiasa",
+      "word": "毎朝",
+      "reading": "まいあさ",
+      "partOfSpeech": "名词／副词",
+      "meaning": "每天早上"
+    },
+    {
+      "key": "maiban",
+      "word": "毎晩",
+      "reading": "まいばん",
+      "partOfSpeech": "名词／副词",
+      "meaning": "每天晚上"
+    },
+    {
+      "key": "mainichi",
+      "word": "毎日",
+      "reading": "まいにち",
+      "partOfSpeech": "名词／副词",
+      "meaning": "每天"
+    },
+    {
+      "key": "yasumi",
+      "word": "休み",
+      "reading": "やすみ",
+      "partOfSpeech": "名词",
+      "meaning": "休息；休假；休息日"
+    },
+    {
+      "key": "hiruyasumi",
+      "word": "昼休み",
+      "reading": "ひるやすみ",
+      "partOfSpeech": "名词",
+      "meaning": "午休"
+    },
+    {
+      "key": "shiken",
+      "word": "試験",
+      "reading": "しけん",
+      "partOfSpeech": "名词",
+      "meaning": "考试"
+    },
+    {
+      "key": "kaigi",
+      "word": "会議",
+      "reading": "かいぎ",
+      "partOfSpeech": "名词",
+      "meaning": "会议"
+    },
+    {
+      "key": "eiga",
+      "word": "映画",
+      "reading": "えいが",
+      "partOfSpeech": "名词",
+      "meaning": "电影"
+    },
+    {
+      "key": "bangou",
+      "word": "番号",
+      "reading": "ばんごう",
+      "partOfSpeech": "名词",
+      "meaning": "号码"
+    },
+    {
+      "key": "nanban",
+      "word": "何番",
+      "reading": "なんばん",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几号；多少号"
+    },
+    {
+      "key": "kara",
+      "word": "～から",
+      "reading": "～から",
+      "partOfSpeech": "助词",
+      "meaning": "从……开始"
+    },
+    {
+      "key": "made",
+      "word": "～まで",
+      "reading": "～まで",
+      "partOfSpeech": "助词",
+      "meaning": "到……为止"
+    },
+    {
+      "key": "to",
+      "word": "～と～",
+      "reading": "～と～",
+      "partOfSpeech": "助词",
+      "meaning": "……和……（并列名词）"
+    },
+    {
+      "key": "taihendesune",
+      "word": "大変ですね",
+      "reading": "たいへんですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "真不容易啊；真辛苦啊"
+    },
+    {
+      "key": "sochira",
+      "word": "そちら",
+      "reading": "そちら",
+      "partOfSpeech": "指示词",
+      "meaning": "您那边；那边（礼貌说法）"
+    },
+    {
+      "key": "nyuuyooku",
+      "word": "ニューヨーク",
+      "reading": "にゅーよーく",
+      "meaning": "纽约",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "pekin",
+      "word": "北京",
+      "reading": "ぺきん",
+      "meaning": "北京",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "rosanzerusu",
+      "word": "ロサンゼルス",
+      "reading": "ろさんぜるす",
+      "meaning": "洛杉矶",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "rondon",
+      "word": "ロンドン",
+      "reading": "ろんどん",
+      "meaning": "伦敦",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "asuka",
+      "word": "あすか",
+      "reading": "あすか",
+      "meaning": "明日香（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "appuruginkou",
+      "word": "アップル銀行",
+      "reading": "あっぷるぎんこう",
+      "meaning": "苹果银行（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "midoritoshokan",
+      "word": "みどり図書館",
+      "reading": "みどりとしょかん",
+      "meaning": "绿图书馆（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "yamatobijutsukan",
+      "word": "やまと美術館",
+      "reading": "やまとびじゅつかん",
+      "meaning": "大和美术馆（教材中的机构名）",
+      "partOfSpeech": "专有名词"
+    }
+  ]
+}

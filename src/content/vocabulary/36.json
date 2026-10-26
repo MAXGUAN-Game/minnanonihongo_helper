@@ -1,0 +1,296 @@
+{
+  "lessonId": 36,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/36.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源33条，排除5条旧版或跨课条目，合并同形同义项并补入第二来源，最终40条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/36.json。",
+    "主来源事故搭配的合います按语义校正为遭います。"
+  ],
+  "words": [
+    {
+      "key": "w1060",
+      "word": "柔道",
+      "reading": "じゅうどう",
+      "partOfSpeech": "名词",
+      "meaning": "柔道"
+    },
+    {
+      "key": "w1117",
+      "word": "ほとんど",
+      "reading": "ほとんど",
+      "partOfSpeech": "副词",
+      "meaning": "几乎（肯定）；几乎不（否定）"
+    },
+    {
+      "key": "w1129",
+      "word": "違います",
+      "reading": "ちがいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "不同"
+    },
+    {
+      "key": "w1433",
+      "word": "曲",
+      "reading": "きょく",
+      "partOfSpeech": "名词",
+      "meaning": "乐曲"
+    },
+    {
+      "key": "w1446",
+      "word": "貯金します",
+      "reading": "ちょきんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "存钱"
+    },
+    {
+      "key": "w1449",
+      "word": "［9時を］過ぎます",
+      "reading": "［9じを］すぎます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "超过（九点）"
+    },
+    {
+      "key": "w1450",
+      "word": "［習慣に］慣れます",
+      "reading": "［しゅうかんに］なれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "习惯（习俗）"
+    },
+    {
+      "key": "w1457",
+      "word": "剣道",
+      "reading": "けんどう",
+      "partOfSpeech": "名词",
+      "meaning": "剑道"
+    },
+    {
+      "key": "w1458",
+      "word": "毎週",
+      "reading": "まいしゅう",
+      "partOfSpeech": "名词",
+      "meaning": "每周"
+    },
+    {
+      "key": "w1459",
+      "word": "毎月",
+      "reading": "まいつき",
+      "partOfSpeech": "名词",
+      "meaning": "每月"
+    },
+    {
+      "key": "w1460",
+      "word": "毎年",
+      "reading": "まいとし",
+      "partOfSpeech": "名词",
+      "meaning": "每年"
+    },
+    {
+      "key": "w1461",
+      "word": "やっと",
+      "reading": "やっと",
+      "partOfSpeech": "副词",
+      "meaning": "终于"
+    },
+    {
+      "key": "w1462",
+      "word": "かなり",
+      "reading": "かなり",
+      "partOfSpeech": "副词",
+      "meaning": "相当"
+    },
+    {
+      "key": "w1463",
+      "word": "必ず",
+      "reading": "かならず",
+      "partOfSpeech": "副词",
+      "meaning": "一定（规律、承诺）"
+    },
+    {
+      "key": "w1464",
+      "word": "絶対に",
+      "reading": "ぜったいに",
+      "partOfSpeech": "副词",
+      "meaning": "绝对"
+    },
+    {
+      "key": "w1465",
+      "word": "上手に",
+      "reading": "じょうずに",
+      "partOfSpeech": "副词",
+      "meaning": "熟练地"
+    },
+    {
+      "key": "w1466",
+      "word": "できるだけ",
+      "reading": "できるだけ",
+      "partOfSpeech": "副词",
+      "meaning": "尽可能"
+    },
+    {
+      "key": "w1467",
+      "word": "この頃",
+      "reading": "このごろ",
+      "partOfSpeech": "名词",
+      "meaning": "最近"
+    },
+    {
+      "key": "w1470",
+      "word": "お客様",
+      "reading": "おきゃくさま",
+      "partOfSpeech": "名词",
+      "meaning": "顾客（敬称）"
+    },
+    {
+      "key": "w1471",
+      "word": "特別な",
+      "reading": "とくべつな",
+      "partOfSpeech": "な形容词",
+      "meaning": "特别的"
+    },
+    {
+      "key": "w1472",
+      "word": "していらっしゃいます",
+      "reading": "していらっしゃいます",
+      "partOfSpeech": "表达",
+      "meaning": "正在做（尊敬表达）"
+    },
+    {
+      "key": "w1473",
+      "word": "水泳",
+      "reading": "すいえい",
+      "partOfSpeech": "名词",
+      "meaning": "游泳"
+    },
+    {
+      "key": "w1476",
+      "word": "チャレンジします",
+      "reading": "ちゃれんじします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "挑战"
+    },
+    {
+      "key": "w1477",
+      "word": "気持ち",
+      "reading": "きもち",
+      "partOfSpeech": "名词",
+      "meaning": "心情"
+    },
+    {
+      "key": "w1595",
+      "word": "宇宙",
+      "reading": "うちゅう",
+      "partOfSpeech": "名词",
+      "meaning": "宇宙"
+    },
+    {
+      "key": "w1774",
+      "word": "［事故に］遭います",
+      "reading": "［じこに］あいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "遭遇（事故）"
+    },
+    {
+      "key": "w3257",
+      "word": "腐ります",
+      "reading": "くさります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "腐烂"
+    },
+    {
+      "key": "w950",
+      "word": "ラッシュ",
+      "reading": "らっしゅ",
+      "partOfSpeech": "名词",
+      "meaning": "交通高峰期"
+    },
+    {
+      "key": "using",
+      "word": "使っていらっしゃるんですね",
+      "reading": "つかっていらっしゃるんですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "原来您在使用啊（尊敬表达）"
+    },
+    {
+      "key": "chopin",
+      "word": "ショパン",
+      "reading": "しょぱん",
+      "partOfSpeech": "专有名词",
+      "meaning": "肖邦"
+    },
+    {
+      "key": "vehicle",
+      "word": "乗り物",
+      "reading": "のりもの",
+      "partOfSpeech": "名词",
+      "meaning": "交通工具"
+    },
+    {
+      "key": "century",
+      "word": "～世紀",
+      "reading": "～せいき",
+      "partOfSpeech": "接尾词",
+      "meaning": "……世纪"
+    },
+    {
+      "key": "far",
+      "word": "遠く",
+      "reading": "とおく",
+      "partOfSpeech": "名词／副词",
+      "meaning": "远处；远远地"
+    },
+    {
+      "key": "rare",
+      "word": "珍しい",
+      "reading": "めずらしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "少见的；珍奇的"
+    },
+    {
+      "key": "train",
+      "word": "汽車",
+      "reading": "きしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "火车"
+    },
+    {
+      "key": "steamship",
+      "word": "汽船",
+      "reading": "きせん",
+      "partOfSpeech": "名词",
+      "meaning": "轮船"
+    },
+    {
+      "key": "many",
+      "word": "大勢の",
+      "reading": "おおぜいの",
+      "partOfSpeech": "表达",
+      "meaning": "许多（人）"
+    },
+    {
+      "key": "transport",
+      "word": "運びます",
+      "reading": "はこびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "搬运；运输"
+    },
+    {
+      "key": "use",
+      "word": "利用します",
+      "reading": "りようします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "利用"
+    },
+    {
+      "key": "freely",
+      "word": "自由に",
+      "reading": "じゆうに",
+      "partOfSpeech": "副词",
+      "meaning": "自由地"
+    }
+  ]
+}

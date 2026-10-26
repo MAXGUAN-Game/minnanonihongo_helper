@@ -2,6 +2,7 @@ import { useId, type ReactNode } from 'react';
 import { Volume2, ArrowRight, Leaf, BookOpen, Headphones, MessageCircle } from 'lucide-react';
 import type { Example } from '../shared/types';
 import type { Speech } from './speech';
+import type { VoiceSpeaker } from '../shared/voice';
 import { AudioControls } from './AudioControls';
 
 export function Button({ children, secondary = false, ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { secondary?: boolean }) {
@@ -10,9 +11,9 @@ export function Button({ children, secondary = false, ...props }: React.ButtonHT
 export function Heading({ eyebrow, title, description, children }: { eyebrow: string; title: ReactNode; description?: string; children?: ReactNode }) {
   return <header className="page-heading"><div><p className="eyebrow"><span />{eyebrow}</p><h1 tabIndex={-1}>{title}</h1>{description && <p className="subtitle">{description}</p>}</div>{children}</header>;
 }
-export function Sentence({ example, speech, furigana, translation = true }: { example: Example; speech: Speech; furigana: boolean; translation?: boolean }) {
+export function Sentence({ example, speech, furigana, translation = true, speaker }: { example: Example; speech: Speech; furigana: boolean; translation?: boolean; speaker?: VoiceSpeaker }) {
   const sourceId = useId();
-  return <div className="sentence"><div className="sentence-text">{furigana && <p className="reading" lang="ja">{example.kana}</p>}<p className="japanese" lang="ja">{example.jp}</p>{translation && <p className="meaning">{example.zh}</p>}</div><button className="icon-button" aria-label={`朗读：${example.jp}`} data-audio-source={sourceId} onClick={() => speech.say(example.jp, 'ja-JP', 1, sourceId)}><Volume2 size={22} /></button><AudioControls speech={speech} sourceId={sourceId}/></div>;
+  return <div className="sentence"><div className="sentence-text">{furigana && <p className="reading" lang="ja">{example.kana}</p>}<p className="japanese" lang="ja">{example.jp}</p>{translation && <p className="meaning">{example.zh}</p>}</div><AudioControls speech={speech} sourceId={sourceId} onPlay={() => speech.say(example.jp, 'ja-JP', 1, sourceId, speaker)}/></div>;
 }
 export function ArtPath() {
   return <div className="art-path" aria-label="从学过，到听懂，再到说出来"><div className="art-node lavender"><BookOpen aria-hidden="true" /><b>学过</b></div><ArrowRight className="art-arrow" aria-hidden="true"/><div className="art-node peach"><Headphones aria-hidden="true"/><b>听懂</b></div><ArrowRight className="art-arrow" aria-hidden="true"/><div className="art-node lime"><MessageCircle aria-hidden="true"/><b>说出来</b></div><span className="art-caption"><Leaf size={16}/>每天连接一小步</span></div>;

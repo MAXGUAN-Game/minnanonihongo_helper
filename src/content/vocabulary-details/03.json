@@ -1,0 +1,552 @@
+{
+  "l3-koko": {
+    "romaji": "koko",
+    "attributes": [],
+    "explanation": "指示说话人所在或附近的场所，常用于口语。可单独使用，也可后接助词の、に、で等。与「こちら」相比更随意。",
+    "example": {
+      "jp": "ここは私の教室です。",
+      "kana": "ここはわたしのきょうしつです。",
+      "romaji": "koko wa watashi no kyoushitsu desu.",
+      "zh": "这里是我的教室。"
+    }
+  },
+  "l3-soko": {
+    "romaji": "soko",
+    "attributes": [],
+    "explanation": "指示听话人所在或附近的场所，常用于口语。可单独使用，也可后接助词。与「そこ」相比更礼貌的说法是「そちら」。",
+    "example": {
+      "jp": "そこは食堂ですか。",
+      "kana": "そこはしょくどうですか。",
+      "romaji": "soko wa shokudou desu ka.",
+      "zh": "那里是食堂吗？"
+    }
+  },
+  "l3-asoko": {
+    "romaji": "asoko",
+    "attributes": [],
+    "explanation": "指示离说话人和听话人都较远的场所，常用于口语。可单独使用，也可后接助词。礼貌说法是「あちら」。",
+    "example": {
+      "jp": "あそこは事務所です。",
+      "kana": "あそこはじむしょです。",
+      "romaji": "asoko wa jimusho desu.",
+      "zh": "那里是办公室。"
+    }
+  },
+  "l3-doko": {
+    "romaji": "doko",
+    "attributes": [],
+    "explanation": "询问场所的疑问词，常用于口语。可单独使用，也可后接助词。礼貌说法是「どちら」。",
+    "example": {
+      "jp": "会議室はどこですか。",
+      "kana": "かいぎしつはどこですか。",
+      "romaji": "kaigishitsu wa doko desu ka.",
+      "zh": "会议室在哪里？"
+    }
+  },
+  "l3-kochira": {
+    "romaji": "kochira",
+    "attributes": [],
+    "explanation": "「ここ」的礼貌说法，指示说话人这边或附近。也可指代说话人自己或己方，常用于正式场合或电话中。",
+    "example": {
+      "jp": "こちらは会議室です。",
+      "kana": "こちらはかいぎしつです。",
+      "romaji": "kochira wa kaigishitsu desu.",
+      "zh": "这边是会议室。"
+    }
+  },
+  "l3-sochira": {
+    "romaji": "sochira",
+    "attributes": [],
+    "explanation": "「そこ」的礼貌说法，指示听话人那边或附近。也可指代听话人自己或对方，常用于正式场合或电话中。",
+    "example": {
+      "jp": "そちらは教室ですか。",
+      "kana": "そちらはきょうしつですか。",
+      "romaji": "sochira wa kyoushitsu desu ka.",
+      "zh": "您那边是教室吗？"
+    }
+  },
+  "l3-achira": {
+    "romaji": "achira",
+    "attributes": [],
+    "explanation": "「あそこ」的礼貌说法，指示离双方都远的场所。也可指代远处的人或方向，常用于正式场合。",
+    "example": {
+      "jp": "あちらは食堂です。",
+      "kana": "あちらはしょくどうです。",
+      "romaji": "achira wa shokudou desu.",
+      "zh": "那边是食堂。"
+    }
+  },
+  "l3-dochira": {
+    "romaji": "dochira",
+    "attributes": [],
+    "explanation": "「どこ」的礼貌说法，询问场所或方向。也可用于询问选择或指代人（哪位），常用于正式场合。",
+    "example": {
+      "jp": "事務所はどちらですか。",
+      "kana": "じむしょはどちらですか。",
+      "romaji": "jimusho wa dochira desu ka.",
+      "zh": "办公室在哪里？"
+    }
+  },
+  "l3-kyoushitsu": {
+    "romaji": "kyoushitsu",
+    "attributes": [],
+    "explanation": "指学校等教育机构中用于上课的房间。常与「ここ」「そこ」「あそこ」「どこ」等指示词搭配使用。",
+    "example": {
+      "jp": "教室はここです。",
+      "kana": "きょうしつはここです。",
+      "romaji": "kyoushitsu wa koko desu.",
+      "zh": "教室在这里。"
+    }
+  },
+  "l3-v2": {
+    "romaji": "shokudou",
+    "attributes": [],
+    "explanation": "指学校、公司等机构内供用餐的场所。常与场所指示词搭配，如「食堂はどこですか」。",
+    "example": {
+      "jp": "食堂はあそこです。",
+      "kana": "しょくどうはあそこです。",
+      "romaji": "shokudou wa asoko desu.",
+      "zh": "食堂在那里。"
+    }
+  },
+  "l3-jimusho": {
+    "romaji": "jimusho",
+    "attributes": [],
+    "explanation": "指处理事务、办公的房间或机构。常用于询问或指示办公地点。",
+    "example": {
+      "jp": "事務所はこちらです。",
+      "kana": "じむしょはこちらです。",
+      "romaji": "jimusho wa kochira desu.",
+      "zh": "办公室在这边。"
+    }
+  },
+  "l3-kaigishitsu": {
+    "romaji": "kaigishitsu",
+    "attributes": [],
+    "explanation": "指用于开会、商议的房间。常与「どこ」「こちら」等词搭配询问或指示位置。",
+    "example": {
+      "jp": "会議室はそちらです。",
+      "kana": "かいぎしつはそちらです。",
+      "romaji": "kaigishitsu wa sochira desu.",
+      "zh": "会议室在您那边。"
+    }
+  },
+  "l3-v1": {
+    "romaji": "uketsuke",
+    "attributes": [],
+    "explanation": "指建筑物入口处办理登记、咨询的接待处，也指接待人员。常与「で」搭配表示在接待处做某事，如「受付で聞く」。",
+    "example": {
+      "jp": "受付はどこですか。",
+      "kana": "うけつけはどこですか。",
+      "romaji": "uketsuke wa doko desu ka.",
+      "zh": "接待处在哪里？"
+    }
+  },
+  "l3-robii": {
+    "romaji": "robii",
+    "attributes": [],
+    "explanation": "指酒店、办公楼等入口处宽敞的大厅，供人等候或休息。外来语，日常常与「で待つ」等搭配。",
+    "example": {
+      "jp": "ロビーで待っています。",
+      "kana": "ろびーでまっています。",
+      "romaji": "robii de matte imasu.",
+      "zh": "我在大厅等着。"
+    }
+  },
+  "l3-heya": {
+    "romaji": "heya",
+    "attributes": [],
+    "explanation": "泛指房间，可指卧室、客房、教室等。常与「に入る」「を出る」等搭配，也可说「部屋代」。",
+    "example": {
+      "jp": "部屋は三階にあります。",
+      "kana": "へやはさんがいにあります。",
+      "romaji": "heya wa sangai ni arimasu.",
+      "zh": "房间在三楼。"
+    }
+  },
+  "l3-v6": {
+    "romaji": "toire",
+    "attributes": [],
+    "explanation": "日常口语中常用的“厕所”说法，较直接但不算失礼。常与「に行く」「を借りる」搭配。",
+    "example": {
+      "jp": "トイレはどこですか。",
+      "kana": "といれはどこですか。",
+      "romaji": "toire wa doko desu ka.",
+      "zh": "厕所在哪里？"
+    }
+  },
+  "l3-otearai": {
+    "romaji": "otearai",
+    "attributes": [],
+    "explanation": "「手洗い」的礼貌说法，在商店、餐厅等公共场合询问洗手间时常用。比「トイレ」更委婉。",
+    "example": {
+      "jp": "お手洗いをお借りしてもいいですか。",
+      "kana": "おてあらいをおかりしてもいいですか。",
+      "romaji": "otearai o okari shite mo ii desu ka.",
+      "zh": "可以借用一下洗手间吗？"
+    }
+  },
+  "l3-v4": {
+    "romaji": "kaidan",
+    "attributes": [],
+    "explanation": "指建筑物内连接上下层的楼梯。常与「を上る」「を下りる」搭配，也可说「階段で行く」。",
+    "example": {
+      "jp": "階段で二階へ上がります。",
+      "kana": "かいだんでにかいへあがります。",
+      "romaji": "kaidan de nikai e agarimasu.",
+      "zh": "走楼梯上二楼。"
+    }
+  },
+  "l3-v5": {
+    "romaji": "erebeetaa",
+    "attributes": [],
+    "explanation": "指垂直升降的电梯，外来语。常与「に乗る」「で行く」搭配；注意与「エスカレーター」区分。",
+    "example": {
+      "jp": "エレベーターで五階まで行きます。",
+      "kana": "えれべーたーでごかいまでいきます。",
+      "romaji": "erebeetaa de gokai made ikimasu.",
+      "zh": "坐电梯到五楼。"
+    }
+  },
+  "l3-esukareetaa": {
+    "romaji": "esukareetaa",
+    "attributes": [],
+    "explanation": "指自动扶梯，外来语。常与「に乗る」「を上がる」搭配；与垂直升降的「エレベーター」不同。",
+    "example": {
+      "jp": "エスカレーターに乗って上へ行きます。",
+      "kana": "えすかれーたーにのってうえへいきます。",
+      "romaji": "esukareetaa ni notte ue e ikimasu.",
+      "zh": "乘自动扶梯上去。"
+    }
+  },
+  "l3-jidouhanbaiki": {
+    "romaji": "jidouhanbaiki",
+    "attributes": [],
+    "explanation": "指自动售货机，汉字写作「自動販売機」。常与「で買う」搭配，口语中有时简称「自販機」。",
+    "example": {
+      "jp": "自動販売機でお茶を買います。",
+      "kana": "じどうはんばいきでおちゃをかいます。",
+      "romaji": "jidouhanbaiki de ocha o kaimasu.",
+      "zh": "在自动售货机买茶。"
+    }
+  },
+  "l3-denwa": {
+    "romaji": "denwa",
+    "attributes": [],
+    "explanation": "指电话，也可指打电话这一行为。常与「をかける」「に出る」搭配，如「電話をかける」。",
+    "example": {
+      "jp": "後で電話をかけます。",
+      "kana": "あとででんわをかけます。",
+      "romaji": "ato de denwa o kakemasu.",
+      "zh": "稍后打电话。"
+    }
+  },
+  "l3-kuni": {
+    "romaji": "okuni",
+    "attributes": [],
+    "explanation": "「国」的礼貌说法，可指对方的国家，也可泛指国家。询问对方来自哪里时常用「お国はどちらですか」。",
+    "example": {
+      "jp": "お国はどちらですか。",
+      "kana": "おくにはどちらですか。",
+      "romaji": "okuni wa dochira desu ka.",
+      "zh": "您是哪国人？"
+    }
+  },
+  "l3-kaisha": {
+    "romaji": "kaisha",
+    "attributes": [],
+    "explanation": "指公司、企业。常与「に勤める」「を休む」搭配；说自己的公司时常用「うちの会社」。",
+    "example": {
+      "jp": "父は会社に勤めています。",
+      "kana": "ちちはかいしゃにつとめています。",
+      "romaji": "chichi wa kaisha ni tsutomete imasu.",
+      "zh": "父亲在公司上班。"
+    }
+  },
+  "l3-uchi": {
+    "romaji": "uchi",
+    "attributes": [],
+    "explanation": "指自己家或家庭内部，常与「に」「で」「の」等助词搭配。口语中比「いえ」更亲切，也可用于指自己所属的组织内部。",
+    "example": {
+      "jp": "うちに帰ってから電話します。",
+      "kana": "うちにかえってからでんわします。",
+      "romaji": "uchi ni kaette kara denwa shimasu.",
+      "zh": "我回家后给你打电话。"
+    }
+  },
+  "l3-v7": {
+    "romaji": "kutsu",
+    "attributes": [],
+    "explanation": "指穿在脚上的鞋类总称，包括皮鞋、运动鞋等。常与「を履く」「を脱ぐ」搭配，卖鞋的柜台叫「靴売り場」。",
+    "example": {
+      "jp": "この靴は少し大きいです。",
+      "kana": "このくつはすこしおおきいです。",
+      "romaji": "kono kutsu wa sukoshi ookii desu.",
+      "zh": "这双鞋有点大。"
+    }
+  },
+  "l3-nekutai": {
+    "romaji": "nekutai",
+    "attributes": [],
+    "explanation": "外来语，指西装等搭配的领带。常用搭配「ネクタイを締める」「ネクタイを外す」，卖领带的柜台叫「ネクタイ売り場」。",
+    "example": {
+      "jp": "父は毎朝ネクタイを締めます。",
+      "kana": "ちちはまいあさねくたいをしめます。",
+      "romaji": "chichi wa maiasa nekutai o shimemasu.",
+      "zh": "父亲每天早上系领带。"
+    }
+  },
+  "l3-wain": {
+    "romaji": "wain",
+    "attributes": [],
+    "explanation": "外来语，指葡萄酒，通常指用葡萄酿造的酒精饮料。可说「赤ワイン」「白ワイン」，量词用「本」或「杯」。",
+    "example": {
+      "jp": "晩ご飯にワインを飲みます。",
+      "kana": "ばんごはんにわいんをのみます。",
+      "romaji": "bangohan ni wain o nomimasu.",
+      "zh": "晚饭时喝葡萄酒。"
+    }
+  },
+  "l3-v3": {
+    "romaji": "uriba",
+    "attributes": [],
+    "explanation": "指商店中按商品种类划分的销售区域或柜台，常以「～売り場」的形式出现，如「靴売り場」「地下の売り場」。",
+    "example": {
+      "jp": "ネクタイ売り場は何階ですか。",
+      "kana": "ねくたいうりばはなんがいですか。",
+      "romaji": "nekutai uriba wa nangai desu ka.",
+      "zh": "领带柜台在几楼？"
+    }
+  },
+  "l3-v10": {
+    "romaji": "chika",
+    "attributes": [],
+    "explanation": "指地面以下的空间或地下楼层，常与「～階」连用表示地下一层等，如「地下1階」。也可单独说「地下」表示地下层。",
+    "example": {
+      "jp": "ワイン売り場は地下にあります。",
+      "kana": "わいんうりばはちかにあります。",
+      "romaji": "wain uriba wa chika ni arimasu.",
+      "zh": "葡萄酒柜台在地下。"
+    }
+  },
+  "l3-kai": {
+    "romaji": "-kai",
+    "attributes": [],
+    "explanation": "接在数词后表示楼层，如「1階」「3階」。注意「何階」读作「なんがい」，部分数字后读音有浊化现象。",
+    "example": {
+      "jp": "靴売り場は2階です。",
+      "kana": "くつうりばはにかいです。",
+      "romaji": "kutsu uriba wa nikai desu.",
+      "zh": "鞋柜台在二楼。"
+    }
+  },
+  "l3-nangai": {
+    "romaji": "nangai",
+    "attributes": [],
+    "explanation": "询问楼层的疑问词，相当于“几楼”。由「何」和「階」组成，实际读音为「なんがい」，回答时用「～階」。",
+    "example": {
+      "jp": "すみません、ワイン売り場は何階ですか。",
+      "kana": "すみません、わいんうりばはなんがいですか。",
+      "romaji": "sumimasen, wain uriba wa nangai desu ka.",
+      "zh": "不好意思，葡萄酒柜台在几楼？"
+    }
+  },
+  "l3-en": {
+    "romaji": "-en",
+    "attributes": [],
+    "explanation": "接在数字后表示日元金额，如「100円」「500円」。询问价格时用「いくらですか」，注意数字与「円」之间通常不加助词。",
+    "example": {
+      "jp": "このネクタイは3000円です。",
+      "kana": "このねくたいはさんぜんえんです。",
+      "romaji": "kono nekutai wa sanzen en desu.",
+      "zh": "这条领带3000日元。"
+    }
+  },
+  "l3-v9": {
+    "romaji": "ikura",
+    "attributes": [],
+    "explanation": "询问价格或数量的疑问词，常与「ですか」连用表示“多少钱”。也可用于询问重量、程度等，但购物时最常用。",
+    "example": {
+      "jp": "このワインはいくらですか。",
+      "kana": "このわいんはいくらですか。",
+      "romaji": "kono wain wa ikura desu ka.",
+      "zh": "这瓶葡萄酒多少钱？"
+    }
+  },
+  "l3-hyaku": {
+    "romaji": "hyaku",
+    "attributes": [],
+    "explanation": "数词“百”，可单独使用或接在其他数字后构成复合数词，如「三百」「百円」。注意「三百」读作「さんびゃく」等音变。",
+    "example": {
+      "jp": "この靴は百円です。",
+      "kana": "このくつはひゃくえんです。",
+      "romaji": "kono kutsu wa hyaku en desu.",
+      "zh": "这双鞋一百日元。"
+    }
+  },
+  "l3-sen": {
+    "romaji": "sen",
+    "attributes": [],
+    "explanation": "数词“千”，可单独使用或构成复合数词，如「三千」「千円」。注意「三千」读作「さんぜん」等音变。",
+    "example": {
+      "jp": "ワインは千円です。",
+      "kana": "わいんはせんえんです。",
+      "romaji": "wain wa sen en desu.",
+      "zh": "葡萄酒一千日元。"
+    }
+  },
+  "l3-man": {
+    "romaji": "man",
+    "attributes": [],
+    "explanation": "数词，表示“一万”。常与“千”“百”等组合使用，如“一万”“三万”。注意与“億”的进位关系。",
+    "example": {
+      "jp": "この車は百万円です。",
+      "kana": "このくるまはひゃくまんえんです。",
+      "romaji": "kono kuruma wa hyakuman en desu.",
+      "zh": "这辆车是一百万日元。"
+    }
+  },
+  "l3-sumimasen": {
+    "romaji": "sumimasen",
+    "attributes": [],
+    "explanation": "固定表达，用于道歉、感谢或搭话。语气比“ごめんなさい”稍正式，也可用于请求他人注意。",
+    "example": {
+      "jp": "すみません、駅はどこですか。",
+      "kana": "すみません、えきはどこですか。",
+      "romaji": "sumimasen, eki wa doko desu ka.",
+      "zh": "不好意思，车站在哪里？"
+    }
+  },
+  "l3-misetekudasai": {
+    "romaji": "o misete kudasai",
+    "attributes": [],
+    "explanation": "固定表达，请求对方出示某物。接在名词加“を”之后，用于购物或询问时。",
+    "example": {
+      "jp": "そのかばんを見せてください。",
+      "kana": "そのかばんをみせてください。",
+      "romaji": "sono kaban o misete kudasai.",
+      "zh": "请给我看一下那个包。"
+    }
+  },
+  "l3-ja": {
+    "romaji": "ja",
+    "attributes": [],
+    "explanation": "接续词，表示“那么”“那就”，用于承接前文并引出结论或行动。口语中常用，正式场合可用“では”。",
+    "example": {
+      "jp": "じゃ、また明日。",
+      "kana": "じゃ、またあした。",
+      "romaji": "ja, mata ashita.",
+      "zh": "那么，明天见。"
+    }
+  },
+  "l3-kudasai": {
+    "romaji": "o kudasai",
+    "attributes": [],
+    "explanation": "固定表达，表示“请给我……”。接在名词加“を”之后，用于点餐、购物等场合。",
+    "example": {
+      "jp": "コーヒーをください。",
+      "kana": "こーひーをください。",
+      "romaji": "kōhī o kudasai.",
+      "zh": "请给我一杯咖啡。"
+    }
+  },
+  "l3-irasshaimase": {
+    "romaji": "irasshaimase",
+    "attributes": [],
+    "explanation": "固定表达，是店员对顾客的招呼语，意为“欢迎光临”。不用于一般问候。",
+    "example": {
+      "jp": "いらっしゃいませ。何名様ですか。",
+      "kana": "いらっしゃいませ。なんめいさまですか。",
+      "romaji": "irasshaimase. nanmei-sama desu ka.",
+      "zh": "欢迎光临。请问几位？"
+    }
+  },
+  "l3-itaria": {
+    "romaji": "Itaria",
+    "attributes": [],
+    "explanation": "专有名词，指国家意大利。注意日语中“イタリア”的罗马字拼写为Itaria。",
+    "example": {
+      "jp": "イタリアへ行きたいです。",
+      "kana": "いたりあへいきたいです。",
+      "romaji": "Itaria e ikitai desu.",
+      "zh": "我想去意大利。"
+    }
+  },
+  "l3-furansu": {
+    "romaji": "Furansu",
+    "attributes": [],
+    "explanation": "专有名词，指国家法国。日语中“フランス”的罗马字拼写为Furansu。",
+    "example": {
+      "jp": "フランスのワインは有名です。",
+      "kana": "ふらんすのわいんはゆうめいです。",
+      "romaji": "Furansu no wain wa yūmei desu.",
+      "zh": "法国的葡萄酒很有名。"
+    }
+  },
+  "l3-suisu": {
+    "romaji": "Suisu",
+    "attributes": [],
+    "explanation": "专有名词，指国家瑞士。日语中“スイス”的罗马字拼写为Suisu。",
+    "example": {
+      "jp": "スイスは山がきれいです。",
+      "kana": "すいすはやまがきれいです。",
+      "romaji": "Suisu wa yama ga kirei desu.",
+      "zh": "瑞士的山很美。"
+    }
+  },
+  "l3-bankoku": {
+    "romaji": "Bankoku",
+    "attributes": [],
+    "explanation": "专有名词，指泰国首都曼谷。日语中“バンコク”的罗马字拼写为Bankoku。",
+    "example": {
+      "jp": "バンコクは暑いですか。",
+      "kana": "ばんこくはあついですか。",
+      "romaji": "Bankoku wa atsui desu ka.",
+      "zh": "曼谷热吗？"
+    }
+  },
+  "l3-shinoosaka": {
+    "romaji": "Shin-Ōsaka",
+    "attributes": [],
+    "explanation": "专有名词，指新大阪站，是新干线的停靠站。注意“新”读作“しん”，“大阪”读作“おおさか”。",
+    "example": {
+      "jp": "新大阪で新幹線に乗ります。",
+      "kana": "しんおおさかでしんかんせんにのります。",
+      "romaji": "Shin-Ōsaka de shinkansen ni norimasu.",
+      "zh": "在新大阪乘坐新干线。"
+    }
+  },
+  "l3-jakaruta": {
+    "romaji": "Jakaruta",
+    "attributes": [],
+    "explanation": "专有名词，指印度尼西亚首都雅加达。日语中“ジャカルタ”的罗马字拼写为Jakaruta。",
+    "example": {
+      "jp": "ジャカルタはにぎやかです。",
+      "kana": "じゃかるたはにぎやかです。",
+      "romaji": "Jakaruta wa nigiyaka desu.",
+      "zh": "雅加达很热闹。"
+    }
+  },
+  "l3-berurin": {
+    "romaji": "berurin",
+    "attributes": [],
+    "explanation": "德国的首都，作为专有名词直接使用，通常不加助词以外的修饰。语体中性，可作主语、目的地等；注意日语中写作片假名，不写汉字。",
+    "example": {
+      "jp": "来年ベルリンへ行きます。",
+      "kana": "らいねんべるりんへいきます。",
+      "romaji": "rainen berurin e ikimasu.",
+      "zh": "明年去柏林。"
+    }
+  },
+  "l3-doumo": {
+    "romaji": "doumo",
+    "attributes": [],
+    "explanation": "口语中简略表达谢意，比「ありがとう」更随意、简短，常用于熟人之间或轻松场合。也可用于打招呼，但本课取感谢义；正式场合宜用「ありがとうございます」。",
+    "example": {
+      "jp": "手伝ってくれて、どうも。",
+      "kana": "てつだってくれて、どうも。",
+      "romaji": "tetsudatte kurete, doumo.",
+      "zh": "谢谢你帮我。"
+    }
+  }
+}

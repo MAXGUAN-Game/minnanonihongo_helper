@@ -1,0 +1,197 @@
+{
+  "lessonId": 15,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/15.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源27条，排除4条旧版或跨课条目，合并同形同义项并补入第二来源，最终26条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/15.json。"
+  ],
+  "words": [
+    {
+      "key": "w2883",
+      "word": "電子辞書",
+      "reading": "でんしじしょ",
+      "partOfSpeech": "名词",
+      "meaning": "电子词典"
+    },
+    {
+      "key": "w41",
+      "word": "皆さん",
+      "reading": "みなさん",
+      "partOfSpeech": "表达",
+      "meaning": "各位"
+    },
+    {
+      "key": "w663",
+      "word": "市役所",
+      "reading": "しやくしょ",
+      "partOfSpeech": "名词",
+      "meaning": "市政府"
+    },
+    {
+      "key": "w666",
+      "word": "経済",
+      "reading": "けいざい",
+      "partOfSpeech": "名词",
+      "meaning": "经济"
+    },
+    {
+      "key": "w730",
+      "word": "置きます",
+      "reading": "おきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "放置"
+    },
+    {
+      "key": "w731",
+      "word": "作ります",
+      "reading": "つくります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "制作"
+    },
+    {
+      "key": "w732",
+      "word": "売ります",
+      "reading": "うります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "卖"
+    },
+    {
+      "key": "w733",
+      "word": "知ります",
+      "reading": "しります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "知道；得知"
+    },
+    {
+      "key": "w734",
+      "word": "住みます",
+      "reading": "すみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "居住"
+    },
+    {
+      "key": "w735",
+      "word": "研究します",
+      "reading": "けんきゅうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "研究"
+    },
+    {
+      "key": "w736",
+      "word": "知っています",
+      "reading": "しっています",
+      "partOfSpeech": "表达",
+      "meaning": "知道（表示状态）"
+    },
+    {
+      "key": "w737",
+      "word": "住んでいます",
+      "reading": "すんでいます",
+      "partOfSpeech": "表达",
+      "meaning": "住着（表示状态）"
+    },
+    {
+      "key": "w738",
+      "word": "資料",
+      "reading": "しりょう",
+      "partOfSpeech": "名词",
+      "meaning": "资料"
+    },
+    {
+      "key": "w739",
+      "word": "カタログ",
+      "reading": "かたろぐ",
+      "partOfSpeech": "名词",
+      "meaning": "产品目录"
+    },
+    {
+      "key": "w740",
+      "word": "時刻表",
+      "reading": "じこくひょう",
+      "partOfSpeech": "名词",
+      "meaning": "时刻表"
+    },
+    {
+      "key": "w741",
+      "word": "服",
+      "reading": "ふく",
+      "partOfSpeech": "名词",
+      "meaning": "衣服"
+    },
+    {
+      "key": "w742",
+      "word": "製品",
+      "reading": "せいひん",
+      "partOfSpeech": "名词",
+      "meaning": "产品"
+    },
+    {
+      "key": "w743",
+      "word": "ソフト",
+      "reading": "そふと",
+      "partOfSpeech": "名词",
+      "meaning": "软件"
+    },
+    {
+      "key": "w745",
+      "word": "歯医者",
+      "reading": "はいしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "牙医"
+    },
+    {
+      "key": "w748",
+      "word": "独身",
+      "reading": "どくしん",
+      "partOfSpeech": "名词",
+      "meaning": "单身"
+    },
+    {
+      "key": "w750",
+      "word": "思い出します",
+      "reading": "おもいだします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "想起"
+    },
+    {
+      "key": "w752",
+      "word": "いらっしゃいます",
+      "reading": "いらっしゃいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "在（います的尊敬语）"
+    },
+    {
+      "key": "w753",
+      "word": "高校",
+      "reading": "こうこう",
+      "partOfSpeech": "名词",
+      "meaning": "高中"
+    },
+    {
+      "key": "build",
+      "word": "造ります",
+      "reading": "つくります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "制造；建造（规模较大的物品）"
+    },
+    {
+      "key": "nihonbashi",
+      "word": "日本橋",
+      "reading": "にほんばし",
+      "partOfSpeech": "专有名词",
+      "meaning": "日本桥（东京地名）"
+    },
+    {
+      "key": "interview",
+      "word": "みんなのインタビュー",
+      "reading": "みんなのいんたびゅー",
+      "partOfSpeech": "专有名词",
+      "meaning": "大家的访谈（教材栏目名）"
+    }
+  ]
+}

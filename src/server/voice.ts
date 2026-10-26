@@ -21,7 +21,7 @@ const settingsSchema = z.object({
 const patchSchema = settingsSchema.partial().extend({ apiKey: z.string().trim().max(512) }).partial().strict();
 const inputSchema = z.object({
   text: z.string().trim().min(1).max(1500),
-  rate: z.number().min(0.6).max(1.2).default(1), speaker: z.enum(['primary', 'secondary']).default('primary'),
+  rate: z.number().min(0.6).max(1.2).default(1), speaker: z.enum(['primary', 'secondary', 'dialogue-a', 'dialogue-b']).default('primary'),
 }).strict();
 
 // Validate RIFF structure and the exact uncompressed format requested from MiniMax.
@@ -50,7 +50,7 @@ function validWav(audio: Buffer): boolean {
 }
 
 type CacheFile = { path: string; bytes: number; modified: number };
-class VoiceCache {
+export class VoiceCache {
   private readonly directory: string;
   private readonly realDirectory: string;
   epoch = 0;
@@ -154,7 +154,7 @@ async function readAudio(response: Response): Promise<Buffer> {
   return audio;
 }
 
-async function requestAudio(voiceFetch: typeof fetch, settings: VoiceSettings, apiKey: string, voice: VoiceSettings['voice'], rate: number, text: string): Promise<Buffer> {
+export async function requestAudio(voiceFetch: typeof fetch, settings: VoiceSettings, apiKey: string, voice: VoiceSettings['voice'], rate: number, text: string): Promise<Buffer> {
   const controller = new AbortController();
   let timer: ReturnType<typeof setTimeout> | undefined;
   const timeout = new Promise<never>((_, reject) => {
@@ -214,8 +214,13 @@ export function registerVoiceRoutes(app: FastifyInstance, db: Database.Database,
     const input = inputSchema.parse(request.body);
     const configuration = settings();
     if (configuration.provider !== 'minimax') throw new ApiError(400, 'VOICE_PROVIDER_DISABLED', '请先在设置中选择 MiniMax 云语音。');
-    const voice = input.speaker === 'secondary' && configuration.alternateSpeakers
-      ? configuration.secondaryVoice : configuration.voice;
+    // AI dialogues always have A (male), B (female), even when alternation is
+    // disabled or the configured voices have the same gender.
+    const voice = input.speaker === 'dialogue-a'
+      ? 'Japanese_GentleButler'
+      : input.speaker === 'dialogue-b'
+        ? 'Japanese_KindLady'
+        : input.speaker === 'secondary' && configuration.alternateSpeakers ? configuration.secondaryVoice : configuration.voice;
     const rate = Math.max(0.5, Math.min(2, Number((configuration.speed * input.rate).toFixed(4))));
     const key = createHash('sha256').update(JSON.stringify(['minimax', CACHE_VERSION, configuration.model, voice, rate, input.text])).digest('hex');
     const cached = cache.read(key);

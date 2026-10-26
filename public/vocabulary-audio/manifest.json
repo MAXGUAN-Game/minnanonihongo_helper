@@ -1,0 +1,46 @@
+{
+  "l1-v1": {
+    "file": "d58a0341970939d55df5226a6a31f0575fb369e2ce281e70a71e6fb502a97d8d.wav",
+    "sha256": "8d3b74ea427cd2e7b9ba95f66359fa857fb71dd48f53dbf1b269362b006e9ec4"
+  },
+  "l1-anata": {
+    "file": "d89b5f099144fe118a759bdcbe2e38a8ebf37abfd81aa2d0d0420f49da56dbf2.wav",
+    "sha256": "8c5cfc073b78aec06bfa1e4f22e2dda4d6ab9aa2fa3a4efabbccbfb1b2a741bc"
+  },
+  "l1-anohito": {
+    "file": "8783e6747cf472452466b4cbd96f0fed75dce405196e2e05096e140d413107ed.wav",
+    "sha256": "0d10d11694ecdb843414f021ac06c8b2165300aef9a8e145bccbb672af280c40"
+  },
+  "l1-anokata": {
+    "file": "ed6d07b1bdc240b94d772019b712a750b3985dacd1b688920989cad572e1ec96.wav",
+    "sha256": "9a83c27581678314fb9de5715fe852d5f98c5b6f2321f80c8b84626f91432c94"
+  },
+  "l1-v4": {
+    "file": "93502c18e879de501b4bc1d48c5dbbc1e75ecca1d977a7be64fadfb9fa023562.wav",
+    "sha256": "c49684961b6f55886be91482a4c27e9ab5b2fefa1b2808218f0b3017192571fd"
+  },
+  "l32-w829": {
+    "file": "93502c18e879de501b4bc1d48c5dbbc1e75ecca1d977a7be64fadfb9fa023562.wav",
+    "sha256": "c49684961b6f55886be91482a4c27e9ab5b2fefa1b2808218f0b3017192571fd"
+  },
+  "l1-kyoushi": {
+    "file": "f9af0481fd99aa9ef82d2a537b3a6becbd827820d778f2e151e4ee45a83c4b2b.wav",
+    "sha256": "93ed3bbb377bd2018a614127def3c7c7d3c3928b8cc686a22eda526126d639b1"
+  },
+  "l1-v2": {
+    "file": "6e200d92b6af717dc4c9d67cdd596dcd2aea11895f2870ac387cd9925face768.wav",
+    "sha256": "55d9629e8f6a41db51e8051d00beea101c657b7ffb7a7681e9596a12ba622cd9"
+  },
+  "l1-v3": {
+    "file": "40d85d0f319929bbe0e3979dbd971322e582b0f5f993f6167e99dd91ac71b55a.wav",
+    "sha256": "1ff649d2fb53d50705129b6b1a5b32bb665ba6489d9da4c2a2e791700af0ad1f"
+  },
+  "l1-shain": {
+    "file": "bc30d8755ee53b669bb21b3d6d5a16b44f84d702c9897e3374e20aaead945c25.wav",
+    "sha256": "aae3ab1268e3a40ef4df1ec10da4fe6fad9617e9857c9424d06b15bc83b17095"
+  },
+  "l1-ginkouin": {
+    "file": "7c7315d719081841d64cef130bcb76ade04ff8ff88e7bd0f171455d9fbc6d48f.wav",
+    "sha256": "3730d6657eae630684b8ac3971fbdbf63b99e56e3098aa5dc283c45990151907"
+  }
+}

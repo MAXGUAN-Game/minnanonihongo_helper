@@ -1,0 +1,260 @@
+{
+  "lessonId": 40,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/40.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 45,
+  "entries": [
+    {
+      "sourceId": "1218",
+      "sourceWord": "相談します",
+      "key": "w1218"
+    },
+    {
+      "sourceId": "1586",
+      "sourceWord": "数えます",
+      "key": "w1586"
+    },
+    {
+      "sourceId": "1587",
+      "sourceWord": "はかります",
+      "key": "w1587"
+    },
+    {
+      "sourceId": "1588",
+      "sourceWord": "確かめます",
+      "key": "w1588"
+    },
+    {
+      "sourceId": "1589",
+      "sourceWord": "［サイズが］合います",
+      "key": "w1589"
+    },
+    {
+      "sourceId": "1590",
+      "sourceWord": "出発します",
+      "key": "w1590"
+    },
+    {
+      "sourceId": "1591",
+      "sourceWord": "到着します",
+      "key": "w1591"
+    },
+    {
+      "sourceId": "1592",
+      "sourceWord": "酔います",
+      "key": "w1592"
+    },
+    {
+      "sourceId": "1594",
+      "sourceWord": "必要な",
+      "key": "w1594"
+    },
+    {
+      "sourceId": "1597",
+      "sourceWord": "忘年会",
+      "key": "w1597"
+    },
+    {
+      "sourceId": "1598",
+      "sourceWord": "新年会",
+      "key": "w1598"
+    },
+    {
+      "sourceId": "1599",
+      "sourceWord": "二次会",
+      "key": "w1599"
+    },
+    {
+      "sourceId": "1600",
+      "sourceWord": "大会",
+      "key": "w1600"
+    },
+    {
+      "sourceId": "1601",
+      "sourceWord": "マラソン",
+      "key": "w1601"
+    },
+    {
+      "sourceId": "1602",
+      "sourceWord": "コンテスト",
+      "key": "w1602"
+    },
+    {
+      "sourceId": "1603",
+      "sourceWord": "表",
+      "key": "w1603"
+    },
+    {
+      "sourceId": "1604",
+      "sourceWord": "裏",
+      "key": "w1604"
+    },
+    {
+      "sourceId": "1608",
+      "sourceWord": "間違い",
+      "key": "w1608"
+    },
+    {
+      "sourceId": "1609",
+      "sourceWord": "傷",
+      "key": "w1609"
+    },
+    {
+      "sourceId": "1610",
+      "sourceWord": "ズボン",
+      "key": "w1610"
+    },
+    {
+      "sourceId": "1611",
+      "sourceWord": "長さ",
+      "key": "w1611"
+    },
+    {
+      "sourceId": "1612",
+      "sourceWord": "重さ",
+      "key": "w1612"
+    },
+    {
+      "sourceId": "1613",
+      "sourceWord": "高さ",
+      "key": "w1613"
+    },
+    {
+      "sourceId": "1614",
+      "sourceWord": "大きさ",
+      "key": "w1614"
+    },
+    {
+      "sourceId": "1615",
+      "sourceWord": "便",
+      "key": "w1615"
+    },
+    {
+      "sourceId": "1617",
+      "sourceWord": "～個",
+      "key": "w1617"
+    },
+    {
+      "sourceId": "1618",
+      "sourceWord": "～本",
+      "key": "w1618"
+    },
+    {
+      "sourceId": "1619",
+      "sourceWord": "～杯",
+      "key": "w1619"
+    },
+    {
+      "sourceId": "1621",
+      "sourceWord": "～グラム",
+      "key": "w1621"
+    },
+    {
+      "sourceId": "1622",
+      "sourceWord": "～センチ",
+      "key": "w1622"
+    },
+    {
+      "sourceId": "1623",
+      "sourceWord": "～ミリ",
+      "key": "w1623"
+    },
+    {
+      "sourceId": "1624",
+      "sourceWord": "～以上",
+      "key": "w1624"
+    },
+    {
+      "sourceId": "1625",
+      "sourceWord": "～以下",
+      "key": "w1625"
+    },
+    {
+      "sourceId": "1627",
+      "sourceWord": "どうでしょうか。",
+      "key": "w1627"
+    },
+    {
+      "sourceId": "1629",
+      "sourceWord": "テスト",
+      "key": "w1629"
+    },
+    {
+      "sourceId": "1630",
+      "sourceWord": "成績",
+      "key": "w1630"
+    },
+    {
+      "sourceId": "1631",
+      "sourceWord": "ところで",
+      "key": "w1631"
+    },
+    {
+      "sourceId": "1632",
+      "sourceWord": "いらっしゃいます",
+      "key": "w1632"
+    },
+    {
+      "sourceId": "1633",
+      "sourceWord": "様子",
+      "key": "w1633"
+    },
+    {
+      "sourceId": "1778",
+      "sourceWord": "うまくいきます",
+      "key": "w1778"
+    },
+    {
+      "sourceId": "1830",
+      "sourceWord": "天気予報",
+      "key": "w1830"
+    },
+    {
+      "sourceId": "3208",
+      "sourceWord": "お年寄り",
+      "key": "w3208"
+    },
+    {
+      "sourceId": "5647",
+      "sourceWord": "［問題が］出ます",
+      "key": "w5647"
+    },
+    {
+      "sourceId": "5652",
+      "sourceWord": "発表会",
+      "key": "w5652"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1606",
+      "sourceWord": "申し込み",
+      "reason": "申请在第31课已列，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "weigh",
+    "nagasaki",
+    "sendai",
+    "jl",
+    "tanabata",
+    "toshogu",
+    "incident",
+    "motorcycle",
+    "bomb",
+    "load",
+    "driver",
+    "distant",
+    "suddenly",
+    "move",
+    "hard",
+    "criminal",
+    "man",
+    "obtain",
+    "still"
+  ],
+  "finalCount": 63
+}

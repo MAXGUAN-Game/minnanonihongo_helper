@@ -21,11 +21,11 @@ export async function encodeWav(blob: Blob): Promise<Blob> {
   } finally { await context.close(); }
 }
 
-export type RecordingContext = { lessonId: number; itemId: string; context: 'speak' | 'conversation' };
+export type RecordingContext = { lessonId: number; itemId: string; context: 'speak' | 'conversation' | 'ai-speak' };
 export type RecordedClip = { url: string; recordingId?: string; durationMs: number; saved: boolean };
 type RecordingDraft = { generation: number; clientId: string; context?: RecordingContext; raw: Blob; wav?: Promise<Blob>; transcript?: string; savedId?: string };
 
-export function useRecorder(onText: (text: string, ms: number, recordingId?: string) => void, onError: (message: string) => void, context?: RecordingContext) {
+export function useRecorder(onText: (text: string, ms: number, recordingId?: string) => void, onError: (message: string) => void, context?: RecordingContext, options?: { transcribe?: boolean; persist?: boolean }) {
   const [status, setStatus] = useState<'idle' | 'asking' | 'recording' | 'transcribing'>('idle');
   const [clip, setClip] = useState<RecordedClip | null>(null);
   const [saving, setSaving] = useState(false);
@@ -42,7 +42,7 @@ export function useRecorder(onText: (text: string, ms: number, recordingId?: str
   const savingDraft = useRef<RecordingDraft | null>(null);
   const draft = useRef<RecordingDraft | null>(null);
   const clipUrl = useRef<string | null>(null);
-  const callbacks = useRef({ onText, onError, context }); callbacks.current = { onText, onError, context };
+  const callbacks = useRef({ onText, onError, context, transcribe: options?.transcribe !== false }); callbacks.current = { onText, onError, context, transcribe: options?.transcribe !== false };
   const update = useCallback((value: typeof status) => { phase.current = value; setStatus(value); }, []);
   const current = (value: RecordingDraft) => alive.current && value.generation === generation.current && draft.current === value;
   const release = useCallback(() => {
@@ -63,13 +63,25 @@ export function useRecorder(onText: (text: string, ms: number, recordingId?: str
   useEffect(() => { cancel(); }, [contextKey, cancel]);
   async function requestJSON<T>(path: string, init: RequestInit, value: RecordingDraft): Promise<T> {
     const controller = new AbortController(); requests.current.add(controller);
+    let timer: ReturnType<typeof setTimeout> | undefined;
     try {
       if (!current(value)) throw new DOMException('Canceled', 'AbortError');
-      const response = await fetch(path, { ...init, signal: controller.signal });
-      const result = await response.json();
-      if (!response.ok) throw new Error(result.error || '操作未成功，请重试。');
-      return result as T;
-    } finally { requests.current.delete(controller); }
+      const send = async () => {
+        const response = await fetch(path, { ...init, signal: controller.signal });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || '操作未成功，请重试。');
+        return result as T;
+      };
+      // Local Whisper retains its existing recognition deadline. Upload and
+      // metadata requests must release the recorder even if the network stalls.
+      if (path === '/api/speech/transcribe') return await send();
+      return await Promise.race([send(), new Promise<never>((_, reject) => {
+        timer = setTimeout(() => {
+          reject(new Error('保存录音的请求超过 30 秒，请检查网络后重试保存。'));
+          controller.abort();
+        }, 30000);
+      })]);
+    } finally { clearTimeout(timer); requests.current.delete(controller); }
   }
   function wavFor(value: RecordingDraft) {
     if (!value.wav) value.wav = encodeWav(value.raw).then(wav => {
@@ -126,6 +138,7 @@ export function useRecorder(onText: (text: string, ms: number, recordingId?: str
     cancel(); pendingStop.current = false;
     const thisGeneration = generation.current;
     const recordingContext = callbacks.current.context ? { ...callbacks.current.context } : undefined;
+    const shouldTranscribe = callbacks.current.transcribe;
     update('asking');
     try {
       if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) throw new Error(window.isSecureContext ? '浏览器无法录音，请使用新版 Edge 或 Chrome。' : '录音需要安全连接，请使用 https:// 网站地址，或在本机用 localhost 打开。');
@@ -151,7 +164,10 @@ export function useRecorder(onText: (text: string, ms: number, recordingId?: str
         setClip({ url, durationMs: Date.now() - startedAt, saved: false });
         // Save and recognition deliberately run independently; either can be
         // retried with the same captured WAV while the local preview survives.
-        void save(value); void transcribe(value);
+        if (options?.persist !== false) void save(value);
+        else setClip({ url, recordingId: value.clientId, durationMs: Date.now() - startedAt, saved: false });
+        if (shouldTranscribe) void transcribe(value);
+        else update('idle');
       };
       rec.start(); update('recording'); timeout.current = setTimeout(stop, 30000);
     } catch (error) {
@@ -162,5 +178,5 @@ export function useRecorder(onText: (text: string, ms: number, recordingId?: str
   };
   const retrySave = () => { if (draft.current) void save(draft.current); };
   const retryTranscribe = () => { if (draft.current && phase.current === 'idle') void transcribe(draft.current); };
-  return { status, start, stop, cancel, clear: cancel, clip, saving, saveError, transcribeError, retrySave, retryTranscribe };
+  return { getWav: () => draft.current ? wavFor(draft.current) : Promise.reject(new Error('没有当前录音')), status, start, stop, cancel, clear: cancel, clip, saving, saveError, transcribeError, retrySave, retryTranscribe };
 }

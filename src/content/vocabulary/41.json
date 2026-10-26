@@ -1,0 +1,435 @@
+{
+  "lessonId": 41,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/41.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源48条，排除6条旧版或跨课条目，合并同形同义项并补入第二来源，最终60条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/41.json。"
+  ],
+  "words": [
+    {
+      "key": "w1154",
+      "word": "管理人",
+      "reading": "かんりにん",
+      "partOfSpeech": "名词",
+      "meaning": "管理员"
+    },
+    {
+      "key": "w1336",
+      "word": "上げます",
+      "reading": "あげます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "提高；举起"
+    },
+    {
+      "key": "w1337",
+      "word": "下げます",
+      "reading": "さげます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "降低；放下"
+    },
+    {
+      "key": "w1412",
+      "word": "珍しい",
+      "reading": "めずらしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "少见的"
+    },
+    {
+      "key": "w1468",
+      "word": "～ずつ",
+      "reading": "～ずつ",
+      "partOfSpeech": "表达",
+      "meaning": "每……；各……"
+    },
+    {
+      "key": "w1634",
+      "word": "頂きます",
+      "reading": "いただきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "领受（谦让语）"
+    },
+    {
+      "key": "w1635",
+      "word": "くださいます",
+      "reading": "くださいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "赐予（尊敬语）"
+    },
+    {
+      "key": "w1636",
+      "word": "やります",
+      "reading": "やります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "给（晚辈、动植物等）"
+    },
+    {
+      "key": "w1639",
+      "word": "親切にします",
+      "reading": "しんせつにします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "友善对待"
+    },
+    {
+      "key": "w1640",
+      "word": "かわいい",
+      "reading": "かわいい",
+      "partOfSpeech": "い形容词",
+      "meaning": "可爱的"
+    },
+    {
+      "key": "w1641",
+      "word": "お祝い",
+      "reading": "おいわい",
+      "partOfSpeech": "名词",
+      "meaning": "祝贺；贺礼"
+    },
+    {
+      "key": "w1642",
+      "word": "お年玉",
+      "reading": "おとしだま",
+      "partOfSpeech": "名词",
+      "meaning": "压岁钱"
+    },
+    {
+      "key": "w1643",
+      "word": "お見舞い",
+      "reading": "おみまい",
+      "partOfSpeech": "名词",
+      "meaning": "探望；慰问品"
+    },
+    {
+      "key": "w1644",
+      "word": "興味",
+      "reading": "きょうみ",
+      "partOfSpeech": "名词",
+      "meaning": "兴趣"
+    },
+    {
+      "key": "w1645",
+      "word": "情報",
+      "reading": "じょうほう",
+      "partOfSpeech": "名词",
+      "meaning": "信息"
+    },
+    {
+      "key": "w1646",
+      "word": "文法",
+      "reading": "ぶんぽう",
+      "partOfSpeech": "名词",
+      "meaning": "语法"
+    },
+    {
+      "key": "w1647",
+      "word": "発音",
+      "reading": "はつおん",
+      "partOfSpeech": "名词",
+      "meaning": "发音"
+    },
+    {
+      "key": "w1648",
+      "word": "猿",
+      "reading": "さる",
+      "partOfSpeech": "名词",
+      "meaning": "猴子"
+    },
+    {
+      "key": "w1649",
+      "word": "餌",
+      "reading": "えさ",
+      "partOfSpeech": "名词",
+      "meaning": "饲料"
+    },
+    {
+      "key": "w1650",
+      "word": "おもちゃ",
+      "reading": "おもちゃ",
+      "partOfSpeech": "名词",
+      "meaning": "玩具"
+    },
+    {
+      "key": "w1651",
+      "word": "絵本",
+      "reading": "えほん",
+      "partOfSpeech": "名词",
+      "meaning": "图画书"
+    },
+    {
+      "key": "w1652",
+      "word": "絵はがき",
+      "reading": "えはがき",
+      "partOfSpeech": "名词",
+      "meaning": "风景明信片"
+    },
+    {
+      "key": "w1653",
+      "word": "ドライバー",
+      "reading": "どらいばー",
+      "partOfSpeech": "名词",
+      "meaning": "螺丝刀"
+    },
+    {
+      "key": "w1654",
+      "word": "ハンカチ",
+      "reading": "はんかち",
+      "partOfSpeech": "名词",
+      "meaning": "手帕"
+    },
+    {
+      "key": "w1655",
+      "word": "靴下",
+      "reading": "くつした",
+      "partOfSpeech": "名词",
+      "meaning": "袜子"
+    },
+    {
+      "key": "w1656",
+      "word": "手袋",
+      "reading": "てぶくろ",
+      "partOfSpeech": "名词",
+      "meaning": "手套"
+    },
+    {
+      "key": "w1659",
+      "word": "祖父",
+      "reading": "そふ",
+      "partOfSpeech": "名词",
+      "meaning": "自己的祖父"
+    },
+    {
+      "key": "w1660",
+      "word": "祖母",
+      "reading": "そぼ",
+      "partOfSpeech": "名词",
+      "meaning": "自己的祖母"
+    },
+    {
+      "key": "w1661",
+      "word": "孫",
+      "reading": "まご",
+      "partOfSpeech": "名词",
+      "meaning": "孙辈"
+    },
+    {
+      "key": "w1662",
+      "word": "叔父",
+      "reading": "おじ",
+      "partOfSpeech": "名词",
+      "meaning": "自己的叔伯舅父"
+    },
+    {
+      "key": "w1663",
+      "word": "叔父さん",
+      "reading": "おじさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的叔伯舅父；叔叔"
+    },
+    {
+      "key": "w1664",
+      "word": "叔母",
+      "reading": "おば",
+      "partOfSpeech": "名词",
+      "meaning": "自己的姑姨母"
+    },
+    {
+      "key": "w1665",
+      "word": "叔母さん",
+      "reading": "おばさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的姑姨母；阿姨"
+    },
+    {
+      "key": "w1681",
+      "word": "二人",
+      "reading": "ふたり",
+      "partOfSpeech": "名词",
+      "meaning": "两个人"
+    },
+    {
+      "key": "w1728",
+      "word": "暖房",
+      "reading": "だんぼう",
+      "partOfSpeech": "名词",
+      "meaning": "暖气"
+    },
+    {
+      "key": "w1729",
+      "word": "冷房",
+      "reading": "れいぼう",
+      "partOfSpeech": "名词",
+      "meaning": "冷气"
+    },
+    {
+      "key": "w1909",
+      "word": "お宅",
+      "reading": "おたく",
+      "partOfSpeech": "名词",
+      "meaning": "府上；您家"
+    },
+    {
+      "key": "w3214",
+      "word": "温度",
+      "reading": "おんど",
+      "partOfSpeech": "名词",
+      "meaning": "温度"
+    },
+    {
+      "key": "w3502",
+      "word": "幼稚園",
+      "reading": "ようちえん",
+      "partOfSpeech": "名词",
+      "meaning": "幼儿园"
+    },
+    {
+      "key": "w4376",
+      "word": "一言",
+      "reading": "ひとこと",
+      "partOfSpeech": "名词",
+      "meaning": "一句话"
+    },
+    {
+      "key": "w5653",
+      "word": "お孫さん",
+      "reading": "おまごさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的孙辈"
+    },
+    {
+      "key": "w918",
+      "word": "この間",
+      "reading": "このあいだ",
+      "partOfSpeech": "名词",
+      "meaning": "前些天"
+    },
+    {
+      "key": "san",
+      "word": "～さん",
+      "reading": "～さん",
+      "partOfSpeech": "接尾词",
+      "meaning": "……先生／女士（职业等称呼）"
+    },
+    {
+      "key": "happy",
+      "word": "どうぞお幸せに",
+      "reading": "どうぞおしあわせに",
+      "partOfSpeech": "固定表达",
+      "meaning": "祝你们幸福"
+    },
+    {
+      "key": "urashima",
+      "word": "浦島太郎",
+      "reading": "うらしまたろう",
+      "partOfSpeech": "专有名词",
+      "meaning": "浦岛太郎"
+    },
+    {
+      "key": "folk-tale",
+      "word": "昔話",
+      "reading": "むかしばなし",
+      "partOfSpeech": "名词",
+      "meaning": "民间故事"
+    },
+    {
+      "key": "certain",
+      "word": "ある～",
+      "reading": "ある～",
+      "partOfSpeech": "连体词",
+      "meaning": "某个……"
+    },
+    {
+      "key": "man",
+      "word": "男",
+      "reading": "おとこ",
+      "partOfSpeech": "名词",
+      "meaning": "男子"
+    },
+    {
+      "key": "children",
+      "word": "子どもたち",
+      "reading": "こどもたち",
+      "partOfSpeech": "名词",
+      "meaning": "孩子们"
+    },
+    {
+      "key": "bully",
+      "word": "いじめます",
+      "reading": "いじめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "欺负"
+    },
+    {
+      "key": "turtle",
+      "word": "かめ",
+      "reading": "かめ",
+      "partOfSpeech": "名词",
+      "meaning": "乌龟"
+    },
+    {
+      "key": "help",
+      "word": "助けます",
+      "reading": "たすけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "救助"
+    },
+    {
+      "key": "kind",
+      "word": "優しい",
+      "reading": "やさしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "善良的"
+    },
+    {
+      "key": "princess",
+      "word": "お姫様",
+      "reading": "おひめさま",
+      "partOfSpeech": "名词",
+      "meaning": "公主"
+    },
+    {
+      "key": "live",
+      "word": "暮らします",
+      "reading": "くらします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "生活；度日"
+    },
+    {
+      "key": "land",
+      "word": "陸",
+      "reading": "りく",
+      "partOfSpeech": "名词",
+      "meaning": "陆地"
+    },
+    {
+      "key": "then",
+      "word": "すると",
+      "reading": "すると",
+      "partOfSpeech": "接续词",
+      "meaning": "于是"
+    },
+    {
+      "key": "smoke",
+      "word": "煙",
+      "reading": "けむり",
+      "partOfSpeech": "名词",
+      "meaning": "烟"
+    },
+    {
+      "key": "white",
+      "word": "真っ白な",
+      "reading": "まっしろな",
+      "partOfSpeech": "な形容词",
+      "meaning": "雪白的"
+    },
+    {
+      "key": "contents",
+      "word": "中身",
+      "reading": "なかみ",
+      "partOfSpeech": "名词",
+      "meaning": "里面的东西"
+    }
+  ]
+}

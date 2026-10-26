@@ -1,0 +1,457 @@
+{
+  "lessonId": 40,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/40.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源45条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终63条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/40.json。",
+    "測ります与量ります分别表示尺寸测量和重量、容量测量；分列义项并保持不同词ID。"
+  ],
+  "words": [
+    {
+      "key": "w1218",
+      "word": "相談します",
+      "reading": "そうだんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "商量；咨询"
+    },
+    {
+      "key": "w1586",
+      "word": "数えます",
+      "reading": "かぞえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "数数"
+    },
+    {
+      "key": "w1587",
+      "word": "測ります",
+      "reading": "はかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "测量；称重"
+    },
+    {
+      "key": "w1588",
+      "word": "確かめます",
+      "reading": "たしかめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "确认"
+    },
+    {
+      "key": "w1589",
+      "word": "［サイズが］合います",
+      "reading": "［さいずが］あいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "合适（尺寸）"
+    },
+    {
+      "key": "w1590",
+      "word": "出発します",
+      "reading": "しゅっぱつします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "出发"
+    },
+    {
+      "key": "w1591",
+      "word": "到着します",
+      "reading": "とうちゃくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "到达"
+    },
+    {
+      "key": "w1592",
+      "word": "酔います",
+      "reading": "よいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "醉；晕车"
+    },
+    {
+      "key": "w1594",
+      "word": "必要な",
+      "reading": "ひつような",
+      "partOfSpeech": "な形容词",
+      "meaning": "必要的"
+    },
+    {
+      "key": "w1597",
+      "word": "忘年会",
+      "reading": "ぼうねんかい",
+      "partOfSpeech": "名词",
+      "meaning": "年终聚会"
+    },
+    {
+      "key": "w1598",
+      "word": "新年会",
+      "reading": "しんねんかい",
+      "partOfSpeech": "名词",
+      "meaning": "新年聚会"
+    },
+    {
+      "key": "w1599",
+      "word": "二次会",
+      "reading": "にじかい",
+      "partOfSpeech": "名词",
+      "meaning": "第二场聚会"
+    },
+    {
+      "key": "w1600",
+      "word": "大会",
+      "reading": "たいかい",
+      "partOfSpeech": "名词",
+      "meaning": "大会"
+    },
+    {
+      "key": "w1601",
+      "word": "マラソン",
+      "reading": "まらそん",
+      "partOfSpeech": "名词",
+      "meaning": "马拉松"
+    },
+    {
+      "key": "w1602",
+      "word": "コンテスト",
+      "reading": "こんてすと",
+      "partOfSpeech": "名词",
+      "meaning": "比赛"
+    },
+    {
+      "key": "w1603",
+      "word": "表",
+      "reading": "おもて",
+      "partOfSpeech": "名词",
+      "meaning": "正面"
+    },
+    {
+      "key": "w1604",
+      "word": "裏",
+      "reading": "うら",
+      "partOfSpeech": "名词",
+      "meaning": "背面"
+    },
+    {
+      "key": "w1608",
+      "word": "間違い",
+      "reading": "まちがい",
+      "partOfSpeech": "名词",
+      "meaning": "错误"
+    },
+    {
+      "key": "w1609",
+      "word": "傷",
+      "reading": "きず",
+      "partOfSpeech": "名词",
+      "meaning": "伤；划痕"
+    },
+    {
+      "key": "w1610",
+      "word": "ズボン",
+      "reading": "ずぼん",
+      "partOfSpeech": "名词",
+      "meaning": "裤子"
+    },
+    {
+      "key": "w1611",
+      "word": "長さ",
+      "reading": "ながさ",
+      "partOfSpeech": "名词",
+      "meaning": "长度"
+    },
+    {
+      "key": "w1612",
+      "word": "重さ",
+      "reading": "おもさ",
+      "partOfSpeech": "名词",
+      "meaning": "重量"
+    },
+    {
+      "key": "w1613",
+      "word": "高さ",
+      "reading": "たかさ",
+      "partOfSpeech": "名词",
+      "meaning": "高度"
+    },
+    {
+      "key": "w1614",
+      "word": "大きさ",
+      "reading": "おおきさ",
+      "partOfSpeech": "名词",
+      "meaning": "大小"
+    },
+    {
+      "key": "w1615",
+      "word": "便",
+      "reading": "びん",
+      "partOfSpeech": "名词",
+      "meaning": "航班"
+    },
+    {
+      "key": "w1617",
+      "word": "～個",
+      "reading": "～こ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……个"
+    },
+    {
+      "key": "w1618",
+      "word": "～本",
+      "reading": "～ほん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……根；支（细长物）"
+    },
+    {
+      "key": "w1619",
+      "word": "～杯",
+      "reading": "～はい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……杯"
+    },
+    {
+      "key": "w1621",
+      "word": "～グラム",
+      "reading": "～ぐらむ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……克"
+    },
+    {
+      "key": "w1622",
+      "word": "～センチ",
+      "reading": "～せんち",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……厘米"
+    },
+    {
+      "key": "w1623",
+      "word": "～ミリ",
+      "reading": "～みり",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……毫米"
+    },
+    {
+      "key": "w1624",
+      "word": "～以上",
+      "reading": "～いじょう",
+      "partOfSpeech": "表达",
+      "meaning": "……以上（含本数）"
+    },
+    {
+      "key": "w1625",
+      "word": "～以下",
+      "reading": "～いか",
+      "partOfSpeech": "表达",
+      "meaning": "……以下（含本数）"
+    },
+    {
+      "key": "w1627",
+      "word": "どうでしょうか",
+      "reading": "どうでしょうか",
+      "partOfSpeech": "固定表达",
+      "meaning": "怎么样呢"
+    },
+    {
+      "key": "w1629",
+      "word": "テスト",
+      "reading": "てすと",
+      "partOfSpeech": "名词",
+      "meaning": "测验"
+    },
+    {
+      "key": "w1630",
+      "word": "成績",
+      "reading": "せいせき",
+      "partOfSpeech": "名词",
+      "meaning": "成绩"
+    },
+    {
+      "key": "w1631",
+      "word": "ところで",
+      "reading": "ところで",
+      "partOfSpeech": "表达",
+      "meaning": "话说回来"
+    },
+    {
+      "key": "w1632",
+      "word": "いらっしゃいます",
+      "reading": "いらっしゃいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "来；在（尊敬语）"
+    },
+    {
+      "key": "w1633",
+      "word": "様子",
+      "reading": "ようす",
+      "partOfSpeech": "名词",
+      "meaning": "情况；样子"
+    },
+    {
+      "key": "w1778",
+      "word": "うまくいきます",
+      "reading": "うまくいきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "进展顺利"
+    },
+    {
+      "key": "w1830",
+      "word": "天気予報",
+      "reading": "てんきよほう",
+      "partOfSpeech": "名词",
+      "meaning": "天气预报"
+    },
+    {
+      "key": "w3208",
+      "word": "お年寄り",
+      "reading": "おとしより",
+      "partOfSpeech": "名词",
+      "meaning": "老年人"
+    },
+    {
+      "key": "w5647",
+      "word": "［問題が］出ます",
+      "reading": "［もんだいが］でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出（考题）"
+    },
+    {
+      "key": "w5652",
+      "word": "発表会",
+      "reading": "はっぴょうかい",
+      "partOfSpeech": "名词",
+      "meaning": "发表会；成果展示会"
+    },
+    {
+      "key": "weigh",
+      "word": "量ります",
+      "reading": "はかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "称重；测量容量"
+    },
+    {
+      "key": "nagasaki",
+      "word": "長崎",
+      "reading": "ながさき",
+      "partOfSpeech": "专有名词",
+      "meaning": "长崎"
+    },
+    {
+      "key": "sendai",
+      "word": "仙台",
+      "reading": "せんだい",
+      "partOfSpeech": "专有名词",
+      "meaning": "仙台"
+    },
+    {
+      "key": "jl",
+      "word": "JL",
+      "reading": "じぇいえる",
+      "partOfSpeech": "专有名词",
+      "meaning": "日本航空的航班代码"
+    },
+    {
+      "key": "tanabata",
+      "word": "七夕祭り",
+      "reading": "たなばたまつり",
+      "partOfSpeech": "名词",
+      "meaning": "七夕祭"
+    },
+    {
+      "key": "toshogu",
+      "word": "東照宮",
+      "reading": "とうしょうぐう",
+      "partOfSpeech": "专有名词",
+      "meaning": "东照宫"
+    },
+    {
+      "key": "incident",
+      "word": "事件",
+      "reading": "じけん",
+      "partOfSpeech": "名词",
+      "meaning": "事件"
+    },
+    {
+      "key": "motorcycle",
+      "word": "オートバイ",
+      "reading": "おーとばい",
+      "partOfSpeech": "名词",
+      "meaning": "摩托车"
+    },
+    {
+      "key": "bomb",
+      "word": "爆弾",
+      "reading": "ばくだん",
+      "partOfSpeech": "名词",
+      "meaning": "炸弹"
+    },
+    {
+      "key": "load",
+      "word": "積みます",
+      "reading": "つみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "装载；堆积"
+    },
+    {
+      "key": "driver",
+      "word": "運転手",
+      "reading": "うんてんしゅ",
+      "partOfSpeech": "名词",
+      "meaning": "司机"
+    },
+    {
+      "key": "distant",
+      "word": "離れた",
+      "reading": "はなれた",
+      "partOfSpeech": "动词修饰形式",
+      "meaning": "相隔的；远离的"
+    },
+    {
+      "key": "suddenly",
+      "word": "急に",
+      "reading": "きゅうに",
+      "partOfSpeech": "副词",
+      "meaning": "突然"
+    },
+    {
+      "key": "move",
+      "word": "動かします",
+      "reading": "うごかします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "移动；开动"
+    },
+    {
+      "key": "hard",
+      "word": "一生懸命",
+      "reading": "いっしょうけんめい",
+      "partOfSpeech": "副词",
+      "meaning": "努力地"
+    },
+    {
+      "key": "criminal",
+      "word": "犯人",
+      "reading": "はんにん",
+      "partOfSpeech": "名词",
+      "meaning": "犯人"
+    },
+    {
+      "key": "man",
+      "word": "男",
+      "reading": "おとこ",
+      "partOfSpeech": "名词",
+      "meaning": "男子"
+    },
+    {
+      "key": "obtain",
+      "word": "手に入れます",
+      "reading": "てにいれます",
+      "partOfSpeech": "动词表达",
+      "meaning": "得到"
+    },
+    {
+      "key": "still",
+      "word": "今でも",
+      "reading": "いまでも",
+      "partOfSpeech": "表达",
+      "meaning": "至今仍然"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "lessonId": 7,
+  "model": "deepseek-flash",
+  "reviewedCount": 46,
+  "corrections": [
+    {
+      "id": "l7-v6",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "もらう表示接受某物，以が格接受者为主语、を格物品为宾语，属他动词，原标注正确无需修改。"
+    },
+    {
+      "id": "l7-w339",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "習う表示向人学习某事物，以を格内容为宾语，属他动词，原标注正确无需修改。"
+    }
+  ]
+}

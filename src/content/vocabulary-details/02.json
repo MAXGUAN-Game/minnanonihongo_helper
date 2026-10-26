@@ -1,0 +1,510 @@
+{
+  "l2-kore": {
+    "romaji": "kore",
+    "attributes": [],
+    "explanation": "指示代名词，指代离说话人较近的事物，可单独使用，不能直接修饰名词。常用于询问或介绍物品。",
+    "example": {
+      "jp": "これは私の本です。",
+      "kana": "これはわたしのほんです。",
+      "romaji": "kore wa watashi no hon desu.",
+      "zh": "这是我的书。"
+    }
+  },
+  "l2-sore": {
+    "romaji": "sore",
+    "attributes": [],
+    "explanation": "指示代名词，指代离听话人较近的事物，可单独使用。常用于确认对方身边的东西。",
+    "example": {
+      "jp": "それはあなたの辞書ですか。",
+      "kana": "それはあなたのじしょですか。",
+      "romaji": "sore wa anata no jisho desu ka.",
+      "zh": "那是你的词典吗？"
+    }
+  },
+  "l2-are": {
+    "romaji": "are",
+    "attributes": [],
+    "explanation": "指示代名词，指代离说话人和听话人都较远的事物，可单独使用。常用于指远处的东西。",
+    "example": {
+      "jp": "あれは雑誌です。",
+      "kana": "あれはざっしです。",
+      "romaji": "are wa zasshi desu.",
+      "zh": "那是杂志。"
+    }
+  },
+  "l2-kono": {
+    "romaji": "kono",
+    "attributes": [],
+    "explanation": "连体词，必须后接名词，表示“这个……”，指代离说话人较近的事物。不能单独使用。",
+    "example": {
+      "jp": "この本は面白いです。",
+      "kana": "このほんはおもしろいです。",
+      "romaji": "kono hon wa omoshiroi desu.",
+      "zh": "这本书很有趣。"
+    }
+  },
+  "l2-sono": {
+    "romaji": "sono",
+    "attributes": [],
+    "explanation": "连体词，后接名词，表示“那个……”，指代离听话人较近的事物。不能单独使用。",
+    "example": {
+      "jp": "そのノートは新しいですね。",
+      "kana": "そののーとはあたらしいですね。",
+      "romaji": "sono nooto wa atarashii desu ne.",
+      "zh": "那个笔记本是新的呢。"
+    }
+  },
+  "l2-ano": {
+    "romaji": "ano",
+    "attributes": [],
+    "explanation": "连体词，后接名词，表示“那个……”，指代离双方都远的事物。不能单独使用。",
+    "example": {
+      "jp": "あの新聞は昨日のです。",
+      "kana": "あのしんぶんはきのうのです。",
+      "romaji": "ano shinbun wa kinou no desu.",
+      "zh": "那份报纸是昨天的。"
+    }
+  },
+  "l2-v6": {
+    "romaji": "hon",
+    "attributes": [],
+    "explanation": "名词，指书籍。常用搭配如「本を読む」。注意与「本（もと）」等词区分。",
+    "example": {
+      "jp": "毎日本を読みます。",
+      "kana": "まいにちほんをよみます。",
+      "romaji": "mainichi hon o yomimasu.",
+      "zh": "每天读书。"
+    }
+  },
+  "l2-v7": {
+    "romaji": "jisho",
+    "attributes": [],
+    "explanation": "名词，指词典、辞书。常用于查词或学习场景，如「辞書を引く」。",
+    "example": {
+      "jp": "辞書で言葉を調べます。",
+      "kana": "じしょでことばをしらべます。",
+      "romaji": "jisho de kotoba o shirabemasu.",
+      "zh": "用词典查单词。"
+    }
+  },
+  "l2-v10": {
+    "romaji": "zasshi",
+    "attributes": [],
+    "explanation": "名词，指杂志。常与「読む」「買う」等动词搭配。注意「雑誌」的「雑」读作「ざつ」。",
+    "example": {
+      "jp": "駅で雑誌を買いました。",
+      "kana": "えきでざっしをかいました。",
+      "romaji": "eki de zasshi o kaimashita.",
+      "zh": "在车站买了杂志。"
+    }
+  },
+  "l2-shinbun": {
+    "romaji": "shinbun",
+    "attributes": [],
+    "explanation": "名词，指报纸。常用搭配「新聞を読む」「新聞を取る」。注意与「新聞紙」区分。",
+    "example": {
+      "jp": "朝ごはんの後で新聞を読みます。",
+      "kana": "あさごはんのあとでしんぶんをよみます。",
+      "romaji": "asagohan no ato de shinbun o yomimasu.",
+      "zh": "早饭后读报纸。"
+    }
+  },
+  "l2-nooto": {
+    "romaji": "nooto",
+    "attributes": [],
+    "explanation": "名词，外来语，指笔记本。常用于记笔记或学习，如「ノートを取る」。",
+    "example": {
+      "jp": "授業でノートを取ります。",
+      "kana": "じゅぎょうでのーとをとります。",
+      "romaji": "jugyou de nooto o torimasu.",
+      "zh": "上课记笔记。"
+    }
+  },
+  "l2-v3": {
+    "romaji": "techou",
+    "attributes": [],
+    "explanation": "名词，指随身携带的小型记事本，常用于记日程或备忘录。与「ノート」相比更小更便携。",
+    "example": {
+      "jp": "手帳に予定を書きます。",
+      "kana": "てちょうによていをかきます。",
+      "romaji": "techou ni yotei o kakimasu.",
+      "zh": "在记事本上写计划。"
+    }
+  },
+  "l2-v9": {
+    "romaji": "meishi",
+    "attributes": [],
+    "explanation": "指商务或正式场合交换的“名片”，常与「渡す」「交換する」搭配。日常口语中不用于普通卡片。",
+    "example": {
+      "jp": "初めまして、名刺をどうぞ。",
+      "kana": "はじめまして、めいしをどうぞ。",
+      "romaji": "hajimemashite, meishi o dōzo.",
+      "zh": "初次见面，请收下我的名片。"
+    }
+  },
+  "l2-kaado": {
+    "romaji": "kādo",
+    "attributes": [],
+    "explanation": "外来语，泛指各种卡片，如电话卡、信用卡、会员卡等。常与「作る」「使う」搭配。",
+    "example": {
+      "jp": "このカードで払えますか。",
+      "kana": "このかーどではらえますか。",
+      "romaji": "kono kādo de haraemasu ka.",
+      "zh": "可以用这张卡支付吗？"
+    }
+  },
+  "l2-v8": {
+    "romaji": "enpitsu",
+    "attributes": [],
+    "explanation": "指木杆铅笔，常与「削る」搭配。与「ペン」相对，强调可用橡皮擦掉。",
+    "example": {
+      "jp": "鉛筆で名前を書いてください。",
+      "kana": "えんぴつでなまえをかいてください。",
+      "romaji": "enpitsu de namae o kaite kudasai.",
+      "zh": "请用铅笔写名字。"
+    }
+  },
+  "l2-boorupen": {
+    "romaji": "bōrupen",
+    "attributes": [],
+    "explanation": "外来语，指圆珠笔，日常书写常用。与「万年筆」不同，一般不需补充墨水。",
+    "example": {
+      "jp": "ボールペンを貸してください。",
+      "kana": "ぼーるぺんをかしてください。",
+      "romaji": "bōrupen o kashite kudasai.",
+      "zh": "请借我一支圆珠笔。"
+    }
+  },
+  "l2-shaapupenshiru": {
+    "romaji": "shāpupenshiru",
+    "attributes": [],
+    "explanation": "外来语，指自动铅笔，芯可替换。口语中常缩略为「シャープペン」或「シャーペン」。",
+    "example": {
+      "jp": "シャープペンシルでノートを取ります。",
+      "kana": "しゃーぷぺんしるでのーとをとります。",
+      "romaji": "shāpupenshiru de nōto o torimasu.",
+      "zh": "用自动铅笔记笔记。"
+    }
+  },
+  "l2-v1": {
+    "romaji": "kagi",
+    "attributes": [],
+    "explanation": "指开锁用的钥匙，常与「かける」「開ける」「なくす」搭配。也可指关键、线索。",
+    "example": {
+      "jp": "鍵をかばんの中に入れました。",
+      "kana": "かぎをかばんのなかにいれました。",
+      "romaji": "kagi o kaban no naka ni iremashita.",
+      "zh": "我把钥匙放进包里了。"
+    }
+  },
+  "l2-v5": {
+    "romaji": "tokei",
+    "attributes": [],
+    "explanation": "泛指钟表，包括手表和挂钟。常与「見る」「合わせる」搭配。",
+    "example": {
+      "jp": "時計を見て時間を確認します。",
+      "kana": "とけいをみてじかんをかくにんします。",
+      "romaji": "tokei o mite jikan o kakunin shimasu.",
+      "zh": "看表确认时间。"
+    }
+  },
+  "l2-v2": {
+    "romaji": "kasa",
+    "attributes": [],
+    "explanation": "指雨伞或阳伞，常与「さす」「忘れる」搭配。下雨时常用「傘をさす」。",
+    "example": {
+      "jp": "雨なので傘を持って行きます。",
+      "kana": "あめなのでかさをもっていきます。",
+      "romaji": "ame nanode kasa o motte ikimasu.",
+      "zh": "因为下雨，我带伞去。"
+    }
+  },
+  "l2-v4": {
+    "romaji": "kaban",
+    "attributes": [],
+    "explanation": "泛指包、手提包或书包，常与「持つ」「開ける」搭配。比「バッグ」更日常、口语。",
+    "example": {
+      "jp": "かばんに本を入れました。",
+      "kana": "かばんにほんをいれました。",
+      "romaji": "kaban ni hon o iremashita.",
+      "zh": "我把书放进包里了。"
+    }
+  },
+  "l2-cd": {
+    "romaji": "shīdī",
+    "attributes": [],
+    "explanation": "指音乐或数据光盘，常与「聞く」「入れる」搭配。现在也常指CD唱片。",
+    "example": {
+      "jp": "CDをプレーヤーに入れて聞きます。",
+      "kana": "しーでぃーをぷれーやーにいれてききます。",
+      "romaji": "shīdī o purēyā ni irete kikimasu.",
+      "zh": "把CD放进播放器里听。"
+    }
+  },
+  "l2-terebi": {
+    "romaji": "terebi",
+    "attributes": [],
+    "explanation": "指电视机或电视广播，常与「見る」「つける」「消す」搭配。",
+    "example": {
+      "jp": "夜はテレビを見ます。",
+      "kana": "よるはてれびをみます。",
+      "romaji": "yoru wa terebi o mimasu.",
+      "zh": "晚上看电视。"
+    }
+  },
+  "l2-rajio": {
+    "romaji": "rajio",
+    "attributes": [],
+    "explanation": "指收音机或广播节目，常与「聞く」「つける」搭配。与「テレビ」相对，强调听。",
+    "example": {
+      "jp": "朝はラジオを聞きます。",
+      "kana": "あさはらじおをききます。",
+      "romaji": "asa wa rajio o kikimasu.",
+      "zh": "早上听收音机。"
+    }
+  },
+  "l2-kamera": {
+    "romaji": "kamera",
+    "attributes": [],
+    "explanation": "指照相机，日常口语中常用，可指数码相机或胶片相机。注意与「写真機」相比更口语化。",
+    "example": {
+      "jp": "このカメラは新しいです。",
+      "kana": "このかめらはあたらしいです。",
+      "romaji": "kono kamera wa atarashii desu.",
+      "zh": "这台照相机是新的。"
+    }
+  },
+  "l2-konpyuutaa": {
+    "romaji": "konpyuutaa",
+    "attributes": [],
+    "explanation": "指电脑、计算机，多用于正式或书面语境，口语中常说「パソコン」。",
+    "example": {
+      "jp": "コンピューターで仕事をします。",
+      "kana": "こんぴゅーたーでしごとをします。",
+      "romaji": "konpyuutaa de shigoto o shimasu.",
+      "zh": "用电脑工作。"
+    }
+  },
+  "l2-kuruma": {
+    "romaji": "kuruma",
+    "attributes": [],
+    "explanation": "泛指汽车、车，日常常用词，可指轿车、卡车等。也可指自行车（自転車）但需上下文。",
+    "example": {
+      "jp": "車で学校へ行きます。",
+      "kana": "くるまでがっこうへいきます。",
+      "romaji": "kuruma de gakkou e ikimasu.",
+      "zh": "坐车去学校。"
+    }
+  },
+  "l2-tsukue": {
+    "romaji": "tsukue",
+    "attributes": [],
+    "explanation": "指书桌、办公桌等有抽屉的桌子，通常用于学习或工作。与「テーブル」相比更指个人用桌。",
+    "example": {
+      "jp": "机の上に本があります。",
+      "kana": "つくえのうえにほんがあります。",
+      "romaji": "tsukue no ue ni hon ga arimasu.",
+      "zh": "桌子上有书。"
+    }
+  },
+  "l2-isu": {
+    "romaji": "isu",
+    "attributes": [],
+    "explanation": "指椅子，通常指有靠背的座椅。日常常用词，可指各种椅子。",
+    "example": {
+      "jp": "いすに座ってください。",
+      "kana": "いすにすわってください。",
+      "romaji": "isu ni suwatte kudasai.",
+      "zh": "请坐在椅子上。"
+    }
+  },
+  "l2-chokoreeto": {
+    "romaji": "chokoreeto",
+    "attributes": [],
+    "explanation": "指巧克力，片假名外来词。可指巧克力糖或巧克力饮料，但通常指固体巧克力。",
+    "example": {
+      "jp": "チョコレートを一つ食べます。",
+      "kana": "ちょこれーとをひとつたべます。",
+      "romaji": "chokoreeto o hitotsu tabemasu.",
+      "zh": "吃一块巧克力。"
+    }
+  },
+  "l2-koohii": {
+    "romaji": "koohii",
+    "attributes": [],
+    "explanation": "指咖啡，片假名外来词。常与「飲む」搭配，也可说「コーヒーを一杯」。",
+    "example": {
+      "jp": "朝、コーヒーを飲みます。",
+      "kana": "あさ、こーひーをのみます。",
+      "romaji": "asa, koohii o nomimasu.",
+      "zh": "早上喝咖啡。"
+    }
+  },
+  "l2-omiyage": {
+    "romaji": "omiyage",
+    "attributes": [],
+    "explanation": "指旅行或外出时带回的土特产、伴手礼，常送给亲友同事。注意不是自己用的纪念品。",
+    "example": {
+      "jp": "京都のお土産を買いました。",
+      "kana": "きょうとのおみやげをかいました。",
+      "romaji": "Kyouto no omiyage o kaimashita.",
+      "zh": "买了京都的伴手礼。"
+    }
+  },
+  "l2-eigo": {
+    "romaji": "eigo",
+    "attributes": [],
+    "explanation": "指英语，作为学科或语言名称。常说「英語を話す」「英語の先生」。",
+    "example": {
+      "jp": "毎日英語を勉強します。",
+      "kana": "まいにちえいごをべんきょうします。",
+      "romaji": "mainichi eigo o benkyou shimasu.",
+      "zh": "每天学习英语。"
+    }
+  },
+  "l2-nihongo": {
+    "romaji": "nihongo",
+    "attributes": [],
+    "explanation": "指日语，作为语言名称。常说「日本語を勉強する」「日本語が話せる」。",
+    "example": {
+      "jp": "日本語は面白いです。",
+      "kana": "にほんごはおもしろいです。",
+      "romaji": "nihongo wa omoshiroi desu.",
+      "zh": "日语很有趣。"
+    }
+  },
+  "l2-go": {
+    "romaji": "go",
+    "attributes": [],
+    "explanation": "接尾词，接在国名或地区名后表示该语言，如「英語」「日本語」「中国語」。不能单独使用。",
+    "example": {
+      "jp": "フランス語を習っています。",
+      "kana": "ふらんすごをならっています。",
+      "romaji": "Furansugo o naratte imasu.",
+      "zh": "我在学法语。"
+    }
+  },
+  "l2-nan": {
+    "romaji": "nan",
+    "attributes": [],
+    "explanation": "疑问代词，意为“什么”，用于询问事物或内容。后续助词时有时读「なん」，如「何ですか」；也可读「なに」，如「何を」。",
+    "example": {
+      "jp": "これは何ですか。",
+      "kana": "これはなんですか。",
+      "romaji": "kore wa nan desu ka.",
+      "zh": "这是什么？"
+    }
+  },
+  "l2-sou": {
+    "romaji": "sou",
+    "attributes": [],
+    "explanation": "表示“那样、那么”，常用于指代对方刚说的内容或前文情况。也可单独作应答，表示同意或确认（相当于“是的”）。",
+    "example": {
+      "jp": "そうですか。",
+      "kana": "そうですか。",
+      "romaji": "sou desu ka.",
+      "zh": "是吗？"
+    }
+  },
+  "l2-chigaimasu": {
+    "romaji": "chigaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "礼貌地否定对方的说法，意为“不对、不是”。常用于纠正误解或回答错误信息，比「いいえ」更直接。",
+    "example": {
+      "jp": "いいえ、違います。",
+      "kana": "いいえ、ちがいます。",
+      "romaji": "iie, chigaimasu.",
+      "zh": "不，不对。"
+    }
+  },
+  "l2-soudesuka": {
+    "romaji": "sou desu ka",
+    "attributes": [],
+    "explanation": "用于回应对方的话，表示“是吗、原来如此”，可表达轻微惊讶或确认。语调不同可表示疑问或理解。",
+    "example": {
+      "jp": "そうですか、わかりました。",
+      "kana": "そうですか、わかりました。",
+      "romaji": "sou desu ka, wakarimashita.",
+      "zh": "是吗，我明白了。"
+    }
+  },
+  "l2-anou": {
+    "romaji": "anou",
+    "attributes": [],
+    "explanation": "用于开口前引起对方注意，或表示犹豫、思索，相当于“那个……、请问……”。语气比「あの」更口语、更委婉。",
+    "example": {
+      "jp": "あのう、すみません。",
+      "kana": "あのう、すみません。",
+      "romaji": "anou, sumimasen.",
+      "zh": "那个……不好意思。"
+    }
+  },
+  "l2-douzo": {
+    "romaji": "douzo",
+    "attributes": [],
+    "explanation": "用于递东西、请对方做某事或让路时，表示“请”。常单独使用，也可后接动词。",
+    "example": {
+      "jp": "どうぞ、お茶を飲んでください。",
+      "kana": "どうぞ、おちゃをのんでください。",
+      "romaji": "douzo, ocha o nonde kudasai.",
+      "zh": "请喝茶。"
+    }
+  },
+  "l2-arigatou": {
+    "romaji": "doumo arigatou gozaimasu",
+    "attributes": [],
+    "explanation": "非常礼貌的感谢表达，用于正式场合或对长辈、上级。更随便的说法有「ありがとう」「どうも」。",
+    "example": {
+      "jp": "どうもありがとうございます。助かりました。",
+      "kana": "どうもありがとうございます。たすかりました。",
+      "romaji": "doumo arigatou gozaimasu. tasukarimashita.",
+      "zh": "非常感谢，帮了我大忙。"
+    }
+  },
+  "l2-korekaraosewani": {
+    "romaji": "korekara osewa ni narimasu",
+    "attributes": [],
+    "explanation": "初次见面或开始新关系时的寒暄，意为“今后要承蒙您关照了”。常用于对上级、客户或新同事。",
+    "example": {
+      "jp": "これからお世話になります。よろしくお願いします。",
+      "kana": "これからおせわになります。よろしくおねがいします。",
+      "romaji": "korekara osewa ni narimasu. yoroshiku onegai shimasu.",
+      "zh": "今后要承蒙您关照了，请多指教。"
+    }
+  },
+  "l2-kochirakoso": {
+    "romaji": "kochira koso yoroshiku onegai shimasu",
+    "attributes": [],
+    "explanation": "回应对方“请多关照”时使用，表示“我才要请您多关照”。强调自己才是需要对方关照的一方。",
+    "example": {
+      "jp": "こちらこそよろしくお願いします。",
+      "kana": "こちらこそよろしくおねがいします。",
+      "romaji": "kochira koso yoroshiku onegai shimasu.",
+      "zh": "我才要请您多关照。"
+    }
+  },
+  "l2-e": {
+    "romaji": "e",
+    "attributes": [],
+    "explanation": "表示惊讶、疑问或没听清时发出的感叹，相当于“啊？”。语调上扬，常用于反问或确认。",
+    "example": {
+      "jp": "えっ、本当ですか。",
+      "kana": "えっ、ほんとうですか。",
+      "romaji": "e, hontou desu ka.",
+      "zh": "啊？真的吗？"
+    }
+  },
+  "l2-a": {
+    "romaji": "a",
+    "attributes": [],
+    "explanation": "表示突然发现、想起某事或感到轻微惊讶时发出的感叹，相当于“啊”。语气比「えっ」更轻。",
+    "example": {
+      "jp": "あ、先生が来ました。",
+      "kana": "あ、せんせいがきました。",
+      "romaji": "a, sensei ga kimashita.",
+      "zh": "啊，老师来了。"
+    }
+  }
+}

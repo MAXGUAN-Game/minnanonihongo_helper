@@ -1,0 +1,141 @@
+{
+  "lessonId": 25,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/25.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源18条，排除3条旧版或跨课条目，合并同形同义项并补入第二来源，最终18条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/25.json。"
+  ],
+  "words": [
+    {
+      "key": "w1022",
+      "word": "意味",
+      "reading": "いみ",
+      "partOfSpeech": "名词",
+      "meaning": "意思"
+    },
+    {
+      "key": "w1029",
+      "word": "考えます",
+      "reading": "かんがえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "思考；考虑"
+    },
+    {
+      "key": "w1030",
+      "word": "［駅に］着きます",
+      "reading": "［えきに］つきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "到达（车站）"
+    },
+    {
+      "key": "w1032",
+      "word": "［年を］取ります",
+      "reading": "［としを］とります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "年纪增长"
+    },
+    {
+      "key": "w1033",
+      "word": "田舎",
+      "reading": "いなか",
+      "partOfSpeech": "名词",
+      "meaning": "乡下；故乡"
+    },
+    {
+      "key": "w1036",
+      "word": "チャンス",
+      "reading": "ちゃんす",
+      "partOfSpeech": "名词",
+      "meaning": "机会"
+    },
+    {
+      "key": "w1037",
+      "word": "億",
+      "reading": "おく",
+      "partOfSpeech": "名词",
+      "meaning": "亿"
+    },
+    {
+      "key": "w1038",
+      "word": "もし",
+      "reading": "もし",
+      "partOfSpeech": "副词",
+      "meaning": "如果"
+    },
+    {
+      "key": "w1040",
+      "word": "転勤",
+      "reading": "てんきん",
+      "partOfSpeech": "名词",
+      "meaning": "调职"
+    },
+    {
+      "key": "w1041",
+      "word": "こと",
+      "reading": "こと",
+      "partOfSpeech": "表达",
+      "meaning": "事情"
+    },
+    {
+      "key": "w1043",
+      "word": "色々お世話になりました",
+      "reading": "いろいろおせわになりました",
+      "partOfSpeech": "固定表达",
+      "meaning": "承蒙您多方照顾"
+    },
+    {
+      "key": "w1044",
+      "word": "頑張ります",
+      "reading": "がんばります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "努力"
+    },
+    {
+      "key": "w1045",
+      "word": "どうぞお元気で",
+      "reading": "どうぞおげんきで",
+      "partOfSpeech": "固定表达",
+      "meaning": "请多保重"
+    },
+    {
+      "key": "w485",
+      "word": "もしもし",
+      "reading": "もしもし",
+      "partOfSpeech": "表达",
+      "meaning": "喂（电话用语）"
+    },
+    {
+      "key": "w928",
+      "word": "足ります",
+      "reading": "たります",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "足够"
+    },
+    {
+      "key": "free-time",
+      "word": "暇",
+      "reading": "ひま",
+      "partOfSpeech": "名词／な形容词",
+      "meaning": "空闲；有空的"
+    },
+    {
+      "key": "support",
+      "word": "お世話になります",
+      "reading": "おせわになります",
+      "partOfSpeech": "固定表达",
+      "meaning": "承蒙照顾"
+    },
+    {
+      "key": "vietnam",
+      "word": "ベトナム",
+      "reading": "べとなむ",
+      "partOfSpeech": "专有名词",
+      "meaning": "越南"
+    }
+  ]
+}

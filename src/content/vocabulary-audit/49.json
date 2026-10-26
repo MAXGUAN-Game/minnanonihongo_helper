@@ -1,0 +1,166 @@
+{
+  "lessonId": 49,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/49.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 27,
+  "entries": [
+    {
+      "sourceId": "1514",
+      "sourceWord": "利用します",
+      "key": "w1514"
+    },
+    {
+      "sourceId": "1870",
+      "sourceWord": "［会社に］勤めます",
+      "key": "w1870"
+    },
+    {
+      "sourceId": "1872",
+      "sourceWord": "［いすに］掛けます",
+      "key": "w1872"
+    },
+    {
+      "sourceId": "1873",
+      "sourceWord": "過ごします",
+      "key": "w1873"
+    },
+    {
+      "sourceId": "1875",
+      "sourceWord": "いらっしゃいます",
+      "key": "w1875"
+    },
+    {
+      "sourceId": "1876",
+      "sourceWord": "召し上がります",
+      "key": "w1876"
+    },
+    {
+      "sourceId": "1877",
+      "sourceWord": "おっしゃいます",
+      "key": "w1877"
+    },
+    {
+      "sourceId": "1878",
+      "sourceWord": "なさいます",
+      "key": "w1878"
+    },
+    {
+      "sourceId": "1879",
+      "sourceWord": "ご覧になります",
+      "key": "w1879"
+    },
+    {
+      "sourceId": "1880",
+      "sourceWord": "ご存じです",
+      "key": "w1880"
+    },
+    {
+      "sourceId": "1881",
+      "sourceWord": "挨拶",
+      "key": "w1881"
+    },
+    {
+      "sourceId": "1883",
+      "sourceWord": "旅館",
+      "key": "w1883"
+    },
+    {
+      "sourceId": "1885",
+      "sourceWord": "バス停",
+      "key": "w1885"
+    },
+    {
+      "sourceId": "1887",
+      "sourceWord": "～様",
+      "key": "w1887"
+    },
+    {
+      "sourceId": "1889",
+      "sourceWord": "たまに",
+      "key": "w1889"
+    },
+    {
+      "sourceId": "1892",
+      "sourceWord": "－年－組",
+      "key": "w1892"
+    },
+    {
+      "sourceId": "1894",
+      "sourceWord": "［熱を］出します",
+      "key": "w1894"
+    },
+    {
+      "sourceId": "1895",
+      "sourceWord": "よろしくお伝えください。",
+      "key": "w1895"
+    },
+    {
+      "sourceId": "1896",
+      "sourceWord": "失礼いたします。",
+      "key": "w1896"
+    },
+    {
+      "sourceId": "2544",
+      "sourceWord": "奥様",
+      "key": "w2544"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1871",
+      "sourceWord": "休みます",
+      "reason": "旧版休息尊敬语用词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1874",
+      "sourceWord": "［コンビニに］寄ります",
+      "reason": "旧版顺访用词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1882",
+      "sourceWord": "灰皿",
+      "reason": "旧版烟灰缸词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1886",
+      "sourceWord": "貿易",
+      "reason": "旧版贸易词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1888",
+      "sourceWord": "帰りに",
+      "reason": "旧版时间表达，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1890",
+      "sourceWord": "ちっとも",
+      "reason": "旧版程度副词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1891",
+      "sourceWord": "遠慮なく",
+      "reason": "旧版会话表达，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "anyone",
+    "called",
+    "school",
+    "yamanaka",
+    "nobel",
+    "career",
+    "medical",
+    "aim",
+    "advance",
+    "ips",
+    "develop",
+    "mouse",
+    "human",
+    "award",
+    "lecture"
+  ],
+  "finalCount": 35
+}

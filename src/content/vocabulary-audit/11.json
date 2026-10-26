@@ -1,0 +1,347 @@
+{
+  "lessonId": 11,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/11.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 66,
+  "entries": [
+    {
+      "sourceId": "1628",
+      "sourceWord": "クラス",
+      "key": "w1628"
+    },
+    {
+      "sourceId": "20",
+      "sourceWord": "お願いします。",
+      "key": "w20"
+    },
+    {
+      "sourceId": "2509",
+      "sourceWord": "いってきます",
+      "key": "w2509"
+    },
+    {
+      "sourceId": "2592",
+      "sourceWord": "かしこまりました",
+      "key": "w2592"
+    },
+    {
+      "sourceId": "538",
+      "sourceWord": "［子どもが］います",
+      "key": "w538"
+    },
+    {
+      "sourceId": "539",
+      "sourceWord": "［日本に］います",
+      "key": "w539"
+    },
+    {
+      "sourceId": "540",
+      "sourceWord": "［お金が］かかります",
+      "key": "w540"
+    },
+    {
+      "sourceId": "54000",
+      "sourceWord": "［時間が］かかります",
+      "key": "w54000"
+    },
+    {
+      "sourceId": "541",
+      "sourceWord": "［会社を］休みます",
+      "key": "w541"
+    },
+    {
+      "sourceId": "542",
+      "sourceWord": "一つ",
+      "key": "w542"
+    },
+    {
+      "sourceId": "543",
+      "sourceWord": "二つ",
+      "key": "w543"
+    },
+    {
+      "sourceId": "544",
+      "sourceWord": "三つ",
+      "key": "w544"
+    },
+    {
+      "sourceId": "545",
+      "sourceWord": "四つ",
+      "key": "w545"
+    },
+    {
+      "sourceId": "546",
+      "sourceWord": "五つ",
+      "key": "w546"
+    },
+    {
+      "sourceId": "547",
+      "sourceWord": "六つ",
+      "key": "w547"
+    },
+    {
+      "sourceId": "548",
+      "sourceWord": "七つ",
+      "key": "w548"
+    },
+    {
+      "sourceId": "549",
+      "sourceWord": "八つ",
+      "key": "w549"
+    },
+    {
+      "sourceId": "550",
+      "sourceWord": "九つ",
+      "key": "w550"
+    },
+    {
+      "sourceId": "551",
+      "sourceWord": "十",
+      "key": "w551"
+    },
+    {
+      "sourceId": "552",
+      "sourceWord": "いくつ",
+      "key": "w552"
+    },
+    {
+      "sourceId": "553",
+      "sourceWord": "一人",
+      "key": "w553"
+    },
+    {
+      "sourceId": "554",
+      "sourceWord": "二人",
+      "key": "w554"
+    },
+    {
+      "sourceId": "555",
+      "sourceWord": "～人",
+      "key": "w555"
+    },
+    {
+      "sourceId": "556",
+      "sourceWord": "～台",
+      "key": "w556"
+    },
+    {
+      "sourceId": "557",
+      "sourceWord": "～枚",
+      "key": "w557"
+    },
+    {
+      "sourceId": "558",
+      "sourceWord": "～回",
+      "key": "w558"
+    },
+    {
+      "sourceId": "559",
+      "sourceWord": "りんご",
+      "key": "w559"
+    },
+    {
+      "sourceId": "560",
+      "sourceWord": "みかん",
+      "key": "w560"
+    },
+    {
+      "sourceId": "561",
+      "sourceWord": "サンドイッチ",
+      "key": "w561"
+    },
+    {
+      "sourceId": "562",
+      "sourceWord": "カレーライス",
+      "key": "w562"
+    },
+    {
+      "sourceId": "563",
+      "sourceWord": "アイスクリーム",
+      "key": "w563"
+    },
+    {
+      "sourceId": "564",
+      "sourceWord": "切手",
+      "key": "w564"
+    },
+    {
+      "sourceId": "565",
+      "sourceWord": "葉書",
+      "key": "w565"
+    },
+    {
+      "sourceId": "566",
+      "sourceWord": "封筒",
+      "key": "w566"
+    },
+    {
+      "sourceId": "569",
+      "sourceWord": "エアメール",
+      "key": "w569"
+    },
+    {
+      "sourceId": "570",
+      "sourceWord": "航空便",
+      "key": "w570"
+    },
+    {
+      "sourceId": "571",
+      "sourceWord": "船便",
+      "key": "w571"
+    },
+    {
+      "sourceId": "572",
+      "sourceWord": "両親",
+      "key": "w572"
+    },
+    {
+      "sourceId": "573",
+      "sourceWord": "兄弟",
+      "key": "w573"
+    },
+    {
+      "sourceId": "574",
+      "sourceWord": "兄",
+      "key": "w574"
+    },
+    {
+      "sourceId": "575",
+      "sourceWord": "お兄さん",
+      "key": "w575"
+    },
+    {
+      "sourceId": "576",
+      "sourceWord": "姉",
+      "key": "w576"
+    },
+    {
+      "sourceId": "577",
+      "sourceWord": "お姉さん",
+      "key": "w577"
+    },
+    {
+      "sourceId": "578",
+      "sourceWord": "弟",
+      "key": "w578"
+    },
+    {
+      "sourceId": "579",
+      "sourceWord": "弟さん",
+      "key": "w579"
+    },
+    {
+      "sourceId": "580",
+      "sourceWord": "妹",
+      "key": "w580"
+    },
+    {
+      "sourceId": "581",
+      "sourceWord": "妹さん",
+      "key": "w581"
+    },
+    {
+      "sourceId": "582",
+      "sourceWord": "外国",
+      "key": "w582"
+    },
+    {
+      "sourceId": "583",
+      "sourceWord": "～時間",
+      "key": "w583"
+    },
+    {
+      "sourceId": "584",
+      "sourceWord": "～週間",
+      "key": "w584"
+    },
+    {
+      "sourceId": "585",
+      "sourceWord": "～か月",
+      "key": "w585"
+    },
+    {
+      "sourceId": "586",
+      "sourceWord": "～年",
+      "key": "w586"
+    },
+    {
+      "sourceId": "587",
+      "sourceWord": "～ぐらい",
+      "key": "w587"
+    },
+    {
+      "sourceId": "588",
+      "sourceWord": "どのくらい",
+      "key": "w588"
+    },
+    {
+      "sourceId": "589",
+      "sourceWord": "全部で",
+      "key": "w589"
+    },
+    {
+      "sourceId": "590",
+      "sourceWord": "みんな",
+      "key": "w590"
+    },
+    {
+      "sourceId": "591",
+      "sourceWord": "～だけ",
+      "key": "w591"
+    },
+    {
+      "sourceId": "593",
+      "sourceWord": "いい(お)天気ですね。",
+      "key": "w593"
+    },
+    {
+      "sourceId": "594",
+      "sourceWord": "お出かけですか。",
+      "key": "w594"
+    },
+    {
+      "sourceId": "595",
+      "sourceWord": "ちょっと～まで。",
+      "key": "w595"
+    },
+    {
+      "sourceId": "596",
+      "sourceWord": "いっていらっしゃい。",
+      "key": "w596"
+    },
+    {
+      "sourceId": "787",
+      "sourceWord": "留学生",
+      "key": "w787"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "567",
+      "sourceWord": "速達",
+      "reason": "旧版邮政用语，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "568",
+      "sourceWord": "書留",
+      "reason": "旧版邮政用语，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "592",
+      "sourceWord": "いらっしゃいませ。",
+      "reason": "旧版商店用语，第二版本课不列。"
+    },
+    {
+      "sourceId": "597",
+      "sourceWord": "いってまいります。",
+      "reason": "旧版郑重出门表达，本课保留行ってきます。"
+    }
+  ],
+  "secondaryAdditions": [
+    "australia"
+  ],
+  "finalCount": 63
+}

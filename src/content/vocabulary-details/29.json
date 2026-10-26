@@ -1,0 +1,627 @@
+{
+  "l29-w1169": {
+    "romaji": "akimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示门等因自然或机械作用而打开的状态变化，强调自发结果，不强调人为动作。常与「ドア」「窓」等搭配。",
+    "example": {
+      "jp": "風でドアが開きました。",
+      "kana": "かぜでどあがあきました。",
+      "romaji": "kaze de doa ga akimashita.",
+      "zh": "门被风吹开了。"
+    }
+  },
+  "l29-w1170": {
+    "romaji": "shimarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示门等关闭的状态变化，强调自然结果，不强调人为动作。与「開きます」相对。",
+    "example": {
+      "jp": "ドアが静かに閉まりました。",
+      "kana": "どあがしずかにしまりました。",
+      "romaji": "doa ga shizuka ni shimarimashita.",
+      "zh": "门静静地关上了。"
+    }
+  },
+  "l29-w1171": {
+    "romaji": "tsukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示电器（如电灯、电视）被打开或亮起的状态，强调自然结果。注意与表示附着的「付きます」同音但不同义。",
+    "example": {
+      "jp": "部屋の電気がつきました。",
+      "kana": "へやのでんきがつきました。",
+      "romaji": "heya no denki ga tsukimashita.",
+      "zh": "房间的灯亮了。"
+    }
+  },
+  "l29-w1172": {
+    "romaji": "kiemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示电器（如电灯）熄灭的状态变化，强调自然结果。与「つきます」相对。",
+    "example": {
+      "jp": "電気が急に消えました。",
+      "kana": "でんきがきゅうにきえました。",
+      "romaji": "denki ga kyuu nikiemashita.",
+      "zh": "灯突然灭了。"
+    }
+  },
+  "l29-w1175": {
+    "romaji": "kowaremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物品（如椅子、机器）损坏、出故障，强调自然损坏的结果，不强调人为破坏。",
+    "example": {
+      "jp": "古い椅子が壊れました。",
+      "kana": "ふるいいすがこわれました。",
+      "romaji": "furui isu ga kowaremashita.",
+      "zh": "旧椅子坏了。"
+    }
+  },
+  "l29-w1176": {
+    "romaji": "waremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示玻璃杯、盘子等易碎物品破裂，强调自然破碎的结果。",
+    "example": {
+      "jp": "落としてグラスが割れました。",
+      "kana": "おとしてぐらすがわれました。",
+      "romaji": "otoshite gurasu ga waremashita.",
+      "zh": "掉下来玻璃杯碎了。"
+    }
+  },
+  "l29-w1177": {
+    "romaji": "oremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示树枝、骨头等细长物体折断，强调自然折断的结果。",
+    "example": {
+      "jp": "雪の重みで枝が折れました。",
+      "kana": "ゆきのおもみでえだがおれました。",
+      "romaji": "yuki no omomi de eda ga oremashita.",
+      "zh": "树枝被雪压断了。"
+    }
+  },
+  "l29-w1178": {
+    "romaji": "yaburemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示纸、布等薄物被撕破，强调自然破损的结果。",
+    "example": {
+      "jp": "かばんの中で紙が破れました。",
+      "kana": "かばんのなかでかみがやぶれました。",
+      "romaji": "kaban no naka de kami ga yaburemashita.",
+      "zh": "包里的纸破了。"
+    }
+  },
+  "l29-w1179": {
+    "romaji": "yogoremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示衣服等变脏，强调自然弄脏的结果，不强调人为弄脏的动作。",
+    "example": {
+      "jp": "泥で服が汚れました。",
+      "kana": "どろでふくがよごれました。",
+      "romaji": "doro de fuku ga yogoremashita.",
+      "zh": "衣服被泥弄脏了。"
+    }
+  },
+  "l29-w1180": {
+    "romaji": "tsukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示口袋、按钮等被附着或附带在物体上，强调自然附着的状态。注意与表示灯亮的「つきます」同音但不同义。",
+    "example": {
+      "jp": "このシャツにはポケットが付いています。",
+      "kana": "このしゃつにはぽけっとがついています。",
+      "romaji": "kono shatsu ni wa poketto ga tsuite imasu.",
+      "zh": "这件衬衫上有口袋。"
+    }
+  },
+  "l29-w1181": {
+    "romaji": "hazuremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示纽扣、零件等脱落，强调自然脱落的结果。",
+    "example": {
+      "jp": "ボタンが一つ外れました。",
+      "kana": "ぼたんがひとつはずれました。",
+      "romaji": "botan ga hitotsu hazuremashita.",
+      "zh": "掉了一颗纽扣。"
+    }
+  },
+  "l29-w1182": {
+    "romaji": "tomarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示车、机器等停止运动，强调自然停止的结果。",
+    "example": {
+      "jp": "車が信号の前で止まりました。",
+      "kana": "くるまがしんごうのまえでとまりました。",
+      "romaji": "kuruma ga shingou no mae de tomarimashita.",
+      "zh": "车在信号灯前停下了。"
+    }
+  },
+  "l29-w1183": {
+    "romaji": "machigaemasu",
+    "attributes": [
+      "自他两用"
+    ],
+    "explanation": "表示把事物弄错、搞错，常用于弄错答案、时间、地点等。也可用「間違える」的形式，注意与自动词「間違う」区别。",
+    "example": {
+      "jp": "電話番号を間違えました。",
+      "kana": "でんわばんごうをまちがえました。",
+      "romaji": "denwa bangou o machigaemashita.",
+      "zh": "我把电话号码弄错了。"
+    }
+  },
+  "l29-w1184": {
+    "romaji": "otoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示使物体落下、掉下，也常用于“遗失、丢失”物品。强调人为地使某物掉落或丢失。",
+    "example": {
+      "jp": "駅で財布を落としました。",
+      "kana": "えきでさいふをおとしました。",
+      "romaji": "eki de saifu o otoshimashita.",
+      "zh": "我在车站把钱包丢了。"
+    }
+  },
+  "l29-w1185": {
+    "romaji": "[kagi ga] kakarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示锁被锁上、处于上锁状态，主语是「鍵」或「ドア」等。常与「鍵が掛かる」搭配，注意与他动词「掛ける」区别。",
+    "example": {
+      "jp": "ドアに鍵が掛かっています。",
+      "kana": "どあにかぎがかかっています。",
+      "romaji": "doa ni kagi ga kakatte imasu.",
+      "zh": "门上锁着。"
+    }
+  },
+  "l29-w1186": {
+    "romaji": "osara",
+    "attributes": [],
+    "explanation": "泛指盘子、碟子，通常指西餐用的平盘。日语中「お」是美化语，但「お皿」已固定为常用说法。",
+    "example": {
+      "jp": "お皿を洗ってください。",
+      "kana": "おさらをあらってください。",
+      "romaji": "osara o aratte kudasai.",
+      "zh": "请把盘子洗了。"
+    }
+  },
+  "l29-w1187": {
+    "romaji": "ochawan",
+    "attributes": [],
+    "explanation": "指盛饭用的碗，通常为陶瓷制。与「茶碗」同义，但「お茶碗」更口语化、礼貌。",
+    "example": {
+      "jp": "お茶碗にご飯を盛ります。",
+      "kana": "おちゃわんにごはんをもります。",
+      "romaji": "ochawan ni gohan o morimasu.",
+      "zh": "把饭盛到饭碗里。"
+    }
+  },
+  "l29-w1188": {
+    "romaji": "koppu",
+    "attributes": [],
+    "explanation": "指玻璃杯、杯子，通常用于喝水、饮料等。外来语，注意与「カップ」（带把手的杯子）区别。",
+    "example": {
+      "jp": "コップに水を入れます。",
+      "kana": "こっぷにみずをいれます。",
+      "romaji": "koppu ni mizu o iremasu.",
+      "zh": "往杯子里倒水。"
+    }
+  },
+  "l29-w1189": {
+    "romaji": "garasu",
+    "attributes": [],
+    "explanation": "指玻璃这种材料，也可指玻璃制品。外来语，注意与「ガラス製」等搭配。",
+    "example": {
+      "jp": "ガラスが割れました。",
+      "kana": "がらすがわれました。",
+      "romaji": "garasu ga waremashita.",
+      "zh": "玻璃碎了。"
+    }
+  },
+  "l29-w1190": {
+    "romaji": "fukuro",
+    "attributes": [],
+    "explanation": "指袋子、口袋，可用于购物袋、纸袋等。常与「袋に入れる」搭配。",
+    "example": {
+      "jp": "袋に野菜を入れます。",
+      "kana": "ふくろにやさいをいれます。",
+      "romaji": "fukuro ni yasai o iremasu.",
+      "zh": "把蔬菜放进袋子里。"
+    }
+  },
+  "l29-w1192": {
+    "romaji": "eda",
+    "attributes": [],
+    "explanation": "指树枝、枝条，常与「枝を折る」「枝が伸びる」等搭配。",
+    "example": {
+      "jp": "木の枝が折れました。",
+      "kana": "きのえだがおれました。",
+      "romaji": "ki no eda ga oremashita.",
+      "zh": "树枝断了。"
+    }
+  },
+  "l29-w1193": {
+    "romaji": "ekiin",
+    "attributes": [],
+    "explanation": "指在车站工作的职员，负责检票、引导等。由「駅」和「員」组成。",
+    "example": {
+      "jp": "駅員に道を聞きました。",
+      "kana": "えきいんにみちをききました。",
+      "romaji": "ekiin ni michi o kikimashita.",
+      "zh": "向车站工作人员问了路。"
+    }
+  },
+  "l29-w1194": {
+    "romaji": "konohen",
+    "attributes": [],
+    "explanation": "指说话人所在的附近一带、这一带。常与「この辺に」「この辺で」等搭配使用。",
+    "example": {
+      "jp": "この辺に銀行はありますか。",
+      "kana": "このへんにぎんこうはありますか。",
+      "romaji": "kono hen ni ginkou wa arimasu ka.",
+      "zh": "这一带有银行吗？"
+    }
+  },
+  "l29-w1195": {
+    "romaji": "~hen",
+    "attributes": [],
+    "explanation": "接在名词后，表示“……附近、……一带”，如「駅の辺」「この辺」。常以「～の辺」或「～辺」的形式出现。",
+    "example": {
+      "jp": "駅の辺で待っています。",
+      "kana": "えきのへんでまっています。",
+      "romaji": "eki no hen de matte imasu.",
+      "zh": "我在车站附近等着。"
+    }
+  },
+  "l29-w1196": {
+    "romaji": "kono kurai",
+    "attributes": [],
+    "explanation": "表示程度或数量的大致范围，相当于“这种程度”“这么大”。口语中常用来描述大小、数量或程度，也可用于比较。",
+    "example": {
+      "jp": "このくらいの大きさの箱が欲しいです。",
+      "kana": "このくらいのおおきさのはこがほしいです。",
+      "romaji": "kono kurai no ookisa no hako ga hoshii desu.",
+      "zh": "我想要一个大约这么大的箱子。"
+    }
+  },
+  "l29-w1197": {
+    "romaji": "o-saki ni dōzo",
+    "attributes": [],
+    "explanation": "礼貌地请对方先行的固定表达，常用于让对方先走、先做某事。语气客气，适用于日常社交场合。",
+    "example": {
+      "jp": "お先にどうぞ、私はまだ準備中です。",
+      "kana": "おさきにどうぞ、わたしはまだじゅんびちゅうです。",
+      "romaji": "o-saki ni dōzo, watashi wa mada junbichū desu.",
+      "zh": "您先请，我还在准备。"
+    }
+  },
+  "l29-w1198": {
+    "romaji": "ā, yokatta",
+    "attributes": [],
+    "explanation": "表示松了一口气或感到庆幸的感叹表达，常用于得知好消息或避免麻烦时。语气轻松，带有安心感。",
+    "example": {
+      "jp": "ああ、よかった、無事に着いたんですね。",
+      "kana": "ああ、よかった、ぶじについたんですね。",
+      "romaji": "ā, yokatta, buji ni tsuita n desu ne.",
+      "zh": "啊，太好了，你平安到达了。"
+    }
+  },
+  "l29-w1199": {
+    "romaji": "ima no densha",
+    "attributes": [],
+    "explanation": "指刚刚过去或刚刚乘坐的那班电车。“今の”表示“刚才的”，常用于回顾刚发生的事。",
+    "example": {
+      "jp": "今の電車に忘れ物をしました。",
+      "kana": "いまのでんしゃにわすれものをしました。",
+      "romaji": "ima no densha ni wasuremono o shimashita.",
+      "zh": "我把东西忘在刚才那班电车上了。"
+    }
+  },
+  "l29-w1200": {
+    "romaji": "wasuremono",
+    "attributes": [],
+    "explanation": "指不小心遗忘在某处的物品，常用于车站、电车等场所的失物招领。复合名词，由“忘れ”和“物”组成。",
+    "example": {
+      "jp": "電車に忘れ物をしてしまいました。",
+      "kana": "でんしゃにわすれものをしてしまいました。",
+      "romaji": "densha ni wasuremono o shite shimaimashita.",
+      "zh": "我不小心把东西忘在电车上了。"
+    }
+  },
+  "l29-w1201": {
+    "romaji": "-gawa",
+    "attributes": [],
+    "explanation": "接在名词后表示方位或位置的一侧，如“右側”“駅側”。常与表示方向的名词组合使用。",
+    "example": {
+      "jp": "駅の反対側に出口があります。",
+      "kana": "えきのはんたいがわにでぐちがあります。",
+      "romaji": "eki no hantai-gawa ni deguchi ga arimasu.",
+      "zh": "车站的另一侧有出口。"
+    }
+  },
+  "l29-w1202": {
+    "romaji": "poketto",
+    "attributes": [],
+    "explanation": "外来语，指衣服上的口袋。常用于描述随身携带物品的位置，如“ポケットに入れる”。",
+    "example": {
+      "jp": "切符をポケットに入れました。",
+      "kana": "きっぷをぽけっとにいれました。",
+      "romaji": "kippu o poketto ni iremashita.",
+      "zh": "我把车票放进口袋里了。"
+    }
+  },
+  "l29-w1203": {
+    "romaji": "oboete imasen",
+    "attributes": [],
+    "explanation": "“覚えていません”是“覚えている”的否定礼貌形式，表示不记得某事。常用于回答关于记忆的询问。",
+    "example": {
+      "jp": "すみません、その人の名前は覚えていません。",
+      "kana": "すみません、そのひとのなまえはおぼえていません。",
+      "romaji": "sumimasen, sono hito no namae wa oboete imasen.",
+      "zh": "对不起，我不记得那个人的名字。"
+    }
+  },
+  "l29-w1204": {
+    "romaji": "amidana",
+    "attributes": [],
+    "explanation": "指电车、火车等车厢内上方的行李架，用于放置行李。是日本交通场景中的常用词。",
+    "example": {
+      "jp": "荷物を網棚に上げてください。",
+      "kana": "にもつをあみだなにあげてください。",
+      "romaji": "nimotsu o amidana ni agete kudasai.",
+      "zh": "请把行李放到行李架上。"
+    }
+  },
+  "l29-w1205": {
+    "romaji": "tashika",
+    "attributes": [],
+    "explanation": "表示“确实”“大概记得”，常用于不确定但有一定记忆的场合。可单独使用或后接“に”作副词。",
+    "example": {
+      "jp": "確か、彼は昨日来たと思います。",
+      "kana": "たしか、かれはきのうきたとおもいます。",
+      "romaji": "tashika, kare wa kinō kita to omoimasu.",
+      "zh": "我记得他昨天好像来过。"
+    }
+  },
+  "l29-w1214": {
+    "romaji": "katazukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示整理、收拾物品或房间，使其整齐。常用于日常打扫、整理行李等场景。",
+    "example": {
+      "jp": "部屋を片づけますから、少し待ってください。",
+      "kana": "へやをかたづけますから、すこしまってください。",
+      "romaji": "heya o katazukemasu kara, sukoshi matte kudasai.",
+      "zh": "我要收拾房间，请稍等。"
+    }
+  },
+  "l29-w1240": {
+    "romaji": "kōban",
+    "attributes": [],
+    "explanation": "指日本街头的小型警察派出所，负责辖区巡逻和接受报案。常作为问路或求助的地点。",
+    "example": {
+      "jp": "交番で道を聞きました。",
+      "kana": "こうばんでみちをききました。",
+      "romaji": "kōban de michi o kikimashita.",
+      "zh": "我在派出所问了路。"
+    }
+  },
+  "l29-w1534": {
+    "romaji": "shorui",
+    "attributes": [],
+    "explanation": "指文件、书面材料的总称，常用于办公或正式场合。比“書類”更具体的说法有“書類一式”等。",
+    "example": {
+      "jp": "机の上に書類が置いてあります。",
+      "kana": "つくえのうえにしょるいがおいてあります。",
+      "romaji": "tsukue no ue ni shorui ga oite arimasu.",
+      "zh": "桌子上放着文件。"
+    }
+  },
+  "l29-w1605": {
+    "romaji": "henji",
+    "attributes": [],
+    "explanation": "表示对来信、电话、邀请等的回复、答复。常用“返事をする”“返事が来る”等搭配，口语中也可用于日常应答。",
+    "example": {
+      "jp": "メールの返事をまだしていません。",
+      "kana": "めーるのへんじをまだしていません。",
+      "romaji": "meeru no henji o mada shite imasen.",
+      "zh": "还没有回复邮件。"
+    }
+  },
+  "l29-w1638": {
+    "romaji": "torikaemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物换成别的，或更换、调换。常与“～を～に取り替える”搭配，用于物品交换、零件更换等。",
+    "example": {
+      "jp": "古い電池を新しいのに取り替えます。",
+      "kana": "ふるいでんちをあたらしいのにとりかえます。",
+      "romaji": "furui denchi o atarashii no ni torikaemasu.",
+      "zh": "把旧电池换成新的。"
+    }
+  },
+  "l29-w3811": {
+    "romaji": "fukimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用布等擦拭物体表面，去除污垢或水分。常与“テーブルを拭く”“窓を拭く”等搭配。",
+    "example": {
+      "jp": "テーブルをきれいに拭きます。",
+      "kana": "てーぶるをきれいにふきます。",
+      "romaji": "teeburu o kirei ni fukimasu.",
+      "zh": "把桌子擦干净。"
+    }
+  },
+  "l29-w941": {
+    "romaji": "supiichi",
+    "attributes": [],
+    "explanation": "指在众人面前进行的演讲、致辞，尤指正式场合的短篇讲话。常用“スピーチをする”表示“做演讲”。",
+    "example": {
+      "jp": "結婚式でスピーチをしました。",
+      "kana": "けっこんしきですぴーちをしました。",
+      "romaji": "kekkonshiki de supiichi o shimashita.",
+      "zh": "在婚礼上做了致辞。"
+    }
+  },
+  "l29-genji": {
+    "romaji": "Genji Monogatari",
+    "attributes": [],
+    "explanation": "日本古典文学代表作，紫式部所著长篇小说。作为专有名词直接使用，常出现在文学、历史语境中。",
+    "example": {
+      "jp": "源氏物語は日本の古典文学です。",
+      "kana": "げんじものがたりはにほんのこてんぶんがくです。",
+      "romaji": "Genji Monogatari wa Nihon no koten bungaku desu.",
+      "zh": "《源氏物语》是日本的古典文学。"
+    }
+  },
+  "l29-shinjuku": {
+    "romaji": "Shinjuku",
+    "attributes": [],
+    "explanation": "东京都内的地名，指新宿区或新宿站周边繁华地区。作为专有名词使用，常与“駅”“区”等搭配。",
+    "example": {
+      "jp": "新宿で友達に会います。",
+      "kana": "しんじゅくでともだちにあいます。",
+      "romaji": "Shinjuku de tomodachi ni aimasu.",
+      "zh": "在新宿见朋友。"
+    }
+  },
+  "l29-earthquake": {
+    "romaji": "jishin",
+    "attributes": [],
+    "explanation": "指地震这一自然现象。常用“地震が起きる”“地震がある”等搭配，也可说“地震に備える”。",
+    "example": {
+      "jp": "昨夜、大きな地震がありました。",
+      "kana": "ゆうべ、おおきなじしんがありました。",
+      "romaji": "yuube, ookina jishin ga arimashita.",
+      "zh": "昨晚发生了大地震。"
+    }
+  },
+  "l29-wall": {
+    "romaji": "kabe",
+    "attributes": [],
+    "explanation": "指建筑物内部的墙壁，也可比喻障碍。常用“壁に掛ける”“壁を塗る”等搭配。",
+    "example": {
+      "jp": "壁に絵を掛けました。",
+      "kana": "かべにえをかけました。",
+      "romaji": "kabe ni e o kakemashita.",
+      "zh": "在墙上挂了画。"
+    }
+  },
+  "l29-needle": {
+    "romaji": "hari",
+    "attributes": [],
+    "explanation": "指缝纫用的针，也指钟表等的指针。常用“針に糸を通す”“時計の針”等表达。",
+    "example": {
+      "jp": "針に糸を通すのは難しいです。",
+      "kana": "はりにいとをとおすのはむずかしいです。",
+      "romaji": "hari ni ito o toosu no wa muzukashii desu.",
+      "zh": "把线穿过针眼很难。"
+    }
+  },
+  "l29-point": {
+    "romaji": "sashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用手指或物体指向某方向，也可指钟表指针指示时间。常与“～を指す”搭配。",
+    "example": {
+      "jp": "彼は地図を指して説明しました。",
+      "kana": "かれはちずをさしてせつめいしました。",
+      "romaji": "kare wa chizu o sashite setsumei shimashita.",
+      "zh": "他指着地图做了说明。"
+    }
+  },
+  "l29-station-front": {
+    "romaji": "ekimae",
+    "attributes": [],
+    "explanation": "指车站前面的区域，常作为地点名词使用。常见搭配如“駅前で待ち合わせる”“駅前の店”。",
+    "example": {
+      "jp": "駅前で待ち合わせましょう。",
+      "kana": "えきまえでまちあわせましょう。",
+      "romaji": "ekimae de machiawasemashou.",
+      "zh": "在车站前碰面吧。"
+    }
+  },
+  "l29-fall": {
+    "romaji": "taoremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人或物因失去平衡而倒下，常与「木が倒れる」「建物が倒れる」等搭配；也可用于抽象事物崩溃。",
+    "example": {
+      "jp": "台風で木が倒れました。",
+      "kana": "たいふうできがたおれました。",
+      "romaji": "taifū de ki ga taoremashita.",
+      "zh": "台风把树刮倒了。"
+    }
+  },
+  "l29-west": {
+    "romaji": "nishi",
+    "attributes": [],
+    "explanation": "表示方向或方位，可单独使用或构成复合词如「西口」「関西」；与「東」相对。",
+    "example": {
+      "jp": "太陽は西に沈みます。",
+      "kana": "たいようはにしにしずみます。",
+      "romaji": "taiyō wa nishi ni shizumimasu.",
+      "zh": "太阳在西边落下。"
+    }
+  },
+  "l29-direction": {
+    "romaji": "~ no hō",
+    "attributes": [],
+    "explanation": "接在名词后表示大致方向或方位，常与「に」「へ」搭配，如「駅の方へ行く」；语气比直接说方向更委婉。",
+    "example": {
+      "jp": "駅の方はにぎやかです。",
+      "kana": "えきのほうはにぎやかです。",
+      "romaji": "eki no hō wa nigiyaka desu.",
+      "zh": "车站那边很热闹。"
+    }
+  },
+  "l29-burn": {
+    "romaji": "moemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示物体燃烧、着火，常与「火が燃える」「家が燃える」搭配；强调燃烧状态而非人为点燃。",
+    "example": {
+      "jp": "暖炉の火が赤く燃えています。",
+      "kana": "だんろのひがあかくもえています。",
+      "romaji": "danro no hi ga akaku moete imasu.",
+      "zh": "暖炉的火红红地燃烧着。"
+    }
+  },
+  "l29-reporter": {
+    "romaji": "repōtā",
+    "attributes": [],
+    "explanation": "指采访并报道新闻的人，常用于电视、广播等媒体；与「記者」近义，但更侧重现场报道。",
+    "example": {
+      "jp": "レポーターが現場から中継しています。",
+      "kana": "れぽーたーがげんばからちゅうけいしています。",
+      "romaji": "repōtā ga genba kara chūkei shite imasu.",
+      "zh": "记者正在现场直播。"
+    }
+  }
+}

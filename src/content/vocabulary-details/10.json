@@ -1,0 +1,569 @@
+{
+  "l10-w1925": {
+    "romaji": "zou",
+    "attributes": [],
+    "explanation": "指大象这种动物，常用「象がいます」表示某处有大象。注意与「像」（ぞう，画像、雕像）同音不同字。",
+    "example": {
+      "jp": "動物園に大きな象がいます。",
+      "kana": "どうぶつえんにおおきなぞうがいます。",
+      "romaji": "doubutsuen ni ookina zou ga imasu.",
+      "zh": "动物园里有一头大象。"
+    }
+  },
+  "l10-w2180": {
+    "romaji": "konbini",
+    "attributes": [],
+    "explanation": "「コンビニエンスストア」的缩略，指便利店。口语常用，可说「コンビニで買う」「コンビニに行く」。",
+    "example": {
+      "jp": "駅の前にコンビニがあります。",
+      "kana": "えきのまえにこんびにがあります。",
+      "romaji": "eki no mae ni konbini ga arimasu.",
+      "zh": "车站前面有一家便利店。"
+    }
+  },
+  "l10-w2282": {
+    "romaji": "panda",
+    "attributes": [],
+    "explanation": "指熊猫，外来语名词。常用「パンダがいます」表示某处有熊猫，也可说「パンダを見る」。",
+    "example": {
+      "jp": "上野動物園にパンダがいます。",
+      "kana": "うえのどうぶつえんにぱんだがいます。",
+      "romaji": "ueno doubutsuen ni panda ga imasu.",
+      "zh": "上野动物园里有熊猫。"
+    }
+  },
+  "l10-v2": {
+    "romaji": "imasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人或动物等有生命事物的存在，常用「場所に～がいます」句型。否定为「いません」，不能用于无生命事物。",
+    "example": {
+      "jp": "教室に学生がいます。",
+      "kana": "きょうしつにがくせいがいます。",
+      "romaji": "kyoushitsu ni gakusei ga imasu.",
+      "zh": "教室里有学生。"
+    }
+  },
+  "l10-v1": {
+    "romaji": "arimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示无生命事物（物品、植物、场所等）的存在，常用「場所に～があります」句型。否定为「ありません」，不能用于人或动物。",
+    "example": {
+      "jp": "机の上に本があります。",
+      "kana": "つくえのうえにほんがあります。",
+      "romaji": "tsukue no ue ni hon ga arimasu.",
+      "zh": "桌子上有书。"
+    }
+  },
+  "l10-w493": {
+    "romaji": "iroirona",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "な形容词，表示种类多、各式各样，修饰名词时加「な」，如「色々な人」。不能直接作谓语，作谓语需用「色々だ」。",
+    "example": {
+      "jp": "店に色々な果物があります。",
+      "kana": "みせにいろいろなくだものがあります。",
+      "romaji": "mise ni iroirona kudamono ga arimasu.",
+      "zh": "店里有各种各样的水果。"
+    }
+  },
+  "l10-w494": {
+    "romaji": "otoko no hito",
+    "attributes": [],
+    "explanation": "指成年男性，较礼貌的说法。口语中也可说「男の人」，与「女の人」相对。",
+    "example": {
+      "jp": "あの男の人は先生です。",
+      "kana": "あのおとこのひとはせんせいです。",
+      "romaji": "ano otoko no hito wa sensei desu.",
+      "zh": "那个男人是老师。"
+    }
+  },
+  "l10-w495": {
+    "romaji": "onna no hito",
+    "attributes": [],
+    "explanation": "指成年女性，较礼貌的说法。与「男の人」相对，口语中常用。",
+    "example": {
+      "jp": "女の人が店で働いています。",
+      "kana": "おんなのひとがみせではたらいています。",
+      "romaji": "onna no hito ga mise de hataraite imasu.",
+      "zh": "一位女士在店里工作。"
+    }
+  },
+  "l10-w496": {
+    "romaji": "otoko no ko",
+    "attributes": [],
+    "explanation": "指小男孩、男孩。与「女の子」相对，常用于日常口语。",
+    "example": {
+      "jp": "公園で男の子が遊んでいます。",
+      "kana": "こうえんでおとこのこがあそんでいます。",
+      "romaji": "kouen de otoko no ko ga asonde imasu.",
+      "zh": "公园里有个男孩在玩。"
+    }
+  },
+  "l10-w497": {
+    "romaji": "onna no ko",
+    "attributes": [],
+    "explanation": "指小女孩、女孩。与「男の子」相对，常用于日常口语。",
+    "example": {
+      "jp": "あの女の子はかわいいですね。",
+      "kana": "あのおんなのこはかわいいですね。",
+      "romaji": "ano onna no ko wa kawaii desu ne.",
+      "zh": "那个女孩真可爱啊。"
+    }
+  },
+  "l10-w498": {
+    "romaji": "inu",
+    "attributes": [],
+    "explanation": "指狗，有生命动物，存在句用「犬がいます」。常用「犬を飼う」表示养狗。",
+    "example": {
+      "jp": "庭に犬がいます。",
+      "kana": "にわにいぬがいます。",
+      "romaji": "niwa ni inu ga imasu.",
+      "zh": "院子里有一只狗。"
+    }
+  },
+  "l10-w499": {
+    "romaji": "neko",
+    "attributes": [],
+    "explanation": "指猫，有生命动物，存在句用「猫がいます」。常用「猫を飼う」表示养猫。",
+    "example": {
+      "jp": "家に猫が二匹います。",
+      "kana": "いえにねこがにひきいます。",
+      "romaji": "ie ni neko ga nihiki imasu.",
+      "zh": "家里有两只猫。"
+    }
+  },
+  "l10-w500": {
+    "romaji": "ki",
+    "attributes": [],
+    "explanation": "指树木或木材，是具体名词。常与「植える」「切る」等动词搭配，也可说「木の箱」表示木制的。",
+    "example": {
+      "jp": "庭に木を植えました。",
+      "kana": "にわにきをうえました。",
+      "romaji": "niwa ni ki o uemashita.",
+      "zh": "在院子里种了树。"
+    }
+  },
+  "l10-w501": {
+    "romaji": "mono",
+    "attributes": [],
+    "explanation": "泛指物品、东西，比「こと」更具体。常以「〜物」形式构成复合词，如「食べ物」。口语中也可指抽象事物。",
+    "example": {
+      "jp": "この箱には大切な物が入っています。",
+      "kana": "このはこにはたいせつなものがはいっています。",
+      "romaji": "kono hako ni wa taisetsu na mono ga haitte imasu.",
+      "zh": "这个箱子里装着重要的东西。"
+    }
+  },
+  "l10-w503": {
+    "romaji": "denchi",
+    "attributes": [],
+    "explanation": "指干电池或蓄电池，常用「電池が切れる」「電池を入れる」等搭配。注意不是“电”本身。",
+    "example": {
+      "jp": "この時計は電池が切れています。",
+      "kana": "このとけいはでんちがきれています。",
+      "romaji": "kono tokei wa denchi ga kirete imasu.",
+      "zh": "这个表没电了。"
+    }
+  },
+  "l10-w504": {
+    "romaji": "hako",
+    "attributes": [],
+    "explanation": "指箱子、盒子，常与「入れる」「開ける」搭配。可组成「箱詰め」「空き箱」等词。",
+    "example": {
+      "jp": "箱を開けて中を見てください。",
+      "kana": "はこをあけてなかをみてください。",
+      "romaji": "hako o akete naka o mite kudasai.",
+      "zh": "请打开箱子看看里面。"
+    }
+  },
+  "l10-w505": {
+    "romaji": "suitchi",
+    "attributes": [],
+    "explanation": "指电器开关，常用「スイッチを入れる／切る」表示开/关。也可比喻“转换心情”等。",
+    "example": {
+      "jp": "部屋が暗いので、スイッチを入れてください。",
+      "kana": "へやがくらいので、すいっちをいれてください。",
+      "romaji": "heya ga kurai node, suitchi o irete kudasai.",
+      "zh": "房间很暗，请打开开关。"
+    }
+  },
+  "l10-w506": {
+    "romaji": "reizouko",
+    "attributes": [],
+    "explanation": "指冰箱，常用「冷蔵庫に入れる」表示把食物等放进冰箱。注意不是冷冻库（冷凍庫）。",
+    "example": {
+      "jp": "飲み物は冷蔵庫に入れてあります。",
+      "kana": "のみものはれいぞうこにいれてあります。",
+      "romaji": "nomimono wa reizouko ni irete arimasu.",
+      "zh": "饮料放在冰箱里。"
+    }
+  },
+  "l10-w507": {
+    "romaji": "teeburu",
+    "attributes": [],
+    "explanation": "指桌子，尤指餐桌或茶几，比「机」更常用于吃饭、喝茶的场景。常与「テーブルを囲む」搭配。",
+    "example": {
+      "jp": "テーブルの上に花を飾りました。",
+      "kana": "てーぶるのうえにはなをかざりました。",
+      "romaji": "teeburu no ue ni hana o kazarimashita.",
+      "zh": "在桌子上摆了花。"
+    }
+  },
+  "l10-w508": {
+    "romaji": "beddo",
+    "attributes": [],
+    "explanation": "指床，常用「ベッドで寝る」「ベッドに入る」。注意与「布団」区别，后者是铺在地上的被褥。",
+    "example": {
+      "jp": "毎晩十一時にベッドに入ります。",
+      "kana": "まいばんじゅういちじにべっどにはいります。",
+      "romaji": "maiban juuichi ji ni beddo ni hairimasu.",
+      "zh": "每晚十一点上床睡觉。"
+    }
+  },
+  "l10-w509": {
+    "romaji": "tana",
+    "attributes": [],
+    "explanation": "指架子、搁板，常与「棚に置く」「棚から取る」搭配。可组成「本棚」「戸棚」等复合词。",
+    "example": {
+      "jp": "本は棚に並べてください。",
+      "kana": "ほんはたなにならべてください。",
+      "romaji": "hon wa tana ni narabete kudasai.",
+      "zh": "请把书排列在架子上。"
+    }
+  },
+  "l10-w510": {
+    "romaji": "doa",
+    "attributes": [],
+    "explanation": "指门，尤指西式门，常用「ドアを開ける／閉める」「ドアをノックする」。与和语「戸」有语体差异。",
+    "example": {
+      "jp": "ドアを閉めてください。",
+      "kana": "どあをしめてください。",
+      "romaji": "doa o shimete kudasai.",
+      "zh": "请把门关上。"
+    }
+  },
+  "l10-w511": {
+    "romaji": "mado",
+    "attributes": [],
+    "explanation": "指窗户，常用「窓を開ける／閉める」「窓から見る」。也可指窗口、柜台。",
+    "example": {
+      "jp": "暑いので窓を開けましょう。",
+      "kana": "あついのでまどをあけましょう。",
+      "romaji": "atsui node mado o akemashou.",
+      "zh": "很热，把窗户打开吧。"
+    }
+  },
+  "l10-w512": {
+    "romaji": "posuto",
+    "attributes": [],
+    "explanation": "指邮筒，常用「ポストに投函する」「ポストに入れる」表示投寄信件。注意不是“柱子”。",
+    "example": {
+      "jp": "手紙をポストに入れました。",
+      "kana": "てがみをぽすとにいれました。",
+      "romaji": "tegami o posuto ni iremashita.",
+      "zh": "把信投进了邮筒。"
+    }
+  },
+  "l10-w513": {
+    "romaji": "biru",
+    "attributes": [],
+    "explanation": "「ビル」是「ビルディング」的缩略，指钢筋混凝土结构的现代楼房，通常为多层或高层建筑。日常口语中广泛使用，如「あのビル」指那栋大楼。",
+    "example": {
+      "jp": "あの高いビルは銀行です。",
+      "kana": "あのたかいびるはぎんこうです。",
+      "romaji": "ano takai biru wa ginkou desu.",
+      "zh": "那栋高楼是银行。"
+    }
+  },
+  "l10-w514": {
+    "romaji": "kouen",
+    "attributes": [],
+    "explanation": "「公園」指供公众休闲的绿地或游乐场所，常与「散歩する」「遊ぶ」等动词搭配。注意与「庭園」（私人庭院）区分。",
+    "example": {
+      "jp": "日曜日に公園で散歩します。",
+      "kana": "にちようびにこうえんでさんぽします。",
+      "romaji": "nichiyoubi ni kouen de sanpo shimasu.",
+      "zh": "星期天在公园散步。"
+    }
+  },
+  "l10-w515": {
+    "romaji": "kissaten",
+    "attributes": [],
+    "explanation": "「喫茶店」指提供咖啡、红茶等饮品的传统咖啡馆，常带有复古氛围。与「カフェ」相比更显传统，多用于街边小店。",
+    "example": {
+      "jp": "駅の近くの喫茶店でコーヒーを飲みました。",
+      "kana": "えきのちかくのきっさてんでこーひーをのみました。",
+      "romaji": "eki no chikaku no kissaten de koohii o nomimashita.",
+      "zh": "在车站附近的咖啡馆喝了咖啡。"
+    }
+  },
+  "l10-w516": {
+    "romaji": "hon'ya",
+    "attributes": [],
+    "explanation": "「本屋」是「本屋さん」的略称，指卖书的店铺，口语常用。可与「で本を買う」搭配，注意与「図書館」（图书馆）区分。",
+    "example": {
+      "jp": "本屋で雑誌を買いました。",
+      "kana": "ほんやでざっしをかいました。",
+      "romaji": "hon'ya de zasshi o kaimashita.",
+      "zh": "在书店买了杂志。"
+    }
+  },
+  "l10-w517": {
+    "romaji": "~ya",
+    "attributes": [],
+    "explanation": "「～屋」是接尾词，接在名词后表示经营该商品的店铺或从事该职业的人，如「本屋」「花屋」「魚屋」。语体上较口语化，不能单独使用。",
+    "example": {
+      "jp": "あの花屋はいつもきれいな花を売っています。",
+      "kana": "あのはなやはいつもきれいなはなをうっています。",
+      "romaji": "ano hanaya wa itsumo kirei na hana o utte imasu.",
+      "zh": "那家花店总是卖漂亮的花。"
+    }
+  },
+  "l10-w518": {
+    "romaji": "noriba",
+    "attributes": [],
+    "explanation": "「乗り場」指乘坐交通工具的场所，如公交站、出租车乘车点等。常与「タクシー」「バス」等词搭配，如「タクシー乗り場」。",
+    "example": {
+      "jp": "タクシー乗り場は駅の南口にあります。",
+      "kana": "たくしーのりばはえきのみなみぐちにあります。",
+      "romaji": "takushii noriba wa eki no minamiguchi ni arimasu.",
+      "zh": "出租车乘车处在车站南口。"
+    }
+  },
+  "l10-w519": {
+    "romaji": "ken",
+    "attributes": [],
+    "explanation": "「県」是日本的广域行政区划，相当于中国的“县”，如「千葉県」「神奈川県」。常与「市」「町」等行政单位并列使用。",
+    "example": {
+      "jp": "私は千葉県に住んでいます。",
+      "kana": "わたしはちばけんにすんでいます。",
+      "romaji": "watashi wa chiba ken ni sunde imasu.",
+      "zh": "我住在千叶县。"
+    }
+  },
+  "l10-v3": {
+    "romaji": "ue",
+    "attributes": [],
+    "explanation": "「上」表示物理位置的上方或表面，常以「～の上に/で」形式使用。也可表示抽象意义上的“上面”，如「机の上」。",
+    "example": {
+      "jp": "机の上に本があります。",
+      "kana": "つくえのうえにほんがあります。",
+      "romaji": "tsukue no ue ni hon ga arimasu.",
+      "zh": "桌子上有书。"
+    }
+  },
+  "l10-v4": {
+    "romaji": "shita",
+    "attributes": [],
+    "explanation": "「下」表示物理位置的下方，常以「～の下に/で」形式使用。也可表示“手下”“属下”等抽象意义，但日常多指空间位置。",
+    "example": {
+      "jp": "ベッドの下に猫がいます。",
+      "kana": "べっどのしたにねこがいます。",
+      "romaji": "beddo no shita ni neko ga imasu.",
+      "zh": "床下有猫。"
+    }
+  },
+  "l10-v5": {
+    "romaji": "mae",
+    "attributes": [],
+    "explanation": "「前」表示面对的方向或时间上的以前，常以「～の前に/で」使用。也可单独表示“前面”，如「前を見る」。",
+    "example": {
+      "jp": "駅の前に大きな公園があります。",
+      "kana": "えきのまえにおおきなこうえんがあります。",
+      "romaji": "eki no mae ni ookina kouen ga arimasu.",
+      "zh": "车站前面有个大公园。"
+    }
+  },
+  "l10-v6": {
+    "romaji": "ushiro",
+    "attributes": [],
+    "explanation": "「後ろ」表示背后或后方，常以「～の後ろに/で」使用。与「前」相对，注意与表示时间“之后”的「後（あと）」区分。",
+    "example": {
+      "jp": "家の後ろに庭があります。",
+      "kana": "いえのうしろににわがあります。",
+      "romaji": "ie no ushiro ni niwa ga arimasu.",
+      "zh": "房子后面有院子。"
+    }
+  },
+  "l10-w524": {
+    "romaji": "migi",
+    "attributes": [],
+    "explanation": "「右」表示方向上的右边，常以「～の右に/で」使用。也可表示“右侧”“右方”，如「右を見る」。",
+    "example": {
+      "jp": "銀行はこの道の右にあります。",
+      "kana": "ぎんこうはこのみちのみぎにあります。",
+      "romaji": "ginkou wa kono michi no migi ni arimasu.",
+      "zh": "银行在这条路的右边。"
+    }
+  },
+  "l10-w525": {
+    "romaji": "hidari",
+    "attributes": [],
+    "explanation": "表示方向或位置的“左”，常与助词「に」「の」搭配，如「左に曲がる」「左の手」。注意与「右（みぎ）」相对。",
+    "example": {
+      "jp": "銀行はこの道の左にあります。",
+      "kana": "ぎんこうはこのみちのひだりにあります。",
+      "romaji": "ginkou wa kono michi no hidari ni arimasu.",
+      "zh": "银行在这条路的左边。"
+    }
+  },
+  "l10-v8": {
+    "romaji": "naka",
+    "attributes": [],
+    "explanation": "表示内部空间或范围，常用「〜の中」形式。也可表示时间或状态之中，如「勉強の中」不自然，需注意搭配。",
+    "example": {
+      "jp": "かばんの中に鍵があります。",
+      "kana": "かばんのなかにかぎがあります。",
+      "romaji": "kaban no naka ni kagi ga arimasu.",
+      "zh": "包里面有钥匙。"
+    }
+  },
+  "l10-w527": {
+    "romaji": "soto",
+    "attributes": [],
+    "explanation": "表示外部、户外，与「中（なか）」相对。常用「外に出る」「外は寒い」等。",
+    "example": {
+      "jp": "外は雨が降っています。",
+      "kana": "そとはあめがふっています。",
+      "romaji": "soto wa ame ga futte imasu.",
+      "zh": "外面正在下雨。"
+    }
+  },
+  "l10-v7": {
+    "romaji": "tonari",
+    "attributes": [],
+    "explanation": "表示相邻的位置，可指旁边的人家、座位等。与「隣り」同义，但常写「隣」。注意与「近く」区别，后者指附近区域。",
+    "example": {
+      "jp": "隣の家に犬がいます。",
+      "kana": "となりのいえにいぬがいます。",
+      "romaji": "tonari no ie ni inu ga imasu.",
+      "zh": "隔壁家有狗。"
+    }
+  },
+  "l10-v9": {
+    "romaji": "chikaku",
+    "attributes": [],
+    "explanation": "表示附近、近处，可指距离近的地方。常用「近くに」「近くの」形式。与「隣」不同，不一定是紧挨着。",
+    "example": {
+      "jp": "近くにスーパーがありますか。",
+      "kana": "ちかくにすーぱーがありますか。",
+      "romaji": "chikaku ni suupaa ga arimasu ka.",
+      "zh": "附近有超市吗？"
+    }
+  },
+  "l10-v10": {
+    "romaji": "aida",
+    "attributes": [],
+    "explanation": "表示两个事物之间的空间或时间间隔，也用于人际关系之间。常用「AとBの間」「〜の間」等。",
+    "example": {
+      "jp": "駅と学校の間にある店です。",
+      "kana": "えきとがっこうのあいだにあるみせです。",
+      "romaji": "eki to gakkou no aida ni aru mise desu.",
+      "zh": "是在车站和学校之间的店。"
+    }
+  },
+  "l10-w531": {
+    "romaji": "nado",
+    "attributes": [],
+    "explanation": "表示列举中的“等等”，用于举例或概括。常接在名词后，也可接在动词后。口语中有时说「なんか」。",
+    "example": {
+      "jp": "りんごやみかんなどを買いました。",
+      "kana": "りんごやみかんなどをかいました。",
+      "romaji": "ringo ya mikan nado o kaimashita.",
+      "zh": "买了苹果和橘子等。"
+    }
+  },
+  "l10-w534": {
+    "romaji": "doumo sumimasen",
+    "attributes": [],
+    "explanation": "用于道歉或表示感谢的固定表达，语气比「すみません」更客气、更郑重。可用于给人添麻烦后表达歉意或谢意。",
+    "example": {
+      "jp": "荷物を運んでくれて、どうもすみません。",
+      "kana": "にもつをはこんでくれて、どうもすみません。",
+      "romaji": "nimotsu o hakonde kurete, doumo sumimasen.",
+      "zh": "帮我搬行李，真不好意思。"
+    }
+  },
+  "l10-w5651": {
+    "romaji": "e-ti-emu",
+    "attributes": [],
+    "explanation": "自动取款机的缩写，日语中读作「エーティーエム」。常与「でお金を下ろす」等搭配。",
+    "example": {
+      "jp": "ATMでお金を下ろします。",
+      "kana": "えーてぃーえむでおかねをおろします。",
+      "romaji": "e-ti-emu de okane o oroshimasu.",
+      "zh": "在自动取款机取钱。"
+    }
+  },
+  "l10-fish-sauce": {
+    "romaji": "nanpura-",
+    "attributes": [],
+    "explanation": "泰式鱼露，常用于东南亚料理调味。日语中直接音译，片假名书写。",
+    "example": {
+      "jp": "タイ料理にナンプラーを入れます。",
+      "kana": "たいりょうりになんぷらーをいれます。",
+      "romaji": "tai ryouri ni nanpura- o iremasu.",
+      "zh": "在泰国菜里加鱼露。"
+    }
+  },
+  "l10-corner": {
+    "romaji": "ko-na-",
+    "attributes": [],
+    "explanation": "表示商店内的专区、角落或拐角处。外来语，常用于卖场分区，如「野菜コーナー」。",
+    "example": {
+      "jp": "本屋の雑誌コーナーで待っています。",
+      "kana": "ほんやのざっしこーなーでまっています。",
+      "romaji": "hon'ya no zasshi ko-na- de matte imasu.",
+      "zh": "在书店的杂志专区等着。"
+    }
+  },
+  "l10-bottom": {
+    "romaji": "ichiban shita",
+    "attributes": [],
+    "explanation": "表示位置的最下方、最底层，由「一番」和「下」组合而成。常用「一番下の段」等。",
+    "example": {
+      "jp": "本棚の一番下に辞書があります。",
+      "kana": "ほんだなのいちばんしたにじしょがあります。",
+      "romaji": "hondana no ichiban shita ni jisho ga arimasu.",
+      "zh": "书架最下面有词典。"
+    }
+  },
+  "l10-tokyo-disneyland": {
+    "romaji": "Tōkyō Dizunīrando",
+    "attributes": [],
+    "explanation": "专有名词，指位于千叶县浦安市的东京迪士尼乐园。日常会话中常简称为「ディズニーランド」或「ディズニー」，正式场合才用全称。",
+    "example": {
+      "jp": "東京ディズニーランドへ行きたいです。",
+      "kana": "とうきょうでぃずにーらんどへいきたいです。",
+      "romaji": "Tōkyō Dizunīrando e ikitai desu.",
+      "zh": "我想去东京迪士尼乐园。"
+    }
+  },
+  "l10-asia-store": {
+    "romaji": "Ajia Sutoa",
+    "attributes": [],
+    "explanation": "教材中出现的店名，指售卖亚洲各国商品的商店。作为专有名词通常用片假名书写，实际生活中同类店铺也常直接称为「アジア雑貨店」。",
+    "example": {
+      "jp": "駅の近くにアジアストアがあります。",
+      "kana": "えきのちかくにあじあすとあがあります。",
+      "romaji": "Eki no chikaku ni Ajia Sutoa ga arimasu.",
+      "zh": "车站附近有一家亚洲商店。"
+    }
+  },
+  "l10-ya": {
+    "romaji": "~ ya ~",
+    "attributes": [],
+    "explanation": "并列助词，接在名词后列举若干代表性事物，暗示还有其他同类，与「と」不同，不表示全部列举。常用于购物、介绍物品等场景。",
+    "example": {
+      "jp": "かばんやくつを買いました。",
+      "kana": "かばんやくつをかいました。",
+      "romaji": "Kaban ya kutsu o kaimashita.",
+      "zh": "买了包和鞋等东西。"
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "lessonId": 41,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/41.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 48,
+  "entries": [
+    {
+      "sourceId": "1154",
+      "sourceWord": "管理人",
+      "key": "w1154"
+    },
+    {
+      "sourceId": "1336",
+      "sourceWord": "上げます",
+      "key": "w1336"
+    },
+    {
+      "sourceId": "1337",
+      "sourceWord": "下げます",
+      "key": "w1337"
+    },
+    {
+      "sourceId": "1412",
+      "sourceWord": "珍しい",
+      "key": "w1412"
+    },
+    {
+      "sourceId": "1468",
+      "sourceWord": "～ずつ",
+      "key": "w1468"
+    },
+    {
+      "sourceId": "1634",
+      "sourceWord": "頂きます",
+      "key": "w1634"
+    },
+    {
+      "sourceId": "1635",
+      "sourceWord": "くださいます",
+      "key": "w1635"
+    },
+    {
+      "sourceId": "1636",
+      "sourceWord": "やります",
+      "key": "w1636"
+    },
+    {
+      "sourceId": "1639",
+      "sourceWord": "親切にします",
+      "key": "w1639"
+    },
+    {
+      "sourceId": "1640",
+      "sourceWord": "かわいい",
+      "key": "w1640"
+    },
+    {
+      "sourceId": "1641",
+      "sourceWord": "お祝い",
+      "key": "w1641"
+    },
+    {
+      "sourceId": "1642",
+      "sourceWord": "お年玉",
+      "key": "w1642"
+    },
+    {
+      "sourceId": "1643",
+      "sourceWord": "お見舞い",
+      "key": "w1643"
+    },
+    {
+      "sourceId": "1644",
+      "sourceWord": "興味",
+      "key": "w1644"
+    },
+    {
+      "sourceId": "1645",
+      "sourceWord": "情報",
+      "key": "w1645"
+    },
+    {
+      "sourceId": "1646",
+      "sourceWord": "文法",
+      "key": "w1646"
+    },
+    {
+      "sourceId": "1647",
+      "sourceWord": "発音",
+      "key": "w1647"
+    },
+    {
+      "sourceId": "1648",
+      "sourceWord": "猿",
+      "key": "w1648"
+    },
+    {
+      "sourceId": "1649",
+      "sourceWord": "餌",
+      "key": "w1649"
+    },
+    {
+      "sourceId": "1650",
+      "sourceWord": "おもちゃ",
+      "key": "w1650"
+    },
+    {
+      "sourceId": "1651",
+      "sourceWord": "絵本",
+      "key": "w1651"
+    },
+    {
+      "sourceId": "1652",
+      "sourceWord": "絵はがき",
+      "key": "w1652"
+    },
+    {
+      "sourceId": "1653",
+      "sourceWord": "ドライバー",
+      "key": "w1653"
+    },
+    {
+      "sourceId": "1654",
+      "sourceWord": "ハンカチ",
+      "key": "w1654"
+    },
+    {
+      "sourceId": "1655",
+      "sourceWord": "靴下",
+      "key": "w1655"
+    },
+    {
+      "sourceId": "1656",
+      "sourceWord": "手袋",
+      "key": "w1656"
+    },
+    {
+      "sourceId": "1659",
+      "sourceWord": "祖父",
+      "key": "w1659"
+    },
+    {
+      "sourceId": "1660",
+      "sourceWord": "祖母",
+      "key": "w1660"
+    },
+    {
+      "sourceId": "1661",
+      "sourceWord": "孫",
+      "key": "w1661"
+    },
+    {
+      "sourceId": "1662",
+      "sourceWord": "叔父",
+      "key": "w1662"
+    },
+    {
+      "sourceId": "1663",
+      "sourceWord": "叔父さん",
+      "key": "w1663"
+    },
+    {
+      "sourceId": "1664",
+      "sourceWord": "叔母",
+      "key": "w1664"
+    },
+    {
+      "sourceId": "1665",
+      "sourceWord": "叔母さん",
+      "key": "w1665"
+    },
+    {
+      "sourceId": "1681",
+      "sourceWord": "二人",
+      "key": "w1681"
+    },
+    {
+      "sourceId": "1728",
+      "sourceWord": "暖房",
+      "key": "w1728"
+    },
+    {
+      "sourceId": "1729",
+      "sourceWord": "冷房",
+      "key": "w1729"
+    },
+    {
+      "sourceId": "1909",
+      "sourceWord": "お宅",
+      "key": "w1909"
+    },
+    {
+      "sourceId": "3214",
+      "sourceWord": "温度",
+      "key": "w3214"
+    },
+    {
+      "sourceId": "3502",
+      "sourceWord": "幼稚園",
+      "key": "w3502"
+    },
+    {
+      "sourceId": "4376",
+      "sourceWord": "一言",
+      "key": "w4376"
+    },
+    {
+      "sourceId": "5653",
+      "sourceWord": "お孫さん",
+      "key": "w5653"
+    },
+    {
+      "sourceId": "918",
+      "sourceWord": "この間",
+      "key": "w918"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1637",
+      "sourceWord": "呼びます",
+      "reason": "旧版邀请场景词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1658",
+      "sourceWord": "バッグ",
+      "reason": "旧版礼物词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1667",
+      "sourceWord": "はあ",
+      "reason": "旧版应答词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1669",
+      "sourceWord": "預かります",
+      "reason": "旧版代管会话词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1670",
+      "sourceWord": "先日",
+      "reason": "旧版时间表记，第二版采用この間。"
+    },
+    {
+      "sourceId": "1671",
+      "sourceWord": "助かります",
+      "reason": "旧版会话词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "san",
+    "happy",
+    "urashima",
+    "folk-tale",
+    "certain",
+    "man",
+    "children",
+    "bully",
+    "turtle",
+    "help",
+    "kind",
+    "princess",
+    "live",
+    "land",
+    "then",
+    "smoke",
+    "white",
+    "contents"
+  ],
+  "finalCount": 60
+}

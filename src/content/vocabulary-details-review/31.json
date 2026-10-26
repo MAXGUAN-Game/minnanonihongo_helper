@@ -1,0 +1,26 @@
+{
+  "lessonId": 31,
+  "model": "deepseek-flash",
+  "reviewedCount": 40,
+  "corrections": [
+    {
+      "id": "l31-w1054",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「申し込む」以「～を申し込む」表示申请内容，属他动词，原标注正确无需改。"
+    },
+    {
+      "id": "l31-w1260",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「休憩する」表示人自身休息，不带宾语，应为自动词而非自他两用。"
+    },
+    {
+      "id": "l31-w1831",
+      "attributes": [],
+      "reason": "「発表」当前词性为名词，虽可加する但非动词，不强行加自他属性。"
+    }
+  ]
+}

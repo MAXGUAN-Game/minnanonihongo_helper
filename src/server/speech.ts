@@ -1,6 +1,6 @@
 import type { FastifyInstance } from 'fastify';
 import type { SpeechStatus } from '../shared/types';
-import { existsSync, readFileSync } from 'node:fs';
+import { accessSync, constants, readFileSync, statSync } from 'node:fs';
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
@@ -32,11 +32,22 @@ export function speechPaths(dataDir: string, environment: NodeJS.ProcessEnv = pr
   return { base, binary: configuredPath(environment.WHISPER_BINARY, 'WHISPER_BINARY') ?? binary, model: configuredPath(environment.WHISPER_MODEL, 'WHISPER_MODEL') ?? path.join(base, 'ggml-small.bin') };
 }
 export function getSpeechStatus(dataDir: string, environment: NodeJS.ProcessEnv = process.env, platform = process.platform): SpeechStatus {
-  const paths = speechPaths(dataDir, environment, platform); const binaryReady = existsSync(paths.binary), modelReady = existsSync(paths.model);
+  const paths = speechPaths(dataDir, environment, platform);
+  const usableFile = (file: string, mode: number) => {
+    try {
+      const info = statSync(file);
+      if (!info.isFile() || info.size === 0) return false;
+      accessSync(file, mode);
+      return true;
+    } catch { return false; }
+  };
+  const binaryReady = usableFile(paths.binary, platform === 'win32' ? constants.F_OK : constants.X_OK);
+  const modelReady = usableFile(paths.model, constants.R_OK);
   const localWindows = platform === 'win32' && environment.DEPLOYMENT !== 'web';
+  const missing = !binaryReady && !modelReady ? '日语识别程序和模型未就绪' : !binaryReady ? '日语识别程序缺失或无法执行' : '日语识别模型缺失、为空或无法读取';
   const message = binaryReady && modelReady
     ? localWindows ? '本机日语识别已就绪' : '日语语音识别服务已就绪'
-    : localWindows ? '首次需要安装语音模型，请双击“安装本机语音”。' : '语音识别服务尚未准备好，请安装语音组件和模型。可以先打字练习。';
+    : localWindows ? `${missing}，请双击“安装本机语音”。可以先打字回答。` : `语音识别服务尚未准备好：${missing}。请在服务器完成语音安装后重试，也可以先打字回答。`;
   return { ready: binaryReady && modelReady, binaryReady, modelReady, message };
 }
 export function validateWav(buffer: Buffer) {
@@ -72,7 +83,8 @@ export function registerSpeechRoutes(app: FastifyInstance, dataDir: string) {
   if (!app.hasContentTypeParser('audio/wav')) app.addContentTypeParser('audio/wav', { parseAs: 'buffer', bodyLimit: 1100000 }, (_request, body, done) => done(null, body));
   app.get('/api/speech/status', async () => getSpeechStatus(dataDir));
   app.post('/api/speech/transcribe', { bodyLimit: 1100000 }, async (request, reply) => {
-    if (!getSpeechStatus(dataDir).ready) return reply.code(503).send({ code: 'SPEECH_NOT_INSTALLED', error: localWindows ? '语音模型尚未安装。请双击“安装本机语音”，也可以先打字回答。' : '语音识别服务尚未准备好，请在服务器准备语音组件和模型。可以先打字回答。' });
+    const status = getSpeechStatus(dataDir);
+    if (!status.ready) return reply.code(503).send({ code: 'SPEECH_NOT_INSTALLED', error: status.message });
     if (busy) return reply.code(409).send({ code: 'SPEECH_BUSY', error: '正在识别上一句，请稍等。' });
     if (!Buffer.isBuffer(request.body)) return reply.code(400).send({ error: '请上传 WAV 录音。' });
     try { validateWav(request.body); } catch (error) { return reply.code(400).send({ code: 'INVALID_AUDIO', error: (error as Error).message }); }

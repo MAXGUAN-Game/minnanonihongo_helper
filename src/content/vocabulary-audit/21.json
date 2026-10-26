@@ -1,0 +1,250 @@
+{
+  "lessonId": 21,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/21.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 44,
+  "entries": [
+    {
+      "sourceId": "101",
+      "sourceWord": "自動車",
+      "key": "w101"
+    },
+    {
+      "sourceId": "1031",
+      "sourceWord": "留学します",
+      "key": "w1031"
+    },
+    {
+      "sourceId": "1120",
+      "sourceWord": "夢",
+      "key": "w1120"
+    },
+    {
+      "sourceId": "1307",
+      "sourceWord": "月",
+      "key": "w1307"
+    },
+    {
+      "sourceId": "1505",
+      "sourceWord": "漫画",
+      "key": "w1505"
+    },
+    {
+      "sourceId": "1533",
+      "sourceWord": "嘘",
+      "key": "w1533"
+    },
+    {
+      "sourceId": "1596",
+      "sourceWord": "地球",
+      "key": "w1596"
+    },
+    {
+      "sourceId": "1607",
+      "sourceWord": "本当",
+      "key": "w1607"
+    },
+    {
+      "sourceId": "1865",
+      "sourceWord": "久しぶり",
+      "key": "w1865"
+    },
+    {
+      "sourceId": "1920",
+      "sourceWord": "放送します",
+      "key": "w1920"
+    },
+    {
+      "sourceId": "2480",
+      "sourceWord": "アニメ",
+      "key": "w2480"
+    },
+    {
+      "sourceId": "3553",
+      "sourceWord": "すごい",
+      "key": "w3553"
+    },
+    {
+      "sourceId": "4617",
+      "sourceWord": "天才",
+      "key": "w4617"
+    },
+    {
+      "sourceId": "762",
+      "sourceWord": "［会社を］やめます",
+      "key": "w762"
+    },
+    {
+      "sourceId": "909",
+      "sourceWord": "物価",
+      "key": "w909"
+    },
+    {
+      "sourceId": "926",
+      "sourceWord": "思います",
+      "key": "w926"
+    },
+    {
+      "sourceId": "927",
+      "sourceWord": "言います",
+      "key": "w927"
+    },
+    {
+      "sourceId": "929",
+      "sourceWord": "勝ちます",
+      "key": "w929"
+    },
+    {
+      "sourceId": "930",
+      "sourceWord": "負けます",
+      "key": "w930"
+    },
+    {
+      "sourceId": "931",
+      "sourceWord": "［お祭りが］あります",
+      "key": "w931"
+    },
+    {
+      "sourceId": "932",
+      "sourceWord": "役に立ちます",
+      "key": "w932"
+    },
+    {
+      "sourceId": "933",
+      "sourceWord": "無駄な",
+      "key": "w933"
+    },
+    {
+      "sourceId": "934",
+      "sourceWord": "不便な",
+      "key": "w934"
+    },
+    {
+      "sourceId": "936",
+      "sourceWord": "すごい",
+      "key": "w3553"
+    },
+    {
+      "sourceId": "940",
+      "sourceWord": "ニュース",
+      "key": "w940"
+    },
+    {
+      "sourceId": "942",
+      "sourceWord": "試合",
+      "key": "w942"
+    },
+    {
+      "sourceId": "944",
+      "sourceWord": "意見",
+      "key": "w944"
+    },
+    {
+      "sourceId": "945",
+      "sourceWord": "お話",
+      "key": "w945"
+    },
+    {
+      "sourceId": "947",
+      "sourceWord": "無駄",
+      "key": "w947"
+    },
+    {
+      "sourceId": "948",
+      "sourceWord": "デザイン",
+      "key": "w948"
+    },
+    {
+      "sourceId": "949",
+      "sourceWord": "交通",
+      "key": "w949"
+    },
+    {
+      "sourceId": "951",
+      "sourceWord": "最近",
+      "key": "w951"
+    },
+    {
+      "sourceId": "952",
+      "sourceWord": "多分",
+      "key": "w952"
+    },
+    {
+      "sourceId": "953",
+      "sourceWord": "きっと",
+      "key": "w953"
+    },
+    {
+      "sourceId": "954",
+      "sourceWord": "本当に",
+      "key": "w954"
+    },
+    {
+      "sourceId": "955",
+      "sourceWord": "そんなに",
+      "key": "w955"
+    },
+    {
+      "sourceId": "956",
+      "sourceWord": "～について",
+      "key": "w956"
+    },
+    {
+      "sourceId": "959",
+      "sourceWord": "～でも飲みませんか",
+      "key": "w959"
+    },
+    {
+      "sourceId": "961",
+      "sourceWord": "もちろん",
+      "key": "w961"
+    },
+    {
+      "sourceId": "988",
+      "sourceWord": "［車が］動きます",
+      "key": "w988"
+    },
+    {
+      "sourceId": "991",
+      "sourceWord": "気をつけます",
+      "key": "w991"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "957",
+      "sourceWord": "仕方がありません。",
+      "reason": "旧版会话表达，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "958",
+      "sourceWord": "しばらくですね。",
+      "reason": "旧版久别表达，第二版采用久しぶりですね。"
+    },
+    {
+      "sourceId": "960",
+      "sourceWord": "みないと…。",
+      "reason": "旧版电视会话表达，第二版采用もう帰らないと。"
+    }
+  ],
+  "secondaryAdditions": [
+    "broadcast",
+    "long-time",
+    "must-go",
+    "einstein",
+    "gagarin",
+    "galileo",
+    "king",
+    "franklin",
+    "kaguya",
+    "tenjin",
+    "yoshino",
+    "kangaroo",
+    "hook",
+    "yonen"
+  ],
+  "finalCount": 54
+}

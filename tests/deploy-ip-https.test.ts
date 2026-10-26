@@ -1,3 +1,4 @@
+import { authEnvironment, authCookie, seedAuthSession } from './auth-fixture';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -98,11 +99,11 @@ describe('application at the HTTPS IP origin', () => {
     const dataDir = mkdtempSync(join(tmpdir(), 'nihongo-ip-https-test-'));
     directories.push(dataDir);
     const provider = vi.fn<typeof fetch>().mockRejectedValue(new Error('No external API calls allowed'));
-    const deployment = deploymentConfig({ DEPLOYMENT: 'web', APP_PUBLIC_ORIGIN: origin, APP_PROXY_TOKEN: token });
+    const deployment = deploymentConfig({ ...authEnvironment, DEPLOYMENT: 'web', APP_PUBLIC_ORIGIN: origin, APP_PROXY_TOKEN: token });
     expect(deployment).toMatchObject({ publicHost: ip, origin });
     const app = buildApp({ dataDir, deployment, aiFetch: provider, voiceFetch: provider });
-    apps.push(app);
-    const headers = { host: ip, origin, 'x-nihongo-proxy': token };
+    apps.push(app); seedAuthSession(dataDir);
+    const headers = { cookie: authCookie, host: ip, origin, 'x-nihongo-proxy': token };
     expect((await app.inject({ url: '/api/health', headers })).statusCode).toBe(200);
     for (const invalid of [
       { ...headers, host: 'jp.nbblearnjp.xyz' },

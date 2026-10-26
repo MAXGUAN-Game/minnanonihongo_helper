@@ -1,0 +1,242 @@
+{
+  "lessonId": 14,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/14.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 45,
+  "entries": [
+    {
+      "sourceId": "57",
+      "sourceWord": "電気",
+      "key": "w57"
+    },
+    {
+      "sourceId": "652",
+      "sourceWord": "［に］入ります",
+      "key": "w652"
+    },
+    {
+      "sourceId": "653",
+      "sourceWord": "［を］出ます",
+      "key": "w653"
+    },
+    {
+      "sourceId": "686",
+      "sourceWord": "つけます",
+      "key": "w686"
+    },
+    {
+      "sourceId": "687",
+      "sourceWord": "消します",
+      "key": "w687"
+    },
+    {
+      "sourceId": "688",
+      "sourceWord": "開けます",
+      "key": "w688"
+    },
+    {
+      "sourceId": "689",
+      "sourceWord": "閉めます",
+      "key": "w689"
+    },
+    {
+      "sourceId": "690",
+      "sourceWord": "急ぎます",
+      "key": "w690"
+    },
+    {
+      "sourceId": "691",
+      "sourceWord": "待ちます",
+      "key": "w691"
+    },
+    {
+      "sourceId": "692",
+      "sourceWord": "［音楽を］止めます",
+      "key": "w692"
+    },
+    {
+      "sourceId": "693",
+      "sourceWord": "［車を］停めます",
+      "key": "w693"
+    },
+    {
+      "sourceId": "695",
+      "sourceWord": "持ちます",
+      "key": "w695"
+    },
+    {
+      "sourceId": "696",
+      "sourceWord": "取ります",
+      "key": "w696"
+    },
+    {
+      "sourceId": "697",
+      "sourceWord": "手伝います",
+      "key": "w697"
+    },
+    {
+      "sourceId": "698",
+      "sourceWord": "呼びます",
+      "key": "w698"
+    },
+    {
+      "sourceId": "699",
+      "sourceWord": "話します",
+      "key": "w699"
+    },
+    {
+      "sourceId": "700",
+      "sourceWord": "見せます",
+      "key": "w700"
+    },
+    {
+      "sourceId": "701",
+      "sourceWord": "［住所を］教えます",
+      "key": "w701"
+    },
+    {
+      "sourceId": "703",
+      "sourceWord": "［雨が］降ります",
+      "key": "w703"
+    },
+    {
+      "sourceId": "704",
+      "sourceWord": "コピーします",
+      "key": "w704"
+    },
+    {
+      "sourceId": "705",
+      "sourceWord": "エアコン",
+      "key": "w705"
+    },
+    {
+      "sourceId": "706",
+      "sourceWord": "パスポート",
+      "key": "w706"
+    },
+    {
+      "sourceId": "707",
+      "sourceWord": "名前",
+      "key": "w707"
+    },
+    {
+      "sourceId": "708",
+      "sourceWord": "住所",
+      "key": "w708"
+    },
+    {
+      "sourceId": "709",
+      "sourceWord": "地図",
+      "key": "w709"
+    },
+    {
+      "sourceId": "710",
+      "sourceWord": "塩",
+      "key": "w710"
+    },
+    {
+      "sourceId": "711",
+      "sourceWord": "砂糖",
+      "key": "w711"
+    },
+    {
+      "sourceId": "712",
+      "sourceWord": "読み方",
+      "key": "w712"
+    },
+    {
+      "sourceId": "713",
+      "sourceWord": "方",
+      "key": "w713"
+    },
+    {
+      "sourceId": "714",
+      "sourceWord": "ゆっくり",
+      "key": "w714"
+    },
+    {
+      "sourceId": "715",
+      "sourceWord": "すぐ",
+      "key": "w715"
+    },
+    {
+      "sourceId": "716",
+      "sourceWord": "また",
+      "key": "w716"
+    },
+    {
+      "sourceId": "717",
+      "sourceWord": "後で",
+      "key": "w717"
+    },
+    {
+      "sourceId": "718",
+      "sourceWord": "もう少し",
+      "key": "w718"
+    },
+    {
+      "sourceId": "719",
+      "sourceWord": "もう～",
+      "key": "w719"
+    },
+    {
+      "sourceId": "721",
+      "sourceWord": "さあ",
+      "key": "w721"
+    },
+    {
+      "sourceId": "722",
+      "sourceWord": "あれ？",
+      "key": "w722"
+    },
+    {
+      "sourceId": "723",
+      "sourceWord": "信号を右へ曲がってください。",
+      "key": "w723"
+    },
+    {
+      "sourceId": "724",
+      "sourceWord": "まっすぐ",
+      "key": "w724"
+    },
+    {
+      "sourceId": "725",
+      "sourceWord": "これでお願いします。",
+      "key": "w725"
+    },
+    {
+      "sourceId": "726",
+      "sourceWord": "お釣り",
+      "key": "w726"
+    },
+    {
+      "sourceId": "727",
+      "sourceWord": "立ちます",
+      "key": "w727"
+    },
+    {
+      "sourceId": "728",
+      "sourceWord": "座ります",
+      "key": "w728"
+    },
+    {
+      "sourceId": "729",
+      "sourceWord": "使います",
+      "key": "w729"
+    },
+    {
+      "sourceId": "818",
+      "sourceWord": "問題",
+      "key": "w818"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "answer",
+    "midori"
+  ],
+  "finalCount": 47
+}

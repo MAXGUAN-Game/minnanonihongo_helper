@@ -1,4 +1,4 @@
-export type VoiceSpeaker = 'primary' | 'secondary';
+export type VoiceSpeaker = 'primary' | 'secondary' | 'dialogue-a' | 'dialogue-b';
 export type VoiceSettings = {
   provider: 'system' | 'minimax';
   model: 'speech-2.8-hd' | 'speech-2.8-turbo';

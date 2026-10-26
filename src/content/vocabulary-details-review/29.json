@@ -1,0 +1,14 @@
+{
+  "lessonId": 29,
+  "model": "deepseek-flash",
+  "reviewedCount": 53,
+  "corrections": [
+    {
+      "id": "l29-w1183",
+      "attributes": [
+        "自他两用"
+      ],
+      "reason": "間違える既可他动词「答えを間違える」也可自动词「間違えた」，词义涵盖弄错与出错，应标自他两用。"
+    }
+  ]
+}

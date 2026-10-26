@@ -1,0 +1,21 @@
+{
+  "lessonId": 33,
+  "model": "deepseek-flash",
+  "reviewedCount": 51,
+  "corrections": [
+    {
+      "id": "l33-w1339",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「注意する」在此词义下可带「车に」作为对象论元，实际用法为他动词，需改为他动词。"
+    },
+    {
+      "id": "l33-help-each-other",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「助け合う」的最终谓语是「合う」，但整体表示互相帮助，可带宾语「人を助け合う」，应判为他动词。"
+    }
+  ]
+}

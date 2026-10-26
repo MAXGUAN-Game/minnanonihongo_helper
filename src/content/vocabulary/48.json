@@ -1,0 +1,183 @@
+{
+  "lessonId": 48,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/48.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源19条，排除3条旧版或跨课条目，合并同形同义项并补入第二来源，最终24条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/48.json。"
+  ],
+  "words": [
+    {
+      "key": "w1705",
+      "word": "ファイル",
+      "reading": "ふぁいる",
+      "partOfSpeech": "名词",
+      "meaning": "文件；文件夹"
+    },
+    {
+      "key": "w1850",
+      "word": "下ろします",
+      "reading": "おろします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "放下"
+    },
+    {
+      "key": "w1851",
+      "word": "届けます",
+      "reading": "とどけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "送到"
+    },
+    {
+      "key": "w1852",
+      "word": "世話をします",
+      "reading": "せわをします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "照顾"
+    },
+    {
+      "key": "w1853",
+      "word": "嫌な",
+      "reading": "いやな",
+      "partOfSpeech": "な形容词",
+      "meaning": "不愿意的；讨厌的"
+    },
+    {
+      "key": "w1855",
+      "word": "塾",
+      "reading": "じゅく",
+      "partOfSpeech": "名词",
+      "meaning": "补习班"
+    },
+    {
+      "key": "w1857",
+      "word": "生徒",
+      "reading": "せいと",
+      "partOfSpeech": "名词",
+      "meaning": "学生"
+    },
+    {
+      "key": "w1861",
+      "word": "自由に",
+      "reading": "じゆうに",
+      "partOfSpeech": "副词",
+      "meaning": "自由地"
+    },
+    {
+      "key": "w1862",
+      "word": "～間",
+      "reading": "～かん",
+      "partOfSpeech": "表达",
+      "meaning": "……期间"
+    },
+    {
+      "key": "w1863",
+      "word": "いいことですね",
+      "reading": "いいことですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "是件好事啊"
+    },
+    {
+      "key": "w1864",
+      "word": "お忙しいですか",
+      "reading": "おいそがしいですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "您忙吗"
+    },
+    {
+      "key": "w1866",
+      "word": "営業",
+      "reading": "えいぎょう",
+      "partOfSpeech": "名词",
+      "meaning": "营业；销售"
+    },
+    {
+      "key": "w1867",
+      "word": "それまでに",
+      "reading": "それまでに",
+      "partOfSpeech": "表达",
+      "meaning": "在那之前"
+    },
+    {
+      "key": "w1868",
+      "word": "構いません",
+      "reading": "かまいません",
+      "partOfSpeech": "固定表达",
+      "meaning": "没关系"
+    },
+    {
+      "key": "w1869",
+      "word": "楽しみます",
+      "reading": "たのしみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "享受"
+    },
+    {
+      "key": "w3527",
+      "word": "録音",
+      "reading": "ろくおん",
+      "partOfSpeech": "名词",
+      "meaning": "录音"
+    },
+    {
+      "key": "unload",
+      "word": "降ろします",
+      "reading": "おろします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "让人下车；卸下"
+    },
+    {
+      "key": "record",
+      "word": "録音します",
+      "reading": "ろくおんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "录音"
+    },
+    {
+      "key": "parent",
+      "word": "親",
+      "reading": "おや",
+      "partOfSpeech": "名词",
+      "meaning": "父母；家长"
+    },
+    {
+      "key": "elementary",
+      "word": "小学生",
+      "reading": "しょうがくせい",
+      "partOfSpeech": "名词",
+      "meaning": "小学生"
+    },
+    {
+      "key": "percent",
+      "word": "パーセント",
+      "reading": "ぱーせんと",
+      "partOfSpeech": "量词",
+      "meaning": "百分比"
+    },
+    {
+      "key": "next",
+      "word": "その次",
+      "reading": "そのつぎ",
+      "partOfSpeech": "表达",
+      "meaning": "其次；接下来"
+    },
+    {
+      "key": "calligraphy",
+      "word": "習字",
+      "reading": "しゅうじ",
+      "partOfSpeech": "名词",
+      "meaning": "书法练习"
+    },
+    {
+      "key": "normal",
+      "word": "普通の",
+      "reading": "ふつうの",
+      "partOfSpeech": "表达",
+      "meaning": "普通的"
+    }
+  ]
+}

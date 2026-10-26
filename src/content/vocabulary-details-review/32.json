@@ -1,0 +1,14 @@
+{
+  "lessonId": 32,
+  "model": "deepseek-flash",
+  "reviewedCount": 58,
+  "corrections": [
+    {
+      "id": "l32-w1329",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「無理をする」以「を」为固定搭配，但整体为自动词性表达（表示勉强自己这一状态/行为），非他动词。"
+    }
+  ]
+}

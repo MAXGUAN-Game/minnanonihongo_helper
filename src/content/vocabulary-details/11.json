@@ -1,0 +1,705 @@
+{
+  "l11-w1628": {
+    "romaji": "kurasu",
+    "attributes": [],
+    "explanation": "指学校里的班级或班级集体，也可指同班同学。外来语，日常口语常用。",
+    "example": {
+      "jp": "私のクラスは三十人です。",
+      "kana": "わたしのくらすはさんじゅうにんです。",
+      "romaji": "watashi no kurasu wa sanjuu nin desu.",
+      "zh": "我的班级有三十人。"
+    }
+  },
+  "l11-w20": {
+    "romaji": "onegaishimasu",
+    "attributes": [],
+    "explanation": "用于请求或委托对方做某事时的固定表达，礼貌且通用。可单独使用，也可接在具体请求之后。",
+    "example": {
+      "jp": "コーヒーをお願いします。",
+      "kana": "こーひーをおねがいします。",
+      "romaji": "koohii o onegaishimasu.",
+      "zh": "请给我咖啡。"
+    }
+  },
+  "l11-w2509": {
+    "romaji": "ittekimasu",
+    "attributes": [],
+    "explanation": "离开家或公司外出时对留下的人说的寒暄语，表示“我走了”。回来时说「ただいま」。",
+    "example": {
+      "jp": "じゃあ、いってきます。",
+      "kana": "じゃあ、いってきます。",
+      "romaji": "jaa, ittekimasu.",
+      "zh": "那么，我出门了。"
+    }
+  },
+  "l11-w2592": {
+    "romaji": "kashikomarimashita",
+    "attributes": [],
+    "explanation": "郑重接受委托或指示时的应答语，比「わかりました」更礼貌，多用于服务业或对上级。",
+    "example": {
+      "jp": "「予約をお願いします」「かしこまりました」",
+      "kana": "「よやくをおねがいします」「かしこまりました」",
+      "romaji": "yoyaku o onegaishimasu. kashikomarimashita.",
+      "zh": "“我想预约。”“明白了。”"
+    }
+  },
+  "l11-w538": {
+    "romaji": "imasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示有生命的人或动物（如孩子、宠物）的存在，用「～がいます」。不能用于无生命事物。",
+    "example": {
+      "jp": "子どもが二人います。",
+      "kana": "こどもがふたりいます。",
+      "romaji": "kodomo ga futari imasu.",
+      "zh": "有两个孩子。"
+    }
+  },
+  "l11-w539": {
+    "romaji": "imasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人或动物停留在某地，用「場所にいます」。与表示存在的「～がいます」用法不同。",
+    "example": {
+      "jp": "今、日本にいます。",
+      "kana": "いま、にほんにいます。",
+      "romaji": "ima, nihon ni imasu.",
+      "zh": "我现在在日本。"
+    }
+  },
+  "l11-w540": {
+    "romaji": "kakarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示花费金钱，常用「お金がかかります」或「～に（お金が）かかります」。强调花费的金额。",
+    "example": {
+      "jp": "この本は千円かかります。",
+      "kana": "このほんはせんえんかかります。",
+      "romaji": "kono hon wa sen en kakarimasu.",
+      "zh": "这本书要花一千日元。"
+    }
+  },
+  "l11-w54000": {
+    "romaji": "kakarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示花费时间，常用「時間がかかります」或「～に時間がかかります」。强调所需的时间量。",
+    "example": {
+      "jp": "駅まで三十分かかります。",
+      "kana": "えきまでさんじゅっぷんかかります。",
+      "romaji": "eki made sanjuppun kakarimasu.",
+      "zh": "到车站要花三十分钟。"
+    }
+  },
+  "l11-w541": {
+    "romaji": "yasumimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示请假、缺勤，常用「会社を休みます」。也可用于学校等，意为停止工作或学习。",
+    "example": {
+      "jp": "風邪で会社を休みました。",
+      "kana": "かぜでかいしゃをやすみました。",
+      "romaji": "kaze de kaisha o yasumimashita.",
+      "zh": "因为感冒向公司请假了。"
+    }
+  },
+  "l11-v1": {
+    "romaji": "hitotsu",
+    "attributes": [],
+    "explanation": "表示一个物品，是日语中基本的数量词，用于数物品。也可用于抽象事物，如「一つお願いします」。",
+    "example": {
+      "jp": "りんごを一つください。",
+      "kana": "りんごをひとつください。",
+      "romaji": "ringo o hitotsu kudasai.",
+      "zh": "请给我一个苹果。"
+    }
+  },
+  "l11-v2": {
+    "romaji": "futatsu",
+    "attributes": [],
+    "explanation": "表示两个物品，是「一つ」的后续数量词。用于数各种物品，不用于人或动物。",
+    "example": {
+      "jp": "ケーキを二つ買いました。",
+      "kana": "けーきをふたつかいました。",
+      "romaji": "keeki o futatsu kaimashita.",
+      "zh": "买了两个蛋糕。"
+    }
+  },
+  "l11-v3": {
+    "romaji": "mittsu",
+    "attributes": [],
+    "explanation": "表示三个物品，是日语中基本的数量词之一。用于数物品，不用于人或动物。",
+    "example": {
+      "jp": "卵を三つ使います。",
+      "kana": "たまごをみっつつかいます。",
+      "romaji": "tamago o mittsu tsukaimasu.",
+      "zh": "用三个鸡蛋。"
+    }
+  },
+  "l11-w545": {
+    "romaji": "yottsu",
+    "attributes": [],
+    "explanation": "和语数词，用于数物品或年龄（1-9岁常用），可单独使用或接助词。比「四」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "りんごを四つください。",
+      "kana": "りんごをよっつください。",
+      "romaji": "ringo o yottsu kudasai.",
+      "zh": "请给我四个苹果。"
+    }
+  },
+  "l11-w546": {
+    "romaji": "itsutsu",
+    "attributes": [],
+    "explanation": "和语数词，用于数物品或年龄（1-9岁常用），可单独使用或接助词。比「五」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "みかんを五つ買いました。",
+      "kana": "みかんをいつつかいました。",
+      "romaji": "mikan o itsutsu kaimashita.",
+      "zh": "买了五个橘子。"
+    }
+  },
+  "l11-w547": {
+    "romaji": "muttsu",
+    "attributes": [],
+    "explanation": "和语数词，用于数物品或年龄（1-9岁常用），可单独使用或接助词。比「六」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "卵を六つ使います。",
+      "kana": "たまごをむっつつかいます。",
+      "romaji": "tamago o muttsu tsukaimashita.",
+      "zh": "用了六个鸡蛋。"
+    }
+  },
+  "l11-w548": {
+    "romaji": "nanatsu",
+    "attributes": [],
+    "explanation": "和语数词，用于数物品或年龄（1-9岁常用），可单独使用或接助词。比「七」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "飴を七つあげます。",
+      "kana": "あめをななつあげます。",
+      "romaji": "ame o nanatsu agemasu.",
+      "zh": "给你七颗糖。"
+    }
+  },
+  "l11-w549": {
+    "romaji": "yattsu",
+    "attributes": [],
+    "explanation": "和语数词，用于数物品或年龄（1-9岁常用），可单独使用或接助词。比「八」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "切手を八つください。",
+      "kana": "きってをやっつください。",
+      "romaji": "kitte o yattsu kudasai.",
+      "zh": "请给我八张邮票。"
+    }
+  },
+  "l11-w550": {
+    "romaji": "kokonotsu",
+    "attributes": [],
+    "explanation": "和语数词，用于数物品或年龄（1-9岁常用），可单独使用或接助词。比「九」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "箱が九つあります。",
+      "kana": "はこがここのつあります。",
+      "romaji": "hako ga kokonotsu arimasu.",
+      "zh": "有九个箱子。"
+    }
+  },
+  "l11-w551": {
+    "romaji": "tō",
+    "attributes": [],
+    "explanation": "和语数词「十」，用于数物品（1-10常用），可单独使用或接助词。比「十（じゅう）」更口语化，常与「ください」等搭配。",
+    "example": {
+      "jp": "みかんを十ください。",
+      "kana": "みかんをとおください。",
+      "romaji": "mikan o tō kudasai.",
+      "zh": "请给我十个橘子。"
+    }
+  },
+  "l11-w552": {
+    "romaji": "ikutsu",
+    "attributes": [],
+    "explanation": "疑问词，用于询问物品的数量或年龄（1-9岁常用），可单独使用或接助词。回答时用和语数词「一つ、二つ…」。",
+    "example": {
+      "jp": "りんごはいくつありますか。",
+      "kana": "りんごはいくつありますか。",
+      "romaji": "ringo wa ikutsu arimasu ka.",
+      "zh": "有几个苹果？"
+    }
+  },
+  "l11-v4": {
+    "romaji": "hitori",
+    "attributes": [],
+    "explanation": "表示一个人，常用于人数、独自一人等。可单独使用或接助词，如「一人で」表示独自。",
+    "example": {
+      "jp": "一人で映画を見ました。",
+      "kana": "ひとりでえいがをみました。",
+      "romaji": "hitori de eiga o mimashita.",
+      "zh": "一个人看了电影。"
+    }
+  },
+  "l11-v5": {
+    "romaji": "futari",
+    "attributes": [],
+    "explanation": "表示两个人，常用于人数。可单独使用或接助词，如「二人で」表示两个人一起。",
+    "example": {
+      "jp": "二人で公園へ行きます。",
+      "kana": "ふたりでこうえんへいきます。",
+      "romaji": "futari de kōen e ikimasu.",
+      "zh": "两个人一起去公园。"
+    }
+  },
+  "l11-w555": {
+    "romaji": "-nin",
+    "attributes": [],
+    "explanation": "接尾词，接在数词后表示人数，如「三人」「四人」。注意「一人」「二人」读作「ひとり」「ふたり」，不读「いちにん」「ににん」。",
+    "example": {
+      "jp": "家族は五人です。",
+      "kana": "かぞくはごにんです。",
+      "romaji": "kazoku wa gonin desu.",
+      "zh": "家里有五个人。"
+    }
+  },
+  "l11-w556": {
+    "romaji": "-dai",
+    "attributes": [],
+    "explanation": "接尾词，接在数词后表示机器、车辆等的数量，如「一台」「三台」。常用于电器、汽车、自行车等。",
+    "example": {
+      "jp": "車が二台あります。",
+      "kana": "くるまがにだいあります。",
+      "romaji": "kuruma ga nidai arimasu.",
+      "zh": "有两辆车。"
+    }
+  },
+  "l11-w557": {
+    "romaji": "~mai",
+    "attributes": [],
+    "explanation": "接在数词后，用于计数薄而平的物品，如纸张、邮票、盘子、衬衫等。与汉语“张/片”类似，但日语中还可用于衣服等。",
+    "example": {
+      "jp": "切手を五枚ください。",
+      "kana": "きってをごまいください。",
+      "romaji": "kitte o go-mai kudasai.",
+      "zh": "请给我五张邮票。"
+    }
+  },
+  "l11-w558": {
+    "romaji": "~kai",
+    "attributes": [],
+    "explanation": "接在数词后，表示次数，相当于汉语的“……次”。常用于日常会话，如“一回”“二回”。",
+    "example": {
+      "jp": "一週間に三回テニスをします。",
+      "kana": "いっしゅうかんにさんかいてにすをします。",
+      "romaji": "isshuukan ni san-kai tenisu o shimasu.",
+      "zh": "一周打三次网球。"
+    }
+  },
+  "l11-w559": {
+    "romaji": "ringo",
+    "attributes": [],
+    "explanation": "苹果，常见水果。日语中“りんご”通常指苹果，可数时用“一個”“二個”等。",
+    "example": {
+      "jp": "りんごを一つ食べました。",
+      "kana": "りんごをひとつたべました。",
+      "romaji": "ringo o hitotsu tabemashita.",
+      "zh": "吃了一个苹果。"
+    }
+  },
+  "l11-w560": {
+    "romaji": "mikan",
+    "attributes": [],
+    "explanation": "橘子，通常指蜜橘。冬季常见水果，可数时用“一個”“二個”等。",
+    "example": {
+      "jp": "みかんは甘くておいしいです。",
+      "kana": "みかんはあまくておいしいです。",
+      "romaji": "mikan wa amakute oishii desu.",
+      "zh": "橘子又甜又好吃。"
+    }
+  },
+  "l11-w561": {
+    "romaji": "sandoitchi",
+    "attributes": [],
+    "explanation": "三明治，外来语。可数时用“一個”“二個”等，也可用“枚”计数薄片。",
+    "example": {
+      "jp": "昼ご飯にサンドイッチを食べます。",
+      "kana": "ひるごはんにさんどいっちをたべます。",
+      "romaji": "hirugohan ni sandoitchi o tabemasu.",
+      "zh": "午饭吃三明治。"
+    }
+  },
+  "l11-w562": {
+    "romaji": "karēraisu",
+    "attributes": [],
+    "explanation": "咖喱饭，外来语复合词。通常一份用“一皿”“一人前”等计数。",
+    "example": {
+      "jp": "この店のカレーライスは人気があります。",
+      "kana": "このみせのかれーらいすはにんきがあります。",
+      "romaji": "kono mise no karēraisu wa ninki ga arimasu.",
+      "zh": "这家店的咖喱饭很受欢迎。"
+    }
+  },
+  "l11-w563": {
+    "romaji": "aisukurīmu",
+    "attributes": [],
+    "explanation": "冰淇淋，外来语。可数时常用“一個”“カップ”等，也可用“アイス”简称。",
+    "example": {
+      "jp": "デザートにアイスクリームを食べました。",
+      "kana": "でざーとにあいすくりーむをたべました。",
+      "romaji": "dezāto ni aisukurīmu o tabemashita.",
+      "zh": "甜点吃了冰淇淋。"
+    }
+  },
+  "l11-w564": {
+    "romaji": "kitte",
+    "attributes": [],
+    "explanation": "邮票，用于寄信。计数用“枚”，如“切手を一枚”。",
+    "example": {
+      "jp": "封筒に切手を貼ります。",
+      "kana": "ふうとうにきってをはります。",
+      "romaji": "fūtō ni kitte o harimasu.",
+      "zh": "在信封上贴邮票。"
+    }
+  },
+  "l11-w565": {
+    "romaji": "hagaki",
+    "attributes": [],
+    "explanation": "明信片，通常指日本邮政的普通明信片。计数用“枚”。",
+    "example": {
+      "jp": "旅行先から葉書を出しました。",
+      "kana": "りょこうさきからはがきをだしました。",
+      "romaji": "ryokōsaki kara hagaki o dashimashita.",
+      "zh": "从旅行地寄了明信片。"
+    }
+  },
+  "l11-w566": {
+    "romaji": "fūtō",
+    "attributes": [],
+    "explanation": "信封，用于装信件。计数用“枚”，如“封筒を二枚”。",
+    "example": {
+      "jp": "この封筒は少し大きいです。",
+      "kana": "このふうとうはすこしおおきいです。",
+      "romaji": "kono fūtō wa sukoshi ōkii desu.",
+      "zh": "这个信封有点大。"
+    }
+  },
+  "l11-w569": {
+    "romaji": "eamēru",
+    "attributes": [],
+    "explanation": "航空邮件，外来语。与“航空便”意思相近，但“エアメール”更常用于信件、明信片。",
+    "example": {
+      "jp": "外国の友達にエアメールを送りました。",
+      "kana": "がいこくのともだちにえあめーるをおくりました。",
+      "romaji": "gaikoku no tomodachi ni eamēru o okurimashita.",
+      "zh": "给外国的朋友寄了航空邮件。"
+    }
+  },
+  "l11-w570": {
+    "romaji": "kōkūbin",
+    "attributes": [],
+    "explanation": "航空邮件，较正式的说法，可用于邮件、包裹等。与“エアメール”类似，但“航空便”更偏书面。",
+    "example": {
+      "jp": "荷物は航空便で送ってください。",
+      "kana": "にもつはこうくうびんでおくってください。",
+      "romaji": "nimotsu wa kōkūbin de okutte kudasai.",
+      "zh": "请用航空邮件寄行李。"
+    }
+  },
+  "l11-w571": {
+    "romaji": "funabin",
+    "attributes": [],
+    "explanation": "指通过船舶运输的邮件或货物，与航空邮件相对。常用于寄送较大或较重物品时，强调运输方式。",
+    "example": {
+      "jp": "この荷物は船便で送ります。",
+      "kana": "このにもつはふなびんでおくります。",
+      "romaji": "kono nimotsu wa funabin de okurimasu.",
+      "zh": "这个行李用海运寄。"
+    }
+  },
+  "l11-w572": {
+    "romaji": "ryōshin",
+    "attributes": [],
+    "explanation": "指自己的父亲和母亲，是较为正式的说法。用于向他人提及自己父母时，不用于称呼对方父母。",
+    "example": {
+      "jp": "両親は田舎に住んでいます。",
+      "kana": "りょうしんはいなかにすんでいます。",
+      "romaji": "ryōshin wa inaka ni sunde imasu.",
+      "zh": "父母住在乡下。"
+    }
+  },
+  "l11-w573": {
+    "romaji": "kyōdai",
+    "attributes": [],
+    "explanation": "泛指兄弟姐妹，包括兄、弟、姐、妹。可用于询问对方是否有兄弟姐妹，也可指自己的兄弟姐妹。",
+    "example": {
+      "jp": "兄弟は何人いますか。",
+      "kana": "きょうだいはなんにんいますか。",
+      "romaji": "kyōdai wa nannin imasu ka.",
+      "zh": "你有几个兄弟姐妹？"
+    }
+  },
+  "l11-w574": {
+    "romaji": "ani",
+    "attributes": [],
+    "explanation": "指自己的哥哥，用于向他人介绍或提及自己的哥哥。不能用来称呼对方的哥哥，称呼对方哥哥时用「お兄さん」。",
+    "example": {
+      "jp": "兄は大学生です。",
+      "kana": "あにはだいがくせいです。",
+      "romaji": "ani wa daigakusei desu.",
+      "zh": "我哥哥是大学生。"
+    }
+  },
+  "l11-w575": {
+    "romaji": "oniisan",
+    "attributes": [],
+    "explanation": "用于称呼别人的哥哥，或直接称呼哥哥，带有尊敬语气。也可用于称呼年轻男性，但需注意语境。",
+    "example": {
+      "jp": "お兄さんはお元気ですか。",
+      "kana": "おにいさんはおげんきですか。",
+      "romaji": "oniisan wa ogenki desu ka.",
+      "zh": "你哥哥好吗？"
+    }
+  },
+  "l11-w576": {
+    "romaji": "ane",
+    "attributes": [],
+    "explanation": "指自己的姐姐，用于向他人提及自己的姐姐。不能用于称呼对方的姐姐，称呼对方姐姐时用「お姉さん」。",
+    "example": {
+      "jp": "姉は看護師です。",
+      "kana": "あねはかんごしです。",
+      "romaji": "ane wa kangoshi desu.",
+      "zh": "我姐姐是护士。"
+    }
+  },
+  "l11-w577": {
+    "romaji": "onēsan",
+    "attributes": [],
+    "explanation": "用于称呼别人的姐姐，或直接称呼姐姐，带有尊敬语气。也可用于称呼年轻女性，但需注意场合。",
+    "example": {
+      "jp": "お姉さんは何歳ですか。",
+      "kana": "おねえさんはなんさいですか。",
+      "romaji": "onēsan wa nansai desu ka.",
+      "zh": "你姐姐多大了？"
+    }
+  },
+  "l11-w578": {
+    "romaji": "otōto",
+    "attributes": [],
+    "explanation": "指自己的弟弟，用于向他人提及自己的弟弟。不能用于称呼对方的弟弟，称呼对方弟弟时用「弟さん」。",
+    "example": {
+      "jp": "弟は高校生です。",
+      "kana": "おとうとはこうこうせいです。",
+      "romaji": "otōto wa kōkōsei desu.",
+      "zh": "我弟弟是高中生。"
+    }
+  },
+  "l11-w579": {
+    "romaji": "otōtosan",
+    "attributes": [],
+    "explanation": "用于称呼别人的弟弟，带有尊敬语气。不能用于称呼自己的弟弟。",
+    "example": {
+      "jp": "弟さんはおいくつですか。",
+      "kana": "おとうとさんはおいくつですか。",
+      "romaji": "otōtosan wa oikutsu desu ka.",
+      "zh": "你弟弟几岁了？"
+    }
+  },
+  "l11-w580": {
+    "romaji": "imōto",
+    "attributes": [],
+    "explanation": "指自己的妹妹，用于向他人提及自己的妹妹。不能用于称呼对方的妹妹，称呼对方妹妹时用「妹さん」。",
+    "example": {
+      "jp": "妹は中学生です。",
+      "kana": "いもうとはちゅうがくせいです。",
+      "romaji": "imōto wa chūgakusei desu.",
+      "zh": "我妹妹是初中生。"
+    }
+  },
+  "l11-w581": {
+    "romaji": "imōtosan",
+    "attributes": [],
+    "explanation": "用于称呼别人的妹妹，带有尊敬语气。不能用于称呼自己的妹妹。",
+    "example": {
+      "jp": "妹さんは大学生ですか。",
+      "kana": "いもうとさんはだいがくせいですか。",
+      "romaji": "imōtosan wa daigakusei desu ka.",
+      "zh": "你妹妹是大学生吗？"
+    }
+  },
+  "l11-w582": {
+    "romaji": "gaikoku",
+    "attributes": [],
+    "explanation": "指本国以外的国家，常用于谈论旅行、居住、文化等。可搭配「外国へ行く」「外国の友達」等。",
+    "example": {
+      "jp": "外国で働きたいです。",
+      "kana": "がいこくではたらきたいです。",
+      "romaji": "gaikoku de hatarakitai desu.",
+      "zh": "我想在外国工作。"
+    }
+  },
+  "l11-w583": {
+    "romaji": "~jikan",
+    "attributes": [],
+    "explanation": "接在数字后面，表示时间的长度，相当于汉语的“……小时”。常与「ぐらい」搭配表示大约的时间。",
+    "example": {
+      "jp": "毎日二時間日本語を勉強します。",
+      "kana": "まいにちにじかんにほんごをべんきょうします。",
+      "romaji": "mainichi ni jikan nihongo o benkyou shimasu.",
+      "zh": "每天学习两个小时日语。"
+    }
+  },
+  "l11-w584": {
+    "romaji": "~shuukan",
+    "attributes": [],
+    "explanation": "接在数字后面，表示以周为单位的时长，相当于汉语的“……个星期”。注意与表示星期的「曜日」区分。",
+    "example": {
+      "jp": "三週間休みました。",
+      "kana": "さんしゅうかんやすみました。",
+      "romaji": "san shuukan yasumimashita.",
+      "zh": "休息了三个星期。"
+    }
+  },
+  "l11-w585": {
+    "romaji": "~kagetsu",
+    "attributes": [],
+    "explanation": "接在数字后面，表示以月为单位的时长，相当于汉语的“……个月”。注意与表示月份名称的「月」区分。",
+    "example": {
+      "jp": "六か月日本語を勉強しています。",
+      "kana": "ろっかげつにほんごをべんきょうしています。",
+      "romaji": "rok kagetsu nihongo o benkyou shite imasu.",
+      "zh": "正在学习六个月日语。"
+    }
+  },
+  "l11-w586": {
+    "romaji": "~nen",
+    "attributes": [],
+    "explanation": "接在数字后面，表示以年为单位的时长，相当于汉语的“……年”。常与「ぐらい」搭配表示大约的年数。",
+    "example": {
+      "jp": "五年日本に住んでいます。",
+      "kana": "ごねんにほんにすんでいます。",
+      "romaji": "go nen nihon ni sunde imasu.",
+      "zh": "在日本住了五年。"
+    }
+  },
+  "l11-w587": {
+    "romaji": "~gurai",
+    "attributes": [],
+    "explanation": "接在数量词后面，表示大约的数量或程度，相当于汉语的“大约……”。口语中有时也说「くらい」。",
+    "example": {
+      "jp": "十分ぐらい待ってください。",
+      "kana": "じゅっぷんぐらいまってください。",
+      "romaji": "juppun gurai matte kudasai.",
+      "zh": "请等十分钟左右。"
+    }
+  },
+  "l11-w588": {
+    "romaji": "dono kurai",
+    "attributes": [],
+    "explanation": "询问时间的长短或数量的多少，相当于汉语的“多久；多少”。根据上下文可询问时间、距离、程度等。",
+    "example": {
+      "jp": "駅までどのくらいかかりますか。",
+      "kana": "えきまでどのくらいかかりますか。",
+      "romaji": "eki made dono kurai kakarimasu ka.",
+      "zh": "到车站要多久？"
+    }
+  },
+  "l11-w589": {
+    "romaji": "zenbu de",
+    "attributes": [],
+    "explanation": "表示合计、总计，相当于汉语的“总共”。常用于询问或说明总数量、总金额等。",
+    "example": {
+      "jp": "全部で千円です。",
+      "kana": "ぜんぶでせんえんです。",
+      "romaji": "zenbu de sen en desu.",
+      "zh": "总共一千日元。"
+    }
+  },
+  "l11-w590": {
+    "romaji": "minna",
+    "attributes": [],
+    "explanation": "表示“全部；大家”，可指人或事物。口语中常用，相当于「みな」。",
+    "example": {
+      "jp": "みんなで写真を撮りましょう。",
+      "kana": "みんなでしゃしんをとりましょう。",
+      "romaji": "minna de shashin o torimashou.",
+      "zh": "大家一起拍照吧。"
+    }
+  },
+  "l11-w591": {
+    "romaji": "~dake",
+    "attributes": [],
+    "explanation": "表示限定，相当于汉语的“只有……”。接在名词或数量词后面，强调范围或数量的局限。",
+    "example": {
+      "jp": "水だけ飲みます。",
+      "kana": "みずだけのみます。",
+      "romaji": "mizu dake nomimasu.",
+      "zh": "只喝水。"
+    }
+  },
+  "l11-w593": {
+    "romaji": "ii (o)tenki desu ne",
+    "attributes": [],
+    "explanation": "固定问候语，用于天气好时打招呼，相当于汉语的“天气真好啊”。「お」是美化语，使表达更礼貌。",
+    "example": {
+      "jp": "いいお天気ですね。散歩しませんか。",
+      "kana": "いいおてんきですね。さんぽしませんか。",
+      "romaji": "ii otenki desu ne. sanpo shimasen ka.",
+      "zh": "天气真好啊。不去散步吗？"
+    }
+  },
+  "l11-w594": {
+    "romaji": "odekake desu ka",
+    "attributes": [],
+    "explanation": "固定表达，用于礼貌地询问对方是否要出门，相当于汉语的“要出门吗”。「お出かけ」是「出かける」的礼貌说法。",
+    "example": {
+      "jp": "お出かけですか。行ってらっしゃい。",
+      "kana": "おでかけですか。いってらっしゃい。",
+      "romaji": "odekake desu ka. itterasshai.",
+      "zh": "要出门吗？路上小心。"
+    }
+  },
+  "l11-w595": {
+    "romaji": "chotto ~ made",
+    "attributes": [],
+    "explanation": "固定表达，用于表示去去就回，相当于汉语的“我去一下……”。「ちょっと」表示时间短或程度轻，「まで」表示目的地。",
+    "example": {
+      "jp": "ちょっとコンビニまで行ってきます。",
+      "kana": "ちょっとコンビニまでいってきます。",
+      "romaji": "chotto konbini made itte kimasu.",
+      "zh": "我去一下便利店就回来。"
+    }
+  },
+  "l11-w596": {
+    "romaji": "itteirasshai",
+    "attributes": [],
+    "explanation": "固定寒暄语，用于送家人或熟人出门时，语气亲切随意。由「行って」和「いらっしゃい」组成，不能对上级或初次见面的人使用。",
+    "example": {
+      "jp": "気をつけて、いっていらっしゃい。",
+      "kana": "きをつけて、いっていらっしゃい。",
+      "romaji": "ki o tsukete, itteirasshai.",
+      "zh": "路上小心，慢走。"
+    }
+  },
+  "l11-w787": {
+    "romaji": "ryuugakusei",
+    "attributes": [],
+    "explanation": "指在外国学习的学生，常与「～から来た」搭配说明国籍或出身。与「学生」不同，强调留学身份，可用于自我介绍。",
+    "example": {
+      "jp": "私は中国から来た留学生です。",
+      "kana": "わたしはちゅうごくからきたりゅうがくせいです。",
+      "romaji": "watashi wa chuugoku kara kita ryuugakusei desu.",
+      "zh": "我是从中国来的留学生。"
+    }
+  },
+  "l11-australia": {
+    "romaji": "Oosutoraria",
+    "attributes": [],
+    "explanation": "国名，指澳大利亚，日语中常用片假名书写。说来自该国时用「オーストラリアから来ました」等表达。",
+    "example": {
+      "jp": "姉はオーストラリアに住んでいます。",
+      "kana": "あねはおーすとらりあにすんでいます。",
+      "romaji": "ane wa Oosutoraria ni sunde imasu.",
+      "zh": "姐姐住在澳大利亚。"
+    }
+  }
+}

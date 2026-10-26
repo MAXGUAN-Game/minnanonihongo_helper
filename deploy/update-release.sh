@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Compatible UI releases only. Run as root through systemd-run so SSH can disconnect.
+# Run as root through systemd-run so SSH can disconnect.
 set -Eeuo pipefail
 umask 077
 fail() { printf 'UPDATE_FAILED: %s\n' "$*" >&2; exit 1; }
@@ -17,7 +17,7 @@ for file in .env compose.yaml deploy/Caddyfile; do
   [[ -f "$file" && ! -L "$file" ]] || fail "Missing or linked runtime file: $file"
 done
 version=$(node -p 'JSON.parse(require("node:fs").readFileSync(process.argv[1],"utf8")).version' "$source_dir/package.json")
-[[ "$version" == 1.1.2 ]] || fail 'This updater supports source release 1.1.2 only.'
+[[ "$version" == 1.3.2 ]] || fail 'This updater supports source release 1.3.2 only.'
 printf 'UPDATE_START v%s %s\n' "$version" "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 compose() { docker compose -p nihongo-web -f compose.yaml "$@"; }
 compose config --quiet
@@ -40,7 +40,7 @@ docker inspect "$app_id" | node -e '
   }' "$runtime"
 [[ $(docker inspect --format '{{.State.Health.Status}}' "$app_id") == healthy ]] || fail 'The current app must be healthy before updating.'
 old_version=$(compose exec -T app node -p 'require("./package.json").version')
-case "$old_version" in 1.1.0|1.1.1|1.1.2) ;; *) fail 'Only installed versions 1.1.0–1.1.2 are compatible with this UI update.' ;; esac
+case "$old_version" in 1.1.0|1.1.1|1.1.2|1.2.0|1.3.0|1.3.1|1.3.2) ;; *) fail 'Supported installed versions are 1.1.0 through 1.3.2.' ;; esac
 old_image=$(docker inspect --format '{{.Image}}' "$app_id")
 [[ "$old_image" =~ ^sha256:[0-9a-f]{64}$ ]] || fail 'Could not identify the running image.'
 target="nihongo-web:v$version"
@@ -51,7 +51,7 @@ new_image=$(docker image inspect --format '{{.Id}}' "$target")
 image_version=$(docker run --rm --network none --read-only --entrypoint node "$new_image" -p 'require("./package.json").version')
 [[ "$image_version" == "$version" ]] || fail 'The built image version does not match this release.'
 
-backup_dir=$(mktemp -d "${runtime%/*}/nihongo-backup-v112-XXXXXXXX")
+backup_dir=$(mktemp -d "${runtime%/*}/nihongo-backup-v132-XXXXXXXX")
 rollback_tag="nihongo-web:rollback-$(date +%Y%m%d%H%M%S)-$$"
 printf '%s\n' "$old_image" > "$backup_dir/old-image.txt"
 printf '%s\n' "$old_version" > "$backup_dir/old-version.txt"
@@ -60,6 +60,20 @@ printf '%s\n' "$rollback_tag" > "$backup_dir/rollback-tag.txt"
 docker tag "$old_image" "$rollback_tag"
 printf 'Backup directory: %s\n' "$backup_dir"
 needs_recovery=false
+data_may_have_changed=false
+restore_snapshot() {
+  "$data_may_have_changed" || return 0
+  compose stop app || return 1
+  local restore_dir
+  restore_dir=$(mktemp -d "$runtime/.restore-v132-XXXXXXXX") || return 1
+  tar -xzf "$backup_dir/data-and-config.tar.gz" -C "$restore_dir" server-data || return 1
+  [[ -d "$restore_dir/server-data" && ! -L "$restore_dir/server-data" && ! -L "$runtime/server-data" ]] || return 1
+  # Move the entire failed database directory aside, including SQLite WAL/SHM.
+  # Never place an old image over a database migrated by the new application.
+  mv -- "$runtime/server-data" "$backup_dir/failed-server-data" || return 1
+  mv -- "$restore_dir/server-data" "$runtime/server-data" || return 1
+  rmdir -- "$restore_dir" || return 1
+}
 verify_running() {
   local wanted_image=$1 wanted_version=$2 running
   running=$(compose ps -q app) || return 1
@@ -72,8 +86,8 @@ recover_on_exit() {
   local status=$?
   trap - EXIT INT TERM HUP
   if "$needs_recovery"; then
-    printf 'Update did not complete. Restoring the previous image; learning data is retained.\n' >&2
-    if docker tag "$old_image" nihongo-web:local &&
+    printf 'Update did not complete. Restoring the compatible database snapshot and previous image.\n' >&2
+    if restore_snapshot && docker tag "$old_image" nihongo-web:local &&
        compose up -d --no-build --pull never --no-deps --wait --wait-timeout 180 app &&
        verify_running "$old_image" "$old_version"; then
       printf 'ROLLBACK_OK v%s\n' "$old_version" >&2
@@ -91,10 +105,12 @@ trap 'exit 129' HUP
 needs_recovery=true
 compose stop app
 # Stopping the only writer makes the SQLite database and its WAL a consistent backup.
-tar -czf "$backup_dir/data-and-config.tar.gz" server-data .env compose.yaml deploy/Caddyfile
+tar --exclude=server-data/recordings --exclude=server-data/speech/tmp \
+  -czf "$backup_dir/data-and-config.tar.gz" server-data .env compose.yaml deploy/Caddyfile
 tar -tzf "$backup_dir/data-and-config.tar.gz" >/dev/null
 printf 'Backup verified. Switching only the app container.\n'
 docker tag "$new_image" nihongo-web:local
+data_may_have_changed=true
 compose up -d --no-build --pull never --no-deps --wait --wait-timeout 180 app
 verify_running "$new_image" "$version" || fail 'New app image, health or version verification failed.'
 needs_recovery=false

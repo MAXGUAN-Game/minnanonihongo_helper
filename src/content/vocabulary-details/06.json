@@ -1,0 +1,631 @@
+{
+  "l6-v1": {
+    "romaji": "tabemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“吃”的礼貌体动词，用于日常饮食场景。宾语通常用助词「を」标记，如「ご飯を食べます」。",
+    "example": {
+      "jp": "朝ご飯にパンを食べます。",
+      "kana": "あさごはんにぱんをたべます。",
+      "romaji": "asa gohan ni pan o tabemasu.",
+      "zh": "早饭吃面包。"
+    }
+  },
+  "l6-v2": {
+    "romaji": "nomimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“喝”的礼貌体动词，用于饮料、水等液体。宾语用「を」标记，如「水を飲みます」。",
+    "example": {
+      "jp": "毎朝コーヒーを飲みます。",
+      "kana": "まいあさこーひーをのみます。",
+      "romaji": "maiasa kōhī o nomimasu.",
+      "zh": "每天早上喝咖啡。"
+    }
+  },
+  "l6-suimasu": {
+    "romaji": "suimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“吸”或“抽烟”，常用「タバコを吸います」表示吸烟。礼貌体动词，宾语用「を」标记。",
+    "example": {
+      "jp": "父はタバコを吸います。",
+      "kana": "ちちはたばこをすいます。",
+      "romaji": "chichi wa tabako o suimasu.",
+      "zh": "父亲抽烟。"
+    }
+  },
+  "l6-v3": {
+    "romaji": "mimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“看”的礼貌体动词，用于观看电视、电影、风景等。宾语用「を」标记，如「テレビを見ます」。",
+    "example": {
+      "jp": "夜、テレビを見ます。",
+      "kana": "よる、てれびをみます。",
+      "romaji": "yoru, terebi o mimasu.",
+      "zh": "晚上看电视。"
+    }
+  },
+  "l6-v4": {
+    "romaji": "kikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“听”的礼貌体动词，用于听音乐、声音等。宾语用「を」标记，如「音楽を聞きます」。",
+    "example": {
+      "jp": "電車の中で音楽を聞きます。",
+      "kana": "でんしゃのなかでおんがくをききます。",
+      "romaji": "densha no naka de ongaku o kikimasu.",
+      "zh": "在电车里听音乐。"
+    }
+  },
+  "l6-v5": {
+    "romaji": "yomimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“读、阅读”的礼貌体动词，用于读书、报纸、杂志等。宾语用「を」标记，如「本を読みます」。",
+    "example": {
+      "jp": "図書館で本を読みます。",
+      "kana": "としょかんでほんをよみます。",
+      "romaji": "toshokan de hon o yomimasu.",
+      "zh": "在图书馆读书。"
+    }
+  },
+  "l6-kakimasu": {
+    "romaji": "kakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“写”的礼貌体动词，用于写字、写信、写文章等。宾语用「を」标记，如「手紙を書きます」。",
+    "example": {
+      "jp": "友達に手紙を書きます。",
+      "kana": "ともだちにてがみをかきます。",
+      "romaji": "tomodachi ni tegami o kakimasu.",
+      "zh": "给朋友写信。"
+    }
+  },
+  "l6-v6": {
+    "romaji": "kaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“买”的礼貌体动词，用于购买物品。宾语用「を」标记，如「パンを買います」。",
+    "example": {
+      "jp": "スーパーでパンを買います。",
+      "kana": "すーぱーでぱんをかいます。",
+      "romaji": "sūpā de pan o kaimasu.",
+      "zh": "在超市买面包。"
+    }
+  },
+  "l6-torimasu": {
+    "romaji": "torimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“拍（照片）”的礼貌体动词，常用「写真を撮ります」。注意与“取る”同音但汉字不同。",
+    "example": {
+      "jp": "公園で写真を撮ります。",
+      "kana": "こうえんでしゃしんをとります。",
+      "romaji": "kōen de shashin o torimasu.",
+      "zh": "在公园拍照。"
+    }
+  },
+  "l6-shimasu": {
+    "romaji": "shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“做、干”的礼貌体动词，常与名词结合构成动作，如「勉強します」「運動します」。",
+    "example": {
+      "jp": "毎日日本語の勉強をします。",
+      "kana": "まいにちにほんごのべんきょうをします。",
+      "romaji": "mainichi nihongo no benkyō o shimasu.",
+      "zh": "每天学习日语。"
+    }
+  },
+  "l6-aimasu": {
+    "romaji": "aimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示“见、见面”的礼貌体动词，常用「人に会います」，助词用「に」表示见面的对象。",
+    "example": {
+      "jp": "駅で友達に会います。",
+      "kana": "えきでともだちにあいます。",
+      "romaji": "eki de tomodachi ni aimasu.",
+      "zh": "在车站见朋友。"
+    }
+  },
+  "l6-pan": {
+    "romaji": "pan",
+    "attributes": [],
+    "explanation": "名词，表示“面包”，源自葡萄牙语。常用「パンを食べます」「パンを買います」等搭配。",
+    "example": {
+      "jp": "このパンはとてもおいしいです。",
+      "kana": "このぱんはとてもおいしいです。",
+      "romaji": "kono pan wa totemo oishii desu.",
+      "zh": "这个面包很好吃。"
+    }
+  },
+  "l6-tamago": {
+    "romaji": "tamago",
+    "attributes": [],
+    "explanation": "指鸡蛋，也泛指禽类的蛋。日常购物、烹饪中常用，如「卵を買う」「卵を割る」。注意与「玉子」区分，后者多指烹饪用的鸡蛋。",
+    "example": {
+      "jp": "朝ごはんに卵を食べます。",
+      "kana": "あさごはんにたまごをたべます。",
+      "romaji": "asagohan ni tamago o tabemasu.",
+      "zh": "早饭吃鸡蛋。"
+    }
+  },
+  "l6-niku": {
+    "romaji": "niku",
+    "attributes": [],
+    "explanation": "指食用肉类，常与「牛肉」「豚肉」「鶏肉」等搭配。日常会话中单独说「肉」多指猪肉或牛肉，需根据语境判断。",
+    "example": {
+      "jp": "この店の肉は新鮮です。",
+      "kana": "このみせのにくはしんせんです。",
+      "romaji": "kono mise no niku wa shinsen desu.",
+      "zh": "这家店的肉很新鲜。"
+    }
+  },
+  "l6-sakana": {
+    "romaji": "sakana",
+    "attributes": [],
+    "explanation": "指鱼，可指活鱼或食用鱼肉。常与「焼く」「煮る」等烹饪动词搭配，如「魚を焼く」。注意与「魚介類」区分，后者泛指海鲜。",
+    "example": {
+      "jp": "晩ごはんに魚を焼きました。",
+      "kana": "ばんごはんにさかなをやきました。",
+      "romaji": "bangohan ni sakana o yakimashita.",
+      "zh": "晚饭烤了鱼。"
+    }
+  },
+  "l6-yasai": {
+    "romaji": "yasai",
+    "attributes": [],
+    "explanation": "指蔬菜，日常购物、饮食中常用。常与「新鮮」「旬」等词搭配，如「野菜を食べる」「野菜を切る」。",
+    "example": {
+      "jp": "健康のために野菜を食べましょう。",
+      "kana": "けんこうのためにやさいをたべましょう。",
+      "romaji": "kenkou no tame ni yasai o tabemashou.",
+      "zh": "为了健康吃蔬菜吧。"
+    }
+  },
+  "l6-kudamono": {
+    "romaji": "kudamono",
+    "attributes": [],
+    "explanation": "指水果，通常指可生食的果实。常与「甘い」「新鮮」等形容词搭配，如「果物を買う」「果物を食べる」。",
+    "example": {
+      "jp": "食後に果物を食べます。",
+      "kana": "しょくごにくだものをたべます。",
+      "romaji": "shokugo ni kudamono o tabemasu.",
+      "zh": "饭后吃水果。"
+    }
+  },
+  "l6-mizu": {
+    "romaji": "mizu",
+    "attributes": [],
+    "explanation": "指水，特指冷水或生水。常与「飲む」「飲める」搭配，如「水を一杯ください」。注意「お湯」指热水。",
+    "example": {
+      "jp": "水を一杯ください。",
+      "kana": "みずをいっぱいください。",
+      "romaji": "mizu o ippai kudasai.",
+      "zh": "请给我一杯水。"
+    }
+  },
+  "l6-ocha": {
+    "romaji": "ocha",
+    "attributes": [],
+    "explanation": "指茶，通常指绿茶，也泛指茶饮。常与「飲む」「淹れる」搭配，如「お茶をどうぞ」。注意「お茶」带美化语「お」，显得礼貌。",
+    "example": {
+      "jp": "お茶を飲みながら話しましょう。",
+      "kana": "おちゃをのみながらはなしましょう。",
+      "romaji": "ocha o nominagara hanashimashou.",
+      "zh": "边喝茶边聊吧。"
+    }
+  },
+  "l6-gyuunyuu": {
+    "romaji": "gyuunyuu",
+    "attributes": [],
+    "explanation": "指牛奶，较正式的说法。常与「飲む」「温める」搭配，如「牛乳を飲む」。与「ミルク」相比，「牛乳」更强调纯牛奶。",
+    "example": {
+      "jp": "毎朝牛乳を飲みます。",
+      "kana": "まいあさぎゅうにゅうをのみます。",
+      "romaji": "maiasa gyuunyuu o nomimasu.",
+      "zh": "每天早上喝牛奶。"
+    }
+  },
+  "l6-miruku": {
+    "romaji": "miruku",
+    "attributes": [],
+    "explanation": "指牛奶，外来语，较口语化。常用于咖啡、红茶中添加的牛奶，如「ミルクを入れる」。与「牛乳」基本同义，但语感更轻松。",
+    "example": {
+      "jp": "コーヒーにミルクを入れますか。",
+      "kana": "こーひーにみるくをいれますか。",
+      "romaji": "koohii ni miruku o iremasu ka.",
+      "zh": "咖啡里加牛奶吗？"
+    }
+  },
+  "l6-juusu": {
+    "romaji": "juusu",
+    "attributes": [],
+    "explanation": "指果汁，也泛指软饮料。常与「飲む」「絞る」搭配，如「オレンジジュース」。注意与「ジュース」区分，后者可指碳酸饮料等。",
+    "example": {
+      "jp": "冷たいジュースが飲みたいです。",
+      "kana": "つめたいじゅーすがのみたいです。",
+      "romaji": "tsumetai juusu ga nomitai desu.",
+      "zh": "想喝冰果汁。"
+    }
+  },
+  "l6-biiru": {
+    "romaji": "biiru",
+    "attributes": [],
+    "explanation": "指啤酒，外来语。常与「飲む」「冷やす」搭配，如「ビールを一杯」。注意「生ビール」指生啤。",
+    "example": {
+      "jp": "仕事の後でビールを飲みます。",
+      "kana": "しごとのあとでびーるをのみます。",
+      "romaji": "shigoto no ato de biiru o nomimasu.",
+      "zh": "工作后喝啤酒。"
+    }
+  },
+  "l6-osake": {
+    "romaji": "osake",
+    "attributes": [],
+    "explanation": "指酒，特指日本清酒，也泛指酒精饮料。常与「飲む」「強い」搭配，如「お酒に強い」。注意「お酒」带美化语「お」，显得礼貌。",
+    "example": {
+      "jp": "お酒はほどほどにしましょう。",
+      "kana": "おさけはほどほどにしましょう。",
+      "romaji": "osake wa hodohodo ni shimashou.",
+      "zh": "酒要适可而止。"
+    }
+  },
+  "l6-gohan": {
+    "romaji": "gohan",
+    "attributes": [],
+    "explanation": "指煮熟的米饭，也泛指一顿饭。日常口语常用，前可加朝、昼、晩等构成三餐说法。",
+    "example": {
+      "jp": "ご飯を食べます。",
+      "kana": "ごはんをたべます。",
+      "romaji": "gohan o tabemasu.",
+      "zh": "吃饭。"
+    }
+  },
+  "l6-asagohan": {
+    "romaji": "asagohan",
+    "attributes": [],
+    "explanation": "指早饭，比「朝食」口语化，日常会话中常用。常与「食べる」搭配。",
+    "example": {
+      "jp": "朝ご飯はパンです。",
+      "kana": "あさごはんはぱんです。",
+      "romaji": "asagohan wa pan desu.",
+      "zh": "早饭是面包。"
+    }
+  },
+  "l6-v8": {
+    "romaji": "hirugohan",
+    "attributes": [],
+    "explanation": "指午饭，口语说法，比「昼食」更日常。常与「食べる」搭配使用。",
+    "example": {
+      "jp": "昼ご飯を食べましたか。",
+      "kana": "ひるごはんをたべましたか。",
+      "romaji": "hirugohan o tabemashita ka.",
+      "zh": "吃午饭了吗？"
+    }
+  },
+  "l6-bangohan": {
+    "romaji": "bangohan",
+    "attributes": [],
+    "explanation": "指晚饭，口语说法，比「夕食」更日常。常与「食べる」搭配。",
+    "example": {
+      "jp": "晩ご飯は何ですか。",
+      "kana": "ばんごはんはなんですか。",
+      "romaji": "bangohan wa nan desu ka.",
+      "zh": "晚饭是什么？"
+    }
+  },
+  "l6-tabako": {
+    "romaji": "tabako",
+    "attributes": [],
+    "explanation": "指香烟或烟草，日常口语常用。注意与「たばこ屋」等复合词搭配。",
+    "example": {
+      "jp": "たばこを吸います。",
+      "kana": "たばこをすいます。",
+      "romaji": "tabako o suimasu.",
+      "zh": "吸烟。"
+    }
+  },
+  "l6-bideo": {
+    "romaji": "bideo",
+    "attributes": [],
+    "explanation": "指录像、视频，可指录像带或视频内容。外来语，日常常用。",
+    "example": {
+      "jp": "ビデオを見ます。",
+      "kana": "びでおをみます。",
+      "romaji": "bideo o mimasu.",
+      "zh": "看录像。"
+    }
+  },
+  "l6-tegami": {
+    "romaji": "tegami",
+    "attributes": [],
+    "explanation": "指书信，手写的信件。常与「書く」「送る」搭配。",
+    "example": {
+      "jp": "友達に手紙を書きます。",
+      "kana": "ともだちにてがみをかきます。",
+      "romaji": "tomodachi ni tegami o kakimasu.",
+      "zh": "给朋友写信。"
+    }
+  },
+  "l6-repooto": {
+    "romaji": "repōto",
+    "attributes": [],
+    "explanation": "指报告、小论文，多用于学校或工作。外来语，常与「書く」「出す」搭配。",
+    "example": {
+      "jp": "レポートを書きます。",
+      "kana": "れぽーとをかきます。",
+      "romaji": "repōto o kakimasu.",
+      "zh": "写报告。"
+    }
+  },
+  "l6-v7": {
+    "romaji": "shashin",
+    "attributes": [],
+    "explanation": "指照片，常与「撮る」搭配表示拍照。也可说「写真を現像する」。",
+    "example": {
+      "jp": "写真を撮ります。",
+      "kana": "しゃしんをとります。",
+      "romaji": "shashin o torimasu.",
+      "zh": "拍照。"
+    }
+  },
+  "l6-mise": {
+    "romaji": "mise",
+    "attributes": [],
+    "explanation": "指商店、店铺，可泛指各种店。常与「開く」「閉める」等搭配。",
+    "example": {
+      "jp": "あの店は安いです。",
+      "kana": "あのみせはやすいです。",
+      "romaji": "ano mise wa yasui desu.",
+      "zh": "那家店很便宜。"
+    }
+  },
+  "l6-niwa": {
+    "romaji": "niwa",
+    "attributes": [],
+    "explanation": "指院子、庭院，通常指房屋周围的空地。常与「ある」「広い」等搭配。",
+    "example": {
+      "jp": "庭に花があります。",
+      "kana": "にわにはながあります。",
+      "romaji": "niwa ni hana ga arimasu.",
+      "zh": "院子里有花。"
+    }
+  },
+  "l6-shukudai": {
+    "romaji": "shukudai",
+    "attributes": [],
+    "explanation": "指作业、功课，多用于学校。常与「する」「出す」搭配。",
+    "example": {
+      "jp": "宿題をします。",
+      "kana": "しゅくだいをします。",
+      "romaji": "shukudai o shimasu.",
+      "zh": "做作业。"
+    }
+  },
+  "l6-tenisu": {
+    "romaji": "tenisu",
+    "attributes": [],
+    "explanation": "指网球运动，常用「テニスをする」表示打网球；也可说「テニスをやる」，口语中更随意。",
+    "example": {
+      "jp": "週末に友達とテニスをします。",
+      "kana": "しゅうまつにともだちとてにすをします。",
+      "romaji": "shūmatsu ni tomodachi to tenisu o shimasu.",
+      "zh": "周末和朋友打网球。"
+    }
+  },
+  "l6-sakkaa": {
+    "romaji": "sakkā",
+    "attributes": [],
+    "explanation": "指足球运动，常用「サッカーをする」表示踢足球；也可说「サッカーをやる」，口语中更随意。",
+    "example": {
+      "jp": "弟は毎日サッカーをします。",
+      "kana": "おとうとはまいにちさっかーをします。",
+      "romaji": "otōto wa mainichi sakkā o shimasu.",
+      "zh": "弟弟每天踢足球。"
+    }
+  },
+  "l6-ohanami": {
+    "romaji": "ohanami",
+    "attributes": [],
+    "explanation": "特指春天观赏樱花，常与「する」搭配说「お花見をする」；是日本春季的常见活动。",
+    "example": {
+      "jp": "春に家族でお花見をします。",
+      "kana": "はるにかぞくでおはなみをします。",
+      "romaji": "haru ni kazoku de ohanami o shimasu.",
+      "zh": "春天和家人一起赏樱花。"
+    }
+  },
+  "l6-nani": {
+    "romaji": "nani",
+    "attributes": [],
+    "explanation": "疑问词，询问事物内容；后续助词时读音常变化，如「何を」读「なにを」，「何の」读「なんの」。",
+    "example": {
+      "jp": "朝ごはんに何を食べますか。",
+      "kana": "あさごはんになにをたべますか。",
+      "romaji": "asagohan ni nani o tabemasu ka.",
+      "zh": "早饭吃什么？"
+    }
+  },
+  "l6-v10": {
+    "romaji": "issho ni",
+    "attributes": [],
+    "explanation": "副词性表达，表示共同做某事，常与「と」或「で」搭配，如「友達と一緒に」「家族で一緒に」。",
+    "example": {
+      "jp": "一緒に昼ごはんを食べませんか。",
+      "kana": "いっしょにひるごはんをたべませんか。",
+      "romaji": "issho ni hirugohan o tabemasen ka.",
+      "zh": "要不要一起吃午饭？"
+    }
+  },
+  "l6-chotto": {
+    "romaji": "chotto",
+    "attributes": [],
+    "explanation": "表示程度轻微或时间短暂，口语中很常用；也可委婉拒绝或表示“有点……”，如「ちょっと難しいです」。",
+    "example": {
+      "jp": "ちょっと待ってください。",
+      "kana": "ちょっとまってください。",
+      "romaji": "chotto matte kudasai.",
+      "zh": "请稍等一下。"
+    }
+  },
+  "l6-itsumo": {
+    "romaji": "itsumo",
+    "attributes": [],
+    "explanation": "表示习惯性、经常性，相当于“总是、平常”；常与现在时或「～ています」搭配。",
+    "example": {
+      "jp": "いつも七時に起きます。",
+      "kana": "いつもしちじにおきます。",
+      "romaji": "itsumo shichiji ni okimasu.",
+      "zh": "总是七点起床。"
+    }
+  },
+  "l6-tokidoki": {
+    "romaji": "tokidoki",
+    "attributes": [],
+    "explanation": "表示频率不高，相当于“有时、偶尔”；比「たまに」稍正式，可放在句首或动词前。",
+    "example": {
+      "jp": "時々映画を見ます。",
+      "kana": "ときどきえいがをみます。",
+      "romaji": "tokidoki eiga o mimasu.",
+      "zh": "有时看电影。"
+    }
+  },
+  "l6-sorekara": {
+    "romaji": "sorekara",
+    "attributes": [],
+    "explanation": "接续词，表示时间顺序上的“然后”，也可表示追加的“还有、另外”；口语中常用于列举事项。",
+    "example": {
+      "jp": "朝ごはんを食べて、それから学校へ行きます。",
+      "kana": "あさごはんをたべて、それからがっこうへいきます。",
+      "romaji": "asagohan o tabete, sorekara gakkō e ikimasu.",
+      "zh": "吃完早饭，然后去学校。"
+    }
+  },
+  "l6-ee": {
+    "romaji": "ee",
+    "attributes": [],
+    "explanation": "感叹词，表示肯定应答，相当于“嗯、是的”，语气比「はい」随意；也可表示迟疑或回应。",
+    "example": {
+      "jp": "ええ、そうです。",
+      "kana": "ええ、そうです。",
+      "romaji": "ee, sō desu.",
+      "zh": "嗯，是的。"
+    }
+  },
+  "l6-iidesune": {
+    "romaji": "ii desu ne",
+    "attributes": [],
+    "explanation": "固定表达，用于赞同对方提议或称赞某事物，相当于“好啊、真不错”；「ね」带确认或共鸣语气。",
+    "example": {
+      "jp": "その計画、いいですね。",
+      "kana": "そのけいかく、いいですね。",
+      "romaji": "sono keikaku, ii desu ne.",
+      "zh": "那个计划真不错啊。"
+    }
+  },
+  "l6-wakarimashita": {
+    "romaji": "wakarimashita",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定表达，表示理解或接受对方说明，相当于“明白了、知道了”；比「わかった」礼貌，常用于应答。",
+    "example": {
+      "jp": "はい、分かりました。",
+      "kana": "はい、わかりました。",
+      "romaji": "hai, wakarimashita.",
+      "zh": "好的，明白了。"
+    }
+  },
+  "l6-nandesuka": {
+    "romaji": "nan desu ka",
+    "attributes": [],
+    "explanation": "由「何（なん）」加判断助动词「です」和疑问助词「か」构成的固定表达，用于询问对方所说或所指的事物，也可单独用来回应别人叫你，意为“什么事？”。语气礼貌，日常会话中常用。",
+    "example": {
+      "jp": "これは何ですか。",
+      "kana": "これはなんですか。",
+      "romaji": "kore wa nan desu ka.",
+      "zh": "这是什么？"
+    }
+  },
+  "l6-jamataashita": {
+    "romaji": "ja, mata ashita",
+    "attributes": [],
+    "explanation": "道别时的固定寒暄语，「じゃ」是「では」的口语缩略，表示“那么”，整体意为“那么，明天见”。用于关系较近、次日还会见面的人之间，语气轻松随意。",
+    "example": {
+      "jp": "じゃ、また明日。",
+      "kana": "じゃ、またあした。",
+      "romaji": "ja, mata ashita.",
+      "zh": "那么，明天见。"
+    }
+  },
+  "l6-mekishiko": {
+    "romaji": "Mekishiko",
+    "attributes": [],
+    "explanation": "国名“墨西哥”的日语说法，用片假名书写。作为专有名词可直接接「の」修饰名词，如「メキシコの料理」，也可作主语或宾语。",
+    "example": {
+      "jp": "メキシコへ行きたいです。",
+      "kana": "めきしこへいきたいです。",
+      "romaji": "Mekishiko e ikitai desu.",
+      "zh": "我想去墨西哥。"
+    }
+  },
+  "l6-osakadepaato": {
+    "romaji": "Ōsaka depāto",
+    "attributes": [],
+    "explanation": "教材中的店名，由地名「大阪」和「デパート（百货店）」组合而成。作为专有名词使用，指位于大阪的那家百货商店，可接「で」表示购物场所。",
+    "example": {
+      "jp": "大阪デパートで服を買いました。",
+      "kana": "おおさかでぱーとでふくをかいました。",
+      "romaji": "Ōsaka depāto de fuku o kaimashita.",
+      "zh": "在大阪百货店买了衣服。"
+    }
+  },
+  "l6-tsuruya": {
+    "romaji": "Tsur uya",
+    "attributes": [],
+    "explanation": "教材中的店名，写作平假名「つるや」，是日本常见的以「〜や」结尾的老铺式店名。作为专有名词使用，可接「の」「で」等助词。",
+    "example": {
+      "jp": "つるやは駅の近くにあります。",
+      "kana": "つるやはえきのちかくにあります。",
+      "romaji": "Tsur uya wa eki no chikaku ni arimasu.",
+      "zh": "鹤屋在车站附近。"
+    }
+  },
+  "l6-furansuya": {
+    "romaji": "Furansu ya",
+    "attributes": [],
+    "explanation": "教材中的店名，由国名「フランス」加接尾词「や（屋）」构成，意为“法国屋”。作为专有名词使用，注意「フランスや」在此是店名而非“法国和……”的并列结构。",
+    "example": {
+      "jp": "フランスやでパンを買いました。",
+      "kana": "ふらんすやでぱんをかいました。",
+      "romaji": "Furansu ya de pan o kaimashita.",
+      "zh": "在法国屋买了面包。"
+    }
+  },
+  "l6-mainichiya": {
+    "romaji": "Mainichi ya",
+    "attributes": [],
+    "explanation": "教材中的店名，由「まいにち（每日）」加接尾词「や（屋）」构成。作为专有名词使用，可接助词表示地点或所属，如「まいにちやで」「まいにちやの店員」。",
+    "example": {
+      "jp": "まいにちやはとてもにぎやかです。",
+      "kana": "まいにちやはとてもにぎやかです。",
+      "romaji": "Mainichi ya wa totemo nigiyaka desu.",
+      "zh": "每日屋非常热闹。"
+    }
+  }
+}

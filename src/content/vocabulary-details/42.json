@@ -1,0 +1,618 @@
+{
+  "l42-w1431": {
+    "romaji": "futa",
+    "attributes": [],
+    "explanation": "指容器、瓶口等的盖子，常与「開ける」「閉める」搭配。注意与「蓋」同义，但日常多用假名书写。",
+    "example": {
+      "jp": "この瓶のふたを開けてください。",
+      "kana": "このびんのふたをあけてください。",
+      "romaji": "kono bin no futa o akete kudasai.",
+      "zh": "请打开这个瓶子的盖子。"
+    }
+  },
+  "l42-w1434": {
+    "romaji": "tanoshimi",
+    "attributes": [],
+    "explanation": "表示期待某事带来的快乐或乐趣，常用「～を楽しみにする」「楽しみにしている」表达盼望。也可指兴趣爱好带来的愉悦。",
+    "example": {
+      "jp": "旅行をとても楽しみにしています。",
+      "kana": "りょこうをとてもたのしみにしています。",
+      "romaji": "ryokou o totemo tanoshimi ni shite imasu.",
+      "zh": "非常期待这次旅行。"
+    }
+  },
+  "l42-w1585": {
+    "romaji": "narabimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示人或物排成队列、排列，常与「列に並ぶ」搭配。也可表示物品陈列。",
+    "example": {
+      "jp": "切符を買うために列に並びます。",
+      "kana": "きっぷをかうためにれつにならびます。",
+      "romaji": "kippu o kau tame ni retsu ni narabimasu.",
+      "zh": "为了买票排队。"
+    }
+  },
+  "l42-w1672": {
+    "romaji": "tsutsumimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用纸、布等把东西包起来，常与「紙で包む」「包み紙」搭配。也可用于抽象地包裹。",
+    "example": {
+      "jp": "プレゼントをきれいな紙で包みます。",
+      "kana": "ぷれぜんとをきれいなかみでつつみます。",
+      "romaji": "purezento o kirei na kami de tsutsumimasu.",
+      "zh": "用漂亮的纸包礼物。"
+    }
+  },
+  "l42-w1673": {
+    "romaji": "wakashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把水等液体烧开，是「沸く」的他动词形式。常与「お湯を沸かす」搭配。",
+    "example": {
+      "jp": "お茶を入れるためにお湯を沸かします。",
+      "kana": "おちゃをいれるためにおゆをわかします。",
+      "romaji": "ocha o ireru tame ni oyu o wakashimasu.",
+      "zh": "为了泡茶烧开水。"
+    }
+  },
+  "l42-w1674": {
+    "romaji": "mazemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把不同东西混合在一起，常与「よく混ぜる」搭配。也可用于搅拌食材。",
+    "example": {
+      "jp": "卵と砂糖をよく混ぜます。",
+      "kana": "たまごとさとうをよくまぜます。",
+      "romaji": "tamago to satou o yoku mazemasu.",
+      "zh": "把鸡蛋和砂糖充分混合。"
+    }
+  },
+  "l42-w1675": {
+    "romaji": "keisanshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示进行计算，常与「費用を計算する」等搭配。也可用于考虑、盘算。",
+    "example": {
+      "jp": "旅行の費用を計算します。",
+      "kana": "りょこうのひようをけいさんします。",
+      "romaji": "ryokou no hiyou o keisanshimasu.",
+      "zh": "计算旅行费用。"
+    }
+  },
+  "l42-w1678": {
+    "romaji": "bengoshi",
+    "attributes": [],
+    "explanation": "指从事法律辩护、法律事务的专业人士，即律师。常与「弁護士になる」搭配。",
+    "example": {
+      "jp": "兄は弁護士として働いています。",
+      "kana": "あにはべんごしとしてはたらいています。",
+      "romaji": "ani wa bengoshi to shite hataraite imasu.",
+      "zh": "哥哥作为律师工作。"
+    }
+  },
+  "l42-w1679": {
+    "romaji": "ongakuka",
+    "attributes": [],
+    "explanation": "指从事音乐创作或演奏的专业人士，即音乐家。可指作曲家、演奏家等。",
+    "example": {
+      "jp": "彼女は有名な音楽家です。",
+      "kana": "かのじょはゆうめいなおんがくかです。",
+      "romaji": "kanojo wa yuumei na ongakuka desu.",
+      "zh": "她是有名的音乐家。"
+    }
+  },
+  "l42-w1680": {
+    "romaji": "kodomotachi",
+    "attributes": [],
+    "explanation": "「子ども」加复数后缀「たち」构成，指多个孩子。常用于一般性叙述或群体称呼。",
+    "example": {
+      "jp": "公園で子どもたちが遊んでいます。",
+      "kana": "こうえんでこどもたちがあそんでいます。",
+      "romaji": "kouen de kodomotachi ga asonde imasu.",
+      "zh": "孩子们在公园里玩。"
+    }
+  },
+  "l42-w1682": {
+    "romaji": "kyouiku",
+    "attributes": [],
+    "explanation": "指教育，常与「教育を受ける」「教育する」搭配。可指学校教育或广义的培养。",
+    "example": {
+      "jp": "子どもの教育はとても大切です。",
+      "kana": "こどものきょういくはとてもたいせつです。",
+      "romaji": "kodomo no kyouiku wa totemo taisetsu desu.",
+      "zh": "孩子的教育非常重要。"
+    }
+  },
+  "l42-w1684": {
+    "romaji": "bunka",
+    "attributes": [],
+    "explanation": "指文化，包括生活方式、艺术、传统等。常与「文化を学ぶ」「文化が違う」搭配。",
+    "example": {
+      "jp": "日本文化に興味があります。",
+      "kana": "にほんぶんかにきょうみがあります。",
+      "romaji": "nihon bunka ni kyoumi ga arimasu.",
+      "zh": "对日本文化感兴趣。"
+    }
+  },
+  "l42-w1685": {
+    "romaji": "shakai",
+    "attributes": [],
+    "explanation": "指人们共同生活形成的群体及其结构、制度等，常与「社会に出る」「社会問題」等搭配，语体中性，适用范围广。",
+    "example": {
+      "jp": "社会のルールを守りましょう。",
+      "kana": "しゃかいのるーるをまもりましょう。",
+      "romaji": "shakai no ruuru o mamorimashou.",
+      "zh": "我们遵守社会规则吧。"
+    }
+  },
+  "l42-w1686": {
+    "romaji": "hōritsu",
+    "attributes": [],
+    "explanation": "指国家制定的法律、法规，比「法」更具体，常用于正式或书面语境，如「法律を守る」「法律違反」。",
+    "example": {
+      "jp": "法律を守ることは大切です。",
+      "kana": "ほうりつをまもることはたいせつです。",
+      "romaji": "hōritsu o mamoru koto wa taisetsu desu.",
+      "zh": "遵守法律很重要。"
+    }
+  },
+  "l42-w1687": {
+    "romaji": "sensō",
+    "attributes": [],
+    "explanation": "指国家或集团间的大规模武力冲突，常与「戦争が起きる」「戦争を始める」等搭配，语体正式。",
+    "example": {
+      "jp": "戦争のない世界を願っています。",
+      "kana": "せんそうのないせかいをねがっています。",
+      "romaji": "sensō no nai sekai o negatte imasu.",
+      "zh": "我祈愿一个没有战争的世界。"
+    }
+  },
+  "l42-w1688": {
+    "romaji": "heiwa",
+    "attributes": [],
+    "explanation": "指没有战争、安定的状态，常与「平和を守る」「世界平和」等搭配，也可形容和平的，如「平和な暮らし」。",
+    "example": {
+      "jp": "平和が一番大切です。",
+      "kana": "へいわがいちばんたいせつです。",
+      "romaji": "heiwa ga ichiban taisetsu desu.",
+      "zh": "和平最重要。"
+    }
+  },
+  "l42-w1689": {
+    "romaji": "mokuteki",
+    "attributes": [],
+    "explanation": "指行动想要达到的目标或意图，常与「目的を達成する」「～が目的だ」等搭配，比「目標」更抽象。",
+    "example": {
+      "jp": "旅行の目的は何ですか。",
+      "kana": "りょこうのもくてきはなんですか。",
+      "romaji": "ryokō no mokuteki wa nan desu ka.",
+      "zh": "旅行的目的是什么？"
+    }
+  },
+  "l42-w1691": {
+    "romaji": "ronbun",
+    "attributes": [],
+    "explanation": "指学术性文章或论文，常用于大学、研究语境，如「論文を書く」「卒業論文」，语体正式。",
+    "example": {
+      "jp": "大学で論文を書いています。",
+      "kana": "だいがくでろんぶんをかいています。",
+      "romaji": "daigaku de ronbun o kaite imasu.",
+      "zh": "我正在大学写论文。"
+    }
+  },
+  "l42-w1693": {
+    "romaji": "mikisā",
+    "attributes": [],
+    "explanation": "指搅拌机，常用于厨房搅拌食材，也可指调音台等混合设备，日常多指厨房电器。",
+    "example": {
+      "jp": "ミキサーで野菜を砕きます。",
+      "kana": "みきさーでやさいをくだきます。",
+      "romaji": "mikisā de yasai o kudakimasu.",
+      "zh": "用搅拌机把蔬菜打碎。"
+    }
+  },
+  "l42-w1694": {
+    "romaji": "yakan",
+    "attributes": [],
+    "explanation": "指烧水用的金属水壶，通常带把手和壶嘴，常与「やかんでお湯を沸かす」搭配。",
+    "example": {
+      "jp": "やかんでお湯を沸かします。",
+      "kana": "やかんでおゆをわかします。",
+      "romaji": "yakan de oyu o wakashimasu.",
+      "zh": "用水壶烧开水。"
+    }
+  },
+  "l42-w1695": {
+    "romaji": "sennuki",
+    "attributes": [],
+    "explanation": "指开瓶盖的工具，专用于打开瓶装饮料的瓶盖，与「缶切り」不同，不用于罐头。",
+    "example": {
+      "jp": "栓抜きでビールの栓を抜きます。",
+      "kana": "せんぬきでびーるのせんをぬきます。",
+      "romaji": "sennuki de bīru no sen o nukimasu.",
+      "zh": "用开瓶器打开啤酒瓶盖。"
+    }
+  },
+  "l42-w1696": {
+    "romaji": "kankiri",
+    "attributes": [],
+    "explanation": "指开罐头用的工具，通常有旋转刀片，与「栓抜き」不同，专用于罐头。",
+    "example": {
+      "jp": "缶切りで缶詰を開けます。",
+      "kana": "かんきりでかんづめをあけます。",
+      "romaji": "kankiri de kanzume o akemasu.",
+      "zh": "用开罐器打开罐头。"
+    }
+  },
+  "l42-w1697": {
+    "romaji": "kanzume",
+    "attributes": [],
+    "explanation": "指密封在罐中的食品，如水果、鱼等，常与「缶詰を開ける」搭配，也可比喻被关在狭小空间。",
+    "example": {
+      "jp": "缶詰のフルーツを食べました。",
+      "kana": "かんづめのふるーつをたべました。",
+      "romaji": "kanzume no furūtsu o tabemashita.",
+      "zh": "我吃了罐头水果。"
+    }
+  },
+  "l42-w1698": {
+    "romaji": "furoshiki",
+    "attributes": [],
+    "explanation": "指日本传统方形包袱布，用于包裹物品，常与「風呂敷で包む」搭配，现代也用于环保包装。",
+    "example": {
+      "jp": "風呂敷でお弁当を包みます。",
+      "kana": "ふろしきでおべんとうをつつみます。",
+      "romaji": "furoshiki de obentō o tsutsumimasu.",
+      "zh": "用包袱布包便当。"
+    }
+  },
+  "l42-w1699": {
+    "romaji": "soroban",
+    "attributes": [],
+    "explanation": "指传统的计算工具算盘，常用于日本小学的算术教育或怀旧语境。可搭配「そろばんを弾く」表示打算盘。",
+    "example": {
+      "jp": "祖父は今でもそろばんを使います。",
+      "kana": "そふはいまでもそろばんをつかいます。",
+      "romaji": "sofu wa ima demo soroban o tsukaimasu.",
+      "zh": "祖父现在仍然使用算盘。"
+    }
+  },
+  "l42-w1700": {
+    "romaji": "taionkei",
+    "attributes": [],
+    "explanation": "指测量体温的体温计，常见搭配「体温計で熱を測る」。注意「体温」读「たいおん」，不读「たいおんけい」整体音变。",
+    "example": {
+      "jp": "風邪かもしれないので、体温計で熱を測りました。",
+      "kana": "かぜかもしれないので、たいおんけいでねつをはかりました。",
+      "romaji": "kaze kamoshirenai node, taionkei de netsu o hakarimashita.",
+      "zh": "可能感冒了，所以用体温计测了体温。"
+    }
+  },
+  "l42-w1701": {
+    "romaji": "zairyō",
+    "attributes": [],
+    "explanation": "指制作物品所用的原材料，也可用于抽象事物的素材。常搭配「材料を使う」「材料が足りない」。",
+    "example": {
+      "jp": "この料理は材料が少なくて簡単に作れます。",
+      "kana": "このりょうりはざいりょうがすくなくてかんたんにつくれます。",
+      "romaji": "kono ryōri wa zairyō ga sukunakute kantan ni tsukuremasu.",
+      "zh": "这道菜材料少，做起来很简单。"
+    }
+  },
+  "l42-w1706": {
+    "romaji": "aru~",
+    "attributes": [],
+    "explanation": "接在名词前表示不确定的某个事物，相当于中文的“某个……”。常用于故事或说明中，如「ある日」「ある人」。",
+    "example": {
+      "jp": "ある日、駅で昔の友達に会いました。",
+      "kana": "あるひ、えきでむかしのともだちにあいました。",
+      "romaji": "aru hi, eki de mukashi no tomodachi ni aimashita.",
+      "zh": "有一天，在车站遇到了老朋友。"
+    }
+  },
+  "l42-w1707": {
+    "romaji": "isshōkenmei",
+    "attributes": [],
+    "explanation": "表示竭尽全力、拼命努力的样子，可作副词或な形容词使用。常搭配「一生懸命働く」「一生懸命勉強する」。",
+    "example": {
+      "jp": "彼は毎日一生懸命日本語を勉強しています。",
+      "kana": "かれはまいにちいっしょうけんめいにほんごをべんきょうしています。",
+      "romaji": "kare wa mainichi isshōkenmei nihongo o benkyō shite imasu.",
+      "zh": "他每天拼命学习日语。"
+    }
+  },
+  "l42-w1708": {
+    "romaji": "naze",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "询问原因的疑问词，比「どうして」更书面或正式。常用于直接提问或句中的间接疑问。",
+    "example": {
+      "jp": "なぜ昨日の会議に出席しなかったのですか。",
+      "kana": "なぜきのうのかいぎにしゅっせきしなかったのですか。",
+      "romaji": "naze kinō no kaigi ni shusseki shinakatta no desu ka.",
+      "zh": "为什么没有出席昨天的会议？"
+    }
+  },
+  "l42-w1709": {
+    "romaji": "rōn",
+    "attributes": [],
+    "explanation": "指贷款、分期付款，常搭配「ローンを組む」「ローンで買う」。外来语，多用于购房、购车等经济语境。",
+    "example": {
+      "jp": "家を買うために銀行でローンを組みました。",
+      "kana": "いえをかうためにぎんこうでろーんをくみました。",
+      "romaji": "ie o kau tame ni ginkō de rōn o kumimashita.",
+      "zh": "为了买房在银行办了贷款。"
+    }
+  },
+  "l42-w1720": {
+    "romaji": "jōbu na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示结实、坚固、耐用，也可形容身体健康。修饰名词时加「な」，如「丈夫なかばん」。",
+    "example": {
+      "jp": "このかばんは丈夫なので、長く使えます。",
+      "kana": "このかばんはじょうぶなので、ながくつかえます。",
+      "romaji": "kono kaban wa jōbu na node, nagaku tsukaemasu.",
+      "zh": "这个包很结实，所以能长期使用。"
+    }
+  },
+  "l42-w1759": {
+    "romaji": "hanbun",
+    "attributes": [],
+    "explanation": "表示一半，可指数量、程度或时间的一半。常搭配「半分に分ける」「半分だけ食べる」。",
+    "example": {
+      "jp": "ケーキを半分に切って、二人で食べました。",
+      "kana": "けーきをはんぶんにきって、ふたりでたべました。",
+      "romaji": "kēki o hanbun ni kitte, futari de tabemashita.",
+      "zh": "把蛋糕切成两半，两个人吃了。"
+    }
+  },
+  "l42-w1923": {
+    "romaji": "shizen",
+    "attributes": [],
+    "explanation": "指自然、大自然，也可表示自然而然的状态。常搭配「自然が豊か」「自然に笑う」。",
+    "example": {
+      "jp": "この町は自然が豊かで、空気がきれいです。",
+      "kana": "このまちはしぜんがゆたかで、くうきがきれいです。",
+      "romaji": "kono machi wa shizen ga yutaka de, kūki ga kirei desu.",
+      "zh": "这个城镇自然资源丰富，空气清新。"
+    }
+  },
+  "l42-w5648": {
+    "romaji": "noshibukuro",
+    "attributes": [],
+    "explanation": "指用于装礼金、贺礼的装饰纸袋，常用于婚礼、中元节等场合。注意「のし」指礼签，「袋」读「ぶくろ」。",
+    "example": {
+      "jp": "結婚式の祝儀をのし袋に入れました。",
+      "kana": "けっこんしきのしゅうぎをのしぶくろにいれました。",
+      "romaji": "kekkonshiki no shūgi o noshibukuro ni iremashita.",
+      "zh": "把婚礼礼金装进了礼金袋。"
+    }
+  },
+  "l42-w5650": {
+    "romaji": "[bōnasu ga] demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示奖金等被发放、支出，主语是「ボーナス」等，用助词「が」。此义项为自动词，强调发放结果。",
+    "example": {
+      "jp": "夏にボーナスが出たら、旅行に行きたいです。",
+      "kana": "なつにぼーなすがでたら、りょこうにいきたいです。",
+      "romaji": "natsu ni bōnasu ga detara, ryokō ni ikitai desu.",
+      "zh": "如果夏天发奖金，我想去旅行。"
+    }
+  },
+  "l42-w939": {
+    "romaji": "seiji",
+    "attributes": [],
+    "explanation": "指政治活动或政治领域，常与「政治を行う」「政治に関わる」等搭配，属正式书面语，也可用于日常讨论社会话题。",
+    "example": {
+      "jp": "父は毎日政治のニュースを見ています。",
+      "kana": "ちちはまいにちせいじのにゅーすをみています。",
+      "romaji": "chichi wa mainichi seiji no nyuusu o mite imasu.",
+      "zh": "父亲每天看政治新闻。"
+    }
+  },
+  "l42-w981": {
+    "romaji": "apaato",
+    "attributes": [],
+    "explanation": "指供人居住的公寓楼，通常为木结构或轻钢结构的两层建筑，与「マンション」相比多指较旧或较便宜的住宅。",
+    "example": {
+      "jp": "駅の近くのアパートに住んでいます。",
+      "kana": "えきのちかくのあぱーとにすんでいます。",
+      "romaji": "eki no chikaku no apaato ni sunde imasu.",
+      "zh": "我住在车站附近的公寓。"
+    }
+  },
+  "l42-how-much": {
+    "romaji": "dono kurai",
+    "attributes": [],
+    "explanation": "询问程度、数量或时间长度，相当于“多少”“多久”，后接名词时可用「どのくらいの」。",
+    "example": {
+      "jp": "家から学校までどのくらいかかりますか。",
+      "kana": "いえからがっこうまでどのくらいかかりますか。",
+      "romaji": "ie kara gakkou made dono kurai kakarimasu ka.",
+      "zh": "从家到学校要花多长时间？"
+    }
+  },
+  "l42-un": {
+    "romaji": "kokuren",
+    "attributes": [],
+    "explanation": "「国際連合」的简称，指联合国这一国际组织，常与「国連に加盟する」「国連の会議」等搭配。",
+    "example": {
+      "jp": "日本は国連に加盟しています。",
+      "kana": "にほんはこくれんにさんかしています。",
+      "romaji": "nihon wa kokuren ni sanka shite imasu.",
+      "zh": "日本加入了联合国。"
+    }
+  },
+  "l42-elise": {
+    "romaji": "eriize no tame ni",
+    "attributes": [],
+    "explanation": "贝多芬作曲的钢琴曲《致爱丽丝》的日文名称，作为曲名使用，常与「弾く」「聞く」等动词搭配。",
+    "example": {
+      "jp": "妹はピアノで「エリーゼのために」を弾きました。",
+      "kana": "いもうとはぴあので「えりーぜのために」をひきました。",
+      "romaji": "imouto wa piano de \"eriize no tame ni\" o hikimashita.",
+      "zh": "妹妹用钢琴弹了《致爱丽丝》。"
+    }
+  },
+  "l42-beethoven": {
+    "romaji": "beetooben",
+    "attributes": [],
+    "explanation": "德国作曲家贝多芬的日文音译名，常作为音乐家名使用，可说「ベートーベンの曲」。",
+    "example": {
+      "jp": "ベートーベンは有名な作曲家です。",
+      "kana": "べーとーべんはゆうめいなさっきょくかです。",
+      "romaji": "beetooben wa yuumei na sakkyokuka desu.",
+      "zh": "贝多芬是有名的作曲家。"
+    }
+  },
+  "l42-kids-news": {
+    "romaji": "kodomo nyuusu",
+    "attributes": [],
+    "explanation": "指面向儿童播出的新闻节目或教材名称，常作为节目名使用，可加「を見る」表示观看。",
+    "example": {
+      "jp": "子どもと一緒に「こどもニュース」を見ました。",
+      "kana": "こどもといっしょに「こどもにゅーす」をみました。",
+      "romaji": "kodomo to issho ni \"kodomo nyuusu\" o mimashita.",
+      "zh": "我和孩子一起看了《儿童新闻》。"
+    }
+  },
+  "l42-chicken-ramen": {
+    "romaji": "chikin raamen",
+    "attributes": [],
+    "explanation": "日清食品推出的鸡汤味方便面商品名，作为专有名词使用，常与「食べる」「買う」等搭配。",
+    "example": {
+      "jp": "昼ご飯にチキンラーメンを食べました。",
+      "kana": "ひるごはんにちきんらーめんをたべました。",
+      "romaji": "hirugohan ni chikin raamen o tabemashita.",
+      "zh": "午饭我吃了鸡汤拉面。"
+    }
+  },
+  "l42-ando": {
+    "romaji": "andou momofuku",
+    "attributes": [],
+    "explanation": "安藤百福是方便面发明者、日清食品创始人，作为人名使用，常与「が発明した」等搭配。",
+    "example": {
+      "jp": "安藤百福はインスタントラーメンを発明しました。",
+      "kana": "あんどうももふくはいんすたんとらーめんをはつめいしました。",
+      "romaji": "andou momofuku wa insutanto raamen o hatsumei shimashita.",
+      "zh": "安藤百福发明了方便面。"
+    }
+  },
+  "l42-cup-noodles": {
+    "romaji": "kappu men",
+    "attributes": [],
+    "explanation": "指杯装方便面，一般写作「カップ麺」，常与「食べる」「お湯を入れる」等搭配。",
+    "example": {
+      "jp": "旅行にカップめんを持って行きます。",
+      "kana": "りょこうにかっぷめんをもっていきます。",
+      "romaji": "ryokou ni kappu men o motte ikimasu.",
+      "zh": "旅行时带杯装方便面去。"
+    }
+  },
+  "l42-world-first": {
+    "romaji": "sekai hatsu",
+    "attributes": [],
+    "explanation": "表示“世界首次”“世界首创”，常作名词或修饰语使用，如「世界初の技術」。",
+    "example": {
+      "jp": "これは世界初の技術です。",
+      "kana": "これはせかいはつのぎじゅつです。",
+      "romaji": "kore wa sekai hatsu no gijutsu desu.",
+      "zh": "这是世界首创的技术。"
+    }
+  },
+  "l42-by": {
+    "romaji": "~ ni yotte",
+    "attributes": [],
+    "explanation": "表示动作的主体或原因，常用于被动句或书面语，相当于“由……”“由于……”。",
+    "example": {
+      "jp": "この絵はピカソによって描かれました。",
+      "kana": "このえはぴかそによってかかれました。",
+      "romaji": "kono e wa pikaso ni yotte kakaremashita.",
+      "zh": "这幅画是由毕加索画的。"
+    }
+  },
+  "l42-bowl": {
+    "romaji": "donburi",
+    "attributes": [],
+    "explanation": "指盛饭菜的较深大碗，也常指盖饭。日常口语常用，如「牛丼のどんぶり」。注意与「おわん」（汤碗）区分。",
+    "example": {
+      "jp": "このどんぶりは大きいですね。",
+      "kana": "このどんぶりはおおきいですね。",
+      "romaji": "kono donburi wa ookii desu ne.",
+      "zh": "这个大碗真大啊。"
+    }
+  },
+  "l42-noodles": {
+    "romaji": "men",
+    "attributes": [],
+    "explanation": "泛指面条类食品，常用于「めん類」「そばめん」等复合词。口语中单独使用较少，多与种类词搭配。",
+    "example": {
+      "jp": "めんをゆでてから食べます。",
+      "kana": "めんをゆでてからたべます。",
+      "romaji": "men o yudete kara tabemasu.",
+      "zh": "把面条煮好后再吃。"
+    }
+  },
+  "l42-spread": {
+    "romaji": "hiromemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示使范围、影响或知名度扩大，如「販路を広める」「名を広める」。较正式，常用于商业、文化传播等语境。",
+    "example": {
+      "jp": "新しい商品を世界に広めます。",
+      "kana": "あたらしいしょうひんをせかいへひろめます。",
+      "romaji": "atarashii shouhin o sekai e hiromemasu.",
+      "zh": "把新产品推广到全世界。"
+    }
+  },
+  "l42-market-research": {
+    "romaji": "shijouchousa",
+    "attributes": [],
+    "explanation": "商业用语，指对市场状况、需求、竞争等进行的调查。常与「行う」「実施する」搭配。",
+    "example": {
+      "jp": "来月、市場調査を行います。",
+      "kana": "らいげつ、しじょうちょうさをおこないます。",
+      "romaji": "raigetsu, shijouchousa o okonaimasu.",
+      "zh": "下个月进行市场调查。"
+    }
+  },
+  "l42-break": {
+    "romaji": "warimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用力使物体分开或破碎，如「パンを割る」「皿を割る」。也可用于抽象事物，如「仲を割る」。",
+    "example": {
+      "jp": "パンを半分に割ります。",
+      "kana": "ぱんをはんぶんにわります。",
+      "romaji": "pan o hanbun ni warimasu.",
+      "zh": "把面包掰成两半。"
+    }
+  },
+  "l42-pour": {
+    "romaji": "sosogimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指将液体等倒入容器或注入某处，如「コップに水を注ぐ」。也用于抽象意义，如「力を注ぐ」。",
+    "example": {
+      "jp": "コップに水を注ぎます。",
+      "kana": "こっぷにみずをそそぎます。",
+      "romaji": "koppu ni mizu o sosogimasu.",
+      "zh": "往杯子里倒水。"
+    }
+  }
+}

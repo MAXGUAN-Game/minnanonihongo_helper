@@ -1,0 +1,150 @@
+{
+  "lessonId": 45,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/45.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 25,
+  "entries": [
+    {
+      "sourceId": "1217",
+      "sourceWord": "知らせます",
+      "key": "w1217"
+    },
+    {
+      "sourceId": "1775",
+      "sourceWord": "信じます",
+      "key": "w1775"
+    },
+    {
+      "sourceId": "1777",
+      "sourceWord": "キャンセルします",
+      "key": "w1777"
+    },
+    {
+      "sourceId": "1779",
+      "sourceWord": "保証書",
+      "key": "w1779"
+    },
+    {
+      "sourceId": "1780",
+      "sourceWord": "領収書",
+      "key": "w1780"
+    },
+    {
+      "sourceId": "1783",
+      "sourceWord": "キャンプ",
+      "key": "w1783"
+    },
+    {
+      "sourceId": "1785",
+      "sourceWord": "中止",
+      "key": "w1785"
+    },
+    {
+      "sourceId": "1786",
+      "sourceWord": "点",
+      "key": "w1786"
+    },
+    {
+      "sourceId": "1790",
+      "sourceWord": "急に",
+      "key": "w1790"
+    },
+    {
+      "sourceId": "1791",
+      "sourceWord": "楽しみにしています。",
+      "key": "w1791"
+    },
+    {
+      "sourceId": "1792",
+      "sourceWord": "以上です。",
+      "key": "w1792"
+    },
+    {
+      "sourceId": "1793",
+      "sourceWord": "係員",
+      "key": "w1793"
+    },
+    {
+      "sourceId": "1794",
+      "sourceWord": "コース",
+      "key": "w1794"
+    },
+    {
+      "sourceId": "1795",
+      "sourceWord": "スタート",
+      "key": "w1795"
+    },
+    {
+      "sourceId": "1796",
+      "sourceWord": "～位",
+      "key": "w1796"
+    },
+    {
+      "sourceId": "1797",
+      "sourceWord": "優勝します",
+      "key": "w1797"
+    },
+    {
+      "sourceId": "3201",
+      "sourceWord": "梅",
+      "key": "w3201"
+    },
+    {
+      "sourceId": "3449",
+      "sourceWord": "１１９番",
+      "key": "w3449"
+    },
+    {
+      "sourceId": "3450",
+      "sourceWord": "１１０番",
+      "key": "w3450"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1773",
+      "sourceWord": "謝ります",
+      "reason": "第二版已在第43课阅读词中列出。"
+    },
+    {
+      "sourceId": "1781",
+      "sourceWord": "贈り物",
+      "reason": "旧版赠礼主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1782",
+      "sourceWord": "間違い電話",
+      "reason": "旧版电话主题词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1784",
+      "sourceWord": "係り",
+      "reason": "第二版交叉表采用係員。"
+    },
+    {
+      "sourceId": "1788",
+      "sourceWord": "札",
+      "reason": "旧版纸币词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1789",
+      "sourceWord": "ちゃんと",
+      "reason": "旧版副词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "force",
+    "worry",
+    "alarm",
+    "wake",
+    "student",
+    "answer",
+    "ring",
+    "set",
+    "still"
+  ],
+  "finalCount": 28
+}

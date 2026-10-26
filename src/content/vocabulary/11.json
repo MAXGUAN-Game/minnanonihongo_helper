@@ -1,0 +1,456 @@
+{
+  "lessonId": 11,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/11.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源66条，排除4条旧版或跨课条目，合并同形同义项并补入第二来源，最终63条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/11.json。"
+  ],
+  "words": [
+    {
+      "key": "w1628",
+      "word": "クラス",
+      "reading": "くらす",
+      "partOfSpeech": "名词",
+      "meaning": "班级"
+    },
+    {
+      "key": "w20",
+      "word": "お願いします",
+      "reading": "おねがいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "拜托了"
+    },
+    {
+      "key": "w2509",
+      "word": "いってきます",
+      "reading": "いってきます",
+      "partOfSpeech": "固定表达",
+      "meaning": "我出门了"
+    },
+    {
+      "key": "w2592",
+      "word": "かしこまりました",
+      "reading": "かしこまりました",
+      "partOfSpeech": "固定表达",
+      "meaning": "明白了（郑重应答）"
+    },
+    {
+      "key": "w538",
+      "word": "［子どもが］います",
+      "reading": "［こどもが］います",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "有（孩子）"
+    },
+    {
+      "key": "w539",
+      "word": "［日本に］います",
+      "reading": "［にほんに］います",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "待在（日本）"
+    },
+    {
+      "key": "w540",
+      "word": "［お金が］かかります",
+      "reading": "［おかねが］かかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "花费（金钱）"
+    },
+    {
+      "key": "w54000",
+      "word": "［時間が］かかります",
+      "reading": "［じかんが］かかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "花费（时间）"
+    },
+    {
+      "key": "w541",
+      "word": "［会社を］休みます",
+      "reading": "［かいしゃを］やすみます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "请假（不上班）"
+    },
+    {
+      "key": "w542",
+      "word": "一つ",
+      "reading": "ひとつ",
+      "partOfSpeech": "名词",
+      "meaning": "一个"
+    },
+    {
+      "key": "w543",
+      "word": "二つ",
+      "reading": "ふたつ",
+      "partOfSpeech": "名词",
+      "meaning": "两个"
+    },
+    {
+      "key": "w544",
+      "word": "三つ",
+      "reading": "みっつ",
+      "partOfSpeech": "名词",
+      "meaning": "三个"
+    },
+    {
+      "key": "w545",
+      "word": "四つ",
+      "reading": "よっつ",
+      "partOfSpeech": "名词",
+      "meaning": "四个"
+    },
+    {
+      "key": "w546",
+      "word": "五つ",
+      "reading": "いつつ",
+      "partOfSpeech": "名词",
+      "meaning": "五个"
+    },
+    {
+      "key": "w547",
+      "word": "六つ",
+      "reading": "むっつ",
+      "partOfSpeech": "名词",
+      "meaning": "六个"
+    },
+    {
+      "key": "w548",
+      "word": "七つ",
+      "reading": "ななつ",
+      "partOfSpeech": "名词",
+      "meaning": "七个"
+    },
+    {
+      "key": "w549",
+      "word": "八つ",
+      "reading": "やっつ",
+      "partOfSpeech": "名词",
+      "meaning": "八个"
+    },
+    {
+      "key": "w550",
+      "word": "九つ",
+      "reading": "ここのつ",
+      "partOfSpeech": "名词",
+      "meaning": "九个"
+    },
+    {
+      "key": "w551",
+      "word": "十",
+      "reading": "とお",
+      "partOfSpeech": "名词",
+      "meaning": "十个"
+    },
+    {
+      "key": "w552",
+      "word": "いくつ",
+      "reading": "いくつ",
+      "partOfSpeech": "表达",
+      "meaning": "几个"
+    },
+    {
+      "key": "w553",
+      "word": "一人",
+      "reading": "ひとり",
+      "partOfSpeech": "名词",
+      "meaning": "一个人"
+    },
+    {
+      "key": "w554",
+      "word": "二人",
+      "reading": "ふたり",
+      "partOfSpeech": "名词",
+      "meaning": "两个人"
+    },
+    {
+      "key": "w555",
+      "word": "～人",
+      "reading": "～にん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……人（人数）"
+    },
+    {
+      "key": "w556",
+      "word": "～台",
+      "reading": "～だい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……台；辆（机器、车辆）"
+    },
+    {
+      "key": "w557",
+      "word": "～枚",
+      "reading": "～まい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……张；片（薄平物品）"
+    },
+    {
+      "key": "w558",
+      "word": "～回",
+      "reading": "～かい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……次"
+    },
+    {
+      "key": "w559",
+      "word": "りんご",
+      "reading": "りんご",
+      "partOfSpeech": "名词",
+      "meaning": "苹果"
+    },
+    {
+      "key": "w560",
+      "word": "みかん",
+      "reading": "みかん",
+      "partOfSpeech": "名词",
+      "meaning": "橘子"
+    },
+    {
+      "key": "w561",
+      "word": "サンドイッチ",
+      "reading": "さんどいっち",
+      "partOfSpeech": "名词",
+      "meaning": "三明治"
+    },
+    {
+      "key": "w562",
+      "word": "カレーライス",
+      "reading": "かれーらいす",
+      "partOfSpeech": "名词",
+      "meaning": "咖喱饭"
+    },
+    {
+      "key": "w563",
+      "word": "アイスクリーム",
+      "reading": "あいすくりーむ",
+      "partOfSpeech": "名词",
+      "meaning": "冰淇淋"
+    },
+    {
+      "key": "w564",
+      "word": "切手",
+      "reading": "きって",
+      "partOfSpeech": "名词",
+      "meaning": "邮票"
+    },
+    {
+      "key": "w565",
+      "word": "葉書",
+      "reading": "はがき",
+      "partOfSpeech": "名词",
+      "meaning": "明信片"
+    },
+    {
+      "key": "w566",
+      "word": "封筒",
+      "reading": "ふうとう",
+      "partOfSpeech": "名词",
+      "meaning": "信封"
+    },
+    {
+      "key": "w569",
+      "word": "エアメール",
+      "reading": "えあめーる",
+      "partOfSpeech": "名词",
+      "meaning": "航空邮件"
+    },
+    {
+      "key": "w570",
+      "word": "航空便",
+      "reading": "こうくうびん",
+      "partOfSpeech": "名词",
+      "meaning": "航空邮件"
+    },
+    {
+      "key": "w571",
+      "word": "船便",
+      "reading": "ふなびん",
+      "partOfSpeech": "名词",
+      "meaning": "海运邮件"
+    },
+    {
+      "key": "w572",
+      "word": "両親",
+      "reading": "りょうしん",
+      "partOfSpeech": "名词",
+      "meaning": "父母"
+    },
+    {
+      "key": "w573",
+      "word": "兄弟",
+      "reading": "きょうだい",
+      "partOfSpeech": "名词",
+      "meaning": "兄弟姐妹"
+    },
+    {
+      "key": "w574",
+      "word": "兄",
+      "reading": "あに",
+      "partOfSpeech": "名词",
+      "meaning": "自己的哥哥"
+    },
+    {
+      "key": "w575",
+      "word": "お兄さん",
+      "reading": "おにいさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的哥哥；哥哥"
+    },
+    {
+      "key": "w576",
+      "word": "姉",
+      "reading": "あね",
+      "partOfSpeech": "名词",
+      "meaning": "自己的姐姐"
+    },
+    {
+      "key": "w577",
+      "word": "お姉さん",
+      "reading": "おねえさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的姐姐；姐姐"
+    },
+    {
+      "key": "w578",
+      "word": "弟",
+      "reading": "おとうと",
+      "partOfSpeech": "名词",
+      "meaning": "自己的弟弟"
+    },
+    {
+      "key": "w579",
+      "word": "弟さん",
+      "reading": "おとうとさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的弟弟"
+    },
+    {
+      "key": "w580",
+      "word": "妹",
+      "reading": "いもうと",
+      "partOfSpeech": "名词",
+      "meaning": "自己的妹妹"
+    },
+    {
+      "key": "w581",
+      "word": "妹さん",
+      "reading": "いもうとさん",
+      "partOfSpeech": "名词",
+      "meaning": "别人的妹妹"
+    },
+    {
+      "key": "w582",
+      "word": "外国",
+      "reading": "がいこく",
+      "partOfSpeech": "名词",
+      "meaning": "外国"
+    },
+    {
+      "key": "w583",
+      "word": "～時間",
+      "reading": "～じかん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……小时"
+    },
+    {
+      "key": "w584",
+      "word": "～週間",
+      "reading": "～しゅうかん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……星期"
+    },
+    {
+      "key": "w585",
+      "word": "～か月",
+      "reading": "～かげつ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……个月"
+    },
+    {
+      "key": "w586",
+      "word": "～年",
+      "reading": "～ねん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……年"
+    },
+    {
+      "key": "w587",
+      "word": "～ぐらい",
+      "reading": "～ぐらい",
+      "partOfSpeech": "表达",
+      "meaning": "大约……"
+    },
+    {
+      "key": "w588",
+      "word": "どのくらい",
+      "reading": "どのくらい",
+      "partOfSpeech": "名词",
+      "meaning": "多久；多少"
+    },
+    {
+      "key": "w589",
+      "word": "全部で",
+      "reading": "ぜんぶで",
+      "partOfSpeech": "表达",
+      "meaning": "总共"
+    },
+    {
+      "key": "w590",
+      "word": "みんな",
+      "reading": "みんな",
+      "partOfSpeech": "表达",
+      "meaning": "全部；大家"
+    },
+    {
+      "key": "w591",
+      "word": "～だけ",
+      "reading": "～だけ",
+      "partOfSpeech": "表达",
+      "meaning": "只有……"
+    },
+    {
+      "key": "w593",
+      "word": "いい（お）天気ですね",
+      "reading": "いい（お）てんきですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "天气真好啊"
+    },
+    {
+      "key": "w594",
+      "word": "お出かけですか",
+      "reading": "おでかけですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "要出门吗"
+    },
+    {
+      "key": "w595",
+      "word": "ちょっと～まで",
+      "reading": "ちょっと～まで",
+      "partOfSpeech": "固定表达",
+      "meaning": "我去一下……"
+    },
+    {
+      "key": "w596",
+      "word": "いっていらっしゃい",
+      "reading": "いっていらっしゃい",
+      "partOfSpeech": "固定表达",
+      "meaning": "路上小心（送人出门）"
+    },
+    {
+      "key": "w787",
+      "word": "留学生",
+      "reading": "りゅうがくせい",
+      "partOfSpeech": "名词",
+      "meaning": "留学生"
+    },
+    {
+      "key": "australia",
+      "word": "オーストラリア",
+      "reading": "おーすとらりあ",
+      "partOfSpeech": "专有名词",
+      "meaning": "澳大利亚"
+    }
+  ]
+}

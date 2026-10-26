@@ -1,0 +1,407 @@
+{
+  "lessonId": 12,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/12.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源52条，排除2条旧版或跨课条目，合并同形同义项并补入第二来源，最终56条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/12.json。"
+  ],
+  "words": [
+    {
+      "key": "w2158",
+      "word": "レモン",
+      "reading": "れもん",
+      "partOfSpeech": "名词",
+      "meaning": "柠檬"
+    },
+    {
+      "key": "w294",
+      "word": "牛肉",
+      "reading": "ぎゅうにく",
+      "partOfSpeech": "名词",
+      "meaning": "牛肉"
+    },
+    {
+      "key": "w295",
+      "word": "豚肉",
+      "reading": "ぶたにく",
+      "partOfSpeech": "名词",
+      "meaning": "猪肉"
+    },
+    {
+      "key": "w296",
+      "word": "鶏肉",
+      "reading": "とりにく",
+      "partOfSpeech": "名词",
+      "meaning": "鸡肉"
+    },
+    {
+      "key": "w532",
+      "word": "一番",
+      "reading": "いちばん",
+      "partOfSpeech": "名词",
+      "meaning": "最"
+    },
+    {
+      "key": "w599",
+      "word": "簡単な",
+      "reading": "かんたんな",
+      "partOfSpeech": "な形容词",
+      "meaning": "简单的"
+    },
+    {
+      "key": "w600",
+      "word": "近い",
+      "reading": "ちかい",
+      "partOfSpeech": "い形容词",
+      "meaning": "近的"
+    },
+    {
+      "key": "w601",
+      "word": "遠い",
+      "reading": "とおい",
+      "partOfSpeech": "い形容词",
+      "meaning": "远的"
+    },
+    {
+      "key": "w602",
+      "word": "早い",
+      "reading": "はやい",
+      "partOfSpeech": "い形容词",
+      "meaning": "早的"
+    },
+    {
+      "key": "w603",
+      "word": "遅い",
+      "reading": "おそい",
+      "partOfSpeech": "い形容词",
+      "meaning": "慢的；晚的"
+    },
+    {
+      "key": "w605",
+      "word": "速い",
+      "reading": "はやい",
+      "partOfSpeech": "い形容词",
+      "meaning": "快的"
+    },
+    {
+      "key": "w606",
+      "word": "多い",
+      "reading": "おおい",
+      "partOfSpeech": "い形容词",
+      "meaning": "多的"
+    },
+    {
+      "key": "w607",
+      "word": "少ない",
+      "reading": "すくない",
+      "partOfSpeech": "い形容词",
+      "meaning": "少的"
+    },
+    {
+      "key": "w608",
+      "word": "温かい",
+      "reading": "あたたかい",
+      "partOfSpeech": "い形容词",
+      "meaning": "温热的（物体）"
+    },
+    {
+      "key": "w609",
+      "word": "暖かい",
+      "reading": "あたたかい",
+      "partOfSpeech": "い形容词",
+      "meaning": "暖和的（天气）"
+    },
+    {
+      "key": "w610",
+      "word": "涼しい",
+      "reading": "すずしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "凉爽的"
+    },
+    {
+      "key": "w611",
+      "word": "甘い",
+      "reading": "あまい",
+      "partOfSpeech": "い形容词",
+      "meaning": "甜的"
+    },
+    {
+      "key": "w612",
+      "word": "辛い",
+      "reading": "からい",
+      "partOfSpeech": "い形容词",
+      "meaning": "辣的"
+    },
+    {
+      "key": "w613",
+      "word": "重い",
+      "reading": "おもい",
+      "partOfSpeech": "い形容词",
+      "meaning": "重的"
+    },
+    {
+      "key": "w614",
+      "word": "軽い",
+      "reading": "かるい",
+      "partOfSpeech": "い形容词",
+      "meaning": "轻的"
+    },
+    {
+      "key": "w615",
+      "word": "［コーヒーが］いい",
+      "reading": "［こーひーが］いい",
+      "partOfSpeech": "い形容词",
+      "meaning": "更想要（咖啡）"
+    },
+    {
+      "key": "w616",
+      "word": "季節",
+      "reading": "きせつ",
+      "partOfSpeech": "名词",
+      "meaning": "季节"
+    },
+    {
+      "key": "w617",
+      "word": "春",
+      "reading": "はる",
+      "partOfSpeech": "名词",
+      "meaning": "春天"
+    },
+    {
+      "key": "w618",
+      "word": "夏",
+      "reading": "なつ",
+      "partOfSpeech": "名词",
+      "meaning": "夏天"
+    },
+    {
+      "key": "w619",
+      "word": "秋",
+      "reading": "あき",
+      "partOfSpeech": "名词",
+      "meaning": "秋天"
+    },
+    {
+      "key": "w620",
+      "word": "冬",
+      "reading": "ふゆ",
+      "partOfSpeech": "名词",
+      "meaning": "冬天"
+    },
+    {
+      "key": "w621",
+      "word": "天気",
+      "reading": "てんき",
+      "partOfSpeech": "名词",
+      "meaning": "天气"
+    },
+    {
+      "key": "w622",
+      "word": "雨",
+      "reading": "あめ",
+      "partOfSpeech": "名词",
+      "meaning": "雨"
+    },
+    {
+      "key": "w623",
+      "word": "雪",
+      "reading": "ゆき",
+      "partOfSpeech": "名词",
+      "meaning": "雪"
+    },
+    {
+      "key": "w624",
+      "word": "曇り",
+      "reading": "くもり",
+      "partOfSpeech": "名词",
+      "meaning": "阴天"
+    },
+    {
+      "key": "w625",
+      "word": "ホテル",
+      "reading": "ほてる",
+      "partOfSpeech": "名词",
+      "meaning": "酒店"
+    },
+    {
+      "key": "w626",
+      "word": "空港",
+      "reading": "くうこう",
+      "partOfSpeech": "名词",
+      "meaning": "机场"
+    },
+    {
+      "key": "w627",
+      "word": "海",
+      "reading": "うみ",
+      "partOfSpeech": "名词",
+      "meaning": "海"
+    },
+    {
+      "key": "w628",
+      "word": "世界",
+      "reading": "せかい",
+      "partOfSpeech": "名词",
+      "meaning": "世界"
+    },
+    {
+      "key": "w629",
+      "word": "パーティー",
+      "reading": "ぱーてぃー",
+      "partOfSpeech": "名词",
+      "meaning": "聚会"
+    },
+    {
+      "key": "w630",
+      "word": "（お）祭り",
+      "reading": "（お）まつり",
+      "partOfSpeech": "名词",
+      "meaning": "节日；祭典"
+    },
+    {
+      "key": "w632",
+      "word": "すき焼き",
+      "reading": "すきやき",
+      "partOfSpeech": "名词",
+      "meaning": "寿喜烧"
+    },
+    {
+      "key": "w633",
+      "word": "刺身",
+      "reading": "さしみ",
+      "partOfSpeech": "名词",
+      "meaning": "生鱼片"
+    },
+    {
+      "key": "w634",
+      "word": "寿司",
+      "reading": "すし",
+      "partOfSpeech": "名词",
+      "meaning": "寿司"
+    },
+    {
+      "key": "w635",
+      "word": "天ぷら",
+      "reading": "てんぷら",
+      "partOfSpeech": "名词",
+      "meaning": "天妇罗"
+    },
+    {
+      "key": "w636",
+      "word": "生け花",
+      "reading": "いけばな",
+      "partOfSpeech": "名词",
+      "meaning": "插花"
+    },
+    {
+      "key": "w638",
+      "word": "どちら",
+      "reading": "どちら",
+      "partOfSpeech": "名词",
+      "meaning": "哪一个（两者之间）"
+    },
+    {
+      "key": "w639",
+      "word": "どちらも",
+      "reading": "どちらも",
+      "partOfSpeech": "表达",
+      "meaning": "两个都"
+    },
+    {
+      "key": "w640",
+      "word": "ずっと",
+      "reading": "ずっと",
+      "partOfSpeech": "副词",
+      "meaning": "……得多（比较）"
+    },
+    {
+      "key": "w641",
+      "word": "初めて",
+      "reading": "はじめて",
+      "partOfSpeech": "副词",
+      "meaning": "第一次"
+    },
+    {
+      "key": "w642",
+      "word": "ただいま",
+      "reading": "ただいま",
+      "partOfSpeech": "固定表达",
+      "meaning": "我回来了"
+    },
+    {
+      "key": "w643",
+      "word": "お帰りなさい",
+      "reading": "おかえりなさい",
+      "partOfSpeech": "固定表达",
+      "meaning": "欢迎回来"
+    },
+    {
+      "key": "w645",
+      "word": "でも",
+      "reading": "でも",
+      "partOfSpeech": "表达",
+      "meaning": "但是"
+    },
+    {
+      "key": "w646",
+      "word": "疲れました",
+      "reading": "つかれました",
+      "partOfSpeech": "固定表达",
+      "meaning": "累了"
+    },
+    {
+      "key": "tea",
+      "word": "紅茶",
+      "reading": "こうちゃ",
+      "partOfSpeech": "名词",
+      "meaning": "红茶"
+    },
+    {
+      "key": "crowded",
+      "word": "わあ、すごい人ですね",
+      "reading": "わあ、すごいひとですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "哇，人真多啊"
+    },
+    {
+      "key": "gion",
+      "word": "祇園祭",
+      "reading": "ぎおんまつり",
+      "partOfSpeech": "专有名词",
+      "meaning": "祇园祭"
+    },
+    {
+      "key": "hongkong",
+      "word": "香港",
+      "reading": "ほんこん",
+      "partOfSpeech": "专有名词",
+      "meaning": "香港"
+    },
+    {
+      "key": "singapore",
+      "word": "シンガポール",
+      "reading": "しんがぽーる",
+      "partOfSpeech": "专有名词",
+      "meaning": "新加坡"
+    },
+    {
+      "key": "abc-store",
+      "word": "ABCストア",
+      "reading": "えーびーしーすとあ",
+      "partOfSpeech": "专有名词",
+      "meaning": "ABC商店（教材店名）"
+    },
+    {
+      "key": "japan-store",
+      "word": "ジャパン",
+      "reading": "じゃぱん",
+      "partOfSpeech": "专有名词",
+      "meaning": "Japan（教材商店名）"
+    }
+  ]
+}

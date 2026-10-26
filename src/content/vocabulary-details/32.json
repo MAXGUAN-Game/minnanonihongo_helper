@@ -1,0 +1,680 @@
+{
+  "l32-w1173": {
+    "romaji": "komimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示道路、交通等变得拥挤。常用「道が込む」「込んでいる」等形式，描述高峰时段或人多车多的状态。",
+    "example": {
+      "jp": "朝の電車はとても込みます。",
+      "kana": "あさのでんしゃはとてもこみます。",
+      "romaji": "asa no densha wa totemo komimasu.",
+      "zh": "早上的电车非常拥挤。"
+    }
+  },
+  "l32-w1174": {
+    "romaji": "sukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示道路、场所等变得空旷、不拥挤。与「込む」相对，常用于描述交通状况好转或人少的状态。",
+    "example": {
+      "jp": "夕方になると道がすきます。",
+      "kana": "ゆうがたになるとみちがすきます。",
+      "romaji": "yuugata ni naru to michi ga sukimasu.",
+      "zh": "到了傍晚道路就空下来了。"
+    }
+  },
+  "l32-w1281": {
+    "romaji": "undou shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示进行体育运动或身体活动。常与「毎日」「公園で」等搭配，也可说「運動をする」。",
+    "example": {
+      "jp": "健康のために毎日運動します。",
+      "kana": "けんこうのためにまいにちうんどうします。",
+      "romaji": "kenkou no tame ni mainichi undou shimasu.",
+      "zh": "为了健康每天运动。"
+    }
+  },
+  "l32-w1282": {
+    "romaji": "seikou shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示事情达成预期结果、获得成功。可用于事业、考试、实验等，常与「事業に」「試験に」等搭配。",
+    "example": {
+      "jp": "彼は新しい事業に成功しました。",
+      "kana": "かれはあたらしいじぎょうにせいこうしました。",
+      "romaji": "kare wa atarashii jigyou ni seikou shimashita.",
+      "zh": "他的新事业成功了。"
+    }
+  },
+  "l32-w1283": {
+    "romaji": "shippai shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示尝试某事但没有成功。常与「試験に」「料理に」等搭配，注意助词用「に」。",
+    "example": {
+      "jp": "試験に失敗しても、また頑張ります。",
+      "kana": "しけんにしっぱいしても、またがんばります。",
+      "romaji": "shiken ni shippai shite mo, mata ganbarimasu.",
+      "zh": "即使考试失败，也会再努力。"
+    }
+  },
+  "l32-w1285": {
+    "romaji": "goukaku shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示通过考试、审查等。常与「試験に」「大学に」搭配，强调达到合格标准。",
+    "example": {
+      "jp": "兄は大学に合格しました。",
+      "kana": "あにはだいがくにごうかくしました。",
+      "romaji": "ani wa daigaku ni goukaku shimashita.",
+      "zh": "哥哥考上大学了。"
+    }
+  },
+  "l32-w1287": {
+    "romaji": "yamimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示雨、雪等自然现象停止。主语用「雨が」「雪が」，不能用于人为停止。",
+    "example": {
+      "jp": "雨がやんだら、出かけましょう。",
+      "kana": "あめがやんだら、でかけましょう。",
+      "romaji": "ame ga yandara, dekakemashou.",
+      "zh": "雨停了就出门吧。"
+    }
+  },
+  "l32-w1288": {
+    "romaji": "haremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示天气转晴、云散日出。常用于天气预报或日常对话，与「曇る」相对。",
+    "example": {
+      "jp": "明日は晴れるでしょう。",
+      "kana": "あしたははれるでしょう。",
+      "romaji": "ashita wa hareru deshou.",
+      "zh": "明天会放晴吧。"
+    }
+  },
+  "l32-w1289": {
+    "romaji": "kumorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示天空布满云、天气变阴。常用「曇っている」描述阴天的状态。",
+    "example": {
+      "jp": "午後から曇ってきました。",
+      "kana": "ごごからくもってきました。",
+      "romaji": "gogo kara kumotte kimashita.",
+      "zh": "下午开始阴天了。"
+    }
+  },
+  "l32-w1293": {
+    "romaji": "tsuzukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示某种状态或现象持续不断。可用于发烧、雨、会议等，常与「熱が」「雨が」搭配。",
+    "example": {
+      "jp": "熱が三日も続いています。",
+      "kana": "ねつがみっかもつづいています。",
+      "romaji": "netsu ga mikka mo tsuzuite imasu.",
+      "zh": "发烧已经持续三天了。"
+    }
+  },
+  "l32-w1294": {
+    "romaji": "hikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "固定搭配「風邪をひく」，表示患感冒。注意助词用「を」，不能直译成“引感冒”。",
+    "example": {
+      "jp": "寒いので、風邪をひきました。",
+      "kana": "さむいので、かぜをひきました。",
+      "romaji": "samui node, kaze o hikimashita.",
+      "zh": "因为冷，感冒了。"
+    }
+  },
+  "l32-w1295": {
+    "romaji": "hiyashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示使某物变冷、冷却。可用于饮料、身体部位等，如「ビールを冷やす」「頭を冷やす」。",
+    "example": {
+      "jp": "ビールを冷やしておきます。",
+      "kana": "びーるをひやしておきます。",
+      "romaji": "biiru o hiyashite okimasu.",
+      "zh": "先把啤酒冰上。"
+    }
+  },
+  "l32-w1297": {
+    "romaji": "juubun na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示数量或程度足够、充分，常修饰名词或作谓语。注意与「十分」（じゅうぶん）副词用法区分，な形容词需接な修饰名词。",
+    "example": {
+      "jp": "十分な時間があります。",
+      "kana": "じゅうぶんなじかんがあります。",
+      "romaji": "juubun na jikan ga arimasu.",
+      "zh": "有充足的时间。"
+    }
+  },
+  "l32-w1298": {
+    "romaji": "okashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示奇怪、不正常，常用于觉得某事不对劲或滑稽。口语中也可表示“可笑、滑稽”，需根据上下文判断。",
+    "example": {
+      "jp": "この機械は可笑しい音がする。",
+      "kana": "このきかいはおかしいおとがする。",
+      "romaji": "kono kikai wa okashii oto ga suru.",
+      "zh": "这台机器发出奇怪的声音。"
+    }
+  },
+  "l32-w1299": {
+    "romaji": "urusai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示声音嘈杂、吵闹，也可形容人啰嗦、烦人。口语中常用来抱怨环境或他人。",
+    "example": {
+      "jp": "隣の部屋がうるさいです。",
+      "kana": "となりのへやがうるさいです。",
+      "romaji": "tonari no heya ga urusai desu.",
+      "zh": "隔壁房间很吵。"
+    }
+  },
+  "l32-w1300": {
+    "romaji": "yakedo",
+    "attributes": [],
+    "explanation": "指被火、热水等烫伤或烧伤。常与「する」搭配表示受伤，如「やけどをする」。",
+    "example": {
+      "jp": "料理中にやけどをしました。",
+      "kana": "りょうりちゅうにやけどをしました。",
+      "romaji": "ryouri chuu ni yakedo o shimashita.",
+      "zh": "做饭时烫伤了。"
+    }
+  },
+  "l32-w1301": {
+    "romaji": "kega",
+    "attributes": [],
+    "explanation": "指受伤、外伤，多用于意外事故造成的伤。常与「する」搭配，如「怪我をする」。",
+    "example": {
+      "jp": "サッカーで足に怪我をした。",
+      "kana": "さっかーであしにけがをした。",
+      "romaji": "sakkaa de ashi ni kega o shita.",
+      "zh": "踢足球时脚受伤了。"
+    }
+  },
+  "l32-w1302": {
+    "romaji": "seki",
+    "attributes": [],
+    "explanation": "指咳嗽的症状或动作。常与「出る」「する」搭配，如「咳が出る」「咳をする」。",
+    "example": {
+      "jp": "風邪で咳が止まりません。",
+      "kana": "かぜでせきがとまりません。",
+      "romaji": "kaze de seki ga tomarimasen.",
+      "zh": "因为感冒咳嗽不止。"
+    }
+  },
+  "l32-w1303": {
+    "romaji": "infuruenza",
+    "attributes": [],
+    "explanation": "指流行性感冒，常与「かかる」「罹る」搭配表示患流感。外来语，注意发音。",
+    "example": {
+      "jp": "去年インフルエンザにかかりました。",
+      "kana": "きょねんいんふるえんざにかかりました。",
+      "romaji": "kyonen infuruenza ni kakarimashita.",
+      "zh": "去年得了流感。"
+    }
+  },
+  "l32-w1304": {
+    "romaji": "sora",
+    "attributes": [],
+    "explanation": "指天空，日常用语。常与「青い」「晴れる」等搭配描述天气。",
+    "example": {
+      "jp": "今日は空が青いですね。",
+      "kana": "きょうはそらがあおいですね。",
+      "romaji": "kyou wa sora ga aoi desu ne.",
+      "zh": "今天天空很蓝啊。"
+    }
+  },
+  "l32-w1305": {
+    "romaji": "taiyou",
+    "attributes": [],
+    "explanation": "指太阳，较正式或书面语。常与「昇る」「沈む」等动词搭配。",
+    "example": {
+      "jp": "太陽が東から昇る。",
+      "kana": "たいようがひがしからのぼる。",
+      "romaji": "taiyou ga higashi kara noboru.",
+      "zh": "太阳从东方升起。"
+    }
+  },
+  "l32-w1306": {
+    "romaji": "hoshi",
+    "attributes": [],
+    "explanation": "指星星，也泛指天体。常与「見える」「光る」等搭配。",
+    "example": {
+      "jp": "夜、星がたくさん見えます。",
+      "kana": "よる、ほしがたくさんみえます。",
+      "romaji": "yoru, hoshi ga takusan miemasu.",
+      "zh": "晚上能看到很多星星。"
+    }
+  },
+  "l32-w1308": {
+    "romaji": "kaze",
+    "attributes": [],
+    "explanation": "指风，自然现象。常与「吹く」「強い」「弱い」等搭配。注意与「風邪」（感冒）同音但汉字不同。",
+    "example": {
+      "jp": "今日は風が強いです。",
+      "kana": "きょうはかぜがつよいです。",
+      "romaji": "kyou wa kaze ga tsuyoi desu.",
+      "zh": "今天风很大。"
+    }
+  },
+  "l32-w1309": {
+    "romaji": "kita",
+    "attributes": [],
+    "explanation": "指北方、北边。常与「向かう」「行く」等搭配表示方向。",
+    "example": {
+      "jp": "北の空に星が見える。",
+      "kana": "きたのそらにほしがみえる。",
+      "romaji": "kita no sora ni hoshi ga mieru.",
+      "zh": "北方的天空能看到星星。"
+    }
+  },
+  "l32-w1310": {
+    "romaji": "minami",
+    "attributes": [],
+    "explanation": "表示方向或方位的“南”，可单独使用，也常构成复合词如「南口」。与「北」相对，注意与「南方」语感略有不同，更日常。",
+    "example": {
+      "jp": "南の空に月が見える。",
+      "kana": "みなみのそらにつきがみえる。",
+      "romaji": "minami no sora ni tsuki ga mieru.",
+      "zh": "南边的天空能看到月亮。"
+    }
+  },
+  "l32-w1311": {
+    "romaji": "nishi",
+    "attributes": [],
+    "explanation": "表示方向或方位的“西”，可单独使用，也常构成复合词如「西口」。与「東」相对，日常会话中常用。",
+    "example": {
+      "jp": "西の空が赤くなった。",
+      "kana": "にしのそらがあかくなった。",
+      "romaji": "nishi no sora ga akaku natta.",
+      "zh": "西边的天空变红了。"
+    }
+  },
+  "l32-w1312": {
+    "romaji": "higashi",
+    "attributes": [],
+    "explanation": "表示方向或方位的“东”，可单独使用，也常构成复合词如「東口」。与「西」相对，日常会话中常用。",
+    "example": {
+      "jp": "東の空が明るくなってきた。",
+      "kana": "ひがしのそらがあかるくなってきた。",
+      "romaji": "higashi no sora ga akaruku natte kita.",
+      "zh": "东边的天空亮起来了。"
+    }
+  },
+  "l32-w1313": {
+    "romaji": "suidou",
+    "attributes": [],
+    "explanation": "指自来水或自来水管道系统，常与「水道代」「水道水」等搭配。注意不是“下水道”，下水道是「下水道」。",
+    "example": {
+      "jp": "水道の水はそのまま飲めますか。",
+      "kana": "すいどうのみずはそのままのめますか。",
+      "romaji": "suidou no mizu wa sono mama nomemasu ka.",
+      "zh": "自来水可以直接喝吗？"
+    }
+  },
+  "l32-w1314": {
+    "romaji": "enjin",
+    "attributes": [],
+    "explanation": "外来语，指发动机、引擎，常用于汽车、飞机等。与「モーター」相比，更强调内燃机等动力装置。",
+    "example": {
+      "jp": "エンジンがなかなかかからない。",
+      "kana": "えんじんがなかなかかからない。",
+      "romaji": "enjin ga nakanaka kakaranai.",
+      "zh": "发动机怎么也发动不起来。"
+    }
+  },
+  "l32-w1316": {
+    "romaji": "kon'ya",
+    "attributes": [],
+    "explanation": "指“今晚”，比「今晩」稍正式或书面，常用于天气预报、通知等。注意与「今夜中」等搭配。",
+    "example": {
+      "jp": "今夜は星がよく見える。",
+      "kana": "こんやはほしがよくみえる。",
+      "romaji": "kon'ya wa hoshi ga yoku mieru.",
+      "zh": "今晚星星看得很清楚。"
+    }
+  },
+  "l32-w1317": {
+    "romaji": "yuugata",
+    "attributes": [],
+    "explanation": "指傍晚、黄昏时分，大致日落前后。比「夕方」更具体的时间段，常与「～に」搭配表示时间。",
+    "example": {
+      "jp": "夕方から雨が降り出した。",
+      "kana": "ゆうがたからあめがふりだした。",
+      "romaji": "yuugata kara ame ga furidashita.",
+      "zh": "傍晚开始下雨了。"
+    }
+  },
+  "l32-w1318": {
+    "romaji": "mae",
+    "attributes": [],
+    "explanation": "表示“以前、之前”，可指时间或顺序上的前面。常与「～のまえに」搭配，也可单独使用表示过去。",
+    "example": {
+      "jp": "まえにここに来たことがあります。",
+      "kana": "まえにここにきたことがあります。",
+      "romaji": "mae ni koko ni kita koto ga arimasu.",
+      "zh": "我以前来过这里。"
+    }
+  },
+  "l32-w1319": {
+    "romaji": "osoku",
+    "attributes": [],
+    "explanation": "形容词「遅い」的连用形，表示“很晚地”，常修饰动词如「遅く帰る」「遅くまで起きる」。注意不是“慢”，而是时间晚。",
+    "example": {
+      "jp": "昨夜は遅くまで起きていた。",
+      "kana": "ゆうべはおそくまでおきていた。",
+      "romaji": "yuube wa osoku made okite ita.",
+      "zh": "昨晚一直熬到很晚。"
+    }
+  },
+  "l32-w1320": {
+    "romaji": "konnani",
+    "attributes": [],
+    "explanation": "表示“这么、如此”，指代说话人自身附近或当前程度，常带感叹语气。与「そんなに」「あんなに」形成系列。",
+    "example": {
+      "jp": "こんなに寒い日は初めてだ。",
+      "kana": "こんなにさむいひははじめてだ。",
+      "romaji": "konnani samui hi wa hajimete da.",
+      "zh": "这么冷的日子还是第一次。"
+    }
+  },
+  "l32-w1321": {
+    "romaji": "sonnani",
+    "attributes": [],
+    "explanation": "表示“那么、那样地”，指代听话人附近或对方提到的情况，常用于否定或疑问句。与「こんなに」「あんなに」形成系列。",
+    "example": {
+      "jp": "そんなに心配しなくても大丈夫だ。",
+      "kana": "そんなにしんぱいしなくてもだいじょうぶだ。",
+      "romaji": "sonnani shinpai shinakute mo daijoubu da.",
+      "zh": "不用那么担心也没关系。"
+    }
+  },
+  "l32-w1322": {
+    "romaji": "annani",
+    "attributes": [],
+    "explanation": "表示“那么、那样地”，指代远离说话人和听话人的事物或过去的情况，常带回忆或感叹语气。与「こんなに」「そんなに」形成系列。",
+    "example": {
+      "jp": "あんなに練習したのに、試合に負けた。",
+      "kana": "あんなにれんしゅうしたのに、しあいにまけた。",
+      "romaji": "annani renshuu shita noni, shiai ni maketa.",
+      "zh": "明明那么练习了，比赛还是输了。"
+    }
+  },
+  "l32-w1324": {
+    "romaji": "sore wa ikemasen ne",
+    "attributes": [],
+    "explanation": "固定表达，用于听到对方不好的情况时表示同情或关切，相当于“那可不好办啊”“那真糟糕”。不能用于自己身上。",
+    "example": {
+      "jp": "それはいけませんね。お大事に。",
+      "kana": "それはいけませんね。おだいじに。",
+      "romaji": "sore wa ikemasen ne. o daiji ni.",
+      "zh": "那可不行啊。请保重。"
+    }
+  },
+  "l32-w1325": {
+    "romaji": "genki",
+    "attributes": [],
+    "explanation": "名词，表示身体或精神上的活力、健康状态。常用「元気がある」「元気がない」「お元気ですか」等搭配。",
+    "example": {
+      "jp": "最近元気がありませんね。",
+      "kana": "さいきんげんきがありませんね。",
+      "romaji": "saikin genki ga arimasen ne.",
+      "zh": "最近没什么精神啊。"
+    }
+  },
+  "l32-w1326": {
+    "romaji": "i",
+    "attributes": [],
+    "explanation": "名词，指消化器官“胃”。常见搭配有「胃が痛い」「胃がもたれる」「胃の調子が悪い」等。",
+    "example": {
+      "jp": "昨日から胃が痛いです。",
+      "kana": "きのうからいがいたいです。",
+      "romaji": "kinou kara i ga itai desu.",
+      "zh": "从昨天开始胃疼。"
+    }
+  },
+  "l32-w1327": {
+    "romaji": "hatarakisugi",
+    "attributes": [],
+    "explanation": "名词，由动词「働く」加接尾词「すぎ」构成，表示工作过度、劳累过度。常与「で」搭配表示原因。",
+    "example": {
+      "jp": "働きすぎで体を壊しました。",
+      "kana": "はたらきすぎでからだをこわしました。",
+      "romaji": "hatarakisugi de karada o kowashimashita.",
+      "zh": "因为工作过度把身体搞坏了。"
+    }
+  },
+  "l32-w1328": {
+    "romaji": "sutoresu",
+    "attributes": [],
+    "explanation": "名词，指精神或身体上的压力。常用「ストレスがたまる」「ストレスを感じる」「ストレスで…」等搭配。",
+    "example": {
+      "jp": "仕事のストレスで眠れません。",
+      "kana": "しごとのすとれすでねむれません。",
+      "romaji": "shigoto no sutoresu de nemuremasen.",
+      "zh": "因为工作压力睡不着。"
+    }
+  },
+  "l32-w1329": {
+    "romaji": "muri o shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词短语「無理をする」的礼貌体，表示勉强自己、硬撑。常用「無理をしないでください」劝人别勉强。",
+    "example": {
+      "jp": "無理をしますと、病気になりますよ。",
+      "kana": "むりをしますと、びょうきになりますよ。",
+      "romaji": "muri o shimasu to, byouki ni narimasu yo.",
+      "zh": "要是勉强自己的话，会生病的哦。"
+    }
+  },
+  "l32-w1444": {
+    "romaji": "[shiai ni] demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「出る」的礼貌体，接「試合に」表示参加比赛、出场。强调参与赛事，与「参加する」相近但更口语。",
+    "example": {
+      "jp": "明日の試合に出ますか。",
+      "kana": "あしたのしあいにでますか。",
+      "romaji": "ashita no shiai ni demasu ka.",
+      "zh": "你参加明天的比赛吗？"
+    }
+  },
+  "l32-w3363": {
+    "romaji": "chiimu",
+    "attributes": [],
+    "explanation": "名词，指团队、队伍。常用「チームを作る」「チームで働く」「チームの一員」等搭配。",
+    "example": {
+      "jp": "私たちは同じチームで働いています。",
+      "kana": "わたしたちはおなじちーむではたらいています。",
+      "romaji": "watashitachi wa onaji chiimu de hataraite imasu.",
+      "zh": "我们在同一个团队工作。"
+    }
+  },
+  "l32-w5641": {
+    "romaji": "[paatii ni] demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词「出る」的礼貌体，接「パーティーに」表示参加聚会、出席派对。与「参加する」类似，但更强调“出席、露面”。",
+    "example": {
+      "jp": "今晩のパーティーに出ますか。",
+      "kana": "こんばんのぱーてぃーにでますか。",
+      "romaji": "konban no paatii ni demasu ka.",
+      "zh": "你参加今晚的聚会吗？"
+    }
+  },
+  "l32-w829": {
+    "romaji": "sensei",
+    "attributes": [],
+    "explanation": "名词，可指医生（尊称），也指老师。在医疗语境中称呼医生为「先生」，如「先生に診てもらう」。",
+    "example": {
+      "jp": "先生に薬をもらいました。",
+      "kana": "せんせいにくすりをもらいました。",
+      "romaji": "sensei ni kusuri o moraimashita.",
+      "zh": "从医生那里拿了药。"
+    }
+  },
+  "l32-w850": {
+    "romaji": "kokusai~",
+    "attributes": [],
+    "explanation": "名词性前缀，表示“国际……”，常构成复合名词，如「国際電話」「国際会議」「国際線」等。",
+    "example": {
+      "jp": "国際電話をかけたいです。",
+      "kana": "こくさいでんわをかけたいです。",
+      "romaji": "kokusai denwa o kaketai desu.",
+      "zh": "我想打国际电话。"
+    }
+  },
+  "l32-europe": {
+    "romaji": "yooroppa",
+    "attributes": [],
+    "explanation": "专有名词，指欧洲。常用「ヨーロッパへ行く」「ヨーロッパの文化」等表达。",
+    "example": {
+      "jp": "来年ヨーロッパへ旅行に行きます。",
+      "kana": "らいねんよーろっぱへりょこうにいきます。",
+      "romaji": "rainen yooroppa e ryokou ni ikimasu.",
+      "zh": "明年去欧洲旅行。"
+    }
+  },
+  "l32-horoscope": {
+    "romaji": "hoshīranai",
+    "attributes": [],
+    "explanation": "指根据星座或天体运行占卜运势的活动，常见于杂志、电视的每日运势栏目。口语中常说「星占いを見る」。",
+    "example": {
+      "jp": "毎朝、星占いをチェックします。",
+      "kana": "まいあさ、ほしうらないをちぇっくします。",
+      "romaji": "maiasa, hoshīranai o chekku shimasu.",
+      "zh": "每天早上都查看星座占卜。"
+    }
+  },
+  "l32-taurus": {
+    "romaji": "oushiza",
+    "attributes": [],
+    "explanation": "黄道十二星座之一，日期约为4月20日至5月20日。日语中星座名常加「座」，如「牡牛座」。",
+    "example": {
+      "jp": "私は牡牛座です。",
+      "kana": "わたしはおうしざです。",
+      "romaji": "watashi wa oushiza desu.",
+      "zh": "我是金牛座。"
+    }
+  },
+  "l32-trouble": {
+    "romaji": "komarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因困难、麻烦而感到为难、困扰，常用于「～て困ります」表示对某行为感到头疼。主语为感到困扰的人，用「は」或「が」提示。",
+    "example": {
+      "jp": "隣の部屋の音がうるさくて困ります。",
+      "kana": "となりのへやのおとがうるさくてこまります。",
+      "romaji": "tonari no heya no oto ga urusakute komarimasu.",
+      "zh": "隔壁房间的声音太吵，很困扰。"
+    }
+  },
+  "l32-lottery": {
+    "romaji": "takarakuji",
+    "attributes": [],
+    "explanation": "指日本常见的彩票，如「ジャンボ宝くじ」。常说「宝くじを買う」「宝くじが当たる」。",
+    "example": {
+      "jp": "宝くじを買ってみました。",
+      "kana": "たからくじをかってみました。",
+      "romaji": "takarakuji o katte mimashita.",
+      "zh": "试着买了彩票。"
+    }
+  },
+  "l32-win": {
+    "romaji": "atarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示抽签、彩票等中奖，或猜中答案。主语为彩票、签、答案等，用「が」提示。与「当てる」（他动词）相对。",
+    "example": {
+      "jp": "宝くじが当たりました。",
+      "kana": "たからくじがあたりました。",
+      "romaji": "takarakuji ga atarimashita.",
+      "zh": "彩票中奖了。"
+    }
+  },
+  "l32-health": {
+    "romaji": "kenkou",
+    "attributes": [],
+    "explanation": "表示身体或精神的状态良好，常用「健康にいい」「健康を保つ」「健康第一」等搭配。也可作な形容词用「健康な体」。",
+    "example": {
+      "jp": "健康のために毎日歩いています。",
+      "kana": "けんこうのためにまいにちあるいています。",
+      "romaji": "kenkou no tame ni mainichi aruite imasu.",
+      "zh": "为了健康每天走路。"
+    }
+  },
+  "l32-romance": {
+    "romaji": "renai",
+    "attributes": [],
+    "explanation": "指男女之间的恋爱关系或感情，比「恋」更正式，常用于「恋愛する」「恋愛映画」等。",
+    "example": {
+      "jp": "恋愛はなかなか難しいですね。",
+      "kana": "れんあいはなかなかむずかしいですね。",
+      "romaji": "renai wa nakanaka muzukashii desu ne.",
+      "zh": "恋爱真不容易啊。"
+    }
+  },
+  "l32-lover": {
+    "romaji": "koibito",
+    "attributes": [],
+    "explanation": "指恋爱对象，可指男友或女友。常说「恋人を作る」「恋人と過ごす」。",
+    "example": {
+      "jp": "恋人と映画を見に行きました。",
+      "kana": "こいびととえいがをみにいきました。",
+      "romaji": "koibito to eiga o mi ni ikimashita.",
+      "zh": "和恋人去看电影了。"
+    }
+  },
+  "l32-lucky-item": {
+    "romaji": "rakkī aitemu",
+    "attributes": [],
+    "explanation": "来自英语的外来语，指能带来好运的物品，常见于星座占卜中提示的幸运物。",
+    "example": {
+      "jp": "今日のラッキーアイテムは石です。",
+      "kana": "きょうのらっきーあいてむはいしです。",
+      "romaji": "kyou no rakkī aitemu wa ishi desu.",
+      "zh": "今天的幸运物品是石头。"
+    }
+  },
+  "l32-stone": {
+    "romaji": "ishi",
+    "attributes": [],
+    "explanation": "指小石块或石头，也用于宝石、岩石等。常见搭配「石を投げる」「石のように硬い」。",
+    "example": {
+      "jp": "川で丸い石を拾いました。",
+      "kana": "かわでまるいいしをひろいました。",
+      "romaji": "kawa de marui ishi o hiroimashita.",
+      "zh": "在河边捡到了圆石头。"
+    }
+  }
+}

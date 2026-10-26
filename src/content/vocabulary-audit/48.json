@@ -1,0 +1,119 @@
+{
+  "lessonId": 48,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/48.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 19,
+  "entries": [
+    {
+      "sourceId": "1705",
+      "sourceWord": "ファイル",
+      "key": "w1705"
+    },
+    {
+      "sourceId": "1850",
+      "sourceWord": "下ろします",
+      "key": "w1850"
+    },
+    {
+      "sourceId": "1851",
+      "sourceWord": "届けます",
+      "key": "w1851"
+    },
+    {
+      "sourceId": "1852",
+      "sourceWord": "世話をします",
+      "key": "w1852"
+    },
+    {
+      "sourceId": "1853",
+      "sourceWord": "嫌な",
+      "key": "w1853"
+    },
+    {
+      "sourceId": "1855",
+      "sourceWord": "塾",
+      "key": "w1855"
+    },
+    {
+      "sourceId": "1857",
+      "sourceWord": "生徒",
+      "key": "w1857"
+    },
+    {
+      "sourceId": "1861",
+      "sourceWord": "自由に",
+      "key": "w1861"
+    },
+    {
+      "sourceId": "1862",
+      "sourceWord": "～間",
+      "key": "w1862"
+    },
+    {
+      "sourceId": "1863",
+      "sourceWord": "いいことですね。",
+      "key": "w1863"
+    },
+    {
+      "sourceId": "1864",
+      "sourceWord": "お忙しいですか。",
+      "key": "w1864"
+    },
+    {
+      "sourceId": "1866",
+      "sourceWord": "営業",
+      "key": "w1866"
+    },
+    {
+      "sourceId": "1867",
+      "sourceWord": "それまでに",
+      "key": "w1867"
+    },
+    {
+      "sourceId": "1868",
+      "sourceWord": "構いません。",
+      "key": "w1868"
+    },
+    {
+      "sourceId": "1869",
+      "sourceWord": "楽しみます",
+      "key": "w1869"
+    },
+    {
+      "sourceId": "3527",
+      "sourceWord": "録音",
+      "key": "w3527"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1858",
+      "sourceWord": "者",
+      "reason": "旧版人员称谓，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1859",
+      "sourceWord": "入管",
+      "reason": "旧版签证会话机构词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1860",
+      "sourceWord": "再入国ピザ",
+      "reason": "旧版签证会话词，且主来源ピザ误写为披萨；第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "unload",
+    "record",
+    "parent",
+    "elementary",
+    "percent",
+    "next",
+    "calligraphy",
+    "normal"
+  ],
+  "finalCount": 24
+}

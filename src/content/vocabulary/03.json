@@ -1,0 +1,365 @@
+{
+  "lessonId": 3,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/3.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "交叉核对完成：主来源42条候选，保留42条对应（同义表记可合并），排除0条；另补第二来源专名或固定表达，最终50条。",
+    "教材公司、机构和人物名称按专名收录。读音采用平假名，专名日文保留原表记。",
+    "词形变体归并后保留旧词ID。详细对应、第二来源补项和排除原因见本课vocabulary-audit文件。"
+  ],
+  "words": [
+    {
+      "key": "koko",
+      "word": "ここ",
+      "reading": "ここ",
+      "partOfSpeech": "指示代名词",
+      "meaning": "这里"
+    },
+    {
+      "key": "soko",
+      "word": "そこ",
+      "reading": "そこ",
+      "partOfSpeech": "指示代名词",
+      "meaning": "那里（靠近听话人）"
+    },
+    {
+      "key": "asoko",
+      "word": "あそこ",
+      "reading": "あそこ",
+      "partOfSpeech": "指示代名词",
+      "meaning": "那里（离双方都远）"
+    },
+    {
+      "key": "doko",
+      "word": "どこ",
+      "reading": "どこ",
+      "partOfSpeech": "疑问代名词",
+      "meaning": "哪里"
+    },
+    {
+      "key": "kochira",
+      "word": "こちら",
+      "reading": "こちら",
+      "partOfSpeech": "指示代名词（礼貌）",
+      "meaning": "这边；这里；这位"
+    },
+    {
+      "key": "sochira",
+      "word": "そちら",
+      "reading": "そちら",
+      "partOfSpeech": "指示代名词（礼貌）",
+      "meaning": "那边（靠近听话人）；您那边"
+    },
+    {
+      "key": "achira",
+      "word": "あちら",
+      "reading": "あちら",
+      "partOfSpeech": "指示代名词（礼貌）",
+      "meaning": "那边（离双方都远）"
+    },
+    {
+      "key": "dochira",
+      "word": "どちら",
+      "reading": "どちら",
+      "partOfSpeech": "疑问代名词（礼貌）",
+      "meaning": "哪边；哪里；哪位"
+    },
+    {
+      "key": "kyoushitsu",
+      "word": "教室",
+      "reading": "きょうしつ",
+      "partOfSpeech": "名词",
+      "meaning": "教室"
+    },
+    {
+      "key": "shokudou",
+      "word": "食堂",
+      "reading": "しょくどう",
+      "partOfSpeech": "名词",
+      "meaning": "食堂"
+    },
+    {
+      "key": "jimusho",
+      "word": "事務所",
+      "reading": "じむしょ",
+      "partOfSpeech": "名词",
+      "meaning": "办公室"
+    },
+    {
+      "key": "kaigishitsu",
+      "word": "会議室",
+      "reading": "かいぎしつ",
+      "partOfSpeech": "名词",
+      "meaning": "会议室"
+    },
+    {
+      "key": "uketsuke",
+      "word": "受付",
+      "reading": "うけつけ",
+      "partOfSpeech": "名词",
+      "meaning": "接待处；接待"
+    },
+    {
+      "key": "robii",
+      "word": "ロビー",
+      "reading": "ろびー",
+      "partOfSpeech": "名词",
+      "meaning": "大厅；休息厅"
+    },
+    {
+      "key": "heya",
+      "word": "部屋",
+      "reading": "へや",
+      "partOfSpeech": "名词",
+      "meaning": "房间"
+    },
+    {
+      "key": "toire",
+      "word": "トイレ",
+      "reading": "といれ",
+      "partOfSpeech": "名词",
+      "meaning": "厕所；洗手间"
+    },
+    {
+      "key": "otearai",
+      "word": "お手洗い",
+      "reading": "おてあらい",
+      "partOfSpeech": "名词（礼貌）",
+      "meaning": "洗手间"
+    },
+    {
+      "key": "kaidan",
+      "word": "階段",
+      "reading": "かいだん",
+      "partOfSpeech": "名词",
+      "meaning": "楼梯"
+    },
+    {
+      "key": "erebeetaa",
+      "word": "エレベーター",
+      "reading": "えれべーたー",
+      "partOfSpeech": "名词",
+      "meaning": "电梯"
+    },
+    {
+      "key": "esukareetaa",
+      "word": "エスカレーター",
+      "reading": "えすかれーたー",
+      "partOfSpeech": "名词",
+      "meaning": "自动扶梯"
+    },
+    {
+      "key": "jidouhanbaiki",
+      "word": "自動販売機",
+      "reading": "じどうはんばいき",
+      "partOfSpeech": "名词",
+      "meaning": "自动售货机"
+    },
+    {
+      "key": "denwa",
+      "word": "電話",
+      "reading": "でんわ",
+      "partOfSpeech": "名词",
+      "meaning": "电话"
+    },
+    {
+      "key": "kuni",
+      "word": "お国",
+      "reading": "おくに",
+      "partOfSpeech": "名词",
+      "meaning": "国家；您的国家（普通形式为「国」）"
+    },
+    {
+      "key": "kaisha",
+      "word": "会社",
+      "reading": "かいしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "公司"
+    },
+    {
+      "key": "uchi",
+      "word": "うち",
+      "reading": "うち",
+      "partOfSpeech": "名词",
+      "meaning": "家；自己家"
+    },
+    {
+      "key": "kutsu",
+      "word": "靴",
+      "reading": "くつ",
+      "partOfSpeech": "名词",
+      "meaning": "鞋"
+    },
+    {
+      "key": "nekutai",
+      "word": "ネクタイ",
+      "reading": "ねくたい",
+      "partOfSpeech": "名词",
+      "meaning": "领带"
+    },
+    {
+      "key": "wain",
+      "word": "ワイン",
+      "reading": "わいん",
+      "partOfSpeech": "名词",
+      "meaning": "葡萄酒"
+    },
+    {
+      "key": "uriba",
+      "word": "売り場",
+      "reading": "うりば",
+      "partOfSpeech": "名词",
+      "meaning": "卖场；柜台；销售区"
+    },
+    {
+      "key": "chika",
+      "word": "地下",
+      "reading": "ちか",
+      "partOfSpeech": "名词",
+      "meaning": "地下；地下楼层"
+    },
+    {
+      "key": "kai",
+      "word": "～階",
+      "reading": "～かい",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……楼；……层"
+    },
+    {
+      "key": "nangai",
+      "word": "何階",
+      "reading": "なんがい",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几楼；哪层"
+    },
+    {
+      "key": "en",
+      "word": "～円",
+      "reading": "～えん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……日元"
+    },
+    {
+      "key": "ikura",
+      "word": "いくら",
+      "reading": "いくら",
+      "partOfSpeech": "疑问表达",
+      "meaning": "多少钱"
+    },
+    {
+      "key": "hyaku",
+      "word": "百",
+      "reading": "ひゃく",
+      "partOfSpeech": "数词",
+      "meaning": "百"
+    },
+    {
+      "key": "sen",
+      "word": "千",
+      "reading": "せん",
+      "partOfSpeech": "数词",
+      "meaning": "千"
+    },
+    {
+      "key": "man",
+      "word": "万",
+      "reading": "まん",
+      "partOfSpeech": "数词",
+      "meaning": "万"
+    },
+    {
+      "key": "sumimasen",
+      "word": "すみません",
+      "reading": "すみません",
+      "partOfSpeech": "固定表达",
+      "meaning": "对不起；不好意思；劳驾"
+    },
+    {
+      "key": "misetekudasai",
+      "word": "～を見せてください",
+      "reading": "～をみせてください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请让我看一下……"
+    },
+    {
+      "key": "ja",
+      "word": "じゃ",
+      "reading": "じゃ",
+      "partOfSpeech": "接续词",
+      "meaning": "那么；那就"
+    },
+    {
+      "key": "kudasai",
+      "word": "～をください",
+      "reading": "～をください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请给我……"
+    },
+    {
+      "key": "irasshaimase",
+      "word": "いらっしゃいませ",
+      "reading": "いらっしゃいませ",
+      "partOfSpeech": "固定表达",
+      "meaning": "欢迎光临（店员招呼顾客）"
+    },
+    {
+      "key": "itaria",
+      "word": "イタリア",
+      "reading": "いたりあ",
+      "meaning": "意大利",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "furansu",
+      "word": "フランス",
+      "reading": "ふらんす",
+      "meaning": "法国",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "suisu",
+      "word": "スイス",
+      "reading": "すいす",
+      "meaning": "瑞士",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "bankoku",
+      "word": "バンコク",
+      "reading": "ばんこく",
+      "meaning": "曼谷",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "shinoosaka",
+      "word": "新大阪",
+      "reading": "しんおおさか",
+      "meaning": "新大阪",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "jakaruta",
+      "word": "ジャカルタ",
+      "reading": "じゃかるた",
+      "meaning": "雅加达",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "berurin",
+      "word": "ベルリン",
+      "reading": "べるりん",
+      "meaning": "柏林",
+      "partOfSpeech": "专有名词"
+    },
+    {
+      "key": "doumo",
+      "word": "どうも",
+      "reading": "どうも",
+      "partOfSpeech": "固定表达",
+      "meaning": "谢谢（简略的感谢用语）"
+    }
+  ]
+}

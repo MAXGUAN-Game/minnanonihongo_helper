@@ -1,0 +1,601 @@
+{
+  "l33-w1039": {
+    "romaji": "ikura~temo",
+    "attributes": [],
+    "explanation": "「いくら～ても」表示让步条件，意为“无论多么……也……”。「いくら」后接动词て形或形容词て形，强调程度之高也不影响结果。常用于口语和书面语，语气较强。",
+    "example": {
+      "jp": "いくら待っても彼は来なかった。",
+      "kana": "いくらまってもかれはこなかった。",
+      "romaji": "ikura matte mo kare wa konakatta.",
+      "zh": "无论怎么等，他也没来。"
+    }
+  },
+  "l33-w1246": {
+    "romaji": "~hodo",
+    "attributes": [],
+    "explanation": "「～ほど」接在数量词或表示程度的词后，表示大约的数量或程度，相当于“大约……左右”。也可表示“到……的地步”，但本课侧重数量约数。",
+    "example": {
+      "jp": "駅まで歩いて10分ほどかかります。",
+      "kana": "えきまであるいてじゅっぷんほどかかります。",
+      "romaji": "eki made aruite juppun hodo kakarimasu.",
+      "zh": "走到车站大约需要10分钟。"
+    }
+  },
+  "l33-w1253": {
+    "romaji": "shigoto ga hajimarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「始まります」是自动词，表示事物自然开始，主语为开始的事物（如工作、会议、电影等）。他动词形式为「始めます」。",
+    "example": {
+      "jp": "会議は9時に始まります。",
+      "kana": "かいぎはくじにはじまります。",
+      "romaji": "kaigi wa kuji ni hajimarimasu.",
+      "zh": "会议9点开始。"
+    }
+  },
+  "l33-w1259": {
+    "romaji": "shusseki shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「出席します」表示出席正式场合（会议、仪式、课程等），常与「に」搭配，如「会議に出席する」。比「出る」更正式。",
+    "example": {
+      "jp": "明日の会議に出席しますか。",
+      "kana": "あしたのかいぎにしゅっせきしますか。",
+      "romaji": "ashita no kaigi ni shusseki shimasu ka.",
+      "zh": "你出席明天的会议吗？"
+    }
+  },
+  "l33-w1286": {
+    "romaji": "modorimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「戻ります」表示回到原来的地方或状态，常与「に」或「へ」搭配，如「家に戻る」「席に戻る」。强调返回的动作。",
+    "example": {
+      "jp": "昼休みが終わったら教室に戻ります。",
+      "kana": "ひるやすみがおわったらきょうしつにもどります。",
+      "romaji": "hiruyasumi ga owattara kyōshitsu ni modorimasu.",
+      "zh": "午休结束后回教室。"
+    }
+  },
+  "l33-w1331": {
+    "romaji": "nigemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「逃げます」表示逃跑、逃离危险或追捕，常与「から」搭配表示逃离的来源。也可用于逃避责任等抽象意义。",
+    "example": {
+      "jp": "犯人は窓から逃げました。",
+      "kana": "はんにんはまどからにげました。",
+      "romaji": "hannin wa mado kara nigemashita.",
+      "zh": "犯人从窗户逃跑了。"
+    }
+  },
+  "l33-w1332": {
+    "romaji": "sawagimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「騒ぎます」表示大声吵闹、喧哗，主语为人或人群。也可表示引起骚动。注意与「騒がしい」（形容词）区分。",
+    "example": {
+      "jp": "夜遅くまで学生たちが騒いでいた。",
+      "kana": "よるおそくまでがくせいたちがさわいでいた。",
+      "romaji": "yoru osoku made gakuseitachi ga sawaide ita.",
+      "zh": "学生们吵到深夜。"
+    }
+  },
+  "l33-w1333": {
+    "romaji": "akiramemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「諦めます」表示放弃、死心，常与「を」搭配，如「夢を諦める」。也可单独使用表示放弃。",
+    "example": {
+      "jp": "何度も失敗したが、夢を諦めなかった。",
+      "kana": "なんどもしっぱいしたが、ゆめをあきらめなかった。",
+      "romaji": "nando mo shippai shita ga, yume o akiramenakatta.",
+      "zh": "虽然失败了很多次，但没有放弃梦想。"
+    }
+  },
+  "l33-w1334": {
+    "romaji": "nagemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「投げます」表示投掷、扔，常与「を」搭配，如「ボールを投げる」。也可用于抽象意义如「質問を投げる」。",
+    "example": {
+      "jp": "子供がボールを投げて遊んでいる。",
+      "kana": "こどもがボールをなげてあそんでいる。",
+      "romaji": "kodomo ga bōru o nagete asonde iru.",
+      "zh": "孩子在扔球玩。"
+    }
+  },
+  "l33-w1335": {
+    "romaji": "mamorimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「守ります」有两个主要意思：一是遵守规则、约定等（如「約束を守る」）；二是保护、守卫（如「国を守る」）。需根据上下文判断。",
+    "example": {
+      "jp": "約束は必ず守ります。",
+      "kana": "やくそくはかならずまもります。",
+      "romaji": "yakusoku wa kanarazu mamorimasu.",
+      "zh": "一定遵守约定。"
+    }
+  },
+  "l33-w1338": {
+    "romaji": "tsutaemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「伝えます」表示传达、转告信息，常与「に」搭配表示传达对象，如「彼に伝える」。也可表示传递物品或传授知识。",
+    "example": {
+      "jp": "田中さんに明日の予定を伝えてください。",
+      "kana": "たなかさんにあしたのよていをつたえてください。",
+      "romaji": "Tanaka-san ni ashita no yotei o tsutaete kudasai.",
+      "zh": "请转告田中明天的安排。"
+    }
+  },
+  "l33-w1339": {
+    "romaji": "kuruma ni chūi shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「注意します」表示注意、小心，常与「に」搭配，如「車に注意する」。也可表示提醒、警告（他动词用法），但本课为自动词用法。",
+    "example": {
+      "jp": "道を渡るときは車に注意してください。",
+      "kana": "みちをわたるときはくるまにちゅういしてください。",
+      "romaji": "michi o wataru toki wa kuruma ni chūi shite kudasai.",
+      "zh": "过马路时请注意车辆。"
+    }
+  },
+  "l33-w1340": {
+    "romaji": "seki o hazushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示暂时离开自己的座位，常用于在图书馆、教室等场所需要短暂离开时告知他人。搭配「席を外す」，是礼貌的表达方式。",
+    "example": {
+      "jp": "ちょっと席を外します。",
+      "kana": "ちょっとせきをはずします。",
+      "romaji": "chotto seki o hazushimasu.",
+      "zh": "我稍微离开一下座位。"
+    }
+  },
+  "l33-w1341": {
+    "romaji": "dame na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示“不行的、不可以的”，常用于口语中表达禁止或不允许。修饰名词时加「な」，如「だめな人」。也可单独使用表示“不行”。",
+    "example": {
+      "jp": "ここで遊ぶのはだめなことです。",
+      "kana": "ここであそぶのはだめなことです。",
+      "romaji": "koko de asobu no wa dame na koto desu.",
+      "zh": "在这里玩是不允许的。"
+    }
+  },
+  "l33-w1342": {
+    "romaji": "seki",
+    "attributes": [],
+    "explanation": "指座位、坐席，常用于公共场所如剧院、电车、教室等。可搭配动词「座る」「取る」「外す」等。",
+    "example": {
+      "jp": "この席は空いていますか。",
+      "kana": "このせきはあいていますか。",
+      "romaji": "kono seki wa aite imasu ka.",
+      "zh": "这个座位空着吗？"
+    }
+  },
+  "l33-w1344": {
+    "romaji": "māku",
+    "attributes": [],
+    "explanation": "指标记、符号，常用于表示标识或做记号。也可作动词「マークする」。注意与「しるし」的区别，后者更泛指记号。",
+    "example": {
+      "jp": "地図にマークを付けてください。",
+      "kana": "ちずにまーくをつけてください。",
+      "romaji": "chizu ni māku o tsukete kudasai.",
+      "zh": "请在地图上做个标记。"
+    }
+  },
+  "l33-w1345": {
+    "romaji": "bōru",
+    "attributes": [],
+    "explanation": "指球、球状物，常用于体育项目如棒球、足球等。也可指球类运动用的球。",
+    "example": {
+      "jp": "ボールを投げてください。",
+      "kana": "ぼーるをなげてください。",
+      "romaji": "bōru o nagete kudasai.",
+      "zh": "请把球扔过来。"
+    }
+  },
+  "l33-w1348": {
+    "romaji": "kisoku",
+    "attributes": [],
+    "explanation": "指规则、规章，常用于学校、公司、运动等场合。比「ルール」更正式，多指成文的规则。",
+    "example": {
+      "jp": "学校の規則を守りましょう。",
+      "kana": "がっこうのきそくをまもりましょう。",
+      "romaji": "gakkō no kisoku o mamorimashō.",
+      "zh": "我们遵守学校的规则吧。"
+    }
+  },
+  "l33-w1349": {
+    "romaji": "shiyō kinshi",
+    "attributes": [],
+    "explanation": "表示禁止使用，常用于告示牌上，如“使用禁止”。是书面语，口语中可说「使ってはいけない」。",
+    "example": {
+      "jp": "この機械は使用禁止です。",
+      "kana": "このきかいはしようきんしです。",
+      "romaji": "kono kikai wa shiyō kinshi desu.",
+      "zh": "这台机器禁止使用。"
+    }
+  },
+  "l33-w1350": {
+    "romaji": "tachiiri kinshi",
+    "attributes": [],
+    "explanation": "表示禁止进入，常用于施工现场、危险区域等的告示牌。是书面语，口语中可说「入ってはいけない」。",
+    "example": {
+      "jp": "この先は立入禁止です。",
+      "kana": "このさきはたちいりきんしです。",
+      "romaji": "kono saki wa tachiiri kinshi desu.",
+      "zh": "前方禁止入内。"
+    }
+  },
+  "l33-w1351": {
+    "romaji": "iriguchi",
+    "attributes": [],
+    "explanation": "指入口、进口，常用于建筑物、车站、公园等场所。反义词是「出口」。",
+    "example": {
+      "jp": "入口はあちらです。",
+      "kana": "いりぐちはあちらです。",
+      "romaji": "iriguchi wa achira desu.",
+      "zh": "入口在那边。"
+    }
+  },
+  "l33-w1352": {
+    "romaji": "deguchi",
+    "attributes": [],
+    "explanation": "指出口、出去的门，常用于建筑物、车站、活动会场等。反义词是「入口」。",
+    "example": {
+      "jp": "出口を探しています。",
+      "kana": "でぐちをさがしています。",
+      "romaji": "deguchi o sagashite imasu.",
+      "zh": "我在找出口。"
+    }
+  },
+  "l33-w1353": {
+    "romaji": "hijōguchi",
+    "attributes": [],
+    "explanation": "指紧急出口，用于火灾等紧急情况时逃生。常见于建筑物内的标识。",
+    "example": {
+      "jp": "非常口の場所を確認してください。",
+      "kana": "ひじょうぐちのばしょをかくにんしてください。",
+      "romaji": "hijōguchi no basho o kakunin shite kudasai.",
+      "zh": "请确认紧急出口的位置。"
+    }
+  },
+  "l33-v5": {
+    "romaji": "muryō",
+    "attributes": [],
+    "explanation": "表示免费、不收费，常用于服务、入场、使用等。可修饰名词，如「無料サービス」。反义词是「有料」。",
+    "example": {
+      "jp": "この駐車場は無料です。",
+      "kana": "このちゅうしゃじょうはむりょうです。",
+      "romaji": "kono chūshajō wa muryō desu.",
+      "zh": "这个停车场是免费的。"
+    }
+  },
+  "l33-w1357": {
+    "romaji": "shiyouchuu",
+    "attributes": [],
+    "explanation": "表示某物正在被使用中，常用于告示或状态说明。可单独使用，也可修饰名词，如「使用中の部屋」。",
+    "example": {
+      "jp": "このトイレは使用中です。",
+      "kana": "このといれはしようちゅうです。",
+      "romaji": "kono toire wa shiyouchuu desu.",
+      "zh": "这个厕所正在使用中。"
+    }
+  },
+  "l33-w1358": {
+    "romaji": "~chuu",
+    "attributes": [],
+    "explanation": "接在动作性名词后，表示该动作正在进行中，如「会議中」「電話中」。也可接在时间或数量词后表示“在……期间内”。",
+    "example": {
+      "jp": "会議中は電話に出られません。",
+      "kana": "かいぎちゅうはでんわにでられません。",
+      "romaji": "kaigichuu wa denwa ni deraremasen.",
+      "zh": "会议期间不能接电话。"
+    }
+  },
+  "l33-w1359": {
+    "romaji": "douiu~",
+    "attributes": [],
+    "explanation": "连体词，用于询问事物的性质、内容或种类，后接名词。比「どんな」更书面或更强调具体内容。",
+    "example": {
+      "jp": "どういう意味ですか。",
+      "kana": "どういういみですか。",
+      "romaji": "douiu imi desu ka.",
+      "zh": "是什么意思？"
+    }
+  },
+  "l33-w1360": {
+    "romaji": "ato~",
+    "attributes": [],
+    "explanation": "表示剩余的数量或时间，后接数量词或时间词，如「あと3日」「あと10分」。常用于口语。",
+    "example": {
+      "jp": "あと5分で終わります。",
+      "kana": "あとごふんでおわります。",
+      "romaji": "ato gofun de owarimasu.",
+      "zh": "还有5分钟就结束。"
+    }
+  },
+  "l33-w1361": {
+    "romaji": "chuushaihan",
+    "attributes": [],
+    "explanation": "指违反停车规定的行为，如停在禁止停车区域。常与「する」搭配，或说「駐車違反で罰金を払う」。",
+    "example": {
+      "jp": "駐車違反で罰金を払いました。",
+      "kana": "ちゅうしゃいはんでばっきんをはらいました。",
+      "romaji": "chuushaihan de bakkin o haraimashita.",
+      "zh": "因为违章停车交了罚款。"
+    }
+  },
+  "l33-w1364": {
+    "romaji": "keisatsu",
+    "attributes": [],
+    "explanation": "指警察机关或警察人员。常用「警察に届ける」「警察を呼ぶ」等搭配。",
+    "example": {
+      "jp": "すぐに警察に連絡してください。",
+      "kana": "すぐにけいさつにれんらくしてください。",
+      "romaji": "sugu ni keisatsu ni renraku shite kudasai.",
+      "zh": "请马上联系警察。"
+    }
+  },
+  "l33-w1365": {
+    "romaji": "bakkin",
+    "attributes": [],
+    "explanation": "指因违反法规而支付的罚款。常与「払う」「科す」搭配，如「罰金を払う」。",
+    "example": {
+      "jp": "違反すると罰金が科されます。",
+      "kana": "いはんするとばっきんがかされます。",
+      "romaji": "ihan suru to bakkin ga kasaremasu.",
+      "zh": "如果违反会被处以罚款。"
+    }
+  },
+  "l33-w2727": {
+    "romaji": "shimekiri",
+    "attributes": [],
+    "explanation": "指提交或完成某事的最后期限。常与「締め切りに間に合う」「締め切りを延ばす」等搭配。",
+    "example": {
+      "jp": "レポートの締め切りは明日です。",
+      "kana": "れぽーとのしめきりはあしたです。",
+      "romaji": "repooto no shimekiri wa ashita desu.",
+      "zh": "报告的截止日期是明天。"
+    }
+  },
+  "l33-w3079": {
+    "romaji": "mou~nai",
+    "attributes": [],
+    "explanation": "与否定形呼应，表示“已经不再……”，强调状态的变化或不再继续。常与动词否定形或形容词否定形连用。",
+    "example": {
+      "jp": "もうお酒は飲みません。",
+      "kana": "もうおさけはのみません。",
+      "romaji": "mou osake wa nomimasen.",
+      "zh": "已经不再喝酒了。"
+    }
+  },
+  "l33-w3426": {
+    "romaji": "nomihoudai",
+    "attributes": [],
+    "explanation": "指支付固定费用后可以无限量饮用饮料的服务，常见于餐饮店。常与「～プラン」「～コース」搭配。",
+    "example": {
+      "jp": "この店は飲み放題が付いています。",
+      "kana": "このみせはのみほうだいがついています。",
+      "romaji": "kono mise wa nomihoudai ga tsuite imasu.",
+      "zh": "这家店附带畅饮服务。"
+    }
+  },
+  "l33-w3514": {
+    "romaji": "risaikuru",
+    "attributes": [],
+    "explanation": "指将废弃物回收再利用。常与「する」搭配，或说「リサイクルに出す」「リサイクルボックス」。",
+    "example": {
+      "jp": "ペットボトルはリサイクルに出してください。",
+      "kana": "ぺっとぼとるはりさいくるにだしてください。",
+      "romaji": "pettobotoru wa risaikuru ni dashite kudasai.",
+      "zh": "请把塑料瓶拿去回收。"
+    }
+  },
+  "l33-w3537": {
+    "romaji": "waribiki",
+    "attributes": [],
+    "explanation": "指商品或服务减价出售。常与「割引券」「割引価格」等搭配，也可说「学生割引」。",
+    "example": {
+      "jp": "学生は割引がありますか。",
+      "kana": "がくせいはわりびきがありますか。",
+      "romaji": "gakusei wa waribiki ga arimasu ka.",
+      "zh": "学生有折扣吗？"
+    }
+  },
+  "l33-w5643": {
+    "romaji": "jokou",
+    "attributes": [],
+    "explanation": "表示车辆等缓慢行驶，常用于道路标志或交通提示。也可作副词用「徐行して」表示慢行通过。",
+    "example": {
+      "jp": "この先は工事中なので徐行してください。",
+      "kana": "このさきはこうじちゅうなのでじょこうしてください。",
+      "romaji": "kono saki wa koujichuu nanode jokou shite kudasai.",
+      "zh": "前方施工中，请慢行。"
+    }
+  },
+  "l33-w5644": {
+    "romaji": "boshunchuu",
+    "attributes": [],
+    "explanation": "表示正在招募人员或作品等，常用于招聘广告或征集启事。由「募集」加「中」构成，强调进行中。",
+    "example": {
+      "jp": "アルバイト募集中の看板を見た。",
+      "kana": "あるばいとぼしゅうちゅうのかんばんをみた。",
+      "romaji": "arubaito boshunchuu no kanban o mita.",
+      "zh": "看到了招募兼职的招牌。"
+    }
+  },
+  "l33-w5649": {
+    "romaji": "denwa ga arimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "固定搭配「電話がある」表示有电话打来，常用于办公室或家庭中通知他人接电话。主语是「電話」，用「が」标记。",
+    "example": {
+      "jp": "課長、電話がありますよ。",
+      "kana": "かちょう、でんわがありますよ。",
+      "romaji": "kachou, denwa ga arimasu yo.",
+      "zh": "科长，有您的电话。"
+    }
+  },
+  "l33-w935": {
+    "romaji": "onaji",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示相同、同样，修饰名词时直接接名词，不用「な」。也可作副词用「同じように」。注意与「同じだ」的用法区别。",
+    "example": {
+      "jp": "私も同じ意見です。",
+      "kana": "わたしもおなじいけんです。",
+      "romaji": "watashi mo onaji iken desu.",
+      "zh": "我也持相同意见。"
+    }
+  },
+  "l33-recycle": {
+    "romaji": "risaikuru shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示回收利用废弃物，常与「ごみ」「資源」等搭配。サ变动词，礼貌体为「リサイクルします」。",
+    "example": {
+      "jp": "ペットボトルをリサイクルします。",
+      "kana": "ぺっとぼとるをりさいくるします。",
+      "romaji": "pettobotoru o risaikuru shimasu.",
+      "zh": "回收塑料瓶。"
+    }
+  },
+  "l33-danger": {
+    "romaji": "kiken",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示危险，可作名词或な形容词。修饰名词用「危険な」，作谓语用「危険だ」。常用于警示标语。",
+    "example": {
+      "jp": "ここは危険ですから、入らないでください。",
+      "kana": "ここはきけんですから、はいらないでください。",
+      "romaji": "koko wa kiken desu kara, hairanaide kudasai.",
+      "zh": "这里很危险，请不要进入。"
+    }
+  },
+  "l33-earthquake": {
+    "romaji": "jishin",
+    "attributes": [],
+    "explanation": "表示地震，常与「起きる」「発生する」等动词搭配。是自然灾害的常用词。",
+    "example": {
+      "jp": "昨夜大きな地震がありました。",
+      "kana": "ゆうべおおきなじしんがありました。",
+      "romaji": "yuube ookina jishin ga arimashita.",
+      "zh": "昨晚发生了大地震。"
+    }
+  },
+  "l33-occur": {
+    "romaji": "okimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示（事件、现象等）发生，常与「地震」「事故」「問題」等搭配。注意与「起きる」（起床）的义项区分。",
+    "example": {
+      "jp": "この地域ではよく地震が起きます。",
+      "kana": "このちいきではよくじしんがおきます。",
+      "romaji": "kono chiiki de wa yoku jishin ga okimasu.",
+      "zh": "这个地区经常发生地震。"
+    }
+  },
+  "l33-help-each-other": {
+    "romaji": "tasukeaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "由「助ける」和「合う」复合而成，表示互相帮助。常用于描述人与人之间的协作关系。",
+    "example": {
+      "jp": "困った時は助け合いましょう。",
+      "kana": "こまったときはたすけあいましょう。",
+      "romaji": "komatta toki wa tasukeaimashou.",
+      "zh": "有困难时我们互相帮助吧。"
+    }
+  },
+  "l33-originally": {
+    "romaji": "motomoto",
+    "attributes": [],
+    "explanation": "表示原本、本来，强调事物最初的状态或性质。常用于说明变化前后的对比。",
+    "example": {
+      "jp": "この建物はもともと学校でした。",
+      "kana": "このたてものはもともとがっこうでした。",
+      "romaji": "kono tatemono wa motomoto gakkou deshita.",
+      "zh": "这栋建筑原本是学校。"
+    }
+  },
+  "l33-sad": {
+    "romaji": "kanashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示悲伤、难过，用于描述人的情感或令人伤心的事。反义词是「嬉しい」。",
+    "example": {
+      "jp": "彼の話を聞いて悲しくなりました。",
+      "kana": "かれのはなしをきいてかなしくなりました。",
+      "romaji": "kare no hanashi o kiite kanashiku narimashita.",
+      "zh": "听了他的话，我变得悲伤起来。"
+    }
+  },
+  "l33-more": {
+    "romaji": "motto",
+    "attributes": [],
+    "explanation": "表示程度更高，相当于“更加”，常用于比较或提出更高要求。可修饰动词、形容词。",
+    "example": {
+      "jp": "もっとゆっくり話してください。",
+      "kana": "もっとゆっくりはなしてください。",
+      "romaji": "motto yukkuri hanashite kudasai.",
+      "zh": "请说得更慢一些。"
+    }
+  },
+  "l33-greeting": {
+    "romaji": "aisatsu",
+    "attributes": [],
+    "explanation": "名词，指见面或分别时的寒暄、问候语，也可泛指打招呼这一行为。常与「する」搭配成「あいさつする」，语体中性，日常和正式场合都可用。",
+    "example": {
+      "jp": "朝、先生に元気にあいさつした。",
+      "kana": "あさ、せんせいにげんきにあいさつした。",
+      "romaji": "asa, sensei ni genki ni aisatsu shita.",
+      "zh": "早上精神饱满地向老师打了招呼。"
+    }
+  },
+  "l33-other-person": {
+    "romaji": "aite",
+    "attributes": [],
+    "explanation": "名词，指动作或关系的另一方，可译“对方、对手、伙伴”。常用于「相手にする」「相手がいる」等搭配，视语境可指交谈对象、比赛对手或婚恋对象。",
+    "example": {
+      "jp": "会話の相手の目を見て話す。",
+      "kana": "かいわのあいてのめをみてはなす。",
+      "romaji": "kaiwa no aite no me o mite hanasu.",
+      "zh": "看着对话对方的眼睛说话。"
+    }
+  },
+  "l33-feeling": {
+    "romaji": "kimochi",
+    "attributes": [],
+    "explanation": "名词，表示内心当下的感受、情绪或身体上的感觉，如「気持ちがいい」「気持ちが悪い」。与「気分」相比更侧重具体的感受本身，口语中很常用。",
+    "example": {
+      "jp": "今日は気持ちのいい天気ですね。",
+      "kana": "きょうはきもちのいいてんきですね。",
+      "romaji": "kyou wa kimochi no ii tenki desu ne.",
+      "zh": "今天天气真让人舒服啊。"
+    }
+  }
+}

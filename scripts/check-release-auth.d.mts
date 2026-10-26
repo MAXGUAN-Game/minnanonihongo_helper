@@ -1,0 +1,1 @@
+export function checkReleaseAuth(options: { origin: string; proxyToken: string; username: string; passwordHash: string; version: string; port?: number }): Promise<{ version: string; protected: boolean; internalHealth: boolean }>;

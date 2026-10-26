@@ -1,0 +1,449 @@
+{
+  "l17-w598": {
+    "romaji": "sorekara",
+    "attributes": [],
+    "explanation": "接续词，用于连接两个动作或事项，表示“然后”“接着”，也可表示“此外”“还有”来追加信息。口语和书面语均常用。",
+    "example": {
+      "jp": "まず宿題をします。それから、テレビを見ます。",
+      "kana": "まずしゅくだいをします。それから、てれびをみます。",
+      "romaji": "mazu shukudai o shimasu. sorekara, terebi o mimasu.",
+      "zh": "先做作业，然后看电视。"
+    }
+  },
+  "l17-v1": {
+    "romaji": "oboemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把知识、信息等记在脑子里，或学会、掌握。常与「単語」「名前」「使い方」等搭配。",
+    "example": {
+      "jp": "新しい単語を覚えます。",
+      "kana": "あたらしいたんごをおぼえます。",
+      "romaji": "atarashii tango o oboemasu.",
+      "zh": "记新单词。"
+    }
+  },
+  "l17-v2": {
+    "romaji": "wasuremasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示忘记某事或某物，也可表示遗忘、丢下。常与「宿題」「名前」「傘」等搭配。",
+    "example": {
+      "jp": "宿題を忘れました。",
+      "kana": "しゅくだいをわすれました。",
+      "romaji": "shukudai o wasuremashita.",
+      "zh": "忘了作业。"
+    }
+  },
+  "l17-v3": {
+    "romaji": "nakushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示不小心把东西弄丢、遗失。常与「鍵」「財布」「携帯」等具体物品搭配。",
+    "example": {
+      "jp": "鍵をなくしました。",
+      "kana": "かぎをなくしました。",
+      "romaji": "kagi o nakushimashita.",
+      "zh": "把钥匙弄丢了。"
+    }
+  },
+  "l17-v4": {
+    "romaji": "haraimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示支付金钱，常用于「お金を払う」「代金を払う」等。也可用于「注意を払う」等抽象搭配。",
+    "example": {
+      "jp": "現金で払います。",
+      "kana": "げんきんではらいます。",
+      "romaji": "genkin de haraimasu.",
+      "zh": "用现金支付。"
+    }
+  },
+  "l17-v5": {
+    "romaji": "kaeshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把借来的东西或收到的东西还给对方。常与「本」「お金」「傘」等搭配。",
+    "example": {
+      "jp": "借りた本を返します。",
+      "kana": "かりたほんをかえします。",
+      "romaji": "karita hon o kaeshimasu.",
+      "zh": "归还借来的书。"
+    }
+  },
+  "l17-w806": {
+    "romaji": "dekakemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示离开家或工作地点外出，常用于日常寒暄或叙述。与「出かける」同义，强调外出动作。",
+    "example": {
+      "jp": "母は買い物に出かけました。",
+      "kana": "はははかいものにでかけました。",
+      "romaji": "haha wa kaimono ni dekakemashita.",
+      "zh": "母亲出去买东西了。"
+    }
+  },
+  "l17-v6": {
+    "romaji": "nugimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示脱下穿在身上的衣物、鞋袜等。常与「服」「靴」「コート」等搭配。",
+    "example": {
+      "jp": "靴を脱いで部屋に入ります。",
+      "kana": "くつをぬいでへやにはいります。",
+      "romaji": "kutsu o nuide heya ni hairimasu.",
+      "zh": "脱鞋进屋。"
+    }
+  },
+  "l17-w808": {
+    "romaji": "mot te ikimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物带到别处去，强调从说话人所在地带往他处。常与「傘」「弁当」等搭配。",
+    "example": {
+      "jp": "弁当を持って行きます。",
+      "kana": "べんとうをもっていきます。",
+      "romaji": "bentou o mot te ikimasu.",
+      "zh": "带便当去。"
+    }
+  },
+  "l17-v7": {
+    "romaji": "mot te kimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物带到说话人所在地来，强调从别处带往此处。常与「お土産」「資料」等搭配。",
+    "example": {
+      "jp": "お土産を持って来ます。",
+      "kana": "おみやげをもってきます。",
+      "romaji": "omiyage o mot te kimasu.",
+      "zh": "带土特产来。"
+    }
+  },
+  "l17-v8": {
+    "romaji": "shinpai shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示对某人或某事感到担心、挂念。常与「心配する」搭配，也可用于「～を心配する」。",
+    "example": {
+      "jp": "母の体を心配します。",
+      "kana": "ははのからだをしんぱいします。",
+      "romaji": "haha no karada o shinpai shimasu.",
+      "zh": "担心母亲的身体。"
+    }
+  },
+  "l17-w811": {
+    "romaji": "zangyou shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在规定工作时间之外继续工作，即加班。常用于职场场景。",
+    "example": {
+      "jp": "今日は残業します。",
+      "kana": "きょうはざんぎょうします。",
+      "romaji": "kyou wa zangyou shimasu.",
+      "zh": "今天加班。"
+    }
+  },
+  "l17-w812": {
+    "romaji": "shucchō shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「出張します」是「出張する」的礼貌体，表示因工作去外地或外国办事。常用「～に出張します」「～へ出張します」搭配，注意与「旅行」不同，出差是公务。",
+    "example": {
+      "jp": "来週、大阪に出張します。",
+      "kana": "らいしゅう、おおさかにしゅっちょうします。",
+      "romaji": "raishū, ōsaka ni shucchō shimasu.",
+      "zh": "下周去大阪出差。"
+    }
+  },
+  "l17-w813": {
+    "romaji": "[kusuri o] nomimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「飲みます」在这里指服用药物，宾语用「薬を」。日语中吃药一般说「薬を飲む」，不说「食べる」。也可用于「水を飲む」等。",
+    "example": {
+      "jp": "毎食後、薬を飲みます。",
+      "kana": "まいしょくご、くすりをのみます。",
+      "romaji": "maishokugo, kusuri o nomimasu.",
+      "zh": "每餐后服药。"
+    }
+  },
+  "l17-w814": {
+    "romaji": "[ofuro ni] hairimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「入ります」与「お風呂」搭配表示洗澡、泡澡，常用「お風呂に入る」。注意「入る」是自动词，助词用「に」。",
+    "example": {
+      "jp": "毎晩、お風呂に入ります。",
+      "kana": "まいばん、おふろにはいります。",
+      "romaji": "maiban, ofuro ni hairimasu.",
+      "zh": "每天晚上洗澡。"
+    }
+  },
+  "l17-w815": {
+    "romaji": "taisetsu na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "「大切な」是な形容词，表示重要、珍贵，修饰名词时加「な」。常用于「大切な人」「大切なこと」，也可说「大切にする」。",
+    "example": {
+      "jp": "これは大切な書類です。",
+      "kana": "これはたいせつなしょるいです。",
+      "romaji": "kore wa taisetsu na shorui desu.",
+      "zh": "这是重要的文件。"
+    }
+  },
+  "l17-w816": {
+    "romaji": "daijōbu na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "「大丈夫な」表示没问题、不要紧，修饰名词时加「な」。也可单独作谓语「大丈夫です」表示拒绝或确认。注意语体较口语。",
+    "example": {
+      "jp": "この薬で大丈夫ですか。",
+      "kana": "このくすりでだいじょうぶですか。",
+      "romaji": "kono kusuri de daijōbu desu ka.",
+      "zh": "用这个药没问题吗？"
+    }
+  },
+  "l17-w817": {
+    "romaji": "abunai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「危ない」是い形容词，表示危险，常用于提醒或警告。修饰名词为「危ない～」，否定「危なくない」，过去「危なかった」。",
+    "example": {
+      "jp": "ここは危ないですから、気をつけてください。",
+      "kana": "ここはあぶないですから、きをつけてください。",
+      "romaji": "koko wa abunai desu kara, ki o tsukete kudasai.",
+      "zh": "这里很危险，请小心。"
+    }
+  },
+  "l17-w820": {
+    "romaji": "kin'en",
+    "attributes": [],
+    "explanation": "「禁煙」是名词，表示禁止吸烟，常见于告示「禁煙」或「禁煙席」。与动词「禁煙する」搭配表示戒烟。",
+    "example": {
+      "jp": "この席は禁煙です。",
+      "kana": "このせきはきんえんです。",
+      "romaji": "kono seki wa kin'en desu.",
+      "zh": "这个座位是禁烟席。"
+    }
+  },
+  "l17-w821": {
+    "romaji": "kenkō hokenshō",
+    "attributes": [],
+    "explanation": "「健康保険証」是名词，指健康保险证，在日本就医时需出示。常简称为「保険証」。",
+    "example": {
+      "jp": "病院で健康保険証を見せてください。",
+      "kana": "びょういんでけんこうほけんしょうをみせてください。",
+      "romaji": "byōin de kenkō hokenshō o misete kudasai.",
+      "zh": "请在医院出示健康保险证。"
+    }
+  },
+  "l17-w822": {
+    "romaji": "kaze",
+    "attributes": [],
+    "explanation": "「風邪」是名词，指感冒，常与「引く」搭配说「風邪を引く」。注意与「風（かぜ）」同音但汉字不同。",
+    "example": {
+      "jp": "風邪を引いて、学校を休みました。",
+      "kana": "かぜをひいて、がっこうをやすみました。",
+      "romaji": "kaze o hiite, gakkō o yasumimashita.",
+      "zh": "感冒了，向学校请了假。"
+    }
+  },
+  "l17-w823": {
+    "romaji": "netsu",
+    "attributes": [],
+    "explanation": "「熱」是名词，表示发烧或热度，常用「熱がある」表示发烧，「熱を測る」表示量体温。也可指物体热度。",
+    "example": {
+      "jp": "熱がありますから、今日は休みます。",
+      "kana": "ねつがありますから、きょうはやすみます。",
+      "romaji": "netsu ga arimasu kara, kyō wa yasumimasu.",
+      "zh": "因为发烧，今天休息。"
+    }
+  },
+  "l17-w824": {
+    "romaji": "byōki",
+    "attributes": [],
+    "explanation": "「病気」是名词，表示疾病、生病，常用「病気になる」「病気が治る」。注意与「病院」不同，指状态而非场所。",
+    "example": {
+      "jp": "病気のときは、無理をしないでください。",
+      "kana": "びょうきのときは、むりをしないでください。",
+      "romaji": "byōki no toki wa, muri o shinaide kudasai.",
+      "zh": "生病的时候请不要勉强。"
+    }
+  },
+  "l17-w825": {
+    "romaji": "kusuri",
+    "attributes": [],
+    "explanation": "「薬」是名词，指药物、药，常与「飲む」搭配说「薬を飲む」。也可指药水、药膏等，但服用动词仍多用「飲む」。",
+    "example": {
+      "jp": "この薬は一日三回飲んでください。",
+      "kana": "このくすりはいちにちさんかいのんでください。",
+      "romaji": "kono kusuri wa ichinichi sankai nonde kudasai.",
+      "zh": "这个药请一天服用三次。"
+    }
+  },
+  "l17-w826": {
+    "romaji": "ofuro",
+    "attributes": [],
+    "explanation": "指洗澡或浴室，常搭配「お風呂に入る」表示洗澡。语体中性，日常使用广泛。",
+    "example": {
+      "jp": "毎晩お風呂に入ります。",
+      "kana": "まいばんおふろにはいります。",
+      "romaji": "maiban ofuro ni hairimasu.",
+      "zh": "每天晚上洗澡。"
+    }
+  },
+  "l17-w827": {
+    "romaji": "uwagi",
+    "attributes": [],
+    "explanation": "指穿在上半身的外衣，如夹克、开衫等。与「下着」相对，注意不是指大衣。",
+    "example": {
+      "jp": "寒いから上着を着てください。",
+      "kana": "さむいからうわぎをきてください。",
+      "romaji": "samui kara uwagi o kite kudasai.",
+      "zh": "因为冷，请穿上外套。"
+    }
+  },
+  "l17-w828": {
+    "romaji": "shitagi",
+    "attributes": [],
+    "explanation": "指贴身穿的内衣，包括汗衫、内裤等。与「上着」相对，注意不要与「下着」的“下”混淆为下半身。",
+    "example": {
+      "jp": "下着は毎日取り替えます。",
+      "kana": "したぎはまいにちとりかえます。",
+      "romaji": "shitagi wa mainichi torikaemasu.",
+      "zh": "内衣每天更换。"
+    }
+  },
+  "l17-w830": {
+    "romaji": "nisannichi",
+    "attributes": [],
+    "explanation": "表示不确定的两三天，常用于计划或预测。可写作「二、三日」或「2、3日」。",
+    "example": {
+      "jp": "二、三日休みます。",
+      "kana": "にさんにちやすみます。",
+      "romaji": "nisannichi yasumimasu.",
+      "zh": "休息两三天。"
+    }
+  },
+  "l17-w831": {
+    "romaji": "ni, san~",
+    "attributes": [],
+    "explanation": "接在量词前表示不确定的两三个，如「二、三人」「二、三冊」。读作「に、さん」加量词。",
+    "example": {
+      "jp": "りんごを二、三個買いました。",
+      "kana": "りんごをに、さんこかいました。",
+      "romaji": "ringo o ni, sanko kaimashita.",
+      "zh": "买了两三个苹果。"
+    }
+  },
+  "l17-w832": {
+    "romaji": "~made ni",
+    "attributes": [],
+    "explanation": "表示动作完成的期限，意为“在……之前”。与「まで」不同，强调截止时间点前完成。",
+    "example": {
+      "jp": "五時までに帰ります。",
+      "kana": "ごじまでにかえります。",
+      "romaji": "goji made ni kaerimasu.",
+      "zh": "五点之前回来。"
+    }
+  },
+  "l17-w833": {
+    "romaji": "desukara",
+    "attributes": [],
+    "explanation": "接续词，表示因果关系，语气礼貌。常用于口语和书面语，后接结论。",
+    "example": {
+      "jp": "雨ですから、出かけません。",
+      "kana": "あめですから、でかけません。",
+      "romaji": "ame desukara, dekakemasen.",
+      "zh": "因为下雨，所以不出去。"
+    }
+  },
+  "l17-w834": {
+    "romaji": "dō shimashita ka",
+    "attributes": [],
+    "explanation": "固定表达，用于询问对方怎么了、发生什么事，常关心对方状况。",
+    "example": {
+      "jp": "どうしましたか。顔色が悪いですね。",
+      "kana": "どうしましたか。かおいろがわるいですね。",
+      "romaji": "dō shimashita ka. kaoiro ga warui desu ne.",
+      "zh": "怎么了？脸色不好啊。"
+    }
+  },
+  "l17-w835": {
+    "romaji": "onaka ga itai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示肚子痛，是「お腹が痛い」的常用说法。可单独作谓语，也可修饰名词。",
+    "example": {
+      "jp": "お腹が痛いので、病院へ行きます。",
+      "kana": "おなかがいたいので、びょういんへいきます。",
+      "romaji": "onaka ga itai node, byōin e ikimasu.",
+      "zh": "因为肚子痛，所以去医院。"
+    }
+  },
+  "l17-w83500": {
+    "romaji": "atama ga itai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示头痛，是「頭が痛い」的常用说法。可单独作谓语，也可修饰名词。",
+    "example": {
+      "jp": "頭が痛いから、薬を飲みます。",
+      "kana": "あたまがいたいから、くすりをのみます。",
+      "romaji": "atama ga itai kara, kusuri o nomimasu.",
+      "zh": "因为头痛，所以吃药。"
+    }
+  },
+  "l17-w836": {
+    "romaji": "nodo",
+    "attributes": [],
+    "explanation": "指喉咙，常搭配「喉が痛い」「喉が渇く」。注意与「首」（脖子）区分。",
+    "example": {
+      "jp": "喉が痛いです。",
+      "kana": "のどがいたいです。",
+      "romaji": "nodo ga itai desu.",
+      "zh": "喉咙痛。"
+    }
+  },
+  "l17-w837": {
+    "romaji": "odaiji ni",
+    "attributes": [],
+    "explanation": "固定表达，对生病或受伤的人说，意为“请保重”。常用于探望或分别时。",
+    "example": {
+      "jp": "風邪ですか。お大事に。",
+      "kana": "かぜですか。おだいじに。",
+      "romaji": "kaze desu ka. odaiji ni.",
+      "zh": "感冒了吗？请保重。"
+    }
+  },
+  "l17-painful": {
+    "romaji": "itai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示身体某部位疼痛，也可用于比喻心理上的难受或经济上的损失。常用「〜が痛い」的结构，口语中还可单独说「痛い！」表示突然感到疼。",
+    "example": {
+      "jp": "転んで足が痛い。",
+      "kana": "ころんであしがいたい。",
+      "romaji": "koronde ashi ga itai.",
+      "zh": "摔倒了，脚很疼。"
+    }
+  }
+}

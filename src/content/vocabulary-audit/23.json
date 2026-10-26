@@ -1,0 +1,161 @@
+{
+  "lessonId": 23,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/23.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 28,
+  "entries": [
+    {
+      "sourceId": "1000",
+      "sourceWord": "道",
+      "key": "w1000"
+    },
+    {
+      "sourceId": "1001",
+      "sourceWord": "交差点",
+      "key": "w1001"
+    },
+    {
+      "sourceId": "1002",
+      "sourceWord": "信号",
+      "key": "w1002"
+    },
+    {
+      "sourceId": "1003",
+      "sourceWord": "角",
+      "key": "w1003"
+    },
+    {
+      "sourceId": "1004",
+      "sourceWord": "橋",
+      "key": "w1004"
+    },
+    {
+      "sourceId": "1005",
+      "sourceWord": "駐車場",
+      "key": "w1005"
+    },
+    {
+      "sourceId": "1006",
+      "sourceWord": "－目",
+      "key": "w1006"
+    },
+    {
+      "sourceId": "1009",
+      "sourceWord": "建物",
+      "key": "w1009"
+    },
+    {
+      "sourceId": "1084",
+      "sourceWord": "お湯",
+      "key": "w1084"
+    },
+    {
+      "sourceId": "660",
+      "sourceWord": "寂しい",
+      "key": "w660"
+    },
+    {
+      "sourceId": "694",
+      "sourceWord": "［右へ］曲がります",
+      "key": "w694"
+    },
+    {
+      "sourceId": "891",
+      "sourceWord": "何回も",
+      "key": "w891"
+    },
+    {
+      "sourceId": "982",
+      "sourceWord": "［先生に］聞きます",
+      "key": "w982"
+    },
+    {
+      "sourceId": "983",
+      "sourceWord": "回します",
+      "key": "w983"
+    },
+    {
+      "sourceId": "984",
+      "sourceWord": "引きます",
+      "key": "w984"
+    },
+    {
+      "sourceId": "985",
+      "sourceWord": "変えます",
+      "key": "w985"
+    },
+    {
+      "sourceId": "986",
+      "sourceWord": "［に］触ります",
+      "key": "w986"
+    },
+    {
+      "sourceId": "987",
+      "sourceWord": "［ジュースが］出ます",
+      "key": "w987"
+    },
+    {
+      "sourceId": "989",
+      "sourceWord": "［道を］歩きます",
+      "key": "w989"
+    },
+    {
+      "sourceId": "990",
+      "sourceWord": "［橋を］渡ります",
+      "key": "w990"
+    },
+    {
+      "sourceId": "995",
+      "sourceWord": "サイズ",
+      "key": "w995"
+    },
+    {
+      "sourceId": "996",
+      "sourceWord": "音",
+      "key": "w996"
+    },
+    {
+      "sourceId": "999",
+      "sourceWord": "故障",
+      "key": "w999"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1010",
+      "sourceWord": "外国人登録証",
+      "reason": "旧版证件词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "993",
+      "sourceWord": "電気屋",
+      "reason": "旧版店铺人员词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "994",
+      "sourceWord": "～屋",
+      "reason": "旧版店铺人员接尾词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "997",
+      "sourceWord": "機械",
+      "reason": "旧版设备词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "998",
+      "sourceWord": "つまみ",
+      "reason": "旧版旋钮词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "shotoku",
+    "horyuji",
+    "genki-tea",
+    "honda-station",
+    "library-stop"
+  ],
+  "finalCount": 28
+}

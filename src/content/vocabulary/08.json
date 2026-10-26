@@ -1,0 +1,435 @@
+{
+  "lessonId": 8,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/8.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源59条，排除2条旧版或跨课条目，合并同形同义项并补入第二来源，最终60条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/08.json。"
+  ],
+  "words": [
+    {
+      "key": "w315",
+      "word": "レストラン",
+      "reading": "れすとらん",
+      "partOfSpeech": "名词",
+      "meaning": "餐厅"
+    },
+    {
+      "key": "w378",
+      "word": "ハンサムな",
+      "reading": "はんさむな",
+      "partOfSpeech": "な形容词",
+      "meaning": "英俊的"
+    },
+    {
+      "key": "w379",
+      "word": "きれいな",
+      "reading": "きれいな",
+      "partOfSpeech": "な形容词",
+      "meaning": "漂亮的；干净的"
+    },
+    {
+      "key": "w380",
+      "word": "静かな",
+      "reading": "しずかな",
+      "partOfSpeech": "な形容词",
+      "meaning": "安静的"
+    },
+    {
+      "key": "w381",
+      "word": "にぎやかな",
+      "reading": "にぎやかな",
+      "partOfSpeech": "な形容词",
+      "meaning": "热闹的"
+    },
+    {
+      "key": "w382",
+      "word": "有名な",
+      "reading": "ゆうめいな",
+      "partOfSpeech": "な形容词",
+      "meaning": "有名的"
+    },
+    {
+      "key": "w383",
+      "word": "親切な",
+      "reading": "しんせつな",
+      "partOfSpeech": "な形容词",
+      "meaning": "亲切的"
+    },
+    {
+      "key": "w384",
+      "word": "元気な",
+      "reading": "げんきな",
+      "partOfSpeech": "な形容词",
+      "meaning": "健康的；精神好的"
+    },
+    {
+      "key": "w385",
+      "word": "暇な",
+      "reading": "ひまな",
+      "partOfSpeech": "な形容词",
+      "meaning": "有空的"
+    },
+    {
+      "key": "w386",
+      "word": "便利な",
+      "reading": "べんりな",
+      "partOfSpeech": "な形容词",
+      "meaning": "方便的"
+    },
+    {
+      "key": "w387",
+      "word": "素敵な",
+      "reading": "すてきな",
+      "partOfSpeech": "な形容词",
+      "meaning": "美好的；漂亮的"
+    },
+    {
+      "key": "w388",
+      "word": "大きい",
+      "reading": "おおきい",
+      "partOfSpeech": "い形容词",
+      "meaning": "大的"
+    },
+    {
+      "key": "w389",
+      "word": "小さい",
+      "reading": "ちいさい",
+      "partOfSpeech": "い形容词",
+      "meaning": "小的"
+    },
+    {
+      "key": "w390",
+      "word": "新しい",
+      "reading": "あたらしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "新的"
+    },
+    {
+      "key": "w391",
+      "word": "古い",
+      "reading": "ふるい",
+      "partOfSpeech": "い形容词",
+      "meaning": "旧的（不用于年龄）"
+    },
+    {
+      "key": "w392",
+      "word": "いい",
+      "reading": "いい",
+      "partOfSpeech": "い形容词",
+      "meaning": "好的"
+    },
+    {
+      "key": "w393",
+      "word": "よい",
+      "reading": "よい",
+      "partOfSpeech": "い形容词",
+      "meaning": "好的（いい的另一形式）"
+    },
+    {
+      "key": "w394",
+      "word": "悪い",
+      "reading": "わるい",
+      "partOfSpeech": "い形容词",
+      "meaning": "坏的"
+    },
+    {
+      "key": "w395",
+      "word": "暑い",
+      "reading": "あつい",
+      "partOfSpeech": "い形容词",
+      "meaning": "热的（天气）"
+    },
+    {
+      "key": "w396",
+      "word": "寒い",
+      "reading": "さむい",
+      "partOfSpeech": "い形容词",
+      "meaning": "冷的（天气）"
+    },
+    {
+      "key": "w397",
+      "word": "熱い",
+      "reading": "あつい",
+      "partOfSpeech": "い形容词",
+      "meaning": "烫的；热的（物体）"
+    },
+    {
+      "key": "w398",
+      "word": "冷たい",
+      "reading": "つめたい",
+      "partOfSpeech": "い形容词",
+      "meaning": "冰凉的"
+    },
+    {
+      "key": "w399",
+      "word": "難しい",
+      "reading": "むずかしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "难的"
+    },
+    {
+      "key": "w400",
+      "word": "易しい",
+      "reading": "やさしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "容易的"
+    },
+    {
+      "key": "w401",
+      "word": "高い",
+      "reading": "たかい",
+      "partOfSpeech": "い形容词",
+      "meaning": "贵的；高的"
+    },
+    {
+      "key": "w402",
+      "word": "安い",
+      "reading": "やすい",
+      "partOfSpeech": "い形容词",
+      "meaning": "便宜的"
+    },
+    {
+      "key": "w404",
+      "word": "低い",
+      "reading": "ひくい",
+      "partOfSpeech": "い形容词",
+      "meaning": "低的；矮的"
+    },
+    {
+      "key": "w405",
+      "word": "おもしろい",
+      "reading": "おもしろい",
+      "partOfSpeech": "い形容词",
+      "meaning": "有趣的"
+    },
+    {
+      "key": "w406",
+      "word": "おいしい",
+      "reading": "おいしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "好吃的"
+    },
+    {
+      "key": "w407",
+      "word": "忙しい",
+      "reading": "いそがしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "忙的"
+    },
+    {
+      "key": "w408",
+      "word": "楽しい",
+      "reading": "たのしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "愉快的"
+    },
+    {
+      "key": "w409",
+      "word": "白い",
+      "reading": "しろい",
+      "partOfSpeech": "い形容词",
+      "meaning": "白的"
+    },
+    {
+      "key": "w410",
+      "word": "黒い",
+      "reading": "くろい",
+      "partOfSpeech": "い形容词",
+      "meaning": "黑的"
+    },
+    {
+      "key": "w411",
+      "word": "赤い",
+      "reading": "あかい",
+      "partOfSpeech": "い形容词",
+      "meaning": "红的"
+    },
+    {
+      "key": "w412",
+      "word": "青い",
+      "reading": "あおい",
+      "partOfSpeech": "い形容词",
+      "meaning": "蓝的"
+    },
+    {
+      "key": "w413",
+      "word": "桜",
+      "reading": "さくら",
+      "partOfSpeech": "名词",
+      "meaning": "樱花"
+    },
+    {
+      "key": "w414",
+      "word": "山",
+      "reading": "やま",
+      "partOfSpeech": "名词",
+      "meaning": "山"
+    },
+    {
+      "key": "w415",
+      "word": "町",
+      "reading": "まち",
+      "partOfSpeech": "名词",
+      "meaning": "城镇"
+    },
+    {
+      "key": "w416",
+      "word": "食べ物",
+      "reading": "たべもの",
+      "partOfSpeech": "名词",
+      "meaning": "食物"
+    },
+    {
+      "key": "w418",
+      "word": "所",
+      "reading": "ところ",
+      "partOfSpeech": "名词",
+      "meaning": "地方"
+    },
+    {
+      "key": "w419",
+      "word": "寮",
+      "reading": "りょう",
+      "partOfSpeech": "名词",
+      "meaning": "宿舍"
+    },
+    {
+      "key": "w421",
+      "word": "生活",
+      "reading": "せいかつ",
+      "partOfSpeech": "名词",
+      "meaning": "生活"
+    },
+    {
+      "key": "w422",
+      "word": "（お）仕事",
+      "reading": "（お）しごと",
+      "partOfSpeech": "名词",
+      "meaning": "工作"
+    },
+    {
+      "key": "w423",
+      "word": "どう",
+      "reading": "どう",
+      "partOfSpeech": "表达",
+      "meaning": "怎么样"
+    },
+    {
+      "key": "w424",
+      "word": "どんな",
+      "reading": "どんな",
+      "partOfSpeech": "连体词",
+      "meaning": "什么样的"
+    },
+    {
+      "key": "w426",
+      "word": "とても",
+      "reading": "とても",
+      "partOfSpeech": "副词",
+      "meaning": "很；非常"
+    },
+    {
+      "key": "w427",
+      "word": "あまり",
+      "reading": "あまり",
+      "partOfSpeech": "副词",
+      "meaning": "不太（后接否定）"
+    },
+    {
+      "key": "w428",
+      "word": "そして",
+      "reading": "そして",
+      "partOfSpeech": "表达",
+      "meaning": "而且；然后"
+    },
+    {
+      "key": "w429",
+      "word": "～が～",
+      "reading": "～が～",
+      "partOfSpeech": "表达",
+      "meaning": "……但是……"
+    },
+    {
+      "key": "w430",
+      "word": "お元気ですか",
+      "reading": "おげんきですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "你身体好吗"
+    },
+    {
+      "key": "w431",
+      "word": "そうですね",
+      "reading": "そうですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "是啊；让我想想"
+    },
+    {
+      "key": "w433",
+      "word": "もう一杯いかがですか",
+      "reading": "もういっぱいいかがですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "再来一杯怎么样"
+    },
+    {
+      "key": "w434",
+      "word": "いいえ、結構です",
+      "reading": "いいえ、けっこうです",
+      "partOfSpeech": "固定表达",
+      "meaning": "不用了，谢谢"
+    },
+    {
+      "key": "w435",
+      "word": "もう～です(ね)",
+      "reading": "もう～です(ね)",
+      "partOfSpeech": "固定表达",
+      "meaning": "已经……了啊"
+    },
+    {
+      "key": "w436",
+      "word": "そろそろ失礼します",
+      "reading": "そろそろしつれいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "我差不多该告辞了"
+    },
+    {
+      "key": "w437",
+      "word": "またいらっしゃってください",
+      "reading": "またいらっしゃってください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请再来玩"
+    },
+    {
+      "key": "fuji",
+      "word": "富士山",
+      "reading": "ふじさん",
+      "partOfSpeech": "专有名词",
+      "meaning": "富士山"
+    },
+    {
+      "key": "nara-park",
+      "word": "奈良公園",
+      "reading": "ならこうえん",
+      "partOfSpeech": "专有名词",
+      "meaning": "奈良公园"
+    },
+    {
+      "key": "kinkakuji",
+      "word": "金閣寺",
+      "reading": "きんかくじ",
+      "partOfSpeech": "专有名词",
+      "meaning": "金阁寺"
+    },
+    {
+      "key": "seven-samurai",
+      "word": "七人の侍",
+      "reading": "しちにんのさむらい",
+      "partOfSpeech": "专有名词",
+      "meaning": "《七武士》（电影名）"
+    }
+  ]
+}

@@ -15,8 +15,9 @@ const recorderModule = `
 import {useState,useEffect} from 'react';
 export function useRecorder(){
   const [clip,setClip]=useState(null);
-  useEffect(()=>{window.reviewSetClip=setClip;return()=>{delete window.reviewSetClip}},[]);
-  return {status:'idle',clip,saving:false,saveError:'',transcribeError:'',start(){},stop(){},cancel(){setClip(null)},clear(){setClip(null)},retrySave(){},retryTranscribe(){}};
+  const [saveError,setSaveError]=useState('');
+  useEffect(()=>{window.reviewSetClip=value=>{setClip(value);setSaveError(value&&!value.saved?'录音还未保存。请重试保存。':'')};return()=>{delete window.reviewSetClip}},[]);
+  return {status:'idle',clip,saving:false,saveError,transcribeError:'',start(){},stop(){},cancel(){setClip(null)},clear(){setClip(null)},retrySave(){setClip(previous=>previous?{...previous,saved:true,recordingId:'${recordId}'}:previous);setSaveError('')},retryTranscribe(){}};
 }`;
 const harness = `
 import React from 'react';
@@ -36,11 +37,11 @@ createRoot(document.getElementById('root')).render(new URLSearchParams(location.
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'nihongo-v11-review-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{ name: 'review-recorder-control', enforce: 'pre',
       resolveId(source, importer) {
         if (source === '/__v11-review.tsx') return source;
-        if (source === './speech' && /[\\/](Conversation|SpeakingPractice)\.tsx$/.test(importer || '')) return '\0review-recorder';
+        if (source === './speech' && /[\\/](Conversation|SpeakingPractice|AudioSpeakingPractice)\.tsx$/.test(importer || '')) return '\0review-recorder';
       },
       load(id) { if (id === '/__v11-review.tsx') return harness; if (id === '\0review-recorder') return recorderModule; },
     }] });
@@ -70,23 +71,52 @@ async function setRecording(page: Page, recordingId?: string) {
 describe('v1.1 recording association recovery', () => {
   it('does not attach a previous text-only score after a failed recording save is retried successfully', async () => {
     const { page, context } = await setup();
+    let previousAssessmentId = '';
+    const audioRequests: Array<{ lessonId: number; itemId: string; recordingId: string; clientAssessmentId: string }> = [];
+    let finishAudio!: () => void;
+    const audioReady = new Promise<void>(done => { finishAudio = done; });
+    await page.route('**/api/speaking/audio-settings', route => route.fulfill({ json: { provider: 'qwen', model: 'qwen3.8-omni-flash', workspaceId: '', hasApiKey: true } }));
     await page.route('**/api/speaking/assess', route => {
       const input = route.request().postDataJSON();
+      previousAssessmentId = input.clientAssessmentId;
       return route.fulfill({ json: { id: input.clientAssessmentId, lessonId: 14, itemId: input.itemId, text: input.text, recordingId: input.recordingId, createdAt: new Date().toISOString(), source: 'deepseek', kind: 'expression', taskScore: 45, grammarScore: 28, vocabularyScore: 19, totalScore: 92, summaryZh: '意思表达清楚了。', corrections: [], reference: { jp: '少し待ってください。', kana: 'すこしまってください。', zh: '请稍等。' } } });
+    });
+    await page.route('**/api/speaking/assess-audio', async route => {
+      const input = route.request().postDataJSON(); audioRequests.push(input);
+      await audioReady;
+      await route.fulfill({ json: { id: input.clientAssessmentId, lessonId: input.lessonId, itemId: input.itemId, recordingId: input.recordingId, createdAt: new Date().toISOString(), source: 'qwen-omni', kind: 'audio', model: 'qwen3.8-omni-flash', latencyMs: 100,
+        text: 'ちょっと待ってください。', summaryZh: '请求表达清楚。', grammarFeedbackZh: '请求句的语法正确。', corrections: [], pronunciation: { status: 'clear', feedbackZh: '读音清楚。', issues: [] }, reference: { jp: '少し待ってください。', kana: 'すこしまってください。', zh: '请稍等。' } } });
     });
     try {
       await page.goto(`${origin}/__review`);
+      await page.getByRole('button', { name: '打字练习', exact: true }).click();
       await page.locator('#speaking-answer').fill('少し待ってください。');
-      await setRecording(page); // The independent upload has failed; transcription was usable.
       await page.getByRole('button', { name: '确认并评分', exact: true }).click();
       await page.locator('.expression-result').waitFor();
-      await setRecording(page, recordId); // Same clip is now saved after retry.
+      expect(previousAssessmentId).not.toBe('');
+      await page.getByRole('button', { name: '录音练习', exact: true }).click();
+      await page.waitForFunction(() => typeof (window as unknown as { reviewSetClip?: unknown }).reviewSetClip === 'function');
+      await setRecording(page); // A new recording remains local after its upload fails.
+      await page.getByRole('button', { name: '重试保存录音', exact: true }).waitFor();
+      expect(await page.locator('.expression-result').count()).toBe(0);
+      expect(audioRequests).toHaveLength(0);
+      expect(await page.getByRole('button', { name: '独立说出来了', exact: true }).count()).toBe(0);
+      await page.getByRole('button', { name: '重试保存录音', exact: true }).click();
+      await expect.poll(() => audioRequests.length).toBe(1);
+      expect(audioRequests[0]!.recordingId).toBe(recordId);
+      expect(audioRequests[0]!.clientAssessmentId).not.toBe(previousAssessmentId);
+      expect(audioRequests[0]).not.toHaveProperty('text');
+      expect(await page.getByRole('button', { name: '独立说出来了', exact: true }).count()).toBe(0);
+      finishAudio();
+      await page.locator('.audio-assessment-result').waitFor();
       await page.getByRole('button', { name: '独立说出来了', exact: true }).click();
-      const ratings = await page.evaluate(() => (window as unknown as { reviewRatings: Array<{ recordingId?: string; assessmentId?: string }> }).reviewRatings);
+      const ratings = await page.evaluate(() => (window as unknown as { reviewRatings: Array<{ answer: string; recordingId?: string; assessmentId?: string }> }).reviewRatings);
       expect(ratings).toHaveLength(1);
       expect(ratings[0]!.recordingId).toBe(recordId);
-      expect(ratings[0]!.assessmentId).toBeUndefined();
-    } finally { await context.close(); }
+      expect(ratings[0]!.assessmentId).toBe(audioRequests[0]!.clientAssessmentId);
+      expect(ratings[0]!.assessmentId).not.toBe(previousAssessmentId);
+      expect(ratings[0]!.answer).toBe('ちょっと待ってください。');
+    } finally { finishAudio(); await context.close(); }
   });
 
   it.each(['RECORDING_NOT_FOUND', 'RECORDING_MISMATCH'])('releases %s and permits text-only resend without discarding the draft', async code => {

@@ -1,0 +1,315 @@
+{
+  "lessonId": 8,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/8.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 59,
+  "entries": [
+    {
+      "sourceId": "315",
+      "sourceWord": "レストラン",
+      "key": "w315"
+    },
+    {
+      "sourceId": "378",
+      "sourceWord": "ハンサムな",
+      "key": "w378"
+    },
+    {
+      "sourceId": "379",
+      "sourceWord": "きれいな",
+      "key": "w379"
+    },
+    {
+      "sourceId": "380",
+      "sourceWord": "静かな",
+      "key": "w380"
+    },
+    {
+      "sourceId": "381",
+      "sourceWord": "にぎやかな",
+      "key": "w381"
+    },
+    {
+      "sourceId": "382",
+      "sourceWord": "有名な",
+      "key": "w382"
+    },
+    {
+      "sourceId": "383",
+      "sourceWord": "親切な",
+      "key": "w383"
+    },
+    {
+      "sourceId": "384",
+      "sourceWord": "元気な",
+      "key": "w384"
+    },
+    {
+      "sourceId": "385",
+      "sourceWord": "暇な",
+      "key": "w385"
+    },
+    {
+      "sourceId": "386",
+      "sourceWord": "便利な",
+      "key": "w386"
+    },
+    {
+      "sourceId": "387",
+      "sourceWord": "素敵な",
+      "key": "w387"
+    },
+    {
+      "sourceId": "388",
+      "sourceWord": "大きい",
+      "key": "w388"
+    },
+    {
+      "sourceId": "389",
+      "sourceWord": "小さい",
+      "key": "w389"
+    },
+    {
+      "sourceId": "390",
+      "sourceWord": "新しい",
+      "key": "w390"
+    },
+    {
+      "sourceId": "391",
+      "sourceWord": "古い",
+      "key": "w391"
+    },
+    {
+      "sourceId": "392",
+      "sourceWord": "いい",
+      "key": "w392"
+    },
+    {
+      "sourceId": "393",
+      "sourceWord": "よい",
+      "key": "w393"
+    },
+    {
+      "sourceId": "394",
+      "sourceWord": "悪い",
+      "key": "w394"
+    },
+    {
+      "sourceId": "395",
+      "sourceWord": "暑い",
+      "key": "w395"
+    },
+    {
+      "sourceId": "396",
+      "sourceWord": "寒い",
+      "key": "w396"
+    },
+    {
+      "sourceId": "397",
+      "sourceWord": "熱い",
+      "key": "w397"
+    },
+    {
+      "sourceId": "398",
+      "sourceWord": "冷たい",
+      "key": "w398"
+    },
+    {
+      "sourceId": "399",
+      "sourceWord": "難しい",
+      "key": "w399"
+    },
+    {
+      "sourceId": "400",
+      "sourceWord": "易しい",
+      "key": "w400"
+    },
+    {
+      "sourceId": "401",
+      "sourceWord": "高い",
+      "key": "w401"
+    },
+    {
+      "sourceId": "402",
+      "sourceWord": "安い",
+      "key": "w402"
+    },
+    {
+      "sourceId": "403",
+      "sourceWord": "高い",
+      "key": "w401"
+    },
+    {
+      "sourceId": "404",
+      "sourceWord": "低い",
+      "key": "w404"
+    },
+    {
+      "sourceId": "405",
+      "sourceWord": "おもしろい",
+      "key": "w405"
+    },
+    {
+      "sourceId": "406",
+      "sourceWord": "おいしい",
+      "key": "w406"
+    },
+    {
+      "sourceId": "407",
+      "sourceWord": "忙しい",
+      "key": "w407"
+    },
+    {
+      "sourceId": "408",
+      "sourceWord": "楽しい",
+      "key": "w408"
+    },
+    {
+      "sourceId": "409",
+      "sourceWord": "白い",
+      "key": "w409"
+    },
+    {
+      "sourceId": "410",
+      "sourceWord": "黒い",
+      "key": "w410"
+    },
+    {
+      "sourceId": "411",
+      "sourceWord": "赤い",
+      "key": "w411"
+    },
+    {
+      "sourceId": "412",
+      "sourceWord": "青い",
+      "key": "w412"
+    },
+    {
+      "sourceId": "413",
+      "sourceWord": "桜",
+      "key": "w413"
+    },
+    {
+      "sourceId": "414",
+      "sourceWord": "山",
+      "key": "w414"
+    },
+    {
+      "sourceId": "415",
+      "sourceWord": "町",
+      "key": "w415"
+    },
+    {
+      "sourceId": "416",
+      "sourceWord": "食べ物",
+      "key": "w416"
+    },
+    {
+      "sourceId": "418",
+      "sourceWord": "所",
+      "key": "w418"
+    },
+    {
+      "sourceId": "419",
+      "sourceWord": "寮",
+      "key": "w419"
+    },
+    {
+      "sourceId": "421",
+      "sourceWord": "生活",
+      "key": "w421"
+    },
+    {
+      "sourceId": "422",
+      "sourceWord": "(お)仕事",
+      "key": "w422"
+    },
+    {
+      "sourceId": "423",
+      "sourceWord": "どう",
+      "key": "w423"
+    },
+    {
+      "sourceId": "424",
+      "sourceWord": "どんな",
+      "key": "w424"
+    },
+    {
+      "sourceId": "426",
+      "sourceWord": "とても",
+      "key": "w426"
+    },
+    {
+      "sourceId": "427",
+      "sourceWord": "あまり",
+      "key": "w427"
+    },
+    {
+      "sourceId": "428",
+      "sourceWord": "そして",
+      "key": "w428"
+    },
+    {
+      "sourceId": "429",
+      "sourceWord": "～が～",
+      "key": "w429"
+    },
+    {
+      "sourceId": "430",
+      "sourceWord": "お元気ですか。",
+      "key": "w430"
+    },
+    {
+      "sourceId": "431",
+      "sourceWord": "そうですね。",
+      "key": "w431"
+    },
+    {
+      "sourceId": "433",
+      "sourceWord": "もう一杯いかがですか｡",
+      "key": "w433"
+    },
+    {
+      "sourceId": "434",
+      "sourceWord": "いいえ、結構です。",
+      "key": "w434"
+    },
+    {
+      "sourceId": "435",
+      "sourceWord": "もう～です(ね)。",
+      "key": "w435"
+    },
+    {
+      "sourceId": "436",
+      "sourceWord": "そろそろ失礼します。",
+      "key": "w436"
+    },
+    {
+      "sourceId": "437",
+      "sourceWord": "またいらっしゃってください。",
+      "key": "w437"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "420",
+      "sourceWord": "勉強",
+      "reason": "第二版交叉表本课不列勉強；学习动词已在第4课出现。"
+    },
+    {
+      "sourceId": "432",
+      "sourceWord": "日本の生活に慣れましたか。",
+      "reason": "旧版对话整句；第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "fuji",
+    "nara-park",
+    "kinkakuji",
+    "seven-samurai"
+  ],
+  "finalCount": 60
+}

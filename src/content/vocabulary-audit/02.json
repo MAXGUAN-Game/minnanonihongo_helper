@@ -1,0 +1,272 @@
+{
+  "lessonId": 2,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/2.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 50,
+  "entries": [
+    {
+      "sourceId": "100",
+      "sourceWord": "コンピューター",
+      "key": "konpyuutaa"
+    },
+    {
+      "sourceId": "102",
+      "sourceWord": "車",
+      "key": "kuruma"
+    },
+    {
+      "sourceId": "103",
+      "sourceWord": "机",
+      "key": "tsukue"
+    },
+    {
+      "sourceId": "104",
+      "sourceWord": "椅子",
+      "key": "isu"
+    },
+    {
+      "sourceId": "105",
+      "sourceWord": "チョコレート",
+      "key": "chokoreeto"
+    },
+    {
+      "sourceId": "106",
+      "sourceWord": "コーヒー",
+      "key": "koohii"
+    },
+    {
+      "sourceId": "107",
+      "sourceWord": "英語",
+      "key": "eigo"
+    },
+    {
+      "sourceId": "108",
+      "sourceWord": "日本語",
+      "key": "nihongo"
+    },
+    {
+      "sourceId": "109",
+      "sourceWord": "～語",
+      "key": "go"
+    },
+    {
+      "sourceId": "110",
+      "sourceWord": "何",
+      "key": "nan"
+    },
+    {
+      "sourceId": "111",
+      "sourceWord": "そう",
+      "key": "sou"
+    },
+    {
+      "sourceId": "112",
+      "sourceWord": "違います。",
+      "key": "chigaimasu"
+    },
+    {
+      "sourceId": "113",
+      "sourceWord": "そうですか。",
+      "key": "soudesuka"
+    },
+    {
+      "sourceId": "114",
+      "sourceWord": "あのう",
+      "key": "anou"
+    },
+    {
+      "sourceId": "115",
+      "sourceWord": "どうぞ。",
+      "key": "douzo"
+    },
+    {
+      "sourceId": "116",
+      "sourceWord": "どうも。",
+      "key": "arigatou"
+    },
+    {
+      "sourceId": "117",
+      "sourceWord": "ありがとう。",
+      "key": "arigatou"
+    },
+    {
+      "sourceId": "118",
+      "sourceWord": "どうもありがとう。",
+      "key": "arigatou"
+    },
+    {
+      "sourceId": "119",
+      "sourceWord": "どうもありがとうございます。",
+      "key": "arigatou"
+    },
+    {
+      "sourceId": "120",
+      "sourceWord": "これからお世話になります。",
+      "key": "korekaraosewani"
+    },
+    {
+      "sourceId": "121",
+      "sourceWord": "こちらこそよろしく。",
+      "key": "kochirakoso"
+    },
+    {
+      "sourceId": "310",
+      "sourceWord": "シーディー",
+      "key": "cd"
+    },
+    {
+      "sourceId": "377",
+      "sourceWord": "お土産",
+      "key": "omiyage"
+    },
+    {
+      "sourceId": "73",
+      "sourceWord": "これ",
+      "key": "kore"
+    },
+    {
+      "sourceId": "74",
+      "sourceWord": "それ",
+      "key": "sore"
+    },
+    {
+      "sourceId": "75",
+      "sourceWord": "あれ",
+      "key": "are"
+    },
+    {
+      "sourceId": "76",
+      "sourceWord": "この～",
+      "key": "kono"
+    },
+    {
+      "sourceId": "77",
+      "sourceWord": "その～",
+      "key": "sono"
+    },
+    {
+      "sourceId": "78",
+      "sourceWord": "あの～",
+      "key": "ano"
+    },
+    {
+      "sourceId": "79",
+      "sourceWord": "本",
+      "key": "hon"
+    },
+    {
+      "sourceId": "80",
+      "sourceWord": "辞書",
+      "key": "jisho"
+    },
+    {
+      "sourceId": "81",
+      "sourceWord": "雑誌",
+      "key": "zasshi"
+    },
+    {
+      "sourceId": "82",
+      "sourceWord": "新聞",
+      "key": "shinbun"
+    },
+    {
+      "sourceId": "83",
+      "sourceWord": "ノート",
+      "key": "nooto"
+    },
+    {
+      "sourceId": "84",
+      "sourceWord": "手帳",
+      "key": "techou"
+    },
+    {
+      "sourceId": "85",
+      "sourceWord": "名刺",
+      "key": "meishi"
+    },
+    {
+      "sourceId": "86",
+      "sourceWord": "カード",
+      "key": "kaado"
+    },
+    {
+      "sourceId": "88",
+      "sourceWord": "鉛筆",
+      "key": "enpitsu"
+    },
+    {
+      "sourceId": "89",
+      "sourceWord": "ボールペン",
+      "key": "boorupen"
+    },
+    {
+      "sourceId": "90",
+      "sourceWord": "シャープペンシル",
+      "key": "shaapupenshiru"
+    },
+    {
+      "sourceId": "91",
+      "sourceWord": "鍵",
+      "key": "kagi"
+    },
+    {
+      "sourceId": "92",
+      "sourceWord": "時計",
+      "key": "tokei"
+    },
+    {
+      "sourceId": "93",
+      "sourceWord": "傘",
+      "key": "kasa"
+    },
+    {
+      "sourceId": "94",
+      "sourceWord": "かばん",
+      "key": "kaban"
+    },
+    {
+      "sourceId": "97",
+      "sourceWord": "テレビ",
+      "key": "terebi"
+    },
+    {
+      "sourceId": "98",
+      "sourceWord": "ラジオ",
+      "key": "rajio"
+    },
+    {
+      "sourceId": "99",
+      "sourceWord": "カメラ",
+      "key": "kamera"
+    }
+  ],
+  "secondaryAdditions": [
+    "e",
+    "a"
+  ],
+  "merged": [
+    "感谢表达四种形式合并为arigatou，并在释义注明"
+  ],
+  "excluded": [
+    {
+      "sourceId": "87",
+      "sourceWord": "テレホンカード",
+      "reason": "旧版词汇，第二版交叉表未列入"
+    },
+    {
+      "sourceId": "95",
+      "sourceWord": "カセットテープ",
+      "reason": "旧版词汇，第二版交叉表未列入"
+    },
+    {
+      "sourceId": "96",
+      "sourceWord": "テープレコーダー",
+      "reason": "旧版词汇，第二版交叉表未列入"
+    }
+  ],
+  "finalCount": 46,
+  "reviewedOn": "2026-10-24"
+}

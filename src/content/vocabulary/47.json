@@ -1,0 +1,281 @@
+{
+  "lessonId": 47,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/47.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源33条，排除0条旧版或跨课条目，合并同形同义项并补入第二来源，最终38条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/47.json。"
+  ],
+  "words": [
+    {
+      "key": "w1078",
+      "word": "燃えます",
+      "reading": "もえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "燃烧"
+    },
+    {
+      "key": "w1290",
+      "word": "［風が］吹きます",
+      "reading": "［かぜが］ふきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "刮（风）"
+    },
+    {
+      "key": "w1518",
+      "word": "亡くなります",
+      "reading": "なくなります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "去世"
+    },
+    {
+      "key": "w1704",
+      "word": "データ",
+      "reading": "でーた",
+      "partOfSpeech": "名词",
+      "meaning": "数据"
+    },
+    {
+      "key": "w1820",
+      "word": "［人が］集まります",
+      "reading": "［ひとが］あつまります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "聚集（人）"
+    },
+    {
+      "key": "w1821",
+      "word": "別れます",
+      "reading": "わかれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "分开；告别"
+    },
+    {
+      "key": "w1822",
+      "word": "長生きします",
+      "reading": "ながいきします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "长寿"
+    },
+    {
+      "key": "w1823",
+      "word": "音がします",
+      "reading": "おとがします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "听到声音"
+    },
+    {
+      "key": "w1824",
+      "word": "声がします",
+      "reading": "こえがします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "听到人声"
+    },
+    {
+      "key": "w1825",
+      "word": "味がします",
+      "reading": "あじがします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "有某种味道"
+    },
+    {
+      "key": "w1826",
+      "word": "匂いがします",
+      "reading": "においがします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "闻到气味"
+    },
+    {
+      "key": "w1828",
+      "word": "ひどい",
+      "reading": "ひどい",
+      "partOfSpeech": "い形容词",
+      "meaning": "严重的；糟糕的"
+    },
+    {
+      "key": "w1829",
+      "word": "怖い",
+      "reading": "こわい",
+      "partOfSpeech": "い形容词",
+      "meaning": "可怕的"
+    },
+    {
+      "key": "w1832",
+      "word": "実験",
+      "reading": "じっけん",
+      "partOfSpeech": "名词",
+      "meaning": "实验"
+    },
+    {
+      "key": "w1833",
+      "word": "人口",
+      "reading": "じんこう",
+      "partOfSpeech": "名词",
+      "meaning": "人口"
+    },
+    {
+      "key": "w1834",
+      "word": "臭い",
+      "reading": "におい",
+      "partOfSpeech": "名词",
+      "meaning": "气味"
+    },
+    {
+      "key": "w1835",
+      "word": "科学",
+      "reading": "かがく",
+      "partOfSpeech": "名词",
+      "meaning": "科学"
+    },
+    {
+      "key": "w1836",
+      "word": "医学",
+      "reading": "いがく",
+      "partOfSpeech": "名词",
+      "meaning": "医学"
+    },
+    {
+      "key": "w1837",
+      "word": "文学",
+      "reading": "ぶんがく",
+      "partOfSpeech": "名词",
+      "meaning": "文学"
+    },
+    {
+      "key": "w1838",
+      "word": "パトカー",
+      "reading": "ぱとかー",
+      "partOfSpeech": "名词",
+      "meaning": "警车"
+    },
+    {
+      "key": "w1839",
+      "word": "救急車",
+      "reading": "きゅうきゅうしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "救护车"
+    },
+    {
+      "key": "w1840",
+      "word": "賛成",
+      "reading": "さんせい",
+      "partOfSpeech": "名词",
+      "meaning": "赞成"
+    },
+    {
+      "key": "w1841",
+      "word": "反対",
+      "reading": "はんたい",
+      "partOfSpeech": "名词",
+      "meaning": "反对"
+    },
+    {
+      "key": "w1842",
+      "word": "男性",
+      "reading": "だんせい",
+      "partOfSpeech": "名词",
+      "meaning": "男性"
+    },
+    {
+      "key": "w1843",
+      "word": "女性",
+      "reading": "じょせい",
+      "partOfSpeech": "名词",
+      "meaning": "女性"
+    },
+    {
+      "key": "w1844",
+      "word": "どうも",
+      "reading": "どうも",
+      "partOfSpeech": "表达",
+      "meaning": "似乎；总觉得"
+    },
+    {
+      "key": "w1845",
+      "word": "～によると",
+      "reading": "～によると",
+      "partOfSpeech": "表达",
+      "meaning": "据……说"
+    },
+    {
+      "key": "w1846",
+      "word": "恋人",
+      "reading": "こいびと",
+      "partOfSpeech": "名词",
+      "meaning": "恋人"
+    },
+    {
+      "key": "w1847",
+      "word": "婚約します",
+      "reading": "こんやくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "订婚"
+    },
+    {
+      "key": "w1848",
+      "word": "相手",
+      "reading": "あいて",
+      "partOfSpeech": "名词",
+      "meaning": "对方；对象"
+    },
+    {
+      "key": "w1849",
+      "word": "知り合います",
+      "reading": "しりあいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "结识"
+    },
+    {
+      "key": "w1854",
+      "word": "厳しい",
+      "reading": "きびしい",
+      "partOfSpeech": "い形容词",
+      "meaning": "严格的"
+    },
+    {
+      "key": "w938",
+      "word": "大統領",
+      "reading": "だいとうりょう",
+      "partOfSpeech": "名词",
+      "meaning": "总统"
+    },
+    {
+      "key": "makeup",
+      "word": "化粧",
+      "reading": "けしょう",
+      "partOfSpeech": "名词",
+      "meaning": "化妆"
+    },
+    {
+      "key": "care",
+      "word": "世話をします",
+      "reading": "せわをします",
+      "partOfSpeech": "动词表达",
+      "meaning": "照顾"
+    },
+    {
+      "key": "long-life",
+      "word": "長生き",
+      "reading": "ながいき",
+      "partOfSpeech": "名词",
+      "meaning": "长寿"
+    },
+    {
+      "key": "reason",
+      "word": "理由",
+      "reading": "りゆう",
+      "partOfSpeech": "名词",
+      "meaning": "理由"
+    },
+    {
+      "key": "relation",
+      "word": "関係",
+      "reading": "かんけい",
+      "partOfSpeech": "名词",
+      "meaning": "关系"
+    }
+  ]
+}

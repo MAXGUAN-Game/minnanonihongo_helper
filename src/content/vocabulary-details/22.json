@@ -1,0 +1,355 @@
+{
+  "l22-w1028": {
+    "romaji": "bentou",
+    "attributes": [],
+    "explanation": "指便携的盒装餐食，常指便当。日常会话中常说「お弁当」，带有亲切感。",
+    "example": {
+      "jp": "母が毎日お弁当を作ってくれます。",
+      "kana": "ははがまいにちおべんとうをつくってくれます。",
+      "romaji": "haha ga mainichi obentou o tsukutte kuremasu.",
+      "zh": "妈妈每天给我做便当。"
+    }
+  },
+  "l22-w1373": {
+    "romaji": "nekutai o shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「する」与「ネクタイ」搭配表示“打领带”，是固定说法。不能用于穿衣服或戴帽子。",
+    "example": {
+      "jp": "毎朝ネクタイをします。",
+      "kana": "まいあさねくたいをします。",
+      "romaji": "maiasa nekutai o shimasu.",
+      "zh": "每天早上打领带。"
+    }
+  },
+  "l22-w1893": {
+    "romaji": "dewa",
+    "attributes": [],
+    "explanation": "用于转换话题或结束一段谈话，相当于“那么”。比「じゃあ」更正式，常用于商务或礼貌场合。",
+    "example": {
+      "jp": "では、また明日。",
+      "kana": "では、またあした。",
+      "romaji": "dewa, mata ashita.",
+      "zh": "那么，明天见。"
+    }
+  },
+  "l22-w215": {
+    "romaji": "eeto",
+    "attributes": [],
+    "explanation": "表示正在思考或犹豫时的填充词，相当于中文的“嗯……”。口语中使用，不宜在正式书面语中频繁出现。",
+    "example": {
+      "jp": "えーと、名前は何でしたっけ。",
+      "kana": "えーと、なまえはなんでしたっけ。",
+      "romaji": "eeto, namae wa nan deshita kke.",
+      "zh": "嗯……你叫什么名字来着？"
+    }
+  },
+  "l22-w3126": {
+    "romaji": "robotto",
+    "attributes": [],
+    "explanation": "指机器人，包括工业机器人和玩具机器人。外来词，日常和科技语境均可用。",
+    "example": {
+      "jp": "このロボットは掃除をしてくれます。",
+      "kana": "このろぼっとそうじをしてくれます。",
+      "romaji": "kono robotto wa souji o shite kuremasu.",
+      "zh": "这个机器人会帮忙打扫。"
+    }
+  },
+  "l22-v9": {
+    "romaji": "tsugou",
+    "attributes": [],
+    "explanation": "表示时间安排或方便与否，常用于询问对方是否合适。常见搭配「都合がいい／悪い」「ご都合はいかがですか」。",
+    "example": {
+      "jp": "明日のご都合はいかがですか。",
+      "kana": "あしたのごつごうはいかがですか。",
+      "romaji": "ashita no gotsugou wa ikaga desu ka.",
+      "zh": "您明天方便吗？"
+    }
+  },
+  "l22-w37": {
+    "romaji": "watashitachi",
+    "attributes": [],
+    "explanation": "第一人称复数，即“我们”。比「僕たち」「俺たち」更中性礼貌，男女均可使用。",
+    "example": {
+      "jp": "私たちは同じ会社で働いています。",
+      "kana": "わたしたちはおなじかいしゃではたらいています。",
+      "romaji": "watashitachi wa onaji kaisha de hataraite imasu.",
+      "zh": "我们在同一家公司工作。"
+    }
+  },
+  "l22-w895": {
+    "romaji": "keeki",
+    "attributes": [],
+    "explanation": "指西式蛋糕，常用于生日或庆祝场合。外来词，日常使用广泛。",
+    "example": {
+      "jp": "誕生日にケーキを食べました。",
+      "kana": "たんじょうびにけーきをたべました。",
+      "romaji": "tanjoubi ni keeki o tabemashita.",
+      "zh": "生日时吃了蛋糕。"
+    }
+  },
+  "l22-w946": {
+    "romaji": "yuumoa",
+    "attributes": [],
+    "explanation": "指幽默或幽默感，外来词。常与「ある」「ない」搭配，如「ユーモアがある」。",
+    "example": {
+      "jp": "彼はユーモアがあって人気があります。",
+      "kana": "かれはゆーもあがあってにんきがあります。",
+      "romaji": "kare wa yuumoa ga atte ninki ga arimasu.",
+      "zh": "他很有幽默感，很受欢迎。"
+    }
+  },
+  "l22-w962": {
+    "romaji": "shatsu o kimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「着る」用于上衣、衬衫、外套等覆盖上半身或全身的衣物。与「履く」「かぶる」区分使用。",
+    "example": {
+      "jp": "白いシャツを着ます。",
+      "kana": "しろいしゃつをきます。",
+      "romaji": "shiroi shatsu o kimasu.",
+      "zh": "穿白衬衫。"
+    }
+  },
+  "l22-w963": {
+    "romaji": "kutsu o hakimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「履く」用于鞋、袜子、裤子等下半身或脚部穿戴物。不能用于上衣或帽子。",
+    "example": {
+      "jp": "新しい靴を履きます。",
+      "kana": "あたらしいくつをはきます。",
+      "romaji": "atarashii kutsu o hakimasu.",
+      "zh": "穿新鞋。"
+    }
+  },
+  "l22-w964": {
+    "romaji": "boushi o kaburimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「かぶる」专门用于戴帽子或头盔等头部物品。与「着る」「履く」搭配对象不同。",
+    "example": {
+      "jp": "暑いので帽子をかぶります。",
+      "kana": "あついのでぼうしをかぶります。",
+      "romaji": "atsui node boushi o kaburimasu.",
+      "zh": "因为热，所以戴帽子。"
+    }
+  },
+  "l22-w965": {
+    "romaji": "kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“戴（眼镜）”，是“かける”的礼貌形。常与“眼鏡を”搭配，用于日常描述某人戴眼镜的状态或动作。",
+    "example": {
+      "jp": "彼はいつも眼鏡をかけます。",
+      "kana": "かれはいつもめがねをかけます。",
+      "romaji": "kare wa itsumo megane o kakemasu.",
+      "zh": "他总是戴眼镜。"
+    }
+  },
+  "l22-w966": {
+    "romaji": "umaremasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示“出生”，是“生まれる”的礼貌形。常用“～で生まれます”说明出生地点，主语是人或动物。",
+    "example": {
+      "jp": "私は東京で生まれます。",
+      "kana": "わたしはとうきょうでうまれます。",
+      "romaji": "watashi wa toukyou de umaremasu.",
+      "zh": "我在东京出生。"
+    }
+  },
+  "l22-w967": {
+    "romaji": "kōto",
+    "attributes": [],
+    "explanation": "指“大衣、外套”，是外来语名词。常与“着る”搭配，如“コートを着ます”，用于冬季或户外穿着。",
+    "example": {
+      "jp": "寒いのでコートを着ます。",
+      "kana": "さむいのでこーとをきます。",
+      "romaji": "samui node kōto o kimasu.",
+      "zh": "因为冷，所以穿大衣。"
+    }
+  },
+  "l22-w968": {
+    "romaji": "sūtsu",
+    "attributes": [],
+    "explanation": "指“西装、套装”，是外来语名词。通常指上下配套的正式服装，常用于工作或正式场合。",
+    "example": {
+      "jp": "父はスーツを着て会社へ行きます。",
+      "kana": "ちちはすーつをきてかいしゃへいきます。",
+      "romaji": "chichi wa sūtsu o kite kaisha e ikimasu.",
+      "zh": "父亲穿西装去公司。"
+    }
+  },
+  "l22-w969": {
+    "romaji": "sētā",
+    "attributes": [],
+    "explanation": "指“毛衣、针织衫”，是外来语名词。常与“着る”搭配，如“セーターを着ます”，用于保暖的日常穿着。",
+    "example": {
+      "jp": "このセーターは暖かいです。",
+      "kana": "このせーたーはあたたかいです。",
+      "romaji": "kono sētā wa atatakai desu.",
+      "zh": "这件毛衣很暖和。"
+    }
+  },
+  "l22-v5": {
+    "romaji": "bōshi",
+    "attributes": [],
+    "explanation": "指“帽子”，是名词。常与“かぶる”搭配，如“帽子をかぶります”，用于头部佩戴的服饰。",
+    "example": {
+      "jp": "日差しが強いので帽子をかぶります。",
+      "kana": "ひざしがつよいのでぼうしをかぶります。",
+      "romaji": "hizashi ga tsuyoi node bōshi o kaburimasu.",
+      "zh": "阳光很强，所以戴帽子。"
+    }
+  },
+  "l22-v4": {
+    "romaji": "megane",
+    "attributes": [],
+    "explanation": "指“眼镜”，是名词。常与“かける”搭配，如“眼鏡をかけます”，用于视力矫正或装饰。",
+    "example": {
+      "jp": "眼鏡をかけるとよく見えます。",
+      "kana": "めがねをかけるとよくみえます。",
+      "romaji": "megane o kakeru to yoku miemasu.",
+      "zh": "戴上眼镜就能看清楚。"
+    }
+  },
+  "l22-w972": {
+    "romaji": "yoku",
+    "attributes": [],
+    "explanation": "表示“经常、常常”，是副词。用于说明动作或状态的频率，常与动词搭配，如“よく行きます”。",
+    "example": {
+      "jp": "私はよく図書館へ行きます。",
+      "kana": "わたしはよくとしょかんへいきます。",
+      "romaji": "watashi wa yoku toshokan e ikimasu.",
+      "zh": "我经常去图书馆。"
+    }
+  },
+  "l22-w973": {
+    "romaji": "omedetō gozaimasu",
+    "attributes": [],
+    "explanation": "表示“恭喜”，是固定祝贺表达。用于生日、结婚、入学等喜庆场合，语气礼貌正式。",
+    "example": {
+      "jp": "お誕生日おめでとうございます。",
+      "kana": "おたんじょうびおめでとうございます。",
+      "romaji": "otanjōbi omedetō gozaimasu.",
+      "zh": "生日快乐。"
+    }
+  },
+  "l22-w974": {
+    "romaji": "kochira",
+    "attributes": [],
+    "explanation": "表示“这个（礼貌说法）”，是指示代词。用于礼貌地指代靠近说话人的事物、方向或人，比“これ”更郑重。",
+    "example": {
+      "jp": "こちらは私の友達です。",
+      "kana": "こちらはわたしのともだちです。",
+      "romaji": "kochira wa watashi no tomodachi desu.",
+      "zh": "这位是我的朋友。"
+    }
+  },
+  "l22-v6": {
+    "romaji": "yachin",
+    "attributes": [],
+    "explanation": "指“房租”，是名词。用于表示租住房屋每月支付的费用，常与“払う”等动词搭配。",
+    "example": {
+      "jp": "毎月の家賃は八万円です。",
+      "kana": "まいつきのやちんははちまんえんです。",
+      "romaji": "maitsuki no yachin wa hachiman en desu.",
+      "zh": "每月房租是八万日元。"
+    }
+  },
+  "l22-w977": {
+    "romaji": "dainingu kitchin",
+    "attributes": [],
+    "explanation": "指“餐厅兼厨房”，是外来语复合名词。表示集用餐与烹饪功能于一体的空间，常见于公寓布局描述。",
+    "example": {
+      "jp": "このアパートにはダイニングキッチンがあります。",
+      "kana": "このあぱーとにはだいにんぐきっちんがあります。",
+      "romaji": "kono apāto ni wa dainingu kitchin ga arimasu.",
+      "zh": "这间公寓有餐厅兼厨房。"
+    }
+  },
+  "l22-v7": {
+    "romaji": "washitsu",
+    "attributes": [],
+    "explanation": "指铺榻榻米、有日式拉门和壁橱的传统房间，与西式房间相对。常见搭配如「和室に布団を敷く」。",
+    "example": {
+      "jp": "和室に布団を敷いて寝ます。",
+      "kana": "わしつにふとんをしいてねます。",
+      "romaji": "washitsu ni futon o shiite nemasu.",
+      "zh": "在日式房间里铺被褥睡觉。"
+    }
+  },
+  "l22-v8": {
+    "romaji": "oshiire",
+    "attributes": [],
+    "explanation": "日式房间中用来收纳被褥、衣物的壁橱，通常有拉门。注意与西式衣柜「クローゼット」区分。",
+    "example": {
+      "jp": "押し入れに布団をしまいます。",
+      "kana": "おしいれにふとんをしまいます。",
+      "romaji": "oshiire ni futon o shimaimasu.",
+      "zh": "把被褥收进壁橱里。"
+    }
+  },
+  "l22-w980": {
+    "romaji": "futon",
+    "attributes": [],
+    "explanation": "指铺在地上或盖在身上的被褥，常与「敷く」「掛ける」「干す」等动词搭配。",
+    "example": {
+      "jp": "天気がいいので布団を干します。",
+      "kana": "てんきがいいのでふとんをほします。",
+      "romaji": "tenki ga ii node futon o hoshimasu.",
+      "zh": "天气好，所以晒被子。"
+    }
+  },
+  "l22-looking": {
+    "romaji": "osagashi desu ka",
+    "attributes": [],
+    "explanation": "店员对顾客用的礼貌表达，意为“您在找（某物）吗”。「お探し」是「探す」的尊敬语形式，常用于服务行业。",
+    "example": {
+      "jp": "何かお探しですか。",
+      "kana": "なにかおさがしですか。",
+      "romaji": "nanika osagashi desu ka.",
+      "zh": "您在找什么吗？"
+    }
+  },
+  "l22-paris": {
+    "romaji": "Pari",
+    "attributes": [],
+    "explanation": "法国首都巴黎的日语名称，用片假名书写。注意日语中读作「パリ」，重音在第一个音节。",
+    "example": {
+      "jp": "来年パリへ旅行に行きます。",
+      "kana": "らいねんぱりへりょこうにいきます。",
+      "romaji": "rainen Pari e ryokou ni ikimasu.",
+      "zh": "明年去巴黎旅行。"
+    }
+  },
+  "l22-great-wall": {
+    "romaji": "Banri no Chōjō",
+    "attributes": [],
+    "explanation": "指中国的万里长城，日语中常说「万里の長城」。「万里」意为“万里”，「長城」即长城。",
+    "example": {
+      "jp": "万里の長城はとても長いです。",
+      "kana": "ばんりのちょうじょうはとてもながいです。",
+      "romaji": "Banri no Chōjō wa totemo nagai desu.",
+      "zh": "万里长城非常长。"
+    }
+  },
+  "l22-survey": {
+    "romaji": "Minna no Ankēto",
+    "attributes": [],
+    "explanation": "教材中的栏目名称，意为“大家的问卷调查”。「アンケート」是外来语，指问卷、调查。",
+    "example": {
+      "jp": "「みんなのアンケート」を読みましたか。",
+      "kana": "「みんなのあんけーと」をよみましたか。",
+      "romaji": "“Minna no Ankēto” o yomimashita ka.",
+      "zh": "你读了“大家的问卷调查”吗？"
+    }
+  }
+}

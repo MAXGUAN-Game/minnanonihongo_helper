@@ -1,0 +1,686 @@
+{
+  "l38-w1053": {
+    "romaji": "sankashimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示主动参与某项活动、组织或仪式，常与「会議」「試合」「パーティー」等搭配。比「出る」更正式，强调作为一员加入。",
+    "example": {
+      "jp": "来週の会議に参加します。",
+      "kana": "らいしゅうのかいぎにさんかします。",
+      "romaji": "raishuu no kaigi ni sankashimasu.",
+      "zh": "参加下周的会议。"
+    }
+  },
+  "l38-w1137": {
+    "romaji": "shuukan",
+    "attributes": [],
+    "explanation": "指长期形成、难以改变的行为倾向或社会风俗。常与「～する習慣がある」「習慣になる」等搭配，也可指某个地方的风俗习惯。",
+    "example": {
+      "jp": "毎朝走るのが私の習慣です。",
+      "kana": "まいあさはしるのがわたしのしゅうかんです。",
+      "romaji": "maiasa hashiru no ga watashi no shuukan desu.",
+      "zh": "每天早上跑步是我的习惯。"
+    }
+  },
+  "l38-w1416": {
+    "romaji": "mura",
+    "attributes": [],
+    "explanation": "指比町（城镇）规模更小、以农业或林业等为主要产业的乡村聚落。常与「村に住む」「村の生活」等搭配，带有田园、宁静的语感。",
+    "example": {
+      "jp": "祖母は小さな村に住んでいます。",
+      "kana": "そぼはちいさなむらにすんでいます。",
+      "romaji": "sobo wa chiisana mura ni sunde imasu.",
+      "zh": "祖母住在一个小村庄里。"
+    }
+  },
+  "l38-w1427": {
+    "romaji": "houhou",
+    "attributes": [],
+    "explanation": "指为达成某目的而采取的具体手段或程序，比「やり方」更书面、客观。常与「～方法を考える」「～する方法」等搭配。",
+    "example": {
+      "jp": "もっといい方法を考えましょう。",
+      "kana": "もっといいほうほうをかんがえましょう。",
+      "romaji": "motto ii houhou o kangaemashou.",
+      "zh": "我们想想更好的方法吧。"
+    }
+  },
+  "l38-w1455": {
+    "romaji": "koujou",
+    "attributes": [],
+    "explanation": "指进行产品制造、加工或组装的大型设施，常与「自動車工場」「工場で働く」等搭配。注意与「工事」（施工）区分。",
+    "example": {
+      "jp": "父は自動車の工場で働いています。",
+      "kana": "ちちはじどうしゃのこうじょうではたらいています。",
+      "romaji": "chichi wa jidousha no koujou de hataraite imasu.",
+      "zh": "父亲在汽车工厂工作。"
+    }
+  },
+  "l38-w1456": {
+    "romaji": "kenkou",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示身体或精神状态良好，无疾病。可作名词，也可加「な」修饰名词或作谓语，如「健康な体」「健康に気をつける」。",
+    "example": {
+      "jp": "毎日運動して健康に気をつけています。",
+      "kana": "まいにちうんどうしてけんこうにきをつけています。",
+      "romaji": "mainichi undou shite kenkou ni ki o tsukete imasu.",
+      "zh": "每天运动，注意健康。"
+    }
+  },
+  "l38-w1516": {
+    "romaji": "sodatemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示抚养、培育人或动植物，也可用于培养能力、感情等抽象事物。常与「子供」「植物」「能力」等搭配，强调投入精力使其成长。",
+    "example": {
+      "jp": "母は庭で花を育てています。",
+      "kana": "はははにわではなをそだてています。",
+      "romaji": "haha wa niwa de hana o sodatete imasu.",
+      "zh": "母亲在院子里种花。"
+    }
+  },
+  "l38-w1517": {
+    "romaji": "hakobimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "指用手或工具将物品从一处移动到另一处，常与「荷物」「机」等具体物品搭配。比「運ぶ」更强调搬运的动作过程。",
+    "example": {
+      "jp": "重い荷物を二階まで運びます。",
+      "kana": "おもいにもつをにかいまではこびます。",
+      "romaji": "omoi nimotsu o nikai made hakobimasu.",
+      "zh": "把重行李搬到二楼。"
+    }
+  },
+  "l38-w1519": {
+    "romaji": "nyuuinshimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示因治疗或检查而住进医院，常与「～に入院する」搭配。反义词是「退院する」。",
+    "example": {
+      "jp": "祖父は先週から入院しています。",
+      "kana": "そふはせんしゅうからにゅういんしています。",
+      "romaji": "sofu wa senshuu kara nyuuin shite imasu.",
+      "zh": "祖父从上周开始住院。"
+    }
+  },
+  "l38-w1520": {
+    "romaji": "taiinshimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示结束住院治疗，离开医院，常与「～が退院する」搭配。反义词是「入院する」。",
+    "example": {
+      "jp": "母は明日退院します。",
+      "kana": "はははあしたたいいんします。",
+      "romaji": "haha wa ashita taiin shimasu.",
+      "zh": "母亲明天出院。"
+    }
+  },
+  "l38-w1521": {
+    "romaji": "[dengen o] iremasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示将电源开关打开，使电器通电。常与「電源を入れる」搭配，也可用于「スイッチを入れる」。",
+    "example": {
+      "jp": "パソコンの電源を入れます。",
+      "kana": "ぱそこんのでんげんをいれます。",
+      "romaji": "pasokon no dengen o iremasu.",
+      "zh": "打开电脑电源。"
+    }
+  },
+  "l38-w1522": {
+    "romaji": "[dengen o] kirimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示关闭电源开关，使电器断电。常与「電源を切る」搭配，也可用于「スイッチを切る」。",
+    "example": {
+      "jp": "使わないときは電源を切ります。",
+      "kana": "つかわないときはでんげんをきります。",
+      "romaji": "tsukawanai toki wa dengen o kirimasu.",
+      "zh": "不用的时候关掉电源。"
+    }
+  },
+  "l38-w1523": {
+    "romaji": "kagi o kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「鍵を掛ける」表示锁上门或锁上某物，是常用的他动词搭配。注意「掛けます」是「掛ける」的礼貌体，宾语用「を」标记。",
+    "example": {
+      "jp": "出かける前にドアに鍵を掛けます。",
+      "kana": "でかけるまえにどあにかぎをかけます。",
+      "romaji": "dekakeru mae ni doa ni kagi o kakemasu.",
+      "zh": "出门前锁上门。"
+    }
+  },
+  "l38-w1524": {
+    "romaji": "kimochi ga ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「気持ちがいい」表示身体或心情感到舒适、愉快，常用于天气、环境、按摩等语境。注意它是短语，整体作い形容词使用，否定为「気持ちがよくない」。",
+    "example": {
+      "jp": "今日は風が涼しくて気持ちがいいです。",
+      "kana": "きょうはかぜがすずしくてきもちがいいです。",
+      "romaji": "kyou wa kaze ga suzushikute kimochi ga ii desu.",
+      "zh": "今天风很凉爽，感觉很舒服。"
+    }
+  },
+  "l38-w1525": {
+    "romaji": "kimochi ga warui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「気持ちが悪い」表示身体不适或心情不悦，也可指恶心、毛骨悚然的感觉。与「気持ちがいい」相对，否定为「気持ちが悪くない」。",
+    "example": {
+      "jp": "この部屋は暗くて気持ちが悪いです。",
+      "kana": "このへやはくらくてきもちがわるいです。",
+      "romaji": "kono heya wa kurakute kimochi ga warui desu.",
+      "zh": "这个房间很暗，感觉不舒服。"
+    }
+  },
+  "l38-w1526": {
+    "romaji": "ookina",
+    "attributes": [],
+    "explanation": "「大きな」是连体词，只能直接修饰名词，不能作谓语。与「大きい」意思相近，但「大きな」更带感情色彩，常用于抽象或强调大小。",
+    "example": {
+      "jp": "公園に大きな木があります。",
+      "kana": "こうえんにおおきなきがあります。",
+      "romaji": "kouen ni ookina ki ga arimasu.",
+      "zh": "公园里有一棵大树。"
+    }
+  },
+  "l38-w1527": {
+    "romaji": "chiisana",
+    "attributes": [],
+    "explanation": "「小さな」是连体词，只能直接修饰名词，不能作谓语。与「小さい」意思相近，但「小さな」更带主观感情色彩。",
+    "example": {
+      "jp": "小さな虫が葉の上にいます。",
+      "kana": "ちいさなむしがはのうえにいます。",
+      "romaji": "chiisana mushi ga ha no ue ni imasu.",
+      "zh": "叶子上有一只小虫子。"
+    }
+  },
+  "l38-w1528": {
+    "romaji": "akachan",
+    "attributes": [],
+    "explanation": "「赤ちゃん」是名词，指婴儿，常用于日常口语。可搭配「赤ちゃんが生まれる」「赤ちゃんを抱く」等。",
+    "example": {
+      "jp": "赤ちゃんがよく寝ています。",
+      "kana": "あかちゃんがよくねています。",
+      "romaji": "akachan ga yoku nete imasu.",
+      "zh": "婴儿睡得很香。"
+    }
+  },
+  "l38-w1529": {
+    "romaji": "shougakkou",
+    "attributes": [],
+    "explanation": "「小学校」是名词，指小学，即六年制初等教育机构。常与「通う」「卒業する」等动词搭配。",
+    "example": {
+      "jp": "弟は毎日小学校に通っています。",
+      "kana": "おとうとはまいにちしょうがっこうにかよっています。",
+      "romaji": "otouto wa mainichi shougakkou ni kayotte imasu.",
+      "zh": "弟弟每天去上小学。"
+    }
+  },
+  "l38-w1530": {
+    "romaji": "chuugakkou",
+    "attributes": [],
+    "explanation": "「中学校」是名词，指初中，即三年制中等教育机构。常与「入学する」「卒業する」等搭配。",
+    "example": {
+      "jp": "来年から中学校に通います。",
+      "kana": "らいねんからちゅうがっこうにかよいます。",
+      "romaji": "rainen kara chuugakkou ni kayoimasu.",
+      "zh": "从明年开始上初中。"
+    }
+  },
+  "l38-w1531": {
+    "romaji": "ekimae",
+    "attributes": [],
+    "explanation": "「駅前」是名词，指车站前面的区域，常作为地点名词使用。可搭配「駅前で待ち合わせる」「駅前の店」等。",
+    "example": {
+      "jp": "駅前で友達と待ち合わせます。",
+      "kana": "えきまえでともだちとまちあわせます。",
+      "romaji": "ekimae de tomodachi to machiawasemasu.",
+      "zh": "在车站前和朋友会合。"
+    }
+  },
+  "l38-w1532": {
+    "romaji": "kaigan",
+    "attributes": [],
+    "explanation": "「海岸」是名词，指海岸、海滨，常与「沿い」「近く」等搭配。注意与「海辺」类似，但「海岸」更强调陆地与海交界的地带。",
+    "example": {
+      "jp": "海岸を散歩するのが好きです。",
+      "kana": "かいがんをさんぽするのがすきです。",
+      "romaji": "kaigan o sanpo suru no ga suki desu.",
+      "zh": "我喜欢在海岸散步。"
+    }
+  },
+  "l38-w1535": {
+    "romaji": "dengen",
+    "attributes": [],
+    "explanation": "「電源」是名词，指电源、电力来源。常搭配「入れる」「切る」「抜く」等动词，表示开关电源。",
+    "example": {
+      "jp": "使わないときは電源を切ってください。",
+      "kana": "つかわないときはでんげんをきってください。",
+      "romaji": "tsukawanai toki wa dengen o kitte kudasai.",
+      "zh": "不用的时候请关掉电源。"
+    }
+  },
+  "l38-w1536": {
+    "romaji": "sei",
+    "attributes": [],
+    "explanation": "「～製」是接尾词，接在名词后表示“某国制造”或“某材料制造”，如「日本製」「木製」。常作为名词修饰语使用。",
+    "example": {
+      "jp": "この時計は日本製です。",
+      "kana": "このとけいはにほんせいです。",
+      "romaji": "kono tokei wa nihonsei desu.",
+      "zh": "这块表是日本制造的。"
+    }
+  },
+  "l38-w1537": {
+    "romaji": "a, ikenai",
+    "attributes": [],
+    "explanation": "固定表达，用于突然意识到失误或糟糕情况时，带有懊悔或慌张的语气。口语中常说「あ、いけない」或「しまった」类似。",
+    "example": {
+      "jp": "あ、いけない、財布を忘れた。",
+      "kana": "あ、いけない、さいふをわすれた。",
+      "romaji": "a, ikenai, saifu o wasureta.",
+      "zh": "啊，糟了，忘带钱包了。"
+    }
+  },
+  "l38-w1538": {
+    "romaji": "o saki ni shitsurei shimasu",
+    "attributes": [],
+    "explanation": "固定表达，用于比他人先离开时礼貌地打招呼，意为“我先告辞了”。职场或聚会中常用，语气客气。",
+    "example": {
+      "jp": "お先に失礼します。お疲れさまでした。",
+      "kana": "おさきにしつれいします。おつかれさまでした。",
+      "romaji": "o saki ni shitsurei shimasu. otsukaresama deshita.",
+      "zh": "我先告辞了。您辛苦了。"
+    }
+  },
+  "l38-w1539": {
+    "romaji": "kairan",
+    "attributes": [],
+    "explanation": "名词，指文件、通知等按顺序传阅给多人看。常与「する」搭配构成「回覧する」，或说「回覧板」。",
+    "example": {
+      "jp": "この書類は回覧してください。",
+      "kana": "このしょるいはかいらんしてください。",
+      "romaji": "kono shorui wa kairan shite kudasai.",
+      "zh": "请传阅这份文件。"
+    }
+  },
+  "l38-w1540": {
+    "romaji": "kenkyūshitsu",
+    "attributes": [],
+    "explanation": "名词，指大学或研究机构中用于研究、学习的房间，也可指教师的研究室。常与「に入る」「を訪ねる」等搭配。",
+    "example": {
+      "jp": "先生は研究室にいます。",
+      "kana": "せんせいはけんきゅうしつにいます。",
+      "romaji": "sensei wa kenkyūshitsu ni imasu.",
+      "zh": "老师在研究室里。"
+    }
+  },
+  "l38-w1541": {
+    "romaji": "kichinto",
+    "attributes": [],
+    "explanation": "副词，表示整齐、端正或认真、规矩地做某事。可修饰动作，如「きちんと片付ける」「きちんと説明する」。",
+    "example": {
+      "jp": "机の上をきちんと片付けてください。",
+      "kana": "つくえのうえをきちんとかたづけてください。",
+      "romaji": "tsukue no ue o kichinto katazukete kudasai.",
+      "zh": "请把桌子上收拾整齐。"
+    }
+  },
+  "l38-w1542": {
+    "romaji": "seiri shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词Ⅲ（サ变动词），意为整理、收拾，使杂乱的东西变得有序。常与「部屋」「書類」「情報」等搭配。",
+    "example": {
+      "jp": "毎週部屋を整理します。",
+      "kana": "まいしゅうへやをせいりします。",
+      "romaji": "maishū heya o seiri shimasu.",
+      "zh": "每周整理房间。"
+    }
+  },
+  "l38-w1543": {
+    "romaji": "~ to iu hon",
+    "attributes": [],
+    "explanation": "表达，用于说明书名，意为“名叫……的书”。「という」前接书名或名称，后接名词「本」。",
+    "example": {
+      "jp": "『吾輩は猫である』という本を読みました。",
+      "kana": "わがはいはねこであるというほんをよみました。",
+      "romaji": "wagahai wa neko de aru to iu hon o yomimashita.",
+      "zh": "我读了名叫《我是猫》的书。"
+    }
+  },
+  "l38-w1544": {
+    "romaji": "~ satsu",
+    "attributes": [],
+    "explanation": "接尾词／量词，用于数书、笔记本等册子类物品。数字读法需注意，如「一冊（いっさつ）」「三冊（さんさつ）」。",
+    "example": {
+      "jp": "この本を三冊ください。",
+      "kana": "このほんをさんさつください。",
+      "romaji": "kono hon o sansatsu kudasai.",
+      "zh": "请给我三本这本书。"
+    }
+  },
+  "l38-w1545": {
+    "romaji": "hanko",
+    "attributes": [],
+    "explanation": "名词，指印章，尤指个人用于签名盖章的图章。常与「押す」搭配，说「判子を押す」。",
+    "example": {
+      "jp": "ここに判子を押してください。",
+      "kana": "ここにはんこをおしてください。",
+      "romaji": "koko ni hanko o oshite kudasai.",
+      "zh": "请在这里盖章。"
+    }
+  },
+  "l38-w1546": {
+    "romaji": "[hanko o] oshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词Ⅰ（五段动词），意为按压、盖（章）。常以「判子を押す」的形式表示盖章，也可用于按按钮等。",
+    "example": {
+      "jp": "書類に判子を押します。",
+      "kana": "しょるいにはんこをおします。",
+      "romaji": "shorui ni hanko o oshimasu.",
+      "zh": "在文件上盖章。"
+    }
+  },
+  "l38-w1657": {
+    "romaji": "yubiwa",
+    "attributes": [],
+    "explanation": "名词，指戴在手指上的戒指。常与「はめる」「外す」搭配，如「指輪をはめる」。",
+    "example": {
+      "jp": "彼女はきれいな指輪をしています。",
+      "kana": "かのじょはきれいなゆびわをしています。",
+      "romaji": "kanojo wa kirei na yubiwa o shite imasu.",
+      "zh": "她戴着漂亮的戒指。"
+    }
+  },
+  "l38-w1666": {
+    "romaji": "ototoshi",
+    "attributes": [],
+    "explanation": "名词，指前年，即相对于今年的两年前。常用于叙述过去的时间，如「一昨年に結婚した」。",
+    "example": {
+      "jp": "一昨年に日本へ来ました。",
+      "kana": "おととしににほんへきました。",
+      "romaji": "ototoshi ni nihon e kimashita.",
+      "zh": "前年来到了日本。"
+    }
+  },
+  "l38-w2517": {
+    "romaji": "uso o tsukimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「嘘をつく」是固定搭配，表示“说谎”，使用助词「を」。ます形「嘘をつきます」用于礼貌体，口语中常用普通形「嘘をつく」。",
+    "example": {
+      "jp": "彼はいつも嘘をつきます。",
+      "kana": "かれはいつもうそをつきます。",
+      "romaji": "kare wa itsumo uso o tsukimasu.",
+      "zh": "他总是说谎。"
+    }
+  },
+  "l38-w5646": {
+    "romaji": "kana",
+    "attributes": [],
+    "explanation": "「かな」指日语的假名文字，包括平假名和片假名。常与「漢字」对举，如「かなで書く」。",
+    "example": {
+      "jp": "この言葉をかなで書いてください。",
+      "kana": "このことばをかなでかいてください。",
+      "romaji": "kono kotoba o kana de kaite kudasai.",
+      "zh": "请用假名写这个词。"
+    }
+  },
+  "l38-called": {
+    "romaji": "to iu",
+    "attributes": [],
+    "explanation": "「～という」用于说明名称或内容，意为“叫作……的”。前接名词，可修饰后续名词，也可结句表示传闻。",
+    "example": {
+      "jp": "これは「さくら」という花です。",
+      "kana": "これはさくらというはなです。",
+      "romaji": "kore wa sakura to iu hana desu.",
+      "zh": "这是叫作“樱花”的花。"
+    }
+  },
+  "l38-dome": {
+    "romaji": "genbaku dōmu",
+    "attributes": [],
+    "explanation": "「原爆ドーム」是广岛和平纪念公园内的原爆遗址，为世界文化遗产。专有名词，常作为观光地提及。",
+    "example": {
+      "jp": "広島で原爆ドームを見ました。",
+      "kana": "ひろしまでげんばくどーむをみました。",
+      "romaji": "hiroshima de genbaku dōmu o mimashita.",
+      "zh": "在广岛看了原爆圆顶馆。"
+    }
+  },
+  "l38-izumo": {
+    "romaji": "izumo taisha",
+    "attributes": [],
+    "explanation": "「出雲大社」是位于岛根县出云市的神社，以结缘闻名。读作「いずもたいしゃ」，专有名词。",
+    "example": {
+      "jp": "出雲大社は縁結びで有名です。",
+      "kana": "いずもたいしゃはえんむすびでゆうめいです。",
+      "romaji": "izumo taisha wa enmusubi de yūmei desu.",
+      "zh": "出云大社以结缘闻名。"
+    }
+  },
+  "l38-chiangmai": {
+    "romaji": "chenmai",
+    "attributes": [],
+    "explanation": "「チェンマイ」是泰国北部城市清迈的日语表记，专有名词。注意罗马字拼写为 Chiang Mai，但日语按读音转写。",
+    "example": {
+      "jp": "チェンマイへ旅行に行きたいです。",
+      "kana": "ちぇんまいへりょこうにいきたいです。",
+      "romaji": "chenmai e ryokō ni ikitai desu.",
+      "zh": "我想去清迈旅行。"
+    }
+  },
+  "l38-twins": {
+    "romaji": "futago",
+    "attributes": [],
+    "explanation": "「双子」指双胞胎，可指人或动物。常用「双子の兄弟」「双子の姉妹」等搭配。",
+    "example": {
+      "jp": "彼女には双子の妹がいます。",
+      "kana": "かのじょにはふたごのいもうとがいます。",
+      "romaji": "kanojo ni wa futago no imōto ga imasu.",
+      "zh": "她有一个双胞胎妹妹。"
+    }
+  },
+  "l38-sisters": {
+    "romaji": "shimai",
+    "attributes": [],
+    "explanation": "「姉妹」指姐妹，可指亲姐妹或比喻关系密切的女性团体。注意与「兄弟」相对，读作「しまい」。",
+    "example": {
+      "jp": "あの二人は姉妹です。",
+      "kana": "あのふたりはしまいです。",
+      "romaji": "ano futari wa shimai desu.",
+      "zh": "那两个人是姐妹。"
+    }
+  },
+  "l38-grade5": {
+    "romaji": "gonensei",
+    "attributes": [],
+    "explanation": "「五年生」指小学五年级学生，也可用于其他学制。常与「～年生」系列搭配，如「一年生」。",
+    "example": {
+      "jp": "弟は五年生です。",
+      "kana": "おとうとはごねんせいです。",
+      "romaji": "otōto wa gonensei desu.",
+      "zh": "弟弟是五年级学生。"
+    }
+  },
+  "l38-similar": {
+    "romaji": "nite imasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「似ています」表示“相像”，是「似る」的て形+います，描述相似的状态。常与「に」搭配，如「父に似ています」。",
+    "example": {
+      "jp": "この双子はとても似ています。",
+      "kana": "このふたごはとてもにています。",
+      "romaji": "kono futago wa totemo nite imasu.",
+      "zh": "这对双胞胎非常像。"
+    }
+  },
+  "l38-personality": {
+    "romaji": "seikaku",
+    "attributes": [],
+    "explanation": "「性格」指人的性格、性情。常与「いい」「悪い」「明るい」等形容词搭配，也可用于描述事物特性。",
+    "example": {
+      "jp": "彼女は明るい性格です。",
+      "kana": "かのじょはあかるいせいかくです。",
+      "romaji": "kanojo wa akarui seikaku desu.",
+      "zh": "她性格开朗。"
+    }
+  },
+  "l38-quiet": {
+    "romaji": "otonashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「おとなしい」形容人性格文静、温顺，也可形容动物驯服。注意不是“老实”的贬义，多含正面或中性描述。",
+    "example": {
+      "jp": "妹はおとなしい性格です。",
+      "kana": "いもうとはおとなしいせいかくです。",
+      "romaji": "imōto wa otonashii seikaku desu.",
+      "zh": "妹妹性格文静。"
+    }
+  },
+  "l38-kind": {
+    "romaji": "yasashii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示待人温和、体贴，常用于形容人的性格或态度。注意与「優れる」（优秀）不同，此义不表示能力强。",
+    "example": {
+      "jp": "彼女はとても優しい人です。",
+      "kana": "かのじょはとてもやさしいひとです。",
+      "romaji": "kanojo wa totemo yasashii hito desu.",
+      "zh": "她是个非常温柔的人。"
+    }
+  },
+  "l38-care": {
+    "romaji": "sewa o shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「世話をする」表示照顾、照料人或动物，常用「～の世話をする」形式。也可用于表示“关照、帮忙”。",
+    "example": {
+      "jp": "毎日犬の世話をします。",
+      "kana": "まいにちいぬのせわをします。",
+      "romaji": "mainichi inu no sewa o shimasu.",
+      "zh": "每天照顾狗。"
+    }
+  },
+  "l38-time": {
+    "romaji": "jikan ga tachimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「時間がたつ」表示时间流逝，常用「時間がたちます」的形式。主语是「時間」，用助词「が」。",
+    "example": {
+      "jp": "時間がたつのは早いですね。",
+      "kana": "じかんがたつのははやいですね。",
+      "romaji": "jikan ga tatsu no wa hayai desu ne.",
+      "zh": "时间过得真快啊。"
+    }
+  },
+  "l38-love": {
+    "romaji": "daisuki na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "「大好きな」是な形容词，表示非常喜欢，程度比「好き」强。修饰名词时加「な」，如「大好きな食べ物」。",
+    "example": {
+      "jp": "これは私の大好きなケーキです。",
+      "kana": "これはわたしのだいすきなけーきです。",
+      "romaji": "kore wa watashi no daisuki na kēki desu.",
+      "zh": "这是我最喜欢的蛋糕。"
+    }
+  },
+  "l38-point": {
+    "romaji": "ten",
+    "attributes": [],
+    "explanation": "「点」表示点、得分，也可表示方面、观点。常用「～点がいい/悪い」评价某方面。",
+    "example": {
+      "jp": "彼のいい点は正直なところです。",
+      "kana": "かれのいいてんはしょうじきなところです。",
+      "romaji": "kare no ii ten wa shōjiki na tokoro desu.",
+      "zh": "他的优点在于诚实。"
+    }
+  },
+  "l38-strong-willed": {
+    "romaji": "ki ga tsuyoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "「気が強い」表示个性强、好胜，不肯服输，有时带负面语气。注意不是“脾气大”，而是意志坚强、强势。",
+    "example": {
+      "jp": "彼女は気が強いので、意見を曲げません。",
+      "kana": "かのじょはきがつよいので、いけんをまげません。",
+      "romaji": "kanojo wa ki ga tsuyoi node, iken o magemasen.",
+      "zh": "她个性很强，不会改变自己的意见。"
+    }
+  },
+  "l38-quarrel": {
+    "romaji": "kenka shimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「けんかする」表示吵架、打架，常用「～とけんかする」表示和某人争吵。",
+    "example": {
+      "jp": "昨日、友達とけんかしました。",
+      "kana": "きのう、ともだちとけんかしました。",
+      "romaji": "kinō, tomodachi to kenka shimashita.",
+      "zh": "昨天和朋友吵架了。"
+    }
+  },
+  "l38-strange": {
+    "romaji": "fushigi na",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "「不思議な」表示不可思议、奇妙，常修饰事物或现象。修饰名词时加「な」。",
+    "example": {
+      "jp": "不思議な話を聞きました。",
+      "kana": "ふしぎなはなしをききました。",
+      "romaji": "fushigi na hanashi o kikimashita.",
+      "zh": "听到了一个不可思议的故事。"
+    }
+  },
+  "l38-age": {
+    "romaji": "nenrei",
+    "attributes": [],
+    "explanation": "「年齢」是年龄的正式说法，常用于书面或正式场合。口语中常用「歳」。",
+    "example": {
+      "jp": "応募の際は年齢を書いてください。",
+      "kana": "おうぼのさいはねんれいをかいてください。",
+      "romaji": "ōbo no sai wa nenrei o kaite kudasai.",
+      "zh": "报名时请写上年龄。"
+    }
+  },
+  "l38-way": {
+    "romaji": "shikata",
+    "attributes": [],
+    "explanation": "「しかた」表示做法、方法，常用「～のしかた」或「しかたがない」。汉字写作「仕方」。",
+    "example": {
+      "jp": "この機械のしかたを教えてください。",
+      "kana": "このきかいのしかたをおしえてください。",
+      "romaji": "kono kikai no shikata o oshiete kudasai.",
+      "zh": "请告诉我这台机器的使用方法。"
+    }
+  }
+}

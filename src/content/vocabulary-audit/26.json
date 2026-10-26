@@ -1,0 +1,249 @@
+{
+  "lessonId": 26,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/26.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 45,
+  "entries": [
+    {
+      "sourceId": "1046",
+      "sourceWord": "見ます",
+      "key": "w1046"
+    },
+    {
+      "sourceId": "1047",
+      "sourceWord": "診ます",
+      "key": "w1047"
+    },
+    {
+      "sourceId": "1048",
+      "sourceWord": "探します",
+      "key": "w1048"
+    },
+    {
+      "sourceId": "1049",
+      "sourceWord": "捜します",
+      "key": "w1049"
+    },
+    {
+      "sourceId": "1050",
+      "sourceWord": "［に］遅れます",
+      "key": "w1050"
+    },
+    {
+      "sourceId": "1051",
+      "sourceWord": "［に］間に合います",
+      "key": "w1051"
+    },
+    {
+      "sourceId": "1052",
+      "sourceWord": "やります",
+      "key": "w1052"
+    },
+    {
+      "sourceId": "1057",
+      "sourceWord": "気分がいい",
+      "key": "w1057"
+    },
+    {
+      "sourceId": "1058",
+      "sourceWord": "気分が悪い",
+      "key": "w1058"
+    },
+    {
+      "sourceId": "1061",
+      "sourceWord": "運動会",
+      "key": "w1061"
+    },
+    {
+      "sourceId": "1062",
+      "sourceWord": "場所",
+      "key": "w1062"
+    },
+    {
+      "sourceId": "1063",
+      "sourceWord": "ボランティア",
+      "key": "w1063"
+    },
+    {
+      "sourceId": "1064",
+      "sourceWord": "～弁",
+      "key": "w1064"
+    },
+    {
+      "sourceId": "1065",
+      "sourceWord": "今度",
+      "key": "w1065"
+    },
+    {
+      "sourceId": "1066",
+      "sourceWord": "随分",
+      "key": "w1066"
+    },
+    {
+      "sourceId": "1067",
+      "sourceWord": "直接",
+      "key": "w1067"
+    },
+    {
+      "sourceId": "1068",
+      "sourceWord": "いつでも",
+      "key": "w1068"
+    },
+    {
+      "sourceId": "1069",
+      "sourceWord": "どこでも",
+      "key": "w1069"
+    },
+    {
+      "sourceId": "1070",
+      "sourceWord": "誰でも",
+      "key": "w1070"
+    },
+    {
+      "sourceId": "1071",
+      "sourceWord": "何でも",
+      "key": "w1071"
+    },
+    {
+      "sourceId": "1072",
+      "sourceWord": "こんな～",
+      "key": "w1072"
+    },
+    {
+      "sourceId": "1073",
+      "sourceWord": "そんな～",
+      "key": "w1073"
+    },
+    {
+      "sourceId": "1074",
+      "sourceWord": "あんな～",
+      "key": "w1074"
+    },
+    {
+      "sourceId": "1075",
+      "sourceWord": "［部屋が］片づきます",
+      "key": "w1075"
+    },
+    {
+      "sourceId": "1076",
+      "sourceWord": "ごみ",
+      "key": "w1076"
+    },
+    {
+      "sourceId": "1077",
+      "sourceWord": "［ごみを］出します",
+      "key": "w1077"
+    },
+    {
+      "sourceId": "1080",
+      "sourceWord": "置き場",
+      "key": "w1080"
+    },
+    {
+      "sourceId": "1081",
+      "sourceWord": "横",
+      "key": "w1081"
+    },
+    {
+      "sourceId": "1082",
+      "sourceWord": "瓶",
+      "key": "w1082"
+    },
+    {
+      "sourceId": "1083",
+      "sourceWord": "缶",
+      "key": "w1083"
+    },
+    {
+      "sourceId": "1085",
+      "sourceWord": "ガス",
+      "key": "w1085"
+    },
+    {
+      "sourceId": "1086",
+      "sourceWord": "～会社",
+      "key": "w1086"
+    },
+    {
+      "sourceId": "1087",
+      "sourceWord": "連絡します",
+      "key": "w1087"
+    },
+    {
+      "sourceId": "1191",
+      "sourceWord": "財布",
+      "key": "w1191"
+    },
+    {
+      "sourceId": "1377",
+      "sourceWord": "盆踊り",
+      "key": "w1377"
+    },
+    {
+      "sourceId": "1408",
+      "sourceWord": "拾います",
+      "key": "w1408"
+    },
+    {
+      "sourceId": "3461",
+      "sourceWord": "平日",
+      "key": "w3461"
+    },
+    {
+      "sourceId": "5637",
+      "sourceWord": "フリーマーケット",
+      "key": "w5637"
+    },
+    {
+      "sourceId": "5638",
+      "sourceWord": "国会議事堂",
+      "key": "w5638"
+    },
+    {
+      "sourceId": "5639",
+      "sourceWord": "燃えるごみ",
+      "key": "w5639"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1055",
+      "sourceWord": "都合がいい",
+      "reason": "第二版交叉表本课只列気分がいい，时间便利义的都合已在第22课收录。"
+    },
+    {
+      "sourceId": "1056",
+      "sourceWord": "都合が悪い",
+      "reason": "第二版交叉表本课只列気分が悪い。"
+    },
+    {
+      "sourceId": "1059",
+      "sourceWord": "新聞社",
+      "reason": "旧版机构词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1079",
+      "sourceWord": "月・水・金",
+      "reason": "旧版丢垃圾日期组合，第二版交叉表未作为独立词项。"
+    },
+    {
+      "sourceId": "1088",
+      "sourceWord": "困ったなあ。",
+      "reason": "旧版会话用语，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "edoya",
+    "hoshide",
+    "space",
+    "sama",
+    "spaceship",
+    "space-station",
+    "different",
+    "astronaut"
+  ],
+  "finalCount": 48
+}

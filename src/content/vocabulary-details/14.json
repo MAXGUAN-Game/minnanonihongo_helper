@@ -1,0 +1,563 @@
+{
+  "l14-w57": {
+    "romaji": "denki",
+    "attributes": [],
+    "explanation": "指电能或电灯，日常常与「つける」「消す」搭配表示开/关灯。也可说「電気がつく/消える」表示灯亮/灭。",
+    "example": {
+      "jp": "部屋の電気をつけてください。",
+      "kana": "へやのでんきをつけてください。",
+      "romaji": "heya no denki o tsukete kudasai.",
+      "zh": "请打开房间的灯。"
+    }
+  },
+  "l14-w652": {
+    "romaji": "hairimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示进入某个空间或场所，常与助词「に」搭配，如「部屋に入る」。也可用于进入某状态或组织。",
+    "example": {
+      "jp": "教室に入ります。",
+      "kana": "きょうしつにはいります。",
+      "romaji": "kyoushitsu ni hairimasu.",
+      "zh": "进入教室。"
+    }
+  },
+  "l14-w653": {
+    "romaji": "demasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示从某处出去或离开，常与助词「を」搭配，如「部屋を出る」。也可表示外出或毕业等。",
+    "example": {
+      "jp": "家を出ます。",
+      "kana": "いえをでます。",
+      "romaji": "ie o demasu.",
+      "zh": "离开家。"
+    }
+  },
+  "l14-w686": {
+    "romaji": "tsukemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示打开电器或灯，常用「電気をつける」「テレビをつける」。与「開ける」不同，后者用于门窗等。",
+    "example": {
+      "jp": "テレビをつけます。",
+      "kana": "てれびをつけます。",
+      "romaji": "terebi o tsukemasu.",
+      "zh": "打开电视。"
+    }
+  },
+  "l14-w687": {
+    "romaji": "keshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示关闭电器或熄灭灯火，常用「電気を消す」「テレビを消す」。也可用于灭火等。",
+    "example": {
+      "jp": "電気を消します。",
+      "kana": "でんきをけします。",
+      "romaji": "denki o keshimasu.",
+      "zh": "关灯。"
+    }
+  },
+  "l14-v4": {
+    "romaji": "akemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示打开门窗、盖子等，常用「ドアを開ける」「窓を開ける」。与「つける」不同，不用于电器。",
+    "example": {
+      "jp": "窓を開けます。",
+      "kana": "まどをあけます。",
+      "romaji": "mado o akemasu.",
+      "zh": "打开窗户。"
+    }
+  },
+  "l14-v5": {
+    "romaji": "shimemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示关闭门窗、盖子等，常用「ドアを閉める」「窓を閉める」。与「消す」不同，不用于电器。",
+    "example": {
+      "jp": "ドアを閉めます。",
+      "kana": "どあをしめます。",
+      "romaji": "doa o shimemasu.",
+      "zh": "关门。"
+    }
+  },
+  "l14-w690": {
+    "romaji": "isogimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示赶快、急忙做某事，常用「急いで」作副词。也可表示着急赶路。",
+    "example": {
+      "jp": "急いでください。",
+      "kana": "いそいでください。",
+      "romaji": "isoide kudasai.",
+      "zh": "请快一点。"
+    }
+  },
+  "l14-v1": {
+    "romaji": "machimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示等待某人或某事，常用「人を待つ」「バスを待つ」。也可用「待ってください」请对方稍等。",
+    "example": {
+      "jp": "友達を待ちます。",
+      "kana": "ともだちをまちます。",
+      "romaji": "tomodachi o machimasu.",
+      "zh": "等朋友。"
+    }
+  },
+  "l14-w692": {
+    "romaji": "ongaku o tomemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示使音乐等停止播放，常用「音楽を止める」。与「停める」同音但汉字不同，后者用于停车。",
+    "example": {
+      "jp": "音楽を止めます。",
+      "kana": "おんがくをとめます。",
+      "romaji": "ongaku o tomemasu.",
+      "zh": "停止音乐。"
+    }
+  },
+  "l14-w693": {
+    "romaji": "kuruma o tomemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示使车辆停下，常用「車を停める」。与「止める」同音但汉字不同，后者用于停止音乐等。",
+    "example": {
+      "jp": "車を停めます。",
+      "kana": "くるまをとめます。",
+      "romaji": "kuruma o tomemasu.",
+      "zh": "停车。"
+    }
+  },
+  "l14-v6": {
+    "romaji": "mochimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用手拿、携带或持有，常用「かばんを持つ」「お金を持つ」。也可表示拥有某物。",
+    "example": {
+      "jp": "かばんを持ちます。",
+      "kana": "かばんをもちます。",
+      "romaji": "kaban o mochimasu.",
+      "zh": "拿包。"
+    }
+  },
+  "l14-w696": {
+    "romaji": "torimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示用手拿取物品，也常用于“取ってあげる”等表示替人拿取或递给的语境。礼貌体形式，常用于日常请求或描述动作。",
+    "example": {
+      "jp": "その本を取ってください。",
+      "kana": "そのほんをとってください。",
+      "romaji": "sono hon o totte kudasai.",
+      "zh": "请把那本书拿过来。"
+    }
+  },
+  "l14-w697": {
+    "romaji": "tetsudaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示帮助他人做事，常用“～を手伝う”或“～の手伝いをする”搭配。语气礼貌，可用于主动提出帮助。",
+    "example": {
+      "jp": "母の仕事を手伝います。",
+      "kana": "ははのしごとをてつだいます。",
+      "romaji": "haha no shigoto o tetsudaimasu.",
+      "zh": "帮妈妈干活。"
+    }
+  },
+  "l14-w698": {
+    "romaji": "yobimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示大声叫唤或呼唤某人，也可用于邀请、召集。常用“人を呼ぶ”的形式，注意与“叫ぶ”（喊叫）区分。",
+    "example": {
+      "jp": "先生を呼んでください。",
+      "kana": "せんせいをよんでください。",
+      "romaji": "sensei o yonde kudasai.",
+      "zh": "请叫老师来。"
+    }
+  },
+  "l14-w699": {
+    "romaji": "hanashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示说话、交谈，也可表示讲述某事。自动词用法如“～と話す”，他动词用法如“日本語を話す”。",
+    "example": {
+      "jp": "友達と日本語で話します。",
+      "kana": "ともだちとにほんごではなします。",
+      "romaji": "tomodachi to nihongo de hanashimasu.",
+      "zh": "用日语和朋友交谈。"
+    }
+  },
+  "l14-v8": {
+    "romaji": "misemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物出示给别人看，常用“人に物を見せる”的搭配。也可用于抽象事物，如“見せてください”请求出示。",
+    "example": {
+      "jp": "切符を見せてください。",
+      "kana": "きっぷをみせてください。",
+      "romaji": "kippu o misete kudasai.",
+      "zh": "请出示车票。"
+    }
+  },
+  "l14-w701": {
+    "romaji": "oshiemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示告诉、教给某人信息，常用“人に～を教える”的搭配。与“教える”（教授知识）同形，需根据上下文区分。",
+    "example": {
+      "jp": "住所を教えてください。",
+      "kana": "じゅうしょをおしえてください。",
+      "romaji": "juusho o oshiete kudasai.",
+      "zh": "请告诉我地址。"
+    }
+  },
+  "l14-w703": {
+    "romaji": "furimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示雨、雪等自然现象降落，主语用“雨が”“雪が”等。不能用于人为动作，注意与“降ろす”（放下）区分。",
+    "example": {
+      "jp": "明日は雨が降ります。",
+      "kana": "あしたはあめがふります。",
+      "romaji": "ashita wa ame ga furimasu.",
+      "zh": "明天会下雨。"
+    }
+  },
+  "l14-w704": {
+    "romaji": "kopiishimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示复印文件、资料等，常用“～をコピーする”的形式。外来语动词，礼貌体为“コピーします”。",
+    "example": {
+      "jp": "この書類をコピーします。",
+      "kana": "このしょるいをこぴーします。",
+      "romaji": "kono shorui o kopiishimasu.",
+      "zh": "复印这份文件。"
+    }
+  },
+  "l14-w705": {
+    "romaji": "eakon",
+    "attributes": [],
+    "explanation": "空调的简称，指空气调节设备。日常口语中常用，可搭配“エアコンをつける”（开空调）等。",
+    "example": {
+      "jp": "部屋のエアコンをつけます。",
+      "kana": "へやのえあこんをつけます。",
+      "romaji": "heya no eakon o tsukemasu.",
+      "zh": "打开房间的空调。"
+    }
+  },
+  "l14-w706": {
+    "romaji": "pasupooto",
+    "attributes": [],
+    "explanation": "护照，指国际旅行用的身份证明文件。常用搭配“パスポートを見せる”“パスポートを取る”等。",
+    "example": {
+      "jp": "パスポートを見せてください。",
+      "kana": "ぱすぽーとをみせてください。",
+      "romaji": "pasupooto o misete kudasai.",
+      "zh": "请出示护照。"
+    }
+  },
+  "l14-w707": {
+    "romaji": "namae",
+    "attributes": [],
+    "explanation": "名字、姓名，可用于人或事物的名称。常用“名前を教える”“名前を書く”等搭配，礼貌体前常加“お”。",
+    "example": {
+      "jp": "ここに名前を書いてください。",
+      "kana": "ここになまえをかいてください。",
+      "romaji": "koko ni namae o kaite kudasai.",
+      "zh": "请在这里写名字。"
+    }
+  },
+  "l14-w708": {
+    "romaji": "juusho",
+    "attributes": [],
+    "explanation": "地址，指居住或所在地的详细信息。常用“住所を教える”“住所を書く”等搭配，正式场合也可说“ご住所”。",
+    "example": {
+      "jp": "住所をここに書いてください。",
+      "kana": "じゅうしょをここにかいてください。",
+      "romaji": "juusho o koko ni kaite kudasai.",
+      "zh": "请在这里写地址。"
+    }
+  },
+  "l14-w709": {
+    "romaji": "chizu",
+    "attributes": [],
+    "explanation": "指地图，常用于看地图、查地图等场景。可与「地図を見る」「地図で調べる」等搭配。",
+    "example": {
+      "jp": "地図を見て道を確認します。",
+      "kana": "ちずをみてみちをかくにんします。",
+      "romaji": "chizu o mite michi o kakunin shimasu.",
+      "zh": "看地图确认道路。"
+    }
+  },
+  "l14-w710": {
+    "romaji": "shio",
+    "attributes": [],
+    "explanation": "指食盐，日常烹饪中常用。可说「塩を入れる」「塩をかける」。注意与「砂糖」区分。",
+    "example": {
+      "jp": "スープに塩を少し入れます。",
+      "kana": "すーぷにしおをすこしいれます。",
+      "romaji": "sūpu ni shio o sukoshi iremasu.",
+      "zh": "在汤里放一点盐。"
+    }
+  },
+  "l14-w711": {
+    "romaji": "satō",
+    "attributes": [],
+    "explanation": "指砂糖、糖，常用于饮食。可说「砂糖を入れる」「砂糖が入っている」。与「塩」常对比使用。",
+    "example": {
+      "jp": "コーヒーに砂糖を入れますか。",
+      "kana": "こーひーにさとうをいれますか。",
+      "romaji": "kōhī ni satō o iremasu ka.",
+      "zh": "咖啡里要加糖吗？"
+    }
+  },
+  "l14-w712": {
+    "romaji": "yomikata",
+    "attributes": [],
+    "explanation": "指读法、发音方法，常用于询问汉字或单词怎么读。可说「読み方を教える」「読み方が分かる」。",
+    "example": {
+      "jp": "この漢字の読み方を教えてください。",
+      "kana": "このかんじのよみかたをおしえてください。",
+      "romaji": "kono kanji no yomikata o oshiete kudasai.",
+      "zh": "请告诉我这个汉字的读法。"
+    }
+  },
+  "l14-w713": {
+    "romaji": "~kata",
+    "attributes": [],
+    "explanation": "接在动词ます形后，表示做某事的方法，如「読み方」「書き方」「使い方」。不能单独使用，需前接动词。",
+    "example": {
+      "jp": "この機械の使い方を教えてください。",
+      "kana": "このきかいのつかいかたをおしえてください。",
+      "romaji": "kono kikai no tsukaikata o oshiete kudasai.",
+      "zh": "请告诉我这台机器的使用方法。"
+    }
+  },
+  "l14-v9": {
+    "romaji": "yukkuri",
+    "attributes": [],
+    "explanation": "表示动作缓慢、不着急，也可用于请对方慢慢来。常与「話す」「歩く」「食べる」等动词搭配。",
+    "example": {
+      "jp": "もう少しゆっくり話してください。",
+      "kana": "もうすこしゆっくりはなしてください。",
+      "romaji": "mō sukoshi yukkuri hanashite kudasai.",
+      "zh": "请再说慢一点。"
+    }
+  },
+  "l14-w715": {
+    "romaji": "sugu",
+    "attributes": [],
+    "explanation": "表示时间上马上、立刻，也可表示距离上很近。常与「すぐ行く」「すぐ分かる」等搭配。",
+    "example": {
+      "jp": "すぐ戻りますから、待っていてください。",
+      "kana": "すぐもどりますから、まっていてください。",
+      "romaji": "sugu modorimasu kara, matte ite kudasai.",
+      "zh": "我马上回来，请等一下。"
+    }
+  },
+  "l14-w716": {
+    "romaji": "mata",
+    "attributes": [],
+    "explanation": "表示再一次、又，用于重复相同动作或情况。也可用于告别时表示“再见”。",
+    "example": {
+      "jp": "また明日会いましょう。",
+      "kana": "またあしたあいましょう。",
+      "romaji": "mata ashita aimashō.",
+      "zh": "明天再见吧。"
+    }
+  },
+  "l14-w717": {
+    "romaji": "atode",
+    "attributes": [],
+    "explanation": "表示稍后、之后再做某事，常用于推迟到以后。可与「後でする」「後で電話する」等搭配。",
+    "example": {
+      "jp": "その話は後でしましょう。",
+      "kana": "そのはなしはあとでしたしましょう。",
+      "romaji": "sono hanashi wa ato de shimashō.",
+      "zh": "那件事稍后再谈吧。"
+    }
+  },
+  "l14-w718": {
+    "romaji": "mō sukoshi",
+    "attributes": [],
+    "explanation": "表示再稍微、再一点，用于要求程度或数量增加。常与「待つ」「話す」「食べる」等搭配。",
+    "example": {
+      "jp": "もう少し待ってください。",
+      "kana": "もうすこしまってください。",
+      "romaji": "mō sukoshi matte kudasai.",
+      "zh": "请再等一会儿。"
+    }
+  },
+  "l14-w719": {
+    "romaji": "mō~",
+    "attributes": [],
+    "explanation": "接在数量词或程度词前，表示“再……”，如「もう一度」「もう少し」。用于追加或重复。",
+    "example": {
+      "jp": "もう一度言ってください。",
+      "kana": "もういちどいってください。",
+      "romaji": "mō ichido itte kudasai.",
+      "zh": "请再说一遍。"
+    }
+  },
+  "l14-w721": {
+    "romaji": "sā",
+    "attributes": [],
+    "explanation": "用于催促对方行动或转换话题，语气较随意。可单独使用，相当于“来吧”“那么”。",
+    "example": {
+      "jp": "さあ、行きましょう。",
+      "kana": "さあ、いきましょう。",
+      "romaji": "sā, ikimashō.",
+      "zh": "来吧，我们走吧。"
+    }
+  },
+  "l14-w722": {
+    "romaji": "are?",
+    "attributes": [],
+    "explanation": "表示惊讶或疑问的感叹词，用于发现意外情况或对某事感到奇怪时。口语中常用，语调上扬。",
+    "example": {
+      "jp": "あれ？鍵がない。",
+      "kana": "あれ？かぎがない。",
+      "romaji": "are? kagi ga nai.",
+      "zh": "咦？钥匙不见了。"
+    }
+  },
+  "l14-w723": {
+    "romaji": "shingou o migi e magatte kudasai",
+    "attributes": [],
+    "explanation": "指路时的固定表达，用于指示在信号灯处向右转。'を'表示经过点，'へ'表示方向。",
+    "example": {
+      "jp": "次の信号を右へ曲がってください。",
+      "kana": "つぎのしんごうをみぎへまがってください。",
+      "romaji": "tsugi no shingou o migi e magatte kudasai.",
+      "zh": "请在下一个信号灯处右转。"
+    }
+  },
+  "l14-w724": {
+    "romaji": "massugu",
+    "attributes": [],
+    "explanation": "表示方向或状态的副词，意为不弯曲、直接地。常用于指路或描述直线运动。",
+    "example": {
+      "jp": "この道をまっすぐ行ってください。",
+      "kana": "このみちをまっすぐいってください。",
+      "romaji": "kono michi o massugu itte kudasai.",
+      "zh": "请沿着这条路直走。"
+    }
+  },
+  "l14-w725": {
+    "romaji": "kore de onegai shimasu",
+    "attributes": [],
+    "explanation": "付款时的固定表达，'これで'表示用这个（钱）支付，'お願いします'表示麻烦您。",
+    "example": {
+      "jp": "はい、これでお願いします。",
+      "kana": "はい、これでおねがいします。",
+      "romaji": "hai, kore de onegai shimasu.",
+      "zh": "好的，用这个付款，麻烦您了。"
+    }
+  },
+  "l14-w726": {
+    "romaji": "otsuri",
+    "attributes": [],
+    "explanation": "名词，指买东西时找回的零钱。常与'です'搭配使用，如'お釣りです'。",
+    "example": {
+      "jp": "お釣りは100円です。",
+      "kana": "おつりはひゃくえんです。",
+      "romaji": "otsuri wa hyaku en desu.",
+      "zh": "找零是100日元。"
+    }
+  },
+  "l14-w727": {
+    "romaji": "tachimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅰ（五段），意为站立。常用于描述人从坐姿变为站姿，或处于站立状态。",
+    "example": {
+      "jp": "ここに立ってください。",
+      "kana": "ここにたってください。",
+      "romaji": "koko ni tatte kudasai.",
+      "zh": "请站在这里。"
+    }
+  },
+  "l14-w728": {
+    "romaji": "suwarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词Ⅰ（五段），意为坐下。常与表示场所的'に'搭配，如'椅子に座る'。",
+    "example": {
+      "jp": "椅子に座ってください。",
+      "kana": "いすにすわってください。",
+      "romaji": "isu ni suwatte kudasai.",
+      "zh": "请坐在椅子上。"
+    }
+  },
+  "l14-w729": {
+    "romaji": "tsukaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词Ⅰ（五段），意为使用。宾语用'を'标记，如'ペンを使う'。",
+    "example": {
+      "jp": "このペンを使ってください。",
+      "kana": "このペンをつかってください。",
+      "romaji": "kono pen o tsukatte kudasai.",
+      "zh": "请使用这支笔。"
+    }
+  },
+  "l14-w818": {
+    "romaji": "mondai",
+    "attributes": [],
+    "explanation": "名词，指需要解决的事项或考试中的题目。常与'を解く'、'がある'等搭配。",
+    "example": {
+      "jp": "この問題は難しいです。",
+      "kana": "このもんだいはむずかしいです。",
+      "romaji": "kono mondai wa muzukashii desu.",
+      "zh": "这个问题很难。"
+    }
+  },
+  "l14-answer": {
+    "romaji": "kotae",
+    "attributes": [],
+    "explanation": "名词，指对问题或试题的解答。常与'を出す'、'がわかる'等搭配。",
+    "example": {
+      "jp": "答えを教えてください。",
+      "kana": "こたえをおしえてください。",
+      "romaji": "kotae o oshiete kudasai.",
+      "zh": "请告诉我答案。"
+    }
+  },
+  "l14-midori": {
+    "romaji": "midorichou",
+    "attributes": [],
+    "explanation": "专有名词，是教材中虚构的地名，读作'みどりちょう'。",
+    "example": {
+      "jp": "みどり町は駅の近くです。",
+      "kana": "みどりちょうはえきのちかくです。",
+      "romaji": "midorichou wa eki no chikaku desu.",
+      "zh": "绿町在车站附近。"
+    }
+  }
+}

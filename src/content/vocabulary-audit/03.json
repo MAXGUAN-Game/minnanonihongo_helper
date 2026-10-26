@@ -1,0 +1,235 @@
+{
+  "lessonId": 3,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/3.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 42,
+  "entries": [
+    {
+      "sourceId": "1106",
+      "sourceWord": "自動販売機",
+      "key": "jidouhanbaiki"
+    },
+    {
+      "sourceId": "122",
+      "sourceWord": "ここ",
+      "key": "koko"
+    },
+    {
+      "sourceId": "123",
+      "sourceWord": "そこ",
+      "key": "soko"
+    },
+    {
+      "sourceId": "124",
+      "sourceWord": "あそこ",
+      "key": "asoko"
+    },
+    {
+      "sourceId": "125",
+      "sourceWord": "どこ",
+      "key": "doko"
+    },
+    {
+      "sourceId": "126",
+      "sourceWord": "こちら",
+      "key": "kochira"
+    },
+    {
+      "sourceId": "127",
+      "sourceWord": "そちら",
+      "key": "sochira"
+    },
+    {
+      "sourceId": "128",
+      "sourceWord": "あちら",
+      "key": "achira"
+    },
+    {
+      "sourceId": "129",
+      "sourceWord": "どちら",
+      "key": "dochira"
+    },
+    {
+      "sourceId": "130",
+      "sourceWord": "教室",
+      "key": "kyoushitsu"
+    },
+    {
+      "sourceId": "131",
+      "sourceWord": "食堂",
+      "key": "shokudou"
+    },
+    {
+      "sourceId": "132",
+      "sourceWord": "事務所",
+      "key": "jimusho"
+    },
+    {
+      "sourceId": "133",
+      "sourceWord": "会議室",
+      "key": "kaigishitsu"
+    },
+    {
+      "sourceId": "134",
+      "sourceWord": "受付",
+      "key": "uketsuke"
+    },
+    {
+      "sourceId": "135",
+      "sourceWord": "ロビー",
+      "key": "robii"
+    },
+    {
+      "sourceId": "136",
+      "sourceWord": "部屋",
+      "key": "heya"
+    },
+    {
+      "sourceId": "137",
+      "sourceWord": "トイレ",
+      "key": "toire"
+    },
+    {
+      "sourceId": "138",
+      "sourceWord": "お手洗い",
+      "key": "otearai"
+    },
+    {
+      "sourceId": "139",
+      "sourceWord": "階段",
+      "key": "kaidan"
+    },
+    {
+      "sourceId": "140",
+      "sourceWord": "エレベ－タ－",
+      "key": "erebeetaa"
+    },
+    {
+      "sourceId": "141",
+      "sourceWord": "エスカレ－タ－",
+      "key": "esukareetaa"
+    },
+    {
+      "sourceId": "142",
+      "sourceWord": "国",
+      "key": "kuni"
+    },
+    {
+      "sourceId": "143",
+      "sourceWord": "お国",
+      "key": "kuni"
+    },
+    {
+      "sourceId": "144",
+      "sourceWord": "会社",
+      "key": "kaisha"
+    },
+    {
+      "sourceId": "145",
+      "sourceWord": "家",
+      "key": "uchi"
+    },
+    {
+      "sourceId": "146",
+      "sourceWord": "電話",
+      "key": "denwa"
+    },
+    {
+      "sourceId": "147",
+      "sourceWord": "靴",
+      "key": "kutsu"
+    },
+    {
+      "sourceId": "148",
+      "sourceWord": "ネクタイ",
+      "key": "nekutai"
+    },
+    {
+      "sourceId": "149",
+      "sourceWord": "ワイン",
+      "key": "wain"
+    },
+    {
+      "sourceId": "151",
+      "sourceWord": "売り場",
+      "key": "uriba"
+    },
+    {
+      "sourceId": "152",
+      "sourceWord": "地下",
+      "key": "chika"
+    },
+    {
+      "sourceId": "153",
+      "sourceWord": "～階",
+      "key": "kai"
+    },
+    {
+      "sourceId": "154",
+      "sourceWord": "何階",
+      "key": "nangai"
+    },
+    {
+      "sourceId": "155",
+      "sourceWord": "円",
+      "key": "en"
+    },
+    {
+      "sourceId": "156",
+      "sourceWord": "いくら",
+      "key": "ikura"
+    },
+    {
+      "sourceId": "157",
+      "sourceWord": "百",
+      "key": "hyaku"
+    },
+    {
+      "sourceId": "158",
+      "sourceWord": "千",
+      "key": "sen"
+    },
+    {
+      "sourceId": "159",
+      "sourceWord": "万",
+      "key": "man"
+    },
+    {
+      "sourceId": "161",
+      "sourceWord": "すみません。",
+      "key": "sumimasen"
+    },
+    {
+      "sourceId": "162",
+      "sourceWord": "［を］見せてください。",
+      "key": "misetekudasai"
+    },
+    {
+      "sourceId": "163",
+      "sourceWord": "じゃ",
+      "key": "ja"
+    },
+    {
+      "sourceId": "164",
+      "sourceWord": "［～を］ください。",
+      "key": "kudasai"
+    }
+  ],
+  "excluded": [],
+  "secondaryAdditions": [
+    "irasshaimase",
+    "itaria",
+    "furansu",
+    "suisu",
+    "bankoku",
+    "shinoosaka",
+    "jakaruta",
+    "berurin",
+    "doumo"
+  ],
+  "finalCount": 50,
+  "reviewedAt": "2026-10-24"
+}

@@ -1,0 +1,260 @@
+{
+  "lessonId": 28,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/28.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "primaryCount": 47,
+  "entries": [
+    {
+      "sourceId": "1102",
+      "sourceWord": "景色",
+      "key": "w1102"
+    },
+    {
+      "sourceId": "1110",
+      "sourceWord": "台所",
+      "key": "w1110"
+    },
+    {
+      "sourceId": "1124",
+      "sourceWord": "［パンが］売れます",
+      "key": "w1124"
+    },
+    {
+      "sourceId": "1125",
+      "sourceWord": "踊ります",
+      "key": "w1125"
+    },
+    {
+      "sourceId": "1126",
+      "sourceWord": "噛みます",
+      "key": "w1126"
+    },
+    {
+      "sourceId": "1127",
+      "sourceWord": "噛みます",
+      "key": "w1126"
+    },
+    {
+      "sourceId": "1128",
+      "sourceWord": "選びます",
+      "key": "w1128"
+    },
+    {
+      "sourceId": "1130",
+      "sourceWord": "［会社に］通います",
+      "key": "w1130"
+    },
+    {
+      "sourceId": "1131",
+      "sourceWord": "メモします",
+      "key": "w1131"
+    },
+    {
+      "sourceId": "1132",
+      "sourceWord": "まじめな",
+      "key": "w1132"
+    },
+    {
+      "sourceId": "1133",
+      "sourceWord": "熱心な",
+      "key": "w1133"
+    },
+    {
+      "sourceId": "1135",
+      "sourceWord": "偉い",
+      "key": "w1135"
+    },
+    {
+      "sourceId": "1136",
+      "sourceWord": "ちょうどいい",
+      "key": "w1136"
+    },
+    {
+      "sourceId": "1138",
+      "sourceWord": "経験",
+      "key": "w1138"
+    },
+    {
+      "sourceId": "1139",
+      "sourceWord": "力",
+      "key": "w1139"
+    },
+    {
+      "sourceId": "1140",
+      "sourceWord": "人気",
+      "key": "w1140"
+    },
+    {
+      "sourceId": "1141",
+      "sourceWord": "形",
+      "key": "w1141"
+    },
+    {
+      "sourceId": "1142",
+      "sourceWord": "色",
+      "key": "w1142"
+    },
+    {
+      "sourceId": "1143",
+      "sourceWord": "味",
+      "key": "w1143"
+    },
+    {
+      "sourceId": "1144",
+      "sourceWord": "ガム",
+      "key": "w1144"
+    },
+    {
+      "sourceId": "1145",
+      "sourceWord": "品物",
+      "key": "w1145"
+    },
+    {
+      "sourceId": "1146",
+      "sourceWord": "値段",
+      "key": "w1146"
+    },
+    {
+      "sourceId": "1147",
+      "sourceWord": "給料",
+      "key": "w1147"
+    },
+    {
+      "sourceId": "1148",
+      "sourceWord": "ボーナス",
+      "key": "w1148"
+    },
+    {
+      "sourceId": "1149",
+      "sourceWord": "番組",
+      "key": "w1149"
+    },
+    {
+      "sourceId": "1150",
+      "sourceWord": "ドラマ",
+      "key": "w1150"
+    },
+    {
+      "sourceId": "1151",
+      "sourceWord": "小説",
+      "key": "w1151"
+    },
+    {
+      "sourceId": "1152",
+      "sourceWord": "小説家",
+      "key": "w1152"
+    },
+    {
+      "sourceId": "1153",
+      "sourceWord": "歌手",
+      "key": "w1153"
+    },
+    {
+      "sourceId": "1155",
+      "sourceWord": "息子",
+      "key": "w1155"
+    },
+    {
+      "sourceId": "1156",
+      "sourceWord": "息子さん",
+      "key": "w1156"
+    },
+    {
+      "sourceId": "1157",
+      "sourceWord": "娘",
+      "key": "w1157"
+    },
+    {
+      "sourceId": "1158",
+      "sourceWord": "娘さん",
+      "key": "w1158"
+    },
+    {
+      "sourceId": "1159",
+      "sourceWord": "自分",
+      "key": "w1159"
+    },
+    {
+      "sourceId": "1160",
+      "sourceWord": "将来",
+      "key": "w1160"
+    },
+    {
+      "sourceId": "1161",
+      "sourceWord": "しばらく",
+      "key": "w1161"
+    },
+    {
+      "sourceId": "1162",
+      "sourceWord": "大抵",
+      "key": "w1162"
+    },
+    {
+      "sourceId": "1163",
+      "sourceWord": "それに",
+      "key": "w1163"
+    },
+    {
+      "sourceId": "1164",
+      "sourceWord": "それで",
+      "key": "w1164"
+    },
+    {
+      "sourceId": "1165",
+      "sourceWord": "ちょっとお願いがあるんですが。",
+      "key": "w1165"
+    },
+    {
+      "sourceId": "1167",
+      "sourceWord": "会話",
+      "key": "w1167"
+    },
+    {
+      "sourceId": "1347",
+      "sourceWord": "～機",
+      "key": "w1347"
+    },
+    {
+      "sourceId": "2428",
+      "sourceWord": "ゲーム",
+      "key": "w2428"
+    },
+    {
+      "sourceId": "2999",
+      "sourceWord": "美容院",
+      "key": "w2999"
+    },
+    {
+      "sourceId": "889",
+      "sourceWord": "実は",
+      "key": "w889"
+    },
+    {
+      "sourceId": "976",
+      "sourceWord": "うーん。",
+      "key": "w976"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1168",
+      "sourceWord": "おしゃべりします",
+      "reason": "旧版会话动词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "professional",
+    "notice",
+    "participate",
+    "date",
+    "saturday",
+    "gym",
+    "free",
+    "invite",
+    "event"
+  ],
+  "finalCount": 54
+}

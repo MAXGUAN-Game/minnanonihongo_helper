@@ -67,16 +67,16 @@ describe('publisher textbook audio manifest', () => {
     for (const lessonId of [0, -1, 51, 1.5, Number.NaN]) expect(getTextbookAudioLesson(lessonId)).toBeUndefined();
   });
 
-  it('keeps audio binaries out of the deployable source package', async () => {
+  it('only bundles generated word audio, excluding textbook and user recordings', async () => {
     const files: string[] = await collectPackageFiles();
     expect(files).toContain('src/content/textbook-audio.json');
-    expect(files.filter(file => /\.(mp3|wav|m4a|aac|ogg|flac|opus|zip)$/i.test(file))).toEqual([]);
+    expect(files.filter(file => /\.(mp3|wav|m4a|aac|ogg|flac|opus|zip)$/i.test(file) && !/^public\/vocabulary-audio\/[a-f0-9]{64}\.wav$/.test(file))).toEqual([]);
     expect(JSON.stringify(textbookAudioManifest)).not.toMatch(/data:audio|base64,/i);
   });
 
   it.skipIf(!existsSync(join(process.cwd(), '.git')))('does not track audio binaries in Git', () => {
     const tracked = execFileSync('git', ['ls-files', '--', '*.mp3', '*.wav', '*.m4a', '*.aac', '*.ogg', '*.flac', '*.opus'], { cwd: process.cwd(), encoding: 'utf8', windowsHide: true });
-    expect(tracked.trim()).toBe('');
+    expect(tracked.trim().split(/\r?\n/).filter(file => file && !/^public\/vocabulary-audio\/[a-f0-9]{64}\.wav$/.test(file))).toEqual([]);
   });
 });
 

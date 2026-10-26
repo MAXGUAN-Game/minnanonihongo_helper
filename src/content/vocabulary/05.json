@@ -1,0 +1,441 @@
+{
+  "lessonId": 5,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/5.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "第二版交叉表补列～年、何年、そうですね和会话感谢表达，须与候选表合并。",
+    "逐项核对完成：Langoal的55条全部对应；第二来源补入6条，共61条。覆盖明细见vocabulary-audit/05.json。"
+  ],
+  "words": [
+    {
+      "key": "ikimasu",
+      "word": "行きます",
+      "reading": "いきます",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "去"
+    },
+    {
+      "key": "kimasu",
+      "word": "来ます",
+      "reading": "きます",
+      "partOfSpeech": "动词Ⅲ类",
+      "meaning": "来"
+    },
+    {
+      "key": "kaerimasu",
+      "word": "帰ります",
+      "reading": "かえります",
+      "partOfSpeech": "动词Ⅰ类",
+      "meaning": "回去；回家"
+    },
+    {
+      "key": "gakkou",
+      "word": "学校",
+      "reading": "がっこう",
+      "partOfSpeech": "名词",
+      "meaning": "学校"
+    },
+    {
+      "key": "suupaa",
+      "word": "スーパー",
+      "reading": "すーぱー",
+      "partOfSpeech": "名词",
+      "meaning": "超市"
+    },
+    {
+      "key": "eki",
+      "word": "駅",
+      "reading": "えき",
+      "partOfSpeech": "名词",
+      "meaning": "车站"
+    },
+    {
+      "key": "hikouki",
+      "word": "飛行機",
+      "reading": "ひこうき",
+      "partOfSpeech": "名词",
+      "meaning": "飞机"
+    },
+    {
+      "key": "fune",
+      "word": "船",
+      "reading": "ふね",
+      "partOfSpeech": "名词",
+      "meaning": "船"
+    },
+    {
+      "key": "densha",
+      "word": "電車",
+      "reading": "でんしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "电车"
+    },
+    {
+      "key": "chikatetsu",
+      "word": "地下鉄",
+      "reading": "ちかてつ",
+      "partOfSpeech": "名词",
+      "meaning": "地铁"
+    },
+    {
+      "key": "shinkansen",
+      "word": "新幹線",
+      "reading": "しんかんせん",
+      "partOfSpeech": "名词",
+      "meaning": "新干线"
+    },
+    {
+      "key": "basu",
+      "word": "バス",
+      "reading": "ばす",
+      "partOfSpeech": "名词",
+      "meaning": "公交车；巴士"
+    },
+    {
+      "key": "takushii",
+      "word": "タクシー",
+      "reading": "たくしー",
+      "partOfSpeech": "名词",
+      "meaning": "出租车"
+    },
+    {
+      "key": "jitensha",
+      "word": "自転車",
+      "reading": "じてんしゃ",
+      "partOfSpeech": "名词",
+      "meaning": "自行车"
+    },
+    {
+      "key": "aruite",
+      "word": "歩いて",
+      "reading": "あるいて",
+      "partOfSpeech": "动词て形／方式表达",
+      "meaning": "步行；走着"
+    },
+    {
+      "key": "hito",
+      "word": "人",
+      "reading": "ひと",
+      "partOfSpeech": "名词",
+      "meaning": "人"
+    },
+    {
+      "key": "tomodachi",
+      "word": "友達",
+      "reading": "ともだち",
+      "partOfSpeech": "名词",
+      "meaning": "朋友"
+    },
+    {
+      "key": "kare",
+      "word": "彼",
+      "reading": "かれ",
+      "partOfSpeech": "代名词／名词",
+      "meaning": "他；男朋友"
+    },
+    {
+      "key": "kanojo",
+      "word": "彼女",
+      "reading": "かのじょ",
+      "partOfSpeech": "代名词／名词",
+      "meaning": "她；女朋友"
+    },
+    {
+      "key": "kazoku",
+      "word": "家族",
+      "reading": "かぞく",
+      "partOfSpeech": "名词",
+      "meaning": "家人；家属；家庭"
+    },
+    {
+      "key": "hitoride",
+      "word": "一人で",
+      "reading": "ひとりで",
+      "partOfSpeech": "副词性表达",
+      "meaning": "独自；一个人"
+    },
+    {
+      "key": "senshuu",
+      "word": "先週",
+      "reading": "せんしゅう",
+      "partOfSpeech": "名词／副词",
+      "meaning": "上周"
+    },
+    {
+      "key": "konshuu",
+      "word": "今週",
+      "reading": "こんしゅう",
+      "partOfSpeech": "名词／副词",
+      "meaning": "这周；本周"
+    },
+    {
+      "key": "raishuu",
+      "word": "来週",
+      "reading": "らいしゅう",
+      "partOfSpeech": "名词／副词",
+      "meaning": "下周"
+    },
+    {
+      "key": "sengetsu",
+      "word": "先月",
+      "reading": "せんげつ",
+      "partOfSpeech": "名词／副词",
+      "meaning": "上个月"
+    },
+    {
+      "key": "kongetsu",
+      "word": "今月",
+      "reading": "こんげつ",
+      "partOfSpeech": "名词／副词",
+      "meaning": "这个月；本月"
+    },
+    {
+      "key": "raigetsu",
+      "word": "来月",
+      "reading": "らいげつ",
+      "partOfSpeech": "名词／副词",
+      "meaning": "下个月"
+    },
+    {
+      "key": "kyonen",
+      "word": "去年",
+      "reading": "きょねん",
+      "partOfSpeech": "名词／副词",
+      "meaning": "去年"
+    },
+    {
+      "key": "kotoshi",
+      "word": "今年",
+      "reading": "ことし",
+      "partOfSpeech": "名词／副词",
+      "meaning": "今年"
+    },
+    {
+      "key": "rainen",
+      "word": "来年",
+      "reading": "らいねん",
+      "partOfSpeech": "名词／副词",
+      "meaning": "明年"
+    },
+    {
+      "key": "nen",
+      "word": "～年",
+      "reading": "～ねん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……年"
+    },
+    {
+      "key": "nannen",
+      "word": "何年",
+      "reading": "なんねん",
+      "partOfSpeech": "疑问表达",
+      "meaning": "哪一年；几年"
+    },
+    {
+      "key": "gatsu",
+      "word": "～月",
+      "reading": "～がつ",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……月"
+    },
+    {
+      "key": "nangatsu",
+      "word": "何月",
+      "reading": "なんがつ",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几月"
+    },
+    {
+      "key": "nichi",
+      "word": "～日",
+      "reading": "～にち",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……日；……号；……天"
+    },
+    {
+      "key": "nannichi",
+      "word": "何日",
+      "reading": "なんにち",
+      "partOfSpeech": "疑问表达",
+      "meaning": "几号；几天"
+    },
+    {
+      "key": "itsu",
+      "word": "いつ",
+      "reading": "いつ",
+      "partOfSpeech": "疑问代名词",
+      "meaning": "什么时候"
+    },
+    {
+      "key": "tanjoubi",
+      "word": "誕生日",
+      "reading": "たんじょうび",
+      "partOfSpeech": "名词",
+      "meaning": "生日"
+    },
+    {
+      "key": "date-1",
+      "word": "一日",
+      "reading": "ついたち",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "1号；1日（日期读ついたち；一天读いちにち）"
+    },
+    {
+      "key": "date-2",
+      "word": "二日",
+      "reading": "ふつか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "2号；2日；2天"
+    },
+    {
+      "key": "date-3",
+      "word": "三日",
+      "reading": "みっか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "3号；3日；3天"
+    },
+    {
+      "key": "date-4",
+      "word": "四日",
+      "reading": "よっか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "4号；4日；4天"
+    },
+    {
+      "key": "date-5",
+      "word": "五日",
+      "reading": "いつか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "5号；5日；5天"
+    },
+    {
+      "key": "date-6",
+      "word": "六日",
+      "reading": "むいか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "6号；6日；6天"
+    },
+    {
+      "key": "date-7",
+      "word": "七日",
+      "reading": "なのか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "7号；7日；7天"
+    },
+    {
+      "key": "date-8",
+      "word": "八日",
+      "reading": "ようか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "8号；8日；8天"
+    },
+    {
+      "key": "date-9",
+      "word": "九日",
+      "reading": "ここのか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "9号；9日；9天"
+    },
+    {
+      "key": "date-10",
+      "word": "十日",
+      "reading": "とおか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "10号；10日；10天"
+    },
+    {
+      "key": "date-14",
+      "word": "十四日",
+      "reading": "じゅうよっか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "14号；14日；14天"
+    },
+    {
+      "key": "date-20",
+      "word": "二十日",
+      "reading": "はつか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "20号；20日；20天"
+    },
+    {
+      "key": "date-24",
+      "word": "二十四日",
+      "reading": "にじゅうよっか",
+      "partOfSpeech": "名词（日期）",
+      "meaning": "24号；24日；24天"
+    },
+    {
+      "key": "futsuu",
+      "word": "普通",
+      "reading": "ふつう",
+      "partOfSpeech": "名词",
+      "meaning": "普通列车；普通"
+    },
+    {
+      "key": "kyuukou",
+      "word": "急行",
+      "reading": "きゅうこう",
+      "partOfSpeech": "名词",
+      "meaning": "急行列车"
+    },
+    {
+      "key": "tokkyuu",
+      "word": "特急",
+      "reading": "とっきゅう",
+      "partOfSpeech": "名词",
+      "meaning": "特急列车"
+    },
+    {
+      "key": "tsugino",
+      "word": "次の",
+      "reading": "つぎの",
+      "partOfSpeech": "连体表达",
+      "meaning": "下一个；下一班"
+    },
+    {
+      "key": "bansen",
+      "word": "～番線",
+      "reading": "～ばんせん",
+      "partOfSpeech": "接尾词／量词",
+      "meaning": "……号站台；……号线"
+    },
+    {
+      "key": "douitashimashite",
+      "word": "どういたしまして",
+      "reading": "どういたしまして",
+      "partOfSpeech": "固定表达",
+      "meaning": "不客气；不用谢"
+    },
+    {
+      "key": "soudesune",
+      "word": "そうですね",
+      "reading": "そうですね",
+      "partOfSpeech": "固定表达",
+      "meaning": "是啊；我想想（附和或思考时）"
+    },
+    {
+      "key": "arigatougozaimashita",
+      "word": "どうもありがとうございました",
+      "reading": "どうもありがとうございました",
+      "partOfSpeech": "固定表达",
+      "meaning": "非常感谢（感谢已完成的帮助）"
+    },
+    {
+      "key": "koushien",
+      "word": "甲子園",
+      "reading": "こうしえん",
+      "partOfSpeech": "专有名词",
+      "meaning": "甲子园（地名、球场名）"
+    },
+    {
+      "key": "oosakajou",
+      "word": "大阪城",
+      "reading": "おおさかじょう",
+      "partOfSpeech": "专有名词",
+      "meaning": "大阪城"
+    }
+  ]
+}

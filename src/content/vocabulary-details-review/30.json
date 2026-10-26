@@ -1,0 +1,14 @@
+{
+  "lessonId": 30,
+  "model": "deepseek-flash",
+  "reviewedCount": 47,
+  "corrections": [
+    {
+      "id": "l30-dream",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "「夢を見ます」以「夢を」为宾语，是动词表达，需补他动词属性。"
+    }
+  ]
+}

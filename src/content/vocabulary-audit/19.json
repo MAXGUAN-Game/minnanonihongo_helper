@@ -1,0 +1,159 @@
+{
+  "lessonId": 19,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/19.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 28,
+  "entries": [
+    {
+      "sourceId": "4052",
+      "sourceWord": "上ります",
+      "key": "w4052"
+    },
+    {
+      "sourceId": "866",
+      "sourceWord": "［山に］登ります",
+      "key": "w866"
+    },
+    {
+      "sourceId": "867",
+      "sourceWord": "［に］泊まります",
+      "key": "w867"
+    },
+    {
+      "sourceId": "868",
+      "sourceWord": "掃除します",
+      "key": "w868"
+    },
+    {
+      "sourceId": "869",
+      "sourceWord": "洗濯します",
+      "key": "w869"
+    },
+    {
+      "sourceId": "870",
+      "sourceWord": "練習します",
+      "key": "w870"
+    },
+    {
+      "sourceId": "871",
+      "sourceWord": "なります",
+      "key": "w871"
+    },
+    {
+      "sourceId": "872",
+      "sourceWord": "眠い",
+      "key": "w872"
+    },
+    {
+      "sourceId": "873",
+      "sourceWord": "強い",
+      "key": "w873"
+    },
+    {
+      "sourceId": "874",
+      "sourceWord": "弱い",
+      "key": "w874"
+    },
+    {
+      "sourceId": "875",
+      "sourceWord": "調子がいい",
+      "key": "w875"
+    },
+    {
+      "sourceId": "876",
+      "sourceWord": "調子が悪い",
+      "key": "w876"
+    },
+    {
+      "sourceId": "877",
+      "sourceWord": "調子",
+      "key": "w877"
+    },
+    {
+      "sourceId": "878",
+      "sourceWord": "ゴルフ",
+      "key": "w878"
+    },
+    {
+      "sourceId": "879",
+      "sourceWord": "相撲",
+      "key": "w879"
+    },
+    {
+      "sourceId": "881",
+      "sourceWord": "お茶",
+      "key": "w881"
+    },
+    {
+      "sourceId": "882",
+      "sourceWord": "日",
+      "key": "w882"
+    },
+    {
+      "sourceId": "883",
+      "sourceWord": "一度",
+      "key": "w883"
+    },
+    {
+      "sourceId": "884",
+      "sourceWord": "一度も",
+      "key": "w884"
+    },
+    {
+      "sourceId": "885",
+      "sourceWord": "だんだん",
+      "key": "w885"
+    },
+    {
+      "sourceId": "886",
+      "sourceWord": "もうすぐ",
+      "key": "w886"
+    },
+    {
+      "sourceId": "887",
+      "sourceWord": "お陰様で",
+      "key": "w887"
+    },
+    {
+      "sourceId": "888",
+      "sourceWord": "乾杯",
+      "key": "w888"
+    },
+    {
+      "sourceId": "890",
+      "sourceWord": "ダイエット",
+      "key": "w890"
+    },
+    {
+      "sourceId": "893",
+      "sourceWord": "無理な",
+      "key": "w893"
+    },
+    {
+      "sourceId": "894",
+      "sourceWord": "体にいい",
+      "key": "w894"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "880",
+      "sourceWord": "パチンコ",
+      "reason": "旧版娱乐词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "892",
+      "sourceWord": "しかし",
+      "reason": "旧版接续词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "practice",
+    "skytree",
+    "hokusai"
+  ],
+  "finalCount": 29
+}

@@ -1,0 +1,344 @@
+{
+  "lessonId": 14,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/14.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源45条，排除0条旧版或跨课条目，合并同形同义项并补入第二来源，最终47条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/14.json。"
+  ],
+  "words": [
+    {
+      "key": "w57",
+      "word": "電気",
+      "reading": "でんき",
+      "partOfSpeech": "名词",
+      "meaning": "电；电灯"
+    },
+    {
+      "key": "w652",
+      "word": "入ります",
+      "reading": "はいります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "进入"
+    },
+    {
+      "key": "w653",
+      "word": "出ます",
+      "reading": "でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出去；离开"
+    },
+    {
+      "key": "w686",
+      "word": "つけます",
+      "reading": "つけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "打开（电器）"
+    },
+    {
+      "key": "w687",
+      "word": "消します",
+      "reading": "けします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "关闭；熄灭"
+    },
+    {
+      "key": "w688",
+      "word": "開けます",
+      "reading": "あけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "打开（门窗）"
+    },
+    {
+      "key": "w689",
+      "word": "閉めます",
+      "reading": "しめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "关上（门窗）"
+    },
+    {
+      "key": "w690",
+      "word": "急ぎます",
+      "reading": "いそぎます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "赶快"
+    },
+    {
+      "key": "w691",
+      "word": "待ちます",
+      "reading": "まちます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "等"
+    },
+    {
+      "key": "w692",
+      "word": "［音楽を］止めます",
+      "reading": "［おんがくを］とめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "停止（音乐等）"
+    },
+    {
+      "key": "w693",
+      "word": "［車を］停めます",
+      "reading": "［くるまを］とめます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "停车"
+    },
+    {
+      "key": "w695",
+      "word": "持ちます",
+      "reading": "もちます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拿；持有"
+    },
+    {
+      "key": "w696",
+      "word": "取ります",
+      "reading": "とります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "拿取；递给"
+    },
+    {
+      "key": "w697",
+      "word": "手伝います",
+      "reading": "てつだいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "帮忙"
+    },
+    {
+      "key": "w698",
+      "word": "呼びます",
+      "reading": "よびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "叫；呼唤"
+    },
+    {
+      "key": "w699",
+      "word": "話します",
+      "reading": "はなします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "说话"
+    },
+    {
+      "key": "w700",
+      "word": "見せます",
+      "reading": "みせます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出示；给人看"
+    },
+    {
+      "key": "w701",
+      "word": "［住所を］教えます",
+      "reading": "［じゅうしょを］おしえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "告诉（地址）"
+    },
+    {
+      "key": "w703",
+      "word": "［雨が］降ります",
+      "reading": "［あめが］ふります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "下（雨）"
+    },
+    {
+      "key": "w704",
+      "word": "コピーします",
+      "reading": "こぴーします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "复印"
+    },
+    {
+      "key": "w705",
+      "word": "エアコン",
+      "reading": "えあこん",
+      "partOfSpeech": "名词",
+      "meaning": "空调"
+    },
+    {
+      "key": "w706",
+      "word": "パスポート",
+      "reading": "ぱすぽーと",
+      "partOfSpeech": "名词",
+      "meaning": "护照"
+    },
+    {
+      "key": "w707",
+      "word": "名前",
+      "reading": "なまえ",
+      "partOfSpeech": "名词",
+      "meaning": "名字"
+    },
+    {
+      "key": "w708",
+      "word": "住所",
+      "reading": "じゅうしょ",
+      "partOfSpeech": "名词",
+      "meaning": "地址"
+    },
+    {
+      "key": "w709",
+      "word": "地図",
+      "reading": "ちず",
+      "partOfSpeech": "名词",
+      "meaning": "地图"
+    },
+    {
+      "key": "w710",
+      "word": "塩",
+      "reading": "しお",
+      "partOfSpeech": "名词",
+      "meaning": "盐"
+    },
+    {
+      "key": "w711",
+      "word": "砂糖",
+      "reading": "さとう",
+      "partOfSpeech": "名词",
+      "meaning": "糖"
+    },
+    {
+      "key": "w712",
+      "word": "読み方",
+      "reading": "よみかた",
+      "partOfSpeech": "名词",
+      "meaning": "读法"
+    },
+    {
+      "key": "w713",
+      "word": "～方",
+      "reading": "～かた",
+      "partOfSpeech": "接尾词",
+      "meaning": "……的方法"
+    },
+    {
+      "key": "w714",
+      "word": "ゆっくり",
+      "reading": "ゆっくり",
+      "partOfSpeech": "副词",
+      "meaning": "慢慢地"
+    },
+    {
+      "key": "w715",
+      "word": "すぐ",
+      "reading": "すぐ",
+      "partOfSpeech": "副词",
+      "meaning": "马上"
+    },
+    {
+      "key": "w716",
+      "word": "また",
+      "reading": "また",
+      "partOfSpeech": "副词",
+      "meaning": "再；又"
+    },
+    {
+      "key": "w717",
+      "word": "後で",
+      "reading": "あとで",
+      "partOfSpeech": "副词",
+      "meaning": "稍后"
+    },
+    {
+      "key": "w718",
+      "word": "もう少し",
+      "reading": "もうすこし",
+      "partOfSpeech": "副词",
+      "meaning": "再一点"
+    },
+    {
+      "key": "w719",
+      "word": "もう～",
+      "reading": "もう～",
+      "partOfSpeech": "副词",
+      "meaning": "再……"
+    },
+    {
+      "key": "w721",
+      "word": "さあ",
+      "reading": "さあ",
+      "partOfSpeech": "表达",
+      "meaning": "来吧；那么"
+    },
+    {
+      "key": "w722",
+      "word": "あれ？",
+      "reading": "あれ？",
+      "partOfSpeech": "表达",
+      "meaning": "咦"
+    },
+    {
+      "key": "w723",
+      "word": "信号を右へ曲がってください",
+      "reading": "しんごうをみぎへまがってください",
+      "partOfSpeech": "固定表达",
+      "meaning": "请在信号灯处右转"
+    },
+    {
+      "key": "w724",
+      "word": "まっすぐ",
+      "reading": "まっすぐ",
+      "partOfSpeech": "副词",
+      "meaning": "笔直地"
+    },
+    {
+      "key": "w725",
+      "word": "これでお願いします",
+      "reading": "これでおねがいします",
+      "partOfSpeech": "固定表达",
+      "meaning": "用这个付款，麻烦您了"
+    },
+    {
+      "key": "w726",
+      "word": "お釣り",
+      "reading": "おつり",
+      "partOfSpeech": "名词",
+      "meaning": "找回的钱"
+    },
+    {
+      "key": "w727",
+      "word": "立ちます",
+      "reading": "たちます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "站立"
+    },
+    {
+      "key": "w728",
+      "word": "座ります",
+      "reading": "すわります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "坐下"
+    },
+    {
+      "key": "w729",
+      "word": "使います",
+      "reading": "つかいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "使用"
+    },
+    {
+      "key": "w818",
+      "word": "問題",
+      "reading": "もんだい",
+      "partOfSpeech": "名词",
+      "meaning": "问题"
+    },
+    {
+      "key": "answer",
+      "word": "答え",
+      "reading": "こたえ",
+      "partOfSpeech": "名词",
+      "meaning": "答案"
+    },
+    {
+      "key": "midori",
+      "word": "みどり町",
+      "reading": "みどりちょう",
+      "partOfSpeech": "专有名词",
+      "meaning": "绿町（教材地名）"
+    }
+  ]
+}

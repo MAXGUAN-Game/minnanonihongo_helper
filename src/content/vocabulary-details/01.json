@@ -1,0 +1,629 @@
+{
+  "l1-v1": {
+    "romaji": "watashi",
+    "attributes": [],
+    "explanation": "第一人称代词，男女通用，语气礼貌中性。日常会话中最常用的“我”，正式场合也可用。",
+    "example": {
+      "jp": "私は学生です。",
+      "kana": "わたしはがくせいです。",
+      "romaji": "watashi wa gakusei desu.",
+      "zh": "我是学生。"
+    }
+  },
+  "l1-anata": {
+    "romaji": "anata",
+    "attributes": [],
+    "explanation": "第二人称代词“你”，但直接称呼对方时略显生硬，通常用对方姓名加さん更自然。多用于不知道对方姓名或亲密关系。",
+    "example": {
+      "jp": "あなたは先生ですか。",
+      "kana": "あなたはせんせいですか。",
+      "romaji": "anata wa sensei desu ka.",
+      "zh": "你是老师吗？"
+    }
+  },
+  "l1-anohito": {
+    "romaji": "ano hito",
+    "attributes": [],
+    "explanation": "指代离说话人和听话人都较远的那个人，中性表达。不能用于直接称呼对方。",
+    "example": {
+      "jp": "あの人は医者です。",
+      "kana": "あのひとはいしゃです。",
+      "romaji": "ano hito wa isha desu.",
+      "zh": "那个人是医生。"
+    }
+  },
+  "l1-anokata": {
+    "romaji": "ano kata",
+    "attributes": [],
+    "explanation": "“あの人”的敬语形式，用于礼貌地指代第三方，尤其对长辈或上级。不能用于称呼对方本人。",
+    "example": {
+      "jp": "あの方は先生です。",
+      "kana": "あのかたはせんせいです。",
+      "romaji": "ano kata wa sensei desu.",
+      "zh": "那位是老师。"
+    }
+  },
+  "l1-v4": {
+    "romaji": "sensei",
+    "attributes": [],
+    "explanation": "称呼老师、医生、律师等专业人士的敬称，可直接加在姓氏后（如田中先生）。不用于称呼自己。",
+    "example": {
+      "jp": "田中先生は銀行員です。",
+      "kana": "たなかせんせいはぎんこういんです。",
+      "romaji": "tanaka sensei wa ginkouin desu.",
+      "zh": "田中老师是银行职员。"
+    }
+  },
+  "l1-kyoushi": {
+    "romaji": "kyoushi",
+    "attributes": [],
+    "explanation": "教师这一职业的名称，用于介绍自己的职业或客观叙述，不直接用来称呼老师。",
+    "example": {
+      "jp": "私は教師です。",
+      "kana": "わたしはきょうしです。",
+      "romaji": "watashi wa kyoushi desu.",
+      "zh": "我是教师。"
+    }
+  },
+  "l1-v2": {
+    "romaji": "gakusei",
+    "attributes": [],
+    "explanation": "指在学校学习的人，通常指大学生或中学生，也可泛指学生。介绍职业时常用。",
+    "example": {
+      "jp": "あの人は学生です。",
+      "kana": "あのひとはがくせいです。",
+      "romaji": "ano hito wa gakusei desu.",
+      "zh": "那个人是学生。"
+    }
+  },
+  "l1-v3": {
+    "romaji": "kaishain",
+    "attributes": [],
+    "explanation": "公司职员的统称，介绍职业时使用，不特指某一家公司。",
+    "example": {
+      "jp": "父は会社員です。",
+      "kana": "ちちはかいしゃいんです。",
+      "romaji": "chichi wa kaishain desu.",
+      "zh": "父亲是公司职员。"
+    }
+  },
+  "l1-shain": {
+    "romaji": "shain",
+    "attributes": [],
+    "explanation": "指特定公司的员工，常与公司名称连用，如“ABC会社の社員”。单独使用较少。",
+    "example": {
+      "jp": "私はABC会社の社員です。",
+      "kana": "わたしはえーびーしーかいしゃのしゃいんです。",
+      "romaji": "watashi wa e-bi-shi- kaisha no shain desu.",
+      "zh": "我是ABC公司的员工。"
+    }
+  },
+  "l1-ginkouin": {
+    "romaji": "ginkouin",
+    "attributes": [],
+    "explanation": "银行职员的职业名称，介绍职业时使用。",
+    "example": {
+      "jp": "姉は銀行員です。",
+      "kana": "あねはぎんこういんです。",
+      "romaji": "ane wa ginkouin desu.",
+      "zh": "姐姐是银行职员。"
+    }
+  },
+  "l1-v8": {
+    "romaji": "isha",
+    "attributes": [],
+    "explanation": "医生的职业名称，也可用于称呼医生（较直接）。介绍职业时常用。",
+    "example": {
+      "jp": "あの人は医者です。",
+      "kana": "あのひとはいしゃです。",
+      "romaji": "ano hito wa isha desu.",
+      "zh": "那个人是医生。"
+    }
+  },
+  "l1-kenkyuusha": {
+    "romaji": "kenkyuusha",
+    "attributes": [],
+    "explanation": "从事研究工作的人，职业名称，可用于介绍职业。",
+    "example": {
+      "jp": "兄は研究者です。",
+      "kana": "あにはけんきゅうしゃです。",
+      "romaji": "ani wa kenkyuusha desu.",
+      "zh": "哥哥是研究人员。"
+    }
+  },
+  "l1-v7": {
+    "romaji": "daigaku",
+    "attributes": [],
+    "explanation": "指高等教育机构，可泛指大学或某所大学。常与「に通う」「を卒業する」等搭配，正式场合也常用。",
+    "example": {
+      "jp": "兄は大学に通っています。",
+      "kana": "あにはだいがくにかよっています。",
+      "romaji": "ani wa daigaku ni kayotte imasu.",
+      "zh": "哥哥在上大学。"
+    }
+  },
+  "l1-byouin": {
+    "romaji": "byouin",
+    "attributes": [],
+    "explanation": "指医院，一般比「クリニック」规模大。常说「病院に行く」「病院で働く」，注意发音为「びょういん」。",
+    "example": {
+      "jp": "母は病院で働いています。",
+      "kana": "はははびょういんでうごいています。",
+      "romaji": "haha wa byouin de hataraite imasu.",
+      "zh": "妈妈在医院工作。"
+    }
+  },
+  "l1-v10": {
+    "romaji": "dare",
+    "attributes": [],
+    "explanation": "用于询问身份不明的人，相当于中文“谁”。语气普通，礼貌场合可用「どなた」。",
+    "example": {
+      "jp": "あの人はだれですか。",
+      "kana": "あのひとはだれですか。",
+      "romaji": "ano hito wa dare desu ka.",
+      "zh": "那个人是谁？"
+    }
+  },
+  "l1-donata": {
+    "romaji": "donata",
+    "attributes": [],
+    "explanation": "「だれ」的礼貌说法，用于尊长或正式场合询问对方身份。常与「ですか」连用。",
+    "example": {
+      "jp": "あちらの方はどなたですか。",
+      "kana": "あちらのかたはどなたですか。",
+      "romaji": "achira no kata wa donata desu ka.",
+      "zh": "那位是哪位？"
+    }
+  },
+  "l1-san": {
+    "romaji": "~san",
+    "attributes": [],
+    "explanation": "接在姓名或称呼后表示礼貌敬称，相当于“先生/女士”。不能用于自己，也不宜直接接在「先生」等职业称谓后。",
+    "example": {
+      "jp": "田中さんは先生です。",
+      "kana": "たなかさんはせんせいです。",
+      "romaji": "tanaka san wa sensei desu.",
+      "zh": "田中先生是老师。"
+    }
+  },
+  "l1-chan": {
+    "romaji": "~chan",
+    "attributes": [],
+    "explanation": "亲昵称呼，多用于小孩、家人或关系亲密者，也可用于宠物。正式场合不宜对上级使用。",
+    "example": {
+      "jp": "妹の花ちゃんは五歳です。",
+      "kana": "いもうとのはなちゃんはごさいです。",
+      "romaji": "imouto no hana chan wa go sai desu.",
+      "zh": "妹妹小花五岁。"
+    }
+  },
+  "l1-jin": {
+    "romaji": "~jin",
+    "attributes": [],
+    "explanation": "接在国名后表示该国国籍的人，如「中国人」「日本人」。不能直接接在「日本」后表示语言。",
+    "example": {
+      "jp": "私は中国人です。",
+      "kana": "わたしはちゅうごくじんです。",
+      "romaji": "watashi wa chuugokujin desu.",
+      "zh": "我是中国人。"
+    }
+  },
+  "l1-sai": {
+    "romaji": "~sai",
+    "attributes": [],
+    "explanation": "接在数字后表示年龄，如「二十歳」。问年龄时常用「何歳ですか」，礼貌说法为「おいくつですか」。",
+    "example": {
+      "jp": "弟は十歳です。",
+      "kana": "おとうとはじゅっさいです。",
+      "romaji": "otouto wa jussai desu.",
+      "zh": "弟弟十岁。"
+    }
+  },
+  "l1-v9": {
+    "romaji": "nansai",
+    "attributes": [],
+    "explanation": "询问年龄的常用说法，相当于“几岁”。礼貌场合可用「おいくつですか」。",
+    "example": {
+      "jp": "お子さんは何歳ですか。",
+      "kana": "おこさんはなんさいですか。",
+      "romaji": "okosan wa nansai desu ka.",
+      "zh": "您孩子几岁了？"
+    }
+  },
+  "l1-oikutsu": {
+    "romaji": "oikutsu",
+    "attributes": [],
+    "explanation": "「何歳」的礼貌说法，用于询问尊长或不太熟悉的人的年龄。常以「おいくつですか」的形式出现。",
+    "example": {
+      "jp": "失礼ですが、おいくつですか。",
+      "kana": "しつれいですが、おいくつですか。",
+      "romaji": "shitsurei desu ga, oikutsu desu ka.",
+      "zh": "冒昧问一下，您多大年纪？"
+    }
+  },
+  "l1-hai": {
+    "romaji": "hai",
+    "attributes": [],
+    "explanation": "表示肯定应答，相当于“是”“好的”。也可用于回应呼唤，注意与中文“嗨”不同。",
+    "example": {
+      "jp": "はい、わかりました。",
+      "kana": "はい、わかりました。",
+      "romaji": "hai, wakarimashita.",
+      "zh": "好的，我明白了。"
+    }
+  },
+  "l1-iie": {
+    "romaji": "iie",
+    "attributes": [],
+    "explanation": "表示否定应答，相当于“不”“不是”。礼貌地否定或纠正对方时常用。",
+    "example": {
+      "jp": "いいえ、学生ではありません。",
+      "kana": "いいえ、がくせいではありません。",
+      "romaji": "iie, gakusei de wa arimasen.",
+      "zh": "不，我不是学生。"
+    }
+  },
+  "l1-shitsureidesuga": {
+    "romaji": "shitsurei desu ga",
+    "attributes": [],
+    "explanation": "用于礼貌地开启一个可能涉及私人信息或打扰对方的问题，相当于“不好意思，请问……”。后接询问姓名、年龄、来历等。",
+    "example": {
+      "jp": "失礼ですが、お名前は何ですか。",
+      "kana": "しつれいですが、おなまえはなんですか。",
+      "romaji": "shitsurei desu ga, o namae wa nan desu ka.",
+      "zh": "不好意思，请问您叫什么名字？"
+    }
+  },
+  "l1-onamaewa": {
+    "romaji": "o namae wa",
+    "attributes": [],
+    "explanation": "省略疑问词的询问姓名方式，句尾上升语调即可成问句。比「名前は？」更礼貌，常用于初次见面。",
+    "example": {
+      "jp": "お名前は？",
+      "kana": "おなまえは？",
+      "romaji": "o namae wa?",
+      "zh": "您贵姓？"
+    }
+  },
+  "l1-hajimemashite": {
+    "romaji": "hajimemashite",
+    "attributes": [],
+    "explanation": "初次见面时的固定寒暄语，通常先说「初めまして」，再报姓名，最后说「よろしくお願いします」。不用于第二次以后见面。",
+    "example": {
+      "jp": "初めまして、田中です。",
+      "kana": "はじめまして、たなかです。",
+      "romaji": "hajimemashite, tanaka desu.",
+      "zh": "初次见面，我是田中。"
+    }
+  },
+  "l1-yoroshiku": {
+    "romaji": "douzo yoroshiku onegai shimasu",
+    "attributes": [],
+    "explanation": "自我介绍或介绍他人后的收尾寒暄，表示希望今后友好相处、请对方多关照。更随意时可说「よろしく」或「どうぞよろしく」。",
+    "example": {
+      "jp": "どうぞよろしくお願いします。",
+      "kana": "どうぞよろしくおねがいします。",
+      "romaji": "douzo yoroshiku onegai shimasu.",
+      "zh": "请多关照。"
+    }
+  },
+  "l1-kochirawasan": {
+    "romaji": "kochira wa ~ san desu",
+    "attributes": [],
+    "explanation": "用于向他人介绍某人，「こちらは」指“这位是”，后接姓名加「さん」。正式场合也可用「こちらは～様です」。",
+    "example": {
+      "jp": "こちらは王さんです。",
+      "kana": "こちらはわんさんです。",
+      "romaji": "kochira wa wan san desu.",
+      "zh": "这位是小王。"
+    }
+  },
+  "l1-karakimashita": {
+    "romaji": "~ kara kimashita",
+    "attributes": [],
+    "explanation": "表示来自某地，前接地名或国家名。「から」表示起点，「来ました」是「来る」的过去式。询问时用「どこから来ましたか」。",
+    "example": {
+      "jp": "中国から来ました。",
+      "kana": "ちゅうごくからきました。",
+      "romaji": "chuugoku kara kimashita.",
+      "zh": "我来自中国。"
+    }
+  },
+  "l1-nihon": {
+    "romaji": "nihon",
+    "attributes": [],
+    "explanation": "国名“日本”。说来自日本时用「日本から来ました」。注意「日本」可读「にほん」或「にっぽん」，日常多用「にほん」。",
+    "example": {
+      "jp": "日本から来ました。",
+      "kana": "にほんからきました。",
+      "romaji": "nihon kara kimashita.",
+      "zh": "我来自日本。"
+    }
+  },
+  "l1-amerika": {
+    "romaji": "amerika",
+    "attributes": [],
+    "explanation": "国名“美国”，片假名书写。说来自美国时用「アメリカから来ました」。注意不是「アメリカ合衆国」的省略，日常直接用「アメリカ」。",
+    "example": {
+      "jp": "アメリカから来ました。",
+      "kana": "あめりかからきました。",
+      "romaji": "amerika kara kimashita.",
+      "zh": "我来自美国。"
+    }
+  },
+  "l1-igirisu": {
+    "romaji": "igirisu",
+    "attributes": [],
+    "explanation": "国名“英国”，片假名书写。说来自英国时用「イギリスから来ました」。注意不是「イングランド」（英格兰）。",
+    "example": {
+      "jp": "イギリスから来ました。",
+      "kana": "いぎりすからきました。",
+      "romaji": "igirisu kara kimashita.",
+      "zh": "我来自英国。"
+    }
+  },
+  "l1-indo": {
+    "romaji": "indo",
+    "attributes": [],
+    "explanation": "国名“印度”，片假名书写。说来自印度时用「インドから来ました」。注意与「インドネシア」区分。",
+    "example": {
+      "jp": "インドから来ました。",
+      "kana": "いんどからきました。",
+      "romaji": "indo kara kimashita.",
+      "zh": "我来自印度。"
+    }
+  },
+  "l1-indoneshia": {
+    "romaji": "indoneshia",
+    "attributes": [],
+    "explanation": "国名“印度尼西亚”，片假名书写。说来自印尼时用「インドネシアから来ました」。注意与「インド」区分。",
+    "example": {
+      "jp": "インドネシアから来ました。",
+      "kana": "いんどねしあからきました。",
+      "romaji": "indoneshia kara kimashita.",
+      "zh": "我来自印度尼西亚。"
+    }
+  },
+  "l1-kankoku": {
+    "romaji": "kankoku",
+    "attributes": [],
+    "explanation": "国名“韩国”，汉字书写。说来自韩国时用「韓国から来ました」。注意读作「かんこく」，不是「かんごく」。",
+    "example": {
+      "jp": "韓国から来ました。",
+      "kana": "かんこくからきました。",
+      "romaji": "kankoku kara kimashita.",
+      "zh": "我来自韩国。"
+    }
+  },
+  "l1-tai": {
+    "romaji": "tai",
+    "attributes": [],
+    "explanation": "国名「タイ」是泰国的意思，作为名词直接使用，可接「の」修饰名词，如「タイの首都」。注意与形容词「たい」区分。",
+    "example": {
+      "jp": "タイは東南アジアにあります。",
+      "kana": "たいはとうなんあじあにあります。",
+      "romaji": "tai wa tounan ajia ni arimasu.",
+      "zh": "泰国位于东南亚。"
+    }
+  },
+  "l1-chuugoku": {
+    "romaji": "chuugoku",
+    "attributes": [],
+    "explanation": "「中国」读作「ちゅうごく」，指中国。作为专有名词，可单独使用或加「の」连接名词，如「中国の文化」。",
+    "example": {
+      "jp": "中国は歴史が長い国です。",
+      "kana": "ちゅうごくはれきしがながいくにです。",
+      "romaji": "chuugoku wa rekishi ga nagai kuni desu.",
+      "zh": "中国是一个历史悠久的国家。"
+    }
+  },
+  "l1-doitsu": {
+    "romaji": "doitsu",
+    "attributes": [],
+    "explanation": "「ドイツ」是德国的意思，为外来语国名。可直接作主语或加「の」修饰，如「ドイツの車」。",
+    "example": {
+      "jp": "ドイツのビールは有名です。",
+      "kana": "どいつのびーるはゆうめいです。",
+      "romaji": "doitsu no biiru wa yuumei desu.",
+      "zh": "德国啤酒很有名。"
+    }
+  },
+  "l1-burajiru": {
+    "romaji": "burajiru",
+    "attributes": [],
+    "explanation": "「ブラジル」是巴西，外来语国名。常用「ブラジル人」表示巴西人，注意发音为「ぶらじる」。",
+    "example": {
+      "jp": "ブラジルはサッカーが盛んです。",
+      "kana": "ぶらじるはさっかーがさかんです。",
+      "romaji": "burajiru wa sakkaa ga sakan desu.",
+      "zh": "巴西足球很盛行。"
+    }
+  },
+  "l1-imc": {
+    "romaji": "a i emu shii",
+    "attributes": [],
+    "explanation": "IMC是教材中的公司名，为专有名词。读作「あいえむしー」，通常直接使用，不加「の」也可作主语。",
+    "example": {
+      "jp": "IMCは東京にあります。",
+      "kana": "あいえむしーはとうきょうにあります。",
+      "romaji": "a i emu shii wa toukyou ni arimasu.",
+      "zh": "IMC公司在东京。"
+    }
+  },
+  "l1-powerdenki": {
+    "romaji": "pawaa denki",
+    "attributes": [],
+    "explanation": "「パワー電気」是教材中的公司名，读作「ぱわーでんき」。作为专有名词，可接「の」表示所属，如「パワー電気の社員」。",
+    "example": {
+      "jp": "パワー電気は新製品を発表しました。",
+      "kana": "ぱわーでんきはしんせいひんをはっぴょうしました。",
+      "romaji": "pawaa denki wa shinseihin o happyou shimashita.",
+      "zh": "Power电气公司发布了新产品。"
+    }
+  },
+  "l1-burajirueaa": {
+    "romaji": "burajiru eaa",
+    "attributes": [],
+    "explanation": "「ブラジルエアー」是教材中的航空公司名，读作「ぶらじるえあー」。专有名词，可单独使用或加「の」修饰。",
+    "example": {
+      "jp": "ブラジルエアーの飛行機に乗ります。",
+      "kana": "ぶらじるえあーのひこうきにのります。",
+      "romaji": "burajiru eaa no hikouki ni norimasu.",
+      "zh": "乘坐巴西航空的飞机。"
+    }
+  },
+  "l1-akc": {
+    "romaji": "e e kee shii",
+    "attributes": [],
+    "explanation": "AKC是教材中的公司名，读作「えーけーしー」。专有名词，通常直接使用，可作主语或加「の」。",
+    "example": {
+      "jp": "AKCの本社は大阪です。",
+      "kana": "えーけーしーのはんしょはおおさかです。",
+      "romaji": "e e kee shii no honsho wa oosaka desu.",
+      "zh": "AKC的总部在大阪。"
+    }
+  },
+  "l1-sakuradiagaku": {
+    "romaji": "sakura daigaku",
+    "attributes": [],
+    "explanation": "「さくら大学」是教材中的大学名，读作「さくらだいがく」。专有名词，可接「の」表示所属，如「さくら大学の学生」。",
+    "example": {
+      "jp": "さくら大学で日本語を勉強しています。",
+      "kana": "さくらだいがくでにほんごをべんきょうしています。",
+      "romaji": "sakura daigaku de nihongo o benkyou shite imasu.",
+      "zh": "在樱花大学学习日语。"
+    }
+  },
+  "l1-fujidaigaku": {
+    "romaji": "fuji daigaku",
+    "attributes": [],
+    "explanation": "「富士大学」是教材中的大学名，读作「ふじだいがく」。专有名词，可单独使用或加「の」连接名词。",
+    "example": {
+      "jp": "富士大学は静岡にあります。",
+      "kana": "ふじだいがくはしずおかにあります。",
+      "romaji": "fuji daigaku wa shizuoka ni arimasu.",
+      "zh": "富士大学在静冈。"
+    }
+  },
+  "l1-koubebyouin": {
+    "romaji": "koube byouin",
+    "attributes": [],
+    "explanation": "「神戸病院」是教材中的医院名，读作「こうべびょういん」。专有名词，可接「の」表示所属，如「神戸病院の医者」。",
+    "example": {
+      "jp": "神戸病院は駅の近くにあります。",
+      "kana": "こうべびょういんはえきのちかくにあります。",
+      "romaji": "koube byouin wa eki no chikaku ni arimasu.",
+      "zh": "神户医院在车站附近。"
+    }
+  },
+  "l1-miraa": {
+    "romaji": "miraa",
+    "attributes": [],
+    "explanation": "「ミラー」是教材中的人物名，读作「みらー」。专有名词，可加「さん」表示尊称，如「ミラーさん」。",
+    "example": {
+      "jp": "ミラーさんはアメリカ人です。",
+      "kana": "みらーさんはあめりかじんです。",
+      "romaji": "miraa san wa amerika jin desu.",
+      "zh": "米勒先生是美国人。"
+    }
+  },
+  "l1-yamada": {
+    "romaji": "Yamada",
+    "attributes": [],
+    "explanation": "日本常见姓氏，教材中用作人物名。读作「やまだ」，汉字写作「山田」，用于称呼或指代该人物。",
+    "example": {
+      "jp": "山田さんは学生です。",
+      "kana": "やまださんはがくせいです。",
+      "romaji": "Yamada san wa gakusei desu.",
+      "zh": "山田是学生。"
+    }
+  },
+  "l1-watto": {
+    "romaji": "Watto",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「わっと」，注意促音「っ」要短促停顿。",
+    "example": {
+      "jp": "ワットさんは先生です。",
+      "kana": "わっとさんはせんせいです。",
+      "romaji": "Watto san wa sensei desu.",
+      "zh": "瓦特是老师。"
+    }
+  },
+  "l1-tawapon": {
+    "romaji": "Tawapon",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「たわぽん」，末尾「ん」为拨音，占一拍。",
+    "example": {
+      "jp": "タワポンさんはタイ人です。",
+      "kana": "たわぽんさんはたいじんです。",
+      "romaji": "Tawapon san wa taijin desu.",
+      "zh": "达瓦蓬是泰国人。"
+    }
+  },
+  "l1-shumitto": {
+    "romaji": "Shumitto",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「しゅみっと」，注意「しゅ」为拗音，「っ」为促音。",
+    "example": {
+      "jp": "シュミットさんはドイツ人です。",
+      "kana": "しゅみっとさんはどいつじんです。",
+      "romaji": "Shumitto san wa Doitsujin desu.",
+      "zh": "施密特是德国人。"
+    }
+  },
+  "l1-guputa": {
+    "romaji": "Guputa",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「ぐぷた」，注意「ぷ」为半浊音。",
+    "example": {
+      "jp": "グプタさんはインド人です。",
+      "kana": "ぐぷたさんはいんどじんです。",
+      "romaji": "Guputa san wa Indojin desu.",
+      "zh": "古普塔是印度人。"
+    }
+  },
+  "l1-ii": {
+    "romaji": "Ī",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「いー」，长音「ー」要拉长一拍。",
+    "example": {
+      "jp": "イーさんは中国人です。",
+      "kana": "いーさんはちゅうごくじんです。",
+      "romaji": "Ī san wa Chūgokujin desu.",
+      "zh": "李是中国人。"
+    }
+  },
+  "l1-wan": {
+    "romaji": "Wan",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「わん」，注意不要与助词「は」混淆。",
+    "example": {
+      "jp": "ワンさんは会社員です。",
+      "kana": "わんさんはかいしゃいんです。",
+      "romaji": "Wan san wa kaishain desu.",
+      "zh": "王是公司职员。"
+    }
+  },
+  "l1-karina": {
+    "romaji": "Karina",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「かりな」，四个假名各占一拍，发音清晰。",
+    "example": {
+      "jp": "カリナさんは学生です。",
+      "kana": "かりなさんはがくせいです。",
+      "romaji": "Karina san wa gakusei desu.",
+      "zh": "卡丽娜是学生。"
+    }
+  },
+  "l1-santosu": {
+    "romaji": "Santosu",
+    "attributes": [],
+    "explanation": "教材中的人物名，用片假名书写。读作「さんとす」，注意「と」和「す」之间不要加促音。",
+    "example": {
+      "jp": "サントスさんはブラジル人です。",
+      "kana": "さんとすさんはぶらじるじんです。",
+      "romaji": "Santosu san wa Burajirujin desu.",
+      "zh": "桑托斯是巴西人。"
+    }
+  }
+}

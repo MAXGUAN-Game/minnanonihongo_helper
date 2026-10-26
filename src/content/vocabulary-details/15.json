@@ -1,0 +1,310 @@
+{
+  "l15-w2883": {
+    "romaji": "denshi jisho",
+    "attributes": [],
+    "explanation": "指电子词典，常用于学习、工作场景。与纸质词典「辞書」相对，口语中常说「電子辞書を持っている」。",
+    "example": {
+      "jp": "電子辞書で言葉を調べます。",
+      "kana": "でんしじしょでことばをしらべます。",
+      "romaji": "denshi jisho de kotoba o shirabemasu.",
+      "zh": "用电子词典查单词。"
+    }
+  },
+  "l15-w41": {
+    "romaji": "minasan",
+    "attributes": [],
+    "explanation": "用于称呼在场的多数人，相当于“各位、大家”。比「みんな」更礼貌，常用于演讲、授课或正式场合的开头。",
+    "example": {
+      "jp": "皆さん、おはようございます。",
+      "kana": "みなさん、おはようございます。",
+      "romaji": "minasan, ohayō gozaimasu.",
+      "zh": "各位，早上好。"
+    }
+  },
+  "l15-w663": {
+    "romaji": "shiyakusho",
+    "attributes": [],
+    "explanation": "指市一级的行政机关，办理户籍、住民票等手续的地方。与「区役所」类似，但用于“市”而非“区”。",
+    "example": {
+      "jp": "市役所で住所を変更します。",
+      "kana": "しやくしょでじゅうしょをへんこうします。",
+      "romaji": "shiyakusho de jūsho o henkō shimasu.",
+      "zh": "在市政府更改地址。"
+    }
+  },
+  "l15-w666": {
+    "romaji": "keizai",
+    "attributes": [],
+    "explanation": "指社会经济活动或经济状况，常与「成長」「発展」等词搭配。也可用于「経済学部」等复合词中。",
+    "example": {
+      "jp": "日本の経済について勉強しています。",
+      "kana": "にほんのけいざいについてべんきょうしています。",
+      "romaji": "nihon no keizai ni tsuite benkyō shite imasu.",
+      "zh": "我正在学习日本的经济。"
+    }
+  },
+  "l15-w730": {
+    "romaji": "okimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示把某物放到某处，强调动作。与自动词「置く」不同，需带宾语，如「本を机に置く」。",
+    "example": {
+      "jp": "かばんを椅子の上に置きます。",
+      "kana": "かばんをいすのうえにおきます。",
+      "romaji": "kaban o isu no ue ni okimasu.",
+      "zh": "把包放在椅子上。"
+    }
+  },
+  "l15-v7": {
+    "romaji": "tsukurimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示制作、创造某物，宾语多为食物、物品、作品等。也可用于「家族を作る」等抽象表达。",
+    "example": {
+      "jp": "母は毎日ご飯を作ります。",
+      "kana": "はははまいにちごはんをつくります。",
+      "romaji": "haha wa mainichi gohan o tsukurimasu.",
+      "zh": "妈妈每天做饭。"
+    }
+  },
+  "l15-v6": {
+    "romaji": "urimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示出售商品，宾语为所卖之物。常与场所「で」、价格「で」搭配，如「店で野菜を売る」。",
+    "example": {
+      "jp": "あの店で果物を売っています。",
+      "kana": "あのみせでくだものをうっています。",
+      "romaji": "ano mise de kudamono o utte imasu.",
+      "zh": "那家店在卖水果。"
+    }
+  },
+  "l15-v5": {
+    "romaji": "shirimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示获得知识、得知某事，通常用「知る」的ます形。否定「知りません」表示“不知道”，肯定状态常用「知っています」。",
+    "example": {
+      "jp": "ニュースで事件を知りました。",
+      "kana": "にゅーすでじけんをしりました。",
+      "romaji": "nyūsu de jiken o shirimashita.",
+      "zh": "通过新闻得知了那个事件。"
+    }
+  },
+  "l15-v4": {
+    "romaji": "sumimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示居住在某地，常用「～に住む」。与「住んでいる」搭配表示持续居住的状态。",
+    "example": {
+      "jp": "私は東京に住みます。",
+      "kana": "わたしはとうきょうにすみます。",
+      "romaji": "watashi wa tōkyō ni sumimasu.",
+      "zh": "我住在东京。"
+    }
+  },
+  "l15-w735": {
+    "romaji": "kenkyū shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示对某一课题进行学术性研究，宾语用「を」。也可单独使用，如「大学で研究しています」。",
+    "example": {
+      "jp": "大学で日本の歴史を研究します。",
+      "kana": "だいがくでにほんのれきしをけんきゅうします。",
+      "romaji": "daigaku de nihon no rekishi o kenkyū shimasu.",
+      "zh": "在大学研究日本历史。"
+    }
+  },
+  "l15-w736": {
+    "romaji": "shitte imasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示“知道”的状态，是「知る」的持续态。问“你知道吗”用「知っていますか」，肯定回答也用「知っています」。",
+    "example": {
+      "jp": "彼の名前を知っていますか。",
+      "kana": "かれのなまえをしっていますか。",
+      "romaji": "kare no namae o shitte imasu ka.",
+      "zh": "你知道他的名字吗？"
+    }
+  },
+  "l15-w737": {
+    "romaji": "sunde imasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示居住的持续状态，相当于“住着”。常与场所「に」搭配，如「大阪に住んでいます」。",
+    "example": {
+      "jp": "姉は京都に住んでいます。",
+      "kana": "あねはきょうとにすんでいます。",
+      "romaji": "ane wa kyōto ni sunde imasu.",
+      "zh": "姐姐住在京都。"
+    }
+  },
+  "l15-v9": {
+    "romaji": "shiryou",
+    "attributes": [],
+    "explanation": "指用于参考、研究或说明的材料，常与「集める」「配る」「調べる」等动词搭配。比「資料」更正式，多用于工作、学习场合。",
+    "example": {
+      "jp": "会議の資料をコピーしてください。",
+      "kana": "かいぎのしりょうをこぴーしてください。",
+      "romaji": "kaigi no shiryou o kopii shite kudasai.",
+      "zh": "请复印会议资料。"
+    }
+  },
+  "l15-w739": {
+    "romaji": "katarogu",
+    "attributes": [],
+    "explanation": "外来语，指商品目录或产品图册，常用于邮购、展览等场合。可搭配「見る」「取り寄せる」「載っている」等。",
+    "example": {
+      "jp": "このカタログから商品を選びます。",
+      "kana": "このかたろぐからしょうひんをえらびます。",
+      "romaji": "kono katarogu kara shouhin o erabimasu.",
+      "zh": "从这份产品目录中挑选商品。"
+    }
+  },
+  "l15-w740": {
+    "romaji": "jikokuhyou",
+    "attributes": [],
+    "explanation": "指交通工具（火车、巴士等）的时刻表，也可用于一般日程表。常与「見る」「調べる」搭配。",
+    "example": {
+      "jp": "駅で時刻表を確認します。",
+      "kana": "えきでじこくひょうをかくにんします。",
+      "romaji": "eki de jikokuhyou o kakunin shimasu.",
+      "zh": "在车站确认时刻表。"
+    }
+  },
+  "l15-w741": {
+    "romaji": "fuku",
+    "attributes": [],
+    "explanation": "泛指衣服、服装，可搭配「着る」「洗う」「買う」等。比「衣類」更口语化，日常使用广泛。",
+    "example": {
+      "jp": "新しい服を買いました。",
+      "kana": "あたらしいふくをかいました。",
+      "romaji": "atarashii fuku o kaimashita.",
+      "zh": "买了新衣服。"
+    }
+  },
+  "l15-w742": {
+    "romaji": "seihin",
+    "attributes": [],
+    "explanation": "指生产出来的产品、制品，多用于工业或商业语境。常与「開発する」「検査する」等搭配，比「商品」更强调制造结果。",
+    "example": {
+      "jp": "この工場は自動車の製品を作っています。",
+      "kana": "このこうじょうはじどうしゃのせいひんをつくっています。",
+      "romaji": "kono koujou wa jidousha no seihin o tsukutte imasu.",
+      "zh": "这家工厂生产汽车产品。"
+    }
+  },
+  "l15-w743": {
+    "romaji": "sofuto",
+    "attributes": [],
+    "explanation": "「ソフトウェア」的略语，指计算机软件。也可指软性、柔软，但本课为软件义。常与「インストールする」「使う」搭配。",
+    "example": {
+      "jp": "このソフトは使いやすいです。",
+      "kana": "このそふとはつかいやすいです。",
+      "romaji": "kono sofuto wa tsukaiyasui desu.",
+      "zh": "这个软件很好用。"
+    }
+  },
+  "l15-w745": {
+    "romaji": "haisha",
+    "attributes": [],
+    "explanation": "指牙科医生或牙科诊所，需根据上下文判断。常与「行く」「予約する」搭配。",
+    "example": {
+      "jp": "歯医者に行って歯を治します。",
+      "kana": "はいしゃにいってはをなおします。",
+      "romaji": "haisha ni itte ha o naoshimasu.",
+      "zh": "去牙医那里治牙。"
+    }
+  },
+  "l15-w748": {
+    "romaji": "dokushin",
+    "attributes": [],
+    "explanation": "指未婚、单身状态，常用于描述人的婚姻状况。可搭配「独身でいる」「独身を通す」等。",
+    "example": {
+      "jp": "彼はまだ独身です。",
+      "kana": "かれはまだどくしんです。",
+      "romaji": "kare wa mada dokushin desu.",
+      "zh": "他还是单身。"
+    }
+  },
+  "l15-w750": {
+    "romaji": "omoidashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示回想起过去的事情或记忆，常与「～を」搭配。是「思い出す」的礼貌体，用于口语和书面语。",
+    "example": {
+      "jp": "昔のことを思い出します。",
+      "kana": "むかしのことをおもいだします。",
+      "romaji": "mukashi no koto o omoidashimasu.",
+      "zh": "想起过去的事情。"
+    }
+  },
+  "l15-w752": {
+    "romaji": "irasshaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「いる」「行く」「来る」的尊敬语，本课表示“在”的意思。用于尊长或客人，需根据上下文判断具体含义。",
+    "example": {
+      "jp": "先生は教室にいらっしゃいます。",
+      "kana": "せんせいはきょうしつにいらっしゃいます。",
+      "romaji": "sensei wa kyoushitsu ni irasshaimasu.",
+      "zh": "老师在教室里。"
+    }
+  },
+  "l15-w753": {
+    "romaji": "koukou",
+    "attributes": [],
+    "explanation": "「高等学校」的略称，指高中。常与「通う」「卒業する」「入る」等搭配。",
+    "example": {
+      "jp": "兄は高校に通っています。",
+      "kana": "あねはこうこうにかよっています。",
+      "romaji": "ane wa koukou ni kayotte imasu.",
+      "zh": "姐姐在上高中。"
+    }
+  },
+  "l15-build": {
+    "romaji": "tsukurimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示制造、建造规模较大的物品（如建筑物、道路、城市等），也可用于制作抽象事物。与「作る」相比更强调工程性。",
+    "example": {
+      "jp": "この会社は新しいビルを造ります。",
+      "kana": "このかいしゃはあたらしいびるをつくります。",
+      "romaji": "kono kaisha wa atarashii biru o tsukurimasu.",
+      "zh": "这家公司要建造新大楼。"
+    }
+  },
+  "l15-nihonbashi": {
+    "romaji": "Nihonbashi",
+    "attributes": [],
+    "explanation": "东京都中央区的地名，也是桥名，是日本桥川上的著名桥梁；作为专有名词通常直接使用，不加助词也可作话题。",
+    "example": {
+      "jp": "日本橋は東京の有名な場所です。",
+      "kana": "にほんばしはとうきょうのゆうめいなばしょです。",
+      "romaji": "Nihonbashi wa Tōkyō no yūmei na basho desu.",
+      "zh": "日本桥是东京有名的地方。"
+    }
+  },
+  "l15-interview": {
+    "romaji": "minna no intabyū",
+    "attributes": [],
+    "explanation": "教材栏目名，意为“大家的访谈”，由「みんなの」加外来语「インタビュー」构成；作为标题常整体使用，不拆开加助词。",
+    "example": {
+      "jp": "「みんなのインタビュー」を読みました。",
+      "kana": "「みんなのいんたびゅー」をよみました。",
+      "romaji": "\"minna no intabyū\" o yomimashita.",
+      "zh": "我读了《大家的访谈》。"
+    }
+  }
+}

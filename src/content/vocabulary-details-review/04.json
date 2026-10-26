@@ -1,0 +1,14 @@
+{
+  "lessonId": 4,
+  "model": "deepseek-flash",
+  "reviewedCount": 61,
+  "corrections": [
+    {
+      "id": "l4-v5",
+      "attributes": [
+        "他动词"
+      ],
+      "reason": "勉強する表示学习某内容，可带を宾语，属他动词，原标注正确无需修改。"
+    }
+  ]
+}

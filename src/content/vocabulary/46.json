@@ -1,0 +1,246 @@
+{
+  "lessonId": 46,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/46.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源29条，排除4条旧版或跨课条目，合并同形同义项并补入第二来源，最终33条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/46.json。"
+  ],
+  "words": [
+    {
+      "key": "w1257",
+      "word": "入学します",
+      "reading": "にゅうがくします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "入学"
+    },
+    {
+      "key": "w1258",
+      "word": "卒業します",
+      "reading": "そつぎょうします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "毕业"
+    },
+    {
+      "key": "w1550",
+      "word": "［パンが］焼けます",
+      "reading": "［ぱんが］やけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "烤好（面包）"
+    },
+    {
+      "key": "w1551",
+      "word": "［肉が］焼けます",
+      "reading": "［にくが］やけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "烤熟（肉）"
+    },
+    {
+      "key": "w1668",
+      "word": "申し訳ありません",
+      "reading": "もうしわけありません",
+      "partOfSpeech": "固定表达",
+      "meaning": "非常抱歉"
+    },
+    {
+      "key": "w1798",
+      "word": "焼きます",
+      "reading": "やきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "烤；烧"
+    },
+    {
+      "key": "w1799",
+      "word": "渡します",
+      "reading": "わたします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "递交"
+    },
+    {
+      "key": "w1800",
+      "word": "帰って来ます",
+      "reading": "かえってきます",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "回来"
+    },
+    {
+      "key": "w1801",
+      "word": "［バスが］出ます",
+      "reading": "［ばすが］でます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出发（巴士）"
+    },
+    {
+      "key": "w1802",
+      "word": "留守",
+      "reading": "るす",
+      "partOfSpeech": "名词",
+      "meaning": "不在家"
+    },
+    {
+      "key": "w1803",
+      "word": "宅配便",
+      "reading": "たくはいびん",
+      "partOfSpeech": "名词",
+      "meaning": "快递"
+    },
+    {
+      "key": "w1804",
+      "word": "原因",
+      "reading": "げんいん",
+      "partOfSpeech": "名词",
+      "meaning": "原因"
+    },
+    {
+      "key": "w1809",
+      "word": "こちら",
+      "reading": "こちら",
+      "partOfSpeech": "名词",
+      "meaning": "我这边"
+    },
+    {
+      "key": "w1810",
+      "word": "～の所",
+      "reading": "～のところ",
+      "partOfSpeech": "表达",
+      "meaning": "……那里"
+    },
+    {
+      "key": "w1811",
+      "word": "ちょうど",
+      "reading": "ちょうど",
+      "partOfSpeech": "副词",
+      "meaning": "正好"
+    },
+    {
+      "key": "w1812",
+      "word": "たった今",
+      "reading": "たったいま",
+      "partOfSpeech": "表达",
+      "meaning": "刚刚"
+    },
+    {
+      "key": "w1813",
+      "word": "今いいですか",
+      "reading": "いまいいですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "现在方便吗"
+    },
+    {
+      "key": "w1814",
+      "word": "ガスサービスセンター",
+      "reading": "がすさーびすせんたー",
+      "partOfSpeech": "名词",
+      "meaning": "燃气服务中心"
+    },
+    {
+      "key": "w1815",
+      "word": "ガスレンジ",
+      "reading": "がすれんじ",
+      "partOfSpeech": "名词",
+      "meaning": "燃气灶"
+    },
+    {
+      "key": "w1816",
+      "word": "具合",
+      "reading": "ぐあい",
+      "partOfSpeech": "名词",
+      "meaning": "状况"
+    },
+    {
+      "key": "w1817",
+      "word": "どちらさまでしょうか",
+      "reading": "どちらさまでしょうか",
+      "partOfSpeech": "固定表达",
+      "meaning": "请问您是哪位"
+    },
+    {
+      "key": "w1818",
+      "word": "向かいます",
+      "reading": "むかいます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "前往"
+    },
+    {
+      "key": "w1819",
+      "word": "お待たせしました",
+      "reading": "おまたせしました",
+      "partOfSpeech": "固定表达",
+      "meaning": "让您久等了"
+    },
+    {
+      "key": "w1915",
+      "word": "半年",
+      "reading": "はんとし",
+      "partOfSpeech": "名词",
+      "meaning": "半年"
+    },
+    {
+      "key": "w3395",
+      "word": "届きます",
+      "reading": "とどきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "送达"
+    },
+    {
+      "key": "lucky",
+      "word": "ついています",
+      "reading": "ついています",
+      "partOfSpeech": "动词表达",
+      "meaning": "走运"
+    },
+    {
+      "key": "floor",
+      "word": "床",
+      "reading": "ゆか",
+      "partOfSpeech": "名词",
+      "meaning": "地板"
+    },
+    {
+      "key": "fall",
+      "word": "転びます",
+      "reading": "ころびます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "跌倒"
+    },
+    {
+      "key": "bell",
+      "word": "ベル",
+      "reading": "べる",
+      "partOfSpeech": "名词",
+      "meaning": "铃"
+    },
+    {
+      "key": "ring",
+      "word": "鳴ります",
+      "reading": "なります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "响起"
+    },
+    {
+      "key": "hastily",
+      "word": "慌てて",
+      "reading": "あわてて",
+      "partOfSpeech": "副词",
+      "meaning": "慌忙地"
+    },
+    {
+      "key": "in-order",
+      "word": "順番に",
+      "reading": "じゅんばんに",
+      "partOfSpeech": "副词",
+      "meaning": "依次"
+    },
+    {
+      "key": "event",
+      "word": "出来事",
+      "reading": "できごと",
+      "partOfSpeech": "名词",
+      "meaning": "发生的事情"
+    }
+  ]
+}

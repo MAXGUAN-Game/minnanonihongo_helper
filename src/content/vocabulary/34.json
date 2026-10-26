@@ -1,0 +1,373 @@
+{
+  "lessonId": 34,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/34.html",
+    "https://nihongopic.com/nihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源35条，排除1条旧版或跨课条目，合并同形同义项并补入第二来源，最终51条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/34.json。",
+    "主来源将組み立てます标成不规则动词，已按一段动词校正。"
+  ],
+  "words": [
+    {
+      "key": "w1273",
+      "word": "お客さん",
+      "reading": "おきゃくさん",
+      "partOfSpeech": "名词",
+      "meaning": "客人"
+    },
+    {
+      "key": "w1366",
+      "word": "［歯を］磨きます",
+      "reading": "［はを］みがきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "刷（牙）"
+    },
+    {
+      "key": "w1367",
+      "word": "［靴を］磨きます",
+      "reading": "［くつを］みがきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "擦亮（鞋）"
+    },
+    {
+      "key": "w1368",
+      "word": "組み立てます",
+      "reading": "くみたてます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "组装"
+    },
+    {
+      "key": "w1369",
+      "word": "折ります",
+      "reading": "おります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "折叠"
+    },
+    {
+      "key": "w1370",
+      "word": "気がつきます",
+      "reading": "きがつきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "注意到"
+    },
+    {
+      "key": "w1371",
+      "word": "［醤油を］つけます",
+      "reading": "［しょうゆを］つけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "蘸（酱油）"
+    },
+    {
+      "key": "w1372",
+      "word": "［鍵が］見つかります",
+      "reading": "［かぎが］みつかります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "找到（钥匙）"
+    },
+    {
+      "key": "w1374",
+      "word": "質問します",
+      "reading": "しつもんします",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "提问"
+    },
+    {
+      "key": "w1378",
+      "word": "スポーツクラブ",
+      "reading": "すぽーつくらぶ",
+      "partOfSpeech": "名词",
+      "meaning": "健身俱乐部"
+    },
+    {
+      "key": "w1382",
+      "word": "説明書",
+      "reading": "せつめいしょ",
+      "partOfSpeech": "名词",
+      "meaning": "说明书"
+    },
+    {
+      "key": "w1383",
+      "word": "図",
+      "reading": "ず",
+      "partOfSpeech": "名词",
+      "meaning": "图"
+    },
+    {
+      "key": "w1384",
+      "word": "線",
+      "reading": "せん",
+      "partOfSpeech": "名词",
+      "meaning": "线"
+    },
+    {
+      "key": "w1385",
+      "word": "矢印",
+      "reading": "やじるし",
+      "partOfSpeech": "名词",
+      "meaning": "箭头"
+    },
+    {
+      "key": "w1386",
+      "word": "黒",
+      "reading": "くろ",
+      "partOfSpeech": "名词",
+      "meaning": "黑色"
+    },
+    {
+      "key": "w1387",
+      "word": "白",
+      "reading": "しろ",
+      "partOfSpeech": "名词",
+      "meaning": "白色"
+    },
+    {
+      "key": "w1388",
+      "word": "赤",
+      "reading": "あか",
+      "partOfSpeech": "名词",
+      "meaning": "红色"
+    },
+    {
+      "key": "w1389",
+      "word": "青",
+      "reading": "あお",
+      "partOfSpeech": "名词",
+      "meaning": "蓝色"
+    },
+    {
+      "key": "w1390",
+      "word": "紺",
+      "reading": "こん",
+      "partOfSpeech": "名词",
+      "meaning": "藏青色"
+    },
+    {
+      "key": "w1391",
+      "word": "黄色",
+      "reading": "きいろ",
+      "partOfSpeech": "名词",
+      "meaning": "黄色"
+    },
+    {
+      "key": "w1392",
+      "word": "茶色",
+      "reading": "ちゃいろ",
+      "partOfSpeech": "名词",
+      "meaning": "茶褐色"
+    },
+    {
+      "key": "w1393",
+      "word": "醤油",
+      "reading": "しょうゆ",
+      "partOfSpeech": "名词",
+      "meaning": "酱油"
+    },
+    {
+      "key": "w1394",
+      "word": "ソース",
+      "reading": "そーす",
+      "partOfSpeech": "名词",
+      "meaning": "调味汁"
+    },
+    {
+      "key": "w1395",
+      "word": "～か～",
+      "reading": "～か～",
+      "partOfSpeech": "表达",
+      "meaning": "……或……"
+    },
+    {
+      "key": "w1396",
+      "word": "夕べ",
+      "reading": "ゆうべ",
+      "partOfSpeech": "名词",
+      "meaning": "昨晚"
+    },
+    {
+      "key": "w1397",
+      "word": "さっき",
+      "reading": "さっき",
+      "partOfSpeech": "副词",
+      "meaning": "刚才"
+    },
+    {
+      "key": "w1398",
+      "word": "茶道",
+      "reading": "さどう",
+      "partOfSpeech": "名词",
+      "meaning": "茶道"
+    },
+    {
+      "key": "w1399",
+      "word": "お茶をたてます",
+      "reading": "おちゃをたてます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "沏（抹茶）"
+    },
+    {
+      "key": "w1400",
+      "word": "先に",
+      "reading": "さきに",
+      "partOfSpeech": "副词",
+      "meaning": "先"
+    },
+    {
+      "key": "w1401",
+      "word": "載せます",
+      "reading": "のせます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "放上"
+    },
+    {
+      "key": "w1402",
+      "word": "これでいいですか",
+      "reading": "これでいいですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "这样可以吗"
+    },
+    {
+      "key": "w1403",
+      "word": "苦い",
+      "reading": "にがい",
+      "partOfSpeech": "い形容词",
+      "meaning": "苦的"
+    },
+    {
+      "key": "w1827",
+      "word": "［傘を］さします",
+      "reading": "［かさを］さします",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "打（伞）"
+    },
+    {
+      "key": "w2761",
+      "word": "城",
+      "reading": "しろ",
+      "partOfSpeech": "名词",
+      "meaning": "城堡"
+    },
+    {
+      "key": "how",
+      "word": "いかがですか",
+      "reading": "いかがですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "您觉得怎么样"
+    },
+    {
+      "key": "oyakodon",
+      "word": "親子どんぶり",
+      "reading": "おやこどんぶり",
+      "partOfSpeech": "名词",
+      "meaning": "鸡肉鸡蛋盖饭"
+    },
+    {
+      "key": "ingredients",
+      "word": "材料",
+      "reading": "ざいりょう",
+      "partOfSpeech": "名词",
+      "meaning": "材料"
+    },
+    {
+      "key": "servings",
+      "word": "～分",
+      "reading": "～ぶん",
+      "partOfSpeech": "接尾词",
+      "meaning": "……份"
+    },
+    {
+      "key": "grams",
+      "word": "グラム",
+      "reading": "ぐらむ",
+      "partOfSpeech": "量词",
+      "meaning": "克"
+    },
+    {
+      "key": "pieces",
+      "word": "個",
+      "reading": "こ",
+      "partOfSpeech": "量词",
+      "meaning": "个"
+    },
+    {
+      "key": "onion",
+      "word": "たまねぎ",
+      "reading": "たまねぎ",
+      "partOfSpeech": "名词",
+      "meaning": "洋葱"
+    },
+    {
+      "key": "quarter",
+      "word": "四分の一",
+      "reading": "よんぶんのいち",
+      "partOfSpeech": "数词",
+      "meaning": "四分之一"
+    },
+    {
+      "key": "seasoning",
+      "word": "調味料",
+      "reading": "ちょうみりょう",
+      "partOfSpeech": "名词",
+      "meaning": "调味料"
+    },
+    {
+      "key": "appropriate-size",
+      "word": "適当な大きさに",
+      "reading": "てきとうなおおきさに",
+      "partOfSpeech": "表达",
+      "meaning": "按合适的大小"
+    },
+    {
+      "key": "pot",
+      "word": "なべ",
+      "reading": "なべ",
+      "partOfSpeech": "名词",
+      "meaning": "锅"
+    },
+    {
+      "key": "fire",
+      "word": "火",
+      "reading": "ひ",
+      "partOfSpeech": "名词",
+      "meaning": "火"
+    },
+    {
+      "key": "heat",
+      "word": "火にかけます",
+      "reading": "ひにかけます",
+      "partOfSpeech": "动词表达",
+      "meaning": "放到火上加热"
+    },
+    {
+      "key": "cook",
+      "word": "煮ます",
+      "reading": "にます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "煮"
+    },
+    {
+      "key": "cooked",
+      "word": "煮えます",
+      "reading": "にえます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "煮熟"
+    },
+    {
+      "key": "bowl",
+      "word": "どんぶり",
+      "reading": "どんぶり",
+      "partOfSpeech": "名词",
+      "meaning": "大碗；盖饭"
+    },
+    {
+      "key": "time-passes",
+      "word": "たちます",
+      "reading": "たちます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "经过（时间）"
+    }
+  ]
+}

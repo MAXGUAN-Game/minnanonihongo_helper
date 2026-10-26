@@ -1,0 +1,109 @@
+{
+  "lessonId": 25,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/25.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 18,
+  "entries": [
+    {
+      "sourceId": "1022",
+      "sourceWord": "意味",
+      "key": "w1022"
+    },
+    {
+      "sourceId": "1029",
+      "sourceWord": "考えます",
+      "key": "w1029"
+    },
+    {
+      "sourceId": "1030",
+      "sourceWord": "［駅に］着きます",
+      "key": "w1030"
+    },
+    {
+      "sourceId": "1032",
+      "sourceWord": "［年を］取ります",
+      "key": "w1032"
+    },
+    {
+      "sourceId": "1033",
+      "sourceWord": "田舎",
+      "key": "w1033"
+    },
+    {
+      "sourceId": "1036",
+      "sourceWord": "チャンス",
+      "key": "w1036"
+    },
+    {
+      "sourceId": "1037",
+      "sourceWord": "億",
+      "key": "w1037"
+    },
+    {
+      "sourceId": "1038",
+      "sourceWord": "もし",
+      "key": "w1038"
+    },
+    {
+      "sourceId": "1040",
+      "sourceWord": "転勤",
+      "key": "w1040"
+    },
+    {
+      "sourceId": "1041",
+      "sourceWord": "こと",
+      "key": "w1041"
+    },
+    {
+      "sourceId": "1043",
+      "sourceWord": "色々お世話になりました。",
+      "key": "w1043"
+    },
+    {
+      "sourceId": "1044",
+      "sourceWord": "頑張ります",
+      "key": "w1044"
+    },
+    {
+      "sourceId": "1045",
+      "sourceWord": "どうぞお元気で。",
+      "key": "w1045"
+    },
+    {
+      "sourceId": "485",
+      "sourceWord": "もしもし",
+      "key": "w485"
+    },
+    {
+      "sourceId": "928",
+      "sourceWord": "足ります",
+      "key": "w928"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1034",
+      "sourceWord": "大使館",
+      "reason": "旧版地点词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1035",
+      "sourceWord": "グループ",
+      "reason": "旧版分组词，第二版交叉表本课不列。"
+    },
+    {
+      "sourceId": "1042",
+      "sourceWord": "一杯飲みましょう。",
+      "reason": "旧版饯别会话整句，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "free-time",
+    "support",
+    "vietnam"
+  ],
+  "finalCount": 18
+}

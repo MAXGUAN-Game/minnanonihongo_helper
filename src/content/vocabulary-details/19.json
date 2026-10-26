@@ -1,0 +1,349 @@
+{
+  "l19-v1": {
+    "romaji": "noborimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示向高处移动，如登山、上楼梯等。常与助词「に」或「を」搭配，如「山に上る」「階段を上る」。注意与「上がります」的区别：后者多指进入室内或地位上升。",
+    "example": {
+      "jp": "毎朝、階段を上ります。",
+      "kana": "まいあさ、かいだんをのぼります。",
+      "romaji": "maiasa, kaidan o noborimasu.",
+      "zh": "每天早上爬楼梯。"
+    }
+  },
+  "l19-w866": {
+    "romaji": "noborimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "特指登山，常用「山に登ります」的形式。也可用于登其他高处，如「木に登る」。与「上ります」相比，更强调攀登自然物或高处。",
+    "example": {
+      "jp": "夏に富士山に登ります。",
+      "kana": "なつにふじさんにのぼります。",
+      "romaji": "natsu ni fujisan ni noborimasu.",
+      "zh": "夏天爬富士山。"
+    }
+  },
+  "l19-w867": {
+    "romaji": "tomarimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示住宿、过夜，常与「ホテルに」「友達の家に」等搭配。也可用于「泊まる」表示船只停泊，但日常多指住宿。",
+    "example": {
+      "jp": "旅行でホテルに泊まります。",
+      "kana": "りょこうでほてるにとまります。",
+      "romaji": "ryokou de hoteru ni tomarimasu.",
+      "zh": "旅行时住酒店。"
+    }
+  },
+  "l19-v3": {
+    "romaji": "soujishimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示打扫、清扫，常与「部屋を」「教室を」等搭配。也可作为名词「掃除」使用，如「掃除をする」。",
+    "example": {
+      "jp": "日曜日に部屋を掃除します。",
+      "kana": "にちようびにへやをそうじします。",
+      "romaji": "nichiyoubi ni heya o soujishimasu.",
+      "zh": "星期天打扫房间。"
+    }
+  },
+  "l19-v4": {
+    "romaji": "sentakushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示洗衣服，常与「服を」「洗濯物を」等搭配。也可作为名词「洗濯」使用，如「洗濯をする」。",
+    "example": {
+      "jp": "毎週末に洗濯します。",
+      "kana": "まいしゅうまつにせんたくします。",
+      "romaji": "maishuumatsu ni sentakushimasu.",
+      "zh": "每个周末洗衣服。"
+    }
+  },
+  "l19-w870": {
+    "romaji": "renshuushimasu",
+    "attributes": [
+      "自他两用"
+    ],
+    "explanation": "表示练习，常与「ピアノを」「日本語を」等搭配。也可作为名词「練習」使用，如「練習をする」。",
+    "example": {
+      "jp": "毎日、ピアノを練習します。",
+      "kana": "まいにち、ぴあのをれんしゅうします。",
+      "romaji": "mainichi, piano o renshuushimasu.",
+      "zh": "每天练习钢琴。"
+    }
+  },
+  "l19-v5": {
+    "romaji": "narimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示变成、成为，常与「に」搭配，如「先生になる」「寒くなる」。也可表示时间到来，如「冬になった」。",
+    "example": {
+      "jp": "来年、大学生になります。",
+      "kana": "らいねん、だいがくせいになります。",
+      "romaji": "rainen, daigakusei ni narimasu.",
+      "zh": "明年成为大学生。"
+    }
+  },
+  "l19-w872": {
+    "romaji": "nemui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示困倦、想睡觉的感觉，常用于口语。注意与「眠たい」意思相近，但「眠い」更常用。",
+    "example": {
+      "jp": "昨夜よく寝なかったので、今日は眠いです。",
+      "kana": "ゆうべよくねなかったので、きょうはねむいです。",
+      "romaji": "yuube yoku nenakatta node, kyou wa nemui desu.",
+      "zh": "昨晚没睡好，所以今天很困。"
+    }
+  },
+  "l19-w873": {
+    "romaji": "tsuyoi",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示力量大、强度高，可用于人、风、光、味道等。反义词是「弱い」。",
+    "example": {
+      "jp": "彼は力が強いです。",
+      "kana": "かれはちからがつよいです。",
+      "romaji": "kare wa chikara ga tsuyoi desu.",
+      "zh": "他力气很大。"
+    }
+  },
+  "l19-w874": {
+    "romaji": "yowai",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示力量小、强度低，可用于人、身体、风、光等。反义词是「強い」。",
+    "example": {
+      "jp": "今日は風が弱いです。",
+      "kana": "きょうはかぜがよわいです。",
+      "romaji": "kyou wa kaze ga yowai desu.",
+      "zh": "今天风很小。"
+    }
+  },
+  "l19-w875": {
+    "romaji": "choushi ga ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示状态好、情况良好，常用于身体状况、机器运转等。口语中「いい」常读作「いい」，书写时也可写「調子がよい」。",
+    "example": {
+      "jp": "最近、体の調子がいいです。",
+      "kana": "さいきん、からだのちょうしがいいです。",
+      "romaji": "saikin, karada no choushi ga ii desu.",
+      "zh": "最近身体状况很好。"
+    }
+  },
+  "l19-w876": {
+    "romaji": "choushi ga warui",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "表示状态不好、情况不佳，常用于身体状况、机器故障等。反义表达是「調子がいい」。",
+    "example": {
+      "jp": "パソコンの調子が悪いです。",
+      "kana": "ぱそこんのちょうしがわるいです。",
+      "romaji": "pasokon no choushi ga warui desu.",
+      "zh": "电脑状态不好。"
+    }
+  },
+  "l19-w877": {
+    "romaji": "choushi",
+    "attributes": [],
+    "explanation": "表示身体、机器、工作等进行的状况或势头，常与「いい」「悪い」搭配；也可指音乐、说话的调子。",
+    "example": {
+      "jp": "最近、体の調子がいいです。",
+      "kana": "さいきん、からだのちょうしがいいです。",
+      "romaji": "saikin, karada no choushi ga ii desu.",
+      "zh": "最近身体状况不错。"
+    }
+  },
+  "l19-w878": {
+    "romaji": "gorufu",
+    "attributes": [],
+    "explanation": "指高尔夫球运动，常用「ゴルフをする」「ゴルフに行く」等搭配。",
+    "example": {
+      "jp": "週末に友達とゴルフをします。",
+      "kana": "しゅうまつにともだちとごるふをします。",
+      "romaji": "shuumatsu ni tomodachi to gorufu o shimasu.",
+      "zh": "周末和朋友打高尔夫。"
+    }
+  },
+  "l19-w879": {
+    "romaji": "sumou",
+    "attributes": [],
+    "explanation": "日本传统竞技，指相扑运动；常用「相撲を見る」「相撲取り」等表达。",
+    "example": {
+      "jp": "テレビで相撲を見ました。",
+      "kana": "てれびですもうをみました。",
+      "romaji": "terebi de sumou o mimashita.",
+      "zh": "在电视上看了相扑。"
+    }
+  },
+  "l19-w881": {
+    "romaji": "ocha",
+    "attributes": [],
+    "explanation": "本义为茶，也常指茶道或喝茶活动；「お茶をする」可表示喝茶、茶会。",
+    "example": {
+      "jp": "先生とお茶を習っています。",
+      "kana": "せんせいとおちゃをならっています。",
+      "romaji": "sensei to ocha o naratte imasu.",
+      "zh": "正在跟老师学茶道。"
+    }
+  },
+  "l19-w882": {
+    "romaji": "hi",
+    "attributes": [],
+    "explanation": "表示日子、天数，常用于「〜日」「日にち」等；也可指太阳，但本课为“日子”义。",
+    "example": {
+      "jp": "この日はとても忙しかったです。",
+      "kana": "このひはとてもいそがしかったです。",
+      "romaji": "kono hi wa totemo isogashikatta desu.",
+      "zh": "这一天非常忙。"
+    }
+  },
+  "l19-v7": {
+    "romaji": "ichido",
+    "attributes": [],
+    "explanation": "表示次数“一次”，常用于「一度〜た」表示曾经做过一次；也可用于提议“去一次”。",
+    "example": {
+      "jp": "一度京都へ行きたいです。",
+      "kana": "いちどきょうとへいきたいです。",
+      "romaji": "ichido kyouto e ikitai desu.",
+      "zh": "想去一次京都。"
+    }
+  },
+  "l19-v8": {
+    "romaji": "ichidomo",
+    "attributes": [],
+    "explanation": "后接否定，表示“一次也没有”，强调完全没有经历；常与「〜たことがない」搭配。",
+    "example": {
+      "jp": "一度も海外へ行ったことがありません。",
+      "kana": "いちどもかいがいへいったことがありません。",
+      "romaji": "ichidomo kaigai e itta koto ga arimasen.",
+      "zh": "一次也没去过国外。"
+    }
+  },
+  "l19-v9": {
+    "romaji": "dandan",
+    "attributes": [],
+    "explanation": "表示状态随时间逐步变化，相当于“渐渐、逐渐”；常与变化动词搭配。",
+    "example": {
+      "jp": "だんだん暖かくなってきました。",
+      "kana": "だんだんあたたかくなってきました。",
+      "romaji": "dandan atatakaku natte kimashita.",
+      "zh": "渐渐暖和起来了。"
+    }
+  },
+  "l19-v10": {
+    "romaji": "mousugu",
+    "attributes": [],
+    "explanation": "表示时间上“马上就要、快要”，常与动词ます形或名词搭配，暗示近期发生。",
+    "example": {
+      "jp": "もうすぐ試験が始まります。",
+      "kana": "もうすぐしけんがはじまります。",
+      "romaji": "mousugu shiken ga hajimarimasu.",
+      "zh": "考试马上就要开始了。"
+    }
+  },
+  "l19-w887": {
+    "romaji": "okagesamade",
+    "attributes": [],
+    "explanation": "礼貌表达，用于感谢对方帮助或关心，意为“托您的福”；常用于报告好结果时。",
+    "example": {
+      "jp": "お陰様で、元気になりました。",
+      "kana": "おかげさまで、げんきになりました。",
+      "romaji": "okagesamade, genki ni narimashita.",
+      "zh": "托您的福，我恢复健康了。"
+    }
+  },
+  "l19-w888": {
+    "romaji": "kanpai",
+    "attributes": [],
+    "explanation": "宴会等场合举杯时说的“干杯”，也指干杯这一行为；常用「乾杯する」「乾杯！」。",
+    "example": {
+      "jp": "皆さん、乾杯しましょう！",
+      "kana": "みなさん、かんぱいしましょう！",
+      "romaji": "minasan, kanpai shimashou!",
+      "zh": "各位，我们干杯吧！"
+    }
+  },
+  "l19-w890": {
+    "romaji": "daietto",
+    "attributes": [],
+    "explanation": "指为了减轻体重而进行的节食或减肥；常用「ダイエットをする」「ダイエット中」等。",
+    "example": {
+      "jp": "来月からダイエットを始めます。",
+      "kana": "らいげつからだいえっとをはじめます。",
+      "romaji": "raigetsu kara daietto o hajimemasu.",
+      "zh": "下个月开始减肥。"
+    }
+  },
+  "l19-w893": {
+    "romaji": "murina",
+    "attributes": [
+      "な形容词"
+    ],
+    "explanation": "表示从道理或能力上看不可能实现，或勉强、过度。修饰名词时用「無理な＋名詞」，谓语用「無理だ」。",
+    "example": {
+      "jp": "一日でこの仕事は無理な話だ。",
+      "kana": "いちにちでこのしごとはむりなはなしだ。",
+      "romaji": "ichinichi de kono shigoto wa murina hanashi da.",
+      "zh": "一天之内完成这项工作是不现实的。"
+    }
+  },
+  "l19-w894": {
+    "romaji": "karada ni ii",
+    "attributes": [
+      "い形容词"
+    ],
+    "explanation": "固定搭配，表示对健康有益。修饰名词时用「体にいい＋名詞」，否定说「体にいいくない」不自然，常用「体によくない」。",
+    "example": {
+      "jp": "野菜をたくさん食べるのは体にいい。",
+      "kana": "やさいをたくさんたべるのはからだにいい。",
+      "romaji": "yasai o takusan taberu no wa karada ni ii.",
+      "zh": "多吃蔬菜对身体好。"
+    }
+  },
+  "l19-practice": {
+    "romaji": "renshuu",
+    "attributes": [],
+    "explanation": "指反复做以掌握技能，常与「する」构成「練習する」。可说「ピアノの練習」「練習を重ねる」，注意与表示学习知识的「勉強」区分。",
+    "example": {
+      "jp": "毎日ピアノの練習をしています。",
+      "kana": "まいにちぴあののれんしゅうをしています。",
+      "romaji": "mainichi piano no renshuu o shite imasu.",
+      "zh": "我每天练习钢琴。"
+    }
+  },
+  "l19-skytree": {
+    "romaji": "Toukyou Sukaitsurii",
+    "attributes": [],
+    "explanation": "东京墨田区的电波塔兼观光设施，2012年开业，高度634米。作为专有名词通常用片假名书写，口语中可简称「スカイツリー」。",
+    "example": {
+      "jp": "東京スカイツリーに登って景色を見ました。",
+      "kana": "とうきょうすかいつりーにのぼってけしきをみました。",
+      "romaji": "Toukyou Sukaitsurii ni nobotte keshiki o mimashita.",
+      "zh": "我登上东京晴空塔看了风景。"
+    }
+  },
+  "l19-hokusai": {
+    "romaji": "Katsushika Hokusai",
+    "attributes": [],
+    "explanation": "江户时代后期浮世绘师，代表作《富岳三十六景》中的《神奈川冲浪里》。姓名读作「かつしかほくさい」，注意「葛飾」的读音。",
+    "example": {
+      "jp": "葛飾北斎の浮世絵は世界で有名です。",
+      "kana": "かつしかほくさいのうきよえはせかいでゆうめいです。",
+      "romaji": "Katsushika Hokusai no ukiyoe wa sekai de yuumei desu.",
+      "zh": "葛饰北斋的浮世绘在世界上很有名。"
+    }
+  }
+}

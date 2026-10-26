@@ -60,7 +60,7 @@ createRoot(document.getElementById('root')).render(<Harness/>);
 beforeAll(async () => {
   cacheDir = await mkdtemp(join(tmpdir(), 'language-master-audio-shortcuts-'));
   vite = await createServer({ configFile: false, root: process.cwd(), cacheDir,
-    optimizeDeps: { include: ['react', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
+    optimizeDeps: { include: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime', 'react/jsx-dev-runtime', 'lucide-react'], noDiscovery: true },
     server: { host: '127.0.0.1', port: 0 }, plugins: [{ name: 'isolated-audio-shortcuts',
       resolveId(id) { if (id === '/__audio-shortcuts.tsx') return id; },
       load(id) { if (id === '/__audio-shortcuts.tsx') return harness; },
@@ -164,8 +164,8 @@ describe('audio seeking and keyboard controls', () => {
     try {
       await startAudio(page);
       const controls = page.getByTestId('audio');
-      const backward = controls.getByRole('button', { name: '快退 2 秒', exact: true });
-      const forward = controls.getByRole('button', { name: '快进 2 秒', exact: true });
+      const backward = controls.getByRole('button', { name: '后退2秒', exact: true });
+      const forward = controls.getByRole('button', { name: '前进2秒', exact: true });
       await expect.poll(() => forward.isEnabled()).toBe(true);
       await page.evaluate(() => { window.__shortcutMock.clips.at(-1)!.currentTime = 5; });
       await mkdir(resolve('test-results'), { recursive: true });
@@ -195,7 +195,7 @@ describe('audio seeking and keyboard controls', () => {
     try {
       await page.getByRole('button', { name: 'Direct audio', exact: true }).click();
       await expect.poll(() => phase(page)).toBe('buffering');
-      const forward = page.getByTestId('audio').getByRole('button', { name: '快进 2 秒', exact: true });
+      const forward = page.getByTestId('audio').getByRole('button', { name: '前进2秒', exact: true });
       expect(await forward.isDisabled()).toBe(true);
       const reasonId = await forward.getAttribute('aria-describedby');
       expect(reasonId).toBeTruthy();
@@ -205,10 +205,10 @@ describe('audio seeking and keyboard controls', () => {
       expect(await forward.getAttribute('aria-describedby')).toBeNull();
       await page.getByRole('button', { name: 'System speech', exact: true }).click();
       const system = page.getByTestId('system');
-      expect(await system.getByRole('button', { name: '快退 2 秒', exact: true }).isDisabled()).toBe(true);
-      expect(await system.getByRole('button', { name: '快进 2 秒', exact: true }).isDisabled()).toBe(true);
+      expect(await system.getByRole('button', { name: '后退2秒', exact: true }).isDisabled()).toBe(true);
+      expect(await system.getByRole('button', { name: '前进2秒', exact: true }).isDisabled()).toBe(true);
       expect(await system.locator('.audio-seek-note').textContent()).toMatch(/系统|本机/);
-      expect(await page.getByTestId('audio').getByRole('region').count()).toBe(0);
+      expect(await page.getByTestId('audio').getByRole('group').count()).toBe(0);
     } finally { await context.close(); }
   });
 
@@ -216,8 +216,8 @@ describe('audio seeking and keyboard controls', () => {
     const { page, context } = await setup({ legacy: true });
     try {
       const legacy = page.getByTestId('legacy');
-      expect(await legacy.getByRole('button', { name: '快退 2 秒', exact: true }).isDisabled()).toBe(true);
-      expect(await legacy.getByRole('button', { name: '快进 2 秒', exact: true }).isDisabled()).toBe(true);
+      expect(await legacy.getByRole('button', { name: '后退2秒', exact: true }).isDisabled()).toBe(true);
+      expect(await legacy.getByRole('button', { name: '前进2秒', exact: true }).isDisabled()).toBe(true);
       expect(await legacy.locator('.audio-seek-note').textContent()).toBe('当前音频暂不支持快退或快进。');
     } finally { await context.close(); }
   });
@@ -289,7 +289,7 @@ describe('audio seeking and keyboard controls', () => {
       await startAudio(page);
       const controls = page.getByTestId('audio');
       await page.evaluate(() => { window.__shortcutMock.clips.at(-1)!.currentTime = 5; });
-      const forward = controls.getByRole('button', { name: '快进 2 秒', exact: true });
+      const forward = controls.getByRole('button', { name: '前进2秒', exact: true });
       await expect.poll(() => forward.isEnabled()).toBe(true);
       await forward.focus(); await page.keyboard.press('Space');
       expect(await phase(page)).toBe('paused');
@@ -301,7 +301,7 @@ describe('audio seeking and keyboard controls', () => {
       await primary.focus(); await page.keyboard.press('Space');
       expect(await phase(page)).toBe('paused');
       expect(await primary.evaluate(element => element === document.activeElement)).toBe(true);
-      expect(await primary.textContent()).toBe('继续播放');
+      expect(await primary.getAttribute('aria-label')).toBe('播放');
       await page.keyboard.press('Space');
       await expect.poll(() => phase(page)).toBe('playing');
       expect(await primary.evaluate(element => element === document.activeElement)).toBe(true);
@@ -331,7 +331,7 @@ describe('audio seeking and keyboard controls', () => {
       expect(await page.getByLabel('Source', { exact: true }).textContent()).toBe('audio');
       await system.focus(); await page.keyboard.press('Space');
       expect(await page.getByLabel('Source', { exact: true }).textContent()).toBe('system');
-      expect(await page.getByTestId('system').getByRole('region').count()).toBe(1);
+      expect(await page.getByTestId('system').getByRole('group').count()).toBe(1);
       await direct.focus(); await page.keyboard.press('Space');
       await expect.poll(() => phase(page)).toBe('playing');
       expect(await page.getByLabel('Source', { exact: true }).textContent()).toBe('audio');
@@ -353,8 +353,8 @@ describe('audio seeking and keyboard controls', () => {
       await expect.poll(() => phase(page)).toBe('error');
       expect(await controls.getByRole('status').textContent()).toContain('播放失败');
       expect(await controls.getByRole('status').textContent()).not.toContain('播放结束');
-      expect(await controls.getByRole('button', { name: '从头播放', exact: true }).count()).toBe(0);
-      await controls.getByRole('button', { name: '重试播放', exact: true }).click();
+      expect(await controls.getByRole('button', { name: '从头播放', exact: true }).count()).toBe(1);
+      await controls.getByRole('button', { name: '播放', exact: true }).click();
       await expect.poll(() => phase(page)).toBe('playing');
       expect(await position(page)).toBe(4);
     } finally { await context.close(); }

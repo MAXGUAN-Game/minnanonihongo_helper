@@ -1,0 +1,21 @@
+{
+  "lessonId": 47,
+  "model": "deepseek-flash",
+  "reviewedCount": 38,
+  "corrections": [
+    {
+      "id": "l47-w1847",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「婚約する」表示主体自身订婚，不带宾语，是自动词。"
+    },
+    {
+      "id": "l47-w1849",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「知り合う」表示相互结识，主体间关系，不带宾语，是自动词。"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "lessonId": 24,
+  "edition": 2,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/24.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "primaryCount": 21,
+  "entries": [
+    {
+      "sourceId": "1011",
+      "sourceWord": "くれます",
+      "key": "w1011"
+    },
+    {
+      "sourceId": "1012",
+      "sourceWord": "連れて行きます",
+      "key": "w1012"
+    },
+    {
+      "sourceId": "1013",
+      "sourceWord": "連れて来ます",
+      "key": "w1013"
+    },
+    {
+      "sourceId": "1014",
+      "sourceWord": "［人を］送ります",
+      "key": "w1014"
+    },
+    {
+      "sourceId": "1015",
+      "sourceWord": "紹介します",
+      "key": "w1015"
+    },
+    {
+      "sourceId": "1016",
+      "sourceWord": "案内します",
+      "key": "w1016"
+    },
+    {
+      "sourceId": "1017",
+      "sourceWord": "説明します",
+      "key": "w1017"
+    },
+    {
+      "sourceId": "1019",
+      "sourceWord": "おじいちゃん",
+      "key": "w1019"
+    },
+    {
+      "sourceId": "1020",
+      "sourceWord": "おばあちゃん",
+      "key": "w1020"
+    },
+    {
+      "sourceId": "1021",
+      "sourceWord": "準備",
+      "key": "w1021"
+    },
+    {
+      "sourceId": "1023",
+      "sourceWord": "お菓子",
+      "key": "w1023"
+    },
+    {
+      "sourceId": "1024",
+      "sourceWord": "全部",
+      "key": "w1024"
+    },
+    {
+      "sourceId": "1025",
+      "sourceWord": "自分で",
+      "key": "w1025"
+    },
+    {
+      "sourceId": "1026",
+      "sourceWord": "他に",
+      "key": "w1026"
+    },
+    {
+      "sourceId": "1166",
+      "sourceWord": "ホームステイ",
+      "key": "w1166"
+    },
+    {
+      "sourceId": "1933",
+      "sourceWord": "おじいさん",
+      "key": "w1933"
+    },
+    {
+      "sourceId": "1934",
+      "sourceWord": "おばあさん",
+      "key": "w1934"
+    },
+    {
+      "sourceId": "898",
+      "sourceWord": "［自転車を］直します",
+      "key": "w898"
+    },
+    {
+      "sourceId": "899",
+      "sourceWord": "［答えを］直します",
+      "key": "w899"
+    },
+    {
+      "sourceId": "992",
+      "sourceWord": "引っ越しします",
+      "key": "w992"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceId": "1027",
+      "sourceWord": "ワゴン車",
+      "reason": "旧版搬家会话车辆词，第二版交叉表本课不列。"
+    }
+  ],
+  "secondaryAdditions": [
+    "moving",
+    "mothers-day"
+  ],
+  "finalCount": 22
+}

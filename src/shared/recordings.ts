@@ -1,4 +1,6 @@
 import { z } from 'zod';
+import { audioAssessmentSchema } from './audio-assessment';
+import { practiceAttemptSchema } from './ai-practice';
 
 const identifier = z.string().trim().min(1).max(160);
 const text = z.string().trim().min(1).max(1000);
@@ -17,21 +19,23 @@ export const speakingAssessmentResultSchema = z.object({
   reference: example,
 }).strict();
 export type SpeakingAssessmentResult = z.infer<typeof speakingAssessmentResultSchema>;
-export const speakingAssessmentSchema = speakingAssessmentResultSchema.extend({
+export const expressionAssessmentSchema = speakingAssessmentResultSchema.extend({
   id: recordingIdSchema, lessonId: z.number().int().min(1).max(50), itemId: identifier,
   text: z.string().trim().min(1).max(2000), recordingId: recordingIdSchema.optional(), createdAt: date,
   source: z.literal('deepseek'), kind: z.literal('expression'), totalScore: z.number().int().min(0).max(100),
 }).strict().refine(value => value.totalScore === value.taskScore + value.grammarScore + value.vocabularyScore, { message: 'Total score must equal the three expression scores.' });
+export type ExpressionAssessment = z.infer<typeof expressionAssessmentSchema>;
+export const speakingAssessmentSchema = z.discriminatedUnion('kind', [expressionAssessmentSchema, audioAssessmentSchema]);
 export type SpeakingAssessment = z.infer<typeof speakingAssessmentSchema>;
 
 export const recordingMetadataSchema = z.object({
   id: recordingIdSchema, lessonId: z.number().int().min(1).max(50),
-  context: z.enum(['speak', 'conversation']), itemId: identifier,
+  context: z.enum(['speak', 'conversation', 'ai-speak']), itemId: identifier,
   createdAt: date, expiresAt: date, durationMs: z.number().min(250).max(30000),
   transcript: z.string().trim().max(2000).optional(), confirmedText: z.string().trim().max(2000).optional(),
   audioAvailable: z.boolean(), audioStatus: z.enum(['available', 'expired', 'deleted', 'missing']),
 }).strict();
-export const recordingSchema = recordingMetadataSchema.extend({ assessment: speakingAssessmentSchema.optional() }).strict();
+export const recordingSchema = recordingMetadataSchema.extend({ assessment: speakingAssessmentSchema.optional(), aiPractice: z.object({ goalZh: text, attempt: practiceAttemptSchema.optional() }).strict().optional() }).strict();
 export type RecordingMetadata = z.infer<typeof recordingMetadataSchema>;
 export type Recording = z.infer<typeof recordingSchema>;
 export const recordingPatchSchema = z.object({ transcript: z.string().trim().max(2000).optional(), confirmedText: z.string().trim().max(2000).optional() }).strict().refine(value => value.transcript !== undefined || value.confirmedText !== undefined);

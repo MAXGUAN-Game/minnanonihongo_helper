@@ -1,0 +1,28 @@
+{
+  "lessonId": 20,
+  "model": "deepseek-flash",
+  "reviewedCount": 22,
+  "corrections": [
+    {
+      "id": "l20-w677",
+      "attributes": [
+        "い形容词"
+      ],
+      "reason": "「いっぱいです」是い形容词「いっぱい」的敬体，需标い形容词属性。"
+    },
+    {
+      "id": "l20-w896",
+      "attributes": [
+        "自动词"
+      ],
+      "reason": "「要ります」以「ビザが」为主语论元，是自动词，原标注正确无需改。"
+    },
+    {
+      "id": "l20-w925",
+      "attributes": [
+        "な形容词"
+      ],
+      "reason": "「色々」作修饰时可用「色々な」，应标な形容词属性。"
+    }
+  ]
+}

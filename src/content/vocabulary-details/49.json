@@ -1,0 +1,415 @@
+{
+  "l49-w1514": {
+    "romaji": "riyō shimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示有效利用某物或某种条件，常用于资源、时间、设施等。比「使います」更强调发挥效用，语体稍正式。",
+    "example": {
+      "jp": "図書館を利用します。",
+      "kana": "としょかんをりようします。",
+      "romaji": "toshokan o riyō shimasu.",
+      "zh": "利用图书馆。"
+    }
+  },
+  "l49-w1870": {
+    "romaji": "kaisha ni tsutomemasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "表示在某公司或机构任职，常用「会社に勤めます」的形式。不能用于临时打工，打工一般说「アルバイトをします」。",
+    "example": {
+      "jp": "父は銀行に勤めています。",
+      "kana": "ちちはぎんこうにつとめています。",
+      "romaji": "chichi wa ginkō ni tsutomete imasu.",
+      "zh": "父亲在银行工作。"
+    }
+  },
+  "l49-w1872": {
+    "romaji": "isu ni kakemasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示坐到椅子等坐具上，常用「いすに掛けます」。与「座ります」意思相近，但「掛けます」更强调动作，且常与「いす」搭配。",
+    "example": {
+      "jp": "どうぞ、いすに掛けてください。",
+      "kana": "どうぞ、いすにかけてください。",
+      "romaji": "dōzo, isu ni kakete kudasai.",
+      "zh": "请坐椅子上。"
+    }
+  },
+  "l49-w1873": {
+    "romaji": "sugoshimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "表示度过时间或生活，常与「時間」「休み」「夏休み」等搭配。强调在某段时间内经历或度过的方式。",
+    "example": {
+      "jp": "夏休みを田舎で過ごします。",
+      "kana": "なつやすみをいなかですごします。",
+      "romaji": "natsuyasumi o inaka de sugoshimasu.",
+      "zh": "在乡下度过暑假。"
+    }
+  },
+  "l49-w1875": {
+    "romaji": "irasshaimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "「行きます」「来ます」「います」的尊敬语，用于尊长或客人的移动和存在。不能用于自己，使用时注意主语是对方。",
+    "example": {
+      "jp": "社長は会議室にいらっしゃいます。",
+      "kana": "しゃちょうはかいぎしつにいらっしゃいます。",
+      "romaji": "shachō wa kaigishitsu ni irasshaimasu.",
+      "zh": "社长在会议室。"
+    }
+  },
+  "l49-w1876": {
+    "romaji": "meshiagarimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「食べます」「飲みます」的尊敬语，用于对方或第三者的吃喝行为。不能用于自己，自己吃喝仍用「食べます」「飲みます」。",
+    "example": {
+      "jp": "先生はコーヒーを召し上がりますか。",
+      "kana": "せんせいはこーひーをめしあがりますか。",
+      "romaji": "sensei wa kōhī o meshiagarimasu ka.",
+      "zh": "老师喝咖啡吗？"
+    }
+  },
+  "l49-w1877": {
+    "romaji": "osshaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「言います」的尊敬语，用于对方或第三者的说话行为。不能用于自己，自己说仍用「言います」。",
+    "example": {
+      "jp": "先生は何とおっしゃいましたか。",
+      "kana": "せんせいはなんとおっしゃいましたか。",
+      "romaji": "sensei wa nan to osshaimashita ka.",
+      "zh": "老师说了什么？"
+    }
+  },
+  "l49-w1878": {
+    "romaji": "nasaimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「します」的尊敬语，用于对方或第三者的动作。常接在动作性名词后，如「勉強をなさいます」。不能用于自己。",
+    "example": {
+      "jp": "週末は何をなさいますか。",
+      "kana": "しゅうまつはなにをなさいますか。",
+      "romaji": "shūmatsu wa nani o nasaimasu ka.",
+      "zh": "周末您做什么？"
+    }
+  },
+  "l49-w1879": {
+    "romaji": "goran ni narimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "「見ます」的尊敬语，用于对方或第三者看的行为。不能用于自己，自己看仍用「見ます」。",
+    "example": {
+      "jp": "この写真をご覧になりますか。",
+      "kana": "このしゃしんをごらんになりますか。",
+      "romaji": "kono shashin o goran ni narimasu ka.",
+      "zh": "您看这张照片吗？"
+    }
+  },
+  "l49-w1880": {
+    "romaji": "gozonji desu",
+    "attributes": [],
+    "explanation": "「知っています」的尊敬表达，用于询问或叙述对方知道某事。不能用于自己，自己知道仍用「知っています」。",
+    "example": {
+      "jp": "あの方をご存じですか。",
+      "kana": "あのかたをごぞんじですか。",
+      "romaji": "ano kata o gozonji desu ka.",
+      "zh": "您认识那位吗？"
+    }
+  },
+  "l49-w1881": {
+    "romaji": "aisatsu",
+    "attributes": [],
+    "explanation": "指见面或分别时的问候语，也指一般的致意、寒暄。常用「挨拶をします」表示进行问候。",
+    "example": {
+      "jp": "朝、先生に挨拶をします。",
+      "kana": "あさ、せんせいにあいさつをします。",
+      "romaji": "asa, sensei ni aisatsu o shimasu.",
+      "zh": "早上向老师问候。"
+    }
+  },
+  "l49-w1883": {
+    "romaji": "ryokan",
+    "attributes": [],
+    "explanation": "指日本传统风格的旅馆，通常提供榻榻米房间和日式餐食。与西式「ホテル」相对。",
+    "example": {
+      "jp": "京都で旅館に泊まりました。",
+      "kana": "きょうとでりょかんにとまりました。",
+      "romaji": "kyōto de ryokan ni tomarimashita.",
+      "zh": "在京都住了日式旅馆。"
+    }
+  },
+  "l49-w1885": {
+    "romaji": "basutei",
+    "attributes": [],
+    "explanation": "指公交车停靠的车站，是日常出行常用名词。可说「バス停で待つ」「バス停に着く」，注意与「バス停前」等复合表达搭配。",
+    "example": {
+      "jp": "バス停で友だちを待ちます。",
+      "kana": "ばすていでともだちをまちます。",
+      "romaji": "basutei de tomodachi o machimasu.",
+      "zh": "在公交车站等朋友。"
+    }
+  },
+  "l49-w1887": {
+    "romaji": "sama",
+    "attributes": [],
+    "explanation": "接在人名或称呼后表示尊敬，比「さん」更郑重，多用于商务、书信或对顾客。不能用于自己或自己一方的人。",
+    "example": {
+      "jp": "田中様、お電話です。",
+      "kana": "たなかさま、おでんわです。",
+      "romaji": "tanaka sama, odenwa desu.",
+      "zh": "田中先生，有您的电话。"
+    }
+  },
+  "l49-w1889": {
+    "romaji": "tamani",
+    "attributes": [],
+    "explanation": "表示频率不高，相当于“偶尔、有时”。常与「～ことがある」呼应，语气比「ときどき」稍少，多用于日常会话。",
+    "example": {
+      "jp": "たまに映画を見に行きます。",
+      "kana": "たまにえいがをみにいきます。",
+      "romaji": "tamani eiga o mi ni ikimasu.",
+      "zh": "偶尔去看电影。"
+    }
+  },
+  "l49-w1892": {
+    "romaji": "nen kumi",
+    "attributes": [],
+    "explanation": "用于表示学校的年级和班级，如「一年二組」。前面接数字，读作「～ねん～くみ」，常见于学生自我介绍或点名。",
+    "example": {
+      "jp": "私は三年一組です。",
+      "kana": "わたしはさんねんいちくみです。",
+      "romaji": "watashi wa sannen ichikumi desu.",
+      "zh": "我是三年级一班。"
+    }
+  },
+  "l49-w1894": {
+    "romaji": "netsu o dashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "固定搭配「熱を出す」表示发烧，用助词「を」。可活用为「熱が出ます」「熱を出しました」等，注意与自动词「熱が出る」区别。",
+    "example": {
+      "jp": "昨日から熱を出しています。",
+      "kana": "きのうからねつをだしています。",
+      "romaji": "kinou kara netsu o dashite imasu.",
+      "zh": "从昨天开始发烧。"
+    }
+  },
+  "l49-w1895": {
+    "romaji": "yoroshiku otsutae kudasai",
+    "attributes": [],
+    "explanation": "托人转达问候的固定表达，意为“请代我问好”。多用于请对方向第三方转达礼貌问候，正式场合也常用。",
+    "example": {
+      "jp": "ご家族によろしくお伝えください。",
+      "kana": "ごかぞくによろしくおつたえください。",
+      "romaji": "gokazoku ni yoroshiku otsutae kudasai.",
+      "zh": "请代我向您家人问好。"
+    }
+  },
+  "l49-w1896": {
+    "romaji": "shitsurei itashimasu",
+    "attributes": [],
+    "explanation": "谦让语表达，用于告辞、离开或打断时，比「失礼します」更郑重。常用于商务场合或电话结束时。",
+    "example": {
+      "jp": "それでは、失礼いたします。",
+      "kana": "それでは、しつれいいたします。",
+      "romaji": "sore de wa, shitsurei itashimasu.",
+      "zh": "那么，我就告辞了。"
+    }
+  },
+  "l49-w2544": {
+    "romaji": "okusama",
+    "attributes": [],
+    "explanation": "对别人妻子的尊敬称呼，相当于“夫人、太太”。不能称呼自己的妻子；自己妻子一般说「妻」。",
+    "example": {
+      "jp": "奥様はお元気ですか。",
+      "kana": "おくさまはおげんきですか。",
+      "romaji": "okusama wa ogenki desu ka.",
+      "zh": "您夫人身体好吗？"
+    }
+  },
+  "l49-anyone": {
+    "romaji": "donata demo",
+    "attributes": [],
+    "explanation": "「だれでも」的尊敬说法，意为“任何人都……”。常用于说明资格、条件等，语气礼貌。",
+    "example": {
+      "jp": "この教室はどなたでも使えます。",
+      "kana": "このきょうしつはどなたでもつかえます。",
+      "romaji": "kono kyoushitsu wa donata demo tsukaemasu.",
+      "zh": "这间教室任何人都可以使用。"
+    }
+  },
+  "l49-called": {
+    "romaji": "to iimasu",
+    "attributes": [],
+    "explanation": "用于说明名称或称呼，相当于“叫做……”。前接名词，可介绍人名、地名、事物名，礼貌体。",
+    "example": {
+      "jp": "私は王といいます。",
+      "kana": "わたしはおうといいます。",
+      "romaji": "watashi wa ou to iimasu.",
+      "zh": "我叫小王。"
+    }
+  },
+  "l49-school": {
+    "romaji": "himawari shougakkou",
+    "attributes": [],
+    "explanation": "教材中出现的虚构小学名称，由「ひまわり」（向日葵）和「小学校」组成。用于介绍学校场景，专有名词不加「さん」。",
+    "example": {
+      "jp": "ひまわり小学校は駅の近くにあります。",
+      "kana": "ひまわりしょうがっこうはえきのちかくにあります。",
+      "romaji": "himawari shougakkou wa eki no chikaku ni arimasu.",
+      "zh": "向日葵小学在车站附近。"
+    }
+  },
+  "l49-yamanaka": {
+    "romaji": "yamanaka shin'ya",
+    "attributes": [],
+    "explanation": "日本著名医学家山中伸弥的名字，因iPS细胞研究获诺贝尔奖。作为专有名词直接使用，敬称可加「先生」。",
+    "example": {
+      "jp": "山中伸弥さんはiPS細胞の研究で有名です。",
+      "kana": "やまなかしんやさんはあいぴーえすさいぼうのけんきゅうでゆうめいです。",
+      "romaji": "yamanaka shin'ya san wa aipiesu saibou no kenkyuu de yuumei desu.",
+      "zh": "山中伸弥因iPS细胞研究而闻名。"
+    }
+  },
+  "l49-nobel": {
+    "romaji": "nōberu shō",
+    "attributes": [],
+    "explanation": "专有名词，指诺贝尔奖。常与「受賞する」搭配，表示获得该奖；语体中正式，多用于新闻或学术介绍。",
+    "example": {
+      "jp": "彼はノーベル賞を受賞しました。",
+      "kana": "かれはのーべるしょうをじゅしょうしました。",
+      "romaji": "kare wa nōberu shō o jushō shimashita.",
+      "zh": "他获得了诺贝尔奖。"
+    }
+  },
+  "l49-career": {
+    "romaji": "keireki",
+    "attributes": [],
+    "explanation": "名词，指个人经历或履历，常用于就职、介绍等场合。与「履歴」相比，更侧重过去积累的经验和过程。",
+    "example": {
+      "jp": "彼の経歴はとてもユニークです。",
+      "kana": "かれのけいれきはとてもゆにーくです。",
+      "romaji": "kare no keireki wa totemo yunīku desu.",
+      "zh": "他的经历非常独特。"
+    }
+  },
+  "l49-medical": {
+    "romaji": "igakubu",
+    "attributes": [],
+    "explanation": "名词，指大学中的医学部，也可指医学系。常与「に入る」「を卒業する」等搭配，用于升学或学术语境。",
+    "example": {
+      "jp": "兄は医学部に通っています。",
+      "kana": "あにはいがくぶにかよっています。",
+      "romaji": "ani wa igakubu ni kayotte imasu.",
+      "zh": "哥哥在医学部上学。"
+    }
+  },
+  "l49-aim": {
+    "romaji": "mezashimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词，表示以某事物为目标、志向于某方向。常接名词+「を目指す」，如「医者を目指す」，语体较正式。",
+    "example": {
+      "jp": "彼女は医者を目指しています。",
+      "kana": "かのじょはいしゃをめざしています。",
+      "romaji": "kanojo wa isha o mezashite imasu.",
+      "zh": "她以成为医生为目标。"
+    }
+  },
+  "l49-advance": {
+    "romaji": "susumimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "自动词，表示前进、推进，也可用于进入某领域或阶段。常与「道を進む」「研究を進める」等搭配，注意他动词形为「進める」。",
+    "example": {
+      "jp": "この道をまっすぐ進んでください。",
+      "kana": "このみちをまっすぐすすんでください。",
+      "romaji": "kono michi o massugu susunde kudasai.",
+      "zh": "请沿着这条路一直往前走。"
+    }
+  },
+  "l49-ips": {
+    "romaji": "aipīesu saibō",
+    "attributes": [],
+    "explanation": "名词，指诱导多能干细胞，生物学专业术语。常出现在医学、再生医疗等话题中，一般写作「iPS細胞」。",
+    "example": {
+      "jp": "iPS細胞の研究が進んでいます。",
+      "kana": "あいぴーえすさいぼうのけんきゅうがすすんでいます。",
+      "romaji": "aipīesu saibō no kenkyū ga susunde imasu.",
+      "zh": "iPS细胞的研究正在推进。"
+    }
+  },
+  "l49-develop": {
+    "romaji": "kaihatsushimasu",
+    "attributes": [
+      "他动词"
+    ],
+    "explanation": "动词，表示开发新产品、技术或资源等。常与「新製品」「技術」「ソフト」等搭配，语体正式，可用于商业或科研场景。",
+    "example": {
+      "jp": "新しい薬を開発しています。",
+      "kana": "あたらしいくすりをかいはつしています。",
+      "romaji": "atarashii kusuri o kaihatsu shite imasu.",
+      "zh": "正在开发新药。"
+    }
+  },
+  "l49-mouse": {
+    "romaji": "mausu",
+    "attributes": [],
+    "explanation": "名词，指实验用小鼠，也指电脑鼠标。在生物学语境中常指实验小鼠，注意与「ねずみ」区分。",
+    "example": {
+      "jp": "実験にマウスを使います。",
+      "kana": "じっけんにまうすをつかいます。",
+      "romaji": "jikken ni mausu o tsukaimasu.",
+      "zh": "实验中使用小鼠。"
+    }
+  },
+  "l49-human": {
+    "romaji": "hito",
+    "attributes": [],
+    "explanation": "名词，生物学上指人类，与动物相区别。常写作片假名「ヒト」，用于学术或正式语境，日常中也用「人」。",
+    "example": {
+      "jp": "ヒトの体は複雑です。",
+      "kana": "ひとのからだはふくざつです。",
+      "romaji": "hito no karada wa fukuzatsu desu.",
+      "zh": "人体很复杂。"
+    }
+  },
+  "l49-award": {
+    "romaji": "jushōshimasu",
+    "attributes": [
+      "自动词"
+    ],
+    "explanation": "动词，表示获奖、受奖。常与「賞を受賞する」搭配，语体正式，多用于新闻或正式介绍。",
+    "example": {
+      "jp": "彼は文学賞を受賞しました。",
+      "kana": "かれはぶんがくしょうをじゅしょうしました。",
+      "romaji": "kare wa bungakushō o jushō shimashita.",
+      "zh": "他获得了文学奖。"
+    }
+  },
+  "l49-lecture": {
+    "romaji": "kōenkai",
+    "attributes": [],
+    "explanation": "名词，指演讲会、讲座。常与「開く」「参加する」等搭配，用于学术或公开活动语境。",
+    "example": {
+      "jp": "週末に講演会があります。",
+      "kana": "しゅうまつにこうえんかいがあります。",
+      "romaji": "shūmatsu ni kōenkai ga arimasu.",
+      "zh": "周末有演讲会。"
+    }
+  }
+}

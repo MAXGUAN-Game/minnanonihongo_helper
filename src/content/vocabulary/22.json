@@ -1,0 +1,232 @@
+{
+  "lessonId": 22,
+  "complete": true,
+  "sources": [
+    "https://langoal.com/ja/vocabulary/minna/22.html",
+    "https://nihongopic.com/minnanonihongo-word/"
+  ],
+  "reviewNotes": [
+    "逐项核对两份分课表：主来源27条，排除0条旧版或跨课条目，合并同形同义项并补入第二来源，最终31条。",
+    "片假名长音与标点统一；读音以平假名显示。保留搭配括号说明动词义项。中文义项独立整理；不包含例句。",
+    "教材中的专名及固定表达一并收录；版本差异与来源对应见vocabulary-audit/22.json。"
+  ],
+  "words": [
+    {
+      "key": "w1028",
+      "word": "弁当",
+      "reading": "べんとう",
+      "partOfSpeech": "名词",
+      "meaning": "盒饭"
+    },
+    {
+      "key": "w1373",
+      "word": "［ネクタイを］します",
+      "reading": "［ねくたいを］します",
+      "partOfSpeech": "动词Ⅲ",
+      "meaning": "打（领带）"
+    },
+    {
+      "key": "w1893",
+      "word": "では",
+      "reading": "では",
+      "partOfSpeech": "表达",
+      "meaning": "那么"
+    },
+    {
+      "key": "w215",
+      "word": "えーと",
+      "reading": "えーと",
+      "partOfSpeech": "表达",
+      "meaning": "嗯……（思考时）"
+    },
+    {
+      "key": "w3126",
+      "word": "ロボット",
+      "reading": "ろぼっと",
+      "partOfSpeech": "名词",
+      "meaning": "机器人"
+    },
+    {
+      "key": "w3374",
+      "word": "都合",
+      "reading": "つごう",
+      "partOfSpeech": "名词",
+      "meaning": "时间安排；方便与否"
+    },
+    {
+      "key": "w37",
+      "word": "私たち",
+      "reading": "わたしたち",
+      "partOfSpeech": "名词",
+      "meaning": "我们"
+    },
+    {
+      "key": "w895",
+      "word": "ケーキ",
+      "reading": "けーき",
+      "partOfSpeech": "名词",
+      "meaning": "蛋糕"
+    },
+    {
+      "key": "w946",
+      "word": "ユーモア",
+      "reading": "ゆーもあ",
+      "partOfSpeech": "名词",
+      "meaning": "幽默"
+    },
+    {
+      "key": "w962",
+      "word": "［シャツを］着ます",
+      "reading": "［しゃつを］きます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "穿（上衣）"
+    },
+    {
+      "key": "w963",
+      "word": "［靴を］履きます",
+      "reading": "［くつを］はきます",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "穿（鞋、裤子）"
+    },
+    {
+      "key": "w964",
+      "word": "［帽子を］かぶります",
+      "reading": "［ぼうしを］かぶります",
+      "partOfSpeech": "动词Ⅰ",
+      "meaning": "戴（帽子）"
+    },
+    {
+      "key": "w965",
+      "word": "［眼鏡を］かけます",
+      "reading": "［めがねを］かけます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "戴（眼镜）"
+    },
+    {
+      "key": "w966",
+      "word": "生まれます",
+      "reading": "うまれます",
+      "partOfSpeech": "动词Ⅱ",
+      "meaning": "出生"
+    },
+    {
+      "key": "w967",
+      "word": "コート",
+      "reading": "こーと",
+      "partOfSpeech": "名词",
+      "meaning": "大衣"
+    },
+    {
+      "key": "w968",
+      "word": "スーツ",
+      "reading": "すーつ",
+      "partOfSpeech": "名词",
+      "meaning": "西装"
+    },
+    {
+      "key": "w969",
+      "word": "セーター",
+      "reading": "せーたー",
+      "partOfSpeech": "名词",
+      "meaning": "毛衣"
+    },
+    {
+      "key": "w970",
+      "word": "帽子",
+      "reading": "ぼうし",
+      "partOfSpeech": "名词",
+      "meaning": "帽子"
+    },
+    {
+      "key": "w971",
+      "word": "眼鏡",
+      "reading": "めがね",
+      "partOfSpeech": "名词",
+      "meaning": "眼镜"
+    },
+    {
+      "key": "w972",
+      "word": "よく",
+      "reading": "よく",
+      "partOfSpeech": "副词",
+      "meaning": "经常"
+    },
+    {
+      "key": "w973",
+      "word": "おめでとうございます",
+      "reading": "おめでとうございます",
+      "partOfSpeech": "固定表达",
+      "meaning": "恭喜"
+    },
+    {
+      "key": "w974",
+      "word": "こちら",
+      "reading": "こちら",
+      "partOfSpeech": "名词",
+      "meaning": "这个（礼貌说法）"
+    },
+    {
+      "key": "w975",
+      "word": "家賃",
+      "reading": "やちん",
+      "partOfSpeech": "名词",
+      "meaning": "房租"
+    },
+    {
+      "key": "w977",
+      "word": "ダイニングキッチン",
+      "reading": "だいにんぐきっちん",
+      "partOfSpeech": "名词",
+      "meaning": "餐厅兼厨房"
+    },
+    {
+      "key": "w978",
+      "word": "和室",
+      "reading": "わしつ",
+      "partOfSpeech": "名词",
+      "meaning": "日式房间"
+    },
+    {
+      "key": "w979",
+      "word": "押し入れ",
+      "reading": "おしいれ",
+      "partOfSpeech": "名词",
+      "meaning": "壁橱"
+    },
+    {
+      "key": "w980",
+      "word": "布団",
+      "reading": "ふとん",
+      "partOfSpeech": "名词",
+      "meaning": "被褥"
+    },
+    {
+      "key": "looking",
+      "word": "お探しですか",
+      "reading": "おさがしですか",
+      "partOfSpeech": "固定表达",
+      "meaning": "您在找……吗"
+    },
+    {
+      "key": "paris",
+      "word": "パリ",
+      "reading": "ぱり",
+      "partOfSpeech": "专有名词",
+      "meaning": "巴黎"
+    },
+    {
+      "key": "great-wall",
+      "word": "万里の長城",
+      "reading": "ばんりのちょうじょう",
+      "partOfSpeech": "专有名词",
+      "meaning": "万里长城"
+    },
+    {
+      "key": "survey",
+      "word": "みんなのアンケート",
+      "reading": "みんなのあんけーと",
+      "partOfSpeech": "专有名词",
+      "meaning": "大家的问卷调查（教材栏目名）"
+    }
+  ]
+}
