@@ -1,10 +1,11 @@
+import { topicInfo, type SpecialTopic } from '../shared/special-practice';
 import { VocabularyWord } from './VocabularyWord';
 import type { VocabularyLessonProgress } from '../shared/vocabulary';
-import { translate } from './i18n';
+import { translate, localize, localizedAttribute } from './i18n';
 import { AudioAnswer } from './AudioAnswer';
 import { getPreferences, usePreferences, setPreferences, useTranslation } from './preferences';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowRight, Headphones, Mic, Play, RotateCcw, Volume2 } from 'lucide-react';
+import { Check, ArrowRight, Headphones, Mic, Play, RotateCcw, Volume2 } from 'lucide-react';
 import type { PracticeAttempt, PracticeCurrent, PracticeKind, PracticeQuestion } from '../shared/ai-practice';
 import type { AudioAssessmentSettings } from '../shared/audio-assessment';
 import type { Speech } from './speech';
@@ -14,8 +15,10 @@ import { Button, Sentence } from './ui';
 import { AudioControls } from './AudioControls';
 import { RecordingControls } from './RecordingControls';
 import { PracticePrefetch } from './practice-prefetch';
+import { practiceOutcome } from '../shared/practice-outcome';
+import { ShadowReading } from './ShadowReading';
 
-type Props = { lessonId: number; kind: PracticeKind; speech: Speech; notice: (message: string) => void; furigana: boolean };
+type Props = { review?: boolean; topic?: SpecialTopic; lessonId: number; kind: PracticeKind; speech: Speech; notice: (message: string) => void; furigana: boolean };
 const names = { vocabulary: '单词造句', dictation: '单句听力', dialogue: '对话听力', speaking: 'AI口语练习' };
 const generationRetryDelays = [1000, 2000, 4000];
 function isPassingAnswer(attempt: PracticeAttempt) {
@@ -23,13 +26,15 @@ function isPassingAnswer(attempt: PracticeAttempt) {
 }
 function PracticeFocus({ question }: { question: PracticeQuestion }) {
   const t = useTranslation();
+  if (question.topic) return <p className="tiny-note practice-focus">{t('专项练习', '集中練習')} · {t(topicInfo(question.topic).zh, topicInfo(question.topic).ja)}</p>;
   const vocabulary = question.content.kind === 'vocabulary';
   const lessonId = vocabulary ? question.lessonId : question.grammarSourceLessonId;
-  return <p className="tiny-note practice-focus">{t('考点', '学習ポイント')}：<span lang="ja">{question.content.kind === 'vocabulary' ? question.content.word : question.grammarTitle}</span> · {t(`所属单元：第${lessonId}单元`, `出典：第${lessonId}課`)}</p>;
+  return <p className="tiny-note practice-focus">{t('考点', '学習ポイント')}：<span lang="ja">{question.content.kind === 'vocabulary' ? question.content.word : translate(question.grammarTitle)}</span> · {t(`所属单元：第${lessonId}单元`, `出典：第${lessonId}課`)}</p>;
 }
-function PracticeReference({ question, attempt, speech, furigana }: { question: PracticeQuestion; attempt: Extract<PracticeAttempt, { kind: 'speaking' }>; speech: Speech; furigana: boolean }) {
+function PracticeReference({ question, attempt, speech, furigana, suspended = false }: { question: PracticeQuestion; attempt: Extract<PracticeAttempt, { kind: 'speaking' }>; speech: Speech; furigana: boolean; suspended?: boolean }) {
   const t = useTranslation();
-  return <details key={attempt.id} open onToggle={event => { if (!event.currentTarget.open) speech.stop(); }}><summary>{t('查看参考表达', '参考表現を見る')}</summary><PracticeFocus question={question}/><Sentence example={attempt.result.reference} speech={speech} furigana={furigana}/></details>;
+  const [referenceOpen, setReferenceOpen] = useState(true);
+  return <details key={attempt.id} open onToggle={event => { setReferenceOpen(event.currentTarget.open); if (!event.currentTarget.open) speech.stop(); }}><summary>{t('查看参考表达', '参考表現を見る')}</summary><PracticeFocus question={question}/><ShadowReading example={attempt.result.reference} speech={speech} furigana={furigana} active={referenceOpen && !suspended}/></details>;
 }
 function waitForRetry(ms: number, signal: AbortSignal) {
   return new Promise<void>((resolve, reject) => {
@@ -43,20 +48,20 @@ export function PracticeScoreFeedback({ attempt }: { attempt: Extract<PracticeAt
   const t = useTranslation();
   const result = attempt.result;
   if (attempt.inputMode === 'text') return <section className="audio-assessment-result" aria-label={t('文字表达评分', '文章表現の評価')}>
-    <h3>{t('文字表达参考分', '文章表現の参考スコア')} · {result.meaningScore + result.grammarScore}/70</h3>
-    <div className="ai-score-parts"><span>{t('意思表达', '意味の表現')} {result.meaningScore}/40</span><span>{t('语法', '文法')} {result.grammarScore}/30</span></div>
-    <p>{result.summaryZh}</p><p>{result.grammarFeedbackZh}</p>
-    {result.corrections.map((item, i) => <p key={i}>{item.explanation} <span lang="ja">{item.original} → {item.corrected.jp}</span></p>)}
-    <p className="tiny-note">{t('拼写模式不评估发音。', '入力モードでは発音を評価しません。')}{attempt.usedHint && t('本次为借助提示重练。', '今回はヒントを利用した再練習です。')}</p>
+    <h3>{t('文字表达参考分', '文章表現の参考スコア')} · {localize(result.meaningScore + result.grammarScore)}/70</h3>
+    <div className="ai-score-parts"><span>{t('意思表达', '意味の表現')} {localize(result.meaningScore)}/40</span><span>{t('语法', '文法')} {localize(result.grammarScore)}/30</span></div>
+    <p>{localize(result.summaryZh)}</p><p>{localize(result.grammarFeedbackZh)}</p>
+    {result.corrections.map((item, i) => <p key={i}>{localize(item.explanation)} <span lang="ja">{item.original} → {item.corrected.jp}</span></p>)}
+    <p className="tiny-note">{t('拼写模式不评估发音。', '入力モードでは発音を評価しません。')}{localize(attempt.usedHint && t('本次为借助提示重练。', '今回はヒントを利用した再練習です。'))}</p>
     <details><summary>{t('已提交的句子', '提出した文')}</summary><p lang="ja">{attempt.answer}</p></details>
   </section>;
   return <section className="audio-assessment-result" aria-label={translate("AI口语评分")}>
-    <h3>{translate("AI练习参考分")}{attempt.totalScore !== null ? ` · ${attempt.totalScore}/100` : ' · 本次发音无法可靠评分'}</h3>
-    <div className="ai-score-parts"><span>{translate("意思表达")}{result.meaningScore}/40</span><span>{translate("语法")}{result.grammarScore}/30</span><span>{translate("发音")}{result.pronunciationScore === null ? translate('暂无法判断') : `${result.pronunciationScore}/30`}</span></div>
-    <p>{result.summaryZh}</p><p>{translate("语法与表达：")}{result.grammarFeedbackZh}</p><p>{translate("发音与节奏：")}{result.pronunciation.feedbackZh}</p>
-    {result.corrections.map((item, i) => <p key={i}>{item.explanation} <span lang="ja">{item.original} → {item.corrected.jp}</span></p>)}
-    {result.pronunciation.issues.map((item, i) => <p key={i}><span lang="ja">{item.word}（{item.expectedKana}）</span>：{item.issueZh} {item.practiceTipZh}</p>)}
-    <p className="tiny-note">{attempt.usedHint ? translate('本次为借助提示重练。') : translate('本次未查看答案。')}{translate("分析用时")}{(attempt.latencyMs / 1000).toFixed(1)}{translate("秒。")}{attempt.totalScore === null && translate('可以靠近麦克风重录。')}</p>
+    <h3>{translate("AI练习参考分")}{localize(attempt.totalScore !== null ? ` · ${attempt.totalScore}/100` : ' · 本次发音无法可靠评分')}</h3>
+    <div className="ai-score-parts"><span>{translate("意思表达")}{localize(result.meaningScore)}/40</span><span>{translate("语法")}{localize(result.grammarScore)}/30</span><span>{translate("发音")}{localize(result.pronunciationScore === null ? translate('暂无法判断') : `${result.pronunciationScore}/30`)}</span></div>
+    <p>{localize(result.summaryZh)}</p><p>{translate("语法与表达：")}{localize(result.grammarFeedbackZh)}</p><p>{translate("发音与节奏：")}{localize(result.pronunciation.feedbackZh)}</p>
+    {result.corrections.map((item, i) => <p key={i}>{localize(item.explanation)} <span lang="ja">{item.original} → {item.corrected.jp}</span></p>)}
+    {result.pronunciation.issues.map((item, i) => <p key={i}><span lang="ja">{item.word}（{item.expectedKana}）</span>：{localize(item.issueZh)} {localize(item.practiceTipZh)}</p>)}
+    <p className="tiny-note">{localize(attempt.usedHint ? translate('本次为借助提示重练。') : translate('本次未查看答案。'))}{translate("分析用时")}{(attempt.latencyMs / 1000).toFixed(1)}{translate("秒。")}{localize(attempt.totalScore === null && translate('可以靠近麦克风重录。'))}</p>
     <details><summary>{translate("AI听到的内容")}</summary><p lang="ja">{result.text}</p></details>
   </section>;
 }
@@ -111,27 +116,45 @@ function AISpeaking({ question, initial, speech, notice, furigana, suspended, on
     {settings?.hasApiKey && <p className="tiny-note">{translate("录完自动听音评分。最长30秒。")}</p>}
     <RecordingControls recorder={recorder} speech={speech} centered disabled={suspended || recorder.saving || !settings?.hasApiKey} onStart={start}/>
     {recorder.saving && <p role="status">{translate("正在保存录音……")}</p>}
-    {pending && <div className="row-actions"><p role="status">{translate("AI正在听录音……")}{elapsed}{translate("秒")}</p><Button secondary onClick={() => { controller.current?.abort(); controller.current = null; setPending(false); setError(translate('已停止等待。录音仍保留，可以重试评分。')); }}>{translate("停止等待")}</Button></div>}
-    {error && <div role="alert" className="notice-inline"><p>{error}</p>{!settings ? <Button secondary onClick={() => setSettingsRevision(n => n + 1)}>{translate("重新检查听音设置")}</Button> : recordingId && <Button secondary disabled={suspended || pending || recorder.saving} onClick={() => void assess(recordingId)}><RotateCcw size={16}/>{translate("重试评分")}</Button>}</div>}
+    {pending && <div className="row-actions"><p role="status">{translate("AI正在听录音……")}{localize(elapsed)}{translate("秒")}</p><Button secondary onClick={() => { controller.current?.abort(); controller.current = null; setPending(false); setError(translate('已停止等待。录音仍保留，可以重试评分。')); }}>{translate("停止等待")}</Button></div>}
+    {error && <div role="alert" className="notice-inline"><p>{localize(error)}</p>{!settings ? <Button secondary onClick={() => setSettingsRevision(n => n + 1)}>{translate("重新检查听音设置")}</Button> : recordingId && <Button secondary disabled={suspended || pending || recorder.saving} onClick={() => void assess(recordingId)}><RotateCcw size={16}/>{translate("重试评分")}</Button>}</div>}
     {result && <><PracticeScoreFeedback attempt={result}/>
-      <PracticeReference question={question} attempt={result} speech={speech} furigana={furigana}/>
+      <PracticeReference question={question} attempt={result} speech={speech} furigana={furigana} suspended={suspended || pending || recorder.status !== 'idle'}/>
 
       <Button secondary disabled={suspended || recorder.saving || recorder.status !== 'idle'} onClick={start}>{translate("再练本题")}</Button>
     </>}
   </>;
 }
 
-export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) {
+export function AIPractice({ lessonId, kind: requestedKind, speech, notice, furigana, topic, review = false }: Props) {
   const preferences = usePreferences();
   const t = useTranslation();
-  const pool = useMemo(() => new PracticePrefetch((clientRequestId, signal) => api<PracticeCurrent>('/ai-practice/prefetch', {
-    method: 'POST', signal, body: JSON.stringify({ lessonId, kind, clientRequestId }),
-  })), [lessonId, kind]);
+  const [current, setCurrent] = useState<PracticeCurrent>({ question: null, attempt: null });
+  const kind = review ? current.question?.content.kind ?? requestedKind : requestedKind;
+  const drawKinds = useRef(new Map<string, PracticeKind>());
+  function drawKind(id: string): PracticeKind {
+    if (!review) return requestedKind;
+    const saved = drawKinds.current.get(id); if (saved) return saved;
+    const selected = (['dictation', 'dialogue', 'speaking'] as const)[Math.floor(Math.random() * 3)];
+    drawKinds.current.set(id, selected); return selected;
+  }
+  const pool = useMemo(() => new PracticePrefetch(async (clientRequestId, signal) => {
+    const value = await api<PracticeCurrent>('/ai-practice/prefetch', {
+      method: 'POST', signal, body: JSON.stringify({ lessonId, kind: drawKind(clientRequestId), ...(topic ? { topic } : {}), ...(review ? { review: true } : {}), clientRequestId }),
+    });
+    return value;
+  }, signal => api<PracticeCurrent[]>(`/ai-practice/queued?lessonId=${lessonId}&kind=${requestedKind}${topic ? `&topic=${topic}` : ''}${review ? '&review=true' : ''}`, { signal }), topic || requestedKind === 'vocabulary' ? 1 : 2), [lessonId, requestedKind, topic, review]);
+  const [buffer, setBuffer] = useState(pool.status);
+  useEffect(() => { setBuffer(pool.status); return pool.subscribe(() => setBuffer(pool.status)); }, [pool]);
+  useEffect(() => {
+    const resume = () => { if (current.question && document.visibilityState !== 'hidden') pool.retry(); };
+    window.addEventListener('online', resume); document.addEventListener('visibilitychange', resume);
+    return () => { window.removeEventListener('online', resume); document.removeEventListener('visibilitychange', resume); };
+  }, [pool, current.question?.id]);
   const [marking, setMarking] = useState(false);
   const markingRef = useRef(false);
   const [markedWord, setMarkedWord] = useState<string | null>(null);
   const nextCandidate = useRef<PracticeCurrent | null>(null);
-  const [current, setCurrent] = useState<PracticeCurrent>({ question: null, attempt: null });
   const [loading, setLoading] = useState(true);
   const [pending, setPending] = useState<'generate' | 'answer' | null>(null);
   const [generationRetry, setGenerationRetry] = useState(0);
@@ -169,17 +192,17 @@ export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) 
   useEffect(() => {
     if (!preferences.autoAdvanceOnEnter && advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
   }, [preferences.autoAdvanceOnEnter]);
-  useEffect(() => { if (!pending && current.question && focusAnswer.current) { answerInput.current?.focus(); focusAnswer.current = false; } }, [current.question?.id, pending]);
+  useEffect(() => { if (!pending && current.question && focusAnswer.current) { answerInput.current?.focus({ preventScroll: true }); focusAnswer.current = false; } }, [current.question?.id, pending]);
   useEffect(() => {
     let disposed = false;
     alive.current = true; const controller = new AbortController(); request.current = controller;
     const timeout = setTimeout(() => controller.abort(), 10000);
-    void api<PracticeCurrent>(`/ai-practice/current?lessonId=${lessonId}&kind=${kind}`, { signal: controller.signal }).then(value => {
+    void api<PracticeCurrent>(`/ai-practice/current?lessonId=${lessonId}&kind=${requestedKind}${topic ? `&topic=${topic}` : ''}${review ? '&review=true' : ''}`, { signal: controller.signal }).then(value => {
       if (!disposed && alive.current && !controller.signal.aborted) { setCurrent(value); if (value.attempt?.kind === 'dictation' || value.attempt?.kind === 'vocabulary') setAnswer(value.attempt.answer); if (value.attempt?.kind === 'speaking' && value.attempt.inputMode === 'text') setAnswer(value.attempt.answer ?? value.attempt.result.text); if (value.attempt?.kind === 'dialogue') setPicked(Number(value.attempt.answer)); }
     }).catch(failure => { if (!disposed && alive.current) setError(controller.signal.aborted ? translate('读取练习超时，请重新进入AI练习。') : failure.message); })
       .finally(() => { clearTimeout(timeout); if (request.current === controller) request.current = null; if (!disposed && alive.current) setLoading(false); });
     return () => { disposed = true; alive.current = false; controller.abort(); request.current?.abort(); if (advanceTimer.current) clearTimeout(advanceTimer.current); speech.stop(); };
-  }, [lessonId, kind]);
+  }, [lessonId, requestedKind, topic, review]);
   useEffect(() => { if (!pending) return; const started = Date.now(); setElapsed(0); const timer = setInterval(() => setElapsed(Math.floor((Date.now() - started) / 1000)), 1000); return () => clearInterval(timer); }, [pending]);
   async function run<T>(operation: 'generate' | 'answer', path: string, body: unknown, accept: (value: T) => void, work?: (signal: AbortSignal) => Promise<T>) {
     if (request.current || loading) return;
@@ -188,7 +211,7 @@ export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) 
     try {
       for (let retries = 0; ; retries++) {
         controller.signal.throwIfAborted();
-        timeout = setTimeout(() => { controller.abort(); if (alive.current && request.current === controller) { request.current = null; setPending(null); setGenerationRetry(0); setError(translate('等待超过40秒，请重试。当前题目仍保留。')); } }, 40000);
+        timeout = setTimeout(() => { controller.abort(); if (alive.current && request.current === controller) { request.current = null; setPending(null); setGenerationRetry(0); setError(t('等待超时，请重试。当前题目仍保留。', '出題がタイムアウトしました。現在の問題は保持されています。', 'The request timed out. Retry; your current question is preserved.')); } }, 75000);
         try {
           const value = await (work ? work(controller.signal) : api<T>(path, { method: 'POST', signal: controller.signal, body: JSON.stringify(body) }));
           if (alive.current && !controller.signal.aborted) accept(value);
@@ -213,9 +236,9 @@ export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) 
       const candidate = nextCandidate.current;
       if (!candidate.question) { nextCandidate.current = null; return candidate; }
       const activated = await api<PracticeCurrent>(`/ai-practice/questions/${candidate.question.id}/activate`, {
-        method: 'POST', signal, body: JSON.stringify({ lessonId, kind }),
+        method: 'POST', signal, body: JSON.stringify({ lessonId, kind: candidate.question.content.kind, ...(topic ? { topic } : {}), ...(review ? { review: true } : {}) }),
       });
-      signal.throwIfAborted(); nextCandidate.current = null;
+      signal.throwIfAborted(); drawKinds.current.delete(candidate.question.id); nextCandidate.current = null;
       if (activated.question || activated.completed) return activated;
       // Vocabulary can become mastered while its next question is waiting.
     }
@@ -224,9 +247,9 @@ export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) 
     if (request.current || loading || markingRef.current) return;
     if (advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
     generationId.current ??= crypto.randomUUID();
-    void run<PracticeCurrent>('generate', '/ai-practice/questions', { lessonId, kind, clientRequestId: generationId.current }, value => {
+    void run<PracticeCurrent>('generate', '/ai-practice/questions', { lessonId, kind: drawKind(generationId.current), ...(topic ? { topic } : {}), ...(review ? { review: true } : {}), clientRequestId: generationId.current }, value => {
       focusAnswer.current = true;
-      setCurrent(value); setMarkedWord(null); generationId.current = null; answerId.current = null; setAnswer(''); setPicked(null);
+      setCurrent(value); setMarkedWord(null); if (generationId.current) drawKinds.current.delete(generationId.current); generationId.current = null; answerId.current = null; setAnswer(''); setPicked(null);
     }, current.question ? takeNext : undefined);
   }
   async function submit(value: string, advance = false) {
@@ -257,6 +280,16 @@ export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) 
     finally { if (request.current === controller) request.current = null; markingRef.current = false; if (alive.current) setMarking(false); }
     if (saved && alive.current && !controller.signal.aborted) generate();
   }
+  async function skip() {
+    if (!current.question || topic || review || pending || speakingBusy || markingRef.current || request.current) return;
+    if (advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
+    let saved = false;
+    await run('answer', `/ai-practice/questions/${current.question.id}/skip`, {}, () => {
+      saved = true; window.dispatchEvent(new Event('practice-assessed'));
+      if (current.question?.content.kind === 'vocabulary') { pool.discardWord(current.question.content.wordId); nextCandidate.current = null; }
+    });
+    if (saved && alive.current) generate();
+  }
   function changeAnswer(value: string) {
     if (advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
     setAnswer(value);
@@ -266,43 +299,46 @@ export function AIPractice({ lessonId, kind, speech, notice, furigana }: Props) 
   const listeningAttempt = current.attempt && current.attempt.kind !== 'speaking' ? current.attempt : null;
   const canAdvanceOnEnter = !!current.attempt && current.attempt.questionId === question?.id && current.attempt.inputMode !== 'audio'
     && current.attempt.answer?.trim() === answer.trim() && isPassingAnswer(current.attempt);
-  const answerLabel = kind === 'speaking' ? t('用日语写出你的回答', '日本語で回答を書いてください') : kind === 'vocabulary' ? t('用这个词造一个句子', 'この単語で文を作ってください') : t('你听到的完整日语句子', '聞こえた日本語の文');
-  const spellingForm = question && (<form onSubmit={event => { event.preventDefault(); submit(answer); }}><label className="dictation-label" htmlFor={`dictation-${question.id}`}>{answerLabel}</label><textarea ref={answerInput} aria-label={answerLabel} onCompositionStart={() => { composing.current = true; }} onCompositionEnd={() => { composing.current = false; }} onKeyDown={event => {
+  const practiceName = topic ? kind === 'speaking' ? t('口语-AI练习', '会話-AI練習') : t('听力-AI练习', '聴解-AI練習') : translate(names[kind]);
+  const answerLabel = topic ? kind === 'speaking' ? t('用日语写出这个短语', '日本語で表現を書いてください') : t('写出听到的时间、数字或短语', '聞こえた時刻・数字・表現を書いてください') : kind === 'speaking' ? t('用日语写出你的回答', '日本語で回答を書いてください') : kind === 'vocabulary' ? t('用这个词造一个句子', 'この単語で文を作ってください') : t('你听到的完整日语句子', '聞こえた日本語の文');
+  const spellingForm = question && (<form onSubmit={event => { event.preventDefault(); submit(answer); }}><label className="dictation-label" htmlFor={`dictation-${question.id}`}>{localize(answerLabel)}</label><textarea ref={answerInput} aria-label={answerLabel} onCompositionStart={() => { composing.current = true; }} onCompositionEnd={() => { composing.current = false; }} onKeyDown={event => {
             if (event.key !== 'Enter' || event.shiftKey || event.nativeEvent.isComposing || composing.current || event.keyCode === 229) return;
             event.preventDefault(); if (!event.repeat) {
               if (canAdvanceOnEnter) generate();
               else void submit(answer, preferences.autoAdvanceOnEnter);
             }
-          }} id={`dictation-${question.id}`} lang="ja" rows={3} value={answer} maxLength={2000} onChange={event => changeAnswer(event.target.value)} placeholder={preferences.immersive ? undefined : translate("在这里写出整句话……")} disabled={pending !== null || marking || !!markedWord}/><p className="tiny-note practice-instruction">{t('按回车提交，答对后再按回车下一题；Shift+Enter 换行。', 'Enterで回答し、正解後にもう一度Enterで次の問題へ。Shift+Enterで改行。')}</p><div className="row-actions spelling-actions"><Button disabled={pending !== null || marking || !!markedWord || !answer.trim()} type="submit">{kind === 'dictation' ? translate('检查听写') : t('检查句子', '文を確認')}</Button><label className="toggle-row auto-advance-toggle"><input type="checkbox" role="switch" checked={preferences.autoAdvanceOnEnter} onChange={event => setPreferences({ autoAdvanceOnEnter: event.target.checked })}/><span>{t('回车答对自动下一题', 'Enterで正解したら次の問題へ')}</span></label></div></form>);
+          }} id={`dictation-${question.id}`} lang="ja" rows={3} value={answer} maxLength={2000} onChange={event => changeAnswer(event.target.value)} placeholder={preferences.immersive ? undefined : topic ? answerLabel : translate("在这里写出整句话……")} disabled={pending !== null || marking || !!markedWord}/><p className="tiny-note practice-instruction">{t('按回车提交，答对后再按回车下一题；Shift+Enter 换行。', 'Enterで回答し、正解後にもう一度Enterで次の問題へ。Shift+Enterで改行。')}</p><div className="row-actions spelling-actions"><Button disabled={pending !== null || marking || !!markedWord || !answer.trim()} type="submit" aria-label={kind === 'dictation' ? translate('检查听写') : t('检查句子', '文を確認')} title={kind === 'dictation' ? translate('检查听写') : t('检查句子', '文を確認')}><Check className="immersive-icon" size={20}/><span className="immersion-text">{localize(kind === 'dictation' ? translate('检查听写') : t('检查句子', '文を確認'))}</span></Button><label className="toggle-row auto-advance-toggle" title={t('回车答对自动下一题', 'Enterで正解したら次の問題へ')}><input type="checkbox" role="switch" aria-label={t('回车答对自动下一题', 'Enterで正解したら次の問題へ')} checked={preferences.autoAdvanceOnEnter} onChange={event => setPreferences({ autoAdvanceOnEnter: event.target.checked })}/><span className="immersion-text">{t('回车答对自动下一题', 'Enterで正解したら次の問題へ')}</span></label></div></form>);
   return <div className="ai-practice">
-    <nav className="study-navigation" aria-label={translate("AI练习换题")}><span className="tiny-note">{kind === 'vocabulary' ? t('本课单词 · 仅练未掌握单词', 'この課の単語 · 未習得のみ練習') : translate("无限练习 · 本课70%／上一课20%／上上课10%")}</span><Button aria-label={question ? translate('下一题') : translate('开始练习')} disabled={loading || pending !== null || current.completed || marking} onClick={generate}><span className="immersion-text">{pending === 'generate' ? translate('正在出题……') : question ? translate('下一题') : translate('开始练习')}</span><ArrowRight size={18}/></Button></nav>
+    {!topic && !review && current.question && <div className="row-actions"><Button secondary disabled={loading || pending !== null || speakingBusy || marking} onClick={() => void skip()}>{t('跳过（已掌握）', 'スキップ（習得済み）')}</Button><span className="tiny-note">{t('计为答对并进入下一题，同题只计一次。', '正解として次へ。同じ問題は1回のみ加算。')}</span></div>}
+    <nav className="study-navigation" aria-label={translate("AI练习换题")}><span className="tiny-note">{localize(review ? t('已学知识随机练习', '学習済みの知識をランダムに練習', 'Random practice of learned knowledge') : topic ? t('专项短语题库 · 不使用完整句子', '表現の集中練習') : kind === 'vocabulary' ? t('本课单词 · 仅练未掌握单词', 'この課の単語 · 未習得のみ練習') : t('无限练习 · 仅本单元语法与词汇', '無限練習 · この課の文法と単語のみ', 'Unlimited practice ? This lesson?s grammar and vocabulary only'))}</span><Button aria-label={question ? translate('下一题') : translate('开始练习')} disabled={loading || pending !== null || current.completed || marking} onClick={generate}><span className="immersion-text">{localize(pending === 'generate' ? translate('正在出题……') : question ? translate('下一题') : translate('开始练习'))}</span><ArrowRight size={18}/></Button></nav>
+    {current.question && <div className="practice-buffer tiny-note" role="status"><span>{buffer.count ? t(`已备好 ${buffer.count} 道后续题`, `次の${buffer.count}問の準備ができています`, `${buffer.count} upcoming questions ready`) : buffer.loading ? t('正在准备后续题目…', '次の問題を準備中…', 'Preparing upcoming questions…') : buffer.error ? t('后续题准备遇到问题', '次の問題の準備に失敗しました', 'Could not prepare upcoming questions') : ''}</span>{buffer.error && <button className="text-button" type="button" onClick={() => pool.retry()}>{t('重试准备', '準備を再試行', 'Retry preparation')}</button>}</div>}
     {loading && <p role="status">{translate("正在恢复练习……")}</p>}
-    {pending && <div className="row-actions"><p role="status">{pending === 'generate' ? generationRetry ? `${t('正在自动重试出题', '問題を自動再生成中')} ${generationRetry}/${generationRetryDelays.length}` : translate('AI正在生成新题') : translate('正在检查答案')}…… {elapsed}{translate("秒")}</p>{pending === 'generate' && <Button secondary onClick={() => { request.current?.abort(); request.current = null; pool.pause(); setPending(null); setGenerationRetry(0); }}>{t('停止出题', '生成を停止')}</Button>}</div>}
+    <div className="practice-request-status">{pending && <div className="row-actions"><p role="status">{localize(pending === 'generate' ? generationRetry ? `${t('正在自动重试出题', '問題を自動再生成中')} ${generationRetry}/${generationRetryDelays.length}` : translate('AI正在生成新题') : translate('正在检查答案'))}…… {localize(elapsed)}{translate("秒")}</p>{pending === 'generate' && <Button secondary onClick={() => { request.current?.abort(); request.current = null; pool.pause(); setPending(null); setGenerationRetry(0); }}>{t('停止出题', '生成を停止')}</Button>}</div>}</div>
 
-    {error && <div className="notice-inline" role="alert"><p>{error}</p>{generationId.current && <Button secondary disabled={loading || pending !== null} onClick={generate}><RotateCcw size={16}/>{translate("重试出题")}</Button>}</div>}
-    <section className="study-card" aria-label={translate(names[kind])}>
-      <div className="card-label">{kind === 'speaking' ? <Mic size={18}/> : <Headphones size={18}/>} {translate(names[kind])}</div>
+    {error && <div className="notice-inline" role="alert"><p>{localize(error)}</p>{generationId.current && <Button secondary disabled={loading || pending !== null} onClick={generate}><RotateCcw size={16}/>{translate("重试出题")}</Button>}</div>}
+    <section className="study-card" data-outcome={current.attempt?.questionId === question?.id ? practiceOutcome(current.attempt) : undefined} aria-label={practiceName}>
+      <div className="card-label">{kind === 'speaking' ? <Mic size={18}/> : <Headphones size={18}/>} {localize(practiceName)}</div>
       {current.completed && <p role="status">{t('本单元单词已全部掌握！可在单词表中取消勾选，重新练习。', 'この課の単語をすべて習得しました。単語表でチェックを外すと再練習できます。')}</p>}
-      {!question && !current.completed && <><h2>{translate("每次练一道新题")}</h2><p>{translate("点击上方「开始练习」。AI按课程语法随机出题，进度保存在服务器。")}</p></>}
+      {!question && !current.completed && <><h2>{translate("每次练一道新题")}</h2><p>{localize(review ? t('点击开始，随机练习已学知识。题型包括听写、对话选择和口语表达。', '開始すると学習済みの内容から聞き取り・会話問題・表現を出題します。', 'Start to mix dictation, dialogue questions and speaking from what you have learned.') : topic ? t('点击上方「开始练习」，从专项题库随机抽题。进度单独保存。', '開始すると表現を出題します。進捗は個別に保存します。') : translate("点击上方「开始练习」。AI按课程语法随机出题，进度保存在服务器。"))}</p></>}
       {question && <>
-        {content?.kind === 'speaking' ? <><h2>{translate("用日语表达：")}{content.goalZh}</h2>
-          <label>{t('回答模式', '回答方法')}<select aria-label={t('回答模式', '回答方法')} value={preferences.speakingMode} disabled={pending !== null || speakingBusy} onChange={event => { speech.stop(); setPreferences({ speakingMode: event.target.value as 'text' | 'audio' }); }}><option value="audio">{t('录音', '録音')}</option><option value="text">{t('拼写', '入力')}</option></select></label>
+        {content?.kind === 'speaking' ? <><h2>{translate("用日语表达：")}{localize(content.goalZh)}</h2>
+          <label><span className="immersion-text">{t('回答模式', '回答方法')}</span><select aria-label={t('回答模式', '回答方法')} value={preferences.speakingMode} disabled={pending !== null || speakingBusy} onChange={event => { speech.stop(); setPreferences({ speakingMode: event.target.value as 'text' | 'audio' }); }}><option value="audio">{t('录音', '録音')}</option><option value="text">{t('拼写', '入力')}</option></select></label>
           {preferences.speakingMode === 'audio' ? <AISpeaking key={question.id} question={question} initial={current.attempt} speech={speech} notice={notice} furigana={furigana} suspended={pending === 'generate'} onBusy={setSpeakingBusy} onResult={attempt => (window.dispatchEvent(new Event('practice-assessed')), setCurrent(old => ({ ...old, attempt })))}/> : <>
-            <p className="tiny-note">{t('按中文目标写日语，意思40分、语法30分。超过63分计入单元进度（换算后超过90分）。', '中国語の課題を日本語で表現してください。意味40点・文法30点。63点超で進捗に加算します（換算後90点超）。')}</p>
-            {spellingForm}
-            {current.attempt?.kind === 'speaking' && <><PracticeScoreFeedback attempt={current.attempt}/><PracticeReference question={question} attempt={current.attempt} speech={speech} furigana={furigana}/></>}
+            <p className="tiny-note">{localize(review ? t('用日语表达目标含义。意思40分、语法30分，超过63分为通过；综合练习独立保存。', '日本語で意味を表現。意味40点・文法30点、63点超で合格。総合練習は個別に保存。', 'Express the meaning in Japanese: meaning 40 points, grammar 30 points; above 63 passes. Comprehensive practice is saved separately.') : topic ? t('只需表达目标短语，不用造句。不计入单元进度。', '短い表現で答えてください。課の進捗には含みません。') : t('按中文目标写日语，意思40分、语法30分。超过63分计入单元进度（换算后超过90分）。', '中国語の課題を日本語で表現してください。意味40点・文法30点。63点超で進捗に加算します（換算後90点超）。'))}</p>
+            {localize(spellingForm)}
+            {current.attempt?.kind === 'speaking' && <><PracticeScoreFeedback attempt={current.attempt}/><PracticeReference question={question} attempt={current.attempt} speech={speech} furigana={furigana} suspended={pending !== null}/></>}
           </>}
         </> : content && <>
-          {content.kind === 'vocabulary' ? <div className="vocabulary-practice-title"><h2><VocabularyWord key={question.id} word={content.word} wordId={content.wordId} lessonId={lessonId} speech={speech}/></h2><label className="toggle-row"><input type="checkbox" role="switch" aria-label={t('已掌握', '習得済み')} checked={markedWord === content.wordId} disabled={pending !== null || marking || speakingBusy || markedWord === content.wordId} onChange={() => void markMastered()}/><span>{t('已掌握', '習得済み')}</span></label></div> : <h2 className="practice-instruction">{content.kind === 'dictation' ? translate('完整写出你听到的句子') : translate('听对话，选出正确答案')}</h2>}
-          {content.kind === 'vocabulary' && <p className="vocabulary-question-detail"><span lang="ja">{content.reading}</span>{content.partOfSpeech && <> · {content.partOfSpeech}</>}</p>}
-          {content.kind !== 'vocabulary' && <AudioControls speech={speech} sourceId={sourceId} disabled={pending !== null || marking || !!markedWord} onPlay={() => speech.say(content.kind === 'dictation' ? content.sentence.jp : content.lines.map(line => line.jp), 'ja-JP', 1, sourceId, content.kind === 'dialogue' ? content.lines.map((_, i) => i % 2 ? 'dialogue-b' : 'dialogue-a') : undefined)}/>}
-          {(content.kind === 'dictation' || content.kind === 'vocabulary') && <label>{t('回答模式', '回答方法')}<select aria-label={t('回答模式', '回答方法')} value={content.kind === 'vocabulary' ? preferences.vocabularyMode : preferences.dictationMode} disabled={pending !== null || marking || speakingBusy} onChange={event => setPreferences({ [content.kind === 'vocabulary' ? 'vocabularyMode' : 'dictationMode']: event.target.value as 'text' | 'audio' })}><option value="text">{t('拼写', '入力')}</option><option value="audio">{t('录音', '録音')}</option></select></label>}
+          {content.kind === 'vocabulary' ? <div className="vocabulary-practice-title"><h2><VocabularyWord key={question.id} word={content.word} wordId={content.wordId} lessonId={lessonId} speech={speech}/></h2><label className="toggle-row"><input type="checkbox" role="switch" aria-label={t('已掌握', '習得済み')} checked={markedWord === content.wordId} disabled={pending !== null || marking || speakingBusy || markedWord === content.wordId} onChange={() => void markMastered()}/><span>{t('已掌握', '習得済み')}</span></label></div> : <h2 className="practice-instruction">{localize(content.kind === 'dictation' ? topic ? t('写出你听到的短语', '聞こえた表現を書いてください') : translate('完整写出你听到的句子') : translate('听对话，选出正确答案'))}</h2>}
+          {content.kind === 'vocabulary' && <p className="vocabulary-question-detail"><span lang="ja">{content.reading}</span>{content.partOfSpeech && <> · {localize(content.partOfSpeech)}</>}</p>}
+          {content.kind !== 'vocabulary' && <AudioControls speech={speech} sourceId={sourceId} disabled={pending !== null || marking || !!markedWord} onPlay={() => speech.say(content.kind === 'dictation' ? content.sentence : content.lines, 'ja-JP', 1, sourceId, content.kind === 'dialogue' ? content.lines.map((_, i) => i % 2 ? 'dialogue-b' : 'dialogue-a') : undefined)}/>}
+          {(content.kind === 'dictation' || content.kind === 'vocabulary') && <label><span className="immersion-text">{t('回答模式', '回答方法')}</span><select aria-label={t('回答模式', '回答方法')} value={content.kind === 'vocabulary' ? preferences.vocabularyMode : preferences.dictationMode} disabled={pending !== null || marking || speakingBusy} onChange={event => setPreferences({ [content.kind === 'vocabulary' ? 'vocabularyMode' : 'dictationMode']: event.target.value as 'text' | 'audio' })}><option value="text">{t('拼写', '入力')}</option><option value="audio">{t('录音', '録音')}</option></select></label>}
           {(content.kind === 'dictation' || content.kind === 'vocabulary') ? (content.kind === 'vocabulary' ? preferences.vocabularyMode : preferences.dictationMode) === 'audio' ? <AudioAnswer key={question.id} questionId={question.id} speech={speech} notice={notice} suspended={pending !== null || marking || !!markedWord} onBusy={setSpeakingBusy} onResult={attempt => setCurrent(old => ({ ...old, attempt }))}/> : spellingForm : <>
-            <h3>{content.questionZh}</h3><div className="answer-choices">{content.options.map((option, i) => <button key={i} disabled={pending !== null || marking || !!markedWord} aria-pressed={picked === i} className={listeningAttempt && picked === i ? listeningAttempt.correct ? 'correct' : 'try-again' : ''} onClick={() => { setPicked(i); submit(String(i)); }}><span>{String.fromCharCode(65 + i)}</span>{option}</button>)}</div>
+            <h3>{localize(content.questionZh)}</h3><div className="answer-choices">{content.options.map((option, i) => <button key={i} disabled={pending !== null || marking || !!markedWord} aria-pressed={picked === i} className={listeningAttempt && picked === i ? listeningAttempt.correct ? 'correct' : 'try-again' : ''} onClick={() => { setPicked(i); submit(String(i)); }}><span>{String.fromCharCode(65 + i)}</span>{localize(option)}</button>)}</div>
           </>}
-          {listeningAttempt && <div className={`answer-feedback ${listeningAttempt.correct ? 'success' : ''}`} role="status"><strong>{listeningAttempt.correct ? translate('答对了。') : translate('再练一下。')}</strong> {listeningAttempt.feedbackZh}{listeningAttempt.usedHint && <p className="tiny-note">{translate("本次为查看答案后的重练。")}</p>}</div>}
+          {listeningAttempt && <div className={`answer-feedback ${listeningAttempt.correct ? 'success' : ''}`} role="status"><strong>{localize(listeningAttempt.correct ? translate('答对了。') : translate('再练一下。'))}</strong> {localize(listeningAttempt.feedbackZh)}{listeningAttempt.usedHint && <p className="tiny-note">{translate("本次为查看答案后的重练。")}</p>}</div>}
           {listeningAttempt && <PracticeFocus question={question}/>}
-          {listeningAttempt && (content.kind === 'vocabulary' ? listeningAttempt.reference && <Sentence example={listeningAttempt.reference} speech={speech} furigana={furigana}/> : content.kind === 'dictation' ? <div className="listening-transcript"><Sentence example={content.sentence} speech={speech} furigana={furigana}/></div> : <details key={listeningAttempt.id} open onToggle={event => { if (!event.currentTarget.open) speech.stop(); }}><summary>{translate("查看对话原文与中文")}</summary>{content.lines.map((line, i) => <div className="dialogue-line" key={i}><span aria-label={i % 2 ? 'B（女）' : 'A（男）'}>{i % 2 ? 'B（女）' : 'A（男）'}</span><Sentence example={line} speech={speech} furigana={furigana} speaker={i % 2 ? 'dialogue-b' : 'dialogue-a'}/></div>)}</details>)}
+          {listeningAttempt && (content.kind === 'vocabulary' ? listeningAttempt.reference && <Sentence example={listeningAttempt.reference} speech={speech} furigana={furigana}/> : content.kind === 'dictation' ? <div className="listening-transcript"><Sentence example={content.sentence} speech={speech} furigana={furigana}/></div> : <details key={listeningAttempt.id} open onToggle={event => { if (!event.currentTarget.open) speech.stop(); }}><summary>{translate("查看对话原文与中文")}</summary>{content.lines.map((line, i) => <div className="dialogue-line" key={i}><span aria-label={localizedAttribute(i % 2 ? 'B（女）' : 'A（男）')}>{localize(i % 2 ? 'B（女）' : 'A（男）')}</span><Sentence example={line} speech={speech} furigana={furigana} speaker={i % 2 ? 'dialogue-b' : 'dialogue-a'}/></div>)}</details>)}
         </>}
       </>}
     </section>

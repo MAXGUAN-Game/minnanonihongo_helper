@@ -1,8 +1,10 @@
+import { translate, localize } from './i18n';
 import { useEffect, useId, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Volume2, X } from 'lucide-react';
 import type { VocabularyEntry } from '../shared/vocabulary';
 import type { VocabularyGrammar } from '../shared/vocabulary-details';
+import type { VoiceSettings } from '../shared/voice';
 import type { Speech } from './speech';
 import { api } from './api';
 import { useTranslation } from './preferences';
@@ -43,6 +45,13 @@ export function VocabularyWord({ word, lessonId, wordId, speech, pronunciation =
     audioRequest.current?.abort(); const controller = new AbortController(); audioRequest.current = controller; setAudioError(''); speech.stop();
     const epoch = speech.getEpoch();
     try {
+      const settings = await api<VoiceSettings>('/voice/settings', { signal: controller.signal });
+      if (controller.signal.aborted || speech.getEpoch() !== epoch) return;
+      if (settings.provider === 'haruka' || settings.provider === 'system') {
+        const value = entry || await api<VocabularyEntry>(`/lessons/${lessonId}/vocabulary/${encodeURIComponent(wordId)}`, { signal: controller.signal });
+        if (controller.signal.aborted || speech.getEpoch() !== epoch) return;
+        speech.setPlaybackRate(rate); speech.say(value.reading || value.word, 'ja-JP', 1, sourceId); return;
+      }
       if (!audioUrl.current) {
         const response = await fetch(`/api/lessons/${lessonId}/vocabulary/${encodeURIComponent(wordId)}/audio`, { signal: controller.signal });
         if (!response.ok) { const body = await response.json(); if (response.status === 401) window.dispatchEvent(new Event('auth-required')); throw new Error(body.error || t('发音暂不可用', '音声を利用できません')); }
@@ -61,21 +70,21 @@ export function VocabularyWord({ word, lessonId, wordId, speech, pronunciation =
     finally { if (!controller.signal.aborted) setAnalyzing(false); }
   }
   function systemVoice() { speech.stop(); const utterance = new SpeechSynthesisUtterance(entry?.reading || word); utterance.lang = 'ja-JP'; window.speechSynthesis.speak(utterance); }
-  const audioFailure = audioError && <div className="word-audio-error" role="alert">{audioError} <button type="button" className="text-button" onClick={systemVoice}>{t('使用系统发音', 'システム音声を使う')}</button></div>;
+  const audioFailure = audioError && <div className="word-audio-error" role="alert">{localize(audioError)} <button type="button" className="text-button" onClick={systemVoice}>{t('使用系统发音', 'システム音声を使う')}</button></div>;
   return <span className="vocabulary-word"><button ref={trigger} type="button" lang="ja" className="word-trigger" aria-expanded={open} aria-controls={open ? id : undefined} onClick={() => { if (open) close(); else { setAnalyzing(false); window.dispatchEvent(new CustomEvent(openEvent, { detail: id })); setOpen(true); } }}>{word}</button>
     {pronunciation && <button type="button" className="word-speaker" aria-label={`${word} · ${t('发音', '発音')}`} onClick={() => void pronounce()}><Volume2 size={19}/></button>}
-    {!open && audioFailure}
+    {localize(!open && audioFailure)}
     {open && createPortal(<div ref={panel} role="dialog" aria-labelledby={`${id}-title`} id={id} className="word-popover" style={position}>
       <button type="button" className="word-close" aria-label={t('关闭详情', '詳細を閉じる')} onClick={close}><X size={20}/></button>
       <h2 id={`${id}-title`} lang="ja">{word}</h2>
       {!entry && !error && <p role="status">{t('正在读取详情……', '詳細を読み込んでいます…')}</p>}
       {entry && <><p lang="ja">{entry.reading} <span className="word-romaji">{entry.detail?.romaji}</span></p>
         <div className="word-pronunciation"><button type="button" onClick={() => void pronounce()}><Volume2 size={16}/> {t('发音', '発音')}</button><button type="button" onClick={() => void pronounce(.75)}><Volume2 size={16}/> {t('慢速', 'ゆっくり')}</button></div>
-        <p><span className="pill">{entry.partOfSpeech}</span> {entry.detail?.attributes.map(value => <span className="pill" key={value}>{value}</span>)} {entry.meaning}</p>
-        {entry.detail ? <><p>{entry.detail.explanation}</p><section className="word-example"><h3>{t('单词例句', '例文')}</h3><p className="reading" lang="ja">{entry.detail.example.kana}</p><p className="japanese" lang="ja">{entry.detail.example.jp}</p><p className="word-romaji">{entry.detail.example.romaji}</p><p>{entry.detail.example.zh}</p></section>
-          <button type="button" className="text-button" disabled={analyzing} onClick={() => void analyze()}>{analyzing ? t('正在分析语法……', '文法を分析しています…') : t('语法', '文法')}</button>
-          {grammar && <section aria-label={t('例句语法', '例文の文法')}><p>{grammar.structure}</p>{grammar.points.map((point, i) => <p key={i}><strong lang="ja">{point.expression}</strong>：{point.explanation}</p>)}</section>}</> : <p>{t('此词详情暂不可用。', 'この単語の詳細は準備中です。')}</p>}
-      </>}{error && <p role="alert">{error}</p>}{audioFailure}
+        <p><span className="pill">{localize(entry.partOfSpeech)}</span> {entry.detail?.attributes.map(value => <span className="pill" key={value}>{localize(value)}</span>)} {localize(entry.meaning)}</p>
+        {entry.detail ? <><p>{localize(entry.detail.explanation)}</p><section className="word-example"><h3>{t('单词例句', '例文')}</h3><p className="reading" lang="ja">{entry.detail.example.kana}</p><p className="japanese" lang="ja">{entry.detail.example.jp}</p><p className="word-romaji">{entry.detail.example.romaji}</p><p>{localize(entry.detail.example.zh)}</p></section>
+          <button type="button" className="text-button" disabled={analyzing} onClick={() => void analyze()}>{localize(analyzing ? t('正在分析语法……', '文法を分析しています…') : t('语法', '文法'))}</button>
+          {grammar && <section aria-label={t('例句语法', '例文の文法')}><p>{localize(grammar.structure)}</p>{grammar.points.map((point, i) => <p key={i}><strong lang="ja">{point.expression}</strong>：{localize(point.explanation)}</p>)}</section>}</> : <p>{t('此词详情暂不可用。', 'この単語の詳細は準備中です。')}</p>}
+      </>}{error && <p role="alert">{localize(error)}</p>}{localize(audioFailure)}
     </div>, document.body)}
   </span>;
 }

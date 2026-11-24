@@ -1,0 +1,18 @@
+{
+  "单词": { "ja": "単語", "en": "Vocabulary" },
+  "专项练习": { "ja": "集中練習", "en": "Focused practice" },
+  "时分": { "ja": "時刻", "en": "Time" },
+  "年月日": { "ja": "年月日", "en": "Dates" },
+  "个数": { "ja": "個数", "en": "Counts" },
+  "数字": { "ja": "数字", "en": "Numbers" },
+  "价格": { "ja": "値段", "en": "Prices" },
+  "黑铁": { "ja": "アイアン", "en": "Iron" },
+  "棱彩": { "ja": "プリズマ", "en": "Prismatic" },
+  "一步一课，": { "ja": "一歩ずつ、", "en": "One lesson at a time, " },
+  "走到能用。": { "ja": "使える日本語へ。", "en": "toward practical Japanese." },
+  "平均 ⟪0⟫ 题": { "ja": "平均 ⟪0⟫ 問", "en": "Average: ⟪0⟫" },
+  "从黑铁到棱彩，五级小段位逐步晋升。所有单元都可以点击开始。": { "ja": "アイアンからプリズマへ、5段階ずつ昇格。どの課からでも始められます。", "en": "Advance from Iron to Prismatic. Each rank below Prismatic has five divisions. Start any lesson." },
+  "按中文目标写日语，意思40分、语法30分。超过63分计入单元进度（换算后超过90分）。": { "ja": "課題を日本語で表現してください。意味40点・文法30点。63点超で進捗に加算します（換算後90点超）。", "en": "Write the prompt in Japanese. Meaning: 40 points; grammar: 30 points. Scores above 63 count toward progress (over 90% when normalized)." },
+  "查看对话原文与中文": { "ja": "会話の原文と訳を見る", "en": "Show the dialogue and translation" },
+  "需要帮助？看原文与中文": { "ja": "ヒント：原文と訳を見る", "en": "Need help? Show the original and translation" }
+}

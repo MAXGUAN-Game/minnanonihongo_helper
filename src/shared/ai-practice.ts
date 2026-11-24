@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { audioAssessmentResultSchema } from './audio-assessment';
+import { specialTopicSchema, validPracticeScope } from './special-practice';
 
 const text = z.string().trim().min(1).max(1000);
 const example = z.object({ jp: text, kana: text, zh: text }).strict();
@@ -15,11 +16,11 @@ export const practiceContentSchema = z.discriminatedUnion('kind', [
 ]);
 export type PracticeContent = z.infer<typeof practiceContentSchema>;
 export const practiceQuestionSchema = z.object({
-  id: z.uuid(), lessonId: z.number().int().min(1).max(50), grammarSourceLessonId: z.number().int().min(1).max(50),
-  grammarId: text, grammarTitle: text, content: practiceContentSchema,
+  id: z.uuid(), lessonId: z.number().int().min(0).max(50), grammarSourceLessonId: z.number().int().min(0).max(50), topic: specialTopicSchema.optional(), review: z.literal(true).optional(),
+  scopeVersion: z.literal(2).optional(), grammarId: text, grammarTitle: text, content: practiceContentSchema,
   fingerprints: z.array(z.string().regex(/^[a-f0-9]{64}$/)).max(3),
   model: text, createdAt: z.iso.datetime({ offset: true }),
-}).strict();
+}).strict().refine(value => validPracticeScope({ ...value, kind: value.content.kind }) && (value.topic ? value.grammarSourceLessonId === 0 : value.grammarSourceLessonId >= 1));
 export type PracticeQuestion = z.infer<typeof practiceQuestionSchema>;
 export const practiceScoreResultSchema = audioAssessmentResultSchema.extend({
   meaningScore: z.number().int().min(0).max(40), grammarScore: z.number().int().min(0).max(30),
@@ -30,15 +31,15 @@ export type PracticeScoreResult = z.infer<typeof practiceScoreResultSchema>;
 export const practiceTextScoreSchema = audioAssessmentResultSchema.omit({ text: true, pronunciation: true }).extend({
   meaningScore: z.number().int().min(0).max(40), grammarScore: z.number().int().min(0).max(30), targetGrammarUsed: z.boolean(),
 }).strict().refine(value => value.targetGrammarUsed || value.grammarScore <= 15, '未使用目标语法时语法分最多15分');
-const attemptBase = { id: z.uuid(), questionId: z.uuid(), lessonId: z.number().int().min(1).max(50),
+const attemptBase = { id: z.uuid(), questionId: z.uuid(), lessonId: z.number().int().min(0).max(50), topic: specialTopicSchema.optional(), review: z.literal(true).optional(),
   createdAt: z.iso.datetime({ offset: true }), usedHint: z.boolean(), latencyMs: z.number().int().nonnegative(), inputMode: z.enum(['text', 'audio']).optional(), audioHash: z.string().regex(/^[a-f0-9]{64}$/).optional() };
 export const practiceAttemptSchema = z.discriminatedUnion('kind', [
   z.object({ ...attemptBase, kind: z.enum(['dictation', 'dialogue', 'vocabulary']), reference: example.optional(), answer: z.string().max(2000), correct: z.boolean(), feedbackZh: text }).strict(),
   z.object({ ...attemptBase, kind: z.literal('speaking'), answer: z.string().trim().min(1).max(2000).optional(), recordingId: z.uuid().optional(), audioHash: z.string().regex(/^[a-f0-9]{64}$/).optional(), result: practiceScoreResultSchema,
     totalScore: z.number().int().min(0).max(100).nullable() }).strict().refine(value => value.totalScore === (value.result.pronunciationScore === null ? null : value.result.meaningScore + value.result.grammarScore + value.result.pronunciationScore))
     .refine(value => value.inputMode === 'text' ? !!value.answer && value.result.text === value.answer && value.result.pronunciationScore === null && !value.audioHash && !value.recordingId : value.answer === undefined),
-]);
+]).refine(validPracticeScope);
 export type PracticeAttempt = z.infer<typeof practiceAttemptSchema>;
-export const practicePositionSchema = z.object({ lessonId: z.number().int().min(1).max(50), kind: practiceKindSchema, questionId: z.uuid() }).strict();
+export const practicePositionSchema = z.object({ lessonId: z.number().int().min(0).max(50), topic: specialTopicSchema.optional(), review: z.literal(true).optional(), kind: practiceKindSchema, questionId: z.uuid() }).strict().refine(validPracticeScope);
 export type PracticePosition = z.infer<typeof practicePositionSchema>;
 export type PracticeCurrent = { question: PracticeQuestion | null; attempt: PracticeAttempt | null; completed?: boolean };

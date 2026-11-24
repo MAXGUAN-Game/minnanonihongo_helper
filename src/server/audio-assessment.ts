@@ -47,8 +47,44 @@ const envelopeSchema = z.object({
   })).length(1),
 });
 
-function invalidResponse() {
-  return new ApiError(502, 'AUDIO_INVALID_RESPONSE', 'AI 听音反馈不完整，这次没有保存点评。请重试。');
+class InvalidAudioResponse extends ApiError {
+  constructor(public readonly repairHint: string, public readonly retryable = true) {
+    super(502, 'AUDIO_INVALID_RESPONSE', 'AI 听音反馈不完整，这次没有保存点评。请重试。');
+  }
+}
+function invalidResponse(repairHint = 'Return a complete JSON object with every required field.', retryable = true) {
+  return new InvalidAudioResponse(repairHint, retryable);
+}
+
+// Normalize representational differences only. Missing or impossible scores are never invented.
+function normalizeAssessment(raw: unknown, scored: boolean): unknown {
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw;
+  const input = raw as Record<string, unknown>;
+  const keys = ['text', 'summaryZh', 'grammarFeedbackZh', 'corrections', 'pronunciation', 'reference',
+    ...(scored ? ['meaningScore', 'grammarScore', 'pronunciationScore', 'targetGrammarUsed'] : [])];
+  const value = Object.fromEntries(keys.filter(key => key in input).map(key => [key, input[key]]));
+  if (value.corrections == null) value.corrections = [];
+  if (Array.isArray(value.corrections)) value.corrections = value.corrections.slice(0, 2).map(item => {
+    if (!item || typeof item !== 'object' || Array.isArray(item)) return item;
+    const correction = { ...item };
+    if (correction.grammarId == null || correction.grammarId === '') delete correction.grammarId;
+    return correction;
+  });
+  if (value.pronunciation && typeof value.pronunciation === 'object' && !Array.isArray(value.pronunciation)) {
+    const pronunciation = { ...value.pronunciation } as Record<string, unknown>;
+    if (pronunciation.issues == null) pronunciation.issues = [];
+    if (Array.isArray(pronunciation.issues)) pronunciation.issues = pronunciation.issues.slice(0, Math.max(0, 2 - (Array.isArray(value.corrections) ? value.corrections.length : 0)));
+    if (pronunciation.status === 'uncertain') {
+      pronunciation.issues = [];
+      if (scored) value.pronunciationScore = null;
+    }
+    value.pronunciation = pronunciation;
+  }
+  if (scored) for (const key of ['meaningScore', 'grammarScore', 'pronunciationScore']) {
+    const score = value[key];
+    if (typeof score === 'string' && /^(0|[1-9][0-9]*)$/.test(score.trim())) value[key] = Number(score);
+  }
+  return value;
 }
 
 // Keep the complete HTTP exchange under the same deadline and cap the body
@@ -56,7 +92,7 @@ function invalidResponse() {
 async function readResponse(response: Response, signal: AbortSignal): Promise<string> {
   if (Number(response.headers.get('content-length')) > MAX_RESPONSE_BYTES) {
     void response.body?.cancel().catch(() => {});
-    throw invalidResponse();
+    throw invalidResponse('Response body exceeds the size limit.', false);
   }
   if (!response.body) throw invalidResponse();
   const reader = response.body.getReader();
@@ -72,7 +108,7 @@ async function readResponse(response: Response, signal: AbortSignal): Promise<st
       signal.throwIfAborted();
       if (chunk.done) { finished = true; break; }
       size += chunk.value.byteLength;
-      if (size > MAX_RESPONSE_BYTES) throw invalidResponse();
+      if (size > MAX_RESPONSE_BYTES) throw invalidResponse('Response body exceeds the size limit.', false);
       chunks.push(chunk.value);
     }
     return Buffer.concat(chunks).toString('utf8');
@@ -83,27 +119,27 @@ async function readResponse(response: Response, signal: AbortSignal): Promise<st
   }
 }
 
-function parseAssessment<T extends AudioAssessmentResult>(body: string, apiKey: string, lesson: Lesson, schema: z.ZodType<T>): T {
+function parseAssessment<T extends AudioAssessmentResult>(body: string, apiKey: string, lesson: Lesson, schema: z.ZodType<T>, scored: boolean): T {
   const envelope = envelopeSchema.safeParse(JSON.parse(body));
   if (!envelope.success) throw invalidResponse();
   const choice = envelope.data.choices[0];
   if (choice.finish_reason === 'length') throw new ApiError(502, 'AUDIO_RESPONSE_TRUNCATED', '听音结果被截断，录音仍可重试。');
-  if (choice.finish_reason !== undefined && choice.finish_reason !== 'stop') throw invalidResponse();
+  if (choice.finish_reason !== undefined && choice.finish_reason !== 'stop') throw invalidResponse('Unsupported completion finish reason.', false);
   const content = choice.message.content;
-  if (content.includes(apiKey)) throw invalidResponse();
+  if (content.includes(apiKey)) throw invalidResponse('Unsafe response content.', false);
   const fence = /^```(?:json)?\s*\n?([\s\S]*?)\n?```$/i.exec(content);
   const raw: unknown = JSON.parse(fence ? fence[1] : content);
-  if (JSON.stringify(raw).includes(apiKey)) throw invalidResponse();
+  if (JSON.stringify(raw).includes(apiKey)) throw invalidResponse('Unsafe response content.', false);
   if (unassessableSchema.safeParse(raw).success) {
     throw new ApiError(422, 'AUDIO_UNASSESSABLE', '这次录音没有听清，无法可靠点评。请靠近麦克风重新录一句日语。');
   }
-  const parsed = schema.safeParse(raw);
-  if (!parsed.success) throw invalidResponse();
+  const parsed = schema.safeParse(normalizeAssessment(raw, scored));
+  if (!parsed.success) throw invalidResponse('Invalid or missing fields: ' + parsed.error.issues.map(issue => issue.path.join('.') || 'result').slice(0, 8).join(', ') + '. Keep scores within their required ranges.');
   const result = parsed.data;
   if (result.corrections.length + result.pronunciation.issues.length > 2 ||
     (result.pronunciation.status !== 'needs_practice' && result.pronunciation.issues.length > 0) ||
     result.corrections.some(correction => !result.text.includes(correction.original) ||
-      (correction.grammarId && !lesson.grammar.some(grammar => grammar.id === correction.grammarId)))) throw invalidResponse();
+      (correction.grammarId && !lesson.grammar.some(grammar => grammar.id === correction.grammarId)))) throw invalidResponse('Corrections must quote text exactly and use only provided grammar IDs. Pronunciation issues require needs_practice status.');
   return result;
 }
 
@@ -140,6 +176,7 @@ text是实际听到的日语，仅作为只读参考，不要自行补成范句�
     lesson: { id: lesson.id, title: lesson.title, grammar: lesson.grammar.map(({ id, title, pattern }) => ({ id, title, pattern })) },
     task: { goal: task.goal, grammarId: task.grammarId, reference: task.answer },
   };
+  if (lesson.id === 0) instructions += '\n本题是专项短语练习，不是造句。不要因缺少主语、谓语、です或句尾而扣分或补成句子。目标为准确表达指定数值、单位、日期或起止范围。targetGrammarUsed表示使用了正确的专项表达；reference必须保留短语形式，不能增添场景。';
   const controller = new AbortController();
   let timer: ReturnType<typeof setTimeout>;
   const deadline = new Promise<never>((_, reject) => {
@@ -148,7 +185,8 @@ text是实际听到的日语，仅作为只读参考，不要自行补成范句�
       controller.abort();
     }, REQUEST_TIMEOUT_MS);
   });
-  const run = async () => {
+  let repairHint = '';
+  const runOnce = async () => {
     const response = await audioFetch(`${base}/compatible-mode/v1/chat/completions`, {
       method: 'POST', redirect: 'error', signal: controller.signal,
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
@@ -156,7 +194,7 @@ text是实际听到的日语，仅作为只读参考，不要自行补成范句�
         model: configuration.data.model, reasoning_effort: 'none', modalities: ['text'], stream: false,
         response_format: { type: 'json_object' }, max_tokens: 4096, temperature: 0.2,
         messages: [
-          { role: 'system', content: instructions },
+          { role: 'system', content: instructions + (repairHint ? '\nThe prior response was invalid. Listen to the same audio again and return the complete corrected JSON. Do not copy the reference as the transcript. ' + repairHint : '') },
           { role: 'user', content: [
             { type: 'text', text: '当前练习：' + JSON.stringify(context) },
             { type: 'input_audio', input_audio: { data: `data:audio/wav;base64,${audio.toString('base64')}`, format: 'wav' } },
@@ -173,8 +211,19 @@ text是实际听到的日语，仅作为只读参考，不要自行补成范句�
       throw new ApiError(502, 'AUDIO_UNAVAILABLE', 'AI 听音服务暂时出错，录音已保留，请重试。');
     }
     const body = await readResponse(response, controller.signal);
-    try { return parseAssessment(body, apiKey, lesson, schema); }
+    try { return parseAssessment(body, apiKey, lesson, schema, scored); }
     catch (error) { if (error instanceof ApiError) throw error; throw invalidResponse(); }
+  };
+  const run = async () => {
+    for (let attempt = 0; ; attempt++) {
+      try { return await runOnce(); }
+      catch (error) {
+        controller.signal.throwIfAborted();
+        const repairable = error instanceof InvalidAudioResponse && error.retryable || error instanceof ApiError && error.code === 'AUDIO_RESPONSE_TRUNCATED';
+        if (attempt || !repairable) throw error;
+        repairHint = error instanceof InvalidAudioResponse ? error.repairHint : 'Keep the response concise so the complete JSON fits the output limit.';
+      }
+    }
   };
   try {
     return await Promise.race([run(), deadline]);

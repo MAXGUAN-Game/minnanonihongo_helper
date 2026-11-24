@@ -3,22 +3,23 @@ import type { Recording } from '../shared/recordings';
 export { useSpeech, type Speech, type PlaybackStatus } from './playback';
 
 export async function encodeWav(blob: Blob): Promise<Blob> {
-  const context = new AudioContext();
-  try {
-    const decoded = await context.decodeAudioData(await blob.arrayBuffer());
-    // MediaRecorder's 30-second timer can fire a little late on mobile. Keep
-    // the original local preview, but cap the server WAV to exactly 30 seconds.
-    const offline = new OfflineAudioContext(1, Math.min(30 * 16000, Math.ceil(decoded.duration * 16000)), 16000);
-    const source = offline.createBufferSource(); source.buffer = decoded; source.connect(offline.destination); source.start();
-    const rendered = await offline.startRendering(); const samples = rendered.getChannelData(0);
-    const rms = Math.sqrt(samples.reduce((sum, sample) => sum + sample * sample, 0) / samples.length);
-    if (decoded.duration < .25 || rms < .002) throw new Error('没有听到清楚的声音。请靠近麦克风，再说一次。');
-    const buffer = new ArrayBuffer(44 + samples.length * 2); const view = new DataView(buffer);
-    const ascii = (offset: number, value: string) => [...value].forEach((c, i) => view.setUint8(offset + i, c.charCodeAt(0)));
-    ascii(0, 'RIFF'); view.setUint32(4, buffer.byteLength - 8, true); ascii(8, 'WAVE'); ascii(12, 'fmt '); view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, 1, true); view.setUint32(24, 16000, true); view.setUint32(28, 32000, true); view.setUint16(32, 2, true); view.setUint16(34, 16, true); ascii(36, 'data'); view.setUint32(40, samples.length * 2, true);
-    samples.forEach((sample, i) => { const s = Math.max(-1, Math.min(1, sample)); view.setInt16(44 + i * 2, s < 0 ? s * 32768 : s * 32767, true); });
-    return new Blob([buffer], { type: 'audio/wav' });
-  } finally { await context.close(); }
+  // Offline decoding avoids opening a playback audio session while iOS is
+  // releasing microphone capture. Conversion never needs an output device.
+  const context = new OfflineAudioContext(1, 1, 16000);
+  const decoded = await context.decodeAudioData(await blob.arrayBuffer());
+  if (!Number.isFinite(decoded.duration) || decoded.duration < .25) throw new Error('没有听到清楚的声音。请靠近麦克风，再说一次。');
+  // MediaRecorder's 30-second timer can fire a little late on mobile. Keep
+  // the original local preview, but cap the server WAV to exactly 30 seconds.
+  const offline = new OfflineAudioContext(1, Math.min(30 * 16000, Math.ceil(decoded.duration * 16000)), 16000);
+  const source = offline.createBufferSource(); source.buffer = decoded; source.connect(offline.destination); source.start();
+  const rendered = await offline.startRendering(); const samples = rendered.getChannelData(0);
+  const rms = Math.sqrt(samples.reduce((sum, sample) => sum + sample * sample, 0) / samples.length);
+  if (rms < .002) throw new Error('没有听到清楚的声音。请靠近麦克风，再说一次。');
+  const buffer = new ArrayBuffer(44 + samples.length * 2); const view = new DataView(buffer);
+  const ascii = (offset: number, value: string) => [...value].forEach((c, i) => view.setUint8(offset + i, c.charCodeAt(0)));
+  ascii(0, 'RIFF'); view.setUint32(4, buffer.byteLength - 8, true); ascii(8, 'WAVE'); ascii(12, 'fmt '); view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, 1, true); view.setUint32(24, 16000, true); view.setUint32(28, 32000, true); view.setUint16(32, 2, true); view.setUint16(34, 16, true); ascii(36, 'data'); view.setUint32(40, samples.length * 2, true);
+  samples.forEach((sample, i) => { const s = Math.max(-1, Math.min(1, sample)); view.setInt16(44 + i * 2, s < 0 ? s * 32768 : s * 32767, true); });
+  return new Blob([buffer], { type: 'audio/wav' });
 }
 
 export type RecordingContext = { lessonId: number; itemId: string; context: 'speak' | 'conversation' | 'ai-speak' };
@@ -49,18 +50,28 @@ export function useRecorder(onText: (text: string, ms: number, recordingId?: str
     stream.current?.getTracks().forEach(track => track.stop()); stream.current = null;
     if (timeout.current) clearTimeout(timeout.current); timeout.current = null;
   }, []);
-  const stop = useCallback(() => { pendingStop.current = true; if (recorder.current?.state === 'recording') recorder.current.stop(); }, []);
+  const stop = useCallback(() => {
+    if (pendingStop.current) return;
+    pendingStop.current = true;
+    if (recorder.current?.state === 'recording') recorder.current.stop();
+  }, []);
   const cancel = useCallback(() => {
-    generation.current++; pendingStop.current = true;
+    generation.current++; stop();
     for (const request of requests.current) request.abort(); requests.current.clear();
-    if (recorder.current?.state === 'recording') recorder.current.stop(); recorder.current = null;
+    recorder.current = null;
     release(); draft.current = null; savingDraft.current = null;
     if (clipUrl.current) URL.revokeObjectURL(clipUrl.current); clipUrl.current = null;
     if (alive.current) { update('idle'); setClip(null); setSaving(false); setSaveError(''); setTranscribeError(''); }
-  }, [release, update]);
+  }, [release, update, stop]);
   const contextKey = context ? JSON.stringify([context.lessonId, context.context, context.itemId]) : '';
   useEffect(() => { alive.current = true; return () => { alive.current = false; cancel(); }; }, [cancel]);
   useEffect(() => { cancel(); }, [contextKey, cancel]);
+  useEffect(() => {
+    // iOS can suspend timers and pointer delivery when Safari is backgrounded.
+    const hidden = () => { if (document.hidden && (phase.current === 'asking' || phase.current === 'recording')) stop(); };
+    document.addEventListener('visibilitychange', hidden);
+    return () => document.removeEventListener('visibilitychange', hidden);
+  }, [stop]);
   async function requestJSON<T>(path: string, init: RequestInit, value: RecordingDraft): Promise<T> {
     const controller = new AbortController(); requests.current.add(controller);
     let timer: ReturnType<typeof setTimeout> | undefined;

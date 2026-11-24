@@ -1,4 +1,6 @@
 import { getPreferences } from './preferences';
+import { localizedText, localizeValue } from './localization';
+import type { ReactNode } from 'react';
 const ja: Record<string, string> = {
   '关闭提示': '通知を閉じる', '暂时没有连上学习服务': 'サービスに接続できません', '请检查网络，稍后重新连接。': 'ネットワークを確認して再接続してください。', '重新连接': '再接続', '正在打开你的学习角落……': '読み込んでいます…',
   '一次一句，慢慢来。': '一文ずつ、自分のペースで。', '原创练习 · 配合《大家的日语》第二版使用': 'オリジナル練習・みんなの日本語 第2版対応',
@@ -20,6 +22,9 @@ const ja: Record<string, string> = {
 Object.assign(ja, {
   '更自然的日语声音': '日本語の音声設定', '正在读取声音设置……': '音声設定を読み込み中…', '重新读取': '再読み込み', '日语朗读方式': '日本語の読み上げ方法',
   '本机声音 · 离线': '端末の音声・オフライン', '云端 AI 声音 · MiniMax': 'クラウドAI音声・MiniMax',
+  'Haruka · 日语': 'Haruka・日本語',
+  '此设备未安装 Haruka，请先安装日语语音或选择其他声音。': 'この端末にHarukaがありません。日本語音声をインストールするか、別の音声を選んでください。',
+  '使用设备上的 Haruka 日语女声；男女对话搭配 Ichiro 男声。其他设备也需要安装对应声音。': '端末の日本語音声Harukaを使用します。男女の会話にはIchiroも必要です。別の端末でも対応する音声のインストールが必要です。',
   'MiniMax 密钥已配置 · 试听可确认是否可用': 'MiniMaxキー設定済み・試聴で動作を確認できます', 'MiniMax 密钥未配置': 'MiniMaxキー未設定', 'MiniMax API 密钥': 'MiniMax APIキー', '留空保持原密钥': '空欄で現在のキーを維持', '填写 MiniMax API 密钥': 'MiniMax APIキーを入力',
   '单独的语音密钥，只保存在你的服务器后端。': '音声専用のキーです。サーバー側にのみ保存されます。', '单独的语音密钥，只保存在本机后端。': '音声専用のキーです。この端末のサーバー側にのみ保存されます。',
   '声音质量': '音声品質', '细腻 · Speech 2.8 HD': '高品質・Speech 2.8 HD', '快捷 · Speech 2.8 Turbo': '高速・Speech 2.8 Turbo', '日语声音': '日本語の声', '对话中第二个人的声音': '会話の二人目の声',
@@ -42,5 +47,8 @@ Object.assign(ja, {
   '使用 Qwen3.8-Omni-Flash。每次结束录音会将音频发送到百炼并产生 API 用量；密钥仅保存在后端。DeepSeek 继续用于打字练习和对话。': 'Qwen3.8-Omni-Flashを使用します。録音後に音声を百錬へ送信し、API利用量が発生します。キーはサーバー側にのみ保存されます。文章の評価にはDeepSeekを使用します。',
   '提供 AI 听音建议，不代表专业发音考试成绩；实际速度受网络与服务负载影响。': 'AIによる参考評価です。専門的な発音試験の成績ではありません。処理時間は通信やサービスの負荷によって変わります。', '获取百炼密钥': '百錬キーを取得', '音频服务说明': '音声サービスの説明',
 });
-export function translate(text: string) { return getPreferences().locale === 'ja-JP' ? ja[text] ?? text : text; }
+export function translate(text: string) { return localizedText(text, getPreferences().locale, ja[text]); }
 export const translatedUiStrings = ja;
+export function localizedAttribute(value: string | undefined) { return value === undefined ? undefined : translate(value); }
+
+export function localize(value: ReactNode): ReactNode { return typeof value === 'string' ? translate(value) : localizeValue(value, getPreferences().locale); }

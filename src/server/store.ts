@@ -10,9 +10,11 @@ import type { PracticeAttempt, PracticeKind, PracticePosition, PracticeQuestion 
 import type { VocabularyMastery } from '../shared/vocabulary';
 import { vocabularyMastery } from './vocabulary-mastery';
 import { vocabularyForLesson } from '../content/vocabulary';
+import { practicePositionKey } from '../shared/special-practice';
+import type { PracticeCredit } from '../shared/practice-rank';
 
 const defaults: Omit<Settings, 'hasApiKey'> = { currentLessonId: 1, dailyMinutes: 15, largeText: true, furigana: true, autoplay: true, model: 'deepseek-flash', setupComplete: false };
-type Table = 'progress' | 'attempts' | 'reviews' | 'sessions' | 'recordings' | 'assessments' | 'ai_questions' | 'ai_attempts' | 'ai_positions' | 'vocabulary_mastery';
+type Table = 'progress' | 'attempts' | 'reviews' | 'sessions' | 'recordings' | 'assessments' | 'ai_questions' | 'ai_attempts' | 'ai_positions' | 'vocabulary_mastery' | 'practice_credits';
 export class Store {
   readonly db: Database.Database;
   constructor(dataDir: string) {
@@ -32,6 +34,7 @@ export class Store {
       CREATE TABLE IF NOT EXISTS assessments (id TEXT PRIMARY KEY, value TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS recording_files (id TEXT PRIMARY KEY, sha256 TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS ai_questions (id TEXT PRIMARY KEY, value TEXT NOT NULL);
+      CREATE TABLE IF NOT EXISTS practice_credits (id TEXT PRIMARY KEY, value TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS ai_attempts (id TEXT PRIMARY KEY, value TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS ai_positions (id TEXT PRIMARY KEY, value TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS vocabulary_mastery (id TEXT PRIMARY KEY, value TEXT NOT NULL);
@@ -69,9 +72,16 @@ export class Store {
     const content = vocabularyForLesson(lessonId);
     return { ...content, mastery: vocabularyMastery(content.words.map(word => word.id), this.all<PracticeQuestion>('ai_questions'), this.all<PracticeAttempt>('ai_attempts'), this.all<VocabularyMastery>('vocabulary_mastery').filter(mark => mark.lessonId === lessonId)) };
   }
-  practiceQuestions(kind: PracticeKind, limit: number, grammarId?: string): PracticeQuestion[] {
-    const filter = grammarId ? " AND json_extract(value,'$.grammarId')=?" : '';
-    const args = grammarId ? [kind, grammarId, limit] : [kind, limit];
+  practiceQuestions(kind: PracticeKind, limit: number, grammarId?: string, scope?: Pick<PracticeQuestion, 'lessonId' | 'review' | 'topic'>): PracticeQuestion[] {
+    let filter = grammarId ? " AND json_extract(value,'$.grammarId')=?" : " AND json_extract(value,'$.topic') IS NULL";
+    const args: (string | number | null)[] = grammarId ? [kind, grammarId] : [kind];
+    // Apply the unit/review scope before LIMIT: work in another unit must not
+    // hide the recent questions that this generator needs to avoid.
+    if (scope) {
+      filter += " AND json_extract(value,'$.lessonId')=? AND COALESCE(json_extract(value,'$.review'),0)=? AND json_extract(value,'$.topic') IS ?";
+      args.push(scope.lessonId, scope.review ? 1 : 0, scope.topic ?? null);
+    }
+    args.push(limit);
     return (this.db.prepare(`SELECT value FROM ai_questions WHERE json_extract(value,'$.content.kind')=?${filter} ORDER BY rowid DESC LIMIT ?`).all(...args) as { value: string }[]).map(row => JSON.parse(row.value));
   }
   practiceAttempts(questionId: string): PracticeAttempt[] {
@@ -95,12 +105,13 @@ export class Store {
   saveRecordingHash(id: string, hash: string) { this.db.prepare('INSERT INTO recording_files (id,sha256) VALUES (?,?) ON CONFLICT(id) DO UPDATE SET sha256=excluded.sha256').run(id, hash); }
   backup(): Backup {
     const { hasApiKey: _, ...settings } = this.settings();
-    return { version: 4, exportedAt: new Date().toISOString(), settings, progress: this.all<Progress>('progress'), attempts: this.all<Attempt>('attempts'), reviews: this.all<ReviewItem>('reviews'), sessions: this.all<Session>('sessions'), recordings: [], assessments: this.all<SpeakingAssessment>('assessments'), aiQuestions: this.all<PracticeQuestion>('ai_questions'), aiAttempts: this.all<PracticeAttempt>('ai_attempts'), aiPositions: this.all<PracticePosition>('ai_positions'), vocabularyMastery: this.all<VocabularyMastery>('vocabulary_mastery') };
+    return { version: 4, exportedAt: new Date().toISOString(), settings, progress: this.all<Progress>('progress'), attempts: this.all<Attempt>('attempts'), reviews: this.all<ReviewItem>('reviews'), sessions: this.all<Session>('sessions'), recordings: [], assessments: this.all<SpeakingAssessment>('assessments'), aiQuestions: this.all<PracticeQuestion>('ai_questions'), aiAttempts: this.all<PracticeAttempt>('ai_attempts'), aiPositions: this.all<PracticePosition>('ai_positions'), practiceCredits: this.all<PracticeCredit>('practice_credits'), vocabularyMastery: this.all<VocabularyMastery>('vocabulary_mastery') };
   }
   restore(backup: Backup) {
     this.db.transaction(() => {
-      for (const table of ['progress', 'attempts', 'reviews', 'sessions', 'recordings', 'assessments', 'recording_files', 'ai_questions', 'ai_attempts', 'ai_positions', 'ai_fingerprints', 'vocabulary_mastery'] as const) this.db.prepare(`DELETE FROM ${table}`).run();
+      for (const table of ['progress', 'attempts', 'reviews', 'sessions', 'recordings', 'assessments', 'recording_files', 'ai_questions', 'ai_attempts', 'ai_positions', 'ai_fingerprints', 'vocabulary_mastery', 'practice_credits'] as const) this.db.prepare(`DELETE FROM ${table}`).run();
       this.saveSettings(backup.settings);
+      if ('practiceCredits' in backup) for (const credit of backup.practiceCredits) this.save('practice_credits', credit.id, credit);
       if ('vocabularyMastery' in backup) for (const value of backup.vocabularyMastery) this.save('vocabulary_mastery', value.wordId, value);
       for (const value of backup.progress) this.save('progress', `${value.lessonId}:${value.stage}`, value);
       for (const value of backup.attempts) this.save('attempts', value.id, withoutRecordingLinks(value));
@@ -110,7 +121,7 @@ export class Store {
       if ('aiQuestions' in backup) {
         for (const value of backup.aiQuestions) { this.save('ai_questions', value.id, value); this.savePracticeFingerprints(value); }
         for (const value of backup.aiAttempts) this.save('ai_attempts', value.id, withoutRecordingLinks(value));
-        for (const value of backup.aiPositions) this.save('ai_positions', `${value.lessonId}:${value.kind}`, value);
+        for (const value of backup.aiPositions) this.save('ai_positions', practicePositionKey(value), value);
       }
     })();
   }

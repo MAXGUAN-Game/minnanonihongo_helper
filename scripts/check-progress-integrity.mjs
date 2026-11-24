@@ -6,7 +6,7 @@ import { createHash } from 'node:crypto';
 import { chmodSync, copyFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
-const tables = ['progress', 'attempts', 'reviews', 'sessions', 'assessments', 'ai_questions', 'ai_attempts', 'ai_positions', 'vocabulary_mastery', 'settings', 'secrets', 'audio_settings', 'audio_secrets', 'voice_settings', 'voice_secrets'];
+const tables = ['progress', 'attempts', 'reviews', 'sessions', 'assessments', 'ai_questions', 'ai_attempts', 'ai_positions', 'vocabulary_mastery', 'settings', 'secrets', 'audio_settings', 'audio_secrets', 'voice_settings', 'voice_secrets', 'practice_credits', 'recordings', 'recording_files', 'ai_fingerprints', 'migrations'];
 const temporary = mkdtempSync(join(tmpdir(), 'nihongo-progress-audit-'));
 let db;
 try {
@@ -24,8 +24,11 @@ try {
   if (db.pragma('quick_check', { simple: true }) !== 'ok') throw new Error('Database integrity check failed.');
   const result = {};
   for (const table of tables) {
-    if (!db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name=?").get(table)) continue;
-    const rows = db.prepare(`SELECT * FROM ${table} ORDER BY id`).all();
+    if (!db.prepare("SELECT name FROM sqlite_master WHERE type='table' AND name=?").get(table)) {
+      if (table === 'practice_credits') result[table] = { count: 0, sha256: createHash('sha256').update('[]').digest('hex') };
+      continue;
+    }
+    const rows = db.prepare(`SELECT * FROM ${table} ORDER BY 1`).all();
     result[table] = { count: rows.length, sha256: createHash('sha256').update(JSON.stringify(rows)).digest('hex') };
   }
   console.log(JSON.stringify(result));

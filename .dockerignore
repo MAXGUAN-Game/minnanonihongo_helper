@@ -1,12 +1,14 @@
 # Explicit build-context allowlist. Personal data and API keys never enter it.
 **
 !Dockerfile
+!Dockerfile.reuse
 !.dockerignore
 !package.json
 !package-lock.json
 !tsconfig.json
 !vite.config.ts
 !index.html
+!weekly-plan.html
 !src/
 !src/**
 !public/

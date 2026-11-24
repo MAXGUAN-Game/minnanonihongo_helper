@@ -1,5 +1,7 @@
 # Dependencies, generated output, and previous experiments
 node_modules/
+__pycache__/
+*.pyc
 dist/
 .next/
 .cache/

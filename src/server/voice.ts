@@ -13,7 +13,7 @@ const CACHE_VERSION = 'v1';
 const CACHE_FILE = /^v1-[a-f0-9]{64}\.wav$/;
 const voiceSchema = z.enum(['Japanese_KindLady', 'Japanese_IntellectualSenior', 'Japanese_CalmLady', 'Japanese_GentleButler']);
 const settingsSchema = z.object({
-  provider: z.enum(['system', 'minimax']),
+  provider: z.enum(['system', 'minimax', 'haruka']),
   model: z.enum(['speech-2.8-hd', 'speech-2.8-turbo']),
   voice: voiceSchema, secondaryVoice: voiceSchema,
   alternateSpeakers: z.boolean(), speed: z.number().min(0.8).max(1.2),
@@ -21,6 +21,7 @@ const settingsSchema = z.object({
 const patchSchema = settingsSchema.partial().extend({ apiKey: z.string().trim().max(512) }).partial().strict();
 const inputSchema = z.object({
   text: z.string().trim().min(1).max(1500),
+  provider: z.literal('minimax').optional(),
   rate: z.number().min(0.6).max(1.2).default(1), speaker: z.enum(['primary', 'secondary', 'dialogue-a', 'dialogue-b']).default('primary'),
 }).strict();
 
@@ -212,7 +213,7 @@ export function registerVoiceRoutes(app: FastifyInstance, db: Database.Database,
   app.delete('/api/voice/cache', async () => cache.clear());
   app.post('/api/voice/synthesize', async (request, reply) => {
     const input = inputSchema.parse(request.body);
-    const configuration = settings();
+    const configuration = { ...settings(), ...(input.provider ? { provider: input.provider } : {}) };
     if (configuration.provider !== 'minimax') throw new ApiError(400, 'VOICE_PROVIDER_DISABLED', '请先在设置中选择 MiniMax 云语音。');
     // AI dialogues always have A (male), B (female), even when alternation is
     // disabled or the configured voices have the same gender.

@@ -1,3 +1,4 @@
+import { translate, localize } from './i18n';
 import { useState } from 'react';
 import { post } from './api';
 import { Button } from './ui';
@@ -13,6 +14,6 @@ export function Login({ onLogin }: { onLogin: () => void }) {
       catch (failure) { setError((failure as Error).message); } finally { setBusy(false); }
     }}><label>{t('用户名', 'ユーザー名')}<input name="username" autoComplete="username" value={username} onChange={event => setUsername(event.target.value)} required disabled={busy}/></label>
       <label>{t('密码', 'パスワード')}<input name="password" type="password" autoComplete="current-password" value={password} onChange={event => setPassword(event.target.value)} required disabled={busy}/></label>
-      {error && <p role="alert">{error}</p>}<Button type="submit" disabled={busy}>{busy ? t('正在验证……', '確認中…') : t('登录', 'ログイン')}</Button>
+      {error && <p role="alert">{localize(error)}</p>}<Button type="submit" disabled={busy}>{localize(busy ? t('正在验证……', '確認中…') : t('登录', 'ログイン'))}</Button>
     </form></main>;
 }

@@ -1,3 +1,5 @@
+import { translate, localize } from './i18n';
+import { useKatakanaCredit } from './katakana-credit';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, RotateCcw } from 'lucide-react';
 import { api } from './api';
@@ -25,6 +27,8 @@ export function KatakanaWords() {
   const retry = useRef<BatchRequest | null>(null);
   const awaitingNext = useRef(false);
   const passed = useRef(false);
+  const credit = useKatakanaCredit();
+  const questionId = useRef(crypto.randomUUID());
   const alive = useRef(true);
   const composing = useRef(false);
   const input = useRef<HTMLInputElement>(null);
@@ -33,7 +37,7 @@ export function KatakanaWords() {
     alive.current = true;
     return () => { alive.current = false; request.current?.abort(); if (advanceTimer.current) clearTimeout(advanceTimer.current); };
   }, []);
-  useEffect(() => { if (word && !waiting) input.current?.focus(); }, [word, waiting]);
+  useEffect(() => { if (word && !waiting) input.current?.focus({ preventScroll: true }); }, [word, waiting]);
   useEffect(() => {
     if (!preferences.autoAdvanceOnEnter && advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
   }, [preferences.autoAdvanceOnEnter]);
@@ -41,7 +45,7 @@ export function KatakanaWords() {
   function consume() {
     const next = queue.current.shift();
     if (!next) return false;
-    current.current = next; passed.current = false; awaitingNext.current = false;
+    current.current = next; passed.current = false; questionId.current = crypto.randomUUID(); awaitingNext.current = false;
     setWord(next); setAnswer(''); setFeedback(null); setWaiting(false);
     return true;
   }
@@ -91,18 +95,21 @@ export function KatakanaWords() {
   }
 
   function next() {
+    if (credit.pending) return;
     if (!alive.current || awaitingNext.current) return;
     if (advanceTimer.current) { clearTimeout(advanceTimer.current); advanceTimer.current = null; }
     if (!consume()) { awaitingNext.current = true; setWaiting(true); }
     void refill();
   }
 
-  function submit() {
+  async function submit() {
+    if (credit.pending) return;
     if (composing.current || waiting || !word || !answer.trim() || advanceTimer.current) return;
     const correct = answer.trim() === katakanaToHiragana(word.word) || answer.trim() === word.word;
-    setFeedback(correct ? 'correct' : 'wrong');
+    if (!correct) setFeedback('wrong');
     if (!correct) return;
-    if (!passed.current) { passed.current = true; setCount(value => value + 1); }
+    if (!passed.current) { if (!await credit.record(questionId.current, 'ai', word.word, answer.trim())) return; passed.current = true; setCount(value => value + 1); }
+    setFeedback('correct');
     if (getPreferences().autoAdvanceOnEnter) {
       advanceTimer.current = setTimeout(() => {
         advanceTimer.current = null;
@@ -116,23 +123,25 @@ export function KatakanaWords() {
       <h1>{t('片假名单词 · AI练习', 'カタカナ単語 · AI練習')}</h1>
       <p>{t('不限教材、领域或难度，随机练习真实片假名单词。', '教材・分野・難易度を問わず、実際に使われるカタカナ単語をランダムに練習します。')}</p>
     </header>
-    <div className="katakana-toolbar"><span className="tiny-note practice-instruction">{t('已完成', '完了')} {count}</span><Button disabled={waiting} onClick={next}>{word ? t('下一题', '次の問題') : t('开始练习', '練習を始める')}<ArrowRight size={18}/></Button></div>
-    {error && <div role="alert"><p>{error}</p><Button secondary disabled={fetching} onClick={() => { if (!word) next(); else void refill(); }}><RotateCcw size={18}/>{t('重试出题', '再試行')}</Button></div>}
-    {fetching && <p className="tiny-note" role="status">{waiting ? t('正在出题……', '問題を作成中…') : t('正在准备下一题……', '次の問題を準備中…')}</p>}
+    <div className="katakana-toolbar"><span className="tiny-note practice-instruction">{t('已完成', '完了')} {localize(count)}</span><Button disabled={waiting || credit.pending} onClick={next}>{localize(word ? t('下一题', '次の問題') : t('开始练习', '練習を始める'))}<ArrowRight size={18}/></Button></div>
+    {error && <div role="alert"><p>{localize(error)}</p><Button secondary disabled={fetching} onClick={() => { if (!word) next(); else void refill(); }}><RotateCcw size={18}/>{t('重试出题', '再試行')}</Button></div>}
+    {fetching && <p className="tiny-note" role="status">{localize(waiting ? t('正在出题……', '問題を作成中…') : t('正在准备下一题……', '次の問題を準備中…'))}</p>}
     {word && <><div className="kana-prompt kana-word" lang="ja">{word.word}</div>
       <form className="katakana-answer-form" onSubmit={event => { event.preventDefault(); }}>
         <label htmlFor="katakana-word-answer" className="dictation-label answer-label">{t('平假名或片假名', 'ひらがな・カタカナ')}</label>
-        <input ref={input} id="katakana-word-answer" aria-label={t('平假名或片假名', 'ひらがな・カタカナ')} lang="ja" autoComplete="off" spellCheck={false} value={answer} readOnly={feedback === 'correct'} disabled={waiting}
+        <input ref={input} id="katakana-word-answer" aria-label={t('平假名或片假名', 'ひらがな・カタカナ')} lang="ja" autoComplete="off" spellCheck={false} value={answer} readOnly={feedback === 'correct' || credit.pending} disabled={waiting}
           onCompositionStart={() => { composing.current = true; }} onCompositionEnd={() => { composing.current = false; }}
           onKeyDown={event => {
-            if (event.key !== 'Enter' || event.nativeEvent.isComposing || composing.current || event.keyCode === 229) return;
+            if (event.key !== 'Enter' || event.repeat || event.nativeEvent.isComposing || composing.current) return;
+            if (feedback === 'correct') { event.preventDefault(); next(); return; }
+            if (event.keyCode === 229) return;
             event.preventDefault();
-            if (!event.repeat) { if (feedback === 'correct') next(); else submit(); }
+            submit();
           }} onChange={event => { setAnswer(event.target.value); setFeedback(null); }}/>
         <p className="tiny-note practice-instruction katakana-input-hint">{t('按回车提交，答对后再按回车下一题。长音保留「ー」。', 'Enterで回答。正解後、もう一度Enterで次の問題へ。長音「ー」はそのまま入力してください。')}</p>
         <div className="katakana-options"><label className="toggle-row auto-advance-toggle"><input type="checkbox" role="switch" checked={preferences.autoAdvanceOnEnter} onChange={event => setPreferences({ autoAdvanceOnEnter: event.target.checked })}/><span>{t('回车答对自动下一题', 'Enterで正解したら次の問題へ')}</span></label></div>
       </form></>}
-    <p className="katakana-feedback" role="status">{feedback === 'correct' ? t('正确', '正解') : feedback === 'wrong' ? t('请再试一次', 'もう一度試してください') : '\u00a0'}</p>
-    {word && feedback === 'correct' && <p className="katakana-meaning">{t('中文释义', '中国語の意味')}：{word.meaningZh}</p>}
+    <>{credit.error && <p role="alert">{localize(credit.error)}</p>}{credit.pending && <p role="status">{t("正在保存进度……", "保存中…")}</p>}</><p className="katakana-feedback" role="status">{localize(feedback === 'correct' ? t('正确', '正解') : feedback === 'wrong' ? t('请再试一次', 'もう一度試してください') : '\u00a0')}</p>
+    {word && feedback === 'correct' && <p className="katakana-meaning">{t('中文释义', '中国語の意味')}：{localize(word.meaningZh)}</p>}
   </section>;
 }

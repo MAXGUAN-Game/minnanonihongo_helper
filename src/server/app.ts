@@ -1,3 +1,5 @@
+import { registerSchedule } from './schedule';
+import { registerLocalization } from './localization';
 import { registerAuth } from './auth';
 import { registerVocabularyDetails } from './vocabulary-details';
 import { vocabularyForLesson, hasHistoricalVocabularyWord } from '../content/vocabulary';
@@ -17,6 +19,7 @@ import { authorizeRequest, deploymentConfig, type Deployment } from './deploymen
 import type { SpeakingAssessment } from '../shared/recordings';
 import { audioAssessmentSettingsPatchSchema } from '../shared/audio-assessment';
 import { registerPracticeRoutes, practicePool, questionFingerprints } from './ai-practice';
+import { specialBank, specialGrammar, practicePositionKey } from '../shared/special-practice';
 import { registerKatakanaPractice } from './katakana-practice';
 import { courseProgress } from './course-progress';
 
@@ -80,9 +83,19 @@ function validateBackup(backup: Backup) {
   const aiAttempts = backup.version >= 3 && 'aiQuestions' in backup ? backup.aiAttempts : [];
   const aiPositions = backup.version >= 3 && 'aiQuestions' in backup ? backup.aiPositions : [];
   unique(aiQuestions.map(item => item.id)); unique(aiAttempts.map(item => item.id));
+  if ('practiceCredits' in backup) {
+    unique(backup.practiceCredits.map(credit => credit.id));
+    for (const credit of backup.practiceCredits) if (credit.type === 'skip' && !aiQuestions.some(question => question.id === credit.questionId && !question.topic && !question.review)) throw new ApiError(400, 'INVALID_BACKUP', '跳过记录与课程题目不匹配。');
+  }
   unique(aiQuestions.flatMap(item => item.fingerprints));
-  unique(aiPositions.map(item => `${item.lessonId}:${item.kind}`));
+  unique(aiPositions.map(practicePositionKey));
   for (const question of aiQuestions) {
+    if (question.topic) {
+      const grammar = specialGrammar(question.topic);
+      const phrase = question.content.kind === 'dictation' ? question.content.sentence : question.content.kind === 'speaking' ? question.content.reference : null;
+      if (!phrase || question.fingerprints.length || question.grammarId !== grammar.id || question.grammarTitle !== grammar.title || !specialBank(question.topic).some(item => item.jp === phrase.jp && item.kana === phrase.kana && item.zh === phrase.zh) || (question.content.kind === 'speaking' && question.content.goalZh !== phrase.zh)) throw new ApiError(400, 'INVALID_BACKUP', '专项题目与题库不匹配。');
+      continue;
+    }
     if (question.content.kind === 'vocabulary') {
       const content = question.content;
       // Keep historical wording/glosses: editorial corrections must not invalidate
@@ -90,11 +103,11 @@ function validateBackup(backup: Backup) {
       if (!hasHistoricalVocabularyWord(question.lessonId, content.wordId) || question.fingerprints.length) throw new ApiError(400, 'INVALID_BACKUP', '单词练习与课程词表不一致。');
       continue;
     }
-    const source = practicePool(question.lessonId).find(item => item.id === question.grammarSourceLessonId);
+    const source = question.review ? getLesson(question.grammarSourceLessonId) : practicePool(question.lessonId).find(item => item.id === question.grammarSourceLessonId);
     const grammar = source?.grammar.find(item => item.id === question.grammarId);
     if (!grammar || question.grammarTitle !== grammar.title || JSON.stringify([...question.fingerprints].sort()) !== JSON.stringify(questionFingerprints(question.content).sort())) throw new ApiError(400, 'INVALID_BACKUP', 'AI题目的语法来源或去重记录不正确。');
   }
-  for (const position of aiPositions) if (!aiQuestions.some(item => item.id === position.questionId && item.lessonId === position.lessonId && item.content.kind === position.kind)) throw new ApiError(400, 'INVALID_BACKUP', 'AI练习位置与题目不匹配。');
+  for (const position of aiPositions) if (!aiQuestions.some(item => item.id === position.questionId && item.lessonId === position.lessonId && item.topic === position.topic && item.review === position.review && item.content.kind === position.kind)) throw new ApiError(400, 'INVALID_BACKUP', 'AI练习位置与题目不匹配。');
   unique(recordings.map(item => item.id)); unique(assessments.map(item => item.id));
   const invalid = () => { throw new ApiError(400, 'INVALID_BACKUP', '备份中的录音、评分与练习不匹配，原数据没有更改。'); };
   const matchesRecording = (id: string, lessonId: number, context: 'speak' | 'conversation', itemId: string) => recordings.some(record => record.id === id && record.lessonId === lessonId && record.context === context && record.itemId === itemId);
@@ -117,11 +130,11 @@ function validateBackup(backup: Backup) {
     if (turn.recordingId && (turn.role !== 'user' || !matchesRecording(turn.recordingId, session.lessonId, 'conversation', session.id))) invalid();
   }
   for (const attempt of aiAttempts) {
-    const question = aiQuestions.find(item => item.id === attempt.questionId && item.lessonId === attempt.lessonId && item.content.kind === attempt.kind);
+    const question = aiQuestions.find(item => item.id === attempt.questionId && item.lessonId === attempt.lessonId && item.topic === attempt.topic && item.review === attempt.review && item.content.kind === attempt.kind);
     if (!question) invalid();
     if (attempt.kind === 'speaking') {
       if ((backup.version !== 4 && !recordings.some(item => item.id === attempt.recordingId && item.context === 'ai-speak' && item.itemId === attempt.questionId && item.lessonId === attempt.lessonId)) ||
-        attempt.result.corrections.some(item => !attempt.result.text.includes(item.original) || (item.grammarId && !practicePool(attempt.lessonId).some(lesson => lesson.grammar.some(grammar => grammar.id === item.grammarId))))) invalid();
+        attempt.result.corrections.some(item => !attempt.result.text.includes(item.original) || (item.grammarId && (attempt.topic ? item.grammarId !== specialGrammar(attempt.topic).id : !(question?.review ? [getLesson(question.grammarSourceLessonId)!] : practicePool(attempt.lessonId)).some(lesson => lesson.grammar.some(grammar => grammar.id === item.grammarId)))))) invalid();
     } else if (question?.content.kind === 'dialogue' && (!/^[0-3]$/.test(attempt.answer) || attempt.correct !== (Number(attempt.answer) === question.content.answerIndex))) invalid();
   }
 }
@@ -154,6 +167,7 @@ export function buildApp(options: AppOptions = {}) {
     authorizeRequest(request, deployment);
   });
   registerAuth(app, store.db, deployment, options.authVersion);
+  registerSchedule(app, dataDir);
   app.addHook('onRequest', async request => {
     if (/^\/api\/recordings(?:[/?]|$)/.test(request.url) || /^\/api\/speaking\/assess(?:-audio)?(?:[/?]|$)/.test(request.url)) throw new ApiError(410, 'RECORDINGS_RETIRED', '录音存档已停用，请刷新页面使用当前题录音评分。');
   });
@@ -163,7 +177,10 @@ export function buildApp(options: AppOptions = {}) {
     console.info(JSON.stringify({ event: 'audio-assessment', bytes, audioMs: bytes > 44 ? Math.round((bytes - 44) / 32) : 0, elapsedMs: Math.round(reply.elapsedTime), status: reply.statusCode }));
   });
   app.setErrorHandler((error, request, reply) => {
-    if (error instanceof ApiError) return reply.code(error.status).send({ error: error.message, code: error.code });
+    if (error instanceof ApiError) {
+      if (error.status >= 500) console.warn(JSON.stringify({ event: 'service-error', code: error.code, status: error.status, route: request.routeOptions.url, elapsedMs: Math.round(reply.elapsedTime) }));
+      return reply.code(error.status).send({ error: error.message, code: error.code });
+    }
     if (error instanceof z.ZodError || (error as { statusCode?: number }).statusCode === 400) return reply.code(400).send({ error: '提交的内容格式不正确，请检查后重试。', code: 'INVALID_INPUT' });
     if ((error as { statusCode?: number }).statusCode === 413) return reply.code(413).send({ error: request.url === '/api/restore' ? '备份文件超过 16 MiB，请使用较小的备份文件。' : '提交的内容太大，请缩短后重试。', code: 'PAYLOAD_TOO_LARGE' });
     return reply.code(500).send({ error: '服务暂时没有完成操作，请重试。', code: 'INTERNAL_ERROR' });
@@ -173,6 +190,7 @@ export function buildApp(options: AppOptions = {}) {
   app.addContentTypeParser('audio/wav', { parseAs: 'buffer', bodyLimit: 1100000 }, (_request, body, done) => done(null, body));
   registerPracticeRoutes(app, { store, aiFetch, audioFetch: options.audioFetch ?? fetch, serialized, random: options.practiceRandom });
   registerKatakanaPractice(app, store, aiFetch, serialized);
+  registerLocalization(app, store, dataDir, aiFetch);
   app.get('/api/health', async () => deployment.mode === 'web' ? { ok: true, app: 'nihongo-small-steps' } : { ok: true, app: 'nihongo-small-steps', pid: process.pid, root: process.cwd() });
   app.get('/api/bootstrap', async (): Promise<Bootstrap> => {
     const progress = store.all<Progress>('progress');

@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const rootFiles = [
-  'Dockerfile', '.dockerignore', 'compose.yaml', 'compose.shared.yaml',
-  'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'index.html',
+  'Dockerfile', 'Dockerfile.reuse', '.dockerignore', 'compose.yaml', 'compose.shared.yaml',
+  'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'index.html', 'weekly-plan.html',
   'README.md', 'AGENTS.md', 'deployment-guide.html',
   'deploy/Caddyfile', 'deploy/Caddyfile.shared', 'deploy/nginx-site.conf.example',
   'deploy/.env.example', 'deploy/configure.mjs', 'deploy/install-docker-ubuntu.sh',

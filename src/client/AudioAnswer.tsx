@@ -1,3 +1,4 @@
+import { translate, localize } from './i18n';
 import { useEffect, useRef, useState } from 'react';
 import { useRecorder, type Speech } from './speech';
 import { RecordingControls } from './RecordingControls';
@@ -35,6 +36,6 @@ export function AudioAnswer({ questionId, speech, notice, onResult, onBusy, susp
   }, [recorder.clip?.url, suspended]);
   return <><RecordingControls recorder={recorder} speech={speech} disabled={pending || suspended}/>
     {pending && <p role="status">{t('正在识别并检查答案……', '音声を認識して回答を確認しています…')}</p>}
-    {error && <div role="alert"><p>{error}</p><Button disabled={pending || suspended} onClick={() => void submit()}>{t('重试', '再試行')}</Button></div>}
+    {error && <div role="alert"><p>{localize(error)}</p><Button disabled={pending || suspended} onClick={() => void submit()}>{t('重试', '再試行')}</Button></div>}
   </>;
 }

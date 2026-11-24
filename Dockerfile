@@ -19,7 +19,7 @@ RUN apt-get update \
 COPY package.json package-lock.json ./
 # Install Linux native modules here; never copy a Windows node_modules folder.
 RUN npm ci --include=dev --no-audit --no-fund
-COPY tsconfig.json vite.config.ts index.html ./
+COPY tsconfig.json vite.config.ts index.html weekly-plan.html ./
 COPY src ./src
 COPY public ./public
 COPY scripts/validate-vocabulary-details.ts ./scripts/validate-vocabulary-details.ts
@@ -47,4 +47,5 @@ COPY scripts/check-progress-integrity.mjs ./scripts/check-progress-integrity.mjs
 COPY scripts/check-release-auth.mjs ./scripts/check-release-auth.mjs
 RUN mkdir -p /app/data && chown node:node /app/data
 USER node
+RUN node --import tsx --input-type=module -e "import { accessSync, constants } from 'node:fs'; accessSync('src/server/index.ts', constants.R_OK); await import('./src/server/app.ts');"
 CMD ["node", "--use-env-proxy", "--import", "tsx", "src/server/index.ts"]

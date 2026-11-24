@@ -1,0 +1,40 @@
+/* The calendar is part of the document flow. The only local scroll is
+   horizontal navigation on narrow screens; there is no vertical scroll pane. */
+:host{display:block;min-width:0}
+.schedule-document{background:transparent}
+.shell{max-width:none;padding:0}
+.topbar{display:none}
+.brand,.hero{display:none}
+.top-actions{flex-wrap:wrap}
+.planner{overflow:visible}
+.week-nav,.day-date{display:none}
+.planner-head{justify-content:space-between;flex-wrap:wrap}
+.board-scroll{height:auto;min-height:0;max-height:none;overflow-x:auto;overflow-y:hidden;overscroll-behavior:auto}
+.board{min-width:1100px;grid-template-columns:58px repeat(7,minmax(145px,1fr))}
+.day-head,.time-axis-head{position:relative;top:auto;height:var(--schedule-header-height,auto);transform:translateY(var(--schedule-header-shift,0px));will-change:transform}
+.event.brief .event-time{display:none}
+.stats{display:block;margin:24px 0 0;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.summary-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}
+.summary-heading h2{font-size:16px;margin:0}
+.summary-heading>strong{font-size:17px}
+.summary-track{height:18px;border-radius:7px;overflow:hidden;display:flex;background:#eceef0;gap:2px}
+.summary-segment{height:100%;min-width:2px}
+.summary-legend{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 24px;margin-top:20px}
+.summary-item{min-width:0;display:grid;grid-template-columns:8px minmax(0,1fr);gap:5px 8px;align-items:center;font-size:13px;color:var(--muted)}
+.summary-dot{width:7px;height:7px;border-radius:50%}
+.summary-item strong{grid-column:2;color:var(--ink);font-size:15px}
+.page-foot{margin-top:0}
+@media(max-width:720px){
+  .board{grid-template-columns:48px repeat(7,185px);min-width:1343px}
+  .summary-legend{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .stats{padding:18px 14px}
+  .summary-heading h2{font-size:15px}
+  .topbar{padding:0}
+  dialog{max-height:calc(100dvh - 120px);margin-block:20px auto;overflow-y:auto}
+}
+@media print{
+  .day-head,.time-axis-head{transform:none}
+  .board-scroll{overflow:visible}
+  .board{min-width:0;grid-template-columns:repeat(7,1fr)}
+  .summary-legend{grid-template-columns:repeat(4,minmax(0,1fr))}
+}

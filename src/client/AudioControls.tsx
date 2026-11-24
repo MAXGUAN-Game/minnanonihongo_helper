@@ -1,15 +1,20 @@
+import { translate, localize } from './i18n';
 import { Pause, Play, RotateCcw, RotateCw, Square, Minus, Plus, SkipBack } from 'lucide-react';
 import { useEffect, useId } from 'react';
 import type { Speech } from './speech';
+import type { PlayerVoiceEngine } from '../shared/voice';
 import { useTranslation } from './preferences';
 const time = (seconds: number) => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
-export function AudioControls({ speech, sourceId, onPlay, disabled = false }: { speech: Speech; sourceId: string; onPlay?: () => void; disabled?: boolean }) {
+export function AudioControls({ speech, sourceId, onPlay, disabled = false, media = false }: { speech: Speech; sourceId: string; onPlay?: () => void; disabled?: boolean; media?: boolean }) {
   const t = useTranslation();
   const seekHelpId = useId();
   const active = speech.sourceId === sourceId;
   const playing = active && ['playing', 'loading', 'buffering'].includes(speech.status);
   const rate = speech.playbackRate ?? 1;
   useEffect(() => () => speech.stopSource?.(sourceId), [speech.stopSource, sourceId]);
+  useEffect(() => () => speech.clearSourceEngine?.(sourceId), [speech.clearSourceEngine, sourceId]);
+  const systemOnly = speech.isSystemOnlySource?.(sourceId);
+  const originalAudio = media || speech.isMediaSource?.(sourceId);
   if (!onPlay && !active) return null;
   function toggle() {
     if (!active || speech.status === 'idle' || speech.status === 'error') { if (onPlay) onPlay(); else speech.replay(); }
@@ -24,9 +29,13 @@ export function AudioControls({ speech, sourceId, onPlay, disabled = false }: { 
     { label: t('慢放', '速度を下げる'), icon: Minus, action: () => speech.setPlaybackRate(rate === 1.25 ? 1 : .75), disabled: rate === .75 },
     { label: t('快放', '速度を上げる'), icon: Plus, action: () => speech.setPlaybackRate(rate === .75 ? 1 : 1.25), disabled: rate === 1.25 },
   ];
+  const shortcuts = ['F1', 'F2', 'F3', 'F4', 'Escape'];
   return <section role="group" className="audio-controls" aria-label={t('音频控制', '音声コントロール')} data-audio-source={sourceId}>
-    <span className="sr-only" role="status">{active ? speech.status === 'loading' ? t('正在准备', '準備中') : speech.status === 'buffering' ? t('正在缓冲', 'バッファリング中') : speech.status === 'paused' ? t('已暂停', '一時停止中') : speech.status === 'error' ? t('播放失败，请重试', '再生できません。再試行してください') : speech.status === 'playing' ? t('正在播放', '再生中') : t('播放结束', '再生終了') : t('等待播放', '再生待ち')}</span>
+    <span className="sr-only" role="status">{localize(active ? speech.status === 'loading' ? t('正在准备', '準備中') : speech.status === 'buffering' ? t('正在缓冲', 'バッファリング中') : speech.status === 'paused' ? t('已暂停', '一時停止中') : speech.status === 'error' ? t('播放失败，请重试', '再生できません。再試行してください') : speech.status === 'playing' ? t('正在播放', '再生中') : t('播放结束', '再生終了') : t('等待播放', '再生待ち'))}</span>
     <span id={seekHelpId} className="sr-only audio-seek-note">{t(speech.seekUnavailableReason || '当前音频暂不支持快退或快进。', '音声の準備ができると秒単位で移動できます。システム音声では利用できません。')}</span>
-    <div className="button-row">{controls.map((control, index) => <button type="button" key={index} className={index === 0 ? "audio-toggle" : undefined} title={control.label} aria-label={control.label} aria-describedby={(index === 1 || index === 2) && (!active || !speech.canSeek) ? seekHelpId : undefined} onClick={control.action} disabled={control.disabled}><control.icon size={19}/>{index === 1 ? <span>−2s</span> : index === 2 ? <span>+2s</span> : index === 3 ? <span>{t('重放', '最初から')}</span> : null}</button>)}<span>{rate}×</span><span role="timer" aria-label={t('播放进度', '再生位置')}>{time(active ? speech.position || 0 : 0)}{active && speech.duration ? ` / ${time(speech.duration)}` : ''}</span></div>
+    <div className="button-row">{controls.map((control, index) => <button type="button" key={index} className={index === 0 ? "audio-toggle" : undefined} data-audio-action={index === 0 ? 'toggle' : index === 3 ? 'replay' : undefined} title={shortcuts[index] ? `${control.label} (${index === 4 ? 'Esc' : shortcuts[index]})` : control.label} aria-keyshortcuts={shortcuts[index]} aria-label={control.label} aria-describedby={(index === 1 || index === 2) && (!active || !speech.canSeek) ? seekHelpId : undefined} onClick={control.action} disabled={control.disabled}><control.icon size={19}/>{index === 1 ? <span>−2s</span> : index === 2 ? <span>+2s</span> : index === 3 ? <span className="immersion-text">{t('重放', '最初から')}</span> : null}</button>)}<span>{localize(rate)}×</span><span role="timer" aria-label={t('播放进度', '再生位置')}>{time(active ? speech.position || 0 : 0)}{localize(active && speech.duration ? ` / ${time(speech.duration)}` : '')}</span><label className="player-engine"><span className="immersion-text">{t('当前播放器引擎', 'このプレーヤーの音声', 'Player voice engine')}</span><select aria-label={t('当前播放器引擎', 'このプレーヤーの音声', 'Player voice engine')} disabled={disabled || originalAudio || systemOnly} value={systemOnly ? 'system' : originalAudio ? 'original' : speech.getSourceEngine?.(sourceId) ?? 'default'} onChange={event => speech.setSourceEngine?.(sourceId, event.target.value as PlayerVoiceEngine)} title={t('仅覆盖当前播放器，不更改全局设置', 'このプレーヤーのみ。全体設定は変更しません', 'Applies only to this player; global settings stay unchanged')}>
+      {systemOnly ? <option value="system">{t('本机声音（中文讲解）', '端末の音声（中国語解説）', 'System voice (Chinese explanation)')}</option> : originalAudio ? <option value="original">{t('原始音频', '元の音声', 'Original audio')}</option> : <><option value="default">{t('跟随全局设置', '全体設定に従う', 'Use global settings')}</option><option value="system">{t('本机声音', '端末の音声', 'System voice')}</option><option value="minimax">MiniMax</option><option value="haruka">Haruka</option></>}
+    </select></label></div>
+
   </section>;
 }

@@ -1,3 +1,4 @@
+import { practiceCreditSchema } from '../shared/practice-rank';
 import { z } from 'zod';
 import { GRAMMAR_CHAT_MAX_TURNS } from '../shared/grammar-chat';
 import { recordingIdSchema, recordingMetadataSchema, speakingAssessmentSchema } from '../shared/recordings';
@@ -42,8 +43,8 @@ export const backupV1Schema = backupBase.extend({ version: z.literal(1) }).stric
 export const backupV2Schema = backupBase.extend({ version: z.literal(2), recordings: z.array(recordingMetadataSchema).max(100000), assessments: z.array(speakingAssessmentSchema).max(100000) }).strict();
 export const backupV3Schema = backupBase.extend({ version: z.literal(3), recordings: z.array(recordingMetadataSchema).max(100000), assessments: z.array(speakingAssessmentSchema).max(100000),
   aiQuestions: z.array(practiceQuestionSchema).max(100000), aiAttempts: z.array(practiceAttemptSchema).max(100000), aiPositions: z.array(practicePositionSchema).max(150) }).strict();
-export const backupV4Schema = backupBase.extend({ version: z.literal(4), recordings: z.array(recordingMetadataSchema).max(0), assessments: z.array(speakingAssessmentSchema).max(100000),
-  aiQuestions: z.array(practiceQuestionSchema).max(100000), aiAttempts: z.array(practiceAttemptSchema).max(100000), aiPositions: z.array(practicePositionSchema).max(200), vocabularyMastery: z.array(vocabularyMasterySchema).max(10000).default([]) }).strict()
+export const backupV4Schema = backupBase.extend({ version: z.literal(4), practiceCredits: z.array(practiceCreditSchema).max(1000000).default([]), recordings: z.array(recordingMetadataSchema).max(0), assessments: z.array(speakingAssessmentSchema).max(100000),
+  aiQuestions: z.array(practiceQuestionSchema).max(100000), aiAttempts: z.array(practiceAttemptSchema).max(100000), aiPositions: z.array(practicePositionSchema).max(220), vocabularyMastery: z.array(vocabularyMasterySchema).max(10000).default([]) }).strict()
   .refine(value => !JSON.stringify(value).includes('"recordingId":'), 'v4备份不能包含录音存档关联。');
 export const backupSchema = z.discriminatedUnion('version', [backupV1Schema, backupV2Schema, backupV3Schema, backupV4Schema]);
 export type Backup = z.infer<typeof backupSchema>;

@@ -1,3 +1,4 @@
+import { translate, localize } from './i18n';
 import { useEffect, useRef, useState } from 'react';
 import { Check, RotateCcw, Volume2 } from 'lucide-react';
 import type { AudioAssessment, AudioAssessmentSettings } from '../shared/audio-assessment';
@@ -7,8 +8,10 @@ import { useRecorder } from './speech';
 import { RecordingControls } from './RecordingControls';
 import { AudioControls } from './AudioControls';
 import { Button, Sentence } from './ui';
+import { useTranslation } from './preferences';
 
 export function AudioSpeakingPractice({ lessonId, task, speech, notice, busy, usedHint, furigana, onHint, onRate, recordingHint }: SpeakingPracticeProps) {
+  const t = useTranslation();
   const [settings, setSettings] = useState<AudioAssessmentSettings | null>(null);
   const [settingsError, setSettingsError] = useState('');
   const [settingsRevision, setSettingsRevision] = useState(0);
@@ -56,7 +59,7 @@ export function AudioSpeakingPractice({ lessonId, task, speech, notice, busy, us
     const timer = setTimeout(() => {
       if (!isCurrent()) return;
       controller.abort(); request.current = null; setPending(false);
-      setError('等待反馈超过 30 秒。请检查网络后重试，录音仍保留。');
+      setError(t('等待反馈超过 135 秒。请检查网络后重试，录音仍保留。', 'フィードバック待ちが135秒を超えました。接続を確認して再試行してください。録音は保持されています。', 'Feedback took longer than 135 seconds. Check your connection and retry; your recording is still available.'));
     }, 135000);
     try {
       const value = await api<AudioAssessment>('/speaking/assess-audio', {
@@ -82,31 +85,31 @@ export function AudioSpeakingPractice({ lessonId, task, speech, notice, busy, us
   const blocked = busy || pending || recorder.saving || recorder.status !== 'idle';
   const demoSourceId = `speaking-demo:${task.id}`;
   return <div className="speaking-practice">
-    {!settings && !settingsError && <p role="status" className="tiny-note">正在检查音频服务……</p>}
-    {settingsError && <div role="alert" className="notice-inline"><p>{settingsError}</p><Button secondary onClick={() => setSettingsRevision(value => value + 1)}>重新检查音频服务</Button></div>}
-    {settings && !settings.hasApiKey && <p className="notice-inline">先到<a href="#settings">学习设置</a>配置“AI 听录音”的百炼密钥，再开始录音。也可以先打字练习。</p>}
-    {settings?.hasApiKey && <p className="tiny-note">录完自动反馈语法和发音。音频将发送到阿里云百炼。</p>}
+    {!settings && !settingsError && <p role="status" className="tiny-note">{translate("正在检查音频服务……")}</p>}
+    {settingsError && <div role="alert" className="notice-inline"><p>{localize(settingsError)}</p><Button secondary onClick={() => setSettingsRevision(value => value + 1)}>{translate("重新检查音频服务")}</Button></div>}
+    {settings && !settings.hasApiKey && <p className="notice-inline">{translate("先到")}<a href="#settings">{translate("学习设置")}</a>{translate("配置“AI 听录音”的百炼密钥，再开始录音。也可以先打字练习。")}</p>}
+    {settings?.hasApiKey && <p className="tiny-note">{translate("录完自动反馈语法和发音。音频将发送到阿里云百炼。")}</p>}
     <RecordingControls recorder={recorder} speech={speech} centered hint={recordingHint} disabled={busy || recorder.saving || !settings?.hasApiKey} onStart={startRecording}/>
-    {recorder.saving && <p role="status">正在上传录音……</p>}
-    {pending && <div className="audio-assessment-progress"><p role="status">AI 正在听录音…… {elapsed} 秒</p><Button secondary onClick={() => { cancelAssessment(); setError('已停止等待，录音仍保留。可以重试分析，或重新录音。'); }}>停止等待</Button></div>}
-    {error && <div className="notice-inline" role="alert"><p>{error}</p><p className="tiny-note">录音仍保留，可以回听或重试。</p>{recordingId && <Button secondary disabled={blocked} onClick={() => void assess(recordingId)}><RotateCcw size={16}/>重新分析录音</Button>}</div>}
-    {current && <section className="audio-assessment-result" aria-label="录音反馈">
-      <div className="section-header"><h3>这次开口的反馈</h3><span className="tiny-note">分析用时 {(current.latencyMs / 1000).toFixed(1)} 秒</span></div>
-      <p>{current.summaryZh}</p>
-      <div className="audio-feedback-part"><h3>语法与表达</h3><p>{current.grammarFeedbackZh}</p>
-        {current.corrections.map((correction, i) => <div className="expression-tip" key={i}><p>{correction.explanation}</p><Sentence example={correction.corrected} speech={speech} furigana={furigana}/></div>)}
+    {recorder.saving && <p role="status">{translate("正在上传录音……")}</p>}
+    {pending && <div className="audio-assessment-progress"><p role="status">{translate("AI 正在听录音……")}{localize(elapsed)}{translate("秒")}</p><Button secondary onClick={() => { cancelAssessment(); setError('已停止等待，录音仍保留。可以重试分析，或重新录音。'); }}>{translate("停止等待")}</Button></div>}
+    {error && <div className="notice-inline" role="alert"><p>{localize(error)}</p><p className="tiny-note">{translate("录音仍保留，可以回听或重试。")}</p>{recordingId && <Button secondary disabled={blocked} onClick={() => void assess(recordingId)}><RotateCcw size={16}/>{translate("重新分析录音")}</Button>}</div>}
+    {current && <section className="audio-assessment-result" aria-label={translate("录音反馈")}>
+      <div className="section-header"><h3>{translate("这次开口的反馈")}</h3><span className="tiny-note">{translate("分析用时")}{(current.latencyMs / 1000).toFixed(1)}{translate("秒")}</span></div>
+      <p>{localize(current.summaryZh)}</p>
+      <div className="audio-feedback-part"><h3>{translate("语法与表达")}</h3><p>{localize(current.grammarFeedbackZh)}</p>
+        {current.corrections.map((correction, i) => <div className="expression-tip" key={i}><p>{localize(correction.explanation)}</p><Sentence example={correction.corrected} speech={speech} furigana={furigana}/></div>)}
       </div>
-      <div className="audio-feedback-part"><h3>发音与节奏</h3><p>{current.pronunciation.feedbackZh}</p>
-        {current.pronunciation.status === 'uncertain' && <p className="tiny-note">这段录音的读音判断不确定，可以靠近麦克风再说一次。</p>}
-        {current.pronunciation.issues.map((issue, i) => <div className="expression-tip" key={i}><p lang="ja"><strong>{issue.word}</strong> · {issue.expectedKana}</p><p>{issue.issueZh}</p><p>{issue.practiceTipZh}</p></div>)}
+      <div className="audio-feedback-part"><h3>{translate("发音与节奏")}</h3><p>{localize(current.pronunciation.feedbackZh)}</p>
+        {current.pronunciation.status === 'uncertain' && <p className="tiny-note">{translate("这段录音的读音判断不确定，可以靠近麦克风再说一次。")}</p>}
+        {current.pronunciation.issues.map((issue, i) => <div className="expression-tip" key={i}><p lang="ja"><strong>{issue.word}</strong> · {issue.expectedKana}</p><p>{localize(issue.issueZh)}</p><p>{localize(issue.practiceTipZh)}</p></div>)}
       </div>
-      <p className="tiny-note">AI 听音建议，可能有误。优先练习明确指出的读音片段。</p>
-      <details><summary>AI 听到的内容</summary><p lang="ja">{current.text}</p></details>
-      <details open={referenceOpen} onToggle={event => { setReferenceOpen(event.currentTarget.open); if (event.currentTarget.open) onHint(); }}><summary>看看可用表达</summary>{referenceOpen && <Sentence example={current.reference} speech={speech} furigana={furigana}/>}</details>
-      <Button secondary disabled={busy || recorder.saving || recorder.status !== 'idle'} onClick={startRecording}>再说一次</Button>
+      <p className="tiny-note">{translate("AI 听音建议，可能有误。优先练习明确指出的读音片段。")}</p>
+      <details><summary>{translate("AI 听到的内容")}</summary><p lang="ja">{current.text}</p></details>
+      <details open={referenceOpen} onToggle={event => { setReferenceOpen(event.currentTarget.open); if (event.currentTarget.open) onHint(); }}><summary>{translate("看看可用表达")}</summary>{referenceOpen && <Sentence example={current.reference} speech={speech} furigana={furigana}/>}</details>
+      <Button secondary disabled={busy || recorder.saving || recorder.status !== 'idle'} onClick={startRecording}>{translate("再说一次")}</Button>
     </section>}
-    <div className="playback-source"><Button secondary data-audio-source={demoSourceId} onClick={() => { onHint(); speech.say(task.answer.jp, 'ja-JP', 1, demoSourceId); }}><Volume2 size={18}/>听示范</Button><AudioControls speech={speech} sourceId={demoSourceId}/></div>
-    {current && <div className="self-rating"><p>你实际完成得怎样？</p><div className="row-actions">
+    <div className="playback-source"><Button secondary data-audio-source={demoSourceId} onClick={() => { onHint(); speech.say(task.answer, 'ja-JP', 1, demoSourceId); }}><Volume2 size={18}/>{translate("听示范")}</Button><AudioControls speech={speech} sourceId={demoSourceId}/></div>
+    {current && <div className="self-rating"><p>{translate("你实际完成得怎样？")}</p><div className="row-actions">
       {([{ result: 'again', text: '还要再练' }, { result: 'hint', text: '用提示完成' }, { result: 'good', text: '独立说出来了' }] as const).map(item => <Button key={item.result} secondary={item.result !== 'good'} disabled={blocked} onClick={() => void onRate(item.result === 'good' && usedHint ? 'hint' : item.result, { answer: current.text, recordingId: current.recordingId, assessmentId: current.id })}>{item.result === 'good' && <Check size={18}/>} {item.text}</Button>)}
     </div></div>}
   </div>;

@@ -1,4 +1,4 @@
-import { translate } from './i18n';
+import { translate, localize } from './i18n';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Check, Headphones, MessageCircle, RotateCcw, Volume2 } from 'lucide-react';
 import type { VoiceCacheStats, VoiceSettings as VoiceSettingsData, VoiceSettingsPatch } from '../shared/voice';
@@ -6,6 +6,7 @@ import { api } from './api';
 import type { Speech } from './speech';
 import { Button } from './ui';
 import { AudioControls } from './AudioControls';
+import { japaneseVoice, systemVoices } from './japanese-voice';
 
 const sentence = 'こんにちは。駅はどこですか。もう一度お願いします。';
 const dialogue = ['こんにちは。駅はどこですか。', '駅は、この道をまっすぐ行ってください。'];
@@ -35,6 +36,15 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
   const [confirmClear, setConfirmClear] = useState(false);
   const operation = useRef(false);
   const alive = useRef(true);
+  const [harukaAvailable, setHarukaAvailable] = useState(false);
+
+  useEffect(() => {
+    let canceled = false;
+    const refresh = () => { void systemVoices().then(voices => { if (!canceled) setHarukaAvailable(Boolean(japaneseVoice(voices, 'Haruka'))); }); };
+    refresh();
+    window.speechSynthesis?.addEventListener('voiceschanged', refresh);
+    return () => { canceled = true; window.speechSynthesis?.removeEventListener('voiceschanged', refresh); };
+  }, []);
 
   const load = useCallback(async (signal?: AbortSignal) => {
     setLoading(true);
@@ -80,9 +90,12 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
 
   async function save(preview?: 'sentence' | 'dialogue') {
     if (!settings || operation.current) return;
+    if (settings.provider === 'haruka' && !harukaAvailable) {
+      setMessage(translate('此设备未安装 Haruka，请先安装日语语音或选择其他声音。')); return;
+    }
     if (settings.provider === 'minimax' && !key.trim() && !settings.hasApiKey) {
       setMessage('请先填写 MiniMax API 密钥。');
-      document.getElementById('minimax-speech-key')?.focus();
+      document.getElementById('minimax-speech-key')?.focus({ preventScroll: true });
       return;
     }
     operation.current = true;
@@ -134,7 +147,7 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
     <span className="tile-icon blue"><Headphones aria-hidden="true"/></span>
     <h2 id="voice-settings-title">{translate("更自然的日语声音")}</h2>
     {loading ? <p role="status">{translate("正在读取声音设置……")}</p> : loadError ? <>
-      <p role="alert">{loadError}</p>
+      <p role="alert">{localize(loadError)}</p>
       <Button secondary onClick={() => void load()}><RotateCcw size={18} aria-hidden="true"/>{translate("重新读取")}</Button>
     </> : settings && <>
       <form onSubmit={event => { event.preventDefault(); void save(); }}>
@@ -143,12 +156,15 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
           <div className="voice-choice-grid" role="group" aria-label={translate("日语朗读方式")}>
             <Button secondary aria-pressed={settings.provider === 'system'} onClick={() => change({ provider: 'system' })}>{translate("本机声音 · 离线")}</Button>
             <Button secondary aria-pressed={settings.provider === 'minimax'} onClick={() => change({ provider: 'minimax' })}>{translate("云端 AI 声音 · MiniMax")}</Button>
+            <Button secondary aria-pressed={settings.provider === 'haruka'} disabled={!harukaAvailable} onClick={() => change({ provider: 'haruka' })}>{translate('Haruka · 日语')}</Button>
           </div>
+          {!harukaAvailable && <p className="tiny-note">{translate('此设备未安装 Haruka，请先安装日语语音或选择其他声音。')}</p>}
+          {settings.provider === 'haruka' && <p className="tiny-note">{translate('使用设备上的 Haruka 日语女声；男女对话搭配 Ichiro 男声。其他设备也需要安装对应声音。')}</p>}
           {settings.provider === 'minimax' && <div className="voice-cloud-options">
-            <p className="status-line"><span aria-hidden="true" className={`status-dot ${settings.hasApiKey ? 'ready' : ''}`}/>{settings.hasApiKey ? translate('MiniMax 密钥已配置 · 试听可确认是否可用') : translate('MiniMax 密钥未配置')}</p>
+            <p className="status-line"><span aria-hidden="true" className={`status-dot ${settings.hasApiKey ? 'ready' : ''}`}/>{localize(settings.hasApiKey ? translate('MiniMax 密钥已配置 · 试听可确认是否可用') : translate('MiniMax 密钥未配置'))}</p>
             <div className="voice-form-grid">
               <label htmlFor="minimax-speech-key">{translate("MiniMax API 密钥")}<input id="minimax-speech-key" type="password" autoComplete="off" spellCheck={false} value={key} maxLength={512} onChange={event => { setKey(event.target.value); setMessage(''); }} aria-describedby="voice-key-help" placeholder={settings.hasApiKey ? translate('留空保持原密钥') : translate('填写 MiniMax API 密钥')}/>
-                <span id="voice-key-help" className="tiny-note">{deployment === 'web' ? translate('单独的语音密钥，只保存在你的服务器后端。') : translate('单独的语音密钥，只保存在本机后端。')}</span>
+                <span id="voice-key-help" className="tiny-note">{localize(deployment === 'web' ? translate('单独的语音密钥，只保存在你的服务器后端。') : translate('单独的语音密钥，只保存在本机后端。'))}</span>
               </label>
               <label htmlFor="minimax-speech-model">{translate("声音质量")}<select id="minimax-speech-model" value={settings.model} onChange={event => change({ model: event.target.value as VoiceSettingsData['model'] })}>
                   <option value="speech-2.8-hd">{translate("细腻 · Speech 2.8 HD")}</option>
@@ -169,19 +185,19 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
           <fieldset className="voice-speed">
             <legend>{translate("日语语速")}</legend>
             <div className="voice-speed-options" role="group" aria-label={translate("日语语速")}>
-              {([{ value: .8, label: translate('慢一点 · 0.8×') }, { value: 1, label: translate('自然 · 1×') }, { value: 1.2, label: translate('快一点 · 1.2×') }] as const).map(speed => <Button key={speed.value} secondary aria-pressed={settings.speed === speed.value} onClick={() => change({ speed: speed.value })}>{speed.label}</Button>)}
+              {([{ value: .8, label: translate('慢一点 · 0.8×') }, { value: 1, label: translate('自然 · 1×') }, { value: 1.2, label: translate('快一点 · 1.2×') }] as const).map(speed => <Button key={speed.value} secondary aria-pressed={settings.speed === speed.value} onClick={() => change({ speed: speed.value })}>{localize(speed.label)}</Button>)}
             </div>
           </fieldset>
           {settings.provider === 'minimax' && <p className="voice-disclosure">{translate("AI 合成声音。日语文字会发送给 MiniMax，需联网，按你的语音服务账户计费。")}</p>}
           <div className="row-actions voice-actions">
-            <Button type="submit"><Check size={18} aria-hidden="true"/>{pending === 'save' ? translate('保存中……') : translate('保存声音设置')}</Button>
-            <Button secondary data-audio-source="voice-settings-preview" onClick={() => void save('sentence')}><Volume2 size={18} aria-hidden="true"/>{pending === 'sentence' ? translate('准备试听……') : translate('保存并试听')}</Button>
-            <Button secondary data-audio-source="voice-settings-preview" onClick={() => void save('dialogue')}><MessageCircle size={18} aria-hidden="true"/>{pending === 'dialogue' ? translate('准备对话……') : translate('试听短对话')}</Button>
+            <Button type="submit"><Check size={18} aria-hidden="true"/>{localize(pending === 'save' ? translate('保存中……') : translate('保存声音设置'))}</Button>
+            <Button secondary data-audio-source="voice-settings-preview" onClick={() => void save('sentence')}><Volume2 size={18} aria-hidden="true"/>{localize(pending === 'sentence' ? translate('准备试听……') : translate('保存并试听'))}</Button>
+            <Button secondary data-audio-source="voice-settings-preview" onClick={() => void save('dialogue')}><MessageCircle size={18} aria-hidden="true"/>{localize(pending === 'dialogue' ? translate('准备对话……') : translate('试听短对话'))}</Button>
           </div>
         </fieldset>
       </form>
       <AudioControls speech={speech} sourceId="voice-settings-preview"/>
-      <p className="voice-result" role="status" aria-live="polite">{message}</p>
+      <p className="voice-result" role="status" aria-live="polite">{localize(message)}</p>
       <p className="tiny-note">{translate("试听会先保存当前选择。中文讲解仍用本机声音；云端失败时会提示，并尝试本机朗读。")}</p>
       {settings.provider === 'minimax' && <details className="voice-details">
         <summary>{translate("没有 MiniMax 密钥？查看 3 步开通方法")}</summary>
@@ -196,12 +212,12 @@ export function VoiceSettings({ speech, notice, deployment = 'local' }: { speech
       </details>}
       <details className="voice-details" onToggle={event => setCacheOpen(event.currentTarget.open)}>
         <summary>{translate("管理已生成的声音")}</summary>
-        <p>{deployment === 'web' ? translate('相同文字、音色、质量和语速会复用服务器缓存，减少联网请求。') : translate('相同文字、音色、质量和语速会复用本机缓存，减少联网请求。')}</p>
-        <p aria-live="polite">{cacheLoading ? translate('正在读取缓存……') : cache ? `${translate('已缓存')} ${cache.clips} · ${cacheSize(cache.bytes)}` : translate('尚未读取缓存。')}</p>
-        {cacheError && <p role="alert">{cacheError}</p>}
+        <p>{localize(deployment === 'web' ? translate('相同文字、音色、质量和语速会复用服务器缓存，减少联网请求。') : translate('相同文字、音色、质量和语速会复用本机缓存，减少联网请求。'))}</p>
+        <p aria-live="polite">{localize(cacheLoading ? translate('正在读取缓存……') : cache ? `${translate('已缓存')} ${cache.clips} · ${cacheSize(cache.bytes)}` : translate('尚未读取缓存。'))}</p>
+        {cacheError && <p role="alert">{localize(cacheError)}</p>}
         {confirmClear ? <div className="restore-confirm" role="group" aria-label={translate("确认清理声音缓存")}>
           <p>{translate("清理所有声音缓存？再次朗读时需要重新生成，云端可能计费。")}</p>
-          <div className="row-actions"><Button disabled={Boolean(pending)} onClick={() => void clearCache()}>{pending === 'clear' ? translate('清理中……') : translate('确认清理')}</Button><Button secondary disabled={Boolean(pending)} onClick={() => setConfirmClear(false)}>{translate("取消")}</Button></div>
+          <div className="row-actions"><Button disabled={Boolean(pending)} onClick={() => void clearCache()}>{localize(pending === 'clear' ? translate('清理中……') : translate('确认清理'))}</Button><Button secondary disabled={Boolean(pending)} onClick={() => setConfirmClear(false)}>{translate("取消")}</Button></div>
         </div> : <div className="row-actions">
           <Button secondary disabled={cacheLoading || Boolean(pending)} onClick={() => void loadCache()}><RotateCcw size={17} aria-hidden="true"/>{translate("刷新缓存")}</Button>
           <Button secondary disabled={cacheLoading || Boolean(pending) || !cache?.clips} onClick={() => setConfirmClear(true)}>{translate("清理声音缓存")}</Button>

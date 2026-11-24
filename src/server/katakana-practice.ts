@@ -4,6 +4,7 @@ import type { Store } from './store';
 import { ApiError } from './schemas';
 import { requestJson, withDeadline } from './ai-practice';
 import type { KatakanaBatch } from '../shared/katakana-words';
+import { practiceCreditSchema, type PracticeCredit } from '../shared/practice-rank';
 
 const katakanaWordSchema = z.string().trim().min(2).max(40).regex(/^[ァ-ヶー]+$/)
   .refine(word => /[ア-ヴ]/.test(word) && !word.startsWith('ー'), 'Expected a katakana word');
@@ -14,6 +15,16 @@ const katakanaBatchSchema = z.object({ words: z.array(katakanaEntrySchema).min(1
 export function registerKatakanaPractice(app: FastifyInstance, store: Store, aiFetch: typeof fetch,
   serialized: <T>(key: string, task: () => T | Promise<T>) => Promise<T>) {
   const completed = new Map<string, { input: string; batch: KatakanaBatch }>();
+  app.post('/api/katakana/complete', async request => {
+    const input = z.object({ id: z.uuid(), mode: z.enum(['kana', 'ai']), prompt: z.string().min(1).max(40), answer: z.string().trim().min(1).max(40) }).strict().parse(request.body);
+    const credit = practiceCreditSchema.parse({ ...input, type: 'katakana', createdAt: new Date().toISOString() });
+    return serialized(`practice-credit:${input.id}`, () => {
+      const existing = store.get<PracticeCredit>('practice_credits', input.id);
+      if (existing && (existing.type !== 'katakana' || existing.mode !== input.mode || existing.prompt !== input.prompt || existing.answer !== input.answer)) throw new ApiError(409, 'IDEMPOTENCY_CONFLICT', '这个答题编号已用于其他题目。');
+      if (!existing) store.save('practice_credits', input.id, credit);
+      return { counted: true };
+    });
+  });
   app.post('/api/katakana/words', async request => {
     const input = z.object({ requestId: z.uuid(), recent: z.array(katakanaWordSchema).max(100), count: z.number().int().min(1).max(5).default(1) }).strict().parse(request.body);
     return serialized(`katakana:${input.requestId}`, async () => {

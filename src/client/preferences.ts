@@ -1,11 +1,12 @@
 import { useSyncExternalStore } from 'react';
+import { localizedText, useLocalizationRevision, type Locale } from './localization';
 
-export type Preferences = { locale: 'zh-CN' | 'ja-JP'; immersive: boolean; collapsed: boolean; dictationMode: 'text' | 'audio'; vocabularyMode: 'text' | 'audio'; speakingMode: 'text' | 'audio'; autoAdvanceOnEnter: boolean };
+export type Preferences = { locale: Locale; immersive: boolean; collapsed: boolean; dictationMode: 'text' | 'audio'; vocabularyMode: 'text' | 'audio'; speakingMode: 'text' | 'audio'; autoAdvanceOnEnter: boolean };
 const defaults: Preferences = { locale: 'zh-CN', immersive: false, collapsed: false, dictationMode: 'text', vocabularyMode: 'text', speakingMode: 'audio', autoAdvanceOnEnter: false };
 let current = defaults;
 try {
   const saved = JSON.parse(localStorage.getItem('nihongo-ui-v130') || '{}');
-  current = { locale: saved.locale === 'ja-JP' ? 'ja-JP' : 'zh-CN', immersive: saved.immersive === true, collapsed: saved.collapsed === true, dictationMode: saved.dictationMode === 'audio' ? 'audio' : 'text', vocabularyMode: saved.vocabularyMode === 'audio' ? 'audio' : 'text', speakingMode: saved.speakingMode === 'text' ? 'text' : 'audio', autoAdvanceOnEnter: saved.autoAdvanceOnEnter === true };
+  current = { locale: saved.locale === 'en-US' ? 'en-US' : saved.locale === 'ja-JP' ? 'ja-JP' : 'zh-CN', immersive: saved.immersive === true, collapsed: saved.collapsed === true, dictationMode: saved.dictationMode === 'audio' ? 'audio' : 'text', vocabularyMode: saved.vocabularyMode === 'audio' ? 'audio' : 'text', speakingMode: saved.speakingMode === 'text' ? 'text' : 'audio', autoAdvanceOnEnter: saved.autoAdvanceOnEnter === true };
 } catch { /* Storage can be unavailable in private browsing. */ }
 const listeners = new Set<() => void>();
 export function getPreferences() { return current; }
@@ -19,5 +20,6 @@ export function usePreferences() {
 }
 export function useTranslation() {
   const { locale } = usePreferences();
-  return (zh: string, ja: string) => locale === 'ja-JP' ? ja : zh;
+  useLocalizationRevision();
+  return (zh: string, ja: string, en?: string) => locale === 'en-US' && en ? en : localizedText(zh, locale, ja);
 }
